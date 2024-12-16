@@ -7,4 +7,4 @@ rfriendsはラジオを愛する人たちのためのプログラムです。
 <p>https://rfriends.hatenablog.com/entry/2023/07/13/152412</p>
 
 
-![clip_1](https://github.com/user-attachments/assets/7cb4b460-0c8d-441b-85dd-df140027270a)
+![rfriends3](https://github.com/user-attachments/assets/7cb4b460-0c8d-441b-85dd-df140027270a)
