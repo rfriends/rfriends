@@ -12,11 +12,11 @@ rfriendsはラジオを愛する人たちのためのプログラムです。
 </tr>
 <tr>
 <td><a href="https://github.com/rfriends/rfriends3/wiki">マニュアル</a></td>
-<td>rfriendsのマニュアルが参照できます（現在、工事中）</td>
+<td>rfriends3のマニュアルが参照できます（現在、工事中）</td>
 </tr>
 <tr>
 <td><a href="https://rfriends.hatenablog.com/entry/2024/08/14/113233">活用事例</a></td>
-<td>rfriendsをもっと便利にする活用事例を紹介しています</td>
+<td>rfriends3をもっと便利にする活用事例を紹介しています</td>
 </tr>
 <tr></tr>
 <tr>
