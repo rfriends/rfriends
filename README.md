@@ -3,6 +3,8 @@ rfriendsはラジオを愛する人たちのためのプログラムです。
 </p>
 <br>
 <p>メニューのRepositoriesよりプログラム一覧が参照できます。</p>
+https://github.com/rfriends?tab=repositories  
+  
 <p>詳細はブログを参照してください。</p>
 <p>https://rfriends.hatenablog.com/</p>
 
