@@ -20,8 +20,8 @@ rfriendsはラジオを愛する人たちのためのプログラムです。
 </tr>
 <tr></tr>
 <tr>
-<td><a href="https://github.com/rfriends?tab=repositories">リポジトリ</a></td>
-<td>プログラム一覧が参照できます</td>
+<td><a href="https://github.com/rfriends?tab=repositories">プログラム</a></td>
+<td>GitHubのリポジトリ一覧が参照できます</td>
 </tr>
 <tr>
 <td><a href="https://twitter.com/rfriends2017" target="_blank" style="color: #2196f3;">X(twitter）</a></td>
