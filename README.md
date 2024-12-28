@@ -13,6 +13,7 @@ rfriends3はWEBサーバ経由で操作します。
 また、sshによるcuiアクセスも可能です。  
   
 |リンク|詳細|
+|---|---|
 |[1](https://rfriends.hatenablog.com/entry/2023/07/13/152412/|rfriends3のインストール方法はこちらです)|
 |[2](https://github.com/rfriends/rfriends3/wiki|rfriends3のマニュアルが参照できます（現在、工事中）)|
 |[3](https://rfriends.hatenablog.com/entry/2024/08/14/113233|rfriends3をもっと便利にする活用事例を紹介しています)|
