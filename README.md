@@ -4,13 +4,7 @@ rfriendsはラジオを愛する人たちのためのプログラムです。
 <br>
 <p>メニューのRepositoriesよりプログラム一覧が参照できます。</p>
 https://github.com/rfriends?tab=repositories  
-<br><br>
-<p>マニュアルは以下を参照してください。（現在工事中）</p>
-https://github.com/rfriends/rfriends3/wiki
-<br><br>
-<p>詳細はブログを参照してください。</p>
-<p>https://rfriends.hatenablog.com/</p>
-  
+<br><br>  
 ![rfriends3](https://github.com/user-attachments/assets/7cb4b460-0c8d-441b-85dd-df140027270a)
 
 <hr />
@@ -23,7 +17,7 @@ https://github.com/rfriends/rfriends3/wiki
 </td>
 </tr>
 <tr>
-<td>?<a href="https://github.com/rfriends/rfriends3/wiki">マニュアル</a></td>
+<td><a href="https://github.com/rfriends/rfriends3/wiki">マニュアル</a></td>
 <td>rfriendsのマニュアルが参照できます。（現在、工事中）</td>
 </tr>
 <tr>
