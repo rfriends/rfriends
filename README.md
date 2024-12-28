@@ -1,11 +1,6 @@
 <p align="left">
 rfriendsはラジオを愛する人たちのためのプログラムです。
 </p>
-<br>
-<p>メニューのRepositoriesよりプログラム一覧が参照できます。</p>
-
-
-
 <hr />
 <table border="1">
 <tbody>
