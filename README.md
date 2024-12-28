@@ -32,7 +32,7 @@ radiko ラジコ タイムフリー エリアフリー らじるらじる 聞き
 <td>リリース情報、障害情報、TIPS等を発信します</td>
 </tr>
 <tr>
-<td><a href="https://github.com/rfriends/rfriends/discussions" target="_blank" style="color: #2196f3;">新掲示板</a></td>
+<td><a href="http://ceres.s501.xrea.com/wforum/wforum.cgi" target="_blank" style="color: #2196f3;">掲示板</a></td>
 <td>質問、要望などはこちらにおねがいします</td>
 </tr>
 <tr>
