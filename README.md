@@ -1,6 +1,6 @@
 ### rfriendsはラジオを愛する人たちのためのプログラムです。  
 
-  
+　  
 rfriends3はラジコ、らじるらじる、ポッドキャストを録音できます。    
   
 rfriends3はradiko ラジコ タイムフリー エリアフリー らじるらじる 聞き逃し ゴガク  ポッドキャスト Windows Linux macOS RaspberrypiOS ChromeOS Termux Volumio MoodeAudio に対応しています。  
