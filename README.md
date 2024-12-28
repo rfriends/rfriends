@@ -3,9 +3,8 @@ rfriendsはラジオを愛する人たちのためのプログラムです。
 </p>
 <br>
 <p>メニューのRepositoriesよりプログラム一覧が参照できます。</p>
-https://github.com/rfriends?tab=repositories  
-<br><br>  
-![rfriends3](https://github.com/user-attachments/assets/7cb4b460-0c8d-441b-85dd-df140027270a)
+
+
 
 <hr />
 <table border="1">
@@ -26,8 +25,8 @@ https://github.com/rfriends?tab=repositories
 </tr>
 <tr></tr>
 <tr>
-<td><a href="https://github.com/rfriends">GitHub</a></td>
-<td>rfriendsに関する保存物を公開しています</td>
+<td><a href="https://github.com/rfriends?tab=repositories">リポジトリ</a></td>
+<td>プログラム一覧が参照できます</td>
 </tr>
 <tr>
 <td><a href="https://twitter.com/rfriends2017" target="_blank" style="color: #2196f3;">X(twitter）</a></td>
