@@ -1,6 +1,6 @@
-<h2 align="left">
+<h3 align="left">
 rfriendsはラジオを愛する人たちのためのプログラムです。
-</h2>
+</h3>
 <p>
 radiko ラジコ タイムフリー エリアフリー らじるらじる 聞き逃し ゴガク  ポッドキャスト Windows Linux macOS RaspberrypiOS ChromeOS Termux Volumio MoodeAudio に対応
 </p>
