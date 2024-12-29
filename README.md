@@ -5,7 +5,7 @@ rfriends3はラジコ、らじるらじる、ポッドキャストを録音で�
   
 rfriends3はradiko ラジコ タイムフリー エリアフリー らじるらじる 聞き逃し ゴガク  ポッドキャスト Windows Linux macOS RaspberrypiOS ChromeOS Termux Volumio MoodeAudio に対応しています。  
   
-rfriends3はWEBサーバ経由で操作します。  
+rfriends3はWEBブラウザ経由で操作します。  
 操作する端末はPC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)が動作するものであればなんでも可能です。  
 また、sshによるcuiアクセスも可能です。  
   
