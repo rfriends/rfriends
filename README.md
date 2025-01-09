@@ -15,7 +15,7 @@ rfriends3はWEBブラウザ経由で操作します。
   
 |リンク|詳細|
 |---|---|
-|[インストール](https://rfriends.hatenablog.com/entry/2023/07/13/152412/)|rfriends3のインストール方法はこちらです|
+|[インストール](https://github.com/rfriends/rfriends/wiki)|rfriends3のインストール方法はこちらです|
 |[マニュアル](https://github.com/rfriends/rfriends3/wiki)|rfriends3のマニュアルが参照できます（現在、工事中）|
 |[活用事例](https://rfriends.hatenablog.com/entry/2024/08/14/113233)|rfriends3をもっと便利にする活用事例を紹介しています|
 |[プログラム](https://github.com/rfriends?tab=repositories)|GitHubのリポジトリ一覧が参照できます|
