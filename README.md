@@ -17,6 +17,8 @@ rfriends3はWEBブラウザ経由で操作します。
 |---|---|
 |[インストール](https://github.com/rfriends/rfriends/wiki)|rfriends3の機種別インストール方法（リポジトリ）|
 |[マニュアル](https://github.com/rfriends/rfriends3/wiki)|rfriends3のマニュアル|
+|[チュートリアル]([https://github.com/rfriends/rfriends3/wiki](https://github.com/rfriends/rfriends3/wiki/%EF%BC%90%EF%BC%90%EF%BC%8E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB
+))|rfriends3の基本的な使い方|
 |[活用事例](https://rfriends.hatenablog.com/entry/2024/08/14/113233)|rfriends3をもっと便利にする活用事例|
 |[X(twitter)](https://twitter.com/rfriends2017)|リリース情報、障害情報、TIPS等を発信|
 |[掲示板](http://ceres.s501.xrea.com/wforum/wforum.cgi)|質問、要望、雑談など|
