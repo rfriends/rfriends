@@ -24,6 +24,6 @@ rfriends3はWEBブラウザ経由で操作します。
 |[WordPress](http://ceres.s501.xrea.com/wp_rfriends/)|インストール、マニュアルはWPにまとめました(古い情報)|
 |[レスキュー](https://github.com/rfriends/rfriends_rescue/wiki/rfriends3%E3%81%AE%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA%E6%96%B9%E6%B3%95)|rfriends3システムの起動不可等からの回復はこちら|  
   
-
+rfriends3の起動画面
    
 ![clip_1](https://github.com/user-attachments/assets/a2d43d2e-b8a6-43c5-b948-ef5290629477)
