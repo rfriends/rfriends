@@ -11,7 +11,7 @@ rfriends3はラジコ、らじるらじる、ポッドキャストを録音で�
 |[チュートリアル](https://github.com/rfriends/rfriends3/wiki/%EF%BC%90%EF%BC%90%EF%BC%8E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)|rfriends3の基本的な使い方|
 |[活用事例](https://rfriends.hatenablog.com/entry/2024/08/14/113233)|rfriends3をもっと便利にする活用事例|
 |[X(twitter)](https://twitter.com/rfriends2017)|リリース情報、障害情報、TIPS等を発信|
-|[旧掲示板](http://ceres.s501.xrea.com/wforum/wforum.cgi)|質問、要望、雑談など|
+|[~~旧掲示板~~](http://ceres.s501.xrea.com/wforum/wforum.cgi)|~~質問、要望、雑談など~~|
 |[新掲示板](https://www3.rocketbbs.com/731/rfriends.html)|質問、要望、感想など|
 |[WordPress](http://ceres.s501.xrea.com/wp_rfriends/)|インストール、マニュアル(古い情報)|
 |[レスキュー](https://github.com/rfriends/rfriends_rescue/wiki/rfriends3%E3%81%AE%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA%E6%96%B9%E6%B3%95)|rfriends3システムの起動不可等からの回復|  
