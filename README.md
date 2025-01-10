@@ -2,15 +2,6 @@
 
 　  
 rfriends3はラジコ、らじるらじる、ポッドキャストを録音できます。    
-  
-rfriends3はradiko ラジコ タイムフリー エリアフリー らじるらじる 聞き逃し ゴガク  ポッドキャスト Windows Linux macOS RaspberrypiOS ChromeOS Termux Volumio MoodeAudio に対応しています。  
-  
-rfriends3はWEBブラウザ経由で操作します。  
-操作する端末はPC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)が動作するものであればなんでも可能です。  
-また、sshによるcuiアクセスも可能です。  
-  
-![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
-  
 
   
 |リンク|詳細|
@@ -23,7 +14,17 @@ rfriends3はWEBブラウザ経由で操作します。
 |[掲示板](http://ceres.s501.xrea.com/wforum/wforum.cgi)|質問、要望、雑談など|
 |[WordPress](http://ceres.s501.xrea.com/wp_rfriends/)|インストール、マニュアル(古い情報)|
 |[レスキュー](https://github.com/rfriends/rfriends_rescue/wiki/rfriends3%E3%81%AE%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA%E6%96%B9%E6%B3%95)|rfriends3システムの起動不可等からの回復|  
+
+    
+rfriends3はradiko ラジコ タイムフリー エリアフリー らじるらじる 聞き逃し ゴガク  ポッドキャスト Windows Linux macOS RaspberrypiOS ChromeOS Termux Volumio MoodeAudio に対応しています。  
   
+rfriends3はWEBブラウザ経由で操作します。  
+操作する端末はPC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)が動作するものであればなんでも可能です。  
+また、sshによるcuiアクセスも可能です。  
+  
+![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
+  
+
 rfriends3の起動画面
    
 ![clip_1](https://github.com/user-attachments/assets/a2d43d2e-b8a6-43c5-b948-ef5290629477)
