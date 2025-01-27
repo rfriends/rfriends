@@ -58,9 +58,14 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
   
 ## rfriends3スクリーンショット  
   
-![clip_1](https://github.com/user-attachments/assets/a2d43d2e-b8a6-43c5-b948-ef5290629477)  
+![top](https://github.com/user-attachments/assets/5d621f57-425f-4fcd-9448-a816ededd8dc)
   
-![20240224025829](https://github.com/user-attachments/assets/82b0bdd1-a834-488d-a00f-3daa18e6690f)
+![play](https://github.com/user-attachments/assets/8bf5cdd9-9702-412b-8165-8cbab928941a)
+  
+![cli](https://github.com/user-attachments/assets/3e0df727-f70d-4e05-82b2-2b502c56b993)
+  
+![gallery](https://github.com/user-attachments/assets/fed28352-0636-472e-9015-51abea05e17a)
+  
   
 初版：2023/07/12  
 改版：2025/01/27  
