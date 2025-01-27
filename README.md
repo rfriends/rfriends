@@ -1,7 +1,6 @@
----
 layout: default
 title: トップページ
----
+
 ## rfriendsはラジオ好きのためのプログラムです。  
   
 * rfriends3はラジコ、らじるらじる、ポッドキャストを録音できます。  
