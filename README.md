@@ -7,3 +7,5 @@ https://c3drive.github.io/study/
 # study note
 - [Golang](/Golang/STUDYNOTE.md)
 - [Ruby](/Ruby/STUDYNOTE.md)
+- [test](test.md.md)
+- [distro](distro/ubuntu.md)
