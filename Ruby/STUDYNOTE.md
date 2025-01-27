@@ -1,7 +1,4 @@
----
-layout: default
-title: ruby
----
+
 # Ruby Study Note
 
 ## 拡張子
