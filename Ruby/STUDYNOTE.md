@@ -1,4 +1,7 @@
 ---
+layout: deefault
+title ruby
+---
 ---
 # Ruby Study Note
 
