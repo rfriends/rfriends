@@ -8,3 +8,7 @@ commonmark:
 options: ["UNSAFE", "SMART", "FOOTNOTES"]
 extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
+plugins:
+  - jekyll-sitemap
+
+lang: ja
