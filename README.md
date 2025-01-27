@@ -1,3 +1,7 @@
+---
+title: test site
+layout: default
+----
 # visit site
 https://c3drive.github.io/study/
 # study note
