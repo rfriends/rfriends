@@ -11,5 +11,5 @@ https://c3drive.github.io/study/
   
 ## new    
   
-- [test](test.md.md)
+- [test](test.md)
 - [distro](distro/ubuntu.md)
