@@ -1,5 +1,7 @@
-layout: default
-title: トップページ
+---
+layout: default  
+title: top-page  
+---
 ## rfriendsはラジオ好きのためのプログラムです。  
   
 * rfriends3はラジコ、らじるらじる、ポッドキャストを録音できます。  
