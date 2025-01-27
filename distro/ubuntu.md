@@ -1,3 +1,7 @@
+---
+layout: default
+title: ubuntu title
+---
 Linuxでラジオ番組録音アプリrfriends3をインストールするためのスクリプトです。  
 sudo userでログインしてシェルを実行してください。
    
