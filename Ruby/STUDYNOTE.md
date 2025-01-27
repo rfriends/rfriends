@@ -1,5 +1,5 @@
 ---
-layout: deefault
+layout: default
 title: ruby
 ---
 # Ruby Study Note
