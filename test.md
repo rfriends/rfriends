@@ -1,6 +1,7 @@
-layout: default
-title: testページ
-
+---
+layout: default  
+title: testページ  
+---
 # これはテストです  
 ## これはテストです  
 ### これはテストです  
