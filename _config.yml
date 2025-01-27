@@ -3,8 +3,8 @@
 #options: ["UNSAFE", "SMART", "FOOTNOTES"]
 #extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
-plugins:
-  - jekyll-sitemap
+#plugins:
+#  - jekyll-sitemap
 
-google_analytics:
+#google_analytics:
 theme: jekyll-theme-minimal
