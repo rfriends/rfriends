@@ -26,9 +26,9 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 > sambaが△の場合はポート転送が必要になります。  
 > ポート転送設定は〇のものが簡単です。
   
-[rfriends_windows]:https://github.com/rfriends/rfriends_windows
-[rfriends_wsl]:https://github.com/rfriends/rfriends_wsl
-[rfriends_macos]:https://github.com/rfriends/rfriends_macos
+[rfriends_windows]:distro/windows.html
+[rfriends_wsl]:distro/wsl.html
+[rfriends_macos]:distro/macos.html
 [rfriends3_core]:https://github.com/rfriends/rfriends3_core
 [rfriends_ubuntu]:https://github.com/rfriends/rfriends_ubuntu
 [rfriends_stream9]:https://github.com/rfriends/rfriends_stream9
