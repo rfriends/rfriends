@@ -45,7 +45,7 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 [rfriends_windows]:distro/windows.html
 [rfriends_wsl]:distro/wsl.html
 [rfriends_macos]:distro/macos.html
-[rfriends_ubuntu]:distro/ubuntu.html
+[rfriends3_core]:distro/rfriends3_core.html
 [rfriends_stream9]:distro/stream9.html
 [rfriends_arch]:distro/arch.html
 [rfriends_raspberrypi]:distro/raspberrypi.html
