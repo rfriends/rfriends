@@ -13,15 +13,14 @@
   
 ### １．rfriends3関連のリンク一覧    
   
-|リンク|詳細|
-|---|---|
-|[マニュアル](manual/index.html)|rfriends3のマニュアル|
-|[活用事例](https://rfriends.hatenablog.com/entry/2024/08/14/113233)|rfriends3をもっと便利にする活用事例|
-|[X(twitter)](https://twitter.com/rfriends2017)|リリース情報、障害情報、TIPS等を発信|
-|[ブログ](https://rfriends.hatenablog.com/)|詳細な技術情報を発信|
-|[掲示板](http://ceres.s501.xrea.com/wforum/wforum.cgi)|質問、要望、感想など|
-|[レスキュー](manual/rescue.html)|rfriends3システムの起動不可等からの回復|
-|[レスキュー](manual/rescue.html)|rfriends3システムの起動不可等からの回復|
+|リンク|詳細|  
+|---|---|  
+|[マニュアル](manual/index.html)|rfriends3のマニュアル|  
+|[活用事例](https://rfriends.hatenablog.com/entry/2024/08/14/113233)|rfriends3をもっと便利にする活用事例|  
+|[X(twitter)](https://twitter.com/rfriends2017)|リリース情報、障害情報、TIPS等を発信|  
+|[ブログ](https://rfriends.hatenablog.com/)|詳細な技術情報を発信|  
+|[掲示板](http://ceres.s501.xrea.com/wforum/wforum.cgi)|質問、要望、感想など|  
+|[レスキュー](manual/rescue.html)|rfriends3システムの起動不可等からの回復|  
   
 ### ２．インストール  
   
