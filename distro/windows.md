@@ -33,8 +33,7 @@ https://github.com/rfriends/rfriends_windows/wiki/wmic
   
 上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、rfriends3をインストールしたい場所に保存します。  
   
-![clip_1](https://github.com/user-attachments/assets/a43b5c37-2e1e-4068-8d85-02f156b9a58d)  
-![1](https://github.com/user-attachments/assets/aa3e7fdb-ff79-42c0-a757-7ccf6350a586)
+![1](https://github.com/user-attachments/assets/aa3e7fdb-ff79-42c0-a757-7ccf6350a586)  
   
 > [!WARNING]  
 >「安全でないダウンロードがブロックされました」と表示されたら、「保存」をクリックすればダウンロードされます。  
@@ -45,34 +44,33 @@ https://github.com/rfriends/rfriends_windows/wiki/wmic
 　c:\Temp\windows_install.batを実行（ダブルクリック）します。  
 　下記のような画面が出たら、詳細情報をクリックすると、実行ボタンが表示されます。  
   
-![2-3](https://github.com/user-attachments/assets/b27a5cc4-6be1-4472-ad40-01d53b5b7a4c)  
+![2](https://github.com/user-attachments/assets/2d78308b-4fd1-4534-8b12-68eeb56a19b9)  
   
 実行をクリックします。  
   
-![clip_2](https://github.com/user-attachments/assets/964bf5e6-5e10-40c1-bfb2-2175ff63408d)  
+![3](https://github.com/user-attachments/assets/198ba710-8314-451f-b657-3bc08861186e)  
   
 　実行が開始されると、「処理を開始しますか (y/n) ?」と聞かれるので、yを入力してください。  
   
-![2-5](https://github.com/user-attachments/assets/d22c0d69-351e-45fe-8b45-f7ef08161739)  
-  
+![4](https://github.com/user-attachments/assets/59075292-5ec9-422e-981d-bde94f3642d1)  
   
 　処理が開始されると、初めにrfriends3本体のダウンロードが始まり、その後自動的に解凍が行われます。  
   
-![2-6](https://github.com/user-attachments/assets/2d11e4fe-37c2-4f4e-b9e6-b505bd56c1bd)  
+![5](https://github.com/user-attachments/assets/6b45dba3-560f-4154-8f7c-1ee8ed62041a)  
   
 　何かのキーを押せば、インストールは完了です。以下のようにc:\Tempにrfriends3ディレクトリが作成されます。windows_install.batは不要ですので、削除してかまいません。  
   
-![2-7](https://github.com/user-attachments/assets/94709710-653e-4ebc-a317-914cd54bdf52)  
+![6](https://github.com/user-attachments/assets/bb411e02-5b9f-4785-bf71-53411afaf80e)  
   
 　デスクトップにrf3server(WebServer)のショートカットが作成されます。  
   
-![2-8](https://github.com/user-attachments/assets/7d2925e0-7353-4aaf-942c-f3db9384af66)  
+![7](https://github.com/user-attachments/assets/020b2261-abd8-485a-a7f7-b84a245edea1)  
   
 ## ３．ビルトインウェブサーバの実行  
   
 　rfriends3を実行する前にウェブサーバを実行しておく必要があります。デスクトップのショートカットrf3serverをダブルクリックすると、ビルトインウェブサーバが実行されます。　c:\Temp\rfriends3\rf3server.batでも同様です。  
   
-![3-1](https://github.com/user-attachments/assets/8f68ebe4-8c36-47ed-99ed-ce3b116b4077)  
+![8](https://github.com/user-attachments/assets/b37110ca-41f2-4aef-9a38-06733cddc7da)  
   
 　ここに表示されるIPアドレス（ここでは、192.168.1.135:8000）をメモしてください。  
   
@@ -86,7 +84,7 @@ XXX.XXX.XXX.XXX:8000　
   
 と入力するとrfriends3が起動します。以下のような画面が出たら成功です。  
   
-![4-1](https://github.com/user-attachments/assets/b1db3100-809c-450f-9e1d-76014f6e7368)  
+![9](https://github.com/user-attachments/assets/1e06829e-9329-4d9b-a398-c75f16a4af88)  
   
 ## ５．rfriends3のアンインストール  
   
