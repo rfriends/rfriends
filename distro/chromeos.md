@@ -9,7 +9,7 @@
   
 　Panasonic Let's note CF-RZ4をchromebook化して検証しました。  
   
-![20240330131502](https://github.com/user-attachments/assets/b41c2c7b-cbb4-4401-a200-b8feecea5650)  
+![1](https://github.com/user-attachments/assets/7aafcfc9-0145-4be9-97c6-440dbfe99c15)  
   
 debian bookworm (ChromeOS FLexのLinux開発環境)  
   
@@ -29,19 +29,20 @@ https://support.google.com/chromebook/answer/9145439?hl=ja
   
 設定ー詳細設定から行えます。  
   
-![20240327025111](https://github.com/user-attachments/assets/222b2012-df92-4f15-956d-8e2e4d96f5e1)  
-  
+![2](https://github.com/user-attachments/assets/8e6433bb-5e07-462c-bad8-fb81bf94bd6a)  
+   
 Linux開発環境のインストールが終了したら、次に、ターミナルを選択します。  
   
-![20240327083853](https://github.com/user-attachments/assets/2c7af7c9-384f-4d3e-85c9-ab4a34f4c0df)  
+![3](https://github.com/user-attachments/assets/84ac89b2-187e-4caf-84a4-10b3fdfd80e4)  
   
 penguinを選択します。  
-![20240327025428](https://github.com/user-attachments/assets/d75175be-f0eb-4598-842d-1f0697fb7143)  
+  
+![4](https://github.com/user-attachments/assets/92afb5a4-b780-46d5-9fed-420140f0f04d)  
   
 Linux 開発環境のターミナルが立ち上がります。  
-   
-![20240327083913](https://github.com/user-attachments/assets/81aa58ae-e2aa-4305-acaa-04f97b0d1d0d)  
-   
+  
+![5](https://github.com/user-attachments/assets/69bd20bd-5a1b-45d7-8e5c-f7f19750c6af)  
+  
 以下、このターミナルで操作を行います。  
   
 ## ３．rfriends3のダウンロードとインストール  
@@ -62,12 +63,14 @@ sh install_ubuntu.sh
 ## ４．rfriends3の実行  
   
 ChromeOSのウェブブラウザを起動し、localhostにアクセスする。  
+  
 ```  
 http://localhost:8000  
 ```  
+  
 以下のような画面が出たら成功です。lighttpdは正常に動作しています。  
    
-![20240327030446](https://github.com/user-attachments/assets/2291f719-51d2-4734-a65b-2f76f90043e8)  
+![6](https://github.com/user-attachments/assets/4c981d8c-453a-4796-874f-3d4dbb35fbe7)  
    
 「ヘルプ」「システム更新」でシステムを最新にしてください。  
   
@@ -76,7 +79,7 @@ http://localhost:8000
 　Linux開発環境ではWell Known Port (0 - 1023)は使用できません。同一LAN内の他のPCからLinux開発環境にアクセスするには1023より大きなポート番号を割り当ててポートの転送を行う必要があります。  
 　web,ssh,sambaのポート番号はインストール時にあらかじめ指定（8000,2022,4445）しています。設定のポート転送を開いて以下の3つを追加してください。  
   
-![20240327033036](https://github.com/user-attachments/assets/f3cac18e-4aa0-40f0-ba01-ed02ea99b98b)  
+![7](https://github.com/user-attachments/assets/7f87254b-f6c7-4e30-8f53-7de3faf1ea86)  
   
 また、chromebookのIPアドレスは、ここでは192.168.1.158と表示されていますが、実行しているchromebookにより異なります。ご自分の環境に合わせてください。  
   
@@ -92,7 +95,7 @@ http://localhost:8000
 http://xxx.xxx.xxx.xxx:8000  
 ```  
   
-![20240327091822](https://github.com/user-attachments/assets/d7cce094-ba99-4ff5-8b1a-0a427a63fe03)  
+![8](https://github.com/user-attachments/assets/f5f0ae78-3db1-4436-b33c-a3a7d55b8c1e)  
   
 ### ６．２　sambaファイル共有  
   
@@ -104,31 +107,31 @@ smb://xxx.xxx.xxx.xxx:4445
   
 Linuxからはファイルアプリ等で他の場所を選択してください。  
   
-![20240327091845](https://github.com/user-attachments/assets/8229092e-bf6a-4c9a-82fe-cc08aa183067)  
+![9](https://github.com/user-attachments/assets/87309a72-3d81-4b3d-9748-a5d2907203b2)  
   
 また、スマホからでもファイルマネージャでアクセスできます。  
 androidの場合も各種ファイルマネージャで可能です。（ファイルマネージャ＋推奨）  
   
-![20240330124447](https://github.com/user-attachments/assets/1ca2157f-2434-482c-a9b1-34acff272a0b)  
+![10](https://github.com/user-attachments/assets/c2dfedeb-98aa-4917-b784-fd17a8ee6326)  
   
-![20240330124459](https://github.com/user-attachments/assets/6b45970c-d9f4-4d93-9e95-bf2ea266f57d)  
+![11](https://github.com/user-attachments/assets/838d3eb5-14eb-43f2-8350-6b3b39aba4e5)  
   
 ただし、windowsの場合sambaのポート番号を変更できないため標準ではアクセスできません。Owlfilesというアプリを使えば可能になります。  
   
-![20240327090624](https://github.com/user-attachments/assets/51dc1839-98fc-4098-8756-37817738f102)  
+![12](https://github.com/user-attachments/assets/5747133a-aad0-4062-82da-80f02b85d975)  
   
 chromebookのIPアドレスとポート番号(4445)を入力してください。  
   
-![20240327090635](https://github.com/user-attachments/assets/9e1c657b-aeeb-41b3-a3f2-b922c38cdf2d)  
+![13](https://github.com/user-attachments/assets/f9dbf60a-e5fa-453f-a56b-c2af6963ff09)  
   
 rfriends3の録音ディレクトリにアクセスできます。  
-   
-![20240327090659](https://github.com/user-attachments/assets/e9473439-ea1a-4215-b507-7574581d52cb)  
-   
+  
+![14](https://github.com/user-attachments/assets/c40b0037-bcc9-4dc3-97f4-b417113b07c5)  
+  
 iPhoneの場合も標準アプリでは変更できないので、Owlfilesアプリでアクセスします。匿名ではなくユーザ指定で行ってください。  
    
-![20240330120058](https://github.com/user-attachments/assets/de8e22b9-2a7d-41f0-b0a2-1260f3ea20fb)  
-   
+![15](https://github.com/user-attachments/assets/e8b85b6d-4628-4aba-aba1-ca67b89b5ed0)  
+  
 ### ６．３　sshアクセス  
   
 他ｐｃよりSSHアクセスが可能です。ただし、chromebookのLinux開発環境側で事前に以下のことを行っておく必要があります。  
@@ -165,7 +168,7 @@ $ sudo systemctl restart sshd.service
 $ ssh ユーザ名@xxx.xxx.xxx.xxx:2022  
 ```  
   
-![20240327092429](https://github.com/user-attachments/assets/1db521f3-c9bf-457c-a220-3bb1a7b3c282)  
+![16](https://github.com/user-attachments/assets/869fd9e0-6a2f-4285-8ca5-5a105eef00e5)  
   
 ### ６．４　sftpアクセス  
   
@@ -174,7 +177,7 @@ PCよりWindowsならFilezilla等のアプリを使用してアクセスしま�
   
 ポート番号、ユーザ名、パスワードはsshと同一です。  
   
-![20240329143218](https://github.com/user-attachments/assets/0a936726-712b-46bd-9d3b-a5d7193014e3)  
+![17](https://github.com/user-attachments/assets/21489efb-c114-420c-8f3d-7f1477786fa1)  
   
 ## ７．chromebookを再起動したとき  
   
