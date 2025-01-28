@@ -29,18 +29,17 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 [rfriends_windows]:distro/windows.html
 [rfriends_wsl]:distro/wsl.html
 [rfriends_macos]:distro/macos.html
-[rfriends3_core]:distro/rfriends3_core.html
-[rfriends_ubuntu]:distro/rfriends_ubuntu.html
-[rfriends_stream9]:distro/rfriends_stream9.html
-[rfriends_arch]:distro/rfriends_arch.html
-[rfriends_raspberrypi]:distro/rfriends_raspberrypi.html
-[rfriends_volumio]:distro/rfriends_volmio.html
-[rfriends_moode]:distro/rfriends_moode.html
-[rfriends_chromeos]:distro/rfriends_chromeos.html
-[rfriends_termux]:distro/rfriends_termux.html
-[rfriends_userland]distro/rfriends_userland.html
-[rfriends_lxd]:distro/rfriends_lxd.html
-[rfriends_docker]:distro/rfriends_docker.html
+[rfriends_ubuntu]:distro/ubuntu.html
+[rfriends_stream9]:distro/stream9.html
+[rfriends_arch]:distro/arch.html
+[rfriends_raspberrypi]:distro/raspberrypi.html
+[rfriends_volumio]:distro/volmio.html
+[rfriends_moode]:distro/moode.html
+[rfriends_chromeos]:distro/chromeos.html
+[rfriends_termux]:distro/termux.html
+[rfriends_userland]distro/userland.html
+[rfriends_lxd]:distro/lxd.html
+[rfriends_docker]:distro/docker.html
 
   
 ## rfriends3関連のリンク一覧    
