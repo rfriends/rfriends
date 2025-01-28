@@ -1,53 +1,53 @@
-## rfriends3�̃}�j���A��
+## rfriends3のマニュアル
   
-�e�@�\�̏ڍׂɂ��ẮA�E�T�C�h�̃��j���[��荀�ڂ�I�����Ă��������B 
+各機能の詳細については、右サイドのメニューより項目を選択してください。 
   
 > [!WARNING]  
-> �X�}�[�g�z���ł͉��̂ق��Ƀ��j���[���o�܂��B  
+> スマートホンでは下のほうにメニューが出ます。  
   
   
-�h���t�g 2024/12/27  
-�� �� 202x/xx/xx  
-��2�� 202x/xx/xx  
+ドラフト 2024/12/27  
+初 版 202x/xx/xx  
+第2版 202x/xx/xx  
   
-### �P�D�z�[����� 
+### １．ホーム画面 
   
-rfriends3���N������ƁA�ȉ��̂悤�ȉ�ʂ��\������܂��B  
-���Ƀ��j���[������܂��B  
-�ǂ̏�ʂł��urfriends3�v���N���b�N����ƁA���̉�ʂɖ߂�܂��B  
+rfriends3を起動すると、以下のような画面が表示されます。  
+左にメニューがあります。  
+どの場面でも「rfriends3」をクリックすると、この画面に戻ります。  
   
-�Ȃ��A�}�E�X�ł̓N���b�N�A�^�b�`�p�l���ł̓^�b�`�ł����A���̃}�j���A���ł̓N���b�N�œ��ꂵ�Ă��܂��B   
+なお、マウスではクリック、タッチパネルではタッチですが、このマニュアルではクリックで統一しています。   
   
 ![0](https://github.com/user-attachments/assets/c7f9dfef-892b-4503-a56e-299f638dd230)
   
-### �Q�D�i�r�Q�[�V�����o�[ 
+### ２．ナビゲーションバー 
   
-�z�[����ʂ̉E��ɂ͊e���񂪕\������܂��B 
+ホーム画面の右上には各種情報が表示されます。 
   
 ![01](https://github.com/user-attachments/assets/0256fb86-d1e5-448a-8dd8-13eb51540b3b)  
   
-| �\�� | �@�\ |
+| 表示 | 機能 |
 | :--- | :--- |
-| �z�[�� | �urfriends3�v�Ɠ��l�ɂ��̉�ʂɖ߂�܂�   |
-| webdav | webdav�@�\���L���̏ꍇ�ɕ\������A�N���b�N����ƁAwebdav��ʂɑJ�ڂ��܂�   | 
-| [xxxxx] | ���s���Ă���}�V���̃z�X�g�����\������܂� | 
-|�����i���j | �r���̉�ʂŕ\������܂����A�N���b�N����ƁA�O�̉�ʂɖ߂�܂��B | 
+| ホーム | 「rfriends3」と同様にこの画面に戻ります   |
+| webdav | webdav機能が有効の場合に表示され、クリックすると、webdav画面に遷移します   | 
+| [xxxxx] | 実行しているマシンのホスト名が表示されます | 
+|左矢印（←） | 途中の画面で表示されますが、クリックすると、前の画面に戻ります。 | 
   
-### �R�D�X�e�[�^�X��� 
+### ３．ステータス画面 
   
-�z�[����ʂ̉E���ɂ̓X�e�[�^�X���\������܂��@
+ホーム画面の右中にはステータスが表示されます　
   
-| �^�C�g�� |�l | ���� |
+| タイトル |値 | 説明 |
 | :---  | :---  | :--- |
-| |2024/12/27 (��) 22:19:01 | ���݂̓��t�Ǝ��Ԃł��A�����X�V�͂���܂���  |  
-| prem | main: JP13 home: JP14 | ���W�R�v���~�A���ݒ肪�L���̎��́A���̍����\������܂�   |
-| ���W�R | JP13,�����s (0) |   ���W�R�̌��݂̒n���񂨂�ї\�񐔂��\������܂�   |
-| �炶�� | tokyo (0) | �炶��̒n���񂨂�ї\�񐔂��\������܂�   |
-| �c�e��	 | 50 GB / 56 GB | �f�o�C�X�̎c�e��/���e�ʂ��\������܂�   |
-| Ver.	 | 1.1.3 | rfriends3�̌��݂̃o�[�W�����ł�     |
-| upd	 | [1.1.3a , ] | rfriends3�̃A�b�v�f�[�g���[�����,�J����]�ł�   |
-| base   | /home/rpi/rfriends3/ | rfriends3�̃V�X�e���̂���ꏊ�ł�   |
-| usr	 | /home/rpi/smbdir/usr2/ | �^���f�[�^�̊i�[�ꏊ�ł�   |
-| tmp	 | /home/rpi/tmp/ | rfriends3���g�p����ꎞ�̈�̏ꏊ�ł�   |
+| |2024/12/27 (金) 22:19:01 | 現在の日付と時間です、自動更新はされません  |  
+| prem | main: JP13 home: JP14 | ラジコプレミアム設定が有効の時は、この項が表示されます   |
+| ラジコ | JP13,東京都 (0) |   ラジコの現在の地域情報および予約数が表示されます   |
+| らじる | tokyo (0) | らじるの地域情報および予約数が表示されます   |
+| 残容量	 | 50 GB / 56 GB | デバイスの残容量/総容量が表示されます   |
+| Ver.	 | 1.1.3 | rfriends3の現在のバージョンです     |
+| upd	 | [1.1.3a , ] | rfriends3のアップデート情報[安定版,開発版]です   |
+| base   | /home/rpi/rfriends3/ | rfriends3のシステムのある場所です   |
+| usr	 | /home/rpi/smbdir/usr2/ | 録音データの格納場所です   |
+| tmp	 | /home/rpi/tmp/ | rfriends3が使用する一時領域の場所です   |
   
   
