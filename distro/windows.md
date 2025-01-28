@@ -23,7 +23,7 @@ Windows10 (x64) 1809以降
   
 Windows11 24h2用 wmicのインストール方法について  
   
-[wmicのインストール方法](https://github.com/rfriends/rfriends_windows/wiki/wmic)  
+[wmicのインストール方法](wmic.md)  
   
 ## ２．インストール  
   
