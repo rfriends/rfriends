@@ -14,7 +14,7 @@
 [09](09.html){:target="_blank"}  
 [10](10.html){:target="_blank"}  
 
-[suppliment](suppliment.html){:target="_blank"}  
+[supplement](supplement.html){:target="_blank"}  
 [faq](faq.html){:target="_blank"}  
 
 [rescue](rescue.html){:target="_blank"}  
