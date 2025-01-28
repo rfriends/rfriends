@@ -1,14 +1,18 @@
+[戻る](https://rfriends.github.io/rfriends/)  
+  
 ## rfriends3のマニュアル  
 
-### １．チュートリアル
+### １．基本的な使い方  
+
+#### ・操作方法  
+
+[操作方法](00.html){:target="_blank"}  
   
-[tutorial](tutorial.html){:target="_blank"}  
+#### ・チュートリアル
+    
+[チュートリアル](tutorial.html){:target="_blank"}  
   
-### ２．基本的な使い方  
-  
-[00](00.html){:target="_blank"}  
-  
-### ３．マニュアル
+### ２．マニュアル
 
 |#|サブメニュー |  
 | :---  | :---  |  
@@ -23,15 +27,15 @@
 |09|[設定](09.html){:target="_blank"}|    
 |10|[ヘルプ](10.html){:target="_blank"}|    
   
-### ４．補足  
+### ３．補足  
   
-[supplement](supplement.html){:target="_blank"}  
+[補足](supplement.html){:target="_blank"}  
   
-### ５．FAQ  
+### ４．FAQ  
   
-[faq](faq.html){:target="_blank"}  
+[FAQ](faq.html){:target="_blank"}  
   
-### ６．レスキュー  
+### ５．レスキュー  
   
 [rescue](rescue.html){:target="_blank"}  
     
