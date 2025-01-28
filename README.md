@@ -33,7 +33,7 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 [rfriends_stream9]:distro/stream9.html
 [rfriends_arch]:distro/arch.html
 [rfriends_raspberrypi]:distro/raspberrypi.html
-[rfriends_volumio]:distro/volmio.html
+[rfriends_volumio]:distro/volumio.html
 [rfriends_moode]:distro/moode.html
 [rfriends_chromeos]:distro/chromeos.html
 [rfriends_termux]:distro/termux.html
