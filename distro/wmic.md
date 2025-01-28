@@ -2,7 +2,7 @@
   
 rfriends3では、録音状況の表示にwmicコマンドを使用しています。  
   
-![タイトルなし](https://github.com/user-attachments/assets/0639d6ba-9d9a-4554-ab3f-c23d47b4349d)
+![1](https://github.com/user-attachments/assets/e5471666-2618-4166-8a5a-0d44ba2bfd91)
 
 
 
@@ -16,7 +16,7 @@ rfriends3では、録音状況の表示にwmicコマンドを使用していま�
 ターミナル(Power Shell)を開いて、wmicと入力してください。  
 以下のように表示されたら、使えないので次に進んでください。  
   
-![clip_1](https://github.com/user-attachments/assets/3ec139ba-2eb6-4adf-acfc-145056b38db2)
+![2](https://github.com/user-attachments/assets/f1e85a04-14c1-4b4b-b64e-c224ec3d8aaf)
 
   
 ### 2. オプション  
@@ -24,28 +24,28 @@ rfriends3では、録音状況の表示にwmicコマンドを使用していま�
 設定 - システム - オプション機能  
 を選択してください。  
   
-![clip_2](https://github.com/user-attachments/assets/0b46a1d9-21ed-4348-b30c-3da51aa07ffb)
+![3](https://github.com/user-attachments/assets/498dcf3d-0d2e-4035-8920-86ffb509cde2)
 
   
 ### 3. 機能表示  
   
 オプション機能の「機能を表示」を選択してください。  
   
-![clip_3](https://github.com/user-attachments/assets/38f4dca2-b115-4126-880b-e606bf27e3d6)
+![4](https://github.com/user-attachments/assets/f92747f7-8690-4bf4-9376-3cc44e867c5d)
 
   
 ### 4. WMIC  
   
 「WMIC」をチェックして、「次へ」を選択してください。  
   
-![clip_4](https://github.com/user-attachments/assets/da2c8bb6-47a7-4107-a89e-8ef29a0b5ab7)
+![5](https://github.com/user-attachments/assets/b9926ab3-067a-456d-8bb1-b4b5e8e63505)
 
   
 ### 5. 追加  
   
 「追加」を選択してください。  
   
-![clip_5](https://github.com/user-attachments/assets/6c115456-164b-468b-80ea-ff038489cf0c)
+![6](https://github.com/user-attachments/assets/f88bdaa3-6e9e-412a-9135-d71088dc1e22)
 
   
 ### 6. オプション  
@@ -55,7 +55,7 @@ rfriends3では、録音状況の表示にwmicコマンドを使用していま�
 を選択してください。  
 WMICが追加中となっているはずです。  
   
-![clip_6](https://github.com/user-attachments/assets/9585f5d1-8e09-4db9-a502-b180ca7ecf5d)
+![7](https://github.com/user-attachments/assets/9900ad6b-9711-4afe-b1f5-088806426a1d)
 
   
 追加の完了までお待ちください。  
@@ -65,7 +65,7 @@ WMICが追加中となっているはずです。
   
 追加が完了すると、表示が追加済みになります。  
   
-![clip_7](https://github.com/user-attachments/assets/51f09d39-a52c-4a76-ae44-c26b16929033)
+![8](https://github.com/user-attachments/assets/673b4258-4d6e-4039-9ad4-a554aa4bf162)
 
   
 ### 8. 確認  
@@ -73,7 +73,7 @@ WMICが追加中となっているはずです。
 ターミナル(Power Shell)を開いて、wmicと入力してください。  
 以下のように表示されたら、インストール成功です。  
   
-![clip_8](https://github.com/user-attachments/assets/350be4e8-29b0-40fa-80ec-86d550b210a0)
+![9](https://github.com/user-attachments/assets/2527338c-e52a-4a9a-9ef7-d0003bacb305)
 
   
   
