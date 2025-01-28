@@ -1,5 +1,7 @@
 ## rfriends3のマニュアル  
 
+[tutorial](tutorial.html){:target="_blank"}  
+  
 [00](00.html){:target="_blank"}  
 [01](01.html){:target="_blank"}  
 [02](02.html){:target="_blank"}  
@@ -12,6 +14,8 @@
 [09](09.html){:target="_blank"}  
 [10](10.html){:target="_blank"}  
 
+[suppliment](suppliment.html){:target="_blank"}  
+[faq](faq.html){:target="_blank"}  
 
 [rescue](rescue.html){:target="_blank"}  
   
