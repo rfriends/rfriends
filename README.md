@@ -29,18 +29,18 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 [rfriends_windows]:distro/windows.html
 [rfriends_wsl]:distro/wsl.html
 [rfriends_macos]:distro/macos.html
-[rfriends3_core]:https://github.com/rfriends/rfriends3_core
-[rfriends_ubuntu]:https://github.com/rfriends/rfriends_ubuntu
-[rfriends_stream9]:https://github.com/rfriends/rfriends_stream9
-[rfriends_arch]:https://github.com/rfriends/rfriends_arch
-[rfriends_raspberrypi]:https://github.com/rfriends/rfriends_raspberrypi
-[rfriends_volumio]:https://github.com/rfriends/rfriends_volumio
-[rfriends_moode]:https://github.com/rfriends/rfriends_moode
-[rfriends_chromeos]:https://github.com/rfriends/rfriends_chromeos
-[rfriends_termux]:https://github.com/rfriends/rfriends_termux
-[rfriends_userland]:https://github.com/rfriends/rfriends_userland
-[rfriends_lxd]:https://github.com/rfriends/rfriends_lxd
-[rfriends_docker]:https://github.com/rfriends/rfriends_docker
+[rfriends3_core]:distro/rfriends3_core
+[rfriends_ubuntu]:distro/rfriends_ubuntu
+[rfriends_stream9]:distro/rfriends_stream9
+[rfriends_arch]:distro/rfriends_arch
+[rfriends_raspberrypi]:distro/rfriends_raspberrypi
+[rfriends_volumio]:distro/rfriends_volmio
+[rfriends_moode]:distro/rfriends_moode
+[rfriends_chromeos]:distro/rfriends_chromeos
+[rfriends_termux]:distro/rfriends_termux
+[rfriends_userland]distro/rfriends_userland
+[rfriends_lxd]:distro/rfriends_lxd
+[rfriends_docker]:distro/rfriends_docker
 
   
 ## rfriends3関連のリンク一覧    
