@@ -34,6 +34,7 @@ https://github.com/rfriends/rfriends_windows/wiki/wmic
 上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、rfriends3をインストールしたい場所に保存します。  
   
 ![clip_1](https://github.com/user-attachments/assets/a43b5c37-2e1e-4068-8d85-02f156b9a58d)  
+![1](https://github.com/user-attachments/assets/aa3e7fdb-ff79-42c0-a757-7ccf6350a586)
   
 > [!WARNING]  
 >「安全でないダウンロードがブロックされました」と表示されたら、「保存」をクリックすればダウンロードされます。  
