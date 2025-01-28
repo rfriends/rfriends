@@ -29,31 +29,31 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 [rfriends_windows]:distro/windows.html
 [rfriends_wsl]:distro/wsl.html
 [rfriends_macos]:distro/macos.html
-[rfriends3_core]:distro/rfriends3_core
-[rfriends_ubuntu]:distro/rfriends_ubuntu
-[rfriends_stream9]:distro/rfriends_stream9
-[rfriends_arch]:distro/rfriends_arch
-[rfriends_raspberrypi]:distro/rfriends_raspberrypi
-[rfriends_volumio]:distro/rfriends_volmio
-[rfriends_moode]:distro/rfriends_moode
-[rfriends_chromeos]:distro/rfriends_chromeos
-[rfriends_termux]:distro/rfriends_termux
-[rfriends_userland]distro/rfriends_userland
-[rfriends_lxd]:distro/rfriends_lxd
-[rfriends_docker]:distro/rfriends_docker
+[rfriends3_core]:distro/rfriends3_core.html
+[rfriends_ubuntu]:distro/rfriends_ubuntu.html
+[rfriends_stream9]:distro/rfriends_stream9.html
+[rfriends_arch]:distro/rfriends_arch.html
+[rfriends_raspberrypi]:distro/rfriends_raspberrypi.html
+[rfriends_volumio]:distro/rfriends_volmio.html
+[rfriends_moode]:distro/rfriends_moode.html
+[rfriends_chromeos]:distro/rfriends_chromeos.html
+[rfriends_termux]:distro/rfriends_termux.html
+[rfriends_userland]distro/rfriends_userland.html
+[rfriends_lxd]:distro/rfriends_lxd.html
+[rfriends_docker]:distro/rfriends_docker.html
 
   
 ## rfriends3関連のリンク一覧    
   
 |リンク|詳細|
 |---|---|
-|[マニュアル](manual/)|rfriends3のマニュアル|
-|[チュートリアル](manual/tutorial.md)|rfriends3の基本的な使い方|
+|[マニュアル](manual/README.html)|rfriends3のマニュアル|
+|[チュートリアル](manual/tutorial.html))|rfriends3の基本的な使い方|
 |[活用事例](https://rfriends.hatenablog.com/entry/2024/08/14/113233)|rfriends3をもっと便利にする活用事例|
 |[X(twitter)](https://twitter.com/rfriends2017)|リリース情報、障害情報、TIPS等を発信|
 |[ブログ](https://rfriends.hatenablog.com/)|詳細な技術情報を発信|
 |[掲示板](http://ceres.s501.xrea.com/wforum/wforum.cgi)|質問、要望、感想など|
-|[レスキュー](manual/rescue.md)|rfriends3システムの起動不可等からの回復|  
+|[レスキュー](manual/rescue.html)|rfriends3システムの起動不可等からの回復|  
 
   
 ## rfriends3スクリーンショット  
