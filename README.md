@@ -43,7 +43,7 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 
   
 ## rfriends3関連のリンク一覧    
-<!--
+
 |リンク|詳細|
 |---|---|
 |[マニュアル](manual/README.html)|rfriends3のマニュアル|
@@ -53,7 +53,7 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 |[ブログ](https://rfriends.hatenablog.com/)|詳細な技術情報を発信|
 |[掲示板](http://ceres.s501.xrea.com/wforum/wforum.cgi)|質問、要望、感想など|
 |[レスキュー](manual/rescue.html)|rfriends3システムの起動不可等からの回復|  
--->
+
   
 ## rfriends3スクリーンショット  
   
