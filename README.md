@@ -20,7 +20,7 @@
 |[X(twitter)](https://twitter.com/rfriends2017)|リリース情報、障害情報、TIPS等を発信|
 |[ブログ](https://rfriends.hatenablog.com/)|詳細な技術情報を発信|
 |[掲示板](http://ceres.s501.xrea.com/wforum/wforum.cgi)|質問、要望、感想など|
-|[レスキュー](manual/rescue.html)|rfriends3システムの起動不可等からの回復|  
+|[レスキュー](manual/rescue.html)|rfriends3システムの起動不可等からの回復|
 　　
 ### ２．インストール  
   
