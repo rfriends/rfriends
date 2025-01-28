@@ -41,7 +41,7 @@ rfriends2 用です。
   
 [rescue-2.zip](https://raw.githubusercontent.com/rfriends/rfriends/main/storage/rescue-2.zip)   
   
-ダウンロードしたrescue_rfriends2.zipをダブルクリックします。  
+ダウンロードしたrescue-2.zipをダブルクリックします。  
 中のrfriends2フォルダをrfriends2がインストールされている場所にドラッグ＆ドロップしてください。  
 その際、「ファイルを置き換える」を選択してください。  
 その後、以下を実行してください。  
@@ -58,7 +58,7 @@ rf_up.bat
 cd ~/（rfriends2がインストールしている場所）  
 sudo apt-get install wget -y   
 wget https://raw.githubusercontent.com/rfriends/rfriends/main/storage/rescue-2.zip 
-unzip -o rescue_rfriends2.zip  
+unzip -o rescue-2.zip  
 cd rfriends2  
 sh rf_up.sh  
 ```  
