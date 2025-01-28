@@ -20,4 +20,7 @@
 ・[補足](supplement.html)  
   
 ・[FAQ](faq.html)  
+
+
+![clip_2](https://github.com/user-attachments/assets/6049ea52-25c4-4cee-8a29-515716bc5010)
   
