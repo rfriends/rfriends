@@ -1,7 +1,8 @@
 ## rfriends3のマニュアル  
 
-[00](00.html)  
-[rescue](rescue.html)  
+[00](00.html){:target="_blank"}  
+[01](01.html){:target="_blank"}  
+[rescue](rescue.html){:target="_blank"}  
   
 | タイトル |値 | 説明 |  
 | :---  | :---  | :--- |  
