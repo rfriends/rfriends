@@ -37,7 +37,7 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 [rfriends_moode]:distro/moode.html
 [rfriends_chromeos]:distro/chromeos.html
 [rfriends_termux]:distro/termux.html
-[rfriends_userland]distro/userland.html
+[rfriends_userland]:distro/userland.html
 [rfriends_lxd]:distro/lxd.html
 [rfriends_docker]:distro/docker.html
 
@@ -47,7 +47,7 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 |リンク|詳細|
 |---|---|
 |[マニュアル](manual/README.html)|rfriends3のマニュアル|
-|[チュートリアル](manual/tutorial.html))|rfriends3の基本的な使い方|
+|[チュートリアル](manual/tutorial.html)|rfriends3の基本的な使い方|
 |[活用事例](https://rfriends.hatenablog.com/entry/2024/08/14/113233)|rfriends3をもっと便利にする活用事例|
 |[X(twitter)](https://twitter.com/rfriends2017)|リリース情報、障害情報、TIPS等を発信|
 |[ブログ](https://rfriends.hatenablog.com/)|詳細な技術情報を発信|
