@@ -1,5 +1,6 @@
 ## rfriends3のマニュアル  
-  
+
+[00](00.html)  
 [rescue](rescue.html)  
   
 | タイトル |値 | 説明 |  
