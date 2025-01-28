@@ -42,7 +42,7 @@ rfriends3 用です。
    
 まず、以下のリンクより、レスキューシステム rescue.zipをダウンロードしてください。  
 
-[rescue.zip](https://github.com/rfriends/rfriends/blob/gh-pages/manual/rescue.zip)
+[rescue.zip](https://raw.githubusercontent.com/rfriends/rfriends/main/storage/rescue.zip)  
   
 ダウンロードしたrescue.zipをダブルクリックします。  
 中のrfriends3フォルダをrfriends3がインストールされている場所にドラッグ＆ドロップしてください。  
@@ -55,7 +55,7 @@ rescue.zipをrfriends3をインストールしている場所（通常ホーム�
 ```  
 cd ~/（rfriends3をインストールしている場所）  
 sudo apt-get install wget -y   
-wget https://github.com/rfriends/rfriends/blob/gh-pages/manual/rescue.zip 
+wget https://raw.githubusercontent.com/rfriends/rfriends/main/storage/rescue.zip  
 unzip -o rescue.zip  
 ```  
   
