@@ -17,16 +17,16 @@ userland,ubuntu22.04で動作確認しました。
 ## ２．UserLAndのインストール  
 　google playよりUserLAndをインストール  
   
-![20230714171458](https://github.com/user-attachments/assets/24a3bb0e-540b-4fbf-bb7b-b32bf331dd13)
-
+![1](https://github.com/user-attachments/assets/1b2e9afc-b8b5-4135-bbde-529e00b513c2)  
+  
 　Ubuntuを選択  
   
-![20230714171547](https://github.com/user-attachments/assets/c790cdba-099e-4858-b4c3-df03e0815421)
+![2](https://github.com/user-attachments/assets/4fd8776a-f14b-4027-a40f-34b2bed22a76)  
   
 Ubuntu、permissionOK、メディアアクセス許可、Minimal、Terminalの選択でセットアップが始まります。インストールが完了すると、以下のようなメッセージが出ます。  
   
-![20230714171801](https://github.com/user-attachments/assets/48372460-28ff-437c-af5f-9410279126cb)
-
+![3](https://github.com/user-attachments/assets/7106d186-f3b0-45f5-89cf-456c624e8cfc)  
+  
 ## ３．rfriends3のインストール  
 rfriends3,lighttpdのインストールを行います。  
   
@@ -49,7 +49,7 @@ xxx.xxx.xxx.xxx:8000
   
 以下のような画面が出たら成功です。お気に入りに入れておくと便利です。  
   
-![20240227025019](https://github.com/user-attachments/assets/8967278c-360c-4d3f-845f-c6f7e105f324)
+![4](https://github.com/user-attachments/assets/cd404fa0-eb7b-495c-bfaa-5aa604214252)  
   
 同一Wifi-lanに接続された他端末からもアクセス可能です。  
   
@@ -63,16 +63,12 @@ xxx.xxx.xxx.xxx:8000
   
 にアクセスすると、rfriends3のusr2以下が見えます。ここに録音したデータが保存されています。  
   
-  
-![20240227031348](https://github.com/user-attachments/assets/3405d8fe-dbfb-4e20-88ec-10a4338e5e31)
-
+![5](https://github.com/user-attachments/assets/2c2e9f20-09e7-41ad-acdf-997d8f3daaad)  
   
 ## ６．wakelock  
 androidのスリープ時にもrfriends3の処理を継続したい場合、WakeLockを有効にしてください。ロック画面でacquire wakelockを押してください。以下のような画面になると思います。  
   
-  
-![20240227024006](https://github.com/user-attachments/assets/adc5b031-42c4-4694-bb97-b6271b115a9f)
-
+![6](https://github.com/user-attachments/assets/9b9da13a-6254-4c0b-a089-3622d760027b)  
   
 この設定をおこなうと、例えば毎朝05:25にtimefreeの実行等を行うことができますが、andoridの電池の消費量が増えます。手動ダウンロードのみで運用する場合は、設定の必要はありません。  
   
