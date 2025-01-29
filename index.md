@@ -49,8 +49,8 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 [rfriends3_core]:distro/rfriends3_core.html
 [rfriends_stream9]:distro/stream9.html
 [rfriends_arch]:distro/arch.html
-[rfriends_raspi_script]:distro/raspberrypi.md
-[rfriends_raspi_image]:distro/raspi_image.md
+[rfriends_raspi_script]:distro/raspberrypi.html
+[rfriends_raspi_image]:distro/raspi_image.html
 [rfriends_volumio]:distro/volumio.html
 [rfriends_moode]:distro/moode.html
 [rfriends_chromeos]:distro/chromeos.html
