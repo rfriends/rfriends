@@ -2,7 +2,8 @@
   
 　Windows サブシステム (WSL) では簡単にUbuntuが利用できます。それにrfriendsをインストールしてラジオ録音を楽しもうという企画です。  
   
-![wsl](https://github.com/user-attachments/assets/c8845ec9-aef0-4a5c-8c94-03bd17b9c693)
+![wsl](https://github.com/user-attachments/assets/c8845ec9-aef0-4a5c-8c94-03bd17b9c693)  
+![1](https://github.com/user-attachments/assets/429c1661-fd9c-4a80-87cb-cb3fb07661a4)  
   
 初版：2024/11/15  
 改版：2025/01/09  
@@ -53,8 +54,10 @@ PowerShell(管理者)を起動し、以下のコマンドを実行します。( 
 ```  
 PS> wsl --update  
 PS> wsl --install  
-```  
-![20241115111210](https://github.com/user-attachments/assets/52960a39-6746-4d94-9f54-69c0913f3176) 
+```
+  
+![20241115111210](https://github.com/user-attachments/assets/52960a39-6746-4d94-9f54-69c0913f3176)   
+![2](https://github.com/user-attachments/assets/0252b8a4-5579-4e74-9499-12ea1c9c37e3)  
   
 一旦、Windowsを再起動してください。  
   
@@ -113,8 +116,7 @@ Ubunutu 24.04 が実行されています。
 $ df  
 ```  
  
-![20241116100019](https://github.com/user-attachments/assets/a7ddf83a-13fc-49ff-8fc8-6bcd83f79d6b)
-
+![3](https://github.com/user-attachments/assets/ce362e42-dbca-40f6-837b-d4366358be5b)  
  
 C:\  が /mnt/c にマウントされています。バージョンによっては/media/c の場合もあります。その場合はrfriendsの録音ディレクトリの変更が必要です。  
   
@@ -162,8 +164,8 @@ PS> wsl --shutdown
   
 タスクバーの検索ボックスに"ubuntu"と入力してUbuntu を実行します。  
   
-![20241116034640](https://github.com/user-attachments/assets/6b15c5f7-f855-4785-87c0-0112dae2cbae)
-
+![4](https://github.com/user-attachments/assets/02d65525-cf2b-400c-980a-3c6704c2e1b9)  
+  
 ### 5.2 rfriends3のWebサーバへのアクセス  
   
 　4.でメモをしたIPアドレスを使ってrfriends3にアクセスします。  
@@ -174,17 +176,16 @@ xxx.xxx.xxx.xxx:8000
   
 と入力し、以下のような画面が出たら成功です。ブックマークすると便利です。  
   
-![20241116030429](https://github.com/user-attachments/assets/ba23cb33-6c33-474f-9b48-967d26b54f1e)
-
+![5](https://github.com/user-attachments/assets/e706bb5e-61a9-4da7-8d01-22ead1bab4ee)  
+  
 ### 5.3 rfrirnds3を最新にアップデート  
   
 ヘルプ - システム更新(SYS)  
   
 により、rfriends3を開発版（1.1.2-a03以上）にupdateします。  
+  
+![6](https://github.com/user-attachments/assets/29c43981-c720-4bd1-8328-d166a2e0f272)  
  
-![20241116041011](https://github.com/user-attachments/assets/7bf32fb3-2bcb-403d-9dab-5fcdb818209a)
- 
-
 以降、バージョンによりメニュー番号が異なっている可能性があります。  
   
 ### 5.4 デイリー処理の登録  
@@ -195,29 +196,28 @@ xxx.xxx.xxx.xxx:8000
   
 を選択し、crontab登録をクリックします。これにより、指定した時刻に予約・録音ができるようになります。  
   
-![20241116041030](https://github.com/user-attachments/assets/04d6e0e4-db13-4b0d-8023-a96e94f29c93)
-
+![7](https://github.com/user-attachments/assets/4f5064ae-8caa-4ccb-80e9-029949cb5ed8)  
+  
 　Windowsの場合、24時間稼働を想定していないことが多いので、さらにスリープしない設定が必要です。  
   
 ホストPC - 設定 > システム > 電源 > 画面およびスリープのタイムアウト  
   
 次の時間の経過後にデバイスをスリープ状態にする - なし  
   
-![20241116025514](https://github.com/user-attachments/assets/0c9e8961-72ce-4edc-8bdc-4ae2d15047c0)
-
+![8](https://github.com/user-attachments/assets/fa5eb0c1-e472-47f5-b42f-903353d49fb5)  
+  
 ## 6．確認テスト  
   
 Timefree - 録音・聴取  
   
 で、１，２個試しに録音してみてください。  
   
-![20241116030452](https://github.com/user-attachments/assets/c3ec6aaa-e7c6-453f-8c3f-f6b91cc53605)
-
-
-　録音が終了したら、ホストPCのディレクトリC:\rf3\usrを参照してください。録音したファイルがtimefree以下に見つかるとおもいます。  
+![9](https://github.com/user-attachments/assets/53a32b62-54de-45e0-93e4-46dfeeca2c4a)  
   
-![20241116030600](https://github.com/user-attachments/assets/536c241c-4184-4080-ba7b-6497b59350ac)
-
+　録音が終了したら、ホストPCのディレクトリC:\rf3\usrを参照してください。録音したファイルがtimefree以下に見つかるとおもいます。 
+  
+![10](https://github.com/user-attachments/assets/2af0c22c-bd42-4fc7-bfc0-2b29322522f9)  
+  
 　以上で、rfriendsのインストールは終了です。  
   
 ## ７．その他  
