@@ -28,36 +28,20 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 
 |#  |OS        |OS(詳細)| Lighttpd|samba|ポート転送|
 |:--:|:------  | :-------------------------------------- |:--:|:--:|:--:| 
-| 1| Windows   |[Windows][rfriends_windows]<br>[WSL+Ubuntu][rfriends_wsl]|-<br>〇|〇<br>△|-<br>△| 
-| 2| macOS     |[macOS][rfriends_macos]|△|-|-|
-| 3| Linux     |[**Ubuntu/debian**][rfriends3_core]<br>[Stream 9/Rocky][rfriends3_core]<br>[arch][rfriends3_core]|〇<br>〇<br>〇|〇<br>〇<br>〇|-<br>-<br>-|  
-| 4| RaspiOS   |[**RaspberryPi -script-**][rfriends_raspi_script]<br>[Volumio][rfriends_volumio]<br>[MoOde Player][rfriends_moode]|〇<br>〇<br>〇|〇<br>〇<br>〇|-<br>-<br>-|  
-| 5| RaspiOS   |[RaspberryPi -image-][rfriends_raspi_image]|〇|〇|-|  
-| 6| ChromeOS  |[**Linux開発環境**][rfriends_chromeos]|〇|△|〇|  
-| 7| androidOS |[**Termux**][rfriends_termux]<br>[UserLAnd][rfriends_userland]|〇<br>〇|△<br>△|△<br>△|  
+| 1| Windows   |[Windows](distro/windows.md)<br>[WSL+Ubuntu](distro/wsl.md)|-<br>〇|〇<br>△|-<br>△| 
+| 2| macOS     |[macOS](distro/macos.md)|△|-|-|
+| 3| Linux     |[**Ubuntu/debian**](distro/rfriends3_core.md)<br>[Stream 9/Rocky](distro/rfriends3_core.md)<br>[arch](distro/rfriends3_core.md)|〇<br>〇<br>〇|〇<br>〇<br>〇|-<br>-<br>-|  
+| 4| RaspiOS   |[**RaspberryPi -script-**](distro/raspberrypi.md)<br>[Volumio](distro/volumio.md)<br>[MoOde Player](distro/moode.md)|〇<br>〇<br>〇|〇<br>〇<br>〇|-<br>-<br>-|  
+| 5| RaspiOS   |[RaspberryPi -image-](distro/raspi_image.md)|〇|〇|-|  
+| 6| ChromeOS  |[**Linux開発環境**](distro/chromeos.md)|〇|△|〇|  
+| 7| androidOS |[**Termux**](distro/termux.md)<br>[UserLAnd](distro/userland.md)|〇<br>〇|△<br>△|△<br>△|  
 | 8| iOS       |なし|-|-|-| 
-| 9| コンテナ   |[LXD][rfriends_lxd]<br>[**Docker**][rfriends_docker]|〇<br>〇|△<br>△|△<br>〇|  
+| 9| コンテナ   |[LXD](distro/lxd.md)<br>[**Docker**](distro/docker.md)|〇<br>〇|△<br>△|△<br>〇|  
   
 > [!NOTE]
 > Lighttpdが非サポートの場合はビルトインサーバになります。  
 > sambaが△の場合はポート転送が必要になります。  
 > ポート転送設定は〇のものが簡単です。
-  
-[rfriends_windows]:distro/windows.html
-[rfriends_wsl]:distro/wsl.html
-[rfriends_macos]:distro/macos.html
-[rfriends3_core]:distro/rfriends3_core.html
-[rfriends_stream9]:distro/stream9.html
-[rfriends_arch]:distro/arch.html
-[rfriends_raspi_script]:distro/raspberrypi.html
-[rfriends_raspi_image]:distro/raspi_image.html
-[rfriends_volumio]:distro/volumio.html
-[rfriends_moode]:distro/moode.html
-[rfriends_chromeos]:distro/chromeos.html
-[rfriends_termux]:distro/termux.html
-[rfriends_userland]:distro/userland.html
-[rfriends_lxd]:distro/lxd.html
-[rfriends_docker]:distro/docker.html
   
 ### ３．rfriends3スクリーンショット  
   
