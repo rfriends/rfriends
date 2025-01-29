@@ -3,7 +3,7 @@
    
 　macにDocker Desktopをインストールして実行する。
   
-![スクリーンショット 2025-01-19 6 09 59](https://github.com/user-attachments/assets/8f44b07a-9fca-435e-a9b2-1073f4551bc5)
+![mac](https://github.com/user-attachments/assets/4859ae25-4a94-463e-a7fd-7826085fa1ea)
 
 ## １．Docker Desktopのインストール  
   
