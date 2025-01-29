@@ -8,7 +8,7 @@ http://radiko.jp/v3/program/date/YYYYMMDD/地区番号.xml
 http://radiko.jp/v3/program/date/20210625/JP13.xml  
   
 ### らじるらじる各地域のストリームURL  
-http://www.nhk.or.jp/radio/config/config_web.xml  
+<http://www.nhk.or.jp/radio/config/config_web.xml>  
   
 [area]  
   
