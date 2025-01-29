@@ -42,12 +42,12 @@ WindowsPCまたはLinuxPCが必要です。Macでも可能だと思います。A
 １）SDメモリーカードフォーマッター  
   
 SDメモリカードをフォーマットします。  
-https://www.sdcard.org/ja/downloads-2/formatter-2/  
+<https://www.sdcard.org/ja/downloads-2/formatter-2/>  
   
 ２）Win32DiskImager  
   
 イメージをSDメモリカードに書き込みます。  
-https://ja.osdn.net/projects/sfnet_win32diskimager/releases/  
+<https://ja.osdn.net/projects/sfnet_win32diskimager/releases/>  
   
 ### ssh,smb,ftpクライアント  
   
@@ -63,8 +63,8 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約1.3GB）  
   
-http://rfbuddy.s296.xrea.com/storage/rfriends3_1.1.2-a06_raspios_bullseye_lighttpd_20241105.zip
-http://rfbuddy.s296.xrea.com/storage/wpa_supplicant.conf
+<http://rfbuddy.s296.xrea.com/storage/rfriends3_1.1.2-a06_raspios_bullseye_lighttpd_20241105.zip>  
+<http://rfbuddy.s296.xrea.com/storage/wpa_supplicant.conf>  
   
 ## ２．イメージをmicroSDに書く。
   
@@ -116,7 +116,7 @@ RaspberrypiはDHCPで動作しています。IPアドレスの確認方法は、
 android, iPhoneでは、”Fing(無料版)”というアプリがお勧めです。  
   
 Advanced IP Scanner  
-http://www.advanced-ip-scanner.com  
+<http://www.advanced-ip-scanner.com>  
   
 スキャン結果より、RFRIENDS3 のものを探してください。(ラズベリーアイコンが表示されているもの)
 ```
@@ -136,6 +136,7 @@ RFRIENDS3 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
   
 注意：この操作をしないと大容量のmicroSDを使用していても4GB弱しか認識されません。  
 再起動後、領域が拡張されたことを確認してください。
+  
 ```
 $ df -h
 ```
@@ -151,7 +152,8 @@ $ df -h
 ### 8.1 使い方
   
 使い方について、まずは以下を参照してください。  
-[チュートリアル](https://github.com/rfriends/rfriends3/wiki/%EF%BC%90%EF%BC%90%EF%BC%8E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)  
+  
+[マニュアル](https://rfriends.github.io/rfriends/manual/index.html)   
   
 ### 8.2 samba
   
@@ -206,9 +208,11 @@ $ sudo fdisk -l /dev/sdb
 により使用している領域を把握  
   
 ４）イメージのバックアップ  
+  
 ```
 $ sudo dd if=/dev/sdb of=***/rfriends*.img count=****** bs=512
 ```
+  
 でイメージのバックアップを取りました。  
   
 ５）完成  
@@ -237,8 +241,5 @@ $ vcgencmd measure_temp
 temp=48.7’C
 ```
   
-
-
 以上
-
-
+  
