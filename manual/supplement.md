@@ -34,9 +34,15 @@ http://api.nhk.or.jp/r2/pg/list/4/[area]/[ch]/YYYY-MM-DD.json
   
 <http://api.nhk.or.jp/r2/pg/list/4/130/r1/2025-01-01.json>  
   
+<http://www.nhk.or.jp/hensei/api/sche.cgi?c=4&mode=xml>  
+  
+<https://www.nhk.or.jp/radio/config/config_web.xml>  
+  
 ### らじる聞き逃し配信アドレス  
   
 <http://www.nhk.or.jp/radioondemand/json/index/index.json>  
+<https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/corners/onair_dates>  
+<https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/corners?onair_date=20250129>  
   
 番組例  
   
