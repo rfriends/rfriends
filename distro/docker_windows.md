@@ -6,13 +6,11 @@
 
 ## １．Docker Desktopのインストール  
   
-```
 [Docker Desktopをインストール](https://docs.docker.jp/docker-for-windows/install.html)  
 に従って、Docker Desktopをインストールしてください。 
   
 ・次に、Git Bashをインストールしてください。  
 [Git Bash](https://gitforwindows.org/)  
-```
   
 Windows Terminalでgitが使用できるようにする。 
    
