@@ -2,8 +2,7 @@
   
 　Windows サブシステム (WSL) では簡単にUbuntuが利用できます。それにrfriendsをインストールしてラジオ録音を楽しもうという企画です。  
   
-![wsl](https://github.com/user-attachments/assets/c8845ec9-aef0-4a5c-8c94-03bd17b9c693)  
-![1](https://github.com/user-attachments/assets/429c1661-fd9c-4a80-87cb-cb3fb07661a4)  
+![1](https://github.com/user-attachments/assets/429c1661-fd9c-4a80-87cb-cb3fb07661a4)   
   
 初版：2024/11/15  
 改版：2025/01/09  
@@ -56,7 +55,6 @@ PS> wsl --update
 PS> wsl --install  
 ```
   
-![20241115111210](https://github.com/user-attachments/assets/52960a39-6746-4d94-9f54-69c0913f3176)   
 ![2](https://github.com/user-attachments/assets/0252b8a4-5579-4e74-9499-12ea1c9c37e3)  
   
 一旦、Windowsを再起動してください。  
