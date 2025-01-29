@@ -1,4 +1,6 @@
 ## rfriends3 for RaspebrryPiの使用方法（スクリプト編）    
+
+RaspiOSのイメージにrfriends3をスクリプトによりインストールします。  
   
 ## 1. 純正のimagerを使用してmicroSDを作成する。     
    https://www.raspberrypi.com/software/  
