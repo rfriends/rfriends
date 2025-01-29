@@ -12,7 +12,7 @@ microSDに書いて起動するだけでrfriends3が使用できます。
 ・Raspberry Pi 3 Model B
 ・Raspberry Pi Zero W/Zero 2W  
   
-![20190821112722](https://github.com/user-attachments/assets/182b6c43-674a-4590-bd99-aaff592a810e)  
+![1](https://github.com/user-attachments/assets/d30f2827-62d3-4f20-a60e-2bf5e72a6e13)  
   
 ### Network環境  
   
@@ -70,21 +70,21 @@ http://rfbuddy.s296.xrea.com/storage/wpa_supplicant.conf
   
 zipファイルを解凍しimgファイルを抽出する。（約8GB）  
 Win32DiskImagerを使って、imgファイルをmicroSDに書く。  
-![20190821130510](https://github.com/user-attachments/assets/2dd51053-0167-4e91-a4cc-ed2f91ab1ab9)
-
+  
+![2](https://github.com/user-attachments/assets/c1d4954e-90d6-432a-9d1c-2a8299f77691)  
   
 ## ３．wifiアクセス情報を追加する。
   
 有線LAN接続の場合、この設定は不要です。  
   
 イメージを書き込んだmicroSDをPCに接続してください。以下のようなアラーム画面が出ますがキャンセルしてください。フォーマットしてはいけません。ドライブ名は環境により異なります。  
-![20190821143217](https://github.com/user-attachments/assets/b491c444-7b8c-4ba9-bfb4-5ae3574c7e7e)
   
+![3-1](https://github.com/user-attachments/assets/4870e36e-de56-42a2-bad3-e62ec20d08cd)  
+   
 エクスプローラで確認すると、bootという領域（fat32フォーマット）が認識されているはずです。  
   
-![20190821143153-500x74](https://github.com/user-attachments/assets/90116423-abcc-4edc-9ae2-1270b8b155d0)
+![3-2](https://github.com/user-attachments/assets/3c1c37ef-4dff-4a50-abfc-811db0b19bcb)  
   
-
 wpa_supplicant.confに自環境に合わせてssid,passwdを設定し、microSDに追加する。  
   
 ```
@@ -123,8 +123,8 @@ http://www.advanced-ip-scanner.com
 RFRIENDS3 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 ```
 こんな感じで見つかると思います。  
-![20230720011542-500x392](https://github.com/user-attachments/assets/554e93f2-2fa6-4baf-898c-2e88f568011d)
-
+  
+![4](https://github.com/user-attachments/assets/90e1c0db-6204-474d-96b3-e7725e2f400f)  
   
 ## ６．microSDの領域拡張を行う。  
   
@@ -139,8 +139,8 @@ RFRIENDS3 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 ```
 $ df -h
 ```
-![disksize-500x342](https://github.com/user-attachments/assets/be81c544-1f90-441f-8cf9-6029810280e1)
-
+  
+![5](https://github.com/user-attachments/assets/54b9ce5e-1c96-4b5d-a0b3-3b5812b299ea)  
   
 ## ７．rfriends3を最新にする。  
   
@@ -156,20 +156,18 @@ $ df -h
 ### 8.2 samba
   
 PCのエクスプローラから、\\192.168.1.100 でアクセス(smb)することにより録音データにアクセスできます。ほかのアプリを使う場合は、anonymousでアクセスしてください。  
-![20190821111224](https://github.com/user-attachments/assets/45380b02-7afd-4c11-adb8-20f9279b766b)
-
+  
+![6](https://github.com/user-attachments/assets/9e9dab09-d542-484b-a976-16a74d32ea18)  
   
 ### 8.3 ftp/sftp  
   
 ftp/sftp で192.168.1.100 にアクセスすることによりRaspberry Piに接続できます。  
-
   
-![20190823044236](https://github.com/user-attachments/assets/cb3aa3a5-5848-4c4f-a758-fa431446a730)
-
-
+![7](https://github.com/user-attachments/assets/cd253bca-1f68-4266-aa08-34951fd95620)  
+  
 接続すると、以下のような状態になります。あとは、録音データをD&DすればPC側に転送することができます。  
-![20190823045059](https://github.com/user-attachments/assets/64dcef7b-b3d4-4894-a65a-a42eea7d8d02)
-
+  
+![8](https://github.com/user-attachments/assets/af064ca0-5212-45e3-8503-8fe1f91f80eb)  
   
 ## ９．最後に  
   
@@ -223,8 +221,8 @@ GoogleDriveはサイズ制限が少ないので。
 
 ### 10.２ Raspberry Pi Zero Wの温度  
   
-![20190821112437](https://github.com/user-attachments/assets/4b118c10-94c6-4010-b362-149014ac95be)
-
+![9](https://github.com/user-attachments/assets/c3e978ce-aff9-4355-be10-a358d6f77a8d)  
+  
 ・アイドル時  
 使用電流 : 約40mA  
 CPU温度 : 40.1’C  
