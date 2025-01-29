@@ -2,7 +2,7 @@
    
 　ubuntuにDocker Engine, Composeをインストールして実行する。
   
-![Screenshot from 2025-01-19 06-43-11](https://github.com/user-attachments/assets/f2e75770-578f-4245-880b-f798a430c0f3)
+![lnx](https://github.com/user-attachments/assets/b37e4530-9416-4112-b76a-4e83f29ab8fe)
 
 ## １．Docker Enginee, Composeのインストール  
   
