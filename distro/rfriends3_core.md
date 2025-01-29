@@ -67,12 +67,12 @@ Sun 25 Feb 2024 07:07:16 AM JST
 　ディストリビューション別のrfriends3インストールスクリプトを実行します。各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
 ```  
-$ cd ~/  
-$ rm -rf rfriends_ubuntu   
+$ cd ~/
 $ sudo apt-get -y install git  
-$ git clone https://github.com/rfriends/rfriends_ubuntu.git  
-$ cd rfriends_ubuntu  
-$ sh rfriends_ubuntu.sh  
+$ rm -rf rfriends3_core   
+$ git clone https://github.com/rfriends/rfriends3_core.git  
+$ cd rfriends3_core  
+$ sh instal_XXXXX.sh  
 ```  
   
 これでインストールは完了です。  
