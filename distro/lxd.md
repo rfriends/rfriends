@@ -65,13 +65,15 @@ $ sudo lxc exec rfriends3 -- su radio
   
 以下のコマンドを実行し、rfriends3をインストールします。  
 ```  
-コンテナ：  
-$ cd ~/
-$ sudo apt-get install git -y  
-$ rm -rf rfriends3_ubuntu
-$ git clone https://github.com/rfriends/rfriends_ubuntu.git
-$ cd rfriends_ubuntu  
-$ sh rfriends_ubuntu.sh  
+コンテナ：
+  
+cd ~/  
+sudo apt-get install git -y  
+rm -rf rfriends3_core  
+git clone https://github.com/rfriends/rfriends3_core.git  
+cd rfriends3_core  
+sh install_ubuntu.sh  
+  
 finished  
   
 $ hostname -I  
