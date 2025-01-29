@@ -8,9 +8,10 @@
 ・Raspberry Pi 
 ・Raspberry Pi 2
 ・Raspberry Pi 3 Model B
-・Raspberry Pi Zero W/Zero 2W
-![20190821112722](https://github.com/user-attachments/assets/182b6c43-674a-4590-bd99-aaff592a810e)
-
+・Raspberry Pi Zero W/Zero 2W  
+  
+![20190821112722](https://github.com/user-attachments/assets/182b6c43-674a-4590-bd99-aaff592a810e)  
+  
 ### Network環境  
   
 １）WAN,LAN  
