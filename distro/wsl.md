@@ -1,7 +1,8 @@
 ## WSL+Ubuntu+rfriendsでラジオ番組を録音しよう  
   
 　Windows サブシステム (WSL) では簡単にUbuntuが利用できます。それにrfriendsをインストールしてラジオ録音を楽しもうという企画です。  
-![20241115110441](https://github.com/user-attachments/assets/eb8dcff9-fc62-42d7-86b0-009da6d93390)
+  
+![wsl](https://github.com/user-attachments/assets/c8845ec9-aef0-4a5c-8c94-03bd17b9c693)
   
 初版：2024/11/15  
 改版：2025/01/09  
