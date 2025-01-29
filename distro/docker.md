@@ -1,8 +1,7 @@
 ## dockerでrfriends3の実行環境を作成してラジオ番組を録音する   
    
 　rfriendsがどんなものか試してみたい方のためにdocker環境用に作成しました。 
-  
-　dockerに関しては初心者ですので、突っ込みどころ満載だと思います。  
+ Docker Engine, Docker Desktop for Windows, Docker Desktop for macOSに対応。  
   
 ![engine](https://github.com/user-attachments/assets/2d6ffc34-7771-438e-9057-0cf7ccb93a28)
   
