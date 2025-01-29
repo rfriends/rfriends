@@ -4,7 +4,7 @@
   
 　dockerに関しては初心者ですので、突っ込みどころ満載だと思います。  
   
-![スクリーンショット 2025-01-19 160852](https://github.com/user-attachments/assets/475ec1f1-9314-4aa3-92eb-6b1dcdad0249)
+![engine](https://github.com/user-attachments/assets/2d6ffc34-7771-438e-9057-0cf7ccb93a28)
   
 ## １．docker環境構築
     
