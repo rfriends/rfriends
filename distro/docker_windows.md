@@ -5,9 +5,9 @@
 ![win](https://github.com/user-attachments/assets/1ab06a07-e67e-422b-b7e4-473996614a6a)
 
 ## １．Docker Desktopのインストール  
-  
+
+・Docker Desktopをインストールしてください。 
 [Docker Desktopをインストール](https://docs.docker.jp/docker-for-windows/install.html)  
-に従って、Docker Desktopをインストールしてください。 
   
 ・次に、Git Bashをインストールしてください。  
 [Git Bash](https://gitforwindows.org/)  
