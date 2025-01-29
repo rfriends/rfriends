@@ -55,7 +55,7 @@ System clock synchronized: yes
 ユーザはradio、パスワードはpassと仮定します。    
 ```
 コンテナ：
-**root@rfriends3:~# adduser radio**
+** root@rfriends3:~# adduser radio **
 info: Adding user `radio' ...
 ...  
 New password: 
