@@ -23,21 +23,7 @@ exit
 |1|[docker_engine](docker_engine.md)|docker,docker-composeが動作する機種|  
 |2|[docker_windows](docker_windows.md)|windows用|  
 |3|[docker_macos](docker_macos.md)|macos用|  
-  
-  
-### 1.1 Docker Engine    
-  
-[engine](docker_engine.md)  
-  
-### 1.2 Docker desktop for Windows  
-  
-[windows](docker_windows.md)  
-  
-### 1.3 Docker desktop for macOS  
-  
-[macos](docker_macos.md)  
-  
-  
+    
 ## ２．コンテナの操作  
   
 Webで起動が確認出来たら、ctrl-cを3回でコンテナを停止させてください。  
