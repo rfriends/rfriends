@@ -99,6 +99,7 @@ git clone https://github.com/rfriends/rfriends3_core.git
 cd rfriends3_core  
 sh install_ubuntu.sh  
 
+インストールには時間がかかるので気長にお待ちください。  
 ...  
 IP address : 10.117.74.193/24
 Thu Jan 30 06:44:39 JST 2025
