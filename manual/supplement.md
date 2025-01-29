@@ -5,7 +5,7 @@ http://radiko.jp/v3/program/date/YYYYMMDD/地区番号.xml
   
 例  
   
-http://radiko.jp/v3/program/date/20210625/JP13.xml  
+<http://radiko.jp/v3/program/date/20250101/JP13.xml?  
   
 ### らじるらじる各地域のストリームURL  
 <http://www.nhk.or.jp/radio/config/config_web.xml>  
@@ -32,22 +32,23 @@ http://api.nhk.or.jp/r2/pg/list/4/[area]/[ch]/YYYY-MM-DD.json
   
 例  
   
-http://api.nhk.or.jp/r2/pg/list/4/130/r1/2021-06-25.json  
+<http://api.nhk.or.jp/r2/pg/list/4/130/r1/2025-01-01.json>  
   
 ### らじる聞き逃し配信アドレス  
   
-http://www.nhk.or.jp/radioondemand/json/index/index.json  
+<http://www.nhk.or.jp/radioondemand/json/index/index.json>  
   
 番組例  
   
-https://www.nhk.or.jp/radioondemand/json/0045/bangumi_0045_01.json  
+<https://www.nhk.or.jp/radioondemand/json/0045/bangumi_0045_01.json>  
   
 ### 地区番号  
-https://ja.wikipedia.org/wiki/ISO_3166-2:JP  
+<https://ja.wikipedia.org/wiki/ISO_3166-2:JP>  
   
 ### JSONエンコード・デコード  
   
 JSONエンコード・デコード：JSON文字列を配列に変換、逆変換   
-https://rakko.tools/tools/25/
+<https://rakko.tools/tools/25/>
 
+   
 
