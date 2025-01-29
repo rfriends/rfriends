@@ -124,7 +124,7 @@ exitしてもコンテナは動作したままです。
 ```
   
 でrfriends3が使えるようになります。  
-使用法についてはマニュアルを参照してください。
+使用法についてはマニュアルを参照してください。  
 <https://rfriends.github.io/rfriends/manual/index.html>
 　　  
 なお、コンテナを停止する場合は、  
