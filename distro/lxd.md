@@ -55,7 +55,7 @@ System clock synchronized: yes
 ユーザはradio、パスワードはpassと仮定します。    
 ```
 コンテナ：
-** root@rfriends3:~# adduser radio **
+root@rfriends3:~# adduser radio
 info: Adding user `radio' ...
 ...  
 New password: 
@@ -67,13 +67,17 @@ Enter the new value, or press ENTER for the default
 Is the information correct? [Y/n] 
 info: Adding new user `radio' to supplemental / extra groups `users' ...
 info: Adding user `radio' to group `users' ...
-  
-**root@rfriends3:~# gpasswd -a radio sudo**
+```
+radioユーザをsudoユーザに追加します。
+```
+コンテナ：
+root@rfriends3:~# gpasswd -a radio sudo
 Adding user radio to group sudo
-  
-**root@rfriends3:~# exit**  
-```  
+```
 ユーザの作成が完了したら、exitでコンテナからホストに戻ってください。  
+```
+root@rfriends3:~# exit  
+```  
   
 ## ３．rfriendsのインストール  
     
