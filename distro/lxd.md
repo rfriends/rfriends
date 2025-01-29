@@ -1,5 +1,4 @@
 ## rfriends3のインストール手順(LXD編）  
-[ホーム](https://rfriends.github.io/rfriends/)  
   
 　LXDでrfriends3の環境を作ってみました。    
    
