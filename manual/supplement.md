@@ -27,28 +27,24 @@ http://radiko.jp/v3/program/date/YYYYMMDD/地区番号.xml
 ラジオ第二　netr2 r2  
 ラジオFM　　netfm r3  
   
-### らじるらじる配信アドレス  
-http://api.nhk.or.jp/r2/pg/list/4/[area]/[ch]/YYYY-MM-DD.json  
-  
-例  
-  
-<http://api.nhk.or.jp/r2/pg/list/4/130/r1/2025-01-01.json>  
+### らじるらじる番組表  
   
 <http://www.nhk.or.jp/hensei/api/sche.cgi?c=4&mode=xml>  
   
+### らじるらじる配信アドレス  
+  
 <https://www.nhk.or.jp/radio/config/config_web.xml>  
   
-### らじる聞き逃し配信アドレス  
+### らじる聞き逃し配信日付一覧  
   
-<http://www.nhk.or.jp/radioondemand/json/index/index.json>  
 <https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/corners/onair_dates>  
-<https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/corners?onair_date=20250129>  
+
+### らじる聞き逃し配信アドレス（日付指定）  
   
-番組例  
-  
-<https://www.nhk.or.jp/radioondemand/json/0045/bangumi_0045_01.json>  
+https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/corners?onair_date=20250129  
   
 ### 地区番号  
+  
 <https://ja.wikipedia.org/wiki/ISO_3166-2:JP>  
   
 ### JSONエンコード・デコード  
