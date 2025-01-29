@@ -77,8 +77,9 @@ Terminalを開き、以下を入力します。
 IPアドレス:8000  
   
 と入力。以下のような画面が出たら成功です。  
-![20230613025138](https://github.com/user-attachments/assets/6c61a2c8-1879-4499-80aa-15ecde29021f)
   
+![1](https://github.com/user-attachments/assets/a4ff3cfb-98b5-48e5-97d2-4d3525e6b4e9)  
+   
 「ヘルプ」「システム更新」でシステムを最新にしてください。  
   
 ## ７．rfriends3のアンインストール  
