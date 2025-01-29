@@ -1,5 +1,7 @@
 ## rfriends3 for RaspebrryPiの使用方法（OSイメージ編）
-  
+
+あらかじめRaspiOSにrfriends3をインストールし、各種設定を行ったイメージです。  
+microSDに書いて起動するだけでrfriends3が使用できます。  
   
 ## ０．準備   
 
