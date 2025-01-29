@@ -98,27 +98,34 @@ rm -rf rfriends3_core
 git clone https://github.com/rfriends/rfriends3_core.git  
 cd rfriends3_core  
 sh install_ubuntu.sh  
-  
+
+...  
+IP address : 10.117.74.193/24
+Thu Jan 30 06:44:39 JST 2025
+end install common
 finished  
+```
   
-$ hostname -I  
-IPアドレスが表示されます。  
-  
-$ exit  
+このIP addressをメモしてください。  
+exitでコンテナからホストに戻ってください。  
+```
+コンテナ：
+radio@rfriends3:~$ exit  
 ```  
 exitしてもコンテナは動作したままです。
     
 ## ４．rfriends3の起動
   
-ホストのWEBブラウザから  
+ホストのWEBブラウザから上記で表示されたIPアドレスを入力します。   
   
-IPアドレス:8000  
+```
+10.117.74.193:8000  
+```
   
 でrfriends3が使えるようになります。  
-使用法については  
-[チュートリアル](https://github.com/rfriends/rfriends3/wiki/%EF%BC%90%EF%BC%90%EF%BC%8E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)   
-を参照してください。
-  
+使用法についてはマニュアルを参照してください。
+<https://rfriends.github.io/rfriends/manual/index.html>
+　　  
 なお、コンテナを停止する場合は、  
 ```
 ホスト：
@@ -126,9 +133,12 @@ $ sudo lxc stop rfriends3
 ```
 です。  
   
+## ５．その他  
+
+LXDに関しては、以下のサイトが非常に参考になります。  
+  
+[Dockerに疲れた人のためのLXDではじめるシステムコンテナ入門]
+<https://speakerdeck.com/devops_vtj/dockernipi-retaren-notamenolxddehazimerusisutemukontenaru-men>
+  
 以上  
   
-
-
-以下のサイトが非常に参考になります。  
-[Dockerに疲れた人のためのLXDではじめるシステムコンテナ入門](https://speakerdeck.com/devops_vtj/dockernipi-retaren-notamenolxddehazimerusisutemukontenaru-men)
