@@ -31,7 +31,7 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 | 1| Windows   |[Windows][rfriends_windows]<br>[WSL+Ubuntu][rfriends_wsl]|-<br>〇|〇<br>△|-<br>△| 
 | 2| macOS     |[macOS][rfriends_macos]|△|-|-|
 | 3| Linux     |[**Ubuntu/debian**][rfriends3_core]<br>[Stream 9/Rocky][rfriends3_core]<br>[arch][rfriends3_core]|〇<br>〇<br>〇|〇<br>〇<br>〇|-<br>-<br>-|  
-| 4| RaspiOS   |[**RaspberryPi**][rfriends_raspberrypi]<br>[Volumio][rfriends_volumio]<br>[MoOde Player][rfriends_moode]|〇<br>〇<br>〇|〇<br>〇<br>〇|-<br>-<br>-| 
+| 4| RaspiOS   |[**RaspberryPi**][rfriends_raspberrypi]<br[RaspberryPi image][rfriends_raspi_image]<br>[Volumio][rfriends_volumio]<br>[MoOde Player][rfriends_moode]|〇<br>〇<br>〇<br>〇|〇<br>〇<br>〇|-<br>-<br>-<br>-| 
 | 5| ChromeOS  |[**Linux開発環境**][rfriends_chromeos]|〇|△|〇|  
 | 6| androidOS |[**Termux**][rfriends_termux]<br>[UserLAnd][rfriends_userland]|〇<br>〇|△<br>△|△<br>△|  
 | 7| iOS       |なし|-|-|-| 
@@ -49,6 +49,7 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 [rfriends_stream9]:distro/stream9.html
 [rfriends_arch]:distro/arch.html
 [rfriends_raspberrypi]:distro/raspberrypi.html
+[rfriends_raspi_image]:distro/raspi_image.html
 [rfriends_volumio]:distro/volumio.html
 [rfriends_moode]:distro/moode.html
 [rfriends_chromeos]:distro/chromeos.html
