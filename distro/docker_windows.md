@@ -2,7 +2,7 @@
    
 　windowsにDocker Desktopをインストールして実行する。
   
-![スクリーンショット (1)](https://github.com/user-attachments/assets/b4a98475-36ef-4837-9486-b156d599e41b)
+![win](https://github.com/user-attachments/assets/1ab06a07-e67e-422b-b7e4-473996614a6a)
 
 ## １．Docker Desktopのインストール  
   
