@@ -1,5 +1,5 @@
 ## rfriends3はラジオ好きのためのプログラムです。  
-rfriends3のWebサイトはこちら] --> <https://rfriends.github.io/rfriends>    
+rfriends3のWebサイトはこちら --> <https://rfriends.github.io/rfriends>    
   
 * rfriends3はラジコ、らじるらじる、ポッドキャストを録音できます。  
 * rfriends3は操作がWEBサーバ（Lighttpd）経由で出来、とても簡単になっています。
