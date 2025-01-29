@@ -58,7 +58,7 @@ rfriends_docker-radio-1
 crontab登録時に復元データを自動で作成します。  
   
 ３）使用法については、マニュアルおよびチュートリアルを参考にしてください。  
-[マニュアル](https://github.com/rfriends/rfriends/blob/gh-pages/index.md))  
+[マニュアル](https://github.com/rfriends/rfriends/blob/gh-pages/manual/index.md)  
 [チュートリアル](https://github.com/rfriends/rfriends3/wiki/%EF%BC%90%EF%BC%90%EF%BC%8E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)  
   
 ## ４．データ保存・復元  
