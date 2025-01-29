@@ -31,11 +31,12 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
 | 1| Windows   |[Windows][rfriends_windows]<br>[WSL+Ubuntu][rfriends_wsl]|-<br>〇|〇<br>△|-<br>△| 
 | 2| macOS     |[macOS][rfriends_macos]|△|-|-|
 | 3| Linux     |[**Ubuntu/debian**][rfriends3_core]<br>[Stream 9/Rocky][rfriends3_core]<br>[arch][rfriends3_core]|〇<br>〇<br>〇|〇<br>〇<br>〇|-<br>-<br>-|  
-| 4| RaspiOS   |[**RaspberryPi -script-**][rfriends_raspi_script]<br>[RaspberryPi -image-][rfriends_raspi_image]<br>[Volumio][rfriends_volumio]<br>[MoOde Player][rfriends_moode]|〇<br>〇<br>〇<br>〇|〇<br>〇<br>〇<br>〇|-<br>-<br>-<br>-| 
-| 5| ChromeOS  |[**Linux開発環境**][rfriends_chromeos]|〇|△|〇|  
-| 6| androidOS |[**Termux**][rfriends_termux]<br>[UserLAnd][rfriends_userland]|〇<br>〇|△<br>△|△<br>△|  
-| 7| iOS       |なし|-|-|-| 
-| 8| コンテナ   |[LXD][rfriends_lxd]<br>[**Docker**][rfriends_docker]|〇<br>〇|△<br>△|△<br>〇|  
+| 4| RaspiOS   |[**RaspberryPi -script-**][rfriends_raspi_script]<br>[Volumio][rfriends_volumio]<br>[MoOde Player][rfriends_moode]|〇<br>〇<br>〇|〇<br>〇<br>〇|-<br>-<br>-|  
+| 5| RaspiOS   |[RaspberryPi -image-][rfriends_raspi_image]|〇|〇|-|  
+| 6| ChromeOS  |[**Linux開発環境**][rfriends_chromeos]|〇|△|〇|  
+| 7| androidOS |[**Termux**][rfriends_termux]<br>[UserLAnd][rfriends_userland]|〇<br>〇|△<br>△|△<br>△|  
+| 8| iOS       |なし|-|-|-| 
+| 9| コンテナ   |[LXD][rfriends_lxd]<br>[**Docker**][rfriends_docker]|〇<br>〇|△<br>△|△<br>〇|  
   
 > [!NOTE]
 > Lighttpdが非サポートの場合はビルトインサーバになります。  
