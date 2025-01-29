@@ -10,8 +10,7 @@
 以下のサイトを参考にインストールしてください。  
 公式のサイトからdmgファイルをダウンロードしてインストールするだけです。  
   
-Mac に Docker Desktop をインストール  
-https://docs.docker.jp/docker-for-mac/install.html  
+[Mac に Docker Desktop をインストール](https://docs.docker.jp/docker-for-mac/install.html)    
   
 ## ２．実行  
   
