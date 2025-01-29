@@ -16,12 +16,12 @@ https://gitforwindows.org/
   
 Windows Terminalでgitが使用できるようにする。 
    
-![g1](https://github.com/user-attachments/assets/40ba041a-1cb6-4ec4-aaad-252e95276294)
+![1](https://github.com/user-attachments/assets/27e1b965-ccc8-4f60-957b-3c89b621a3cf)
   
 ファイルを変更したときに改行コードを変更しない。  
   
-![g2](https://github.com/user-attachments/assets/0ac4ad71-602f-41a9-a6cd-ef67beb0d749)
-  
+![2](https://github.com/user-attachments/assets/570cc64c-a6e3-4e2f-88f5-8f194a7eefc0)  
+   
 ## ２．実行  
   
   まず、Windows Terminalを実行します。  
