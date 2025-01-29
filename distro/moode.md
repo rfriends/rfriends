@@ -2,7 +2,8 @@
   
 ミュージックプレーヤーMoOde上にrfriendsをインストールするという企画です。  
 音楽に加えて、ラジオのライブ放送や録音放送がRaspberryPiで楽しめるようになります。  
-![20240831124701](https://github.com/user-attachments/assets/994f6391-c68a-4494-af52-16559445f1e5)
+  
+![1](https://github.com/user-attachments/assets/1cd6790e-c995-4e30-95cf-2f58c0e8cb26)  
   
 初 版　2024/08/31  
 第6版　2025/01/09  
@@ -28,8 +29,8 @@ https://rfriends.hatenablog.com/entry/2022/05/01/154913
   
 　MoOdeにsshアクセスします。  
   
-![20240831125458](https://github.com/user-attachments/assets/6ee4ca1c-b2cf-4a61-a862-65925e295499)
-
+![2](https://github.com/user-attachments/assets/fc4e21a3-3a14-4b27-885b-0484cf9e3b4a)  
+  
 以下を入力し、インストールスクリプトをダウンロードし、インストールを行います。各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
 ```  
 cd ~/  
@@ -56,42 +57,43 @@ http://moode.local
 以下のような画面が出たら成功です。ブラウザはローカル(現在実行中のPC)でもリモート（同一ネットワーク上のPC,MAC,スマホ等）でもOKです。  
   
 「ヘルプ」「システム更新」でシステムを最新にしてください。  
-![20240831130519](https://github.com/user-attachments/assets/c185bc3f-d382-47cb-baea-825b3b7ceee2)
+  
+![3](https://github.com/user-attachments/assets/f2b0756d-0ae5-4ad0-b1d1-b781bb6ce700)  
   
 ## ３．動作確認 (ラジコを聴く)  
   
 まず、MoOde側で音量を絞ってください。トップ画面の右下のスピーカーアイコンをタップするとボリューム調整画面が表示されます。  
-![20240901085815](https://github.com/user-attachments/assets/97c73bbb-1949-458a-bcf1-27c3c641727e)
- 
   
+![4](https://github.com/user-attachments/assets/702aa07f-4018-4ac9-8ddc-dd002acf6ce6)  
   
 円周か、＋－をクリックすることで音量を調整できます。  
-![20240901085841](https://github.com/user-attachments/assets/4445a36f-4300-4d67-af94-10bb0d2fae93)
+  
+![5](https://github.com/user-attachments/assets/b243c3f5-e323-4e93-aa18-1586c8c82adb)  
   
 rfriendsのメニューで、ラジコ - 番組聴取 - 番組を選択し  
   
 聴取（サーバ）を選択すると音がスピーカから再生されます。  
   
 音量調整はMoOde側で行ってください。  
- 
-![20240901090217](https://github.com/user-attachments/assets/4a7338e3-a05b-4595-bbad-b81fc6ae8071)
- 
+  
+![6](https://github.com/user-attachments/assets/bf56b214-1e6c-4b4d-886d-10f4f2e829fc)  
   
 ## ４．ライブラリの更新  
 ラジコやらじるらじるの番組を録音しても、そのままではライブラリに登録されません。  
   
 m - Configure - Library - HomeIcon を選択します。  
  
-![20240902083648](https://github.com/user-attachments/assets/5dec454c-0e6b-47ac-a4ae-ce9682e40340)
- 
+![7](https://github.com/user-attachments/assets/af7cd6a4-e283-4445-bc61-8897a01578f3)  
+  
 m - Update Library を選択するとライブラリに登録されます。  
   
 その後、「SDCARD」を選択すると、録音した番組が表示され再生できるようになります。  
- 
-![20240902091743](https://github.com/user-attachments/assets/92e225e9-9be7-4437-97f2-f9bdc962a2c0)
- 
+  
+![8](https://github.com/user-attachments/assets/4dfa219f-9717-4092-a752-a381aa5b87ff)  
+  
 Library - Album を選択すると一覧が表示されます。  
-![20240903062807](https://github.com/user-attachments/assets/86a930dd-2097-4ad9-96bd-ecf13453a5f2)
+  
+![9](https://github.com/user-attachments/assets/4ae0689a-678e-4496-b8cb-48440d607457)  
   
 ## ５．その他  
   
