@@ -5,7 +5,9 @@ radiko ラジコ タイムフリー エリアフリー らじるらじる 聞き
 OSは Windows Linux macOS RaspberrypiOS ChromeOS Termux Volumio MoodeAudio に対応しています。  
   
 詳しくは、
-https://github.com/rfriends/rfriends3/wiki
+<https://rfriends.github.io/rfriends/>
 を参照してください。  
 
-![20240224025829](https://github.com/user-attachments/assets/60253553-b51f-41ea-b1d4-7194bfb12fbf)
+![1](https://github.com/user-attachments/assets/3198172f-df4b-4c92-a9e5-ab92ad92285d)
+
+  
