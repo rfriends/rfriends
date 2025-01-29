@@ -20,9 +20,9 @@ exit
 
 |#|docker|説明|  
 |---|---|---|  
-|1|[engine](docker_engine.md)|docker,docker-composeが動作する機種|  
-|2|[windows](docker_windows.md)|windows用|  
-|3|[macos](docker_macos.md)|macos用|  
+|1|[docker_engine](docker_engine.md)|docker,docker-composeが動作する機種|  
+|2|[docker_windows](docker_windows.md)|windows用|  
+|3|[docker_macos](docker_macos.md)|macos用|  
   
   
 ### 1.1 Docker Engine    
