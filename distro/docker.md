@@ -59,7 +59,6 @@ crontab登録時に復元データを自動で作成します。
   
 ３）使用法については、マニュアルおよびチュートリアルを参考にしてください。  
 [マニュアル](https://github.com/rfriends/rfriends/blob/gh-pages/manual/index.md)  
-[マニュアル](https://github.com/rfriends/rfriends/gh-pages/manual/index.md)  
   
 ## ４．データ保存・復元  
   
