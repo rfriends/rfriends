@@ -40,17 +40,38 @@ $ sudo lxc exec rfriends3 -- /bin/bash
 以下のコマンドを実行し、タイムゾーンを設定します。    
 ```
 コンテナ：    
-# ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime  
+root@rfriends3:~# timedatectl set-timezone Asia/Tokyo
+root@rfriends3:~# timedatectl  
+               Local time: Thu 2025-01-30 06:36:18 JST  
+           Universal time: Wed 2025-01-29 21:36:18 UTC  
+                 RTC time: n/a  
+                Time zone: Asia/Tokyo (JST, +0900)  
+System clock synchronized: yes  
+              NTP service: inactive  
+          RTC in local TZ: no  
 ``` 
   
 以下のコマンドを実行し、ユーザを作成します。  
 ユーザはradio、パスワードはpassと仮定します。    
 ```
-コンテナ：    
-# adduser radio  
-# passwd radio  
-# gpasswd -a radio sudo  
-# exit  
+コンテナ：
+**root@rfriends3:~# adduser radio**
+info: Adding user `radio' ...
+...  
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for radio
+Enter the new value, or press ENTER for the default
+...  
+Is the information correct? [Y/n] 
+info: Adding new user `radio' to supplemental / extra groups `users' ...
+info: Adding user `radio' to group `users' ...
+  
+**root@rfriends3:~# gpasswd -a radio sudo**
+Adding user radio to group sudo
+  
+**root@rfriends3:~# exit**  
 ```  
 ユーザの作成が完了したら、exitでコンテナからホストに戻ってください。  
   
