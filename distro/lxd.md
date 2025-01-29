@@ -76,6 +76,7 @@ Adding user radio to group sudo
 ```
 ユーザの作成が完了したら、exitでコンテナからホストに戻ってください。  
 ```
+コンテナ：
 root@rfriends3:~# exit  
 ```  
   
