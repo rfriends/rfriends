@@ -1,4 +1,4 @@
-rfriends3のインストール手順 （macOS編）  
+## rfriends3のインストール手順 （macOS編）  
   
 　rfriends3はWEBベースで操作が簡単になっています。  
   
