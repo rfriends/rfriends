@@ -1,8 +1,8 @@
 ### ラジオ好きのために  
   
 * rfriends3はラジコ、らじるらじる、ポッドキャストを録音・再生できます。
-* タイムフリー エリアフリー 聞き逃し ゴガク に対応しています。  
-* PC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)から操作できます。
+* タイムフリー、エリアフリー、聞き逃し、ゴガクに対応しています。  
+* PC,MAC,スマホ等のWEBブラウザ(chrome,edge,firefox,safari等)から操作できます。
 * sshによるcuiアクセスもできます。
 * Windows Linux macOS Raspberrypi ChromeOS Termux Volumio MoodeAudio LXD docker に対応しています。  
   
