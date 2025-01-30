@@ -1,4 +1,4 @@
-## dockerでrfriends3の実行環境を作成してラジオ番組を録音する   
+## docker版rfriends3でラジオ録音  
    
 　rfriendsがどんなものか試してみたい方のためにdocker環境用に作成しました。  
  Docker Engine, Docker Desktop for Windows, Docker Desktop for macOSに対応。  
