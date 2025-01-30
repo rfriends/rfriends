@@ -1,4 +1,4 @@
-## rfriends3 for RaspebrryPiの使用方法（スクリプト編）    
+## RaspebrryPi版rfriends3でラジオ録音（スクリプト編）    
 
 RaspiOSのイメージにrfriends3をスクリプトによりインストールします。  
   
