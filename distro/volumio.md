@@ -1,4 +1,4 @@
-## ミュージックプレーヤーVolumio上にrfriendsをインストールする。  
+## ミュージックプレーヤーVolumio版rfriends3でラジオ録音  
   
 　ミュージックプレーヤーvolumio上にrfriendsをインストールするという企画です。  
 音楽に加えて、ラジオのライブ放送や録音放送がRaspberryPiで楽しめるようになります。  
