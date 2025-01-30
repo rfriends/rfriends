@@ -1,4 +1,4 @@
-## rfriends3のインストール手順(LXD編）  
+## LXD版rfriends3でラジオ録音  
   
 　LXDでrfriends3の環境を作ってみました。    
    
