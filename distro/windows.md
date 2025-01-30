@@ -1,4 +1,4 @@
-## Windows版rfriends3のインストール手順  
+## Windows版rfriends3でラジオ録音  
   
 初 版　2023/06/13  
 第7版　2024/12/13　32bit版廃止  
