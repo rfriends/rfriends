@@ -32,7 +32,7 @@ $ docker ps -a
   
 
 |CONTAINER ID   |IMAGE       |NAMES|  
-|---|---|---|---|
+|---|---|---|---|  
 |7d58171ef373   |rfriends3   |rfriends_docker-radio-1 | 
   
 コンテナ名が、rfriends_docker-radio-1、となっているのがわかります。  
