@@ -1,4 +1,4 @@
-## rfriends3のインストール手順 (UserLAnd編)  
+## Android UserLAnd版rfriends3でラジオ録音  
   
 androidのUserLAnd版です。非常に簡単ですのでぜひ’試してみてください。  
   
