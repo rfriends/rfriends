@@ -31,9 +31,9 @@ Webで起動が確認出来たら、ctrl-cを3回でコンテナを停止させ�
 $ docker ps -a  
   
 
-|CONTAINER ID   |IMAGE       |COMMAND                  |CREATED          |STATUS                        |PORTS     |NAMES|  
-|---|---|---|---|---|---|---|
-|7d58171ef373   |rfriends3   |"sh ./docker_start.s…"   |11 |minutes ago   |Exited (137) 32 seconds ago             |rfriends_docker-radio-1 | 
+|CONTAINER ID   |IMAGE       |COMMAND   |NAMES|  
+|---|---|---|---|
+|7d58171ef373   |rfriends3   |"sh ./docker_start.s…"   |rfriends_docker-radio-1 | 
   
 コンテナ名が、rfriends_docker-radio-1、となっているのがわかります。  
 以下で再起動できます。  
