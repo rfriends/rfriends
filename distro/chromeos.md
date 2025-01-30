@@ -1,4 +1,4 @@
-## ChromeOSのLinux開発環境にrfriends3をインストールする。  
+## ChromeOSのLinux開発環境版friends3でラジオ録音  
   
 　その名の通り、chromebook (ChromeOS) のLinux 開発環境でrfriends3を動かしてみました。Linux 開発環境はdebianなので、ほとんど既存のスクリプトで動作します。  
   
