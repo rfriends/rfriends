@@ -51,5 +51,5 @@ rfriends3はいろいろな機種に対応しています。
 ![gallery](https://github.com/user-attachments/assets/fed28352-0636-472e-9015-51abea05e17a)  
   
 初版：2023/07/12  
-改版：2025/01/30  
+改版：2025/01/31  
   
