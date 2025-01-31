@@ -24,7 +24,7 @@
 rfriends3はいろいろな機種に対応しています。  
 下記の**OS(詳細)部分**をクリックすれば各機種用インストール方法にジャンプできます。  　
 
-|#  |OS        |OS(詳細)| Lighttpd|samba|
+|#  |OS        |OS(詳細)|Web|samba|
 |:--:|:------  | :-------------------------------------- |:--:|:--:| 
 | 1| Windows   |[Windows](distro/windows.md)<br>[WSL+Ubuntu](distro/wsl.md)|-<br>〇|〇<br>△| 
 | 2| macOS     |[macOS](distro/macos.md)|△|-|
@@ -38,8 +38,8 @@ rfriends3はいろいろな機種に対応しています。
 |10| コンテナ   |[**Docker**](distro/docker.md)<br>- Docker Engine<br>- Docker Desktop for Windows<br>- Docker Desktop for macOS|〇|△|  
    
 > [!NOTE]
-> Lighttpdが非サポートの場合はビルトインサーバになります。  
-> sambaが△の場合はポート転送が必要になります。  
+> WebサーバはLighttpdが標準ですが、非サポートの場合はビルトインサーバになります。  
+> sambaが△の場合はポート転送設定が必要になります。  
   
 ### ３．rfriends3スクリーンショット  
   
