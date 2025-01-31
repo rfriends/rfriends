@@ -6,5 +6,5 @@ show_downloads: false
 #github.repository_title: Home
 plugins:
   - jekyll-sitemap
-google_analytics:
+google_analytics: G-M55E6TSHC4
 theme: jekyll-theme-slate
