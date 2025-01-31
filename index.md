@@ -8,9 +8,6 @@
   
 ![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
   
-初版：2023/07/12  
-改版：2025/01/30  
-  
 ### １．rfriends3関連のリンク一覧    
   
 |リンク|詳細|  
@@ -50,8 +47,8 @@ OS(詳細)部分をクリックすれば各機種用インストール方法に�
   
 ![cli](https://github.com/user-attachments/assets/3e0df727-f70d-4e05-82b2-2b502c56b993)
   
-![gallery](https://github.com/user-attachments/assets/fed28352-0636-472e-9015-51abea05e17a)
+![gallery](https://github.com/user-attachments/assets/fed28352-0636-472e-9015-51abea05e17a)  
   
-  
-
+初版：2023/07/12  
+改版：2025/01/30  
   
