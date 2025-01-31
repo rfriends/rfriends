@@ -3,7 +3,7 @@
 * rfriends3はラジコ、らじるらじる、ポッドキャストを録音・再生できます。
 * タイムフリー、エリアフリー、聞き逃し、ゴガクに対応しています。  
 * PC,MAC,スマホ等のWEBブラウザ(chrome,edge,firefox,safari等)から操作できます。
-* sshによるcuiアクセスもできます。
+* sshアクセスもできます。
 * Windows Linux macOS Raspberrypi ChromeOS Termux Volumio MoodeAudio LXD docker に対応しています。  
   
 ![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
