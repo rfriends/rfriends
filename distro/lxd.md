@@ -134,8 +134,183 @@ exitしてもコンテナは動作したままです。
 $ sudo lxc stop rfriends3
 ```
 です。  
+
+> [!NOTE]
+> 以下は必要に応じて実行してください。  
   
-## ５．その他  
+## ５．外部PCからアクセス  
+  
+作成したコンテナに外部(home)からsshでアクセスできるようにします。  
+  
+[home] ----- (internet) ----- [ホスト：50022] - [コンテナ1：22]  
+  
+[home] ----- (internet) ----- [ホスト：50122] - [コンテナ2：22]  
+  
+### 5.1 コンテナにssh serverのインストール  
+  
+コンテナ側で以下のコマンドを実行  
+  
+```  
+$ sudo apt install openssh-sever  
+$ exit  
+```  
+  
+ホスト側で以下のコマンドを実行  
+  
+```  
+$ sudo lxc list  
+```  
+  
+rfriendsコンテナのIPV4アドレスが表示される。 xxx.xxx.xxx.xxx.xxxはrfriendsコンテナのIPアドレスとする。  
+  
+```  
+ssh radio@xxx.xxx.xxx.xxx  
+```  
+  
+でrfriendsコンテナにユーザradioでログインできるのを確認。  
+  
+```  
+$ exit  
+```  
+  
+### 5.2 コンテナにproxyデバイスを追加  
+  
+外部からrfriendsコンテナにSSHできるようにする。  
+  
+ホストのport:50022 -> rfriendsコンテナのport:22  
+  
+xxx.xxx.xxx.xxx.xxxはrfriendsコンテナのIPアドレス  
+  
+p50022の名前は任意。  
+  
+ポートが使われていないか調べる。使われていない場合、表示なし。  
+  
+```  
+$ lsof -i:50022  
+```  
+  
+proxyデバイスを追加  
+  
+```  
+$ sudo lxc config device add rfriends p50022 \  
+  proxy listen=tcp:0.0.0.0:50022 connect=tcp:xxx.xxx.xxx.xxx.xxx:22  
+```  
+  
+設定を削除したいときは  
+  
+```  
+$ sudo lxc config device remove rfriends p50022  
+```  
+  
+### 5.3 外部からrfriendsコンテナにssh  
+  
+```  
+ssh radio@yyy.yyy.yyy.yyy:50022  
+```  
+  
+yyy.yyy.yyy.yyyはホストのIPアドレス  
+  
+アクセスできない場合、firewall等でポートが閉じられていないか調べる。  
+  
+## ６．LXDで作成したコンテナを複製する方法  
+  
+### 6.1 現状確認  
+  
+以下はrootで操作しています。  
+  
+```  
+# lxc list  
+rfriends | RUNNING | XXX.XXX.XXX.XXX (eth0) | 省略 (eth0) | CONTAINER | 0    
+# lxc config device show rfriends  
+p50022:  
+ connect: tcp:XXX.XXX.XXX.XXX:22  
+ listen: tcp:0.0.0.0:50022  
+ type: proxy  
+```  
+  
+### 6.2 rfriendsコンテナを複製  
+  
+```  
+# lxc copy rfriends rfriends_copy  
+# lxc list  
+```  
+  
+| NAME         | STATE   | IPV4                   |  
+|--------------|---------|------------------------|  
+|rfriends      | RUNNING | XXX.XXX.XXX.XXX (eth0) |  
+|rfriends_copy | STOPPED |                        |  
+  
+### 6.3 proxyデバイスの設定  
+  
+１）rfriendsのproxy設定もcopyされているのを確認  
+  
+```  
+# lxc config device show rfriends_copy  
+p50022:  
+ connect: tcp:XXX.XXX.XXX.XXX:22  
+ listen: tcp:0.0.0.0:50022  
+ type: proxy  
+```  
+  
+２）rfriends_copyのproxy設定を削除  
+  
+ポート番号が重複することになるので削除  
+  
+```  
+# lxc config device remove rfriends_copy p50022  
+Device p50022 removed from rfriends_copy  
+```  
+  
+３）rfriends_copyコンテナをスタートさせる  
+  
+```  
+# lxc start rfriends_copy  
+```  
+  
+IPアドレスが振られているのを確認。  
+  
+```  
+# lxc list  
+```  
+  
+| NAME         | STATE   | IPV4                   |  
+|--------------|---------|------------------------|  
+|rfriends      | RUNNING | XXX.XXX.XXX.XXX (eth0) |  
+|rfriends_copy | RUNNING |                        |  
+  
+４）proxyデバイスを追加  
+  
+ポートが使われていないか調べる。使われていない場合、表示なし。  
+  
+```  
+$ lsof -i:50122  
+```  
+  
+proxyデバイスを追加  
+  
+```  
+$ sudo lxc config device add rfriends_copy p500122 \  
+  proxy listen=tcp:0.0.0.0:50122 connect=tcp:zzz.zzz.zzz.zzz:22  
+  
+Device p500122 added to rfriends_copy  
+```  
+  
+### 6.4 外部からrfriends_copyコンテナにssh  
+  
+```  
+ssh radio@yyy.yyy.yyy.yyy:50122  
+```  
+  
+yyy.yyy.yyy.yyyはホストのIPアドレス アクセスできない場合、firewall等でポートが閉じられていないか調べる。 データの転送は、teraterm(scp),Rlogin(sftp)が便利。  
+  
+### 6.5 その他  
+  
+以上でrfriendsコンテナと同じ環境のrfriends_copyコンテナが作成できました。 　同様の操作で、PCの能力が許す限りいくらでも複製できます。 rfriendsコンテナとrfriends_copyコンテナはポート番号の違いでアクセスできます。  
+  
+ssh radio@yyy.yyy.yyy.yyy:50022 (rfriends)  
+ssh radio@yyy.yyy.yyy.yyy:50122 (rfriends_copy)  
+  
+## ７．補足  
 
 LXDに関しては、以下のサイトが非常に参考になります。  
   
