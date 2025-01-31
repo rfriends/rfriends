@@ -29,7 +29,7 @@ sh rf_up.sh
   
 このような画面が表示されたら安定版を選択してアップデートしてください。  
   
-![clip_3](https://github.com/user-attachments/assets/bca96006-fe11-4feb-bde5-60be9d1177e1)  
+![1](https://github.com/user-attachments/assets/d045cef2-f2b6-495f-be92-d208d4fadd6a)  
   
 上記操作を行っても復帰しない場合は、２．以降を試してください。  
   
