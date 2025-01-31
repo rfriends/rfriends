@@ -12,6 +12,9 @@ userland,ubuntu22.04で動作確認しました。
 制限事項  
    
 ・atdが動作していないので、ラジコ、らじるらじるの予約録音ができません。   
+予約録音もしたい方は「Termux版rfriends3でラジオ録音」がおすすめです。  
+<https://rfriends.github.io/rfriends/distro/termux.html>  
+  
 ・cronは動作するので、毎日決まった時間にタイムフリー、聞き逃しを実行するというようなことは可能です。  
   
 ## ２．UserLAndのインストール  
