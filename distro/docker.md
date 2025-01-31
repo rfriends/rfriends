@@ -1,6 +1,8 @@
 ## docker版rfriends3でラジオ録音  
    
 　rfriendsがどんなものか試してみたい方のためにdocker環境用に作成しました。  
+ コンテナを終了させても、録音データ、パラメータ設定は消えないようにしました。  
+   
  Docker Engine, Docker Desktop for Windows, Docker Desktop for macOSに対応。  
   
 ![engine](https://github.com/user-attachments/assets/2d6ffc34-7771-438e-9057-0cf7ccb93a28)
