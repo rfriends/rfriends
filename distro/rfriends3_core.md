@@ -1,5 +1,5 @@
 ## Linux版rfriends3でラジオ録音  
-　　
+  
 rfriends2はCLIベースでしたが、rfriends3はWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux版です。(ubuntu/debian/stream9/rocky/arch/chrome)  
 インストールは全自動で行います。  
