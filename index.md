@@ -29,8 +29,8 @@ rfriends3はいろいろな機種に対応しています。
 | 1| Windows   |[Windows](distro/windows.md)<br>[WSL+Ubuntu](distro/wsl.md)|-<br>〇|〇<br>△| 
 | 2| macOS     |[macOS](distro/macos.md)|△|-|
 | 3| Linux     |[**Linux**](distro/rfriends3_core.md)<br>- Ubuntu / Debian<br>- Stream 9 / Rocky<br>- arch|〇|〇|  
-| 4| RaspiOS   |[**RaspberryPi -script-**](distro/raspberrypi.md)<br>[Volumio](distro/volumio.md)<br>[MoOde Player](distro/moode.md)|〇<br>〇<br>〇|〇<br>〇<br>〇|  
-| 5| RaspiOS   |[RaspberryPi -image-](distro/raspi_image.md)|〇|〇|  
+| 4| RaspiOS   |[**RaspberryPi -script-**](distro/raspberrypi.md)<br>[RaspberryPi -image-](distro/raspi_image.md)|〇<br>〇|〇<br>〇|  
+| 5| RaspiOS   |[Volumio](distro/volumio.md)<br>[moode audio](distro/moode.md)|〇<br>〇|〇<br>〇|  
 | 6| ChromeOS  |[**Linux開発環境**](distro/chromeos.md)|〇|△|  
 | 7| androidOS |[**Termux**](distro/termux.md)<br>[UserLAnd](distro/userland.md)|〇<br>〇|△<br>△|  
 | 8| iOS       |なし|-|-| 
