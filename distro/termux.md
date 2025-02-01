@@ -85,6 +85,7 @@ $ termux-change-repo
 >   
   
 2) ダウンロードディレクトリにあるtermux.zipを解凍し実行する。   
+   unzipでメッセージが出ますが無視してかまいません。    
   
 ```  
 $ cd  
