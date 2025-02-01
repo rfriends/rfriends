@@ -8,7 +8,7 @@
 > インストール時にセキュリティ関連のアラームが表示されますが、基本は許可で進めてください。気になる方はインストールを中止してください。  
   
 初版：2021/01/19  
-改版：2025/01/29  
+改版：2025/02/01
   
 ## １．準備  
   
@@ -20,7 +20,7 @@ androidOS5.0未満では動作しません。
   
 以下のリンクよりインストールスクリプトをスマホのダウンロードディレクトリにダウンロードしてください。  
   
-<https://raw.githubusercontent.com/rfriends/rfriends_termux/main/t.zip>   
+<https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.zip>   
   
 ## ２．Termuxのインストール   
   
@@ -71,15 +71,14 @@ Termuxを起動してください。
   
 ### 3.2 ツールおよびrfriends3をインストールする  
   
-1) ダウンロードディレクトリにあるt.zipを解凍し実行する。  
-ファイル名は入力数を極力抑えるため、t.shにしています。  
+1) ダウンロードディレクトリにあるtermux.zipを解凍し実行する。   
   
 ```  
 $ cd  
 $ termux-setup-storage  
 $ cd storage/downloads/  
-$ unzip t.zip  
-$ sh t.sh  
+$ unzip termux.zip  
+$ sh termux.sh  
 ```  
   
 2) 途中、以下のメッセージが出たら許可をタップしてください。  
