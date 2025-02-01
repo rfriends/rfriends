@@ -8,7 +8,7 @@
 > インストール時にセキュリティ関連のアラームが表示されますが、基本は許可で進めてください。気になる方はインストールを中止してください。  
   
 初版：2021/01/19  
-改版：2025/02/01
+改版：2025/02/02
   
 ## １．準備  
   
@@ -84,14 +84,12 @@ $ termux-change-repo
 > しばらく時間を置いて再度termux-change-repoを実行してください。  
 >   
   
-2) ダウンロードディレクトリにあるtermux.zipを解凍し実行する。   
-   unzipでメッセージが出ますが無視してかまいません。    
+2) ダウンロードディレクトリにあるtermux.shを実行する。    
   
 ```  
 $ cd  
 $ termux-setup-storage  
 $ cd storage/downloads/  
-$ unzip termux.zip  
 $ sh termux.sh  
 ```
   
