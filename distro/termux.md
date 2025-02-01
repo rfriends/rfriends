@@ -95,10 +95,21 @@ $ sh termux.sh
 ![6](https://github.com/user-attachments/assets/f56c9f32-668a-4b44-b316-a650ded42b0b)  
   
 5) インストールスクリプトが完了したら、  
+
+```  
+1. exit で termux を終了  
+2. 再度 termux を起動  
+3. sh svenable.sh を実行  
   
 finished  
+```  
   
 が表示されます。  
+  
+> [!CAUTION]
+> もし、表示されない場合は、正常に終了していません。 
+> termuxのミラーサイトがダウンしている場合に発生します。  
+>時間を置いて、3.2のsh termux.shを実行してください。  
   
 次にexitを入力して、termuxを一旦終了してください。  
   
