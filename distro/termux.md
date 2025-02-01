@@ -82,20 +82,16 @@ $ unzip termux.zip
 $ sh termux.sh  
 ```
   
-2) 途中、以下のメッセージが出たら、y リターンキーを押してください。
-  
-   Do you want to continue? {y/n)
-  
-3) 途中、以下のメッセージが出たら許可をタップしてください。  
+2) 途中、以下のメッセージが出たら許可をタップしてください。  
   
 ![5](https://github.com/user-attachments/assets/94836c56-db2b-481f-8601-7c1b53e04273)  
   
   
-4) また、以下のメッセージが出たら、リターンキーを押してください。  
+3) また、以下のメッセージが出たら、リターンキーを押してください。  
   
 ![6](https://github.com/user-attachments/assets/f56c9f32-668a-4b44-b316-a650ded42b0b)  
   
-5) インストールスクリプトが完了したら、  
+4) インストールスクリプトが完了したら、  
 
 ```  
 1. exit で termux を終了  
