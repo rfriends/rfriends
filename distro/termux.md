@@ -74,7 +74,8 @@ Termuxを起動してください。
 1) ダウンロードディレクトリにあるtermux.zipを解凍し実行する。   
   
 ```  
-$ cd  
+$ cd
+$ termux-change-repo  
 $ termux-setup-storage  
 $ cd storage/downloads/  
 $ unzip termux.zip  
