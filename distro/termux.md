@@ -116,7 +116,7 @@ $ exit
 > [!CAUTION]  
 > もし、表示されない場合は、正常に終了していません。  
 > termuxのミラーサイトがダウンしている場合に発生します。  
-> 時間を置いて、3.2のsh termux.shを実行してください。  
+> 時間を置いて、3.2のsh termux.shを再実行してください。  
   
 ### 3.3 サービス（atd, crond,sshd,lighttpd）およびwake-lockの有効化  
   
