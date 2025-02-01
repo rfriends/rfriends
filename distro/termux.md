@@ -71,34 +71,46 @@ Termuxを起動してください。
   
 ### 3.2 ツールおよびrfriends3をインストールする  
   
-1) ダウンロードディレクトリにあるtermux.zipを解凍し実行する。   
+1) termuxのミラーサイトを変更する。   
   
 ```  
-$ cd
 $ termux-change-repo  
+```
+ミラーサイトの選択画面が出ますが、OKを選択（2度）してください。  
+  
+> [!CAUTION]  
+> Error: None of mirrors are accessable  
+> その後、上記のようなメッセージが出た場合はミラーサイトがすべてダウンしているので、  
+> しばらく時間を置いて再度termux-change-repoを実行してください。  
+>   
+  
+2) ダウンロードディレクトリにあるtermux.zipを解凍し実行する。   
+  
+```  
+$ cd  
 $ termux-setup-storage  
 $ cd storage/downloads/  
 $ unzip termux.zip  
 $ sh termux.sh  
 ```
   
-2) 途中、以下のメッセージが出たら許可をタップしてください。  
+3) 途中、以下のメッセージが出たら許可をタップしてください。  
   
 ![5](https://github.com/user-attachments/assets/94836c56-db2b-481f-8601-7c1b53e04273)  
   
   
-3) また、以下のメッセージが出たら、リターンキーを押してください。  
+4) また、以下のメッセージが出たら、リターンキーを押してください。  
   
 ![6](https://github.com/user-attachments/assets/f56c9f32-668a-4b44-b316-a650ded42b0b)  
   
-4) インストールスクリプトが完了したら、  
+5) インストールスクリプトが完了したら、  
 
 ```  
-1. exit で termux を終了  
+1. exit で termux を終了    
 2. 再度 termux を起動  
 3. sh svenable.sh を実行  
   
-finished  
+finished    
 ```  
   
 が表示されます。  
@@ -108,12 +120,12 @@ finished
   
 ```  
 $ exit   
-```
+```  
   
 > [!CAUTION]  
 > もし、表示されない場合は、正常に終了していません。  
 > termuxのミラーサイトがダウンしている場合に発生します。  
-> 時間を置いて、3.2のsh termux.shを再実行してください。  
+> 時間を置いて、3.2の最初からやり直してください。  
   
 ### 3.3 サービス（atd, crond,sshd,lighttpd）およびwake-lockの有効化  
   
