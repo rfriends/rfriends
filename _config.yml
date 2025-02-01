@@ -1,9 +1,6 @@
 title: rfriends3
 description: For all radio lovers
 show_downloads: false
-#github.is_project_page: false
-#github.repository_url: https://rfriends.github.io/rfriends/
-#github.repository_title: Home
 plugins:
   - jekyll-sitemap
 google_analytics: G-M55E6TSHC4
