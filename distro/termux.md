@@ -76,19 +76,27 @@ Termuxを起動してください。
 ```  
 $ termux-change-repo  
 ```
-ミラーサイトの選択画面が出ますが、OKを選択（2度）してください。  
+  
+ミラーをグループにするかシングルにするかの選択画面が出ますが、そのままOKを選択してください。  
+  
+![1](https://github.com/user-attachments/assets/0aa57fc5-5eef-41da-9869-67d0385a7630)  
+  
+ミラーグループの選択画面が出ますが、そのままOKを選択してください。   
+  
+![2](https://github.com/user-attachments/assets/89086643-38d8-4cba-9245-ab138f19831d)  
   
 > [!CAUTION]  
+> ミラーサイトのチェックが行われますが  
 > Error: None of mirrors are accessable  
-> その後、上記のようなメッセージが出た場合はミラーサイトがすべてダウンしているので、  
+> のようなメッセージが出た場合はミラーサイトがすべてダウンしているので、  
 > しばらく時間を置いて再度termux-change-repoを実行してください。  
 >   
   
 2) ダウンロードディレクトリにあるtermux.shを実行する。    
   
-```  
+```
 $ cd  
-$ termux-setup-storage  
+$ termux-setup-storage
 $ cd storage/downloads/  
 $ sh termux.sh  
 ```
