@@ -55,7 +55,9 @@ ENV gid=1000
   
 ### 2.3 イメージの作成および実行を行う。  
   
-```  
+```
+cd  
+cd rfriends_docker  
 docker compose up  
 ...  
   
