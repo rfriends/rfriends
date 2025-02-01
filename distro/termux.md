@@ -20,7 +20,7 @@ androidOS5.0未満では動作しません。
   
 以下のリンクよりインストールスクリプトをスマホのダウンロードディレクトリにダウンロードしてください。  
   
-<https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.zip>   
+<https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh>   
   
 ## ２．Termuxのインストール   
   
