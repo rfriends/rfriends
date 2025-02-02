@@ -172,46 +172,15 @@ xxx.xxx.xxx.xxx:8000
   
 ![9](https://github.com/user-attachments/assets/4db21ecd-f876-4fac-8a65-19d1f28fe9d5)
 
+### 4.2 チュートリアル  
+
+まずは、チュートリアルでrfriends3の操作に慣れてください。  
   
-### 4.2 rfriends3を最新にアップデート  
-  
-ヘルプ - システム更新(SYS)  
-  
-により、rfriends3を最新にupdateする。（通常は最新がインストールされているので不要）  
-  
-![10](https://github.com/user-attachments/assets/ad195d2f-5852-4200-85bb-533ea1ec1805)  
-  
-以降、バージョンによりメニュー番号が異なっている可能性があります。  
-  
-### 4.3 デイリー処理の設定  
-  
-設定 - 定期実行 - 登録  
-  
-を選択し、crontab登録をクリックします。これにより、指定した時刻に予約・録音ができるようになります。  
-  
-![11](https://github.com/user-attachments/assets/9aa2d0b4-6ea7-4061-ad58-74f7beeb7e2e)  
-  
-## ５．確認テスト  
-  
-Timefree - 録音・聴取  
-  
-で、１，２個試しに録音してみてください。  
-  
-![12](https://github.com/user-attachments/assets/c87f48b5-1a5d-4e70-8c24-e7dcd2b60506)  
-  
-　録音が終了したら、androidのファイルマネージャでダウンロードディレクトリ/usrを参照してください。  
-  
-![13](https://github.com/user-attachments/assets/e336afae-c1d1-4e3c-800a-4b3ab489650f)  
+[チュートリアル](https://rfriends.github.io/rfriends/manual/tutorial.html)  
    
-　録音したファイルがtimefree以下に見つかるとおもいます。  
+## ５．その他  
   
-![14](https://github.com/user-attachments/assets/867547ce-6915-406c-b2f8-30f90adf16ed)  
-  
-　以上で、インストールの確認は終了です。  
-  
-## ６．その他  
-  
-### 6.1 外部PCからのSSHアクセス  
+### 5.1 外部PCからのSSHアクセス  
   
 外部からSSHアクセスをしない方は以下の操作は不要です。  
   
@@ -233,7 +202,7 @@ teratermやRLoginを使用すると便利です。
   
 PCがLinuxでWARNINGが出て接続できないときはPCのホームディレクトリの.ssh/known_hostsを削除してみてください。  
   
-### 6.2 sftpによるファイル転送  
+### 5.2 sftpによるファイル転送  
   
 　sshによるアクセスができたらPCでsftpによるファイル転送に挑戦してみましょう。  
   
@@ -247,7 +216,7 @@ PCがLinuxでWARNINGが出て接続できないときはPCのホームディレ�
   
 ![16](https://github.com/user-attachments/assets/4a602a09-e98a-4289-942a-21b1c87c93c5)  
   
-### 6.3 録音ディレクトリ（内部、microSD）の設定  
+### 5.3 録音ディレクトリ（内部、microSD）の設定  
   
 　初期はスマホのダウンロードディレクトリに設定されています。通常はそのまま変更する必要はありません。  
   
