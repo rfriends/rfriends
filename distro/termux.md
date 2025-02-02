@@ -8,7 +8,7 @@
 > インストール時にセキュリティ関連のアラームが表示されますが、基本は許可で進めてください。気になる方はインストールを中止してください。  
   
 初版：2021/01/19  
-改版：2025/02/02
+改版：2025/02/03
   
 ## １．準備  
   
@@ -71,13 +71,19 @@ Termuxを起動してください。
   
 ### 3.2 ツールおよびrfriends3をインストールする  
   
-1) termuxのミラーサイトを変更する。   
-  
+1) ダウンロードディレクトリにあるtermux.shを実行する。    
+    
 ```  
-$ termux-change-repo  
-```
+$ cd  
+$ termux-setup-storage
+$ cd storage/downloads/
+$ ls  
+$ sh termux.sh  
+```  
+    
+2) termuxのミラーサイトを変更する。   
   
-ミラーをグループにするかシングルにするかの選択画面が出ますが、そのままOKを選択してください。  
+termux.shの実行途中で、ミラーをグループにするかシングルにするかの選択画面が出ますが、そのままOKを選択してください。  
   
 ![1](https://github.com/user-attachments/assets/0aa57fc5-5eef-41da-9869-67d0385a7630)  
   
@@ -86,22 +92,13 @@ $ termux-change-repo
 ![2](https://github.com/user-attachments/assets/89086643-38d8-4cba-9245-ab138f19831d)  
   
 > [!CAUTION]  
-> ミラーサイトのチェックが行われますが  
+> その後、ミラーサイトのチェックが行われますが  
 > Error: None of mirrors are accessable  
 > のようなメッセージが出た場合はミラーサイトがすべてダウンしているので、  
 > しばらく時間を置いて再度termux-change-repoを実行してください。  
 >   
   
-2) ダウンロードディレクトリにあるtermux.shを実行する。    
-  
-```
-$ cd  
-$ termux-setup-storage
-$ cd storage/downloads/
-$ ls  
-$ sh termux.sh  
-```  
-  
+
 3) 途中、以下のメッセージが出たら許可をタップしてください。  
   
 ![5](https://github.com/user-attachments/assets/94836c56-db2b-481f-8601-7c1b53e04273)  
@@ -120,20 +117,20 @@ $ sh termux.sh
   
 finished    
 ```  
-  
-が表示されます。  
 
-次にexitを入力して、termuxを一旦終了してください。  
+が表示されます。  
+  　
+> [!CAUTION]  
+> もし、表示されない場合は、正常に終了していません。  
+> termuxのミラーサイトがダウンしている場合に発生します。  
+> 時間を置いて、3.2の最初からやり直してください。  
+  
+6) 次にexitを入力して、termuxを一旦終了してください。  
 終了しないとサービスの有効化で失敗します。  
   
 ```  
 $ exit   
 ```  
-  
-> [!CAUTION]  
-> もし、表示されない場合は、正常に終了していません。  
-> termuxのミラーサイトがダウンしている場合に発生します。  
-> 時間を置いて、3.2の最初からやり直してください。  
   
 ### 3.3 サービス（atd, crond,sshd,lighttpd）およびwake-lockの有効化  
   
