@@ -40,7 +40,11 @@ macの方は以下のサイトを参考にインストールしてください�
 
 Windowsの方は以下の操作を行ってください。  
   
-・Docker Desktopをインストールしてください。  
+・以下よりDocker Desktopをダウンロードし、インストールしてください。    
+  
+[Docker Desktop](https://www.docker.com/get-started/)  
+
+詳細は以下を参考にしてください。  
   
 [Docker Desktop for Windows](https://docs.docker.jp/docker-for-windows/install.html)  
   
@@ -80,6 +84,8 @@ git clone https://github.com/rfriends/rfriends_docker.git
 ```
  
 ### 2.3 uid,gidの変更をおこなう。  
+
+windowsユーザの方は、この項を飛ばして2.4に進んでください。  
   
 > [!CAUTION]  
 > この修正をしなくても動作は可能ですが、shareディレクトリ内のファイルの修正ができない可能性があります。
@@ -129,11 +135,14 @@ rfriendsが使用できます。
   
 ホスト側で以下を実行してください。  
 ```
-$ hostname -I
+Linux,macOSの場合    
+$ hostname -I  
+windowsの場合    
+> IPCONFIG  
 192.168.1.142 ..........  
 ```
   
-ホストののIPアドレスが192.168.1.142の場合、
+ホストののIPアドレスが192.168.1.142の場合、ブラウザに
 ```
 http://192.168.1.142:8000
 ```
