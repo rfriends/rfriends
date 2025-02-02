@@ -10,8 +10,8 @@
   
 ## ０．前提  
   
-・ミュージック・プレーヤーMoOdeのインストール手順  
-https://rfriends.hatenablog.com/entry/2024/08/31/035134  
+・[ミュージック・プレーヤーMoOdeのインストール手順](https://rfriends.hatenablog.com/entry/2024/08/31/035134)    
+  
 に従ってRaspberryPiにMoOdeをインストールし正常に動作していること。  
 またSSHアクセスができていること。  
   
