@@ -9,7 +9,7 @@
   
 ## １．docker環境構築
   
-dockerのインストールからrfriends3の実行までは環境別に記述しています。  
+dockerのインストールは環境別に記述しています。  
   
 ### 1.1 Docker Enginee, Composeのインストール  
   
