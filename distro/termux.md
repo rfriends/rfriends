@@ -78,7 +78,8 @@ Termuxを起動してください。
 ```
 $ termux-setup-storage
 $ cd
-$ cd storage/downloads/  
+$ cd storage
+$ cd downloads  
 $ ls  
 com.termux_1020.apk termux.sh  
 ```  
