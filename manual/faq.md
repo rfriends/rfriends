@@ -20,7 +20,7 @@ Windows11 24H2にするとセキュリティが厳しくなりrfriends3のsamba�
   
 以下のサイトを参考に対処してください。  
   
-<https://www.iodata.jp/support/qanda/answer/s33570.htm>
+[Windows 11 24H2でNASにアクセスできない場合の対処方法](https://www.iodata.jp/support/qanda/answer/s33570.htm)  
    
 ### ラジコのエリアフリーには対応していますか？  
 対応しています。ラジコプレミアムの契約が必要です。  
