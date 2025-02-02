@@ -10,8 +10,7 @@
   
 ## ０．前提  
   
-ミュージック・プレーヤーvolumioのインストール手順  
-https://rfriends.hatenablog.com/entry/2024/08/24/174527  
+[ミュージック・プレーヤーvolumioのインストール手順](https://rfriends.hatenablog.com/entry/2024/08/24/174527)  
   
 に従ってRaspberryPiにVolumioをインストールし正常に動作していること。  
 また上記手順を参考にしてSSHアクセスができていること。  
