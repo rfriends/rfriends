@@ -148,7 +148,6 @@ $ exit
 termuxを再度起動後、termux-sevicesを使用してサービス（atd, crond,sshd,lighttpd）およびwake-lockを有効化する。  
   
 ```  
-$ cd  
 $ sh svenable.sh  
 ```  
   
