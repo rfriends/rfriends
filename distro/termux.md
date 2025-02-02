@@ -97,9 +97,10 @@ $ termux-change-repo
 ```
 $ cd  
 $ termux-setup-storage
-$ cd storage/downloads/  
+$ cd storage/downloads/
+$ ls  
 $ sh termux.sh  
-```
+```  
   
 3) 途中、以下のメッセージが出たら許可をタップしてください。  
   
