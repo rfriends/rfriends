@@ -25,7 +25,6 @@ at , cron
   
 　chromebookにLinux 開発環境をインストールしてください。  
   
-Chromebook で Linux をセットアップする  
 [Chromebook で Linux をセットアップする](https://support.google.com/chromebook/answer/9145439?hl=ja)    
   
 設定ー詳細設定から行えます。  
