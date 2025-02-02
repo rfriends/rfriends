@@ -70,7 +70,7 @@ exit
   
 再ログインしてください。  
 sudoなしでdockerが操作できます。  
-　
+  
 ### 2.2 rfriends_docker.gitをクローンする。  
   
 ```
