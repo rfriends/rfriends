@@ -20,15 +20,11 @@ https://rfriends.hatenablog.com/entry/2024/08/24/174527
   
 下記を参考にしてください。  
   
-RaspberryPiにスピーカを接続する（Volumio,MoOde編）  
-  
-<https://rfriends.hatenablog.com/entry/2024/09/04/175016>    
+[RaspberryPiにスピーカを接続する（Volumio,MoOde編）](https://rfriends.hatenablog.com/entry/2024/09/04/175016)    
   
 または  
   
-RaspberryPi Zeroをラジオにする  
-  
-<https://rfriends.hatenablog.com/entry/2022/05/01/154913>  
+[RaspberryPi Zeroをラジオにする](https://rfriends.hatenablog.com/entry/2022/05/01/154913)  
   
 ## １．システムを最新にする。  
   
