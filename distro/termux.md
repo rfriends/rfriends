@@ -170,13 +170,14 @@ xxx.xxx.xxx.xxx:8000
   
 と入力し、以下のような画面が出たら成功です。ブックマークすると便利です。  
   
-![9](https://github.com/user-attachments/assets/6b755320-95ff-43a9-a2e2-7d5d3daac64c)  
+![9](https://github.com/user-attachments/assets/4db21ecd-f876-4fac-8a65-19d1f28fe9d5)
+
   
 ### 4.2 rfriends3を最新にアップデート  
   
 ヘルプ - システム更新(SYS)  
   
-により、rfriends3を開発版（1.1.2-a03以上）にupdateする。  
+により、rfriends3を最新にupdateする。（通常は最新がインストールされているので不要）  
   
 ![10](https://github.com/user-attachments/assets/ad195d2f-5852-4200-85bb-533ea1ec1805)  
   
