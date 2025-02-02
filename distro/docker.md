@@ -66,8 +66,10 @@ vi Dockerfile
 ```
    
 Dockerfileのuid,gidを設定してください。  
-ENV uid=1000  
-ENV gid=1000    
+uuuu,ggggは１）で表示されたものを指定してください。  
+  
+ENV uid=uuuu  
+ENV gid=gggg    
   
 ### 2.4 イメージの作成および実行を行う。  
   
