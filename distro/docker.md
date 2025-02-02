@@ -12,6 +12,8 @@
 dockerのインストールは環境別に記述しています。  
   
 ### 1.1 Docker Enginee, Composeのインストール  
+
+Linux環境の方は以下の操作を行ってください。  
   
 ```
 sudo apt update && sudo apt install curl -y  
@@ -29,13 +31,15 @@ Docker Compose version v2.32.4
   
 ### 1.2 Docker Desktop for macOSのインストール  
   
-以下のサイトを参考にインストールしてください。  
+macの方は以下のサイトを参考にインストールしてください。  
 公式のサイトからdmgファイルをダウンロードしてインストールするだけです。  
   
 [Mac に Docker Desktop をインストール](https://docs.docker.jp/docker-for-mac/install.html)    
   
 ### 1.3 Docker Desktop for windowsのインストール  
 
+Windowsの方は以下の操作を行ってください。  
+  
 ・Docker Desktopをインストールしてください。  
   
 [Docker Desktop for Windows](https://docs.docker.jp/docker-for-windows/install.html)  
