@@ -47,7 +47,7 @@ SDメモリカードをフォーマットします。
 ２）Win32DiskImager  
   
 イメージをSDメモリカードに書き込みます。  
-[win32diskimager]([https://ja.osdn.net/projects/sfnet_win32diskimager/releases/](https://sourceforge.net/projects/win32diskimager/))    
+[win32diskimager](https://sourceforge.net/projects/win32diskimager/)    
   
 ### ssh,smb,ftpクライアント  
   
