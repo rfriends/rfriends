@@ -8,10 +8,51 @@
 ![engine](https://github.com/user-attachments/assets/2d6ffc34-7771-438e-9057-0cf7ccb93a28)
   
 ## １．docker環境構築
-    
-
   
-２）dockerのインストールからrfriends3の実行までは環境別に記述しています。  
+dockerのインストールからrfriends3の実行までは環境別に記述しています。  
+  
+### 1.1 Docker Enginee, Composeのインストール  
+  
+```
+sudo apt update && sudo apt install curl -y  
+curl https://get.docker.com | sudo sh  
+sudo chmod 666 /var/run/docker.sock  
+```  
+確認  
+```  
+$ docker --version  
+Docker version 27.5.0, build a187fa5  
+  
+$ docker compose version  
+Docker Compose version v2.32.4
+```  
+  
+### 1.2 Docker Desktop for macOSのインストール  
+  
+以下のサイトを参考にインストールしてください。  
+公式のサイトからdmgファイルをダウンロードしてインストールするだけです。  
+  
+[Mac に Docker Desktop をインストール](https://docs.docker.jp/docker-for-mac/install.html)    
+  
+### 2.3 Docker Desktop for windowsのインストール  
+
+・Docker Desktopをインストールしてください。  
+  
+[Docker Desktop for Windows](https://docs.docker.jp/docker-for-windows/install.html)  
+  
+・次に、Git Bashをインストールしてください。  
+  
+[Git Bash](https://gitforwindows.org/)  
+  
+Windows Terminalでgitが使用できるようにする。 
+   
+![1](https://github.com/user-attachments/assets/27e1b965-ccc8-4f60-957b-3c89b621a3cf)
+  
+ファイルを変更したときに改行コードを変更しない。  
+  
+![2](https://github.com/user-attachments/assets/570cc64c-a6e3-4e2f-88f5-8f194a7eefc0)  
+   
+
 
 |#|docker|説明|  
 |---|---|---|  
