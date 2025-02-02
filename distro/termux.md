@@ -142,10 +142,12 @@ $ exit
 ```  
   
 ### 3.3 サービス（atd, crond,sshd,lighttpd）およびwake-lockの有効化  
-
+  
+termuxを再起動する。  
+  
 ![6a](https://github.com/user-attachments/assets/0e2c31fa-aa4a-46a3-9019-b2a8b464e45f)
   
-termuxを再度起動後、termux-sevicesを使用してサービス（atd, crond,sshd,lighttpd）およびwake-lockを有効化する。  
+svenable.shを実行して、サービス（atd, crond,sshd,lighttpd）およびwake-lockを有効化する。    
   
 ```  
 $ sh svenable.sh  
