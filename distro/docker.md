@@ -139,9 +139,22 @@ $HOME/share/rfriends3/config
 
 > [!CAUTION]  
 > ただし、復元するのはキーワード予約で、マニュアル予約は復元できません。  
-
-   
   
+## ６．スクリーンショット  
+
+  Docker Engine  
+  
+![10](https://github.com/user-attachments/assets/2be51085-b960-41e5-89ea-c29cc58ed233)
+
+  Docker Desktop for mac  
+  
+![20](https://github.com/user-attachments/assets/ac099242-4684-4ebf-9a41-da3cd68d3c88)
+
+  Docker Desktop for windows  
+  
+![30](https://github.com/user-attachments/assets/d91db14c-eb5b-40aa-be50-3f91fc6c02e8)
+
+
 以上  
   
   
