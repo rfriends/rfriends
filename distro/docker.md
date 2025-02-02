@@ -20,14 +20,25 @@ sudo apt update && sudo apt install curl -y
 curl https://get.docker.com | sudo sh  
 sudo chmod 666 /var/run/docker.sock  
 ```  
-確認  
+・確認  
 ```  
 $ docker --version  
 Docker version 27.5.0, build a187fa5  
   
 $ docker compose version  
 Docker Compose version v2.32.4
-```  
+```
+  
+・操作するユーザをdockerグループに追加する。  
+  
+```
+sudo gpasswd -a $USER docker  
+sudo systemctl restart docker  
+exit  
+```
+  
+再ログインしてください。  
+sudoなしでdockerが操作できます。 
   
 ### 1.2 Docker Desktop for macOSのインストール  
   
@@ -64,18 +75,7 @@ Windows Terminalでgitが使用できるようにする。
   
 　Dockerイメージの作成から実行まではTerminal上で以下の操作を行ってください。  
  
-### 2.1 操作するユーザをdockerグループに追加する。  
-  
-```
-sudo gpasswd -a $USER docker  
-sudo systemctl restart docker  
-exit  
-```
-  
-再ログインしてください。  
-sudoなしでdockerが操作できます。  
-  
-### 2.2 rfriends_docker.gitをクローンする。  
+### 2.1 rfriends_docker.gitをクローンする。  
   
 ```
 cd ~/
@@ -83,9 +83,9 @@ rm -rf rfriends_docker
 git clone https://github.com/rfriends/rfriends_docker.git   
 ```
  
-### 2.3 uid,gidの変更をおこなう。  
+### 2.2 uid,gidの変更をおこなう。  
 
-windowsユーザの方は、この項を飛ばして2.4に進んでください。  
+windowsユーザの方は、この項を飛ばして2.3に進んでください。  
   
 > [!CAUTION]  
 > この修正をしなくても動作は可能ですが、shareディレクトリ内のファイルの修正ができない可能性があります。
@@ -114,7 +114,7 @@ uuuu,ggggは１）で表示されたものを指定してください。
 ENV uid=uuuu  
 ENV gid=gggg    
   
-### 2.4 イメージの作成および実行を行う。  
+### 2.3 イメージの作成および実行を行う。  
   
 ```
 cd  
@@ -127,11 +127,7 @@ rfriendsが使用できます。
   
 と表示されたら成功です。  
   
-> [!TIP]
-> "permission denied"のエラーが出る場合は以下を試してみてください。   
-> sudo chmod 666 /var/run/docker.sock  
-  
-### 2.5 rfriends3にアクセスする  
+### 2.4 rfriends3にアクセスする  
   
 ホスト側で以下を実行してください。  
 ```
