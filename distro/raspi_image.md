@@ -42,12 +42,12 @@ WindowsPCまたはLinuxPCが必要です。Macでも可能だと思います。A
 １）SDメモリーカードフォーマッター  
   
 SDメモリカードをフォーマットします。  
-<https://www.sdcard.org/ja/downloads-2/formatter-2/>  
+[sdcard format](https://www.sdcard.org/ja/downloads-2/formatter-2/)    
   
 ２）Win32DiskImager  
   
 イメージをSDメモリカードに書き込みます。  
-<https://ja.osdn.net/projects/sfnet_win32diskimager/releases/>  
+[win32diskimage](https://ja.osdn.net/projects/sfnet_win32diskimager/releases/)    
   
 ### ssh,smb,ftpクライアント  
   
@@ -63,8 +63,8 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約1.3GB）  
   
-<http://rfbuddy.s296.xrea.com/storage/rfriends3_1.1.2-a06_raspios_bullseye_lighttpd_20241105.zip>  
-<http://rfbuddy.s296.xrea.com/storage/wpa_supplicant.conf>  
+[rfriends3_1.1.2-a06_raspios_bullseye_lighttpd_20241105.zip](http://rfbuddy.s296.xrea.com/storage/rfriends3_1.1.2-a06_raspios_bullseye_lighttpd_20241105.zip)  
+[wpa_supplicant.conf](http://rfbuddy.s296.xrea.com/storage/wpa_supplicant.conf)  
   
 ## ２．イメージをmicroSDに書く。
   
