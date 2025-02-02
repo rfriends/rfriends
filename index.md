@@ -34,8 +34,7 @@ rfriends3はいろいろな機種に対応しています。
 | 6| ChromeOS  |[**Linux開発環境**](distro/chromeos.md)|〇|△|  
 | 7| androidOS |[**Termux**](distro/termux.md)<br>[UserLAnd](distro/userland.md)|〇<br>〇|△<br>△|  
 | 8| iOS       |なし|-|-| 
-| 9| コンテナ   |[LXD](distro/lxd.md)|〇|△|  
-|10| コンテナ   |[**Docker**](distro/docker.md)|〇|△|  
+| 9| コンテナ   |[LXD](distro/lxd.md)<br>[**Docker**](distro/docker.md)|〇<br>〇|△<br>△|  
    
 > [!NOTE]
 > WebサーバはLighttpdが標準ですが、非サポートの場合はビルトインサーバになります。  
