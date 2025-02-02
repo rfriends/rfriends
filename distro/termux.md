@@ -160,7 +160,7 @@ wake-lockの有効化を行わないと、スマホがスリープしたとき�
   
 以上でrfriends3のインストールは完了です。Webサーバ（lighttpd）はすでに起動しています。  
   
-## ４．rfriends3の設定  
+## ４．rfriends3にアクセス  
   
 ### 4.1 rfriends3のWebサーバへのアクセス  
   
