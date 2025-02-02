@@ -34,7 +34,7 @@ Docker Compose version v2.32.4
   
 [Mac に Docker Desktop をインストール](https://docs.docker.jp/docker-for-mac/install.html)    
   
-### 2.3 Docker Desktop for windowsのインストール  
+### 1.3 Docker Desktop for windowsのインストール  
 
 ・Docker Desktopをインストールしてください。  
   
@@ -52,14 +52,6 @@ Windows Terminalでgitが使用できるようにする。
   
 ![2](https://github.com/user-attachments/assets/570cc64c-a6e3-4e2f-88f5-8f194a7eefc0)  
    
-
-
-|#|docker|説明|  
-|---|---|---|  
-|1|[Docker Engine](docker_engine.md)|docker,docker-composeが動作する機種|  
-|2|[Docker Desktop for windows](docker_windows.md)|windows用|  
-|3|[Docker Desktop for macos](docker_macos.md)|macos用|  
-
 ## ２．実行  
   
 　Dockerイメージの作成から実行まではTerminal上で以下の操作を行ってください。  
