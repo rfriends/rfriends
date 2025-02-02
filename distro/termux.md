@@ -20,7 +20,7 @@ androidOS5.0未満では動作しません。
   
 以下のリンクよりインストールスクリプトをスマホのダウンロードディレクトリにダウンロードしてください。  
   
-<a href=https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh download>termux.sh</a>   
+[termux.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh)  
   
 ## ２．Termuxのインストール   
   
@@ -34,7 +34,7 @@ Termuxは、AndroidやChrome OS上でLinux環境を実行できるターミナ�
   
 Github  
 ~~<https://github.com/termux/termux-app/releases>~~  
-~~<a href=https://github.com/termux/termux-app/releases/download/v0.119.0-beta.1/termux-app_v0.119.0-beta.1+apt-android-7-github-debug_universal.apk download>termux.apk</a>~~  
+~~[termux.apk](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.1/termux-app_v0.119.0-beta.1+apt-android-7-github-debug_universal.apk)~~  
     
 F-droid  
   
