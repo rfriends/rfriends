@@ -18,9 +18,19 @@ androidスマートホンまたはタブレット(OS5.0以上)
   
 androidOS5.0未満では動作しません。  
   
-以下のリンクよりインストールスクリプトをスマホのダウンロードディレクトリにダウンロードしてください。  
+以下の**リンクを長押し**して、インストールスクリプトをスマホのダウンロードディレクトリにダウンロードしてください。  
   
-[termux.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh)  
+[termux.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh)    
+
+途中以下のようなメッセージが表示されます。  
+  
+・リンクをダウンロードを選択  
+![1a](https://github.com/user-attachments/assets/52aebdae-1a3f-4bfb-8b17-5cf82318e9b5)  
+・ダウンロードを続行  
+![1b](https://github.com/user-attachments/assets/5af0a437-30d5-49c9-95f3-7e7eabd871c4)  
+・ダウンロードが完了  
+![1c](https://github.com/user-attachments/assets/cba92b24-913b-46ab-993d-3435aa8c4b1f)  
+
   
 ## ２．Termuxのインストール   
   
