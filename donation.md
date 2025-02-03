@@ -1,4 +1,4 @@
-### もし気に入っていただけたら、ワンコインでrfriendsを応援してください。  
+##### もし気に入っていただけたら、ワンコインでrfriendsを応援してください。  
   
 ・PayPay 送金  
 　PayPayID  :  rfriends  
