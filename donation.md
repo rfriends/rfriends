@@ -4,6 +4,6 @@
 　PayPayID  :  rfriends  
   
 ・amazonギフト（そのままだと高額になるので要注意、ワンコインで）  
-　[amazonギフト](ttps://www.amazon.co.jp/dp/B09TVHNLHX)  
+　[amazonギフト](https://www.amazon.co.jp/dp/B09TVHNLHX)  
 　email  :  rfriends2017@ymail.ne.jp  
  
