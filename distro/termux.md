@@ -39,7 +39,7 @@ androidOS5.0未満では動作しません。
   
 Termuxは、AndroidやChrome OS上でLinux環境を実行できるターミナルエミュレータアプリです。  
     
-### 1.1 Termuxのダウンロード  
+### 2.1 Termuxのダウンロード  
   
 　以下のリンクよりスマホのダウンロードディレクトリにtermuxをダウンロードしてください。  
   
@@ -55,7 +55,7 @@ F-droid
   
 <https://f-droid.org/repo/com.termux_1020.apk>  
   
-### 1.2 Termuxのインストール  
+### 2.2 Termuxのインストール  
   
 1) ファイルマネージャを起動し、ダウンロードディレクトリにあるcom.termux_1020.apkをタップしてtermuxをインストールしてください。  
    
