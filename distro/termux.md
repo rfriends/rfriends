@@ -92,7 +92,7 @@ Termuxを起動してください。
     
 ### 3.2 termux-setup-storageの実行  
   
-1) これにより、androidとのファイルのやり取りが可能になる。  
+1) これにより、termuxからandroid側のファイルにアクセスできるようになります。  
   
 ```
 $ termux-setup-storage
@@ -102,7 +102,7 @@ $ termux-setup-storage
   
 ![5](https://github.com/user-attachments/assets/e9232282-ed0f-43af-8bc8-4ae552fc3c9f)  
     
-2) ダウンロードディレクトリにtermux.shがあることを確認する。  
+2) androidのダウンロードディレクトリにアクセスし、termux.shがあることを確認します。  
     
 ```
 $ cd
