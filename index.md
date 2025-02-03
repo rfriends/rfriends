@@ -19,7 +19,7 @@
 |[掲示板](http://ceres.s501.xrea.com/wforum/wforum.cgi)|質問、要望、感想など|  
 |[レスキュー](manual/rescue.html)|rfriends3システムの起動不可等からの回復|  
 
-[ワンコインでrfriendsを応援してください](donation.html)  
+[rfriendsを応援してください](donation.html)  
   
 ### ２．rfriends3のインストール  
   
