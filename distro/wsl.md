@@ -140,15 +140,18 @@ $ sudo apt install -y git
 $ rm -rf rfriends_wsl  
 $ git clone https://github.com/rfriends/rfriends_wsl.git  
 $ cd rfriends_wsl  
-$ sh rfriends3_wsl.sh   
-4.2 インストール終了  
-(途中略)  
+$ sh rfriends3_wsl.sh
+```
+  
+### 4.2 インストール終了    
+  
+```
 ip address is lo UNKNOWN 127.0.0.1/8 eth0 UP 172.19.148.3/20 .  
 visit rfriends at http://xxx.xxx.xxx.xxx:8000  
 finished  
 ```  
   
-finishedと表示されてインストールは完了です。表示されたIPアドレスをメモしてください。ここでは、172.19.148.3 です。  
+finishedと表示されてインストールは完了です。表示されたIPアドレスをメモしてください。  
   
 次に、ubuntuを終了します。  
   
@@ -166,7 +169,7 @@ PS> wsl --shutdown
   
 ### 5.2 rfriends3のWebサーバへのアクセス  
   
-　4.でメモをしたIPアドレスを使ってrfriends3にアクセスします。  
+　4.2でメモをしたIPアドレスを使ってrfriends3にアクセスします。  
   
 ホストＰＣからWEBブラウザ（chrome,edge,firefox等）で上記で表示された  
   
@@ -176,51 +179,13 @@ xxx.xxx.xxx.xxx:8000
   
 ![5](https://github.com/user-attachments/assets/e706bb5e-61a9-4da7-8d01-22ead1bab4ee)  
   
-### 5.3 rfrirnds3を最新にアップデート  
+### 5.3 チュートリアル
   
-ヘルプ - システム更新(SYS)  
+マニュアルのページのチュートリアルで基本的な操作を覚えてください。  
   
-により、rfriends3を開発版（1.1.2-a03以上）にupdateします。  
+[マニュアル](https://rfriends.github.io/rfriends/manual/)  
   
-![6](https://github.com/user-attachments/assets/29c43981-c720-4bd1-8328-d166a2e0f272)  
- 
-以降、バージョンによりメニュー番号が異なっている可能性があります。  
-  
-### 5.4 デイリー処理の登録  
-  
-スリープを前提としたPCの場合はデイリー処理の登録は行わないでください。  
-  
-設定 - 定期実行 - 登録  
-  
-を選択し、crontab登録をクリックします。これにより、指定した時刻に予約・録音ができるようになります。  
-  
-![7](https://github.com/user-attachments/assets/4f5064ae-8caa-4ccb-80e9-029949cb5ed8)  
-  
-　Windowsの場合、24時間稼働を想定していないことが多いので、さらにスリープしない設定が必要です。  
-  
-ホストPC - 設定 > システム > 電源 > 画面およびスリープのタイムアウト  
-  
-次の時間の経過後にデバイスをスリープ状態にする - なし  
-  
-![8](https://github.com/user-attachments/assets/fa5eb0c1-e472-47f5-b42f-903353d49fb5)  
-  
-## 6．確認テスト  
-  
-Timefree - 録音・聴取  
-  
-で、１，２個試しに録音してみてください。  
-  
-![9](https://github.com/user-attachments/assets/53a32b62-54de-45e0-93e4-46dfeeca2c4a)  
-  
-　録音が終了したら、ホストPCのディレクトリC:\rf3\usrを参照してください。録音したファイルがtimefree以下に見つかるとおもいます。 
-  
-![10](https://github.com/user-attachments/assets/2af0c22c-bd42-4fc7-bfc0-2b29322522f9)  
-  
-　以上で、rfriendsのインストールは終了です。  
-  
-## ７．その他  
-  
-### 7.1 外部PCからのwebアクセス  
+## ６．外部PCからのwebアクセス  
   
 　同一LAN内の外部PCからrfriendsへのアクセスを行うための設定は以下のとおりです。通常は、この設定は行わないほうがいいと思います。  
   
@@ -238,13 +203,6 @@ Timefree - 録音・聴取
 ```  
 PS> netsh.exe interface portproxy add v4tov4 listenaddress=＜外部PCのipアドレス＞listenport=8000 connectaddress=＜ホストPCのipアドレス＞ connectport=8000  
 ```  
-  
-## ８．最後に  
-  
-　より良いものにするために、バグ報告・改善提案等をお待ちしています。  
-  
-では、素敵なラジオライフを！  
-  
   
 以上  
 
