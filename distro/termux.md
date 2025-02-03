@@ -57,17 +57,25 @@ F-droid
   
 ### 1.2 Termuxのインストール  
   
-　ファイルマネージャを起動し、ダウンロードディレクトリにあるcom.termux_1020.apkをタップしてtermuxをインストールしてください。  
+1) ファイルマネージャを起動し、ダウンロードディレクトリにあるcom.termux_1020.apkをタップしてtermuxをインストールしてください。  
+   
+![1](https://github.com/user-attachments/assets/cde2403e-6c3a-49dc-9ea8-b38e3ab05249)  
+
+2) "詳細"を押して下さい。（androidのバージョンにより画面は異なります）  
   
-![1](https://github.com/user-attachments/assets/ec21a6a9-5f93-4994-9b3d-4bfa6caeed05)  
+![2](https://github.com/user-attachments/assets/6581f35d-fb4f-4098-9481-81aff365e414)  
   
-上記のような画面が出たら、"詳細"を押して下さい。（androidのバージョンにより画面は異なります）  
+3) "インストールする"を押してください。 
   
-![2](https://github.com/user-attachments/assets/c73aa8f6-a572-4e39-aa9b-091d87f4f2f2)  
+![3](https://github.com/user-attachments/assets/f3087eb2-28e4-45c2-8ab1-754dab5fd244)  
   
-さらに、"インストールする"を押してtermuxのインストールを行ってください。  
+4) このような画面が出たら、**必ず** "許可"を押してください。
   
-以上でtermuxのインストールは完了です。  
+![4](https://github.com/user-attachments/assets/348b495f-60ba-43b9-b79c-9d3b7f8a3dfe)  
+  
+5) これでtermuxのインストールは完了です。
+  
+![4a](https://github.com/user-attachments/assets/0166b778-e8af-4e36-908c-874d42435f0d)  
   
 ## ３．rfriends3のインストール  
   
@@ -80,37 +88,47 @@ Termuxを起動してください。
   
 これ以降は、Termux内での操作となります。  
   
-![4](https://github.com/user-attachments/assets/606a3c45-1e29-424e-ba3b-a0adb83eb88b)  
-  
-### 3.2 ツールおよびrfriends3をインストールする  
-  
-#### 3.2.1 termux.shの確認
-  
-ダウンロードディレクトリにtermux.shがあることを確認する。  
+![4b](https://github.com/user-attachments/assets/399dbc52-b091-4683-b1a0-ce0a47a7ad0f)  
     
+### 3.2 termux-setup-storageの実行  
+  
+1) これにより、androidとのファイルのやり取りが可能になる。  
+  
 ```
 $ termux-setup-storage
+```
+  
+全てのファイルの管理権を付与する。  
+  
+![5](https://github.com/user-attachments/assets/e9232282-ed0f-43af-8bc8-4ae552fc3c9f)  
+    
+2) ダウンロードディレクトリにtermux.shがあることを確認する。  
+    
+```
 $ cd
 $ cd storage
 $ cd downloads  
 $ ls  
 com.termux_1020.apk termux.sh  
-```  
-#### 3.2.2 termux.shを実行する。  
+```
+  
+### 3.3 ツールおよびrfriends3をインストールする  
+  
+#### 3.3.1 termux.shを実行する。  
   
 ```    
 $ sh termux.sh  
 ```  
     
-#### 3.2.3 termuxのミラーサイトを変更する。   
+#### 3.3.2 termuxのミラーサイトを変更する。   
   
 termux.shの実行途中で、ミラーをグループにするかシングルにするかの選択画面が出ますが、そのままOKを選択してください。  
   
-![1](https://github.com/user-attachments/assets/0aa57fc5-5eef-41da-9869-67d0385a7630)  
+![6](https://github.com/user-attachments/assets/5b1d1d3b-7d0b-40d1-afcf-30b2df66c927)  
   
 ミラーグループの選択画面が出ますが、そのままOKを選択してください。   
   
-![2](https://github.com/user-attachments/assets/89086643-38d8-4cba-9245-ab138f19831d)  
+![7](https://github.com/user-attachments/assets/ff6f0023-6942-4283-bb4e-6c1db1354fbb)  
   
 > [!CAUTION]  
 > その後、ミラーサイトのチェックが行われますが  
@@ -119,17 +137,11 @@ termux.shの実行途中で、ミラーをグループにするかシングル�
 > しばらく時間を置いて再度termux-change-repoを実行してください。  
 >   
   
-
-#### 3.2.4 途中、以下のメッセージが出たら許可をタップしてください。  
+#### 3.3.3 また、以下のメッセージが出たら、リターンキーを押してください。  
   
-![5](https://github.com/user-attachments/assets/94836c56-db2b-481f-8601-7c1b53e04273)  
+![8](https://github.com/user-attachments/assets/d33da4b0-ad4c-4ba9-969e-fae1c69983e3)  
   
-  
-#### 3.2.5 また、以下のメッセージが出たら、リターンキーを押してください。  
-  
-![6](https://github.com/user-attachments/assets/f56c9f32-668a-4b44-b316-a650ded42b0b)  
-  
-#### 3.2.6 インストールスクリプトが完了したら、  
+#### 3.3.4 インストールスクリプトが完了したら、  
 
 ```  
 1. exit で termux を終了    
@@ -146,7 +158,7 @@ finished
 > termuxのミラーサイトがダウンしている場合に発生します。  
 > 時間を置いて、3.2の最初からやり直してください。  
 
-#### 3.2.7 次にexitを入力して、termuxを一旦終了してください。  
+#### 3.3.5 次にexitを入力して、termuxを一旦終了してください。  
   
 終了しないとサービスの有効化で失敗します。  
   
@@ -154,7 +166,7 @@ finished
 $ exit   
 ```  
   
-### 3.3 サービス（atd, crond,sshd,lighttpd）およびwake-lockの有効化  
+### 3.4 サービス（atd, crond,sshd,lighttpd）およびwake-lockの有効化  
   
 termuxを再起動する。  
   
@@ -166,13 +178,14 @@ svenable.shを実行して、サービス（atd, crond,sshd,lighttpd）および
 $ sh svenable.sh  
 ```  
   
-![7](https://github.com/user-attachments/assets/47eb656e-106f-4e24-856d-1c4d7cdf88a5)  
-  
-上記のような画面が出たら、"許可"(または"はい")を押してください。これにより予約録音ができるようになります。  
+次のような画面が出たら、"許可"を押してください。これにより予約録音ができるようになります。  
+
+![12](https://github.com/user-attachments/assets/85e21570-0565-4e83-a46d-f499effdb3da)  
+
   
 また、ロック画面に以下のようなメッセージが表示されます。  
   
-![8](https://github.com/user-attachments/assets/f727e1ff-5317-4ef5-8b3b-d7502269b639)  
+![13](https://github.com/user-attachments/assets/6484a8ca-92de-4b72-8895-8c965b4dae3d)  
   
 wake-lockの有効化を行わないと、スマホがスリープしたときにTermuxも停止してしまい録音が中断されます。ただし、有効化した場合は、ACアダプタに接続しての運用を行ってください。スマホを再起動したときは再度確認が必要です。  
   
