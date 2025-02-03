@@ -25,11 +25,14 @@ androidOS5.0未満では動作しません。
 途中以下のようなメッセージが表示されます。  
   
 ・リンクをダウンロードを選択  
-![1a](https://github.com/user-attachments/assets/52aebdae-1a3f-4bfb-8b17-5cf82318e9b5)  
+![1a](https://github.com/user-attachments/assets/a01dc09e-189f-4886-9c5b-cbbe2e6c5228)  
+
 ・ダウンロードを続行  
-![1b](https://github.com/user-attachments/assets/5af0a437-30d5-49c9-95f3-7e7eabd871c4)  
+![1b](https://github.com/user-attachments/assets/2ccce8cf-f0eb-49c2-8fd0-17520d1fdcb3)  
+
 ・ダウンロードが完了  
-![1c](https://github.com/user-attachments/assets/cba92b24-913b-46ab-993d-3435aa8c4b1f)  
+![1c](https://github.com/user-attachments/assets/b0b4642a-f4a8-4207-8296-ff0f3469ade9)  
+
 
   
 ## ２．Termuxのインストール   
