@@ -3,7 +3,7 @@
 * rfriends3はラジコ、らじるらじる、ポッドキャストを録音・再生できます。
 * タイムフリー、エリアフリー、聞き逃し、ゴガクに対応しています。  
 * PC,MAC,スマホ等のWEBブラウザ(chrome,edge,firefox,safari等)から操作できます。
-* sshアクセスもできます。
+* sambaによるファイル共有、sshアクセスもできます。
 * Windows Linux macOS Raspberrypi ChromeOS Termux Volumio MoodeAudio LXD docker に対応しています。  
   
 ![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
@@ -22,23 +22,23 @@
 ### ２．rfriends3のインストール  
   
 rfriends3はいろいろな機種に対応しています。  
-下記の**OS(詳細)部分**をクリックすれば各機種用インストール方法にジャンプできます。  　
+下記の**OS部分**をクリックすれば各機種用インストール方法にジャンプできます。  　
 
-|#  |OS        |OS(詳細)|Web|samba|
-|:--:|:------  | :-------------------------------------- |:--:|:--:| 
-| 1| Windows   |[Windows](distro/windows.md)<br>[WSL+Ubuntu](distro/wsl.md)<br>[Docker Desktop](distro/docker.md)|-<br>〇<br>〇|〇<br>△<br>△| 
-| 2| macOS     |[macOS](distro/macos.md)<br>[Docker Desktop](distro/docker.md)|〇<br>〇|-<br>△|
-| 3| Linux     |[**Linux**](distro/rfriends3_core.md)<br>- Ubuntu / Debian<br>- Stream 9 / Rocky<br>- arch|〇|〇|  
-| 4| RaspiOS   |[**RaspberryPi -script-**](distro/raspberrypi.md)<br>[RaspberryPi -image-](distro/raspi_image.md)|〇<br>〇|〇<br>〇|  
-| 5| RaspiOS   |[Volumio](distro/volumio.md)<br>[moode audio](distro/moode.md)|〇<br>〇|〇<br>〇|  
-| 6| ChromeOS  |[**Linux開発環境**](distro/chromeos.md)|〇|△|  
-| 7| androidOS |[**Termux**](distro/termux.md)<br>[UserLAnd](distro/userland.md)|〇<br>〇|△<br>△|  
-| 8| iOS       |なし|-|-| 
-| 9| コンテナ   |[LXD](distro/lxd.md)<br>[**Docker**](distro/docker.md)|〇<br>〇|△<br>△|  
+|#  |機種        |OS|
+|:--:|:------  | :-------------------------------------- |
+| 1| Windows   |[Windows](distro/windows.md)<br>[WSL](distro/wsl.md)<br>[Docker Desktop](distro/docker.md)| 
+| 2| mac     |[macOS](distro/macos.md)<br>[Docker Desktop](distro/docker.md)|〇<br>〇|-<br>△|
+| 3| Linux     |[**Linux**](distro/rfriends3_core.md)<br>- Ubuntu / Debian<br>- Stream 9 / Rocky<br>- arch| 
+| 4| コンテナ   |[**Docker**](distro/docker.md)<br>[LXD](distro/lxd.md)|
+| 5| ラズベリーパイ  |[**RaspberryPi -script-**](distro/raspberrypi.md)<br>[RaspberryPi -image-](distro/raspi_image.md)<br>[Volumio](distro/volumio.md)<br>[moode audio](distro/moode.md)| 
+| 6| スマートフォン |[**Termux**](distro/termux.md)<br>[UserLAnd](distro/userland.md)|
+| 7| Chromebook  |[**Linux開発環境**](distro/chromeos.md)|〇|△|  
+| 8| iPhone       |なし|
+
    
 > [!NOTE]
 > WebサーバはLighttpdが標準ですが、非サポートの場合はビルトインサーバになります。  
-> sambaが△の場合はポート転送設定が必要になります。  
+> 仮想環境の場合、sambaはポート転送設定が必要になります。  
   
 ### ３．rfriends3スクリーンショット  
   
