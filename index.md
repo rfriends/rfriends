@@ -30,11 +30,11 @@ rfriends3はいろいろな機種に対応しています。
 |:--:|:------  | :-------------------------------------- |
 | 1| Windows   |・[Windows](distro/windows.md)<br>・[WSL](distro/wsl.md)<br>・[Docker Desktop](distro/docker.md)| 
 | 2| mac     |・[macOS](distro/macos.md)<br>・[Docker Desktop](distro/docker.md)|
-| 3| Linux     |・[**Linux**](distro/rfriends3_core.md)<br>&nbsp; - Ubuntu / Debian<br>&nbsp; - Stream 9 / Rocky<br>&nbsp; - arch| 
-| 4| コンテナ   |・[**Docker**](distro/docker.md)<br>・[LXD](distro/lxd.md)|
-| 5| ラズベリーパイ  |・[**RaspberryPi -script-**](distro/raspberrypi.md)<br>・[RaspberryPi -image-](distro/raspi_image.md)<br>・[Volumio](distro/volumio.md)<br>・[moode audio](distro/moode.md)| 
-| 6| スマートフォン |・[**Termux**](distro/termux.md)<br>・[UserLAnd](distro/userland.md)|
-| 7| Chromebook  |・[**Linux開発環境**](distro/chromeos.md)| 
+| 3| Linux     |・[Linux](distro/rfriends3_core.md)<br>&nbsp; - Ubuntu / Debian<br>&nbsp; - Stream 9 / Rocky<br>&nbsp; - arch| 
+| 4| コンテナ   |・[Docker](distro/docker.md)<br>・[LXD](distro/lxd.md)|
+| 5| ラズベリーパイ  |・[RaspberryPi -script-](distro/raspberrypi.md)<br>・[RaspberryPi -image-](distro/raspi_image.md)<br>・[Volumio](distro/volumio.md)<br>・[moode audio](distro/moode.md)| 
+| 6| スマートフォン |・[Termux](distro/termux.md)<br>・[UserLAnd](distro/userland.md)|
+| 7| Chromebook  |・[Linux開発環境](distro/chromeos.md)| 
 | 8| iPhone       |対応なし|
 
    
