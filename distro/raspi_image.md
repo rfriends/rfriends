@@ -63,9 +63,11 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約1.3GB）  
   
-[rfriends3_1.1.2-a06_raspios_bullseye_lighttpd_20241105.zip](http://rfbuddy.s296.xrea.com/storage/rfriends3_1.1.2-a06_raspios_bullseye_lighttpd_20241105.zip)  
 [rfriends3_1.1.4a_raspios_bullseye_lighttpd_20250212.zip](http://rfbuddy.s296.xrea.com/storage/rfriends3_1.1.4a_raspios_bullseye_lighttpd_20250212.zip)    
 [wpa_supplicant.conf](http://rfbuddy.s296.xrea.com/storage/wpa_supplicant.conf)  
+
+ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。  
+https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4  
   
 ## ２．イメージをmicroSDに書く。
   
