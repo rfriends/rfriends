@@ -67,7 +67,7 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 [wpa_supplicant.conf](http://rfbuddy.s296.xrea.com/storage/wpa_supplicant.conf)  
 
 ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。  
-https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4  
+[Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)  
   
 ## ２．イメージをmicroSDに書く。
   
