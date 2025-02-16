@@ -7,7 +7,7 @@
 [地域判定について](https://radiko.jp/contact3)
     
 ### 以下のようなメッセージが表示されます。  
-Warning: file_get_contents(): SSL operation failed  
+Warning: file_get_contents(): SSL operation failed with code 1. OpenSSL Error messages: error:1416F086   
 これはSSLの証明書が古くなっている可能性があります。  
 rfriends3のバージョンを1.1.5-alfa13以降に更新してください。  
   
