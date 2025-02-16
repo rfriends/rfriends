@@ -5,6 +5,11 @@
 このFAQの中に同様の質問があります。「地域」で検索してください。  
 なお、以下のページから地域判定の修正依頼が可能です。  
 [地域判定について](https://radiko.jp/contact3)
+    
+### 以下のようなメッセージが表示されます。  
+Warning: file_get_contents(): SSL operation failed  
+これはSSLの証明書が古くなっている可能性があります。  
+rfriends3のバージョンを1.1.5-alfa13以降に更新してください。  
   
 ### RaspberryPiでの動作が重いのですが。    
 SWAP領域を限界まで使い切っている可能性があります。(コマンド free で確認)  
