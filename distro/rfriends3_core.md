@@ -21,7 +21,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux版で�
 |2025/01/24|rocky linux|install_stream9.sh|  
 |2025/01/24|arch linux|install_arch.sh|   
 |2025/01/24|chromeos linux環境|install_ubuntu.sh|   
-|2025/02/26|android linuxターミナル|install_terminal.sh|  
+|2025/02/26|android linuxターミナル|install_ubuntu.sh|  
   
 ## ２．確認事項  
   
