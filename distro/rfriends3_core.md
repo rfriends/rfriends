@@ -46,7 +46,7 @@ Sun 25 Feb 2024 07:06:16 AM JST
 ```  
 でタイムゾーンを確認してください。 末尾がJSTになっていなかったら、   
 ```  
-$ timedatectl set-timezone Asia/Tokyo   
+$ sudo timedatectl set-timezone Asia/Tokyo   
 ```  
 で日本に変更してください。 これを忘れると、予約録音が始まりません。  
 その後、再び時刻が正しいことを確認してください。  
