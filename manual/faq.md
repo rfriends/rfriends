@@ -1,6 +1,10 @@
 ## FAQ一覧    
 以下にFAQを追加していきます。    
   
+### updateをしたら画面がメニュー以外真っ白になりました。  
+レスキュー操作を行ってください。  
+[レスキュー](https://rfriends.github.io/rfriends/manual/rescue.html)  
+  
 ### 番組を複数選択したいのですが。  
 全選択　ctrl+a  
 任意複数選択　ctrl+マウスクリック  
