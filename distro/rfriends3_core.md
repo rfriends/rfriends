@@ -8,6 +8,8 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux版で�
   
 初 版　2024/02/23  
 第10版　2025/02/26  
+
+以下、ubuntuを例に説明しますが、他のディストリビューションの場合は、コマンドを置き換えてください。
   
 ## １．ディストリビューション  
 
@@ -27,14 +29,8 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux版で�
   
 　以下を確認し、インストール可能かどうかを判断してください。  
   
-### 2.1 ubuntu/debian  
-  
-ubuntuであれば、Ver.22.04以上  
-debianであれば、Version11(bullseye)以上  
-をお勧めします。(ubuntu 20.04やdebian busterでも動作します)  
-他のディストリビューションの場合は、コマンドを置き換えてください。  
-  
-sudoが可能なユーザ  
+### １） root権限があるユーザ 
+
 実行ユーザにsudo権限があること。  
 ```  
 $ groups ユーザ名  
@@ -43,7 +39,7 @@ $ groups ユーザ名
 ```  
 # gpasswd -a ユーザ名 sudo  
 ```  
-タイムゾーンと現在時刻の確認  
+### ２） タイムゾーンと現在時刻の確認  
 ```  
 $ date  
 Sun 25 Feb 2024 07:06:16 AM JST  
@@ -58,25 +54,13 @@ $ sudo timedatectl set-timezone Asia/Tokyo
 $ date  
 Sun 25 Feb 2024 07:07:16 AM JST  
 ```  
-システムのアップデート  
+### ３） システムのアップデート  
 まれに失敗する環境の場合、以下をおこなってください。通常は不要です。  
 ```  
 　$ sudo apt-get update  
 　$ sudo apt-get upgrade -y  
 　$ sudo reboot  
-```
-  
-### 2.2 Stream 9 / Rocky  
-現在、執筆中  
-  
-### 2.3 arch Linux  
-現在、執筆中  
-  
-### 2.4 chromeos linux 環境  
-現在、執筆中  
-   
-### 2.5 android linux terminal  
-現在、執筆中  
+```   
     
 ## ３．rfriends3のダウンロードとインストール  
   
@@ -90,7 +74,7 @@ $ sudo apt-get -y install git
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
-$ sh instal_XXXXX.sh  
+$ sh install_XXXXX.sh  
 ```  
   
 これでインストールは完了です。  
