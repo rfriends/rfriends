@@ -39,6 +39,10 @@ $ groups ユーザ名
 表示されるグループ名の中にsudoがあることを確認してください。 ない場合は、rootで権限を付加してください。  
 ```  
 # gpasswd -a ユーザ名 sudo  
+```
+gitをインストール  
+```  
+# apt-get -y install git  
 ```  
 ### ２） タイムゾーンと現在時刻の確認  
 ```  
@@ -101,8 +105,6 @@ Sun 25 Feb 2024 07:07:16 AM JST
 # vi /var/at/at.allow
 ユーザ名  
 ```  
-でタイムゾーンを確認してください。 末尾がJSTになっていなかったら、   
-```
 ### ４） rc.conf設定
 以下を追加してください。
 ```  
@@ -118,7 +120,12 @@ lighttpd_enable="YES"
 php84-8.4.2 
 # pkg search samba
 samba419-4.19.9_5 
-```  
+```
+git clone 後、インストール実行前にinstall_freebsdの該当箇所を変更する。
+```
+export php="php84"
+export samba="samba419"
+```
 ### ３） システムのアップデート  
 まれに失敗する環境の場合、以下をおこなってください。通常は不要です。  
 ```  
@@ -134,7 +141,6 @@ samba419-4.19.9_5
   
 ```  
 $ cd ~/
-$ sudo apt-get -y install git  
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
