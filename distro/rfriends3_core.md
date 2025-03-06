@@ -66,7 +66,8 @@ Sun 25 Feb 2024 07:07:16 AM JST
 システムのアップデートをおこなってください。  
 ```  
 　$ sudo apt-get update  
-　$ sudo apt-get upgrade -y  
+　$ sudo apt-get upgrade -y
+  $ sudo reboot  
 ```   
 ## ３．確認事項（FreeBSD）  
   
@@ -132,7 +133,8 @@ export samba="samba419"
 システムのアップデートをおこなってください。  
 ```  
 # pkg update 
-# pkg upgrade 
+# pkg upgrade
+# reboot
 ```       
 ## ４．rfriends3のダウンロードとインストール  
   
