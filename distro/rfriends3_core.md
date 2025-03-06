@@ -109,6 +109,7 @@ Sun 25 Feb 2024 07:07:16 AM JST
 # pkg update 
 # pkg upgrade
 # reboot
+```
 先ほど設定したユーザでログインしてください。
 
 ### ４） atコマンド設定  
