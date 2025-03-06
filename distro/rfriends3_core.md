@@ -7,9 +7,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux版で�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第10版　2025/02/26  
+第11版　2025/03/06 
 
-以下、ubuntuを例に説明しますが、他のディストリビューションの場合は、コマンドを置き換えてください。
+以下、Ubuntu,FreeBSDを例に説明しますが、他のディストリビューションの場合は、コマンドを置き換えてください。
   
 ## １．ディストリビューション  
 
@@ -24,8 +24,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux版で�
 |2025/01/24|arch linux|install_arch.sh|   
 |2025/01/24|chromeos linux環境|install_ubuntu.sh|   
 |2025/02/26|android linuxターミナル|install_ubuntu.sh|  
+|2025/03/06|FreeBSD|install_freebsd.sh|  
   
-## ２．確認事項  
+## ２．確認事項（Ubuntu）  
   
 　以下を確認し、インストール可能かどうかを判断してください。  
   
@@ -53,7 +54,7 @@ $ sudo timedatectl set-timezone Asia/Tokyo
 ```  
 $ date  
 Sun 25 Feb 2024 07:07:16 AM JST  
-```  
+```
 ### ３） システムのアップデート  
 まれに失敗する環境の場合、以下をおこなってください。通常は不要です。  
 ```  
@@ -61,8 +62,71 @@ Sun 25 Feb 2024 07:07:16 AM JST
 　$ sudo apt-get upgrade -y  
 　$ sudo reboot  
 ```   
-    
-## ３．rfriends3のダウンロードとインストール  
+## ３．確認事項（FreeBSD）  
+  
+　以下を確認し、インストール可能かどうかを判断してください。  
+  
+### １） root権限があるユーザ 
+
+ユーザを追加し、wheelグループに参加させる。  
+```  
+# adduser
+ユーザ名
+  
+# pkg install sudo
+# pkg install git  
+
+# visudo
+%wheel ALL=(ALL:ALL) ALL
+
+# pw groupmod wheel -m ユーザ名 
+```  
+### ２） タイムゾーンと現在時刻の確認  
+```  
+# date  
+Sun 25 Feb 2024 07:06:16 AM JST  
+```  
+でタイムゾーンを確認してください。 末尾がJSTになっていなかったら、   
+```  
+# tzsetup Asia/Tokyo   
+```  
+で日本に変更してください。 これを忘れると、予約録音が始まりません。  
+その後、再び時刻が正しいことを確認してください。  
+```  
+$ date  
+Sun 25 Feb 2024 07:07:16 AM JST  
+```
+### ３） atコマンド設定  
+```  
+# vi /var/at/at.allow
+ユーザ名  
+```  
+でタイムゾーンを確認してください。 末尾がJSTになっていなかったら、   
+```
+### ４） rc.conf設定
+以下を追加してください。
+```  
+# vi /etc/rc.conf
+cron_enable="YES"
+samba_server_enable="YES"
+lighttpd_enable="YES"
+```  
+### ５） php,sambaのversion設定
+インストールするphp,sambaのversionを確認してください。  
+```  
+# pkg search php
+php84-8.4.2 
+# pkg search samba
+samba419-4.19.9_5 
+```  
+### ３） システムのアップデート  
+まれに失敗する環境の場合、以下をおこなってください。通常は不要です。  
+```  
+# pkg update 
+# pkg upgrade 
+# reboot  
+```       
+## ４．rfriends3のダウンロードとインストール  
   
 　sshまたはTerminalを開き、sudoが可能な任意のユーザでログインします。  
   
@@ -79,7 +143,7 @@ $ sh install_XXXXX.sh
   
 これでインストールは完了です。  
   
-## ４．rfriends3の実行  
+## ５．rfriends3の実行  
   
 以下を入力します。ipコマンドがない場合は、ifconfigを使用してください。  
 ```  
