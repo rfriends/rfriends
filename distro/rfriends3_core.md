@@ -103,20 +103,28 @@ Sun 25 Feb 2024 07:06:16 AM JST
 $ date  
 Sun 25 Feb 2024 07:07:16 AM JST  
 ```
-### ３） atコマンド設定  
+### ３） システムのアップデート  
+システムのアップデートをおこなってください。  
 ```  
-# vi /var/at/at.allow
+# pkg update 
+# pkg upgrade
+# reboot
+先ほど設定したユーザでログインしてください。
+
+### ４） atコマンド設定  
+```  
+$ sudo  vi /var/at/at.allow
 ユーザ名  
 ```  
-### ４） rc.conf設定
+### ５） rc.conf設定
 以下を追加してください。
 ```  
-# vi /etc/rc.conf
+$ sudo vi /etc/rc.conf
 cron_enable="YES"
 samba_server_enable="YES"
 lighttpd_enable="YES"
 ```  
-### ５） php,sambaのversion設定
+### ６） php,sambaのversion設定
 インストールするphp,sambaのversionを確認してください。  
 ```  
 # pkg search php
@@ -128,14 +136,7 @@ git clone 後、インストール実行前にinstall_freebsdの該当箇所を�
 ```
 export php="php84"
 export samba="samba419"
-```
-### ３） システムのアップデート  
-システムのアップデートをおこなってください。  
-```  
-# pkg update 
-# pkg upgrade
-# reboot
-```       
+```    
 ## ４．rfriends3のダウンロードとインストール  
   
 　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
