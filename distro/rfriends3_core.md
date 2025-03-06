@@ -3,6 +3,9 @@
 rfriends2はCLIベースでしたが、rfriends3はWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版です。(ubuntu/debian/stream9/rocky/arch/chrome/freeBSD)  
 インストールは全自動で行います。  
+
+> [!CAUTION]
+> BSD版は現在テスト中のため、不具合があります。  
      
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
