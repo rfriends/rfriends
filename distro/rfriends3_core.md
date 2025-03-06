@@ -63,11 +63,10 @@ $ date
 Sun 25 Feb 2024 07:07:16 AM JST  
 ```
 ### ３） システムのアップデート  
-まれに失敗する環境の場合、以下をおこなってください。通常は不要です。  
+システムのアップデートをおこなってください。  
 ```  
 　$ sudo apt-get update  
 　$ sudo apt-get upgrade -y  
-　$ sudo reboot  
 ```   
 ## ３．確認事項（FreeBSD）  
   
@@ -130,11 +129,10 @@ export php="php84"
 export samba="samba419"
 ```
 ### ３） システムのアップデート  
-まれに失敗する環境の場合、以下をおこなってください。通常は不要です。  
+システムのアップデートをおこなってください。  
 ```  
 # pkg update 
 # pkg upgrade 
-# reboot  
 ```       
 ## ４．rfriends3のダウンロードとインストール  
   
