@@ -83,6 +83,7 @@ Sun 25 Feb 2024 07:07:16 AM JST
 # pkg install -y sudo
 # pkg install -y git  
 
+%wheelのコメント(#)を外す
 # visudo
 %wheel ALL=(ALL:ALL) ALL
 
@@ -112,12 +113,7 @@ Sun 25 Feb 2024 07:07:16 AM JST
 ```
 先ほど設定したユーザでログインしてください。
 
-### ４） atコマンド設定  
-```  
-$ sudo  vi /var/at/at.allow
-ユーザ名  
-```  
-### ５） rc.conf設定
+### ４） rc.conf設定
 以下を追加してください。
 ```  
 $ sudo vi /etc/rc.conf
@@ -125,7 +121,7 @@ cron_enable="YES"
 samba_server_enable="YES"
 lighttpd_enable="YES"
 ```  
-### ６） php,sambaのversion設定
+### ５） php,sambaのversion設定
 インストールするphp,sambaのversionを確認してください。  
 ```  
 # pkg search php
@@ -133,7 +129,7 @@ php84-8.4.2
 # pkg search samba
 samba419-4.19.9_5 
 ```
-git clone 後、インストール実行前にinstall_freebsdの該当箇所を変更する。
+git clone 後、インストール実行前にinstall_freebsdの該当箇所を変更してください。
 ```
 export php="php84"
 export samba="samba419"
@@ -145,7 +141,8 @@ export samba="samba419"
 > [!CAUTION]
 > 必ず２または３で確認したユーザでログインしてください。    
   
-　ディストリビューション別のrfriends3インストールスクリプトを実行します。各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
+　ディストリビューション別のrfriends3インストールスクリプト（XXXXX.sh）を実行します。  
+ 各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
 ```  
 $ cd ~/
