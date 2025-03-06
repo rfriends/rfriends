@@ -80,8 +80,8 @@ Sun 25 Feb 2024 07:07:16 AM JST
 # adduser
 ユーザ名
   
-# pkg install sudo
-# pkg install git  
+# pkg install -y sudo
+# pkg install -y git  
 
 # visudo
 %wheel ALL=(ALL:ALL) ALL
