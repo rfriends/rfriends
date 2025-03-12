@@ -32,10 +32,17 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ## ２．確認事項（Ubuntu）  
   
 　以下を確認し、インストール可能かどうかを判断してください。  
-  
-### １） root権限があるユーザ 
+ 
+### １） システムのアップデート  
+システムのアップデートをおこなってください。  
+```  
+　$ sudo apt-get update  
+　$ sudo apt-get upgrade -y
+  $ sudo reboot  
+``` 
+### ２） root権限があるユーザ 
 
-実行ユーザにsudo権限があること。  
+実行ユーザにsudo権限があることを確認してください。  
 ```  
 $ groups ユーザ名  
 ```  
@@ -47,7 +54,7 @@ gitをインストール
 ```  
 # apt-get -y install git  
 ```  
-### ２） タイムゾーンと現在時刻の確認  
+### ３） タイムゾーンと現在時刻の確認  
 ```  
 $ date  
 Sun 25 Feb 2024 07:06:16 AM JST  
@@ -62,18 +69,22 @@ $ sudo timedatectl set-timezone Asia/Tokyo
 $ date  
 Sun 25 Feb 2024 07:07:16 AM JST  
 ```
-### ３） システムのアップデート  
-システムのアップデートをおこなってください。  
-```  
-　$ sudo apt-get update  
-　$ sudo apt-get upgrade -y
-  $ sudo reboot  
-```   
+  
+異常が確認出来たら、４．に進んでください。
+   
 ## ３．確認事項（FreeBSD）  
   
 　以下を確認し、インストール可能かどうかを判断してください。  
+
+### １） システムのアップデート  
+システムのアップデートをおこなってください。  
+```  
+# pkg update 
+# pkg upgrade
+# reboot
+```
   
-### １） root権限があるユーザ 
+### ２） root権限があるユーザ 
 
 ユーザを追加し、wheelグループに参加させる。  
 ```  
@@ -89,7 +100,7 @@ Sun 25 Feb 2024 07:07:16 AM JST
 
 # pw groupmod wheel -m ユーザ名 
 ```  
-### ２） タイムゾーンと現在時刻の確認  
+### ３） タイムゾーンと現在時刻の確認  
 ```  
 # date  
 Sun 25 Feb 2024 07:06:16 AM JST  
@@ -104,13 +115,7 @@ Sun 25 Feb 2024 07:06:16 AM JST
 $ date  
 Sun 25 Feb 2024 07:07:16 AM JST  
 ```
-### ３） システムのアップデート  
-システムのアップデートをおこなってください。  
-```  
-# pkg update 
-# pkg upgrade
-# reboot
-```
+
 先ほど設定したユーザでログインしてください。
 
 ### ４） rc.conf設定
