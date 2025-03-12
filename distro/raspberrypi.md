@@ -2,6 +2,10 @@
 
 RaspiOSのイメージにrfriends3をスクリプトによりインストールします。  
   
+これは、メモリが少ない等、主に非力な機種やNO DESKTOP用です。
+パワーのある機種は以下で。
+https://github.com/rfriends/rfriends3_core
+  
 ## 1. 純正のimagerを使用してmicroSDを作成する。     
    <https://www.raspberrypi.com/software/>  
   
