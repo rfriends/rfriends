@@ -11,7 +11,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第11版　2025/03/06 
+第12版　2025/03/14 
 
 以下、Ubuntu,FreeBSDを例に説明しますが、他のディストリビューションの場合は、コマンドを置き換えてください。
   
@@ -40,12 +40,22 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 　$ sudo apt-get update  
 　$ sudo apt-get upgrade -y
   $ sudo reboot  
-``` 
-### ２） root権限があるユーザ 
+```
+### ２） ユーザ登録 
+
+すでにユーザ登録済の場合は、この項は飛ばしてください。   
+```  
+# adduser ユーザ名
+# gpasswd -a ユーザ名 sudo
+# visudo
+ユーザ名 ALL=(ALL:ALL) ALL
+```
+    
+### ３） root権限があるユーザ 
 
 実行ユーザにsudo権限があることを確認してください。  
 ```  
-$ groups ユーザ名  
+# groups ユーザ名  
 ```  
 表示されるグループ名の中にsudoがあることを確認してください。 ない場合は、rootで権限を付加してください。  
 ```  
@@ -53,25 +63,25 @@ $ groups ユーザ名
 ```
 gitをインストール  
 ```  
-# apt-get -y install git  
+# apt-get install git -y  
 ```  
-### ３） タイムゾーンと現在時刻の確認  
+### ４） タイムゾーンと現在時刻の確認  
 ```  
-$ date  
+# date  
 Sun 25 Feb 2024 07:06:16 AM JST  
 ```  
 でタイムゾーンを確認してください。 末尾がJSTになっていなかったら、   
 ```  
-$ sudo timedatectl set-timezone Asia/Tokyo   
+# timedatectl set-timezone Asia/Tokyo   
 ```  
 で日本に変更してください。 これを忘れると、予約録音が始まりません。  
 その後、再び時刻が正しいことを確認してください。  
 ```  
-$ date  
+# date  
 Sun 25 Feb 2024 07:07:16 AM JST  
 ```
   
-異常が確認出来たら、４．に進んでください。
+以上が確認出来たら、４．に進んでください。
    
 ## ３．確認事項（FreeBSD）  
   
@@ -113,7 +123,7 @@ Sun 25 Feb 2024 07:06:16 AM JST
 で日本に変更してください。 これを忘れると、予約録音が始まりません。  
 その後、再び時刻が正しいことを確認してください。  
 ```  
-$ date  
+# date  
 Sun 25 Feb 2024 07:07:16 AM JST  
 ```
 
@@ -130,9 +140,9 @@ lighttpd_enable="YES"
 ### ５） php,sambaのversion設定
 インストールするphp,sambaのversionを確認してください。  
 ```  
-# pkg search php
+$ pkg search php
 php84-8.4.2 
-# pkg search samba
+$ pkg search samba
 samba419-4.19.9_5 
 ```
 git clone 後、インストール実行前にinstall_freebsdの該当箇所を変更してください。
