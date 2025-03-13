@@ -37,9 +37,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ### １） システムのアップデート  
 システムのアップデートをおこなってください。  
 ```  
-　$ sudo apt-get update  
-　$ sudo apt-get upgrade -y
-  $ sudo reboot  
+# apt-get update  
+# apt-get upgrade -y
+# reboot  
 ```
 ### ２） ユーザ登録 
 
