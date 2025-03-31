@@ -42,6 +42,9 @@ http://radiko.jp/v3/program/date/YYYYMMDD/地区番号.xml
 ### らじる聞き逃し配信アドレス（日付指定）  
   
 https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/corners?onair_date=20250129  
+
+### NHKゴガク番組表   
+[https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/corners/onair_dates](https://www.nhk.jp/g/gogaku/blog/r6xt6_2by/)  
   
 ### 地区番号  
   
