@@ -140,8 +140,8 @@ lighttpd_enable="YES"
 ### ５） php,sambaのversion設定
 インストールするphp,sambaのversionを確認してください。  
 ```  
-$ pkg search php
-php84-8.4.2 
+$ pkg search "PHP Scripting”
+php84-8.4.5_1                  PHP Scripting Language (8.4.X branch)
 $ pkg search samba
 samba419-4.19.9_5 
 ```
