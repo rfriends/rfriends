@@ -11,7 +11,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第12版　2025/03/14 
+第13版　2025/04/15
 
 以下、Ubuntu,FreeBSDを例に説明しますが、他のディストリビューションの場合は、コマンドを置き換えてください。
   
