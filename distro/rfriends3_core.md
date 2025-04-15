@@ -29,6 +29,10 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/01/24|chromeos linux環境|install_ubuntu.sh|   
 |2025/02/26|android linuxターミナル|install_ubuntu.sh|  
 |2025/03/06|FreeBSD|install_freebsd.sh|  
+|2025/04/15|Opensuse|install_suse.sh|  
+|2025/04/15|alpine|install_alpine.sh|  
+
+suse,alpineについては、現在検証中のため正常動作しません。  
   
 ## ２．確認事項（Ubuntu）  
   
