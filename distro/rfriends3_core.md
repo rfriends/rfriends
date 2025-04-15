@@ -145,15 +145,15 @@ lighttpd_enable="YES"
 ### ５） php,sambaのversion設定
 インストールするphp,sambaのversionを確認してください。  
 ```  
-$ pkg search "PHP Scripting”
+$ pkg search PHP | grep Scripting
 php84-8.4.5_1                  PHP Scripting Language (8.4.X branch)
 $ pkg search samba
-samba419-4.19.9_5 
+samba420-4.20.7_4 
 ```
 git clone 後、インストール実行前にinstall_freebsdの該当箇所を変更してください。
 ```
 export php="php84"
-export samba="samba419"
+export samba="samba420"
 ```    
 ## ４．rfriends3のダウンロードとインストール  
   
