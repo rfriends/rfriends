@@ -170,7 +170,7 @@ export samba="samba420"
 
 # apk add git
 
-testingを追加
+testingを追加(atomicparsleyのため)
 # vi /etc/apk/repositories
 https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```
