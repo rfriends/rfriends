@@ -130,6 +130,7 @@ export samba="samba420"
 # dnf install git
 ```
 ### 2.4 openSUSEの場合  
+
 ```  
 # zypper refresh
 # zypper update
@@ -151,6 +152,7 @@ export samba="samba420"
 # zypper install git
 ```
 ### 2.5 alpineの場合  
+
 ```  
 # apk update
 # apk upgrade
@@ -173,6 +175,7 @@ testingを追加
 @testing https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```
 ### 2.6 arch linuxの場合  
+
 ```  
 # pacman -Syyu
 
@@ -225,6 +228,9 @@ $ ip -4 -br a | grep -v "127.0.0.1"
 $ hostname -I  
 ```  
 このIPアドレス（XXX.XXX.XXX.XXX）がwebサーバアドレスです。  
+> [!CAUTION]
+> 現在、openSUSE,alpine,archlinuxではlighttpdは動作しません。
+> ビルトインサーバをご利用ください。
   
 ウェブブラウザ（edge,chrome,firefox,...）を起動し、上記で表示されたアドレスにアクセスする。  
   
