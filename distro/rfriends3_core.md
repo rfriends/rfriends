@@ -124,7 +124,7 @@ export samba="samba420"
 
 # timedatectl set-timezone Asia/Tokyo 
 
-# useradd user -m -G wheel user
+# useradd -m -G wheel user
 # passwd user
 
 # dnf install git
