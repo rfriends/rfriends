@@ -168,11 +168,11 @@ export samba="samba420"
 # adduser user
 # addgroup user wheel
 
-#apk add git
+# apk add git
 
 testingを追加
 # vi /etc/apk/repositories
-@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing
+https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```
 ### 2.6 arch linuxの場合  
 
