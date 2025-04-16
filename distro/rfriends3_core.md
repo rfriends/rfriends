@@ -54,18 +54,18 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ```  
 # apt-get update  
 # apt-get upgrade -y
-# reboot
 ```
 2) 日付を日本にする。  
 ```
 # timedatectl set-timezone Asia/Tokyo
 ```
 3) 実行するユーザを追加し、管理者権限を付加する。  
-```  
-# adduser ユーザ名
-# gpasswd -a ユーザ名 sudo
-# visudo
-ユーザ名 ALL=(ALL:ALL) ALL
+```
+もしインストールされていないなら
+# apt-get install sudo vim -y
+
+# useradd -m -G sudo -s /bin/bash ユーザ名
+# passwd ユーザ名
 ```
 4) gitをインストールする。  
 ```  
