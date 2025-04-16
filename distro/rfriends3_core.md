@@ -5,13 +5,13 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 インストールは全自動で行います。  
 
 > [!CAUTION]
-> arch,opensuse,alpine版は現在テスト中ですが、  
+> arch,opensuse版は現在テスト中ですが、  
 > どなたか、テストしていただけませんか？  
      
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第14版　2025/04/16  
+第15版　2025/04/17  
   
 ## １．ディストリビューション  
 
@@ -21,13 +21,14 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |---|---|---|  
 |2025/01/24|ubuntu|install_ubuntu.sh|  
 |2025/01/24|debian|install_ubuntu.sh|  
+|2025/01/24|chromeos linux環境|install_ubuntu.sh|   
+|2025/02/26|android linuxターミナル|install_ubuntu.sh| 
 |2025/01/24|stream|install_stream.sh|  
 |2025/01/24|rocky linux|install_stream.sh|  
-|2025/01/24|chromeos linux環境|install_ubuntu.sh|   
-|2025/02/26|android linuxターミナル|install_ubuntu.sh|  
+|2025/04/17|alma linux|install_stream.sh|   
 |2025/03/06|FreeBSD|install_freebsd.sh|  
 |2025/04/15|alpine|install_alpine.sh|  
-|2025/04/17|alma linux|install_stream.sh|  
+
   
   
   
