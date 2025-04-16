@@ -95,7 +95,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 4) gitをインストールしてください。  
 ```  
 # pkg install -y git   
-```
+```  
 5) その他
 
 ・rc.conf設定  
@@ -129,29 +129,7 @@ export samba="samba420"
 
 # dnf install git
 ```
-### 2.4 openSUSEの場合  
-
-```  
-# zypper refresh
-# zypper update
-
-# timedatectl set-timezone Asia/Tokyo  
-
-# useradd -m user
-# passwd user
-
-# groupadd wheel
-# usermod -G wheel root
-# usermod -G wheel user
-
-# zypper install vim
-
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-
-# zypper install git
-```
-### 2.5 alpineの場合  
+### 2.4 alpineの場合  
 
 ```  
 # apk update
@@ -174,6 +152,29 @@ testingを追加(atomicparsleyのため)
 # vi /etc/apk/repositories
 https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```
+### 2.5 openSUSEの場合  
+
+```  
+# zypper refresh
+# zypper update
+
+# timedatectl set-timezone Asia/Tokyo  
+
+# useradd -m user
+# passwd user
+
+# groupadd wheel
+# usermod -G wheel root
+# usermod -G wheel user
+
+# zypper install vim
+
+# visudo
+%wheel ALL=(ALL:ALL) ALL
+
+# zypper install git
+```
+
 ### 2.6 arch linuxの場合  
 
 ```  
