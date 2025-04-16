@@ -1,7 +1,7 @@
 ## Linux/BSD版rfriends3でラジオ録音  
   
 rfriends2はCLIベースでしたが、rfriends3はWEBベースで操作が簡単になっています。  
-webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版です。(ubuntu/debian/stream9/rocky/arch/chrome/freeBSD)  
+webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版です。(ubuntu/debian/chrome/android/stream/rocky/Alma/FreeBSD/Alpine/openSUSE/arch)  
 インストールは全自動で行います。  
 
 > [!CAUTION]
