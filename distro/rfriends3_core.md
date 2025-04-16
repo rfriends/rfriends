@@ -64,8 +64,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 もしインストールされていないなら
 # apt-get install sudo vim -y
 
-# useradd -m -G sudo -s /bin/bash ユーザ名
+# useradd -m -G sudo ユーザ名
 # passwd ユーザ名
+# chsh -s /bin/bash ユーザ名  
 ```
 4) gitをインストールする。  
 ```  
