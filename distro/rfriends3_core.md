@@ -11,7 +11,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第13版　2025/04/15
+第14版　2025/04/16
 
 以下、Ubuntu,FreeBSDを例に説明しますが、他のディストリビューションの場合は、コマンドを置き換えてください。  
 sudoが可能な管理者ユーザが必要になります。  
@@ -35,132 +35,169 @@ sudoが可能な管理者ユーザが必要になります。
 
 suse,alpineについては、現在検証中のため正常動作しません。  
   
-## ２．確認事項（Ubuntu）  
-  
-　以下を確認し、インストール可能かどうかを判断してください。  
+## ２．インストール準備  
+以下のことを確認してください。 
  
-### １） システムのアップデート  
-システムのアップデートをおこなってください。  
+1) システムを最新にしてください。  
+2) 日付を日本にしてください。  
+3) 実行するユーザを追加し、管理者権限を付加してください。  
+4) gitをインストールしてください。
+5) その他 
+  
+### 2.1 Ubuntu/debianの場合  
+  
+1) システムを最新にしてください。  
 ```  
 # apt-get update  
 # apt-get upgrade -y
-# reboot  
+# reboot
 ```
-### ２） ユーザ登録 
-
-すでにユーザ登録済の場合は、この項は飛ばしてください。   
+2) 日付を日本にしてください。  
+```
+# timedatectl set-timezone Asia/Tokyo
+```
+3) 実行するユーザを追加し、管理者権限を付加してください。  
 ```  
 # adduser ユーザ名
 # gpasswd -a ユーザ名 sudo
 # visudo
 ユーザ名 ALL=(ALL:ALL) ALL
 ```
-    
-### ３） root権限があるユーザ 
-
-実行ユーザにsudo権限があることを確認してください。  
-```  
-# groups ユーザ名  
-```  
-表示されるグループ名の中にsudoがあることを確認してください。 ない場合は、rootで権限を付加してください。  
-```  
-# gpasswd -a ユーザ名 sudo  
-```
-gitをインストール  
+4) gitをインストールしてください。  
 ```  
 # apt-get install git -y  
-```  
-### ４） タイムゾーンと現在時刻の確認  
-```  
-# date  
-Sun 25 Feb 2024 07:06:16 AM JST  
-```  
-でタイムゾーンを確認してください。 末尾がJSTになっていなかったら、   
-```  
-# timedatectl set-timezone Asia/Tokyo   
-```  
-で日本に変更してください。 これを忘れると、予約録音が始まりません。  
-その後、再び時刻が正しいことを確認してください。  
-```  
-# date  
-Sun 25 Feb 2024 07:07:16 AM JST  
 ```
+### 2.2 FreeBSDの場合  
   
-以上が確認出来たら、４．に進んでください。
-   
-## ３．確認事項（FreeBSD）  
-  
-　以下を確認し、インストール可能かどうかを判断してください。  
-
-### １） システムのアップデート  
-システムのアップデートをおこなってください。  
+1) システムを最新にしてください。  
 ```  
 # pkg update 
 # pkg upgrade
 # reboot
 ```
-  
-### ２） root権限があるユーザ 
-
-ユーザを追加し、wheelグループに参加させる。  
+2) 日付を日本にしてください。  
+```
+# tzsetup Asia/Tokyo   
+```
+3) 実行するユーザを追加し、管理者権限を付加してください。  
 ```  
-# adduser
-ユーザ名
-  
-# pkg install -y sudo
-# pkg install -y git  
-
+# adduser ユーザ名
+# pkg install -y sudo 
 %wheelのコメント(#)を外す
 # visudo
 %wheel ALL=(ALL:ALL) ALL
-
 # pw groupmod wheel -m ユーザ名 
-```  
-### ３） タイムゾーンと現在時刻の確認  
-```  
-# date  
-Sun 25 Feb 2024 07:06:16 AM JST  
-```  
-でタイムゾーンを確認してください。 末尾がJSTになっていなかったら、   
-```  
-# tzsetup Asia/Tokyo   
-```  
-で日本に変更してください。 これを忘れると、予約録音が始まりません。  
-その後、再び時刻が正しいことを確認してください。  
-```  
-# date  
-Sun 25 Feb 2024 07:07:16 AM JST  
 ```
-
-先ほど設定したユーザでログインしてください。
-
-### ４） rc.conf設定
-以下を追加してください。
+4) gitをインストールしてください。  
 ```  
+# pkg install -y git   
+```
+5) その他
+
+・rc.conf設定  
+```
 $ sudo vi /etc/rc.conf
 cron_enable="YES"
 samba_server_enable="YES"
 lighttpd_enable="YES"
 ```  
-### ５） php,sambaのversion設定
-インストールするphp,sambaのversionを確認してください。  
-```  
+・php,sambaのversion確認
+```
 $ pkg search PHP | grep Scripting
 php84-8.4.5_1                  PHP Scripting Language (8.4.X branch)
 $ pkg search samba
 samba420-4.20.7_4 
 ```
-git clone 後、インストール実行前にinstall_freebsdの該当箇所を変更してください。
+・git clone 後、インストール実行前にinstall_freebsdの該当箇所を変更してください。
 ```
 export php="php84"
 export samba="samba420"
-```    
-## ４．rfriends3のダウンロードとインストール  
+```
+### 2.3 stream/rockyの場合  
+```  
+# dnf update
+# dnf upgrade
+
+# timedatectl set-timezone Asia/Tokyo 
+
+# useradd user
+# passwd user
+
+# groupadd wheel
+# usermod -G wheel root
+# usermod -G wheel user
+
+# dnf install git
+```
+### 2.4 openSUSEの場合  
+```  
+# zypper refresh
+# zypper update
+
+# timedatectl set-timezone Asia/Tokyo  
+
+# useradd -m user
+# passwd user
+
+# groupadd wheel
+# usermod -G wheel root
+# usermod -G wheel user
+
+# zypper install vim
+
+# visudo
+%wheel ALL=(ALL:ALL) ALL
+
+# zypper install git
+```
+### 2.5 alpineの場合  
+```  
+# apk update
+# apk upgrade
+
+# apk add tzdata
+# cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+
+# apk add sudo
+
+# visudo
+%wheel ALL=(ALL:ALL) ALL
+
+# adduser user
+# addgroup user wheel
+
+#apk add git
+
+testingを追加
+# vi /etc/apk/repositories
+@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing
+```
+### 2.6 arch linuxの場合  
+```  
+# pacman -Syyu
+
+# cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+
+# pacman -S vi
+# pacman -S sudo
+
+# visudo
+%wheel ALL=(ALL:ALL) ALL
+
+# useradd -m user
+# passwd user
+
+# usermod -G wheel root
+# usermod -G wheel user
+
+# pacman -S git
+```  
+## ３．rfriends3のダウンロードとインストール  
   
 　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
  
 > [!CAUTION]
-> 必ず２または３で確認したユーザでログインしてください。    
+> 必ず２で確認したユーザでログインしてください。    
   
 　ディストリビューション別のrfriends3インストールスクリプト（install_XXXXX.sh）を実行します。  
  各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
@@ -174,9 +211,9 @@ $ sh install_XXXXX.sh
 ```  
   
 これでインストールは完了です。  
-再起動してください。
+念のため、再起動してください。
   
-## ５．rfriends3の実行  
+## ４．rfriends3の実行  
   
 以下を入力します。ipコマンドがない場合は、ifconfigを使用してください。  
 ```  
