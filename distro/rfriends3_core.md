@@ -27,6 +27,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/02/26|android linuxターミナル|install_ubuntu.sh|  
 |2025/03/06|FreeBSD|install_freebsd.sh|  
 |2025/04/15|alpine|install_alpine.sh|  
+|2025/04/17|alma linux|install_stream.sh|  
   
   
   
@@ -115,19 +116,15 @@ samba420-4.20.7_4
 export php="php84"
 export samba="samba420"
 ```
-### 2.3 stream/rockyの場合  
+### 2.3 stream/rocky/almaの場合  
 ```  
 # dnf update
 # dnf upgrade
 
 # timedatectl set-timezone Asia/Tokyo 
 
-# useradd user
+# useradd user -m -G wheel user
 # passwd user
-
-# groupadd wheel
-# usermod -G wheel root
-# usermod -G wheel user
 
 # dnf install git
 ```
