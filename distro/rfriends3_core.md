@@ -229,7 +229,7 @@ $ hostname -I
 ```  
 このIPアドレス（XXX.XXX.XXX.XXX）がwebサーバアドレスです。  
 > [!CAUTION]
-> 現在、openSUSE,alpine,archlinuxではlighttpdは動作しません。
+> 現在、openSUSE,archlinuxではlighttpdは動作しません。
 > ビルトインサーバをご利用ください。
   
 ウェブブラウザ（edge,chrome,firefox,...）を起動し、上記で表示されたアドレスにアクセスする。  
