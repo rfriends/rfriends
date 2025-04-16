@@ -42,48 +42,48 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ## ２．インストール準備  
 以下のことを確認してください。 
  
-1) システムを最新にしてください。  
-2) 日付を日本にしてください。  
-3) 実行するユーザを追加し、管理者権限を付加してください。  
-4) gitをインストールしてください。
+1) システムを最新にする。  
+2) 日付を日本にする。  
+3) 実行するユーザを追加し、管理者権限を付加する。  
+4) gitをインストールする。
 5) その他 
   
 ### 2.1 Ubuntu/debianの場合  
   
-1) システムを最新にしてください。  
+1) システムを最新にする。  
 ```  
 # apt-get update  
 # apt-get upgrade -y
 # reboot
 ```
-2) 日付を日本にしてください。  
+2) 日付を日本にする。  
 ```
 # timedatectl set-timezone Asia/Tokyo
 ```
-3) 実行するユーザを追加し、管理者権限を付加してください。  
+3) 実行するユーザを追加し、管理者権限を付加する。  
 ```  
 # adduser ユーザ名
 # gpasswd -a ユーザ名 sudo
 # visudo
 ユーザ名 ALL=(ALL:ALL) ALL
 ```
-4) gitをインストールしてください。  
+4) gitをインストールする。  
 ```  
 # apt-get install git -y  
 ```
 ### 2.2 FreeBSDの場合  
   
-1) システムを最新にしてください。  
+1) システムを最新にする。  
 ```  
 # pkg update 
 # pkg upgrade
 # reboot
 ```
-2) 日付を日本にしてください。  
+2) 日付を日本にする。  
 ```
 # tzsetup Asia/Tokyo   
 ```
-3) 実行するユーザを追加し、管理者権限を付加してください。  
+3) 実行するユーザを追加し、管理者権限を付加する。  
 ```  
 # adduser ユーザ名
 # pkg install -y sudo 
@@ -92,7 +92,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 %wheel ALL=(ALL:ALL) ALL
 # pw groupmod wheel -m ユーザ名 
 ```
-4) gitをインストールしてください。  
+4) gitをインストールする。  
 ```  
 # pkg install -y git   
 ```  
@@ -124,8 +124,8 @@ export samba="samba420"
 
 # timedatectl set-timezone Asia/Tokyo 
 
-# useradd -m -G wheel user
-# passwd user
+# useradd -m -G wheel ユーザ名 
+# passwd ユーザ名 
 
 # dnf install git
 ```
@@ -143,8 +143,8 @@ export samba="samba420"
 # visudo
 %wheel ALL=(ALL:ALL) ALL
 
-# adduser user
-# addgroup user wheel
+# adduser ユーザ名 
+# addgroup ユーザ名 wheel
 
 # apk add git
 
@@ -160,12 +160,12 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 
 # timedatectl set-timezone Asia/Tokyo  
 
-# useradd -m user
-# passwd user
+# useradd -m ユーザ名 
+# passwd ユーザ名 
 
 # groupadd wheel
 # usermod -G wheel root
-# usermod -G wheel user
+# usermod -G wheel ユーザ名 
 
 # zypper install vim
 
@@ -188,11 +188,11 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # visudo
 %wheel ALL=(ALL:ALL) ALL
 
-# useradd -m user
-# passwd user
+# useradd -m ユーザ名 
+# passwd ユーザ名 
 
 # usermod -G wheel root
-# usermod -G wheel user
+# usermod -G wheel ユーザ名 
 
 # pacman -S git
 ```  
