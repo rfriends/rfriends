@@ -223,6 +223,7 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 > 必ず２で確認したユーザでログインしてください。    
   
 　ディストリビューション別のrfriends3インストールスクリプト（install_XXXXX.sh）を実行します。  
+「１．ディストリビューション」で実行シェルを確認してください。  
  各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
 ```  
