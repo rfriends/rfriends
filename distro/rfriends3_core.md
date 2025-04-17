@@ -20,15 +20,15 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
    
 |確認日付|ディストロ|実行シェル|    
 |---|---|---|  
-|2025/01/24|ubuntu|install_ubuntu.sh|  
-|2025/01/24|debian|install_ubuntu.sh|  
-|2025/01/24|chromeos linux環境|install_ubuntu.sh|   
-|2025/02/26|android linuxターミナル|install_ubuntu.sh| 
+|2025/01/24|Ubuntu|install_ubuntu.sh|  
+|2025/01/24|Debian|install_ubuntu.sh|  
+|2025/01/24|Chromeos linux環境|install_ubuntu.sh|   
+|2025/02/26|Android linuxターミナル|install_ubuntu.sh| 
 |2025/01/24|CentOS stream|install_stream.sh|  
-|2025/01/24|rocky linux|install_stream.sh|  
-|2025/04/17|alma linux|install_stream.sh|   
+|2025/01/24|Rocky linux|install_stream.sh|  
+|2025/04/17|Alma linux|install_stream.sh|   
 |2025/03/06|FreeBSD|install_freebsd.sh|  
-|2025/04/15|alpine|install_alpine.sh|  
+|2025/04/15|Alpine|install_alpine.sh|  
 
   
   
@@ -36,7 +36,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 以下は、現在検証中のため正常動作しません。  
 |確認日付|ディストロ|実行シェル|     
 |---|---|---|   
-|2025/04/15|arch linux|install_arch.sh|   
+|2025/04/15|Arch linux|install_arch.sh|   
 |2025/04/15|openSUSE|install_suse.sh|  
 
 
