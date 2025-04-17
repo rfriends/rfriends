@@ -29,11 +29,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/01/24|Rocky linux|install_stream.sh|  
 |2025/04/17|Alma linux|install_stream.sh|   
 |2025/04/17|Oracle linux|install_oracle.sh|   
+|2025/04/17|Miracle linux|install_oracle.sh|   
 |2025/03/06|FreeBSD|install_freebsd.sh|  
 |2025/04/15|Alpine|install_alpine.sh|  
-
-  
-  
     
 以下は、現在検証中のため正常動作しません。  
   
@@ -136,7 +134,7 @@ export samba="samba420"
 
 # dnf install git
 ```
-### 2.4 oracleの場合  
+### 2.4 oracle/miracleの場合  
 ```  
 # dnf update
 # dnf upgrade
