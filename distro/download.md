@@ -21,6 +21,9 @@ https://almalinux.org/ja/get-almalinux/
   
 Oracle linux    
 https://yum.oracle.com/oracle-linux-isos.html
+
+Miracle linux  
+https://www.miraclelinux.com/distribution/download
   
 freeBSD  
 https://www.freebsd.org/where/
