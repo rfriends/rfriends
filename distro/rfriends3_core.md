@@ -38,7 +38,8 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/15|arch linux|install_arch.sh|   
 |2025/04/15|openSUSE|install_suse.sh|  
 
-ダウロードサイトはこちら  
+ダウロードサイト  
+
   
 ## ２．インストール準備  
 以下のことを確認してください。 
