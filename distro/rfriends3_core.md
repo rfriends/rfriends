@@ -22,11 +22,13 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |---|---|---|  
 |2025/01/24|Ubuntu|install_ubuntu.sh|  
 |2025/01/24|Debian|install_ubuntu.sh|  
+|2025/04/17|ZORIN OS|install_ubuntu.sh|  
 |2025/01/24|Chromeos linux環境|install_ubuntu.sh|   
 |2025/02/26|Android linuxターミナル|install_ubuntu.sh| 
 |2025/01/24|CentOS stream|install_stream.sh|  
 |2025/01/24|Rocky linux|install_stream.sh|  
 |2025/04/17|Alma linux|install_stream.sh|   
+|2025/04/17|Oracle linux|install_oracle.sh|   
 |2025/03/06|FreeBSD|install_freebsd.sh|  
 |2025/04/15|Alpine|install_alpine.sh|  
 
@@ -52,7 +54,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 4) gitをインストールする。  
 5) その他   
   
-### 2.1 Ubuntu/debianの場合  
+### 2.1 Ubuntu/debian/ZORINの場合  
   
 1) システムを最新にする。  
 ```  
@@ -134,7 +136,19 @@ export samba="samba420"
 
 # dnf install git
 ```
-### 2.4 alpineの場合  
+### 2.4 oracleの場合  
+```  
+# dnf update
+# dnf upgrade
+
+# timedatectl set-timezone Asia/Tokyo 
+
+# useradd -m -G wheel ユーザ名 
+# passwd ユーザ名 
+
+# dnf install git
+```
+### 2.5 alpineの場合  
 
 ```  
 # apk update
@@ -157,7 +171,7 @@ testingを追加(atomicparsleyのため)
 # vi /etc/apk/repositories
 https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```
-### 2.5 openSUSEの場合  
+### 2.6 openSUSEの場合  
 
 ```  
 # zypper refresh
@@ -180,7 +194,7 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # zypper install git
 ```
 
-### 2.6 arch linuxの場合  
+### 2.7 arch linuxの場合  
 
 ```  
 # pacman -Syyu
