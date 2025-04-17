@@ -6,6 +6,9 @@ https://jp.ubuntu.com/download
 
 Debian  
 https://www.debian.org/distrib/
+  
+ZORIN OS  
+https://zorin.com/os/download/
 
 CentOS Stream  
 https://www.centos.org/download/
@@ -15,7 +18,10 @@ https://rockylinux.org/ja-JP/download
 
 Alma linux  
 https://almalinux.org/ja/get-almalinux/
-
+  
+Oracle linux    
+https://yum.oracle.com/oracle-linux-isos.html
+  
 freeBSD  
 https://www.freebsd.org/where/
 
