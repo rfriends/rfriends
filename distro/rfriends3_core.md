@@ -24,7 +24,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/01/24|debian|install_ubuntu.sh|  
 |2025/01/24|chromeos linux環境|install_ubuntu.sh|   
 |2025/02/26|android linuxターミナル|install_ubuntu.sh| 
-|2025/01/24|stream|install_stream.sh|  
+|2025/01/24|CentOS stream|install_stream.sh|  
 |2025/01/24|rocky linux|install_stream.sh|  
 |2025/04/17|alma linux|install_stream.sh|   
 |2025/03/06|FreeBSD|install_freebsd.sh|  
