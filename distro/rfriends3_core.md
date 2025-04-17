@@ -16,7 +16,8 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ## １．ディストリビューション  
 
 下記のディストリビューションで動作確認しています。  
-  
+ダウロードサイトは[こちら](download.md)  
+   
 |確認日付|ディストロ|実行シェル|    
 |---|---|---|  
 |2025/01/24|ubuntu|install_ubuntu.sh|  
@@ -38,7 +39,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/15|arch linux|install_arch.sh|   
 |2025/04/15|openSUSE|install_suse.sh|  
 
-ダウロードサイト  
+
 
   
 ## ２．インストール準備  
