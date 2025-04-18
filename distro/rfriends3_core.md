@@ -38,11 +38,16 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/17|Oracle linux|install_stream.sh||   
 |2025/04/17|Miracle linux|install_stream.sh||  
   
-### 1.3 その他  
+### 1.3 BSD系
 
 |最新確認日付|ディストロ|実行シェル|備考|   
 |---|---|---|---|  
 |2025/04/18|FreeBSD|install_freebsd.sh|sambaエラー| 
+  
+### 1.4 その他  
+
+|最新確認日付|ディストロ|実行シェル|備考|   
+|---|---|---|---|  
 |2025/04/18|Alpine|install_alpine.sh||  
 |2025/04/15|Arch linux|install_arch.sh|検証中|   
 |2025/04/15|openSUSE|install_suse.sh|検証中|  
