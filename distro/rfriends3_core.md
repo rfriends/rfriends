@@ -42,7 +42,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 
 |最新確認日付|ディストロ|実行シェル|備考|   
 |---|---|---|---|  
-|2025/04/18|FreeBSD|install_freebsd.sh|sambaエラー| 
+|2025/04/18|FreeBSD|install_freebsd.sh|samba419を選択| 
   
 ### 1.4 その他  
 
@@ -142,12 +142,18 @@ lighttpd_enable="YES"
 $ pkg search PHP | grep Scripting
 php84-8.4.5_1                  PHP Scripting Language (8.4.X branch)
 $ pkg search samba
-samba420-4.20.7_4 
+samba416-4.16.11_6  
+samba419-4.19.9_8  
+samba420-4.20.7_4   
 ```
-・git clone 後、インストール実行前にinstall_freebsd.shの該当箇所を変更してください。
+・git clone 後、インストール実行前にinstall_freebsd.shの該当箇所を変更してください。  
+> [!CAUTION]
+> 2015/04/19現在、samba420は書き込みエラーが出ます。
+> samba419 を選択してください。  
+
 ```
 export php="php84"
-export samba="samba420"
+export samba="samba419"
 ```
 ### 2.4 alpineの場合  
 
