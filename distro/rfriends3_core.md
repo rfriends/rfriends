@@ -56,7 +56,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 以下のことを確認してください。 
  
 1) システムを最新にする。  
-2) 日付を日本にする。  
+2) タイムゾーンを日本にする。  
 3) 実行するユーザを追加し、管理者権限を付加する。  
 4) gitをインストールする。  
 5) その他   
@@ -68,7 +68,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 # apt-get update  
 # apt-get upgrade -y
 ```
-2) 日付を日本にする。  
+2) タイムゾーンを日本にする。  
 ```
 # timedatectl set-timezone Asia/Tokyo
 ```
@@ -91,7 +91,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 # dnf update
 # dnf upgrade
 ```
-2) 日付を日本にする。
+2) タイムゾーンを日本にする。
 ```
 # timedatectl set-timezone Asia/Tokyo 
 ```
@@ -111,7 +111,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 # pkg update 
 # pkg upgrade
 ```
-2) 日付を日本にする。  
+2) タイムゾーンを日本にする。  
 ```
 # tzsetup Asia/Tokyo   
 ```
