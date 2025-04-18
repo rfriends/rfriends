@@ -33,7 +33,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |最新確認日付|ディストロ|実行シェル|備考|    
 |---|---|---|---|  
 |2025/01/24|CentOS stream|install_stream.sh||  
-|2025/01/24|Rocky linux|install_stream.sh||  
+|2025/04/19|Rocky linux|install_stream.sh||  
 |2025/04/17|Alma linux|install_stream.sh||   
 |2025/04/17|Oracle linux|install_oracle.sh||   
 |2025/04/17|Miracle linux|install_oracle.sh||  
