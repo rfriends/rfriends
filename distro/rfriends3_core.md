@@ -20,39 +20,32 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 
 ### 1.1 Ubuntu系  
   
-|確認日付|ディストロ|実行シェル|   
-|---|---|---|  
-|2025/01/24|Ubuntu|install_ubuntu.sh|  
-|2025/01/24|Debian|install_ubuntu.sh|  
-|2025/04/17|ZORIN OS|install_ubuntu.sh|  
-|2025/01/24|Chromeos linux環境|install_ubuntu.sh|   
-|2025/02/26|Android linuxターミナル|install_ubuntu.sh|  
+|確認日付|ディストロ|実行シェル|備考|   
+|---|---|---|---|  
+|2025/01/24|Ubuntu|install_ubuntu.sh||  
+|2025/01/24|Debian|install_ubuntu.sh||  
+|2025/04/17|ZORIN OS|install_ubuntu.sh||  
+|2025/01/24|Chromeos linux環境|install_ubuntu.sh||   
+|2025/02/26|Android linuxターミナル|install_ubuntu.sh||  
   
 ### 1.2 CentOS Stream系  
   
-|確認日付|ディストロ|実行シェル|    
-|---|---|---|  
-|2025/01/24|CentOS stream|install_stream.sh|  
-|2025/01/24|Rocky linux|install_stream.sh|  
-|2025/04/17|Alma linux|install_stream.sh|   
-|2025/04/17|Oracle linux|install_oracle.sh|   
-|2025/04/17|Miracle linux|install_oracle.sh|  
+|確認日付|ディストロ|実行シェル|備考|    
+|---|---|---|---|  
+|2025/01/24|CentOS stream|install_stream.sh||  
+|2025/01/24|Rocky linux|install_stream.sh||  
+|2025/04/17|Alma linux|install_stream.sh||   
+|2025/04/17|Oracle linux|install_oracle.sh||   
+|2025/04/17|Miracle linux|install_oracle.sh||  
   
 ### 1.3 その他  
-  
-|確認日付|ディストロ|実行シェル|    
-|---|---|---|  
-|2025/03/06|FreeBSD|install_freebsd.sh|  
-|2025/04/15|Alpine|install_alpine.sh|  
-  
-### 1.4 検証中  
-  
-以下は、現在検証中のため正常動作しません。  
-  
-|確認日付|ディストロ|実行シェル|     
-|---|---|---|   
-|2025/04/15|Arch linux|install_arch.sh|   
-|2025/04/15|openSUSE|install_suse.sh|  
+
+|確認日付|ディストロ|実行シェル|備考|   
+|---|---|---|---|  
+|2025/03/06|FreeBSD|install_freebsd.sh|sambaエラー| 
+|2025/04/15|Alpine|install_alpine.sh||  
+|2025/04/15|Arch linux|install_arch.sh|検証中|   
+|2025/04/15|openSUSE|install_suse.sh|検証中|  
 
 ## ２．インストール準備  
 以下のことを確認してください。 
