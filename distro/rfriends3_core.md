@@ -25,8 +25,8 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/19|Ubuntu|install_ubuntu.sh||  
 |2025/01/24|Debian|install_ubuntu.sh||  
 |2025/04/19|ZORIN OS|install_ubuntu.sh||  
-|2025/01/24|Chromeos linux環境|install_ubuntu.sh|flexもOK|   
-|2025/02/26|Android linuxターミナル|install_ubuntu.sh|pixelのみ|  
+|2025/01/24|Chromeos linux開発環境|install_ubuntu.sh|flexもOK|   
+|2025/02/26|Android linux開発環境|install_ubuntu.sh|pixelのみ|  
   
 ### 1.2 CentOS Stream系  
   
