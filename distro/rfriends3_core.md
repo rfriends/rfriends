@@ -32,11 +32,11 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
   
 |最新確認日付|ディストロ|実行シェル|備考|    
 |---|---|---|---|  
-|2025/01/24|CentOS stream|install_stream.sh||  
+|2025/04/19|CentOS stream|install_stream.sh||  
 |2025/04/19|Rocky linux|install_stream.sh||  
 |2025/04/17|Alma linux|install_stream.sh||   
-|2025/04/17|Oracle linux|install_oracle.sh||   
-|2025/04/17|Miracle linux|install_oracle.sh||  
+|2025/04/17|Oracle linux|install_stream.sh||   
+|2025/04/17|Miracle linux|install_stream.sh||  
   
 ### 1.3 その他  
 
@@ -80,7 +80,26 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ```  
 # apt-get install git -y  
 ```
-### 2.2 FreeBSDの場合  
+### 2.2 stream/rocky/alma/oracle/miracleの場合  
+1) システムを最新にする。  
+```  
+# dnf update
+# dnf upgrade
+```
+2) 日付を日本にする。
+```
+# timedatectl set-timezone Asia/Tokyo 
+```
+3) 実行するユーザを追加し、管理者権限を付加する。
+```
+# useradd -m -G wheel ユーザ名 
+# passwd ユーザ名
+```
+4) gitをインストールする。
+```
+# dnf install git
+```
+### 2.3 FreeBSDの場合  
   
 1) システムを最新にする。  
 ```  
@@ -125,31 +144,7 @@ samba420-4.20.7_4
 export php="php84"
 export samba="samba420"
 ```
-### 2.3 stream/rocky/almaの場合  
-```  
-# dnf update
-# dnf upgrade
-
-# timedatectl set-timezone Asia/Tokyo 
-
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名 
-
-# dnf install git
-```
-### 2.4 oracle/miracleの場合  
-```  
-# dnf update
-# dnf upgrade
-
-# timedatectl set-timezone Asia/Tokyo 
-
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名 
-
-# dnf install git
-```
-### 2.5 alpineの場合  
+### 2.4 alpineの場合  
 
 ```  
 # apk update
@@ -172,7 +167,7 @@ testingを追加(atomicparsleyのため)
 # vi /etc/apk/repositories
 https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```
-### 2.6 openSUSEの場合  
+### 2.5 openSUSEの場合  
 
 ```  
 # zypper refresh
@@ -195,7 +190,7 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # zypper install git
 ```
 
-### 2.7 arch linuxの場合  
+### 2.6 arch linuxの場合  
 
 ```  
 # pacman -Syyu
