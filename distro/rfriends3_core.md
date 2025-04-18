@@ -93,7 +93,6 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ```  
 # pkg update 
 # pkg upgrade
-# reboot
 ```
 2) 日付を日本にする。  
 ```
@@ -128,7 +127,7 @@ php84-8.4.5_1                  PHP Scripting Language (8.4.X branch)
 $ pkg search samba
 samba420-4.20.7_4 
 ```
-・git clone 後、インストール実行前にinstall_freebsdの該当箇所を変更してください。
+・git clone 後、インストール実行前にinstall_freebsd.shの該当箇所を変更してください。
 ```
 export php="php84"
 export samba="samba420"
