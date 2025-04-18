@@ -18,39 +18,39 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 下記のディストリビューションで動作確認しています。  
 ダウロードサイトは[こちら](download.md)  
 
-### 1.1 Ubuntu系  
+### 1.1 Ubuntu系  (install_ubuntu.sh)
   
-|最新確認日付|ディストロ|実行シェル|備考|   
-|---|---|---|---|  
-|2025/04/19|Ubuntu|install_ubuntu.sh||  
-|2025/01/24|Debian|install_ubuntu.sh||  
-|2025/04/19|ZORIN OS|install_ubuntu.sh||  
-|2025/01/24|Chromeos linux開発環境|install_ubuntu.sh|flexもOK|   
-|2025/02/26|Android linux開発環境|install_ubuntu.sh|pixelのみ|  
+|最新確認日付|ディストロ|備考|   
+|---|---|---|  
+|2025/04/19|Ubuntu||  
+|2025/01/24|Debian||  
+|2025/04/19|ZORIN OS||  
+|2025/01/24|Chromeos linux開発環境|flexもOK|   
+|2025/02/26|Android linux開発環境|pixelのみ|  
   
-### 1.2 CentOS Stream系  
+### 1.2 CentOS Stream系  (install_stream.sh)
   
-|最新確認日付|ディストロ|実行シェル|備考|    
-|---|---|---|---|  
-|2025/04/19|CentOS stream|install_stream.sh||  
-|2025/04/19|Rocky linux|install_stream.sh||  
-|2025/04/17|Alma linux|install_stream.sh||   
-|2025/04/17|Oracle linux|install_stream.sh||   
-|2025/04/17|Miracle linux|install_stream.sh||  
+|最新確認日付|ディストロ|備考|    
+|---|---|---|  
+|2025/04/19|CentOS stream||  
+|2025/04/19|Rocky linux||  
+|2025/04/17|Alma linux||  
+|2025/04/17|Oracle linux||   
+|2025/04/17|Miracle linux||  
   
-### 1.3 BSD系
+### 1.3 BSD系  (install_freebsd.sh)
 
-|最新確認日付|ディストロ|実行シェル|備考|   
-|---|---|---|---|  
-|2025/04/18|FreeBSD|install_freebsd.sh|samba419を選択| 
+|最新確認日付|ディストロ|備考|   
+|---|---|---|  
+|2025/04/18|FreeBSD|samba419を選択| 
   
 ### 1.4 その他  
 
-|最新確認日付|ディストロ|実行シェル|備考|   
-|---|---|---|---|  
-|2025/04/18|Alpine|install_alpine.sh||  
-|2025/04/15|Arch linux|install_arch.sh|検証中|   
-|2025/04/15|openSUSE|install_suse.sh|検証中|  
+|最新確認日付|ディストロ|備考|   
+|---|---|---|  
+|2025/04/18|Alpine|install_alpine.sh|  
+|2025/04/15|Arch linux|install_arch.sh (検証中)|   
+|2025/04/15|openSUSE|install_suse.sh (検証中)|  
 
 ## ２．インストール準備  
 以下のことを確認してください。 
