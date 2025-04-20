@@ -105,7 +105,8 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ```
 # dnf install git
 ```
-5) その他  
+5) その他
+  
 SELINUX をdisableにする
 ```
 # vi /etc/selinux/config
