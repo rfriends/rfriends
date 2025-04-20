@@ -49,7 +49,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 
 |最新確認日付|ディストロ|ステータス|   
 |---|---|---|  
-|2025/04/18|Alpine|install_alpine.sh(〇)|  
+|2025/04/18|Alpine|install_alpine.sh(〇2b)|  
 |2025/04/15|Arch linux|install_arch.sh (検証中)|   
 |2025/04/15|openSUSE|install_suse.sh (検証中)|  
 
