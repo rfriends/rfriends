@@ -6,9 +6,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 
 > [!CAUTION]
 > インストールするシステムにすでにWEBサーバ(apache,nginx)やSAMBAサーバがインストールされている場合は、  
-> それらを停止させるか、rfriendsよりLighttp,Sambaをインストールしないでください。
-> export optlighttpd="off"
-> export optsamba="off"
+> それらを停止させるか、rfriendsよりLighttpd,Sambaをインストールしないでください。  
+> export optlighttpd="off"  
+> export optsamba="off"  
      
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
