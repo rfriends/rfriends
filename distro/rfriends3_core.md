@@ -220,7 +220,7 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```  
 # pacman -Syyu
 
-# cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+# timedatectl set-timezone Asia/Tokyo
 
 # pacman -S vi
 # pacman -S sudo
