@@ -107,6 +107,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 # dnf install git
 ```
 5) その他
+
+自分でセキュリティ設定ができる場合は、以下の操作は不要です。  
+  
   
 SELINUX をdisableにする
 ```
