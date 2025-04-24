@@ -108,9 +108,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ```
 5) その他
 
-自分でセキュリティ設定ができる場合は、以下の操作は不要です。  
+まず、以下の設定（セキュリティOFF）で実行し、うまくいったらセキュリティ設定を行ってください。  
   
-  
+
 SELINUX をdisableにする
 ```
 # vi /etc/selinux/config
