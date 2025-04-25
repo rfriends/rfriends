@@ -263,7 +263,7 @@ $ sh install_XXXXX.sh
 これでインストールは完了です。  
 再起動してください。  
 ```
-$ reboot
+$ sudo reboot
 ```  
   
 ## ４．rfriends3の実行  
