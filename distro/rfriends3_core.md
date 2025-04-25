@@ -35,11 +35,11 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |最終確認|ディストロ|Ver.|ステータス|    
 |---|---|---|---|  
 |2025/04/21|CentOS stream|9|〇|  
-|2025/04/25|fedora linux|39 - 42|〇|  
 |2025/04/20|Rocky linux|9.5|〇|  
 |2025/04/20|Alma linux|9.5|〇|  
 |2025/04/20|Oracle linux|9.5|〇|   
 |2025/04/20|Miracle linux|9.4|〇|  
+|2025/04/25|fedora linux|39 - 42|〇|  
 
 ### 1.3 BSD系  (install_freebsd.sh)
 
@@ -88,7 +88,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ```  
 # apt-get install git -y  
 ```
-### 2.2 stream/fedora/rocky/alma/oracle/miracleの場合  
+### 2.2 stream/rocky/alma/oracle/miracle/fedoraの場合  
 1) システムを最新にする。  
 ```  
 # dnf update
