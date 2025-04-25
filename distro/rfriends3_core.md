@@ -284,11 +284,6 @@ http://XXX.XXX.XXX.XXX:8000
   
 「ヘルプ」「システム更新」でシステムを最新にしてください。 
   
-> [!CAUTION]
-> 現在、openSUSE,archlinuxではlighttpdは動作しません。
-> ビルトインサーバをご利用ください。
-> sh rf3server.sh
-  
 ## ５．samba  
   
 　windowsの場合、エクスプローラに先ほどのIPアドレス(xxx.xxx.xxx.xxx)を入力すれば、録音ディレクトリにアクセスできます。smbdirというディレクトリが見えると思います。  
