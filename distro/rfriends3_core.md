@@ -258,12 +258,13 @@ $ rm -rf rfriends3_core
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
 $ sh install_XXXXX.sh
-
-$ sudo reboot
 ```  
   
 これでインストールは完了です。  
-再起動してください。
+再起動してください。  
+```
+$ reboot
+```  
   
 ## ４．rfriends3の実行  
   
