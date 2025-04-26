@@ -38,7 +38,6 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
   
 |最終確認|ディストロ|Ver.|ステータス|    
 |---|---|---|---|  
-|2025/04/27|CentOS|8.5|atomicparsleyなし(△)|  
 |2025/04/26|CentOS stream|9|〇|  
 |2025/04/20|Rocky linux|9.5|〇|  
 |2025/04/20|Alma linux|9.5|〇|  
@@ -46,6 +45,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/20|Miracle linux|9.4|〇|  
 |2025/04/25|fedora linux|39|〇|  
 |2025/04/25|fedora linux|42|〇|  
+|2025/04/27|CentOS|8.5|atomicparsleyなし(×)|  
 
 ### 1.3 BSD系  (install_freebsd.sh)
 
