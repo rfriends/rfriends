@@ -40,7 +40,8 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/20|Alma linux|9.5|〇|  
 |2025/04/20|Oracle linux|9.5|〇|   
 |2025/04/20|Miracle linux|9.4|〇|  
-|2025/04/25|fedora linux|39 - 42|〇|  
+|2025/04/25|fedora linux|39|〇|  
+|2025/04/25|fedora linux|42|〇|  
 
 ### 1.3 BSD系  (install_freebsd.sh)
 
