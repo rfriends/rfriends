@@ -33,6 +33,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/01/24|Chromeos linux開発|134|〇|   
 |2025/04/25|Chromeos flex linux開発|135|〇|   
 |2025/02/26|Android(pixel) linux開発|15, 16|〇|  
+|2025/04/27|Ubuntu (D10)|18|メニュー表示異常(×)|  
   
 ### 1.2 CentOS Stream系  (install_stream.sh)
   
