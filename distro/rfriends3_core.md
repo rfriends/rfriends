@@ -81,12 +81,11 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 
 ## ２．インストール準備  
 以下のことを確認してください。 
-ほとんどのディストロでインストール時に2)3)は設定可能です。  
+ほとんどのディストロでインストール時に2)は設定可能です。  
  
 1) システムを最新にし、アプリを追加する。  
-2) タイムゾーンを日本にする。  
-3) 実行するユーザを追加し、管理者権限を付加する。  
-4) その他   
+2) 実行するユーザを追加し、管理者権限を付加する。  
+3) その他   
   
 ### 2.1 Ubuntu/ZORINの場合  
   
@@ -98,11 +97,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 # apt-get install sudo vim -y
 # apt-get install git -y  
 ```
-2) タイムゾーンを日本にする。  
-```
-# timedatectl set-timezone Asia/Tokyo
-```
-3) 実行するユーザを追加し、管理者権限を付加する。  
+2) 実行するユーザを追加し、管理者権限を付加する。  
 ```
 # useradd -m -G sudo ユーザ名
 # passwd ユーザ名
@@ -118,14 +113,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 # apt-get install sudo vim -y
 # apt-get install git -y
 ```
-2) タイムゾーンを日本にする。  
-```
-# timedatectl set-timezone Asia/Tokyo
-  
-Devuan, MX linuxの場合  
-# cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime  
-```
-3) 実行するユーザを追加し、管理者権限を付加する。  
+2) 実行するユーザを追加し、管理者権限を付加する。  
 ```
 # useradd -m -G sudo ユーザ名
 # passwd ユーザ名
@@ -139,16 +127,12 @@ Devuan, MX linuxの場合
 
 # dnf install git
 ```
-2) タイムゾーンを日本にする。
-```
-# timedatectl set-timezone Asia/Tokyo 
-```
-3) 実行するユーザを追加し、管理者権限を付加する。
+2) 実行するユーザを追加し、管理者権限を付加する。
 ```
 # useradd -m -G wheel ユーザ名 
 # passwd ユーザ名
 ```
-4) その他
+3) その他
 
 > [!CAUTION]
 > まず、以下の設定（セキュリティOFF）で実行し、
@@ -174,11 +158,7 @@ SELINUX=disabled
 # pkg install -y sudo 
 # pkg install -y git   
 ```
-2) タイムゾーンを日本にする。  
-```
-# tzsetup Asia/Tokyo   
-```
-3) 実行するユーザを追加し、管理者権限を付加する。  
+2) 実行するユーザを追加し、管理者権限を付加する。  
 ```  
 # adduser ユーザ名
 
@@ -188,8 +168,7 @@ SELINUX=disabled
 
 # pw groupmod wheel -m ユーザ名 
 ```
-
-4) その他
+3) その他
 
 ・rc.conf設定  
 ```
@@ -224,9 +203,7 @@ export samba="samba419"
 
 # apk add sudo
 # apk add git
-
 # apk add tzdata
-# cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 # visudo
 %wheel ALL=(ALL:ALL) ALL
@@ -247,8 +224,6 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # zypper install vim
 # zypper install git
 
-# timedatectl set-timezone Asia/Tokyo  
-
 # useradd -m ユーザ名 
 # passwd ユーザ名 
 
@@ -265,12 +240,9 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```  
 # pacman -Syyu
 
-# pacman -S git
-
-# timedatectl set-timezone Asia/Tokyo
-
 # pacman -S vi
 # pacman -S sudo
+# pacman -S git
 
 # visudo
 %wheel ALL=(ALL:ALL) ALL
