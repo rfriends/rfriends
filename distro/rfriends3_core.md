@@ -69,7 +69,7 @@ Debian
 
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
-|2025/04/20|◎|Alpine|3.21|install_alpine.sh|  
+|2025/04/27|検証中|Alpine|3.21|install_alpine.sh|  
 |2025/04/25|〇|Arch linux|-|install_arch.sh|   
 |2025/04/25|〇|openSUSE|15.6|install_suse.sh|  
 
