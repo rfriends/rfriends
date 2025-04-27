@@ -150,15 +150,16 @@ Devuan, MX linuxの場合
 ```
 4) その他
 
-まず、以下の設定（セキュリティOFF）で実行し、うまくいったらセキュリティ設定を行ってください。  
-  
+> [!CAUTION]
+> まず、以下の設定（セキュリティOFF）で実行し、
+> うまくいったらセキュリティ設定を行ってください。  
 
-SELINUX をdisableにする
+・　SELINUX をdisableにする
 ```
 # vi /etc/selinux/config
 SELINUX=disabled
 ```
-firewalldをdisableにする
+・　firewalldをdisableにする
 ```
 # systemctl stop firewalld
 # systemctl disable firewalld
