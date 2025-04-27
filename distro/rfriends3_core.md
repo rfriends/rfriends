@@ -219,12 +219,11 @@ export samba="samba419"
 # apk update
 # apk upgrade
 
+# apk add sudo
 # apk add git
 
 # apk add tzdata
 # cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
-
-# apk add sudo
 
 # visudo
 %wheel ALL=(ALL:ALL) ALL
