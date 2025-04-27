@@ -132,22 +132,6 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 # useradd -m -G wheel ユーザ名 
 # passwd ユーザ名
 ```
-3) その他
-
-> [!CAUTION]
-> まず、以下の設定（セキュリティOFF）で実行し、
-> うまくいったらセキュリティ設定を行ってください。  
-
-・　SELINUX をdisableにする
-```
-# vi /etc/selinux/config
-SELINUX=disabled
-```
-・　firewalldをdisableにする
-```
-# systemctl stop firewalld
-# systemctl disable firewalld
-```
 ### 2.4 FreeBSDの場合  
   
 1) システムを最新にし、アプリを追加する。    
