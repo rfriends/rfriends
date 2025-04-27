@@ -51,6 +51,7 @@ Debian
   
 |最終確認|判定|ディストロ|Ver.|備考|    
 |---|:---:|---|---|---|  
+|2025/04/27|✕|CentOS|8.5|atomicparsleyなし|  
 |2025/04/26|〇|CentOS stream|9||  
 |2025/04/20|◎|Rocky linux|9.5||  
 |2025/04/20|◎|Alma linux|9.5||  
@@ -58,7 +59,6 @@ Debian
 |2025/04/20|〇|Miracle linux|9.4||  
 |2025/04/25|〇|fedora linux|39||  
 |2025/04/25|〇|fedora linux|42||  
-|2025/04/27|✕|CentOS|8.5|atomicparsleyなし|  
 
 ### 1.3 BSD系  (install_freebsd.sh)
 
