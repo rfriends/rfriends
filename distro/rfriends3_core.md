@@ -43,7 +43,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/26|◎| Debian (Bookworm)|12||  
 ||| Debian (Trixie)|13|未リリース|  
 |2025/04/28|〇| Devuan (Daedalus)|5|init|  
-|2025/04/28|〇| MX linux|3.21|init|  
+|2025/04/28|〇| MX linux|21.3|init|  
   
  ・linux開発環境  
    
