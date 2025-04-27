@@ -19,9 +19,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 下記のディストリビューションで動作確認しています。  
 ダウロードサイトは[こちら](download.md)  
 
-### 1.1 Ubuntu/Debian系  (install_ubuntu.sh)
-
-・Ubuntu  
+### 1.1 Ubuntu系  (install_ubuntu.sh)
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
@@ -33,7 +31,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/26|〇| Ubuntu (D13)|25||  
 |2025/04/26|〇| ZORIN OS|17.3||  
   
-・Debian  
+### 1.2 Debian系  (install_debian.sh)
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
@@ -53,7 +51,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/25|〇| Chromeos flex|135|Debian 12|   
 |2025/02/26|〇| Android(pixel)|15, 16|Debian 12|  
   
-### 1.2 CentOS Stream系  (install_stream.sh)
+### 1.3 CentOS Stream系  (install_stream.sh)
   
 |最終確認|判定|ディストロ|Ver.|備考|    
 |---|:---:|---|---|---|  
@@ -66,14 +64,14 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/25|〇|fedora linux|39||  
 |2025/04/25|〇|fedora linux|42||  
 
-### 1.3 BSD系  (install_freebsd.sh)
+### 1.4 BSD系  (install_freebsd.sh)
 
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
 |2025/04/27|〇|FreeBSD|13.5|samba419を選択|  
 |2025/04/21|◎|FreeBSD|14.2|samba419を選択|  
   
-### 1.4 その他  
+### 1.5 その他  
 
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
@@ -91,7 +89,31 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 4) gitをインストールする。  
 5) その他   
   
-### 2.1 Ubuntu/debian/ZORINの場合  
+### 2.1 Ubuntu/ZORINの場合  
+  
+1) システムを最新にする。  
+```  
+# apt-get update  
+# apt-get upgrade -y
+```
+2) タイムゾーンを日本にする。  
+```
+# timedatectl set-timezone Asia/Tokyo
+```
+3) 実行するユーザを追加し、管理者権限を付加する。  
+```
+もしインストールされていないなら
+# apt-get install sudo vim -y
+
+# useradd -m -G sudo ユーザ名
+# passwd ユーザ名
+# chsh -s /bin/bash ユーザ名  
+```
+4) gitをインストールする。  
+```  
+# apt-get install git -y  
+```
+### 2.2 Debian/Linux開発環境の場合  
   
 1) システムを最新にする。  
 ```  
@@ -118,7 +140,7 @@ Devuan, MX linuxの場合
 ```  
 # apt-get install git -y  
 ```
-### 2.2 stream/rocky/alma/oracle/miracle/fedoraの場合  
+### 2.3 stream/rocky/alma/oracle/miracle/fedoraの場合  
 1) システムを最新にする。  
 ```  
 # dnf update
@@ -152,7 +174,7 @@ firewalldをdisableにする
 # systemctl stop firewalld
 # systemctl disable firewalld
 ```
-### 2.3 FreeBSDの場合  
+### 2.4 FreeBSDの場合  
   
 1) システムを最新にする。  
 ```  
@@ -203,7 +225,7 @@ samba420-4.20.7_4
 export php="php84"
 export samba="samba419"
 ```
-### 2.4 alpineの場合  
+### 2.5 alpineの場合  
 
 ```  
 # apk update
@@ -226,7 +248,7 @@ testingを追加(atomicparsleyのため)
 # vi /etc/apk/repositories
 https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```
-### 2.5 openSUSEの場合  
+### 2.6 openSUSEの場合  
 
 ```  
 # zypper refresh
@@ -249,7 +271,7 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # zypper install git
 ```
 
-### 2.6 arch linuxの場合  
+### 2.7 arch linuxの場合  
 
 ```  
 # pacman -Syyu
