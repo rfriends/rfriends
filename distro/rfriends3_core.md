@@ -64,7 +64,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/25|〇|fedora linux|39||  
 |2025/04/25|〇|fedora linux|42||  
 
-### 1.4 BSD系  (install_freebsd.sh)
+### 1.4 BSD系  (install_freebsd.sh) init  
 
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
