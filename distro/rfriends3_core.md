@@ -100,6 +100,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 2) タイムゾーンを日本にする。  
 ```
 # timedatectl set-timezone Asia/Tokyo
+  
+Devuanの場合  
+# cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime  
 ```
 3) 実行するユーザを追加し、管理者権限を付加する。  
 ```
