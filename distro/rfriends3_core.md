@@ -83,18 +83,20 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 以下のことを確認してください。 
 ほとんどのディストロでインストール時に2)3)は設定可能です。  
  
-1) システムを最新にする。  
+1) システムを最新にし、アプリを追加する。  
 2) タイムゾーンを日本にする。  
 3) 実行するユーザを追加し、管理者権限を付加する。  
-4) gitをインストールする。  
-5) その他   
+4) その他   
   
 ### 2.1 Ubuntu/ZORINの場合  
   
-1) システムを最新にする。  
+1) システムを最新にし、アプリを追加する。   
 ```  
 # apt-get update  
 # apt-get upgrade -y
+
+# apt-get install sudo vim -y
+# apt-get install git -y  
 ```
 2) タイムゾーンを日本にする。  
 ```
@@ -102,23 +104,19 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ```
 3) 実行するユーザを追加し、管理者権限を付加する。  
 ```
-もしインストールされていないなら
-# apt-get install sudo vim -y
-
 # useradd -m -G sudo ユーザ名
 # passwd ユーザ名
 # chsh -s /bin/bash ユーザ名  
 ```
-4) gitをインストールする。  
-```  
-# apt-get install git -y  
-```
 ### 2.2 Debian/Linux開発環境の場合  
-  
-1) システムを最新にする。  
+
+1) システムを最新にし、アプリを追加する。   
 ```  
 # apt-get update  
 # apt-get upgrade -y
+
+# apt-get install sudo vim -y
+# apt-get install git -y
 ```
 2) タイムゾーンを日本にする。  
 ```
@@ -129,22 +127,17 @@ Devuan, MX linuxの場合
 ```
 3) 実行するユーザを追加し、管理者権限を付加する。  
 ```
-もしインストールされていないなら
-# apt-get install sudo vim -y
-
 # useradd -m -G sudo ユーザ名
 # passwd ユーザ名
 # chsh -s /bin/bash ユーザ名  
 ```
-4) gitをインストールする。  
-```  
-# apt-get install git -y  
-```
 ### 2.3 stream/rocky/alma/oracle/miracle/fedoraの場合  
-1) システムを最新にする。  
+1) システムを最新にし、アプリを追加する。    
 ```  
 # dnf update
 # dnf upgrade
+
+# dnf install git
 ```
 2) タイムゾーンを日本にする。
 ```
@@ -155,11 +148,7 @@ Devuan, MX linuxの場合
 # useradd -m -G wheel ユーザ名 
 # passwd ユーザ名
 ```
-4) gitをインストールする。
-```
-# dnf install git
-```
-5) その他
+4) その他
 
 まず、以下の設定（セキュリティOFF）で実行し、うまくいったらセキュリティ設定を行ってください。  
   
@@ -176,10 +165,12 @@ firewalldをdisableにする
 ```
 ### 2.4 FreeBSDの場合  
   
-1) システムを最新にする。  
+1) システムを最新にし、アプリを追加する。    
 ```  
 # pkg update 
 # pkg upgrade
+
+# pkg install -y git   
 ```
 2) タイムゾーンを日本にする。  
 ```
@@ -194,11 +185,8 @@ firewalldをdisableにする
 %wheel ALL=(ALL:ALL) ALL
 # pw groupmod wheel -m ユーザ名 
 ```
-4) gitをインストールする。  
-```  
-# pkg install -y git   
-```  
-5) その他
+
+4) その他
 
 ・rc.conf設定  
 ```
@@ -231,6 +219,8 @@ export samba="samba419"
 # apk update
 # apk upgrade
 
+# apk add git
+
 # apk add tzdata
 # cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
@@ -242,8 +232,6 @@ export samba="samba419"
 # adduser ユーザ名 
 # addgroup ユーザ名 wheel
 
-# apk add git
-
 testingを追加(atomicparsleyのため)
 # vi /etc/apk/repositories
 https://dl-cdn.alpinelinux.org/alpine/edge/testing
@@ -254,6 +242,9 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # zypper refresh
 # zypper update
 
+# zypper install vim
+# zypper install git
+
 # timedatectl set-timezone Asia/Tokyo  
 
 # useradd -m ユーザ名 
@@ -263,18 +254,16 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # usermod -G wheel root
 # usermod -G wheel ユーザ名 
 
-# zypper install vim
-
 # visudo
 %wheel ALL=(ALL:ALL) ALL
-
-# zypper install git
 ```
 
 ### 2.7 arch linuxの場合  
 
 ```  
 # pacman -Syyu
+
+# pacman -S git
 
 # timedatectl set-timezone Asia/Tokyo
 
@@ -290,7 +279,6 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # usermod -G wheel root
 # usermod -G wheel ユーザ名 
 
-# pacman -S git
 ```  
 ## ３．rfriends3のダウンロードとインストール  
   
