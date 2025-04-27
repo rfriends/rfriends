@@ -7,6 +7,9 @@ https://jp.ubuntu.com/download
 Debian  
 https://www.debian.org/distrib/
   
+Devuan  
+https://www.devuan.org/  
+  
 ZORIN OS  
 https://zorin.com/os/download/
 
