@@ -42,7 +42,8 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/26|◎| Debian (Bullseye)|11||  
 |2025/04/26|◎| Debian (Bookworm)|12||  
 ||| Debian (Trixie)|13|未リリース|  
-|2025/04/28|〇| Devuan (Daedalus)|5||  
+|2025/04/28|〇| Devuan (Daedalus)|5|init|  
+|2025/04/28|〇| MX linux|3.21|init|  
   
  ・linux開発環境  
    
@@ -101,7 +102,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ```
 # timedatectl set-timezone Asia/Tokyo
   
-Devuanの場合  
+Devuan, MX linuxの場合  
 # cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime  
 ```
 3) 実行するユーザを追加し、管理者権限を付加する。  
