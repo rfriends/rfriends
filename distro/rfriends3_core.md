@@ -32,11 +32,7 @@ Ubuntu
 |2025/04/26|◎| Ubuntu (D13)|24||  
 |2025/04/26|〇| Ubuntu (D13)|25||  
 |2025/04/26|〇| ZORIN OS|17.3||  
-|2025/01/24|〇| Chromeos linux開発|134||   
-|2025/04/25|〇| Chromeos flex linux開発|135||   
-|2025/02/26|〇| Android(pixel) linux開発|15, 16||  
-
-
+  
 Debian  
   
 |最終確認|判定|ディストロ|Ver.|備考|   
@@ -46,6 +42,14 @@ Debian
 |2025/04/26|◎| Debian (Bullseye)|11||  
 |2025/04/26|◎| Debian (Bookworm)|12||  
 ||| Debian (Trixie)|13|未リリース|  
+  
+ linux開発環境  
+   
+|最終確認|判定|ディストロ|Ver.|備考|   
+|---|:---:|---|---|---|  
+|2025/01/24|〇| Chromeos|134|Debian 12|   
+|2025/04/25|〇| Chromeos flex|135|Debian 12|   
+|2025/02/26|〇| Android(pixel)|15, 16|Debian 12|  
   
 ### 1.2 CentOS Stream系  (install_stream.sh)
   
