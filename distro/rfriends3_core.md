@@ -170,6 +170,7 @@ firewalldをdisableにする
 # pkg update 
 # pkg upgrade
 
+# pkg install -y sudo 
 # pkg install -y git   
 ```
 2) タイムゾーンを日本にする。  
@@ -179,10 +180,11 @@ firewalldをdisableにする
 3) 実行するユーザを追加し、管理者権限を付加する。  
 ```  
 # adduser ユーザ名
-# pkg install -y sudo 
+
 %wheelのコメント(#)を外す
 # visudo
 %wheel ALL=(ALL:ALL) ALL
+
 # pw groupmod wheel -m ユーザ名 
 ```
 
