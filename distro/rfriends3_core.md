@@ -275,7 +275,10 @@ http://XXX.XXX.XXX.XXX:8000
   
 ![2](https://github.com/user-attachments/assets/c4cc72cc-659c-4c29-bbfe-3f4951b9556c)
   
-「ヘルプ」「システム更新」でシステムを最新にしてください。 
+「ヘルプ」「システム更新」でシステムを最新にしてください。   　
+詳細な使用方法は、  
+https://rfriends.github.io/rfriends/manual/  
+を参照してください。    
   
 ## ５．samba  
   
