@@ -145,12 +145,11 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 2) 実行するユーザを追加し、管理者権限を付加する。  
 ```  
 # adduser ユーザ名
+# pw groupmod wheel -m ユーザ名 
 
 %wheelのコメント(#)を外す
 # visudo
 %wheel ALL=(ALL:ALL) ALL
-
-# pw groupmod wheel -m ユーザ名 
 ```
 3) その他
 
@@ -189,11 +188,11 @@ export samba="samba419"
 # apk add git
 # apk add tzdata
 
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-
 # adduser ユーザ名 
 # addgroup ユーザ名 wheel
+
+# visudo
+%wheel ALL=(ALL:ALL) ALL
 
 testingを追加(atomicparsleyのため)
 # vi /etc/apk/repositories
@@ -228,15 +227,14 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # pacman -S sudo
 # pacman -S git
 
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-
 # useradd -m ユーザ名 
 # passwd ユーザ名 
 
 # usermod -G wheel root
 # usermod -G wheel ユーザ名 
 
+# visudo
+%wheel ALL=(ALL:ALL) ALL
 ```  
 ## ３．rfriends3のダウンロードとインストール  
   
