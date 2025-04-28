@@ -207,12 +207,8 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # zypper install vim
 # zypper install git
 
-# useradd -m ユーザ名 
+# useradd -m -G wheel ユーザ名 
 # passwd ユーザ名 
-
-# groupadd wheel
-# usermod -G wheel root
-# usermod -G wheel ユーザ名 
 
 # visudo
 %wheel ALL=(ALL:ALL) ALL
@@ -227,11 +223,8 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # pacman -S sudo
 # pacman -S git
 
-# useradd -m ユーザ名 
+# useradd -m -G wheel ユーザ名 
 # passwd ユーザ名 
-
-# usermod -G wheel root
-# usermod -G wheel ユーザ名 
 
 # visudo
 %wheel ALL=(ALL:ALL) ALL
