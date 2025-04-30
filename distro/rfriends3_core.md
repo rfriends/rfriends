@@ -18,6 +18,10 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 
 下記のディストリビューションで動作確認しています。  
 ダウロードサイトは[こちら](download.md)  
+  
+> [!NOTE]
+> ここでは、systemd以外のものをすべてinitと記述しています。 
+> 突っ込みどころ満載ですが、お許しください。  
 
 ### 1.1 Ubuntu系  (install_ubuntu.sh)
   
