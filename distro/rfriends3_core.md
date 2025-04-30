@@ -20,7 +20,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ダウロードサイトは[こちら](download.md)  
   
 > [!NOTE]
-> ここでは、systemd以外のものをすべてinitと記述しています。 
+> ここでは、systemd以外のものをすべてinitと記述しています。 (pgrep -o systemd)  
 > 突っ込みどころ満載ですが、お許しください。  
 
 ### 1.1 Ubuntu系  (install_ubuntu.sh)
