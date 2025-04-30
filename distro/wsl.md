@@ -9,12 +9,11 @@
   
 ## １．システム要件  
   
-　PCがWindows 10 22H2以上、または、Windows 11であること。  
-いままで、WSLを全くインストールしていない環境であること。  
+AI による概要  
   
-　今後対応範囲を広げていきますが、まずは上記の制限を設けます。  
-すでにwslをインストール済の環境でもほぼ問題ないとはおもいますが。  
-  
+WSL2 (Windows Subsystem for Linux 2) を使用するには、Windows 10 (x64) バージョン 1903 以降 (ビルド 18362.1049+) または Windows 11 が必要です。
+また、64ビットのプロセッサ、4GB以上のRAM、そして仮想マシンプラットフォーム機能が有効化されている必要があります。﻿    
+    
 ## ２．準備  
   
 １）PCのbiosで仮想化を有効にする。  
@@ -39,42 +38,47 @@ Ctrl + Alt + Del キーを同時に押してタスクマネージャーを起動
 > [!NOTE]
 > 以下、混乱しがちなので    
 > PowerShellの時は PS>  
-> Ubuntuのターミナル時は、$   
+> Linuxのターミナル時は、$   
 >  
 > とします。  
   
-また、wslを実行しているPCを"ホストPC"、wsl下で実行しているLinuxを単に"Ubuntu"とします。  
+また、wslを実行しているPCを"ホストPC"、wsl下で実行しているLinuxを単に"Linux"とします。  
   
-## ３．wslとubuntuのインストール  
+## ３．wslとLinuxのインストール  
   
 ### 3.1 wslのインストール  
   
 PowerShell(管理者)を起動し、以下のコマンドを実行します。( - は2個)  
 ```  
 PS> wsl --update  
-PS> wsl --install  
+PS> wsl --install
 ```
   
 ![2](https://github.com/user-attachments/assets/0252b8a4-5579-4e74-9499-12ea1c9c37e3)  
   
 一旦、Windowsを再起動してください。  
   
-### 3.2 ubuntuのインストール  
-  
-再起動すると、自動的にubuntuのインストールが始まります。  
-インストールの終了を待ちます。  
-  
-ユーザーの作成を促されるので、user/passwordを入力してください。  
-```  
-Ubuntu は既にインストールされています。  
-Ubuntu を起動しています...  
-(略)  
-Enter new UNIX username: user  
-New password:  
-Retype new password:  
-(略)   
-Welcome to Ubuntu 24.04.1 LTS   
-```  
+### 3.2 Linuxのインストール  
+
+現在ではいろいろなディストリビューションが利用できますが、ここではubuntuをインストールします。  
+PowerShellを起動し、以下のコマンドを実行します。  
+```
+PS> wsl install ubuntu
+ダウンロード中: Ubuntu
+インストール中: Ubuntu
+ディストリビューションが正常にインストールされました。'wsl.exe -d Ubuntu' を使用して起動できます
+```
+ubuntuを起動します。  
+ユーザの作成とパスワードを要求されます。  
+```
+PS> wsl -d ubuntu
+Provisioning the new WSL instance Ubuntu
+This might take a while...
+Create a default Unix user account: ユーザ名
+New password: パスワード
+Retype new password: パスワード
+passwd: password updated successfully
+```
   
 WSLとUbuntuのインストールはこれで完了です。  
   
@@ -82,15 +86,14 @@ WSLとUbuntuのインストールはこれで完了です。
   
 インストールが正しく行われているかを確認します。  
   
-PowerShell(管理者)を起動し、かつUbuntuのターミナルを開いた状態にしてください。  
+Ubuntuのターミナルを開いた状態で、もう一つPowerShellを起動してください。  
   
-１）PowerShellに以下のコマンドを入力します。  
+１）新たに起動したPowerShellに以下のコマンドを入力します。  
 ```  
 PS> wsl --version  
-WSL バージョン: 2.3.26.0  
+WSL バージョン: 2.4.13.0  
 (略)  
-Windows バージョン: 10.0.19045.5131  
-2024/11/16 時点で、2.3.26.0 です。  
+Windows バージョン: 10.0.26100.3915
 ```  
   
 2）PowerShellに以下のコマンドを入力します。  
@@ -104,7 +107,7 @@ wsl version2でUbuntuが実行されています。
 3）Ubuntuのターミナルに以下を入力します。  
 ```  
 $ cat /etc/os-release  
-PRETTY_NAME="Ubuntu 24.04.1 LTS"  
+PRETTY_NAME="Ubuntu 24.04.2 LTS"  
 (以下略)  
 Ubunutu 24.04 が実行されています。  
 ```  
@@ -133,14 +136,16 @@ wsl.confの内容が上記と違う場合、またはファイルが存在しな
   
 ### 4.1 インストール  
   
-タスクバーの検索窓にubuntuと入力してインストールしたUbuntuを開き、以下を入力します。  
-```  
+PowerShellを起動し、以下のコマンドを実行します。   
+```
+PS> wsl -d ubuntu  
+
 $ cd ~/  
-$ sudo apt install -y git  
-$ rm -rf rfriends_wsl  
-$ git clone https://github.com/rfriends/rfriends_wsl.git  
-$ cd rfriends_wsl  
-$ sh rfriends3_wsl.sh
+$ sudo apt install -y git  (gitがすでにインストールされている場合は不要)
+$ rm -rf rfriends3_core
+$ git clone https://github.com/rfriends/rfriends3_core.git  
+$ cd rfriends3_core 
+$ sh install_ubuntu.sh
 ```
   
 ### 4.2 インストール終了    
@@ -153,9 +158,11 @@ finished
   
 finishedと表示されてインストールは完了です。表示されたIPアドレスをメモしてください。  
   
-次に、ubuntuを終了します。  
+次に、ubuntuを終了し、shutdownします。  
   
-```  
+```
+$ exit
+
 PS> wsl --shutdown  
 ```  
   
@@ -163,7 +170,10 @@ PS> wsl --shutdown
   
 ### 5.1 Ubuntuの実行  
   
-タスクバーの検索ボックスに"ubuntu"と入力してUbuntu を実行します。  
+PowerShellを起動し、以下のコマンドを実行します。   
+```
+PS> wsl -d ubuntu  
+```  
   
 ![4](https://github.com/user-attachments/assets/02d65525-cf2b-400c-980a-3c6704c2e1b9)  
   
@@ -184,8 +194,14 @@ xxx.xxx.xxx.xxx:8000
 マニュアルのページのチュートリアルで基本的な操作を覚えてください。  
   
 [マニュアル](https://rfriends.github.io/rfriends/manual/)  
+
+## ６．rfriendsのデータにアクセス
   
-## ６．外部PCからのwebアクセス  
+　Windowsのエクスプローラを開くと、左メニューにLinuxという項目があると思います。  
+それをクリックすると、右にUbuntuというフォルダが表示されます。  
+以下、Ubuntu¥home¥ユーザ名¥smbdir¥usr2 を辿っていけばrfriendsのデータにアクセスできます。   
+
+## ７．外部PCからのwebアクセス  
   
 　同一LAN内の外部PCからrfriendsへのアクセスを行うための設定は以下のとおりです。通常は、この設定は行わないほうがいいと思います。  
   
