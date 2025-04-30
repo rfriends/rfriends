@@ -63,6 +63,7 @@ PS> wsl --install
 ### 3.2 Linuxのインストール  
 
 現在ではいろいろなディストリビューションが利用できますが、ここではubuntuをインストールします。  
+debianでもほぼ同じやり方でインストールできます。  
 PowerShellを起動し、以下のコマンドを実行します。  
 ```
 PS> wsl install ubuntu
