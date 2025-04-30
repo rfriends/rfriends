@@ -5,7 +5,9 @@
 ![1](https://github.com/user-attachments/assets/429c1661-fd9c-4a80-87cb-cb3fb07661a4)   
   
 初版：2024/11/15  
-改版：2025/01/09  
+改版：2025/05/01
+
+もし、すでにwsl,linuxのインストールが済んでいる方は、４．のrfriendsのインストールに飛んでください。 
   
 ## １．システム要件  
   
@@ -154,9 +156,12 @@ $ sh install_ubuntu.sh
 ip address is lo UNKNOWN 127.0.0.1/8 eth0 UP 172.19.148.3/20 .  
 visit rfriends at http://xxx.xxx.xxx.xxx:8000  
 finished  
-```  
-  
+```
 finishedと表示されてインストールは完了です。表示されたIPアドレスをメモしてください。  
+または、以下のコマンドでも確認できます。 
+```
+$ hostname -I
+```
   
 次に、ubuntuを終了し、shutdownします。  
   
@@ -175,8 +180,6 @@ PowerShellを起動し、以下のコマンドを実行します。
 PS> wsl -d ubuntu  
 ```  
   
-![4](https://github.com/user-attachments/assets/02d65525-cf2b-400c-980a-3c6704c2e1b9)  
-  
 ### 5.2 rfriends3のWebサーバへのアクセス  
   
 　4.2でメモをしたIPアドレスを使ってrfriends3にアクセスします。  
@@ -186,8 +189,7 @@ PS> wsl -d ubuntu
 xxx.xxx.xxx.xxx:8000  
   
 と入力し、以下のような画面が出たら成功です。ブックマークすると便利です。  
-  
-![5](https://github.com/user-attachments/assets/e706bb5e-61a9-4da7-8d01-22ead1bab4ee)  
+![rfriends](https://github.com/user-attachments/assets/319f6021-6808-4b52-9660-7832d0980459)
   
 ### 5.3 チュートリアル
   
@@ -199,7 +201,11 @@ xxx.xxx.xxx.xxx:8000
   
 　Windowsのエクスプローラを開くと、左メニューにLinuxという項目があると思います。  
 それをクリックすると、右にUbuntuというフォルダが表示されます。  
+![linux](https://github.com/user-attachments/assets/c81abeb4-b497-4d27-8cb7-3ca60b33e9fa)
+
 以下、Ubuntu¥home¥ユーザ名¥smbdir¥usr2 を辿っていけばrfriendsのデータにアクセスできます。   
+![usr2](https://github.com/user-attachments/assets/8ad233a2-4ae7-438f-a558-477958e12b5a)
+
 
 ## ７．外部PCからのwebアクセス  
   
