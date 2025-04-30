@@ -40,9 +40,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/26|◎| Debian (Bullseye)|11||  
 |2025/04/26|◎| Debian (Bookworm)|12||  
 ||| Debian (Trixie)|13|未リリース|  
-|2025/04/28|〇| Devuan (Daedalus)|5|init|  
-|2025/04/28|〇| MX linux|21.3|init|  
-|2025/04/30|〇| antiX linux|23.2|init|  
+
   
  ・linux開発環境  
    
@@ -51,6 +49,14 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/01/24|〇| Chromeos|134|Debian 12|   
 |2025/04/25|〇| Chromeos flex|135|Debian 12|   
 |2025/02/26|〇| Android(pixel)|15, 16|Debian 12|  
+  
+ ・init(sysVinit)  
+   
+|最終確認|判定|ディストロ|Ver.|備考|   
+|---|:---:|---|---|---|  
+|2025/04/28|〇| Devuan (Daedalus)|5||  
+|2025/04/28|〇| MX linux|21.3|Debian 11|  
+|2025/04/30|〇| antiX linux|23.2|Debian 12|  
   
 ### 1.3 CentOS Stream系  (install_stream.sh)
   
