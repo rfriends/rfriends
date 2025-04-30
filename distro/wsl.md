@@ -146,7 +146,8 @@ $ cd ~/
 $ sudo apt install -y git  (gitがすでにインストールされている場合は不要)
 $ rm -rf rfriends3_core
 $ git clone https://github.com/rfriends/rfriends3_core.git  
-$ cd rfriends3_core 
+$ cd rfriends3_core
+$ sed -i 's/^export optsamba="on"/export optsamba="off"/' install_ubuntu.sh
 $ sh install_ubuntu.sh
 ```
   
