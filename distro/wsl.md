@@ -10,10 +10,10 @@
 もし、すでにwsl,linuxのインストールが済んでいる方は、４．のrfriendsのインストールに飛んでください。 
   
 
-### wsl2での動作確認済ディストリビューション　(2025/05/02現在)
+### 動作確認済ディストリビューション　(2025/05/02現在)
 
-それぞれのインストール方法は「Linux/BSD版rfriends3でラジオ録音」を参照してください。  
-https://rfriends.github.io/rfriends/distro/rfriends3_core.html
+それぞれのインストール方法は以下を参照してください。  
+[Linux/BSD版rfriends3でラジオ録音](https://rfriends.github.io/rfriends/distro/rfriends3_core.html)
   
 |最終確認|判定|ディストロ|sh|備考|   
 |---|:---:|---|---|---|  
