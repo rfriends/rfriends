@@ -5,9 +5,37 @@
 ![1](https://github.com/user-attachments/assets/429c1661-fd9c-4a80-87cb-cb3fb07661a4)   
   
 初版：2024/11/15  
-改版：2025/05/01
+改版：2025/05/02
 
 もし、すでにwsl,linuxのインストールが済んでいる方は、４．のrfriendsのインストールに飛んでください。 
+  
+
+### wsl2での動作確認済ディストリビューション　(2025/05/02現在)
+
+それぞれのインストール方法は「Linux/BSD版rfriends3でラジオ録音」を参照してください。  
+https://rfriends.github.io/rfriends/distro/rfriends3_core.html
+  
+|最終確認|判定|ディストロ|sh|備考|   
+|---|:---:|---|---|---|  
+||-|AlmaLinux-8|stream||  
+|2025/05/02|〇|AlmaLinux-9|stream||  
+|          |-|AlmaLinux-Kitten-10|stream||  
+|2025/05/02|〇|Debian|debian||  
+|2025/05/02|〇|FedoraLinux-42|stream||  
+|          |-|SUSE-Linux-Enterprise-15-SP5|suse||  
+|          |-|SUSE-Linux-Enterprise-15-SP6|suse||  
+|2025/05/02|〇|Ubuntu|ubuntu||  
+|          |-|Ubuntu-24.04|ubuntu||  
+|2025/05/02|〇|archlinux|arch||  
+|2025/05/02|〇|kali-linux|debian||  
+|2025/05/02|〇|openSUSE-Tumbleweed|suse||  
+|2025/05/02|〇|openSUSE-Leap-15.6|suse||  
+|          |-|Ubuntu-18.04|ubuntu||  
+|          |-|Ubuntu-20.04|ubuntu||  
+|          |-|Ubuntu-22.04|ubuntu||  
+|          |-|OracleLinux_7_9|stream||  
+|          |-|OracleLinux_8_7|stream||  
+|2025/05/02|〇|OracleLinux_9_1|stream|/etc/wsl.conf<br>[root]<br>systemd=true|  
   
 ## １．システム要件  
 ```  
@@ -15,7 +43,7 @@ AI による概要
   
 WSL2 (Windows Subsystem for Linux 2) を使用するには、Windows 10 (x64) バージョン 1903 以降 (ビルド 18362.1049+) または Windows 11 が必要です。
 また、64ビットのプロセッサ、4GB以上のRAM、そして仮想マシンプラットフォーム機能が有効化されている必要があります。﻿    
-```    
+```  
 ## ２．準備  
   
 １）PCのbiosで仮想化を有効にする。  
