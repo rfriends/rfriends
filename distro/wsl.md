@@ -205,6 +205,35 @@ xxx.xxx.xxx.xxx:8000
 ```  
 PS> netsh.exe interface portproxy add v4tov4 listenaddress=＜外部PCのipアドレス＞listenport=8000 connectaddress=＜ホストPCのipアドレス＞ connectport=8000  
 ```  
+
+## ８．ubuntu+rfriends3の削除方法
+  
+　うまく動作しないとか、不要になった場合の削除方法です。 
+
+```
+ubuntuからexitします。
+$ exit
+
+現在の状況を表示します。（ubuntuが実行中）
+PS> wsl -l -v
+  NAME                   STATE           VERSION
+* Ubuntu                 Running         2
+
+ubuntuをシャットダウンします。
+$ wsl --shutdown
+
+ubuntuが停止中であることを確認します。
+$ wsl -l -v
+  NAME                   STATE           VERSION
+* Ubuntu                 Stopped         2
+
+ubuntuの登録を解除します。
+$ wsl --unregister ubuntu
+登録解除。
+この操作を正しく終了しました。
+```
+
   
 以上  
+
 
