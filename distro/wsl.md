@@ -10,12 +10,12 @@
 もし、すでにwsl,linuxのインストールが済んでいる方は、４．のrfriendsのインストールに飛んでください。 
   
 ## １．システム要件  
-  
+```  
 AI による概要  
   
 WSL2 (Windows Subsystem for Linux 2) を使用するには、Windows 10 (x64) バージョン 1903 以降 (ビルド 18362.1049+) または Windows 11 が必要です。
 また、64ビットのプロセッサ、4GB以上のRAM、そして仮想マシンプラットフォーム機能が有効化されている必要があります。﻿    
-    
+```    
 ## ２．準備  
   
 １）PCのbiosで仮想化を有効にする。  
@@ -84,56 +84,6 @@ passwd: password updated successfully
 ```
   
 WSLとUbuntuのインストールはこれで完了です。  
-  
-### 3.3 インストール結果の確認  
-  
-インストールが正しく行われているかを確認します。  
-  
-Ubuntuのターミナルを開いた状態で、もう一つPowerShellを起動してください。  
-  
-１）新たに起動したPowerShellに以下のコマンドを入力します。  
-```  
-PS> wsl --version  
-WSL バージョン: 2.4.13.0  
-(略)  
-Windows バージョン: 10.0.26100.3915
-```  
-  
-2）PowerShellに以下のコマンドを入力します。  
-```  
-PS> wsl -l -v  
-NAME      STATE           VERSION  
-* Ubuntu    Running         2  
-wsl version2でUbuntuが実行されています。  
-```  
-  
-3）Ubuntuのターミナルに以下を入力します。  
-```  
-$ cat /etc/os-release  
-PRETTY_NAME="Ubuntu 24.04.2 LTS"  
-(以下略)  
-Ubunutu 24.04 が実行されています。  
-```  
-  
-4）Ubuntuのターミナルに以下を入力します。  
-```  
-$ df  
-```  
- 
-![3](https://github.com/user-attachments/assets/ce362e42-dbca-40f6-837b-d4366358be5b)  
- 
-C:\  が /mnt/c にマウントされています。バージョンによっては/media/c の場合もあります。その場合はrfriendsの録音ディレクトリの変更が必要です。  
-  
-4）Ubuntuのターミナルに以下を入力します。  
-  
-systemdが有効になっているがどうかがわかります。  
-```  
-$ cat /etc/wsl.conf  
-[boot]  
-systemd = true  
-```  
-  
-wsl.confの内容が上記と違う場合、またはファイルが存在しない場合は、ここでインストールを中止して環境の見直しを行ってください。  
   
 ## ４．rfriends3のインストール  
   
