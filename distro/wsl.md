@@ -30,7 +30,7 @@
 |2025/05/02|〇|OracleLinux_9_1|stream|/etc/wsl.conf<br>[boot]<br>systemd=true|  
 ||-|AlmaLinux-8|stream||  
 |2025/05/02|〇|AlmaLinux-9|stream||  
-|          |-|AlmaLinux-Kitten-10|stream||  
+|2025/05/02|〇|AlmaLinux-Kitten-10|stream||  
 |          |-|SUSE-Linux-Enterprise-15-SP5|suse||  
 |          |-|SUSE-Linux-Enterprise-15-SP6|suse||  
 |2025/05/02|〇|openSUSE-Tumbleweed|suse||  
