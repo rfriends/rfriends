@@ -121,7 +121,8 @@ PowerShellを起動し、以下のコマンドを実行します。
 ```
 PS> wsl -d ubuntu  
 
-$ cd ~/  
+$ cd         <--- これを忘れないように！
+
 $ sudo apt install -y git  (gitがすでにインストールされている場合は不要)
 $ rm -rf rfriends3_core
 $ git clone https://github.com/rfriends/rfriends3_core.git  
