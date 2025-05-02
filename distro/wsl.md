@@ -25,7 +25,7 @@
 |          |-|SUSE-Linux-Enterprise-15-SP5|suse||  
 |          |-|SUSE-Linux-Enterprise-15-SP6|suse||  
 |2025/05/02|〇|Ubuntu|ubuntu||  
-|          |-|Ubuntu-24.04|ubuntu||  
+|2025/05/02|〇|Ubuntu-24.04|ubuntu||  
 |2025/05/02|〇|archlinux|arch||  
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|openSUSE-Tumbleweed|suse||  
