@@ -31,8 +31,8 @@
 |2025/05/02|〇|AlmaLinux-8|stream||  
 |2025/05/02|〇|AlmaLinux-9|stream||  
 |2025/05/02|〇|AlmaLinux-Kitten-10|stream||  
-|          |-|SUSE-Linux-Enterprise-15-SP5|suse||  
-|          |-|SUSE-Linux-Enterprise-15-SP6|suse||  
+|2025/05/03|✕|SUSE-Linux-Enterprise-15-SP5|suse|lighttpd<br>not found|  
+|2025/05/03|✕|SUSE-Linux-Enterprise-15-SP6|suse|lighttpd<br>not found|  
 |2025/05/02|〇|openSUSE-Tumbleweed|suse||  
 |2025/05/02|〇|openSUSE-Leap-15.6|suse||   
 |2025/05/02|〇|archlinux|arch||  
