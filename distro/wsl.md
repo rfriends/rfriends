@@ -17,17 +17,17 @@
   
 |最終確認|判定|ディストロ|sh|備考|   
 |---|:---:|---|---|---|  
-|2025/05/02|〇|Ubuntu|ubuntu||  
+|2025/05/02|〇|Ubuntu &nbsp;&nbsp;&nbsp;&nbsp;(24.04)|ubuntu||  
 |2025/05/02|〇|Ubuntu-18.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-20.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-22.04|ubuntu|| 
 |2025/05/02|〇|Ubuntu-24.04|ubuntu|| 
-|2025/05/02|〇|Debian|debian||  
+|2025/05/02|〇|Debian &nbsp;&nbsp;&nbsp;&nbsp;(12)|debian||  
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|FedoraLinux-42|stream||  
-|2025/05/02|✕|OracleLinux_7_9||yum<br>/etc/wsl.conf<br>[boot]<br>systemd=true|  
-|2025/05/02|〇|OracleLinux_8_7|stream|/etc/wsl.conf<br>[boot]<br>systemd=true|  
-|2025/05/02|〇|OracleLinux_9_1|stream|/etc/wsl.conf<br>[boot]<br>systemd=true|  
+|2025/05/02|✕|OracleLinux_7_9||yum<br>注１）|  
+|2025/05/02|〇|OracleLinux_8_7|stream|注１）|  
+|2025/05/02|〇|OracleLinux_9_1|stream|注１）|  
 |2025/05/02|〇|AlmaLinux-8|stream||  
 |2025/05/02|〇|AlmaLinux-9|stream||  
 |2025/05/02|〇|AlmaLinux-Kitten-10|stream||  
@@ -37,6 +37,16 @@
 |2025/05/02|〇|openSUSE-Leap-15.6|suse||   
 |2025/05/02|〇|archlinux|arch||  
 
+注１）以下の操作が必要です。  
+```
+$ sudo vi /etc/wsl.conf
+[boot]
+systemd=true
+
+$ exit
+PS> wsl --shutdown
+PS> wsl -d ディストリビューション
+```
 
  
 
