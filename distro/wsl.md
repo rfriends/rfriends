@@ -26,7 +26,7 @@
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|FedoraLinux-42|stream||  
 |          |-|OracleLinux_7_9|stream||  
-|2025/05/02|✕|OracleLinux_8_7|stream|atomiparsleyなし <br>/etc/wsl.conf<br>[boot]<br>systemd=true|  
+|2025/05/02|〇|OracleLinux_8_7|stream|/etc/wsl.conf<br>[boot]<br>systemd=true|  
 |2025/05/02|〇|OracleLinux_9_1|stream|/etc/wsl.conf<br>[boot]<br>systemd=true|  
 ||-|AlmaLinux-8|stream||  
 |2025/05/02|〇|AlmaLinux-9|stream||  
