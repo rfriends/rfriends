@@ -30,7 +30,7 @@
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|openSUSE-Tumbleweed|suse||  
 |2025/05/02|〇|openSUSE-Leap-15.6|suse||  
-|          |-|Ubuntu-18.04|ubuntu||  
+|2025/05/02|〇|Ubuntu-18.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-20.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-22.04|ubuntu||  
 |          |-|OracleLinux_7_9|stream||  
