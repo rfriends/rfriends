@@ -15,7 +15,7 @@
 それぞれのインストール方法は以下を参照してください。  
 [Linux/BSD版rfriends3でラジオ録音](https://rfriends.github.io/rfriends/distro/rfriends3_core.html)
   
-|最終確認|判定|ディストロ|sh|備考|   
+|最終確認|判定|ディストリビューション|sh|備考|   
 |---|:---:|---|---|---|  
 |2025/05/02|〇|Ubuntu &nbsp;&nbsp;&nbsp;&nbsp;(24.04)|ubuntu||  
 |2025/05/02|〇|Ubuntu-18.04|ubuntu||  
