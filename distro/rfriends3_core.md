@@ -27,7 +27,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
-|2025/05/03|△| Ubuntu (D10)|18|メニュー表示異常<br>mimetype追加でOK|  
+|2025/05/03|△| Ubuntu (D10)|18|/etc/apt/sources.list<br>を変更|  
 |2025/04/27|△| Ubuntu (D10)|19|/etc/apt/sources.list<br>を変更|  
 |2025/04/26|〇| Ubuntu (D11)|20||  
 |2025/04/26|◎| Ubuntu (D12)|22||  
@@ -39,7 +39,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
-|2025/05/03|△| Debian (Stretch)|9|メニュー表示異常<br>mimetype追加でOK|  
+|2025/05/03|〇| Debian (Stretch)|9||  
 |2025/04/27|〇| Debian (Buster)|10||  
 |2025/04/26|◎| Debian (Bullseye)|11||  
 |2025/04/26|◎| Debian (Bookworm)|12||  
