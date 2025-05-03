@@ -40,3 +40,6 @@ https://archlinux.org/download/
 SUSE  
 https://www.suse.com/ja-jp/products/
   
+fedora  
+https://fedoraproject.org/ja/workstation/download
+  
