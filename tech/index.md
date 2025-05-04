@@ -15,4 +15,4 @@
 |9|[NHK-R2全録マシンの作り方](https://rfriends.hatenablog.com/entry/2024/04/23/070018)||
 |10|[sambaサーバにユーザ認証を追加](https://rfriends.hatenablog.com/entry/2024/04/20/092828)||
 |11|[Webサーバ(lighttpd)にユーザ認証を追加](rfriends3のApplePodcasts機能の操作方法)||
-|12|[rfriendsの録音データをWindowsにBackup]()||
+|12|[rfriendsの録音データをWindowsにBackup](12.md)||
