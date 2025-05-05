@@ -17,3 +17,4 @@
 |11|[Webサーバ(lighttpd)にユーザ認証を追加](rfriends3のApplePodcasts機能の操作方法)||
 |12|[rfriendsの録音データをWindowsにBackup](12.md)||
 |13|[CUIでRaspberry PiのmicroSDのクローンを作る](13.md)||
+|13|[raspberrypiにおけるrfriends2->rfriends3への移行手順](14.md)||
