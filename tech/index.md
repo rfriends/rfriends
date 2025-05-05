@@ -1,6 +1,6 @@
 以下はrfriends3をもっとよく使うためのTIPSです。
 
-2025/05/04更新
+2025/05/06更新
 
 |NO|タイトル|備考|
 |---:|---|---|
@@ -17,4 +17,4 @@
 |11|[Webサーバ(lighttpd)にユーザ認証を追加](rfriends3のApplePodcasts機能の操作方法)||
 |12|[rfriendsの録音データをWindowsにBackup](12.md)||
 |13|[CUIでRaspberry PiのmicroSDのクローンを作る](13.md)||
-|13|[raspberrypiにおけるrfriends2->rfriends3への移行手順](14.md)||
+|14|[raspberrypiにおけるrfriends2->rfriends3への移行手順](14.md)||
