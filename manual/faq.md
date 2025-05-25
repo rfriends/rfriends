@@ -1,6 +1,10 @@
 ## FAQ一覧    
 以下にFAQを追加していきます。    
   
+### 聴取と聴取（サーバ）の違いは？    
+聴取はブラウザを実行しているマシンからブラウザ経由で音が出ます。  
+聴取（サーバ）はrfriends3を実行しているマシンのサウンド出力から音が出ます。  
+  
 ### windowsでビルトインサーバを実行すると、VCRUNTIME140.DLLが見つからないと出ます。  
 https://answers.microsoft.com/ja-jp/windows/forum/all/vcruntime140dll%E3%81%8C%E8%A6%8B%E3%81%A4/10ae9cb5-1acc-40f9-980f-88a402332ef1  
 x64: vc_redist.x64.exe - https://aka.ms/vs/16/release/vc_redist.x64.exe
