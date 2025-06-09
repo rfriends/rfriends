@@ -4,8 +4,7 @@
 ### 046 rfriendsにアクセスするときにユーザ認証を行いたいのですが。（Linux）  
   
 以下を参照して追加してください。  
-rfriendsのWebサーバ(lighttpd)にユーザ認証を追加する  
-https://rfriends.hatenablog.com/entry/2024/04/19/213953  
+[rfriendsのWebサーバ(lighttpd)にユーザ認証を追加する](https://rfriends.hatenablog.com/entry/2024/04/19/213953)  
 
 ### 045 rfriendsにアクセスするときにユーザ認証を行いたいのですが。（Windows）  
   
