@@ -5,7 +5,7 @@
 ![1](https://github.com/user-attachments/assets/429c1661-fd9c-4a80-87cb-cb3fb07661a4)   
   
 初版：2024/11/15  
-改版：2025/05/02  
+改版：2025/06/10  
 
 > [!NOTE]
 > 以下、混乱しがちなので    
@@ -19,12 +19,7 @@
   
 
 ### 動作確認済ディストリビューション　(2025/05/02現在)
-```
-PS> wsl --list --online
-インストールできる有効なディストリビューションの一覧を次に示します。
-'wsl.exe --install <Distro>' を使用してインストールします。
-```
-  
+
 それぞれのrfriendsのインストール方法は以下を参照してください。  
 [Linux/BSD版rfriends3でラジオ録音](https://rfriends.github.io/rfriends/distro/rfriends3_core.html)
   
@@ -95,8 +90,8 @@ Ctrl + Alt + Del キーを同時に押してタスクマネージャーを起動
   
 PowerShell(管理者)を起動し、以下のコマンドを実行します。( - は2個)  
 ```  
-PS> wsl --update  
-PS> wsl --install
+PS> wsl --update
+PS> wsl --install  
 ```
   
 ![2](https://github.com/user-attachments/assets/0252b8a4-5579-4e74-9499-12ea1c9c37e3)  
@@ -105,11 +100,16 @@ PS> wsl --install
   
 ### 3.2 Linuxのインストール  
 
-現在ではいろいろなディストリビューションが利用できますが、ここではubuntuをインストールします。  
+```
+PS> wsl --list --online
+インストールできる有効なディストリビューションの一覧を次に示します。
+'wsl.exe --install <Distro>' を使用してインストールします。
+```
+ここではubuntuをインストールします。  
 debianでもほぼ同じやり方でインストールできます。  
 PowerShellを起動し、以下のコマンドを実行します。  
 ```
-PS> wsl install ubuntu
+PS> wsl --install ubuntu
 ダウンロード中: Ubuntu
 インストール中: Ubuntu
 ディストリビューションが正常にインストールされました。'wsl.exe -d Ubuntu' を使用して起動できます
