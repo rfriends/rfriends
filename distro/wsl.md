@@ -208,19 +208,33 @@ xxx.xxx.xxx.xxx:8000
 　同一LAN内の外部PCからrfriendsへのアクセスを行うための設定は以下のとおりです。通常は、この設定は行わないほうがいいと思います。  
   
 　外部PCからWebアクセスするためには以下の2つの設定が必要になります。  
+
+１）ホストPC -> Ubuntu へのポートフォワーディングを設定する。  
+```  
+PS> netsh.exe interface portproxy add v4tov4 listenaddress=＜ホストPCのipアドレス＞listenport=8000 connectaddress=＜ubuntuのipアドレス＞ connectport=8000  
+```
+
+２）ホストPCのfirewallの設定で、ポート8000を開放する。  
   
-１）ホストPCのfirewallの設定で、ポート8000を開放する。  
-  
-　ホストPCで"セキュリティが強化されたWindows Defender ファイアウォール"  
+　ホストPCで、コントロールパネルの "Windows Defender"  
   
 を開きます。  
+ポート8000を開放する規則をrfriendsという名前で設定する。  
+
+```
+詳細設定 - 受信の規則- 新しい規則 - ポート - 次へ
+TCP
+特定のローカルポート
+8000
+接続を許可する
+プライベート,パブリック
+rfriends
+完了
+```
   
-受信の規則 - ポート - 次へ - 特定のローカルポート 8000 - 接続を許可する - 次へ -プライベート -次へ - 名前を入力して - 完了  
-  
-２）ホストPC ->Ubuntu へのポートフォワーディングを設定する。  
-```  
-PS> netsh.exe interface portproxy add v4tov4 listenaddress=＜外部PCのipアドレス＞listenport=8000 connectaddress=＜ホストPCのipアドレス＞ connectport=8000  
-```  
+３）外部PCから  
+http://ホストPC:8000  
+でrfriendsにアクセスできることを確認する。  
 
 ## ８．ubuntu+rfriends3の削除方法
   
