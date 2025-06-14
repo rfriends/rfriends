@@ -2,7 +2,7 @@
   
 ### 1.2.1d (2025/06/15)  
   
-・clearlog処理  
+・clearlog処理  (linux版のみ)
 　録音開始時にclearlog処理が走って予約データを消してしまうバグがありました。  
   
  ------- 2025/06/14 15:24:01 : rfriends_rec start  
