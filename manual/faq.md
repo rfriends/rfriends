@@ -1,6 +1,15 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。    
   
+### 049 radikoやradiruの番組予約が2日間しか表示されないのですが。  
+  
+設定 - パラメータ - 編集  
+radiko_reserve_now = 2  
+radiru_reserve_now = 2  
+  
+2 -> 7 に変更すれば１週間表示されます。  
+ただし非力なマシンでは表示が遅くなります。  
+  
 ### 048 RaspberryPi image で起動させたのですがIPアドレスがわかりません。  
   
 1) Raspberry PiのLED が点滅していないことを確認します。  
