@@ -1,5 +1,16 @@
 ## rfriends3のアップデート情報  
   
+### 1.2.3-a02 (2025/07/11)   
+  
+・https環境での放送中番組の聴取に対応  
+ただし、当方では環境なしのため未確認  
+  
+・cssを変更  
+http://fonts.googleapis.com/earlyaccess/notosansjp.css  
+を  
+https://fonts.googleapis.com/earlyaccess/notosansjp.css  
+に変更  
+  
 ### 1.2.2d (2025/07/01)   
   
 1.2.2cは修正ミス　　
