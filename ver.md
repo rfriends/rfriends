@@ -9,7 +9,7 @@
   
 ・httpsプロキシ環境での放送中番組の聴取に対応  
   
-・css
+・css  
 https://fonts.googleapis.com/earlyaccess/notosansjp.css  
 に変更  　
   
