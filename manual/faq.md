@@ -1,6 +1,10 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。    
   
+### 051 raspberry pi zeroで最近、動作が重くなったのですが。  
+  
+SWAPをクリアする方法もありますが、一番確実な方法は、raspberry piを再起動してください。  
+  
 ### 050 以下のよう表示されているボタンがありますが、どういう意味でしょうか？  
   
 ![kw](https://github.com/user-attachments/assets/2b5ee875-dc9b-44d2-b45d-b45e4cebe6dd)
