@@ -10,19 +10,20 @@ alpine linuxでは、PSコマンドの仕様が異なるため、各種表示に
   
 インストール方法  
 詳細は「Linux/BSD版rfriends3でラジオ録音」を参照
-install_alpine.sh  の以下の個所を修正してください。
-export permitroot="on"
-export optlighttpd="off"
-export optsamba="off"
+install_alpine.sh  の以下の個所を修正してください。  
+export permitroot="on"  
+export optlighttpd="off"  
+export optsamba="off"  
 
 以下を確認しました。  
 -ラジコ、らじる予約  
 -タイムフリー、らじる聞き逃し  
+-DevelopmentServerに外部PCのブラウザからアクセスできた。  
   
 不具合  
 -操作しないとiPhoneがスリープするため、実行が止まってしまいます。  
 -ip addressが取得できないため、lighttpdは実行不可。  
--DevelopmentServerは動作するが、ブラウザと並行動作ができない。   
+-DevelopmentServerは動作するが、 iPhone自身のブラウザと並行動作ができない。   
   
 ### 1.2.4-a08 (2025/07/15)   
   
