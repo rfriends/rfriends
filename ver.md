@@ -1,9 +1,11 @@
 ## rfriends3のアップデート情報  
   
-### 1.2.4-a10 (2025/07/19)   
+### 1.2.4-b1 (2025/07/22)   
+  
+1.2.3 -> 1.2.4-b1    
   
 ・FM_OKINAWAのタイムフリー表示が異常なのを修正    
-_(アンダーバー)は様々な区切りとして使用しており誤動作していた。  
+_(アンダーバー)は様々な区切りとして使用しており誤動作していました。  
 おそらく、このバグはかなり昔から存在。  
   
 また、今回の修正に伴い、録音ファイルのチャネル名が  
@@ -14,33 +16,12 @@ FM_OKINAWA -> FM-OKINAWA
    from : /home/rpi/tmp/20250713_093000_100000_FM_OKINAWA_tf_202507192330390791127.m4a
    to   : /home/rpi/smbdir/usr2/timefree/FM-OKINAWA_EPO-風と海と空と_20250713_0930_1000.m4a
 ```
-  
-### 1.2.4-a09 (2025/07/18)   
     
 ・alpine linux 向け修正  
 alpine linuxでは、glob関数のGLOB_BRACEがないため、エラーが発生していました。  
 alpine linuxでは、PSコマンドの仕様が異なるため、各種表示に不具合がありました。  
   
 ・iPhoneアプリiSH Shell対応（仮）  
-  
-インストール方法  
-詳細は「Linux/BSD版rfriends3でラジオ録音」を参照
-install_alpine.sh  の以下の個所を修正してください。  
-export permitroot="on"  
-export optlighttpd="off"  
-export optsamba="off"  
-
-以下を確認しました。  
--ラジコ、らじる予約  
--タイムフリー、らじる聞き逃し  
--DevelopmentServerに外部PCのブラウザからアクセスできた。  
-  
-不具合  
--操作しないとiPhoneがスリープするため、実行が止まってしまいます。  
--ip addressが取得できないため、lighttpdは実行不可。  
--DevelopmentServerは動作するが、 iPhone自身のブラウザと並行動作ができない。   
-  
-### 1.2.4-a08 (2025/07/15)   
   
 ・ios ブラウザ対応  
 iPhoneではプルダウンリストに不具合があるため、複数選択ができないようにしました。  
