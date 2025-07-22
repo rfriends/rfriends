@@ -32,7 +32,7 @@ iSH Shellのインストールは以下から可能です。
 ## ２．インストール準備  
 以下のことを確認してください。 
  
-1) iSH Shellをインストールする。
+1) iSH Shellをインストールする。  
 2) iSH Shellを設定する。  
   
 ・画面右下の(i)をタップする。    
@@ -43,6 +43,8 @@ iSH Shellのインストールは以下から可能です。
   
 <img width="600" height="290" alt="ish2" src="https://github.com/user-attachments/assets/53220add-6b12-4afe-9c79-51d813371159" />  
   
+
+その他、Appearanceで好みに応じて背景や文字サイズ等を設定してください。  
   
 3) 以下のコマンドを実行する。  
 
