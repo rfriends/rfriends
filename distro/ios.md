@@ -55,7 +55,11 @@ iSH Shellのインストールは以下から可能です。
 # apk add sudo
 # apk add git
 ```
+> [!CAUTION]
+> iSHを削除して再インストールした場合、update/upgradeがエラーになる場合があります。  
+> その場合、再度iSHを削除して再インストールしてみてください。  
   
+ 
 ## ３．rfriends3のダウンロードとインストール  
   
 　iSH Shellを実行します。  
