@@ -88,34 +88,25 @@ iSH Shellのインストールは以下から可能です。
 ```  
   
 以下のような画面が出たら成功です。
+<img width="600" height="450" alt="ish4" src="https://github.com/user-attachments/assets/86fbc1c8-e9bd-4008-a0c2-e8da8d57829d" />
 
-
-![2](https://github.com/user-attachments/assets/c4cc72cc-659c-4c29-bbfe-3f4951b9556c)
   
-「ヘルプ」「システム更新」でシステムを最新にしてください。   　
+「10-1」でシステムを最新にしてください。（1.2.4-b1 以上）  
 詳細な使用方法は、  
 https://rfriends.github.io/rfriends/manual/  
 を参照してください。    
   
 ## ５．samba  
   
-　windowsの場合、エクスプローラに先ほどのIPアドレス(xxx.xxx.xxx.xxx)を入力すれば、録音ディレクトリにアクセスできます。smbdirというディレクトリが見えると思います。  
-  
-\\XXX.XXX.XXX.XXX  
-  
-\\は￥￥です。  
-  
-スマホからでもファイルマネージャでアクセスできます。  
-  
-iPhoneの場合、ファイル - 3点リーダー - サーバー接続smb://xxx.xxx.xxx.xxx、ゲストで接続できます。  
-  
-androidの場合も各種ファイルマネージャで可能です。（ファイルマネージャ＋推奨）  
-  
-![3](https://github.com/user-attachments/assets/d504cf68-0a3a-4701-92e5-199300647398)  
+　現在、未サポートです。  
   
 ## ６．rfriends3のアンインストール  
   
-デイリー処理設定をしている場合は、必ず、「設定」->「デイリー処理」->「取消」をしてください。または、crontab -e です。  
+デイリー処理設定をしている場合は、必ず、「9-3」のデイリー処理で、rfriends3関連の設定を削除してください。  
+または、crontab -e です。  
+> [!CAUTION]
+> システム関連の設定を消さないようにしてください。
+  
 rfriends3フォルダを削除してください。  
 アンインストールは終了です。  
   
