@@ -8,22 +8,18 @@
 
 
   
-rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
-webサーバにlighttpd、ファイル共有にsambaを採用したios版です。(ubuntu/debian/chrome/android/stream/rocky/Alma/FreeBSD/Alpine/openSUSE/arch)  
-インストールは全自動で行います。  
+iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作します。　  
+現在は、CLIモードでの動作しかしませんが、近い将来、GUIモード（ブラウザアクセス）もサポート予定です。 
+   
+<img width="600" height="564" alt="ish" src="https://github.com/user-attachments/assets/c09423b4-361a-4497-bc1c-ba4b1fa68b13" />
 
-> [!CAUTION]
-> インストールするシステムにすでにSAMBAサーバがインストールされている場合は、  
-> それを停止させるか、rfriendsよりSambaをインストールしないでください。  
-> export optsamba="off"  
-     
-![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2025/07/18   
+二 版　2025/07/22   
   
 ## １．iSH Shell　ソフトウエア  
   
-使用しているソフトウエアはiSH Shellで、ios上のlinux-like shellです。  
+使用しているソフトウエアはiSH Shellで、ios上のlinux-like shell(alpine linux)です。  
   
 iSH Shellのインストールは以下から可能です。  
 [download](https://apps.apple.com/jp/app/ish-shell/id1436902243)  
@@ -31,17 +27,22 @@ iSH Shellのインストールは以下から可能です。
 また、iSH Shell のサイトは以下のとおり。  
 [github](https://github.com/ish-app/ish/)  
   
-
-|最終確認|判定|ディストロ|Ver.|備考|   
-|---|:---:|---|---|---|  
-|2025/07/18|〇|Alpine|3.21|install_alpine.sh<br>init(OpenRC)|  
-  
 ## ２．インストール準備  
 以下のことを確認してください。 
  
-1) システムを最新にし、アプリを追加する。  
-2) 実行するユーザを追加し、管理者権限を付加する。  
-3) その他   
+1) iSH Shellをインストールする。
+2) iSH Shellを設定する。  
+  
+・画面右下の(i)をタップする。    
+  
+<img width="236" height="119" alt="ish3" src="https://github.com/user-attachments/assets/ff8c201d-da81-45c0-af51-bdd2fa7f2c09" />  
+  
+・Keep Screen Turned OnをONにする。  
+  
+<img width="600" height="290" alt="ish2" src="https://github.com/user-attachments/assets/53220add-6b12-4afe-9c79-51d813371159" />  
+  
+  
+3) 以下のコマンドを実行する。  
 
 ```  
 # apk update
@@ -50,62 +51,45 @@ iSH Shellのインストールは以下から可能です。
 # apk add sudo
 # apk add git
 # apk add tzdata
-
-# adduser ユーザ名 
-# addgroup ユーザ名 wheel
-
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-
-testingを追加(atomicparsleyのため)
-# vi /etc/apk/repositories
-https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```
   
 ## ３．rfriends3のダウンロードとインストール  
   
-　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
+　iSH Shellを実行します。  
  
 > [!CAUTION]
-> 必ず２で確認したユーザでログインしてください。    
+> 現在はrootで実行しますが、
+> 将来的にはユーザモードで実行するようにします。
+    
   
-　ディストリビューション別のrfriends3インストールスクリプト（install_XXXXX.sh）を実行します。  
-「１．ディストリビューション」で実行シェルを確認してください。  
+　rfriends3インストールスクリプト（install_ish.sh）を実行します。    
  各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
 ```  
-$ cd ~/
-$ rm -rf rfriends3_core   
-$ git clone https://github.com/rfriends/rfriends3_core.git  
-$ cd rfriends3_core  
-$ sh install_ishshell.sh
+# cd ~/
+# rm -rf rfriends3_core   
+# git clone https://github.com/rfriends/rfriends3_core.git  
+# cd rfriends3_core  
+# sh install_ish.sh
 ```  
   
 これでインストールは完了です。  
 再起動してください。  
 ```
-$ sudo reboot
+# exit
 ```  
   
 ## ４．rfriends3の実行  
   
-以下を入力します。ipコマンドがない場合は、ifconfigを使用してください。  
+以下を入力します。  
 ```  
-$ ip -4 -br a | grep -v "127.0.0.1"  
-　eth0 UNKNOWN XXX.XXX.XXX.XXX/24  
+# cd
+# sh rfriends3.sh
 ```  
-または  
-```  
-$ hostname -I  
-```  
-このIPアドレス（XXX.XXX.XXX.XXX）がwebサーバアドレスです。  
   
-ウェブブラウザ（edge,chrome,firefox,...）を起動し、上記で表示されたアドレスにアクセスする。  
-  
-http://XXX.XXX.XXX.XXX:8000  
-  
-以下のような画面が出たら成功です。ブラウザはローカル(現在実行中のPC)でもリモート（同一ネットワーク上のPC,MAC,スマホ等）でもOKです。  
-  
+以下のような画面が出たら成功です。
+
+
 ![2](https://github.com/user-attachments/assets/c4cc72cc-659c-4c29-bbfe-3f4951b9556c)
   
 「ヘルプ」「システム更新」でシステムを最新にしてください。   　
