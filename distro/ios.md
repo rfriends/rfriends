@@ -50,7 +50,6 @@ iSH Shellのインストールは以下から可能です。
 
 # apk add sudo
 # apk add git
-# apk add tzdata
 ```
   
 ## ３．rfriends3のダウンロードとインストール  
@@ -77,7 +76,22 @@ iSH Shellのインストールは以下から可能です。
 再起動してください。  
 ```
 # exit
-```  
+```
+再起動すると、以下のような画面になります。  
+<img width="600" height="450" alt="ish6" src="https://github.com/user-attachments/assets/25c76549-2c32-40a1-adab-06a069c4f492" />
+
+
+psコマンドを入力してください。
+```
+# ps aux
+```
+<img width="600" height="450" alt="ish7" src="https://github.com/user-attachments/assets/c14e01cb-d451-41e3-af93-19c12400d55f" />
+
+以下の２つが表示されていることを確認してください。  
+```
+/usr/sbin/atd
+crond
+```
   
 ## ４．rfriends3の実行  
   
@@ -87,7 +101,7 @@ iSH Shellのインストールは以下から可能です。
 # sh rfriends3.sh
 ```  
   
-以下のような画面が出たら成功です。
+以下のような画面が出たら成功です。  
 <img width="600" height="450" alt="ish4" src="https://github.com/user-attachments/assets/86fbc1c8-e9bd-4008-a0c2-e8da8d57829d" />
 
   
