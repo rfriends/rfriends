@@ -136,7 +136,7 @@ crond
 <img width="600" height="450" alt="ish4" src="https://github.com/user-attachments/assets/86fbc1c8-e9bd-4008-a0c2-e8da8d57829d" />
 
   
-「10-1」でシステムを最新にしてください。（1.2.4-b1 以上）  
+「10-1」でシステムを最新にしてください。（1.2.4 以上）  
 詳細な使用方法は、  
 https://rfriends.github.io/rfriends/manual/  
 を参照してください。    
