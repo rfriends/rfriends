@@ -150,7 +150,15 @@ https://rfriends.github.io/rfriends/manual/
   
 rfriends3フォルダを削除してください。  
 アンインストールは終了です。  
-  
-  
 
+## ７．キーボード  
+  
+標準で表示されるキーボードは以下のようなものです。  
+<img width="600" height="450" alt="ish9" src="https://github.com/user-attachments/assets/de7d0221-aac3-458b-a19b-b68a2ada1aa1" />
+  
+文字キーボードの上に表示されるキーはそれぞれ以下の機能です。  
+<img width="400" height="150" alt="ish10" src="https://github.com/user-attachments/assets/9a40bd0d-8883-4601-b45e-aa212e0e7975" />
+    
+bluetoothのキーボードを接続するとより快適になります。  
+  
 以上  
