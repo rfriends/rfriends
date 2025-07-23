@@ -86,6 +86,11 @@ iSH Shellのインストールは以下から可能です。
 ```
 # exit
 ```
+その後、一旦iSHを強制終了し、再度起動してください。 
+  
+> [!CAUTION]
+> iosの場合、exit では真の再起動にはならないため、強制終了が必要です。  
+
 再起動すると、以下のような画面になります。  
 <img width="600" height="450" alt="ish6" src="https://github.com/user-attachments/assets/25c76549-2c32-40a1-adab-06a069c4f492" />
 
