@@ -17,11 +17,12 @@ iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作�
 
   
 初 版　2025/07/18   
-二 版　2025/07/22   
+三 版　2025/07/23   
   
 ## １．iSH Shell　ソフトウエア  
   
 使用しているソフトウエアはiSH Shellで、ios上のlinux-like shell(alpine linux)です。  
+ios 11 以上が必要です。  
   
 iSH Shellのインストールは以下から可能です。  
 [download](https://apps.apple.com/jp/app/ish-shell/id1436902243)  
