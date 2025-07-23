@@ -96,9 +96,9 @@ Face ID搭載機種では画面下部から上にスワイプして中央で停�
 アプリを強制終了しても、アプリが削除されるわけではありません。
 ```
   
-> [!CAUTION]
+> [!CAUTION]  
 > iosの場合、exit では真の再起動にはならないため、強制終了が必要です。  
-
+  
 再起動すると、以下のような画面になります。  
 <img width="600" height="450" alt="ish6" src="https://github.com/user-attachments/assets/25c76549-2c32-40a1-adab-06a069c4f492" />
 
@@ -125,6 +125,7 @@ crond
 以下を入力します。  
 ```  
 # cd
+# cd rfriends3
 # sh rfriends3.sh
 ```  
   
