@@ -119,7 +119,10 @@ crond
 # rc-service atd restart
 # rc-service local restart
 ```
-
+> [!CAUTION]
+> 以下のようなエラーが出ますが無視してください。  
+> grep: /proc/filesystems: No such file or directory
+  
 ## ４．rfriends3の実行  
   
 以下を入力します。  
