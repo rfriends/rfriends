@@ -114,7 +114,7 @@ psコマンドを入力してください。
 /usr/sbin/atd
 crond
 ```
-もし、表示されていない場合は以下を実行してください。  
+もし、表示されていない場合は以下を実行し、再度psコマンドで確認してください。  
 ```
 # rc-service atd restart
 # rc-service local restart
