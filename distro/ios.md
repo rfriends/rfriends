@@ -114,7 +114,12 @@ psコマンドを入力してください。
 /usr/sbin/atd
 crond
 ```
-  
+もし、表示されていない場合は以下を実行してください。  
+```
+# rc-service atd restart
+# rc-service local restart
+```
+
 ## ４．rfriends3の実行  
   
 以下を入力します。  
