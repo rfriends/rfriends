@@ -101,18 +101,22 @@ Face ID搭載機種では画面下部から上にスワイプして中央で停�
   
 再起動すると、以下のような画面になります。  
 <img width="600" height="450" alt="ish6" src="https://github.com/user-attachments/assets/25c76549-2c32-40a1-adab-06a069c4f492" />
-
-
-psコマンドを入力してください。
+  
+また、初回起動時には、以下のような選択画面が表示されます。  
+常に許可を選択してください。  
+<img width="600" height="600" alt="ish10" src="https://github.com/user-attachments/assets/34108bee-1ec5-4de0-8413-093f7a10246b" />
+  
+次に、psコマンドを入力してください。
 ```
 # ps aux
 ```
 <img width="600" height="450" alt="ish7" src="https://github.com/user-attachments/assets/c14e01cb-d451-41e3-af93-19c12400d55f" />
 
-以下の２つが表示されていることを確認してください。  
+以下の３つが表示されていることを確認してください。  
 ```
 /usr/sbin/atd
 crond
+cat /dev/location
 ```
 もし、表示されていない場合は以下を実行し、再度psコマンドで確認してください。  
 ```
