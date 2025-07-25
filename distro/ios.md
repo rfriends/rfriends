@@ -17,7 +17,7 @@ iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作�
 
   
 初 版　2025/07/18   
-三 版　2025/07/23   
+四 版　2025/07/25   
   
 ## １．iSH Shell　ソフトウエア  
   
@@ -159,7 +159,7 @@ https://rfriends.github.io/rfriends/manual/
 rfriends3フォルダを削除してください。  
 アンインストールは終了です。  
 
-## ７．キーボード  
+## 補足１．キーボード  
   
 標準で表示されるキーボードは以下のようなものです。  
 <img width="600" height="450" alt="ish9" src="https://github.com/user-attachments/assets/de7d0221-aac3-458b-a19b-b68a2ada1aa1" />
@@ -168,5 +168,67 @@ rfriends3フォルダを削除してください。
 <img width="400" height="150" alt="ish10" src="https://github.com/user-attachments/assets/9a40bd0d-8883-4601-b45e-aa212e0e7975" />
     
 bluetoothのキーボードを接続するとより快適になります。  
+  
+## 補足2．iSH ShellにSSHアクセス  
+  
+### 2.1 前提条件  
+  
+1) opensshがインストール済  
+  \# apk add openssh  
+  
+2) rootでログイン  
+現在rootで操作のため  
+  
+3) rootのパスワード設定済  
+  \# passwd  
+  
+4) パスワード認証  
+公開鍵で認証したい方は別途  
+  
+5) ポート番号:20022  
+22 -> 20022  
+番号は自由に決めて下さい  
+  
+6) iPhone/iPadのIPアドレス  
+ios-設定-WiFi-(i)で確認してください。  
+  
+### 2.2 sshdの設定  
+  
+1) /etc/ssh/sshd_configの設定   
+  \# cp /etc/ssh/sshd_config /etc/ssh/sshd_config.org  
+  \# vi /etc/ssh/sshd_config   
+    
+以下の3か所を変更する。  
+   
+```
+#Port 22  
+Port 20022  
+  
+#PermitRootLogin prohibit-password  
+PermitRootLogin yes  
+  
+#PasswordAuthentication yes  
+PasswordAuthentication yes  
+```
+    
+2) ホストキーの設定  
+  \# ssh-keygen -A  
+  
+3) sshdの開始  
+  \# /usr/sbin/sshd  
+  
+4) ishの初期起動時にsshdの自動開始   
+  \# rc-update add sshd  
+  
+### 2.3 他クライアントからSSHアクセス  
+  
+お好きなSSHクライアントから  
+  
+iSHを実行しているiPHone/iPadのIPアドレス  
+ポート番号  
+root/passwd  
+  
+を設定してアクセスしてください。  
+
   
 以上  
