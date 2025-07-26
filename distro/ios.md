@@ -146,7 +146,7 @@ cat /dev/location
 ~~を参照してください。~~    
 
 少々古いですが、CUIモードのマニュアルとしては、こちらのほうが参考になります。  
-http://ceres.s501.xrea.com/wp_rfriends/index.php/manual/
+[rfriends2操作マニュアル](http://ceres.s501.xrea.com/wp_rfriends/index.php/manual/)
   
 ## ５．samba  
   
