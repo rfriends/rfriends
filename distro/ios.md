@@ -17,7 +17,7 @@ iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作�
 
   
 初 版　2025/07/18   
-四 版　2025/07/25   
+五 版　2025/07/26   
   
 ## １．iSH Shell　ソフトウエア  
   
@@ -215,9 +215,12 @@ PasswordAuthentication yes
   \# ssh-keygen -A  
   
 3) sshdの開始  
-  \# /usr/sbin/sshd  
+  \# rc-service sshd start
   
-4) ishの初期起動時にsshdの自動開始   
+　以下のようなエラーが出ますが無視で。  
+  grep: /proc/filesystems: No such file or directory  
+    
+5) ishの初期起動時にsshdの自動開始   
   \# rc-update add sshd  
   
 ### 2.3 他クライアントからSSHアクセス  
@@ -226,9 +229,27 @@ PasswordAuthentication yes
   
 iSHを実行しているiPHone/iPadのIPアドレス  
 ポート番号  
-root/passwd  
+
+## 補足3．iSH ShellにSCPアクセス  
   
-を設定してアクセスしてください。  
+### 3.1 前提条件  
+  
+1) 補足2．iSH ShellにSSHアクセスができていること
+   
+### 3.2 インストールと実行  
+  
+2) scpのインストール  
+  \# apk add openssh-client  
+  
+3) win-scpのインストール(Windowsの場合)
+  
+4) 以下のような設定でアクセスできます。   
+   
+<img width="600" height="392" alt="scp" src="https://github.com/user-attachments/assets/f8806e7e-2a6c-4b1c-b02e-9fbb8d52a48e" />
+   
+5) あとは自由にファイルのコピーが可能になります。   
+  
+  
 
   
 以上  
