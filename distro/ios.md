@@ -232,7 +232,7 @@ PasswordAuthentication yes
   
 ### 2.3 他クライアントからSSHアクセス  
   
-お好きなSSHクライアントから  
+お好きなSSHクライアント(teraterm,rlogin,putty,windows powershell等)から  
   
 iSHを実行しているiPHone/iPadのIPアドレス  
 ポート番号  
