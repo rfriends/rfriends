@@ -238,16 +238,13 @@ iSHを実行しているiPHone/iPadのIPアドレス
    
 ### 3.2 インストールと実行  
   
-2) scpのインストール  
-  \# apk add openssh-client  
+2) win-scpのインストール(Windowsの場合)
   
-3) win-scpのインストール(Windowsの場合)
-  
-4) 以下のような設定でアクセスできます。   
+3) 以下のような設定でアクセスできます。   
    
 <img width="600" height="392" alt="scp" src="https://github.com/user-attachments/assets/f8806e7e-2a6c-4b1c-b02e-9fbb8d52a48e" />
    
-5) あとは自由にファイルのコピーが可能になります。   
+4) あとは自由にファイルのコピーが可能になります。   
   
   
 
