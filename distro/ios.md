@@ -141,9 +141,12 @@ cat /dev/location
 
   
 「10-1」でシステムを最新にしてください。（1.2.4 以上）  
-詳細な使用方法は、  
-https://rfriends.github.io/rfriends/manual/  
-を参照してください。    
+~~詳細な使用方法は、~~  
+~~https://rfriends.github.io/rfriends/manual/~~  
+~~を参照してください。~~    
+
+少々古いですが、CUIモードのマニュアルとしては、こちらのほうが参考になります。  
+http://ceres.s501.xrea.com/wp_rfriends/index.php/manual/
   
 ## ５．samba  
   
