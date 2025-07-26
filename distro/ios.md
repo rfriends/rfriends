@@ -103,7 +103,7 @@ Face ID搭載機種では画面下部から上にスワイプして中央で停�
 <img width="600" height="450" alt="ish6" src="https://github.com/user-attachments/assets/25c76549-2c32-40a1-adab-06a069c4f492" />
   
 また、初回起動時には、以下のような選択画面が表示されます。  
-常に許可を選択してください。  
+このAppの使用中のみ許可/常に許可を選択してください。(iPhoeとiPadでは画面が異なるようです)  
 <img width="600" height="600" alt="ish10" src="https://github.com/user-attachments/assets/34108bee-1ec5-4de0-8413-093f7a10246b" />
   
 次に、psコマンドを入力してください。
@@ -171,6 +171,9 @@ bluetoothのキーボードを接続するとより快適になります。
   
 ## 補足2．iSH ShellにSSHアクセス  
   
+> [!CAUTION]  
+> rootによるsshアクセスに不安がある方は以下の設定を行わないでください。  
+    
 ### 2.1 前提条件  
   
 1) opensshがインストール済  
@@ -183,14 +186,15 @@ bluetoothのキーボードを接続するとより快適になります。
   \# passwd  
   
 4) パスワード認証  
-公開鍵で認証したい方は別途  
+公開鍵で認証したい方は別途、設定を行ってください。  
   
 5) ポート番号:20022  
 22 -> 20022  
 番号は自由に決めて下さい  
   
 6) iPhone/iPadのIPアドレス  
-ios-設定-WiFi-(i)で確認してください。  
+ios-設定-WiFi-(i)で確認してください。
+iSHでは認識できません。  
   
 ### 2.2 sshdの設定  
   
@@ -229,6 +233,7 @@ PasswordAuthentication yes
   
 iSHを実行しているiPHone/iPadのIPアドレス  
 ポート番号  
+root/設定したパスワード
 
 ## 補足3．iSH ShellにSCPアクセス  
   
