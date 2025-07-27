@@ -29,6 +29,9 @@ iSH Shellのインストールは以下から可能です。
 また、iSH Shell のサイトは以下のとおり。  
 [github](https://github.com/ish-app/ish/)  
   
+<img width="600" height="533" alt="ish23" src="https://github.com/user-attachments/assets/4c05adce-0fbe-4022-8c21-9b69aac9ded6" />
+  
+  
 ## ２．インストール準備  
 以下のことを確認してください。 
  
