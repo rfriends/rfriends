@@ -6,12 +6,11 @@
 > 現在、インストールに関しては人柱状態です。  
 > 正常に動作する保証はありません。  
   
-
-
-
-  
 iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作します。　  
-現在は、CLIモードでの動作しかしませんが、近い将来、GUIモード（ブラウザアクセス）もサポート予定です。 
+~~現在は、CLIモードでの動作しかしませんが、近い将来、GUIモード（ブラウザアクセス）もサポート予定です。~~  
+cui,gui両モードをサポートしました。  
+ただし、guiモードは現在不安定です。 
+お試しと考えてください。  
    
 <img width="600" height="564" alt="ish" src="https://github.com/user-attachments/assets/c09423b4-361a-4497-bc1c-ba4b1fa68b13" />
 
@@ -129,6 +128,8 @@ cat /dev/location
   
 ## ４．rfriends3の実行  
   
+### 4.1 cuiモード  
+  
 以下を入力します。  
 ```  
 # cd
@@ -141,12 +142,46 @@ cat /dev/location
 
   
 「10-1」でシステムを最新にしてください。（1.2.4 以上）  
-~~詳細な使用方法は、~~  
-~~https://rfriends.github.io/rfriends/manual/~~  
-~~を参照してください。~~    
+
 
 少々古いですが、CUIモードのマニュアルとしては、こちらのほうが参考になります。  
 [rfriends2操作マニュアル](http://ceres.s501.xrea.com/wp_rfriends/index.php/manual/)
+
+### 4.2 guiモード  
+  
+1) iPhone/iPadのIPアドレスを確認
+  
+ios-設定-WiFi-(i)で確認してください。  
+iSHでは認識できません。  
+<img width="600" height="280" alt="ish20" src="https://github.com/user-attachments/assets/c3a17c31-64c3-49e8-8711-0306afd505e4" />
+
+2) Development Server の実行
+  
+以下を入力します。  
+```  
+# cd
+# cd rfriends3
+# sh rfriends3_server.sh IPアドレス:8000
+```
+
+3) Webブラウザの実行
+iPhone/iPad/Mac/PC等のブラウザから
+```  
+http://IPアドレス:8000
+```
+でアクセス。  
+以下のような画面が出れば成功です。  
+<img width="600" height="476" alt="ish21" src="https://github.com/user-attachments/assets/539e3a02-911e-4c9d-93a7-9f70f61cd0e9" />
+  
+詳細な使用方法は、  
+https://rfriends.github.io/rfriends/manual/  
+を参照してください。    
+  
+> [!CAUTION]
+> 現在、guiモードは不安定のため、Development Server がしばしばダウンします。  
+> その際はiPhone/iPadで、ctrl-cで終了させ、再び  
+> sh rfriends3_server.sh IPアドレス:8000  
+> を実行してください。   
   
 ## ５．samba  
   
