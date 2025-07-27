@@ -197,7 +197,9 @@ bluetoothのキーボードを接続するとより快適になります。
   
 6) iPhone/iPadのIPアドレス  
 ios-設定-WiFi-(i)で確認してください。
-iSHでは認識できません。  
+iSHでは認識できません。
+<img width="600" height="280" alt="ish20" src="https://github.com/user-attachments/assets/c3a17c31-64c3-49e8-8711-0306afd505e4" />
+
   
 ### 2.2 sshdの設定  
   
