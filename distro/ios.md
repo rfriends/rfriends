@@ -174,7 +174,7 @@ http://IPアドレス:8000
 <img width="600" height="476" alt="ish21" src="https://github.com/user-attachments/assets/539e3a02-911e-4c9d-93a7-9f70f61cd0e9" />
   
 詳細な使用方法は、  
-https://rfriends.github.io/rfriends/manual/  
+[rfriendsのマニュアル](https://rfriends.github.io/rfriends/manual/)    
 を参照してください。    
   
 > [!CAUTION]
