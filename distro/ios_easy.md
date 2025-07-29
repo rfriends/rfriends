@@ -1,6 +1,7 @@
 # iPhone/iPad版rfriendsの簡単インストール
 
-rfriends3のインストールからDevelopmentサーバの起動までを自動で行います。
+rfriends3のインストールからDevelopmentサーバの起動までを自動で行います。  
+ただし、現在はテスト中のため、guiモードではなく、cuiモードが起動します。  
 
 ## １．iSH Shell  
   
@@ -10,8 +11,15 @@ iSHをタップして起動します。
 
 以下のような画面が表示されます。  
   
-<img width="600" height="450" alt="ish6" src="https://github.com/user-attachments/assets/3fbf72d5-c4de-45ba-a08a-0adf9ced8def" />
+<img width="500" height="889" alt="open" src="https://github.com/user-attachments/assets/849cf0d6-c248-4719-bb2d-c8cfca24e694" />
+  
+赤い矢印の指す「歯車」をタップします。    
+「Keep Screen Turned ON」をONにします。  
+「Done」をタップします。
 
+<img width="500" height="889" alt="screen" src="https://github.com/user-attachments/assets/35b49485-9abc-45e4-998b-1830424b6909" />
+   
+  
 ## ２．rfriends3のインストール  
   
 以下を入力します。  
@@ -23,6 +31,9 @@ iSHをタップして起動します。
 ```
 インストールが完了すると、自動でrfriendsのサーバが立ち上がります。  
   
+<img width="500" height="889" alt="exe" src="https://github.com/user-attachments/assets/94b116de-106a-46f9-9e30-109cbf0c71b2" />
+  
+
 ## ３．ブラウザの操作  
   
 safariブラウザを立ち上げ、  
@@ -32,7 +43,8 @@ localhost:8000
 と入力します。  
 以下のような画面が表示されれば成功です。  
   
-<img width="600" height="476" alt="ish21" src="https://github.com/user-attachments/assets/bfe25e12-4026-4acc-9180-602c2b613bee" />
+<img width="500" height="889" alt="rf3" src="https://github.com/user-attachments/assets/12d40ce8-6766-4417-850b-61c49882f021" />
+
   
 
 
