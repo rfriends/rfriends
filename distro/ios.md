@@ -11,12 +11,14 @@ iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作�
 cui,gui両モードをサポートしました。  
 ただし、guiモードは現在不安定です。 
 お試しと考えてください。  
+
+## 簡単インストールもできます。　ー＞　[こちら](https://github.com/rfriends/rfriends/blob/gh-pages/distro/ios_easy.md)
    
 <img width="600" height="564" alt="ish" src="https://github.com/user-attachments/assets/c09423b4-361a-4497-bc1c-ba4b1fa68b13" />
 
   
 初 版　2025/07/18   
-七 版　2025/07/28   
+八 版　2025/07/30   
   
 ## １．iSH Shell　ソフトウエア  
   
