@@ -210,12 +210,38 @@ http://IPアドレス:8000
 以下のような画面が出れば成功です。  
 <img width="600" height="476" alt="ish21" src="https://github.com/user-attachments/assets/539e3a02-911e-4c9d-93a7-9f70f61cd0e9" />
   
+## ４．録音データへのアクセス  
   
-## ４．samba  
+1) ファイルアプリの起動
+  
+標準で入っている”ファイル”をタップします。  
+
+![IMG_0956](https://github.com/user-attachments/assets/738a585a-dffe-48d1-9ffa-eaecb535492e)  
+
+  
+ブラウズの中にiSHという項目があると思います。  
+  
+![IMG_0960](https://github.com/user-attachments/assets/0febf5f3-b44f-4273-b81c-f595ac113a35)
+
+  
+2) 録音フォルダ  
+辿って、/root/rfriends3/usr/を開くと、以下のようなフォルダが出てくると思います。  
+  
+![IMG_0957](https://github.com/user-attachments/assets/ba494ff0-9f9e-4729-89f6-64f1c2c8b876)
+
+  
+3) 例えば、radiru_vodというフォルダを開くと、録音したらじる聞き逃しのデータが出てきます。
+    
+![IMG_0959](https://github.com/user-attachments/assets/868a5475-0f09-4ba1-9368-db8f71badc92)
+
+  
+好きなファイルをコピー/移動/再生できます。
+   
+## ５．samba  
   
 　現在、未サポートです。  
   
-## ５．rfriends3のアンインストール  
+## ６．rfriends3のアンインストール  
   
 デイリー処理設定をしている場合は、必ず、「9-3」のデイリー処理で、rfriends3関連の設定を削除してください。  
 または、crontab -e です。  
