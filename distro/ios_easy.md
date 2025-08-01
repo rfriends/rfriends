@@ -1,19 +1,20 @@
-# iPhone/iPad版rfriendsの簡単インストール
+# Apple版rfriends3でラジオ録音  
+    
+  
+> [!CAUTION]
+> 現在開発中のため、インストールに関しては人柱状態です。  
+> 正常に動作する保証はありません。  
+  
+iPhone/iPad/MacOS 用rfriends3はiSH Shellアプリにインストールして動作します。　  
+cui,gui両モードをサポートしました。  
+ただし、guiモードは現在不安定です。 
+お試しと考えてください。  
 
-rfriends3のインストールからDevelopmentサーバの起動までを自動で行います。  
-ただし、現在はテスト中のため、guiモードではなく、cuiモードが起動します。  
-[!CAUTION] 現在、インストールに関しては人柱状態です。
-正常に動作する保証はありません。
-
-iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作します。　
-現在は、CLIモードでの動作しかしませんが、近い将来、GUIモード（ブラウザアクセス）もサポート予定です。
-cui,gui両モードをサポートしました。
-ただし、guiモードは現在不安定です。 お試しと考えてください。
 
 ## １．iSH Shell  
   
 使用しているソフトウエアはiSH Shellで、ios上のlinux-like shell(alpine linux)です。  
-ios 11 以上が必要です。  
+ios 11 以上が必要です。MacOSでも動作しますが、M1以上のプロセッサが必要です。  
   
 ### 1) App StoreからiSHを入手し、インストールしてください。  
 
@@ -76,7 +77,7 @@ ios 11 以上が必要です。
   
 ![IMG_0950](https://github.com/user-attachments/assets/94de7c08-035e-4cb8-a8a7-495813131b8d)
   
-3) 次に、iPhoneで、safariブラウザを立ち上げ、  
+3) 次に、rfriends3をインストールしているiPhoneで、safariブラウザを立ち上げ、  
 ```
 localhost:8000
 ```
