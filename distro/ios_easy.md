@@ -5,15 +5,22 @@ rfriends3のインストールからDevelopmentサーバの起動までを自動
 
 ## １．iSH Shell  
   
-iSHはインストール済とします。  
-iSHをタップして起動します。  
-<img width="200" height="200" alt="ish22" src="https://github.com/user-attachments/assets/819285e0-9d3b-4aa9-b6fb-3b6b19619bff" />  
+### 1) App StoreからiSHを入手し、インストールしてください。  
 
-以下のような画面が表示されます。  
+![IMG_0952](https://github.com/user-attachments/assets/0a0e4c4e-db3a-42c8-9a0b-711d20b54891)
+  
+  
+### 2) iSHをタップして起動します。 
+  
+<img width="200" height="200" alt="ish22" src="https://github.com/user-attachments/assets/819285e0-9d3b-4aa9-b6fb-3b6b19619bff" />  
+  
+  
+### 3) 赤い矢印の指す「歯車」をタップします。
   
 <img width="500" height="889" alt="open" src="https://github.com/user-attachments/assets/849cf0d6-c248-4719-bb2d-c8cfca24e694" />
+
+
   
-赤い矢印の指す「歯車」をタップします。    
 「Keep Screen Turned ON」をONにします。  
 「Done」をタップします。
 
