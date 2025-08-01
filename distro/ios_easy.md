@@ -149,7 +149,7 @@ rfriends3フォルダを削除してください。
   
 rfriends3の起動がうまくいかない場合は、以下を試してください。  
   
-### 4.1 再起動  
+### 1.1 再起動  
   
 ```  
 # exit  
@@ -175,7 +175,9 @@ Face ID搭載機種では画面下部から上にスワイプして中央で停�
 このAppの使用中のみ許可/常に許可を選択してください。(iPhoeとiPadでは画面が異なるようです)  
 <img width="600" height="600" alt="ish10" src="https://github.com/user-attachments/assets/34108bee-1ec5-4de0-8413-093f7a10246b" />
   
-次に、psコマンドを入力してください。
+### 1.2 デーモンの確認    
+  
+psコマンドを入力してください。
 ```
 # ps aux
 ```
@@ -199,8 +201,7 @@ cat /dev/location
 > [!CAUTION]
 > 以下のようなエラーが出ますが無視してください。  
 > grep: /proc/filesystems: No such file or directory
-
-
+  
   
 ## 補足2．iSH ShellにSSHアクセス  
   
@@ -286,33 +287,31 @@ root/設定したパスワード
    
 4) あとは自由にファイルのコピーが可能になります。   
 
-## 補足4．ファイルアプリからのアクセス  
+## 補足4．他PCからのguiアクセス  
   
-### 4.1 前提条件  
+### 4.1 iPhone/iPadのIPアドレスを確認
   
-1) rfriends3 Ver. 1.2.5-a06 以上  
-   
-### 4.2 設定  
+ios-設定-WiFi-(i)で確認してください。  
+iSHでは認識できません。  
+<img width="600" height="280" alt="ish20" src="https://github.com/user-attachments/assets/c3a17c31-64c3-49e8-8711-0306afd505e4" />
+
+2) Development Server の実行
   
-ファイルアプリでiSHの録音ファイルを参照するにはutf-8-mac形式である必要があります。    
-以下の設定をすれば、見えるようになります。 
-  
-設定 - パラメータ  
+以下を入力します。  
+```  
+# cd
+# sh gui IPアドレス:8000
 ```
-;　番組名の濁点、半濁点を別にする  
-;　no  LFR_＃みちょパラ_20250727_2230_2300.m4a  
-;　yes LFR_＃みちょハ゜ラ_20250727_2230_2300.m4a  
-;
-; no  別にしない（推奨）  
-; yes 別にする  
-utf8_mac = "no"  
+
+3) Webブラウザの実行
+iPhone/iPad/Mac/PC等のブラウザから
+```  
+http://IPアドレス:8000
 ```
-utf8_mac = "yes" を指定すれば、ファイル名がutf-8-mac対応になり、
-ファイルアプリから参照、再生できるようになります。  
+でアクセス。  
+以下のような画面が出れば成功です。  
+<img width="600" height="476" alt="ish21" src="https://github.com/user-attachments/assets/539e3a02-911e-4c9d-93a7-9f70f61cd0e9" />
   
-> [!CAUTION]
-> なお、この設定をしても、フォルダおよびフォルダ内に日本語ファイルが残っていると参照できません。  
-> また、ファイルアプリを使用しない場合は設定を変更しないでください
   
 ## 補足5．日本語の文字化け   
   
