@@ -29,30 +29,44 @@ iSHをタップして起動します。
 # wget rf3.s331.xrea.com/ish  
 # sh ish  
 ```
-インストールが完了後、以下のいづれかを起動してください。  
-・cuiモード  
+これでインストールは完了です。  
+    
+## ３．rfriendsの操作  
+
+### 3.1 cuiモード  
+  
+rfriends3をcuiモードで起動します。  
+  
 ```  
 # cd  
 # sh cui  
 ```  
   
-・guiモード  
+以下のような画面が表示されれば成功です。  
+  
+![IMG_0949](https://github.com/user-attachments/assets/528dc96e-6bcd-4d08-ab05-7f4779e928a1)
+  
+### 3.2 guiモード    
+  
+rfriends3をguiモードで起動します。  
+  
 ```  
 # cd  
 # sh gui  
 ```
-    
-
-## ３．ブラウザの操作  
+   
+以下のような画面が表示されます。  
   
-guiモードの場合、safariブラウザを立ち上げ、  
+![IMG_0950](https://github.com/user-attachments/assets/94de7c08-035e-4cb8-a8a7-495813131b8d)
+  
+次に、iPhoneで、safariブラウザを立ち上げ、  
 ```
 localhost:8000
 ```
 と入力します。  
 以下のような画面が表示されれば成功です。  
   
-<img width="500" height="889" alt="rf3" src="https://github.com/user-attachments/assets/12d40ce8-6766-4417-850b-61c49882f021" />
+![rf3](https://github.com/user-attachments/assets/223adaad-251a-41ad-8d01-0fd4c47bc533)
 
   
 
