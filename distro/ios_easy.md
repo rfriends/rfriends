@@ -25,18 +25,27 @@ iSHをタップして起動します。
 以下を入力します。  
 ```
 # cd  
-# rm ish.sh  
-# wget rf3.s331.xrea.com/ish.sh  
-# sh ish.sh  
+# rm ish  
+# wget rf3.s331.xrea.com/ish  
+# sh ish  
 ```
-インストールが完了すると、自動でrfriendsのサーバが立ち上がります。  
+インストールが完了後、以下のいづれかを起動してください。  
+・cuiモード  
+```  
+# cd  
+# sh cui  
+```  
   
-<img width="500" height="889" alt="exe" src="https://github.com/user-attachments/assets/94b116de-106a-46f9-9e30-109cbf0c71b2" />
-  
+・guiモード  
+```  
+# cd  
+# sh gui  
+```
+    
 
 ## ３．ブラウザの操作  
   
-safariブラウザを立ち上げ、  
+guiモードの場合、safariブラウザを立ち上げ、  
 ```
 localhost:8000
 ```
