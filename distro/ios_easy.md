@@ -2,8 +2,18 @@
 
 rfriends3のインストールからDevelopmentサーバの起動までを自動で行います。  
 ただし、現在はテスト中のため、guiモードではなく、cuiモードが起動します。  
+[!CAUTION] 現在、インストールに関しては人柱状態です。
+正常に動作する保証はありません。
+
+iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作します。　
+現在は、CLIモードでの動作しかしませんが、近い将来、GUIモード（ブラウザアクセス）もサポート予定です。
+cui,gui両モードをサポートしました。
+ただし、guiモードは現在不安定です。 お試しと考えてください。
 
 ## １．iSH Shell  
+  
+使用しているソフトウエアはiSH Shellで、ios上のlinux-like shell(alpine linux)です。  
+ios 11 以上が必要です。  
   
 ### 1) App StoreからiSHを入手し、インストールしてください。  
 
