@@ -59,7 +59,10 @@ bluetoothのキーボードを接続するとより快適になります。
   
 ## ２．rfriends3のインストール  
   
+### 2.1 インストールshのダウンロードと実行  
+  
 以下を入力します。  
+  
 ```
 # cd  
 # rm ish  
@@ -67,13 +70,11 @@ bluetoothのキーボードを接続するとより快適になります。
 # sh ish  
 ```
 各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
-また、cui,guiというshが作成されます。  
-
-## 補足１．トラブルシューティング
+また、cui,guiというshが作成されます。   
   
-rfriends3の起動がうまくいかない場合は、以下を試してください。  
+### 2.2 再起動  
   
-### 1.1 再起動  
+iSHを終了します。  
   
 ```  
 # exit  
@@ -99,7 +100,7 @@ Face ID搭載機種では画面下部から上にスワイプして中央で停�
 このAppの使用中のみ許可/常に許可を選択してください。(iPhoeとiPadでは画面が異なるようです)  
 <img width="600" height="600" alt="ish10" src="https://github.com/user-attachments/assets/34108bee-1ec5-4de0-8413-093f7a10246b" />
   
-### 1.2 デーモンの確認    
+### 2.3 デーモンの確認    
   
 psコマンドを入力してください。
 ```
@@ -112,19 +113,8 @@ psコマンドを入力してください。
 /usr/sbin/atd
 crond
 cat /dev/location
-```
-もし、表示されていない場合は以下を実行し、再度psコマンドで確認してください。  
-```
-# rc-service atd restart
-# rc-service local restart
+```  
   
-# rc-update atd default
-# rc-update local default
-  
-```
-> [!CAUTION]
-> 以下のようなエラーが出ますが無視してください。  
-> grep: /proc/filesystems: No such file or directory  
 これでインストールは完了です。  
     
 ## ３．rfriends3の起動
