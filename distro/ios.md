@@ -1,11 +1,11 @@
-# Apple版rfriends3でラジオ録音  
+# ios版rfriends3でラジオ録音  
     
   
 > [!CAUTION]
 > 現在開発中のため、インストールに関しては人柱状態です。  
 > 正常に動作する保証はありません。  
   
-iPhone/iPad/MacOS 用rfriends3はiSH Shellアプリにインストールして動作します。　  
+iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作します。　  
 cui,gui両モードをサポートしました。  
 ただし、guiモードは現在不安定です。 
 お試しと考えてください。  
@@ -18,7 +18,7 @@ cui,gui両モードをサポートしました。
 ## １．iSH Shell  
   
 使用しているソフトウエアはiSH Shellで、ios上のlinux-like shell(alpine linux)です。  
-ios 11 以上が必要です。MacOSでも動作しますが、M1以上のプロセッサが必要です。  
+ios 11 以上が必要です。MacOSでも動作するとの報告がありますが、M1以上のプロセッサが必要です。  
   
 ### 1) App StoreからiSHを入手し、インストールしてください。  
 
