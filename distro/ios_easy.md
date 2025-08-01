@@ -42,36 +42,37 @@ rfriends3のインストールからDevelopmentサーバの起動までを自動
 
 ### 3.1 cuiモード  
   
-rfriends3をcuiモードで起動します。  
+1) rfriends3をcuiモードで起動します。  
   
 ```  
 # cd  
 # sh cui  
 ```  
   
-以下のような画面が表示されれば成功です。  
+2) 以下のような画面が表示されれば成功です。  
   
 ![IMG_0949](https://github.com/user-attachments/assets/528dc96e-6bcd-4d08-ab05-7f4779e928a1)
   
 ### 3.2 guiモード    
   
-rfriends3をguiモードで起動します。  
+1) rfriends3をguiモードで起動します。  
   
 ```  
 # cd  
 # sh gui  
 ```
    
-以下のような画面が表示されます。  
+2) 以下のような画面が表示されます。  
   
 ![IMG_0950](https://github.com/user-attachments/assets/94de7c08-035e-4cb8-a8a7-495813131b8d)
   
-次に、iPhoneで、safariブラウザを立ち上げ、  
+3) 次に、iPhoneで、safariブラウザを立ち上げ、  
 ```
 localhost:8000
 ```
-と入力します。  
-以下のような画面が表示されれば成功です。  
+と入力します。 
+  
+4) 以下のような画面が表示されれば成功です。  
   
 ![rf3](https://github.com/user-attachments/assets/223adaad-251a-41ad-8d01-0fd4c47bc533)
 
