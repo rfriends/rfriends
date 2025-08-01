@@ -97,8 +97,9 @@ Face ID搭載機種では画面下部から上にスワイプして中央で停�
 ![rebooy](https://github.com/user-attachments/assets/d276dacf-b814-49da-9482-37f485bb9c5e)  
   
 また、初回起動時には、以下のような選択画面が表示されます。  
-このAppの使用中のみ許可/常に許可を選択してください。(iPhoeとiPadでは画面が異なるようです)  
-<img width="600" height="600" alt="ish10" src="https://github.com/user-attachments/assets/34108bee-1ec5-4de0-8413-093f7a10246b" />
+「Appの使用中は許可」を選択してください。(iPhoeとiPadでは画面が異なるようです)  
+  
+![loc](https://github.com/user-attachments/assets/998939c8-8ffc-48b2-aab2-f6ccee70bdc9)  
   
 ### 2.3 デーモンの確認    
   
