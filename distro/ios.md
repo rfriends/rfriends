@@ -72,7 +72,17 @@ bluetoothのキーボードを接続するとより快適になります。
 これでインストールは完了です。  
     
 ## ３．rfriends3の起動
-
+  
+以下の３つの起動方法より選択してください。  
+  
+```  
+3.1 cuiモード  
+3.2 guiモード   
+3.3 guiモード (他PCから)    
+```  
+    
+起動後はrfriends3を最新にupdate してください。 
+  
 ### 3.1 cuiモード  
   
 1) rfriends3をcuiモードで起動します。  
@@ -87,8 +97,12 @@ bluetoothのキーボードを接続するとより快適になります。
 ![IMG_0949](https://github.com/user-attachments/assets/528dc96e-6bcd-4d08-ab05-7f4779e928a1)  
    
 少々古いですが、CUIモードのマニュアルとしては、こちらのほうが参考になります。  
-[rfriends2操作マニュアル](http://ceres.s501.xrea.com/wp_rfriends/index.php/manual/)  
-     
+[rfriends2操作マニュアル](http://ceres.s501.xrea.com/wp_rfriends/index.php/manual/)   
+  
+> [!CAUTION]  
+> エディタとして、viを使用すると日本語が化けます。  
+> 回避策として、vimまたはnanoを使用してください。
+  
 ### 3.2 guiモード    
   
 1) rfriends3をguiモードで起動します。  
@@ -123,13 +137,32 @@ localhost:8000
 > sh gui  
 > を実行してください。
   
-### 3.3 update    
+## 3.3 guiモード (他PCから)  
   
-rfriends3を最新にアップデートしてください。  
+1) iSHを実行しているiPhone/iPadのIPアドレスを確認します。  
   
-rfriends3 Ver. 1.2.5-a06 以上  
-  
+ios-設定-WiFi-(i)で確認してください。  
+iSHでは認識できません。  
+<img width="600" height="280" alt="ish20" src="https://github.com/user-attachments/assets/c3a17c31-64c3-49e8-8711-0306afd505e4" />
 
+2) rfriends3をguiモードで起動します。  
+  
+以下を入力します。  
+```  
+# cd
+# sh gui IPアドレス:8000
+```
+
+3) Webブラウザの実行
+iPhone/iPad/Mac/PC等のブラウザから
+```  
+http://IPアドレス:8000
+```
+でアクセス。  
+以下のような画面が出れば成功です。  
+<img width="600" height="476" alt="ish21" src="https://github.com/user-attachments/assets/539e3a02-911e-4c9d-93a7-9f70f61cd0e9" />
+  
+  
 ## ４．samba  
   
 　現在、未サポートです。  
@@ -286,37 +319,8 @@ root/設定したパスワード
 <img width="600" height="392" alt="scp" src="https://github.com/user-attachments/assets/f8806e7e-2a6c-4b1c-b02e-9fbb8d52a48e" />
    
 4) あとは自由にファイルのコピーが可能になります。   
+ 
 
-## 補足4．他PCからのguiアクセス  
-  
-### 4.1 iPhone/iPadのIPアドレスを確認
-  
-ios-設定-WiFi-(i)で確認してください。  
-iSHでは認識できません。  
-<img width="600" height="280" alt="ish20" src="https://github.com/user-attachments/assets/c3a17c31-64c3-49e8-8711-0306afd505e4" />
-
-2) Development Server の実行
-  
-以下を入力します。  
-```  
-# cd
-# sh gui IPアドレス:8000
-```
-
-3) Webブラウザの実行
-iPhone/iPad/Mac/PC等のブラウザから
-```  
-http://IPアドレス:8000
-```
-でアクセス。  
-以下のような画面が出れば成功です。  
-<img width="600" height="476" alt="ish21" src="https://github.com/user-attachments/assets/539e3a02-911e-4c9d-93a7-9f70f61cd0e9" />
-  
-  
-## 補足5．日本語の文字化け   
-  
-エディタとして、viを使用すると日本語が化けます。  
-回避策として、vimまたはnanoを使用してください。  
   
 
   
