@@ -94,7 +94,7 @@ Face ID搭載機種では画面下部から上にスワイプして中央で停�
   
 再起動すると、以下のような画面になります。  
   
-<img width="600" height="450" alt="ish6" src="https://github.com/user-attachments/assets/25c76549-2c32-40a1-adab-06a069c4f492" />
+![rebooy](https://github.com/user-attachments/assets/d276dacf-b814-49da-9482-37f485bb9c5e)  
   
 また、初回起動時には、以下のような選択画面が表示されます。  
 このAppの使用中のみ許可/常に許可を選択してください。(iPhoeとiPadでは画面が異なるようです)  
@@ -104,10 +104,11 @@ Face ID搭載機種では画面下部から上にスワイプして中央で停�
   
 psコマンドを入力してください。
 ```
-# ps aux
+# ps
 ```
-<img width="600" height="450" alt="ish7" src="https://github.com/user-attachments/assets/c14e01cb-d451-41e3-af93-19c12400d55f" />
-
+  
+![atd](https://github.com/user-attachments/assets/64969682-05c7-4c3b-b587-6689778553d3)  
+  
 以下の３つが表示されていることを確認してください。  
 ```
 /usr/sbin/atd
