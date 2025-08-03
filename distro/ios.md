@@ -72,6 +72,10 @@ bluetoothのキーボードを接続するとより快適になります。
 各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
 また、cui,guiというshが作成されます。   
   
+> [!CAUTION]
+> Ver 1.1よりusrdirが変更になりました。  
+> /root/rfriends3/usr/ --> /root/usr2/  
+  
 ### 2.2 再起動  
   
 iSHを終了します。  
