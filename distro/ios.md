@@ -13,7 +13,7 @@ cui,gui両モードをサポートしました。
 <img width="600" height="564" alt="ish" src="https://github.com/user-attachments/assets/c09423b4-361a-4497-bc1c-ba4b1fa68b13" />  
   
 初 版　2025/07/18   
-九 版　2025/08/01  
+十 版　2025/08/03  
   
 ## １．iSH Shell  
   
@@ -225,7 +225,7 @@ http://IPアドレス:8000
 
   
 2) 録音フォルダ  
-辿って、/root/rfriends3/usr/を開くと、以下のようなフォルダが出てくると思います。  
+辿って、~~/root/rfriends3/usr/~~ /root/usr2/を開くと、以下のようなフォルダが出てくると思います。  
   
 ![IMG_0957](https://github.com/user-attachments/assets/ba494ff0-9f9e-4729-89f6-64f1c2c8b876)
 
