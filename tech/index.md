@@ -18,3 +18,6 @@
 |12|[rfriendsの録音データをWindowsにBackup](12.md)||
 |13|[CUIでRaspberry PiのmicroSDのクローンを作る](13.md)||
 |14|[raspberrypiにおけるrfriends2->rfriends3への移行手順](14.md)||
+|15|[xserver VPS（無料）を契約する](15.md)||
+
+
