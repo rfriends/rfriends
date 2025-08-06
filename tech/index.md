@@ -1,6 +1,6 @@
 以下はrfriends3をもっとよく使うためのTIPSです。
 
-2025/05/06更新
+2025/08/06更新
 
 |NO|タイトル|備考|
 |---:|---|---|
@@ -19,5 +19,6 @@
 |13|[CUIでRaspberry PiのmicroSDのクローンを作る](13.md)||
 |14|[raspberrypiにおけるrfriends2->rfriends3への移行手順](14.md)||
 |15|[xserver VPS（無料）を契約する](15.md)||
+|15|[xserver VPS（無料）にrfriends3をインストールする](16.md)||
 
 
