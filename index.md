@@ -14,7 +14,7 @@
 |リンク|詳細|  
 |---|---|  
 |[マニュアル](manual/index.md)|rfriends3のマニュアル|  
-|[アップデート情報](rfriends/ver.html)|rfriends3のアップデート情報|  
+|[アップデート情報](ver.html)|rfriends3のアップデート情報|  
 |[活用事例](tech/index.md)|rfriends3をもっと便利にする活用事例|  
 |[X(twitter)](https://twitter.com/rfriends2017)|リリース情報、障害情報、TIPS等を発信|  
 |[ブログ](https://rfriends.hatenablog.com/)|詳細な技術情報を発信|  
