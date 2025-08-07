@@ -12,14 +12,13 @@
  
 |#|サイト|説明|
 |--:|:--|:------|
-|1|[Webサイト](https://rfriends.github.io/rfriends/)|rfriends3の機種別インストール方法、マニュアル等|
-||[アップデート情報](ver.md)|rfriends3のアップデート情報|  
-||[マニュアル](manual/index.md)|rfriends3のマニュアル|  
-||[活用事例](tech/index.md)|rfriends3をもっと便利にする活用事例|  
-||[レスキュー](manual/rescue.md)|rfriends3システムの起動不可等からの回復|  
-|2|[X(twitter）](https://x.com/rfriends2017)|リリース情報、障害情報、TIPSなど|
-|3|[掲示板](http://www.rf3.shop/wforum/wforum.cgi)|質問、要望、感想など|
-|4|[ブログ](https://rfriends.hatenablog.com/)|hatenaブログでは詳細な技術情報|  
+|1|[アップデート情報](ver.md)|rfriends3のアップデート情報|  
+|2|[マニュアル](manual/index.md)|rfriends3のマニュアル|  
+|3|[活用事例](tech/index.md)|rfriends3をもっと便利にする活用事例|  
+|4|[レスキュー](manual/rescue.md)|rfriends3システムの起動不可等からの回復|  
+|5|[X(twitter）](https://x.com/rfriends2017)|リリース情報、障害情報、TIPSなど|
+|6|[掲示板](http://www.rf3.shop/wforum/wforum.cgi)|質問、要望、感想など|
+|7|[ブログ](https://rfriends.hatenablog.com/)|hatenaブログでは詳細な技術情報|  
 
  ・[rfriendsを応援してください](donation.md)  
   
