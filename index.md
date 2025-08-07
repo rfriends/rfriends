@@ -1,25 +1,24 @@
-### ラジオ録音アプリ「rfriends3」について  
-  
-* 最新のアップデート情報は、[こちら](ver.md)です。  
-* rfriends3はラジコ、らじるらじる、ポッドキャストを録音・再生できます。
-* タイムフリー、エリアフリー、聞き逃し、ゴガクに対応しています。  
-* PC,MAC,スマホ等のWEBブラウザ(chrome,edge,firefox,safari等)から操作できます。
-* sambaによるファイル共有、sshアクセスもできます。
-* Windows Linux macOS Raspberrypi ChromeOS Termux Volumio MoodeAudio LXD docker に対応しています。  
-  
+##  ラジオ録音アプリ「rfriends3」はラジオ好きのためのプログラムです。  
+    
+* rfriends3は、ラジコ、らじるらじる、ポッドキャストを録音できます。  
+* rfriends3は、操作がWEBサーバ（Lighttpd）経由で出来、とても簡単になっています。
+* rfriends3は、PC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)が動作するものであれば、操作する端末はなんでも可能です。
+* rfriends3は、sambaによるファイル共有、従来のsshによるcuiアクセスもできます。
+* rfriends3は、radiko ラジコ タイムフリー エリアフリー らじるらじる 聞き逃し ゴガク  ポッドキャスト Windows Linux macOS RaspberrypiOS ChromeOS Termux Volumio MoodeAudio に対応しています。  
+     
 ![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
   
 ### １．rfriends3関連のリンク一覧    
-  
-|リンク|詳細|  
-|---|---|  
-|[マニュアル](manual/index.md)|rfriends3のマニュアル|  
-|[アップデート情報](ver.md)|rfriends3のアップデート情報|  
-|[活用事例](tech/index.md)|rfriends3をもっと便利にする活用事例|  
-|[X(twitter)](https://twitter.com/rfriends2017)|リリース情報、障害情報、TIPS等を発信|  
-|[ブログ](https://rfriends.hatenablog.com/)|詳細な技術情報を発信|  
-|[掲示板](http://rf3.s331.xrea.com/wforum/wforum.cgi)|質問、要望、感想など|  
-|[レスキュー](manual/rescue.md)|rfriends3システムの起動不可等からの回復|  
+ 
+|#|サイト|説明|
+|--:|:--|:------|
+|1|[アップデート情報](https://rfriends.github.io/rfriends/ver.html)|rfriends3のアップデート情報|  
+|2|[マニュアル](https://rfriends.github.io/rfriends/manual/)|rfriends3のマニュアル|  
+|3|[活用事例](https://rfriends.github.io/rfriends/tech/)|rfriends3をもっと便利にする活用事例|  
+|4|[X(twitter）](https://x.com/rfriends2017)|リリース情報、障害情報、TIPSなど|
+|5|[掲示板](http://www.rf3.shop/wforum/wforum.cgi)|質問、要望、感想など|
+|6|[ブログ](https://rfriends.hatenablog.com/)|hatenaブログでは詳細な技術情報|  
+|7|[レスキュー](https://rfriends.github.io/rfriends/manual/rescue.html)|rfriends3システムの起動不可等からの回復|
 
  ・[rfriendsを応援してください](donation.md)  
   
@@ -55,5 +54,8 @@ rfriends3はいろいろな機種に対応しています。
 ![gallery](https://github.com/user-attachments/assets/fed28352-0636-472e-9015-51abea05e17a)  
   
 初版：2023/07/12  
-改版：2025/01/31  
+改版：2025/08/07  
   
+  
+
+ラジオ録音 radiko ラジコ タイムフリー エリアフリー らじるらじる 聞き逃し ゴガク  ポッドキャスト Windows Linux macOS RaspberrypiOS ChromeOS Termux Volumio MoodeAudio docker
