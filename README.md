@@ -15,9 +15,10 @@
 |[アップデート情報](https://rfriends.github.io/rfriends/ver.html)|rfriends3のアップデート情報|
 |[X(twitter）](https://x.com/rfriends2017)|リリース情報、障害情報、TIPS等を発信します|
 |[掲示板](http://www.rf3.shop/wforum/wforum.cgi)|質問、要望、感想など|
-|[技術情報](https://rfriends.hatenablog.com/)|hatenaブログでは詳細な技術情報を発信します。|  
+|[技術情報](https://rfriends.hatenablog.com/)|hatenaブログでは詳細な技術情報を発信します|  
   
   
+### rfriends3の実行画面  
 ![top](https://github.com/user-attachments/assets/5d621f57-425f-4fcd-9448-a816ededd8dc)
   
 
