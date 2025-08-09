@@ -43,7 +43,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/27|〇| Debian (Buster)|10||  
 |2025/04/26|◎| Debian (Bullseye)|11||  
 |2025/04/26|◎| Debian (Bookworm)|12||  
-|2025/08/10|〇| Debian (Trixie)|13||  
+|2025/08/10|ー| Debian (Trixie)|13|テスト中|  
 |2025/05/02|〇| Kali linux|-||  
 
   
