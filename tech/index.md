@@ -20,6 +20,6 @@
 |14|[raspberrypi版rfriends2->rfriends3への移行手順](14.md)||
 |15|[xserver VPS（無料）を契約する](15.md)||
 |16|[xserver VPSにrfriends3をインストールする](16.md)||
-|17|[radikoの地域判定について](17.md)|とても重要|
+|17|[radikoの地域判定について](17.md)|重要|
 
 
