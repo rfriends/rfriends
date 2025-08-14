@@ -3,7 +3,13 @@
 rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版です。(ubuntu/debian/chrome/android/stream/rocky/Alma/FreeBSD/Alpine/openSUSE/arch)  
 インストールは全自動で行います。  
-
+  
+> [!NOTE]  
+> Apache2版を追加しました。(2025/08/15)  
+> lighttpdの代わりにApache2をインストールします。  
+> install_debian_apache2.sh  
+> install_ubunutu_apache2.sh  
+  
 > [!CAUTION]
 > インストールするシステムにすでにSAMBAサーバがインストールされている場合は、  
 > それを停止させるか、rfriendsよりSambaをインストールしないでください。  
@@ -12,7 +18,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第26版　2025/08/14
+第27版　2025/08/15  
   
 ## １．ディストリビューション  
 
@@ -35,7 +41,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/26|〇| Ubuntu (D13)|25||  
 |2025/04/26|〇| ZORIN OS|17.3||  
   
-### 1.2 Debian系  (install_debian.sh、debian13の場合は、install_debian_apache2.sh)
+### 1.2 Debian系  (install_debian.sh)
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
@@ -45,7 +51,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/26|◎| Debian (Bookworm)|12||  
 |2025/08/14|〇| Debian (Trixie)|13|apache版使用|  
 |2025/05/02|〇| Kali linux|-||  
-
+  
+> [!CAUTION]
+> debian13の場合は、install_debian_apache2.sh 
   
  ・linux開発環境  
    
