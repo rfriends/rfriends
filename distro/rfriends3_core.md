@@ -12,7 +12,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第25版　2025/08/10
+第26版　2025/08/14
   
 ## １．ディストリビューション  
 
@@ -35,7 +35,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/26|〇| Ubuntu (D13)|25||  
 |2025/04/26|〇| ZORIN OS|17.3||  
   
-### 1.2 Debian系  (install_debian.sh)
+### 1.2 Debian系  (install_debian.sh、debian13の場合は、install_debian_apache2.sh)
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
@@ -43,7 +43,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/27|〇| Debian (Buster)|10||  
 |2025/04/26|◎| Debian (Bullseye)|11||  
 |2025/04/26|◎| Debian (Bookworm)|12||  
-|2025/08/10|ー| Debian (Trixie)|13|テスト中|  
+|2025/08/14|〇| Debian (Trixie)|13|apache版使用|  
 |2025/05/02|〇| Kali linux|-||  
 
   
@@ -134,6 +134,11 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 # passwd ユーザ名
 # chsh -s /bin/bash ユーザ名  
 ```
+> [!NOTE]
+> すでにユーザ追加済で管理者権限を付加したい場合は、 rootでログインし  
+> \# gpasswd -a ユーザ名 sudo  
+> その後必ず再起動してください。
+  
 ### 2.3 stream/rocky/alma/oracle/miracle/fedoraの場合  
 1) システムを最新にし、アプリを追加する。    
 ```  
