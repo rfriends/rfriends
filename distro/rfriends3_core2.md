@@ -49,8 +49,7 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 |2025/07/18|〇|Alpine|3.21|install_alpine.sh<br>init(OpenRC)|  
 |2025/07/16|△|Arch linux|-|install_arch_apache2.sh|   
 |2025/04/25|〇|openSUSE|15.6|install_suse.sh|  
-  
-・Arch linux ではlighttpdに不具合があり、Apache2を標準としました。  
+
   
 ## ２．インストール準備  
 以下のことを確認してください。 
@@ -75,6 +74,9 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 # passwd ユーザ名
 ```
   
+実行shは、install_stream.sh です。  
+  
+  
 ### 2.2 alpineの場合  
 
 ```  
@@ -95,6 +97,9 @@ testingを追加(atomicparsleyのため)
 # vi /etc/apk/repositories
 https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ```
+  
+実行shは、install_alpine.sh です。  
+  
 ### 2.3 openSUSEの場合  
 
 ```  
@@ -110,7 +115,9 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 # visudo
 %wheel ALL=(ALL:ALL) ALL
 ```
-
+  
+実行shは、install_suse.sh です。  
+  
 ### 2.4 arch linuxの場合  
 
 ```  
@@ -125,7 +132,12 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 
 # visudo
 %wheel ALL=(ALL:ALL) ALL
-```  
+```
+  
+実行shは、install_arch_apache2.sh です。  
+    
+・Arch linux ではlighttpdに不具合があり、Apache2を標準としました。  
+  
 ## ３．rfriends3のダウンロードとインストール  
   
 　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
