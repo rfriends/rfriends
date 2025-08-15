@@ -93,6 +93,8 @@ export php="php84"
 export samba="samba419"
 ```
   
+実行shは、install_freebsd.sh です。  
+  
 ## ３．rfriends3のダウンロードとインストール  
   
 　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
@@ -100,8 +102,7 @@ export samba="samba419"
 > [!CAUTION]
 > 必ず２で確認したユーザでログインしてください。    
   
-　ディストリビューション別のrfriends3インストールスクリプト（install_XXXXX.sh）を実行します。  
-「１．ディストリビューション」で実行シェルを確認してください。  
+　ディストリビューション別のrfriends3インストールスクリプト（install_freebsd.sh）を実行します。  
  各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
 > [!CAUTION]    
@@ -114,7 +115,7 @@ $ cd ~/
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
-$ sh install_XXXXX.sh
+$ sh install_freebsd.sh
 ```  
   
 これでインストールは完了です。  
