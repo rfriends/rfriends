@@ -18,7 +18,7 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第27版　2025/08/15  
+第28版　2025/08/16  
   
 ## １．ディストリビューション  
 
@@ -35,6 +35,7 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 |---|:---:|---|---|---|  
 |2025/04/27|〇|FreeBSD|13.5|samba419を選択|  
 |2025/04/21|◎|FreeBSD|14.2|samba419を選択|  
+|2025/04/21|◎|FreeBSD|14.3|samba419を選択|  
   
   
 ## ２．インストール準備  
@@ -126,13 +127,10 @@ $ sudo reboot
   
 以下を入力します。ipコマンドがない場合は、ifconfigを使用してください。  
 ```  
-$ ip -4 -br a | grep -v "127.0.0.1"  
-　eth0 UNKNOWN XXX.XXX.XXX.XXX/24  
+$ ifconfig
+　inet XXX.XXX.XXX.XXX  
 ```  
-または  
-```  
-$ hostname -I  
-```  
+  
 このIPアドレス（XXX.XXX.XXX.XXX）がwebサーバアドレスです。  
   
 ウェブブラウザ（edge,chrome,firefox,...）を起動し、上記で表示されたアドレスにアクセスする。  
