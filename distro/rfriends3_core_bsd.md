@@ -91,9 +91,7 @@ samba420-4.20.7_4
 ```
 export php="php84"
 export samba="samba419"
-```
-  
-実行shは、install_freebsd.sh です。  
+```  
   
 ## ３．rfriends3のダウンロードとインストール  
   
@@ -102,7 +100,7 @@ export samba="samba419"
 > [!CAUTION]
 > 必ず２で確認したユーザでログインしてください。    
   
-　ディストリビューション別のrfriends3インストールスクリプト（install_freebsd.sh）を実行します。  
+ rfriends3インストールスクリプト（install_freebsd.sh）を実行します。  
  各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
 > [!CAUTION]    
