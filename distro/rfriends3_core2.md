@@ -137,6 +137,7 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 実行shは、install_arch_apache2.sh です。  
     
 ・Arch linux ではlighttpdに不具合があり、Apache2を標準としました。  
+　現在、webdavは使用できません。  
   
 ## ３．rfriends3のダウンロードとインストール  
   
