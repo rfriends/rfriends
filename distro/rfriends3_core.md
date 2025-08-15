@@ -78,37 +78,8 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 |2025/04/28|〇| Devuan (Daedalus)|5||  
 |2025/04/28|〇| MX linux|21.3|Debian 11|  
 |2025/04/30|〇| antiX linux|23.2|Debian 12|  
+    
   
-### 1.3 CentOS Stream系  (install_stream.sh)
-  
-|最終確認|判定|ディストロ|Ver.|備考|    
-|---|:---:|---|---|---|  
-|2025/05/03|△|CentOS|8.5|/etc/yum/repos.d<br>を変更|  
-|2025/04/26|〇|CentOS stream|9||  
-|2025/08/05|〇|CentOS stream|10||  
-|2025/04/20|◎|Rocky linux|9.5||  
-|2025/04/20|◎|Alma linux|9.5||  
-|2025/04/20|〇|Oracle linux|9.5||   
-|2025/04/20|〇|Miracle linux|9.4||  
-|2025/04/25|〇|fedora linux|39||  
-|2025/04/25|〇|fedora linux|42||  
-
-### 1.4 BSD系  (install_freebsd.sh) init  
-
-|最終確認|判定|ディストロ|Ver.|備考|   
-|---|:---:|---|---|---|  
-|2025/04/27|〇|FreeBSD|13.5|samba419を選択|  
-|2025/04/21|◎|FreeBSD|14.2|samba419を選択|  
-  
-### 1.5 その他  
-
-|最終確認|判定|ディストロ|Ver.|備考|   
-|---|:---:|---|---|---|  
-|2025/07/18|〇|Alpine|3.21|install_alpine.sh<br>init(OpenRC)|  
-|2025/07/16|△|Arch linux|-|install_arch.sh|   
-|2025/04/25|〇|openSUSE|15.6|install_suse.sh|  
-  
-・Arch linux ではlighttpdに不具合があり、DevelopmentServerを使用してください。  
   
 ## ２．インストール準備  
 以下のことを確認してください。 
@@ -155,116 +126,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
 > \# gpasswd -a ユーザ名 sudo  
 > その後必ず再起動してください。
   
-### 2.3 stream/rocky/alma/oracle/miracle/fedoraの場合  
-1) システムを最新にし、アプリを追加する。    
-```  
-# dnf update
-# dnf upgrade
-
-# dnf install git
-```
-2) 実行するユーザを追加し、管理者権限を付加する。
-```
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名
-```
-### 2.4 FreeBSDの場合  
   
-1) システムを最新にし、アプリを追加する。    
-```  
-# pkg update 
-# pkg upgrade
-
-# pkg install -y sudo 
-# pkg install -y git   
-```
-2) 実行するユーザを追加し、管理者権限を付加する。  
-```  
-# adduser ユーザ名
-# pw groupmod wheel -m ユーザ名 
-
-%wheelのコメント(#)を外す
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-```
-3) その他
-
-・rc.conf設定  
-```
-$ sudo vi /etc/rc.conf
-cron_enable="YES"
-samba_server_enable="YES"
-lighttpd_enable="YES"
-```  
-・php,sambaのversion確認
-```
-$ pkg search PHP | grep Scripting
-php84-8.4.5_1                  PHP Scripting Language (8.4.X branch)
-$ pkg search samba
-samba416-4.16.11_6  
-samba419-4.19.9_8  
-samba420-4.20.7_4   
-```
-・git clone 後、インストール実行前にinstall_freebsd.shの該当箇所を変更してください。  
-> [!CAUTION]
-> 2025/04/19現在、samba420は書き込みエラーが出ます。
-> samba419 を選択してください。  
-
-```
-export php="php84"
-export samba="samba419"
-```
-### 2.5 alpineの場合  
-
-```  
-# apk update
-# apk upgrade
-
-# apk add sudo
-# apk add git
-# apk add tzdata
-
-# adduser ユーザ名 
-# addgroup ユーザ名 wheel
-
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-
-testingを追加(atomicparsleyのため)
-# vi /etc/apk/repositories
-https://dl-cdn.alpinelinux.org/alpine/edge/testing
-```
-### 2.6 openSUSEの場合  
-
-```  
-# zypper refresh
-# zypper update
-
-# zypper install vim
-# zypper install git
-
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名 
-
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-```
-
-### 2.7 arch linuxの場合  
-
-```  
-# pacman -Syyu
-
-# pacman -S vi
-# pacman -S sudo
-# pacman -S git
-
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名 
-
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-```  
 ## ３．rfriends3のダウンロードとインストール  
   
 　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
