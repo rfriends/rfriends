@@ -114,7 +114,7 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 ### 2.4 arch linuxの場合  
 
 ```  
-# pacman -Syyu
+# pacman -Syu
 
 # pacman -S vi
 # pacman -S sudo
