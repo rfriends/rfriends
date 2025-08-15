@@ -6,10 +6,10 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux版で�
   
 Linux/BSD版は、以下の3つに分かれています。  
   
-[・Linux版](rfriends3_core.md)  
-[・Linux(その他)版](rfriends3_core2.md)  
-[・BSD版](rfriends3_core_bsd.md)  
- 
+・[Linux版](rfriends3_core.md)  
+・[Linux(その他)版](rfriends3_core2.md)  
+・[BSD版](rfriends3_core_bsd.md)  
+  
 > [!NOTE]  
 > Apache2版については、現在debian/ubuntu版のみですが、  
 > 掲示板、Xで要望がありましたらできるだけ対応します。
