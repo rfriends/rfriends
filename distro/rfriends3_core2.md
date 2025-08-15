@@ -47,10 +47,10 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
 |2025/07/18|〇|Alpine|3.21|install_alpine.sh<br>init(OpenRC)|  
-|2025/07/16|△|Arch linux|-|install_arch.sh|   
+|2025/07/16|△|Arch linux|-|install_arch_apache2.sh|   
 |2025/04/25|〇|openSUSE|15.6|install_suse.sh|  
   
-・Arch linux ではlighttpdに不具合があり、DevelopmentServerを使用してください。  
+・Arch linux ではlighttpdに不具合があり、Apache2を標準としました。  
   
 ## ２．インストール準備  
 以下のことを確認してください。 
