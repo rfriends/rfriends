@@ -6,9 +6,11 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux/BSD版�
   
 > [!NOTE]  
 > Apache2版を追加しました。(2025/08/15)  
-> lighttpdの代わりにApache2をインストールします。  
+> lighttpdの代わりにApache2をインストールします。
+> 現在は以下の2つに対応  
 > install_debian_apache2.sh  
-> install_ubunutu_apache2.sh  
+> install_ubunutu_apache2.sh
+>   
 > ほかのディストリビューションについては、掲示板、Xで要望がありましたらできるだけ対応します。
   
   
