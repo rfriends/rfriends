@@ -4,7 +4,7 @@ rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベース�
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux版です。  
 インストールは全自動で行います。  
   
-Linux/BSD版は、以下の3つに分かれています。  
+Linux/BSD版は、ディストリビューションにより以下の3つに分かれています。  
   
 ・（１）[Linux版](rfriends3_core.md) (ubuntu/debian/chrome/android)  
 ・（２）[Linux(その他)版](rfriends3_core2.md) (stream/rocky/Alma/Alpine/openSUSE/arch/ios)  
