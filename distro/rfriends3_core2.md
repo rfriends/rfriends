@@ -17,7 +17,7 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第27版　2025/08/15  
+第28版　2025/08/16  
   
 ## １．ディストリビューション  
 
@@ -47,6 +47,7 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
 |2025/07/18|〇|Alpine|3.21|install_alpine.sh<br>init(OpenRC)|  
+|2025/08/16|〇|Alpine|3.22|install_alpine.sh<br>init(OpenRC)|  
 |2025/07/16|△|Arch linux|-|install_arch_apache2.sh|   
 |2025/04/25|〇|openSUSE|15.6|install_suse.sh|  
 
@@ -79,6 +80,27 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
   
 ### 2.2 alpineの場合  
 
+1) 初期設定を行う。   
+  
+```  
+# setup-alpine  
+```  
+  
+2) リポジトリ設定  
+  
+v3.22はバージョンにより異なる。  
+communityリポジトリを有効にする。(#を削除)  
+testingを追加する。(atomicparsleyのため)  
+  
+```  
+# vi /etc/apk/repositories
+https://dl-cdn.alpinelinux.org/alpine/v3.22/main
+https://dl-cdn.alpinelinux.org/alpine/v3.22/community
+https://dl-cdn.alpinelinux.org/alpine/edge/testing
+```  
+    
+3) ユーザ追加  
+  
 ```  
 # apk update
 # apk upgrade
@@ -92,12 +114,11 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 
 # visudo
 %wheel ALL=(ALL:ALL) ALL
-
-testingを追加(atomicparsleyのため)
-# vi /etc/apk/repositories
-https://dl-cdn.alpinelinux.org/alpine/edge/testing
-```
+```  
   
+> [!NOTE]  
+> shutdownはpoweroff    
+    
 実行shは、install_alpine.sh です。  
   
 ### 2.3 openSUSEの場合  
