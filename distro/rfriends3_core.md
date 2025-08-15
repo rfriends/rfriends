@@ -7,7 +7,7 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux版で�
 Linux/BSD版は、ディストリビューションにより以下の3つに分かれています。  
   
 ・（１）[Linux版](rfriends3_core.md) (ubuntu/debian/chrome/android)  
-・（２）[Linux(その他)版](rfriends3_core2.md) (stream/rocky/Alma/Alpine/openSUSE/arch/ios)  
+・（２）[Linux(他)版](rfriends3_core2.md) (stream/rocky/Alma/Alpine/openSUSE/arch/ios)  
 ・（３）[BSD版](rfriends3_core_bsd.md)  
   
 > [!NOTE]  
