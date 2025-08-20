@@ -5,7 +5,8 @@
 
 #  現在、執筆途中です。
     
-![1](https://github.com/user-attachments/assets/429c1661-fd9c-4a80-87cb-cb3fb07661a4)   
+![alp00](https://github.com/user-attachments/assets/31475bf5-3cb2-4ebc-ab88-7e6a1d42f3ed)
+
   
 初版：2025/08/20  
 改版：2025/08/20  
@@ -18,50 +19,21 @@
 > とします。
 > また、wslを実行しているPCを"ホストPC"、wsl下で実行しているAlpine Linuxを単に"Linux"とします。  
 
-もし、すでにwslのインストールが済んでいる方は、４．のAlpine Linuxのインストールに飛んでください。 
+もし、すでにwslのインストールが済んでいる方は、`３．のAlpine Linuxのインストール`に飛んでください。 
   
-
-注１）以下の操作が必要です。  
-```
-$ sudo vi /etc/wsl.conf
-[boot]
-systemd=true
-
-$ exit
-PS> wsl --shutdown
-PS> wsl -d ディストリビューション
-```
   
 ## １．システム要件  
-```  
-AI による概要  
   
-WSL2 (Windows Subsystem for Linux 2) を使用するには、
-Windows 10 (x64) バージョン 1903 以降 (ビルド 18362.1049+) または Windows 11 が必要です。  
-また、64ビットのプロセッサ、4GB以上のRAM、そして仮想マシンプラットフォーム機能が有効化されている必要があります。﻿    
-```  
-## ２．準備  
+以下のコマンドによるインストールを行うには、  
+Windows 10 バージョン 2004 以降 (ビルド 19041 以降) または Windows 11   
+を実行している必要があります。  
+以前のバージョンの場合は、 手動インストールを行ってください。    
   
-１）PCのbiosで仮想化を有効にする。  
-```
-AI による概要
-
-PCのBIOSで仮想化を有効にするには、次の手順に従います。  
-電源をオンにして、BIOSを起動します。  
-BIOSで「セキュリティ」タブを選択します。  
-「仮想化テクノロジ（VTx）」や「Intel VTT」、「Intel VT-d」などの設定項目を探し、有効にします。  
-設定を保存して、システムを再起動します。  
-仮想化機能を有効にするには、お使いのCPUが仮想化技術に対応している必要があります。  
-また、一部のBIOSでは搭載CPUが仮想化技術に対応していない場合、設定項目が表示されない場合があります。  
-仮想化が有効になっているかどうかを確認するには、  
-Ctrl + Alt + Del キーを同時に押してタスクマネージャーを起動し、  
-｢パフォーマンス｣タブ内の｢仮想化｣を確認します。  
-```  
-２）Windows Updateでシステムを最新にする。  
-　最新でないと、インストールに失敗することがあります。  
-　システムを最新にするのが不安な方はインストールを中止してください。  
+また、Windows Updateでシステムを最新にしてください。  
+最新でないと、インストールに失敗することがあります。  
+システムを最新にするのが不安な方はインストールを中止してください。  
   
-## ３．wslのインストール   
+## ２．wslのインストール   
   
 PowerShell(管理者)を起動し、以下のコマンドを実行します。( - は2個)  
 ```  
@@ -75,17 +47,65 @@ PS> wsl --install
   
 wslのインストールはこれで完了です。  
   
-### ４．Alpine Linuxのインストール  
+## ３．Alpine Linuxのインストール  
+  
+### 3.1 minirootfs  
+  
+以下よりminirootfsをダウンロードしてください。   
+  
+![alp02a](https://github.com/user-attachments/assets/677151ca-ff45-4e25-be6e-4515794dcec7)
+  
+![ALP04](https://github.com/user-attachments/assets/e4ec631c-012f-47d9-88c9-64764408801b)
 
- 
-ユーザの作成とパスワードを要求されます。  
+alpine-minirootfs-3.22.1-x86.tar.gz (2025/08/20現在)    
+がダウンロードされます。  
+
+### 3.2 backup-alpine.zip  
+
+backp-alpine.zipは、Alpine Linuxをカスタマイズし、rfriends3をインストールしたwslイメージです。  
+以下よりダウンロードしてください。  
+  
+[backup-alpine.zip]()  
+  
+「安全でないダウンロードがブロックされました」と表示されるので  
 
   
-Alpine Linuxのインストールはこれで完了です。  
+「保存」をクイックしてください。  
   
-## ５．rfriends3のインストール  
+![alp05](https://github.com/user-attachments/assets/e48ae00a-bc90-477b-9009-a7df92416e23)
   
-### 5.1 インストール  
+ダウンロードが開始されます。  
+  
+![alp06](https://github.com/user-attachments/assets/461f4170-be93-49e1-ae73-d58e7ae70d5a)  
+   
+  
+## ４．wslイメージのインストール  
+  
+ここでは仮にc:\wslを作業ディレクトリとします。  
+c:\wsl ディレクトリを作成してください。  
+  
+### 4.1 インストール用ファイルの準備  
+  
+1) ダウンロードした2つのファイルを  
+  alpine-minirootfs-3.22.1-x86.tar.gz  
+  backup-alpine.zip  
+  c:\wslにコピーしてください。
+  
+2) backup-alpine.zip をこの場所に解凍してください。  
+  backup-alpine.tar  
+  が解凍されます。  
+  元のZIPファイルは不要です。  
+   
+### 4.2 インストール用ファイルの準備  
+   
+4) cccc
+
+
+5) cccc
+
+
+6) 
+
   
 PowerShellを起動し、以下のコマンドを実行します。   
 ```
