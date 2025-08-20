@@ -47,20 +47,9 @@ PS> wsl --install
   
 wslのインストールはこれで完了です。  
   
-## ３．Alpine Linuxのインストール  
+## ３．wsl(alpine)版rfriends3のインストール  
   
-### 3.1 minirootfs  
-  
-以下よりminirootfsをダウンロードしてください。   
-  
-![alp02a](https://github.com/user-attachments/assets/677151ca-ff45-4e25-be6e-4515794dcec7)
-  
-![ALP04](https://github.com/user-attachments/assets/e4ec631c-012f-47d9-88c9-64764408801b)
-
-alpine-minirootfs-3.22.1-x86.tar.gz (2025/08/20現在)    
-がダウンロードされます。  
-
-### 3.2 backup-alpine.zip  
+### 3.1 backup-alpine.zipをダウンロード  
 
 backp-alpine.zipは、Alpine Linuxをカスタマイズし、rfriends3をインストールしたwslイメージです。  
 以下よりダウンロードしてください。  
@@ -75,71 +64,47 @@ backp-alpine.zipは、Alpine Linuxをカスタマイズし、rfriends3をイン�
 ![alp05](https://github.com/user-attachments/assets/e48ae00a-bc90-477b-9009-a7df92416e23)
   
 ダウンロードが開始されます。  
+
+![alp06](https://github.com/user-attachments/assets/af99782f-3206-4afa-93bd-08d15bf59ead)  
   
-![alp06](https://github.com/user-attachments/assets/461f4170-be93-49e1-ae73-d58e7ae70d5a)  
-   
+### 3.2backup-alpine.zipを解凍   
   
-## ４．wslイメージのインストール  
+1) ここでは仮にc:\wslを作業ディレクトリとします。  
+c:\wsl ディレクトリを作成してください。
   
-ここでは仮にc:\wslを作業ディレクトリとします。  
-c:\wsl ディレクトリを作成してください。  
-  
-### 4.1 インストール用ファイルの準備  
-  
-1) ダウンロードした2つのファイルを  
-  alpine-minirootfs-3.22.1-x86.tar.gz  
-  backup-alpine.zip  
-  c:\wslにコピーしてください。
-  
-2) backup-alpine.zip をこの場所に解凍してください。  
+2) backup-alpine.zip をダブルクリックしてください。  
   backup-alpine.tar  
-  が解凍されます。  
-  元のZIPファイルは不要です。  
-   
-### 4.2 インストール用ファイルの準備  
-   
-4) cccc
+  が表示されるので、このファイルをc:\wslにコピーしてください。
 
-
-5) cccc
-
-
-6) 
-
+## ４．wslイメージ(backup-alpine.tar)のインストール  
+  
+PS> PowerShellを起動し、以下のコマンドを実行します。( - は2個)  
+  
+```    
+PS> cd c:\wsl
+PS> wsl --import Alpine alpine backup-alpine.tar  
+```
+  
+## ５．wslイメージ(backup-alpine.tar)の起動
   
 PowerShellを起動し、以下のコマンドを実行します。   
 ```
-PS> wsl -d ubuntu  
+PS> wsl -d Alpine  
 
 $ cd         <--- これを忘れないように！
 
-$ sudo apt install -y git  (gitがすでにインストールされている場合は不要)
-$ rm -rf rfriends3_core
-$ git clone https://github.com/rfriends/rfriends3_core.git  
-$ cd rfriends3_core
-$ sed -i 's/^export optsamba="on"/export optsamba="off"/' install_ubuntu.sh
-$ sh install_ubuntu.sh
-```
-  
-### 5.2 インストール終了    
-  
-```
-ip address is lo UNKNOWN 127.0.0.1/8 eth0 UP 172.19.148.3/20 .  
-visit rfriends at http://xxx.xxx.xxx.xxx:8000  
-finished  
-```
-finishedと表示されてインストールは完了です。表示されたIPアドレスをメモしてください。  
-または、以下のコマンドでも確認できます。 
+以下のコマンドでIPアドレスを確認してください。 
 ```
 $ hostname -I
 ```
   
-次に、ubuntuを終了し、shutdownします。  
+次に、Alpineを終了し、shutdownします。  
   
 ```
 $ exit
 
-PS> wsl --shutdown  
+PS> wsl -t Alpine
+PS> wsl -d Alpine
 ```  
   
 ## ６．rfriends3の設定  
