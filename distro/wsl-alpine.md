@@ -1,7 +1,7 @@
 ## WSL+Alpine Linux版rfriends3でラジオ録音  
   
 　Windows Subsystem for Linux (WSL) にAlpine Linuxをインストールし、それにrfriendsをインストールしてラジオ録音を楽しもうという企画です。  
-  wsl用のAlpine Linuxの正式版はありませんので追加の操作が必要になります。　　
+  すでにrfriends3もインストール、設定済なのでイメージをインポートするだけで簡単に使用開始できます。  　　
 
 #  現在、執筆途中です。
     
