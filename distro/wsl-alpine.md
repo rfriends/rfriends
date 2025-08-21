@@ -64,8 +64,8 @@ wslのインストールはこれで完了です。
 backp-alpine.zipは、Alpine Linuxをカスタマイズし、rfriends3をインストールしたwslイメージです。  
 以下よりダウンロードしてください。  
   
-[backup-alpine.zip](http://rf3.s331.xrea.com/storage/backup-alpine.zip)  
-  
+http://rf3.s331.xrea.com/storage/backup-alpine.zip  
+    
 「安全でないダウンロードがブロックされました」と表示されるので  
 
   
