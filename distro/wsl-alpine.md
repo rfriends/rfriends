@@ -1,15 +1,24 @@
 ## WSL+Alpine Linux版rfriends3でラジオ録音  
   
 　Windows Subsystem for Linux (WSL) にAlpine Linuxをインストールし、それにrfriendsをインストールしてラジオ録音を楽しもうという企画です。  
-  すでにrfriends3もインストール、設定済なのでイメージをインポートするだけで簡単に使用開始できます。  　　
+  すでにrfriends3もインストール、設定済なのでイメージをインポートするだけで簡単に使用開始できます。  
+  
+```
+概要  
+・wslのバックアップイメージをダウンロード・解凍
+・wslにインポート
+・実行
+```
+  
 
 #  現在、執筆途中です。
-    
-![alp00](https://github.com/user-attachments/assets/31475bf5-3cb2-4ebc-ab88-7e6a1d42f3ed)
+  
+![alp000](https://github.com/user-attachments/assets/7e5d3706-5cbb-422f-abf1-f52a52177bdb)  
+  
 
   
 初版：2025/08/20  
-改版：2025/08/20  
+改版：2025/08/21  
 
 > [!NOTE]
 > 以下、混乱しがちなので    
@@ -54,7 +63,7 @@ wslのインストールはこれで完了です。
 backp-alpine.zipは、Alpine Linuxをカスタマイズし、rfriends3をインストールしたwslイメージです。  
 以下よりダウンロードしてください。  
   
-[backup-alpine.zip]()  
+[backup-alpine.zip](rf3.s331.xrea.com/storage/bacup-alpine.zip)  
   
 「安全でないダウンロードがブロックされました」と表示されるので  
 
@@ -75,6 +84,9 @@ c:\wsl ディレクトリを作成してください。
 2) backup-alpine.zip をダブルクリックしてください。  
   backup-alpine.tar  
   が表示されるので、このファイルをc:\wslにコピーしてください。
+  
+![alp30](https://github.com/user-attachments/assets/65aeba04-b19b-48f1-86b4-63c3c64a7093)
+  
 
 ## ４．wslイメージ(backup-alpine.tar)のインストール  
   
@@ -85,6 +97,9 @@ PS> cd c:\wsl
 PS> wsl --import Alpine alpine backup-alpine.tar  
 ```
   
+![alp31](https://github.com/user-attachments/assets/56b7e5f5-c4ed-4cfd-ad59-a852286764ef)  
+  
+
 ## ５．wslイメージ(backup-alpine.tar)の起動
   
 PowerShellを起動し、以下のコマンドでAlpineにログインします。   
@@ -97,10 +112,10 @@ PS> wsl -d Alpine
   
 ```  
 $ ip a | grep eth0  
-2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000  
-    inet 172.31.205.45/20 brd 172.31.207.255 scope global eth0  
-```  
-
+```
+  
+![alp33](https://github.com/user-attachments/assets/964bd22c-5cb3-440d-a008-d04843c13a1e)  
+  
 この場合、IPアドレスは`12.31.205.45`です。  
 これをメモしてください。  
   
@@ -117,7 +132,9 @@ $ ip a | grep eth0
 12.31.205.45:8000  
   
 と入力し、以下のような画面が出たら成功です。ブックマークすると便利です。  
-![rfriends](https://github.com/user-attachments/assets/319f6021-6808-4b52-9660-7832d0980459)
+  
+![alp13](https://github.com/user-attachments/assets/05908dc1-7bfe-4f87-b530-d48f99f2a34b)  
+  
   
 ### 6.2 チュートリアル
   
@@ -128,21 +145,30 @@ $ ip a | grep eth0
 ## ７．rfriendsのデータにアクセス
   
 　Windowsのエクスプローラを開くと、左メニューにLinuxという項目があると思います。  
+   
+![alp10](https://github.com/user-attachments/assets/a7bca2a7-64d1-41dc-85e6-93aaa33a31be)  
+  
 それをクリックすると、右にAlpineというフォルダが表示されます。  
-![linux](https://github.com/user-attachments/assets/c81abeb4-b497-4d27-8cb7-3ca60b33e9fa)
+  
+![alp36](https://github.com/user-attachments/assets/7c386357-92f5-4aca-a14c-43177fdedabf)  
+  
 
-以下、Alpine¥home¥alpine名¥smbdir¥usr2 を辿っていけばrfriendsのデータにアクセスできます。   
-![usr2](https://github.com/user-attachments/assets/8ad233a2-4ae7-438f-a558-477958e12b5a)
-
+以下、Alpine¥home¥alpine¥smbdir¥usr2 を辿っていけばrfriendsのデータにアクセスできます。   
+  
+![alp11](https://github.com/user-attachments/assets/df03fdae-2c7f-44e1-a302-7d0da639b796)  
+  
 > [!NOTE]
 > sambaも動作中なので、エクスプローラに
-> \\12.31.205.45  
+> ￥￥12.31.205.45  
 > と入力してもアクセスできます。
-> こちらのほうが簡単かもしれません。  
+> こちらのほうが簡単かもしれません。
+> ![alp12](https://github.com/user-attachments/assets/131fb20a-4f67-463c-9cd2-e2edffd5b54b)
+
   
 ## ８．外部PCからのwebアクセス  
   
-　同一LAN内の外部PCからrfriendsへのアクセスを行うための設定は以下のとおりです。通常は、この設定は行わないほうがいいと思います。  
+　同一LAN内の外部PCからrfriendsへのアクセスを行うための設定は以下のとおりです。  
+ 通常は、この設定は行わないほうがいいと思います。  
   
 　外部PCからWebアクセスするためには以下の2つの設定が必要になります。  
 
@@ -192,7 +218,7 @@ PS> wsl -l -v
 * Alpine                 Running         2
 ```
   
-Linuxをシャットダウンし、登録を解除します。　　
+Linuxをシャットダウンし、登録を解除します。  
 Linux、rfriends、録音したデータ等すべて消えます。  
 
   
@@ -214,7 +240,7 @@ PS> wsl --unregister Alpine
 実行ユーザ　alpine/alpine  
 ```
     
-1) Alpineにログイン  
+### 1) Alpineにログイン  
     
 ```  
 PS> wsl -d Alpine  
@@ -222,7 +248,7 @@ Entering /sbin/init PID: 9
 $  
 ```
   
-2) 実行ユーザalpineのパスワード変更  
+### 2) 実行ユーザalpineのパスワード変更  
   
 ```
 $ passwd  
@@ -234,7 +260,7 @@ passwd: password for alpine changed by alpine
 $  
 ```  
   
-3) ルートユーザのパスワード変更  
+### 3) ルートユーザのパスワード変更  
   
 ```  
 $ sudo -i  
@@ -248,7 +274,7 @@ passwd: password for root changed by root
 $   
 ```   
 
-4) Alpineからログアウト
+### 4) Alpineからログアウト
   
 ```
 $ exit
