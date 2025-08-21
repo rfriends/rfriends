@@ -20,8 +20,9 @@
 > [!NOTE]
 > 以下、混乱しがちなので    
 > PowerShellの時は PS>  
-> Alpine Linuxのターミナル時は、$   
->  
+> Alpine Linuxのターミナル時は、
+> 実行ユーザ(alpine) $   
+> ルートユーザ(root) # 
 > とします。
 > また、wslを実行しているPCを"ホストPC"、wsl下で実行しているAlpine Linuxを単に"Linux"とします。  
 
@@ -139,7 +140,11 @@ $ ip a | grep eth0
   
 [マニュアル](https://rfriends.github.io/rfriends/manual/)  
 
-## ７．rfriendsのデータにアクセス
+## ７．rfriendsのデータにアクセス  
+  
+rfriendsのデータにアクセスするには2つの方法があります。  
+    
+### 7.1 エクスプローラ  
   
 　Windowsのエクスプローラを開くと、左メニューにLinuxという項目があると思います。  
    
@@ -154,13 +159,15 @@ $ ip a | grep eth0
   
 ![alp11](https://github.com/user-attachments/assets/df03fdae-2c7f-44e1-a302-7d0da639b796)  
   
-> [!NOTE]
-> sambaも動作中なので、エクスプローラに
-> ￥￥12.31.205.45  
-> と入力してもアクセスできます。
-> こちらのほうが簡単かもしれません。
-> ![alp12](https://github.com/user-attachments/assets/131fb20a-4f67-463c-9cd2-e2edffd5b54b)
-
+### 7.2 samba  
+  
+sambaも動作中なので、エクスプローラに  
+\\\\172.31.205.45  
+と入力してもアクセスできます。  
+こちらのほうが簡単かもしれません。  
+  
+![alp12](https://github.com/user-attachments/assets/131fb20a-4f67-463c-9cd2-e2edffd5b54b)  
+  
   
 ## ８．外部PCからのwebアクセス  
   
