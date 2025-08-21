@@ -285,14 +285,22 @@ $
   
 ## １１．最後に
       
-いかがでしたか？
+いかがでしたか？  
 Windowsのrfriends3ユーザにとって、最も良い選択だと思います。  
-  
-なお、Alpine Linuxを選択した主な理由は、配付容量が小さいからです。  
+
+Alpine Linuxを選択した主な理由は、配付容量が小さいからです。  
 rfriends3をインストール済のtarファイルで約950MB、zip圧縮すると約350MBです。  
 他のディストリビューションですと、3GBを超えてしまいます。    
-   
+     
+なお、この実行イメージは、  
+wslにalpine-minirootfsをインポートし、openrc等の追加・設定を行ったものにrfriedns3をインストールしました。  
+Dockerは使用していません。  
   
+openrcの設定については以下を参考にさせていただきました。  
+[今更ながら WSL2 の Alpine で Docker 環境構築](https://zenn.dev/ignorant/articles/wsl2_alpine_docker)  
+  
+
+
 以上   
 
 
