@@ -237,9 +237,9 @@ PS> wsl --unregister Alpine
 セキュリティ上、変更してください。   
     
 ```  
-ルートユーザ　root/root  
 実行ユーザ　alpine/alpine  
-```
+ルートユーザ　root/root  
+```  
     
 ### 1) Alpineにログイン  
     
@@ -282,7 +282,16 @@ $ exit
 PS>    
 $   
 ```
-
+  
+## １１．最後に
+      
+いかがでしたか？
+Windowsのrfriends3ユーザにとって、最も良い選択だと思います。  
+  
+なお、Alpine Linuxを選択した主な理由は、配付容量が小さいからです。  
+rfriends3をインストール済のtarファイルで約950MB、zip圧縮すると約350MBです。  
+他のディストリビューションですと、3GBを超えてしまいます。    
+   
   
 以上   
 
