@@ -20,13 +20,15 @@
 > [!NOTE]
 > 以下、混乱しがちなので    
 > PowerShellの時は PS>  
-> Alpine Linuxのターミナル時は、
-> 実行ユーザ(alpine) $   
-> ルートユーザ(root) # 
+> Alpine Linuxのターミナルの場合、  
+> 実行ユーザ(alpine)は $   
+> ルートユーザ(root)は #   
 > とします。
-> また、wslを実行しているPCを"ホストPC"、wsl下で実行しているAlpine Linuxを単に"Linux"とします。  
-
-もし、すでにwslのインストールが済んでいる方は、`３．のAlpine Linuxのインストール`に飛んでください。 
+>   
+> また、wslを実行しているPCを"ホストPC"、  
+> wsl下で実行しているAlpine Linuxを単に"Linux"と記述しているところもあります。    
+  
+もし、すでにwslのインストールが済んでいる方は、`３．のAlpine Linuxのインストール`に進んでください。 
   
   
 ## １．システム要件  
