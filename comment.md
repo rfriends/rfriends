@@ -1,4 +1,4 @@
-rfrineds3に関するコメント（Githubへのサインインが必要です。）  
+rfrineds3に関するコメント（書き込みにはGithubへのサインインが必要です。）  
   
 <script src="https://utteranc.es/client.js"
         repo="rfriends/rfriends"
