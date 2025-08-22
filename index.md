@@ -8,6 +8,8 @@
      
 ![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
   
+ ・[rfriendsに関するコメントはこちらに](comment.md)  
+  
 ### １．rfriends3関連のリンク一覧    
  
 |#|サイト|説明|
@@ -43,20 +45,7 @@ rfriends3はいろいろな機種に対応しています。
 > WebサーバはLighttpdが標準ですが、非サポートの場合はビルトインサーバになります。  
 > 仮想環境の場合、sambaはポート転送設定が必要になります。
   
-### ３．コメント  
-  
-コメントはこちらに  
-  
-<script src="https://utteranc.es/client.js"
-        repo="rfriends/rfriends"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-  
-  
-### ４．rfriends3スクリーンショット  
+### ３．rfriends3スクリーンショット  
   
 ![top](https://github.com/user-attachments/assets/5d621f57-425f-4fcd-9448-a816ededd8dc)
   
