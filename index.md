@@ -58,7 +58,7 @@ rfriends3はいろいろな機種に対応しています。
 初版：2023/07/12  
 改版：2025/08/07  
   
-![Counter](https://profile-counter.glitch.me/rfriends/count.svg)  
+
     
 
 ラジオ録音 radiko ラジコ タイムフリー エリアフリー らじるらじる 聞き逃し ゴガク  ポッドキャスト Windows Linux macOS RaspberrypiOS ChromeOS Termux Volumio MoodeAudio docker
