@@ -1,7 +1,8 @@
 rfrineds3に関するコメント  
   
 ・書き込みにはGithubへのサインインが必要です。    
-・Githubのアカウントをお持ちでない方はこちらにどうぞ。（　[rfriends掲示板](http://www.rf3.shop/wforum/wforum.cgi)　）  
+・Githubのアカウントをお持ちでない方はこちらにどうぞ。  
+　[rfriends掲示板](http://www.rf3.shop/wforum/wforum.cgi)　  
   
 <script src="https://utteranc.es/client.js"
         repo="rfriends/rfriends"
