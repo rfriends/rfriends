@@ -121,6 +121,11 @@ $ ip a | grep eth0
   
 すでに、rfriends3は動作しています。  
   
+> [!CAUTION]  
+> wsl上で複数のAlpineを実行しないでください。
+> wslの仕様上、同一のIPアドレスを持つためです。 
+  
+  
 ## ６．rfriends3 
   
 ### 6.1 rfriends3にアクセス  
