@@ -41,7 +41,16 @@ rfriends3はいろいろな機種に対応しています。
    
 > [!NOTE]
 > WebサーバはLighttpdが標準ですが、非サポートの場合はビルトインサーバになります。  
-> 仮想環境の場合、sambaはポート転送設定が必要になります。  
+> 仮想環境の場合、sambaはポート転送設定が必要になります。
+
+<script src="https://utteranc.es/client.js"
+        repo="rfriends/rfriends"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
   
 ### ３．rfriends3スクリーンショット  
   
