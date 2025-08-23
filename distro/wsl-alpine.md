@@ -61,21 +61,31 @@ wslのインストールはこれで完了です。
 ### 3.1 インストールスクリプトをダウンロード  
   
 1) ここでは仮にc:\wslを作業ディレクトリとします。  
-c:\wsl ディレクトリを作成してください。
+　c:\wsl ディレクトリを作成してください。
 
   
 2) インストールスクリプトを以下よりダウンロードしてください。  
-
-右クリックして、c:\wslに保存。  
+　右クリックして、名前を付けてリンク先を保存（c:\wsl）してください。    
   
 [http://rf3.s331.xrea.com/storage/insalpine.bat](http://rf3.s331.xrea.com/storage/insalpine.bat)    
-    
+  
+![clip_5](https://github.com/user-attachments/assets/7e697f04-feae-40a0-9368-e07a049a9075)
+
   
 ### 3.2 wslイメージのインストール
-
-c:\wsl\insalpine.bat をダブルクリックすると、インストールが開始されます。  
-
-## ４．この項削除
+  
+c:\wsl\insalpine.bat をダブルクリックすると、インストーラが起動します。  
+  
+![clip_2](https://github.com/user-attachments/assets/46978ece-2030-4c01-9968-16ec2fb4a234)
+  
+y（リターン）を入力すると、インストールが開始されます。  
+  
+![clip_1](https://github.com/user-attachments/assets/ef639349-72a5-401f-9c5c-54155928181c)  
+    
+  
+インストールはこれで完了です。  
+  
+~~## ４．この項なし~~
   
 ## ５．wslイメージ(backup-alpine.tar)の起動
   
