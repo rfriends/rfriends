@@ -120,8 +120,7 @@ $ ip a | grep eth0
   
 と入力し、以下のような画面が出たら成功です。ブックマークすると便利です。  
   
-![alp13](https://github.com/user-attachments/assets/05908dc1-7bfe-4f87-b530-d48f99f2a34b)  
-  
+![clip_3](https://github.com/user-attachments/assets/d1db679a-27e3-4524-9fc7-10f9925089b5)  
   
 ### 6.2 チュートリアル
   
