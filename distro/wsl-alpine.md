@@ -62,7 +62,10 @@ wslのインストールはこれで完了です。
 [http://rf3.s331.xrea.com/storage/insalpine.bat](http://rf3.s331.xrea.com/storage/insalpine.bat)    
   
 ![clip_5](https://github.com/user-attachments/assets/7e697f04-feae-40a0-9368-e07a049a9075)
-
+  
+「安全でないダウンロードがブロックされました」と表示された場合は、「保存」をクリックしてください。  
+  
+![clip_1](https://github.com/user-attachments/assets/9aa9e4cb-5a1f-44d7-b6fb-d2c20df8172c)  
   
 ### 3.2 wslイメージのインストール
   
