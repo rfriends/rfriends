@@ -3,14 +3,6 @@
 　Windows Subsystem for Linux (WSL) にAlpine Linuxをインストールし、それにrfriendsをインストールしてラジオ録音を楽しもうという企画です。  
   すでにrfriends3もインストール、設定済なのでイメージをインポートするだけで簡単に使用開始できます。  
   
-```
-概要
-・wslのインストール  
-・wslのバックアップイメージをダウンロード・解凍
-・wslにインポート
-・実行
-```
-  
   
 ![alp000](https://github.com/user-attachments/assets/7e5d3706-5cbb-422f-abf1-f52a52177bdb)  
   
