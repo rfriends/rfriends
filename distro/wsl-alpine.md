@@ -15,7 +15,7 @@
 ![alp000](https://github.com/user-attachments/assets/7e5d3706-5cbb-422f-abf1-f52a52177bdb)  
   
 初版：2025/08/20  
-改版：2025/08/22  
+改版：2025/08/23 
 
 > [!NOTE]
 > 以下、混乱しがちなので    
@@ -58,48 +58,25 @@ wslのインストールはこれで完了です。
   
 ## ３．wsl(alpine)版rfriends3のインストール  
   
-### 3.1 backup-alpine.zipをダウンロード  
-
-backp-alpine.zipは、Alpine Linuxをカスタマイズし、rfriends3をインストールしたwslイメージです。  
-以下よりダウンロードしてください。  
-  
-[http://rf3.s331.xrea.com/storage/backup-alpine.zip](http://rf3.s331.xrea.com/storage/backup-alpine.zip)    
-    
-「安全でないダウンロードがブロックされました」と表示されるので  
-
-  
-「保存」をクイックしてください。  
-  
-![alp05](https://github.com/user-attachments/assets/e48ae00a-bc90-477b-9009-a7df92416e23)
-  
-ダウンロードが開始されます。  
-
-![alp06](https://github.com/user-attachments/assets/af99782f-3206-4afa-93bd-08d15bf59ead)  
-  
-### 3.2backup-alpine.zipを解凍   
+### 3.1 インストールスクリプトをダウンロード  
   
 1) ここでは仮にc:\wslを作業ディレクトリとします。  
 c:\wsl ディレクトリを作成してください。
-  
-2) backup-alpine.zip をダブルクリックしてください。  
-  backup-alpine.tar  
-  が表示されるので、このファイルをc:\wslにコピーしてください。
-  
-![alp30](https://github.com/user-attachments/assets/65aeba04-b19b-48f1-86b4-63c3c64a7093)
-  
 
-## ４．wslイメージ(backup-alpine.tar)のインストール  
   
-PowerShellを起動し、以下のコマンドを実行します。( - は2個)  
-  
-```    
-PS> cd c:\wsl
-PS> wsl --import Alpine alpine backup-alpine.tar  
-```
-  
-![alp31](https://github.com/user-attachments/assets/56b7e5f5-c4ed-4cfd-ad59-a852286764ef)  
-  
+2) インストールスクリプトを以下よりダウンロードしてください。  
 
+右クリックして、c:\wslに保存。  
+  
+[http://rf3.s331.xrea.com/storage/insalpine.bat](http://rf3.s331.xrea.com/storage/insalpine.bat)    
+    
+  
+### 3.2 wslイメージのインストール
+
+c:\wsl\insalpine.bat をダブルクリックすると、インストールが開始されます。  
+
+## ４．この項削除
+  
 ## ５．wslイメージ(backup-alpine.tar)の起動
   
 PowerShellを起動し、以下のコマンドでAlpineにログインします。   
