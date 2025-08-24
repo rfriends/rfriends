@@ -39,6 +39,7 @@ rfriends3はいろいろな機種に対応しています。
 | 6| スマートフォン |・[Termux](distro/termux.md)<br>・[UserLAnd](distro/userland.md)<br>・[android linux terminal](distro/rfriends3_core.md)|
 | 7| Chromebook  |・[Linux開発環境](distro/chromeos.md)| 
 | 8| iPhone / iPad |・[iSH Shell(テスト中)](distro/ios.md)| 
+| 9| 仮想 |・[vmware-alpine](distro/vmware-alpine.md)| 
 
    
 > [!NOTE]
@@ -56,7 +57,7 @@ rfriends3はいろいろな機種に対応しています。
 ![gallery](https://github.com/user-attachments/assets/fed28352-0636-472e-9015-51abea05e17a)  
   
 初版：2023/07/12  
-改版：2025/08/07  
+改版：2025/08/24 
   
 
     
