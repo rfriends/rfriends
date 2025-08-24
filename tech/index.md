@@ -21,5 +21,5 @@
 |15|[xserver VPS（無料）を契約する](15.md)||
 |16|[xserver VPSにrfriends3をインストールする](16.md)||
 |17|[radikoの地域判定について](17.md)|重要|
-|18|[Alpine Linuxで作るVmware版rfriends3](18.md)||
+
 
