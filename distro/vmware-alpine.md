@@ -1,11 +1,8 @@
 # Alpine Linuxで作るVmware版rfriends3  
   
   
-タイトルどおりのものです。  
-非常に軽量なものができました。  
-ぜひ試してください。  
-  
-  
+Alpine Linux(3.22.1)のStandard版にrfriends3をインストールしたものです。  
+非常に軽量なものができました。    
   
 2025/08/18 new  
 2025/08/24 mod  
