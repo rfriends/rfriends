@@ -1,4 +1,4 @@
-## （３）BSD版rfriends3でラジオ録音  
+## BSD版rfriends3でラジオ録音  
   
 rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したBSD版です。  
