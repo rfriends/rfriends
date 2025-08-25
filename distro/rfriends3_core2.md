@@ -1,4 +1,4 @@
-## （２）Linux（他）版rfriends3でラジオ録音  
+## （２）Linux版rfriends3でラジオ録音（CentOS Stream）  
   
 rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux版です。  
@@ -7,8 +7,9 @@ webサーバにlighttpd、ファイル共有にsambaを採用したLinux版で�
 Linux/BSD版は、ディストリビューションにより以下の3つに分かれています。   
   
 ・（１）[Linux版](rfriends3_core.md) (ubuntu/debian/chrome/android)  
-・（２）[Linux(他)版](rfriends3_core2.md) (stream/rocky/Alma/Alpine/openSUSE/arch/ios)  
-・（３）[BSD版](rfriends3_core_bsd.md)  
+・（２）[Linux版(CentOS Stream)](rfriends3_core2.md) (stream/rocky/Alma)  
+・（３）[Linux版(その他)](rfriends3_core3.md) (Alpine/openSUSE/arch/ios)  
+・（４）[BSD版](rfriends3_core_bsd.md)  
   
 > [!NOTE]  
 > Apache2版については、現在debian/ubuntu版のみですが、  
@@ -28,7 +29,6 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 > ここでは、systemd以外のものをすべてinitと記述しています。 (pgrep -o systemd)  
 > 突っ込みどころ満載ですが、お許しください。  
   
-### 1.1 CentOS Stream系  (install_stream.sh)
   
 |最終確認|判定|ディストロ|Ver.|備考|    
 |---|:---:|---|---|---|  
@@ -42,15 +42,6 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 |2025/04/25|〇|fedora linux|39||  
 |2025/04/25|〇|fedora linux|42||  
    
-### 1.2 その他  
-
-|最終確認|判定|ディストロ|Ver.|備考|   
-|---|:---:|---|---|---|  
-|2025/07/18|〇|Alpine|3.21|install_alpine.sh<br>init(OpenRC)|  
-|2025/08/16|〇|Alpine|3.22|install_alpine.sh<br>init(OpenRC)|  
-|2025/07/16|△|Arch linux|-|install_arch_apache2.sh|   
-|2025/04/25|〇|openSUSE|15.6|install_suse.sh|  
-
   
 ## ２．インストール準備  
 以下のことを確認してください。 
@@ -60,7 +51,6 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 2) 実行するユーザを追加し、管理者権限を付加する。  
 3) その他   
   
-### 2.1 stream/rocky/alma/oracle/miracle/fedoraの場合  
   
 1) システムを最新にし、アプリを追加する。    
 ```  
@@ -78,87 +68,7 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 実行shは、install_stream.sh です。  
   
   
-### 2.2 alpineの場合  
 
-1) 初期設定を行う。   
-  
-```  
-# setup-alpine  
-```  
-  
-2) リポジトリ設定  
-  
-v3.22はバージョンにより異なる。  
-communityリポジトリを有効にする。(#を削除)  
-testingを追加する。(atomicparsleyのため)  
-  
-```  
-# vi /etc/apk/repositories
-https://dl-cdn.alpinelinux.org/alpine/v3.22/main
-https://dl-cdn.alpinelinux.org/alpine/v3.22/community
-https://dl-cdn.alpinelinux.org/alpine/edge/testing
-```  
-    
-3) ユーザ追加  
-  
-```  
-# apk update
-# apk upgrade
-
-# apk add sudo
-# apk add git
-# apk add tzdata
-
-# adduser ユーザ名 
-# addgroup ユーザ名 wheel
-
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-```  
-  
-> [!NOTE]  
-> shutdownはpoweroff    
-    
-実行shは、install_alpine.sh です。  
-  
-### 2.3 openSUSEの場合  
-
-```  
-# zypper refresh
-# zypper update
-
-# zypper install vim
-# zypper install git
-
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名 
-
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-```
-  
-実行shは、install_suse.sh です。  
-  
-### 2.4 arch linuxの場合  
-
-```  
-# pacman -Syu
-
-# pacman -S vi
-# pacman -S sudo
-# pacman -S git
-
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名 
-
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-```
-  
-実行shは、install_arch_apache2.sh です。  
-    
-・Arch linux ではlighttpdに不具合があり、Apache2を標準としました。  
-　現在、webdavは使用できません。  
   
 ## ３．rfriends3のダウンロードとインストール  
   
@@ -167,8 +77,7 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 > [!CAUTION]
 > 必ず２で確認したユーザでログインしてください。    
   
-　ディストリビューション別のrfriends3インストールスクリプト（install_XXXXX.sh）を実行します。  
-「１．ディストリビューション」で実行シェルを確認してください。  
+　rfriends3インストールスクリプト（install_stream.sh）を実行します。   
  各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
 > [!CAUTION]
@@ -181,7 +90,7 @@ $ cd ~/
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
-$ sh install_XXXXX.sh
+$ sh install_stream.sh
 ```  
   
 これでインストールは完了です。  
