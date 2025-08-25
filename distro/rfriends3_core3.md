@@ -1,14 +1,15 @@
-## （２）Linux（他）版rfriends3でラジオ録音  
+## （２）Linux版rfriends3でラジオ録音（その他）  
   
 rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux版です。  
 インストールは全自動で行います。  
   
-Linux/BSD版は、ディストリビューションにより以下の3つに分かれています。   
+Linux/BSD版は、ディストリビューションにより以下の４つに分かれています。   
   
-・（１）[Linux版](rfriends3_core.md) (ubuntu/debian/chrome/android)  
-・（２）[Linux(他)版](rfriends3_core2.md) (stream/rocky/Alma/Alpine/openSUSE/arch/ios)  
-・（３）[BSD版](rfriends3_core_bsd.md)  
+・（１）[Linux版(Ubuntu/Debian)](rfriends3_core.md) (ubuntu/debian/chrome/android)  
+・（２）[Linux版(CentOS Stream)](rfriends3_core2.md) (stream/rocky/Alma)  
+・（３）[Linux版(その他)](rfriends3_core3.md) (Alpine/openSUSE/arch/ios)  
+・（４）[BSD版](rfriends3_core_bsd.md)  
   
 > [!NOTE]  
 > Apache2版については、現在debian/ubuntu版のみですが、  
@@ -28,22 +29,6 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 > ここでは、systemd以外のものをすべてinitと記述しています。 (pgrep -o systemd)  
 > 突っ込みどころ満載ですが、お許しください。  
   
-### 1.1 CentOS Stream系  (install_stream.sh)
-  
-|最終確認|判定|ディストロ|Ver.|備考|    
-|---|:---:|---|---|---|  
-|2025/05/03|△|CentOS|8.5|/etc/yum/repos.d<br>を変更|  
-|2025/04/26|〇|CentOS stream|9||  
-|2025/08/05|〇|CentOS stream|10||  
-|2025/04/20|◎|Rocky linux|9.5||  
-|2025/04/20|◎|Alma linux|9.5||  
-|2025/04/20|〇|Oracle linux|9.5||   
-|2025/04/20|〇|Miracle linux|9.4||  
-|2025/04/25|〇|fedora linux|39||  
-|2025/04/25|〇|fedora linux|42||  
-   
-### 1.2 その他  
-
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
 |2025/07/18|〇|Alpine|3.21|install_alpine.sh<br>init(OpenRC)|  
@@ -60,25 +45,8 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 2) 実行するユーザを追加し、管理者権限を付加する。  
 3) その他   
   
-### 2.1 stream/rocky/alma/oracle/miracle/fedoraの場合  
   
-1) システムを最新にし、アプリを追加する。    
-```  
-# dnf update
-# dnf upgrade
-
-# dnf install git
-```
-2) 実行するユーザを追加し、管理者権限を付加する。
-```
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名
-```
-  
-実行shは、install_stream.sh です。  
-  
-  
-### 2.2 alpineの場合  
+### 2.1 alpineの場合  
 
 1) 初期設定を行う。   
   
@@ -121,7 +89,7 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
     
 実行shは、install_alpine.sh です。  
   
-### 2.3 openSUSEの場合  
+### 2.2 openSUSEの場合  
 
 ```  
 # zypper refresh
@@ -139,7 +107,7 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
   
 実行shは、install_suse.sh です。  
   
-### 2.4 arch linuxの場合  
+### 2.3 arch linuxの場合  
 
 ```  
 # pacman -Syu
