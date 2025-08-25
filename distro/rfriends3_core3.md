@@ -1,4 +1,4 @@
-## （２）Linux版rfriends3でラジオ録音（その他）  
+## Linux版rfriends3でラジオ録音（その他）  
   
 rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux版です。  
