@@ -65,7 +65,10 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 # useradd -m -G wheel ユーザ名 
 # passwd ユーザ名
 ```
-  
+3) ログアウトする。
+```
+# exit
+``` 
 実行shは、install_stream.sh です。  
   
   
