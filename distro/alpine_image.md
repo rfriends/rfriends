@@ -1,41 +1,28 @@
-## RaspebrryPi版rfriends3でラジオ録音（OSイメージ編）
+## Alpine Linux版rfriends3でラジオ録音（OSイメージ編）
 
-あらかじめRaspiOSにrfriends3をインストールし、各種設定を行ったイメージです。  
+あらかじめAlpine Linuxにrfriends3をインストールし、各種設定を行ったイメージです。  
 microSDに書いて起動するだけでrfriends3が使用できます。  
   
 ## ０．準備   
 
 ### 動作確認機種
-
-・Raspberry Pi 
-・Raspberry Pi 2
-・Raspberry Pi 3 Model B
-・Raspberry Pi Zero W/Zero 2W  
   
-![1](https://github.com/user-attachments/assets/d30f2827-62d3-4f20-a60e-2bf5e72a6e13)  
-  
-### Network環境  
-  
-１）WAN,LAN  
-当然ですが、常時外部ネットワークにつながる環境が必要です。ルータ、DHCP等、わかりやすく言えばスマホがWiFi接続できる環境  
-  
-２）PC  
-WindowsPCまたはLinuxPCが必要です。Macでも可能だと思います。Androidでもできないかと試してみましたが、microSDへの書き込みが無理でした。  
-稼働後は大丈夫ですが。以下は主にwindowsPCでの操作を記述しています。   
+Alpine Linuxはarm7用を使用しています。  
+https://alpinelinux.org/downloads/  
+[alpine-rpi-3.22.1-armv7.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/armv7/alpine-rpi-3.22.1-armv7.tar.gz)  
    
+・Raspberry Pi 3 Model B  
+・Raspberry Pi Zero 2 W  
+  
 ### Raspberry pi 一式  
   
-・Raspberry Pi 3 Model B または Raspberry Pi Zero W/Zero 2W  
-・5V/2.5A ACアダプタ （Zeroの場合は2A）  
+・Raspberry Pi (動作確認機種)   
+・ACアダプタ   
 注意：低アンペアのアダプタでも動作しますが不安定になる可能性があります。  
 ・LANケーブル（有線接続の場合）  
 ・microSDカード Class10 UHS-I（8GB以上、できれば32GB,64GB,128GB）  
 ・microSDリーダ  
   
-必要に応じて  
-  
-・Raspberry Pi ケース  
-・ヒートシンク  
   
 ### SDカード用ツール  
   
@@ -49,29 +36,27 @@ SDメモリカードをフォーマットします。
 イメージをSDメモリカードに書き込みます。  
 [win32diskimager](https://sourceforge.net/projects/win32diskimager/)    
   
-### ssh,smb,ftpクライアント  
+### sshクライアント  
   
-WindowsPC環境では、sshはteraterm、smbはPCのエクスプローラ、ftpはfilezilla がおすすめ。  
+WindowsPC環境では、sshはteratermまたはrloginがおすすめ。  
 LinuxPC環境では標準ツールが使えます。  
-Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネージャ＋(flashlihgt+clock)、ftpはFtpCafe(Droidware UK) がおすすめ。  
-他の環境の方は、ssh,smb,ftpで検索してください。  
   
 ## １．rfriends3のシステムイメージをダウンロードする。   
-
-イメージはraspios(Raspios GNU/Linux 11 bullseye lite)上にrfriends3をインストールし各種設定を行ったものです。
-
-下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
-「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約1.3GB）  
   
-[rfriends3_latest.img.zip](http://rfbuddy.s296.xrea.com/storage/rfriends3_latest.img.zip)    
-[wpa_supplicant.conf](http://rfbuddy.s296.xrea.com/storage/wpa_supplicant.conf)  
-
-ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。  
-[Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)  
+イメージはAlpine Linux上にrfriends3をインストールし各種設定を行ったものです。  
+以下の2つのファイルを入手してください。  
+  
+下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
+「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約500MB）  
+  
+[rpi_rfriends3_alpine.zip](http://rf3.s331.xrea.com/storage/rpi_rfriends3_alpine.zip) （約 530MB）  
+[wpa_supplicant.conf](http://rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
   
 ## ２．イメージをmicroSDに書く。
   
 zipファイルを解凍しimgファイルを抽出する。（約8GB）  
+rpi_rfriends3_alpine.img  
+   
 Win32DiskImagerを使って、imgファイルをmicroSDに書く。  
   
 ![2](https://github.com/user-attachments/assets/c1d4954e-90d6-432a-9d1c-2a8299f77691)  
@@ -80,15 +65,7 @@ Win32DiskImagerを使って、imgファイルをmicroSDに書く。
   
 有線LAN接続の場合、この設定は不要です。  
   
-イメージを書き込んだmicroSDをPCに接続してください。以下のようなアラーム画面が出ますがキャンセルしてください。フォーマットしてはいけません。ドライブ名は環境により異なります。  
-  
-![3-1](https://github.com/user-attachments/assets/4870e36e-de56-42a2-bad3-e62ec20d08cd)  
-   
-エクスプローラで確認すると、bootという領域（fat32フォーマット）が認識されているはずです。  
-  
-![3-2](https://github.com/user-attachments/assets/3c1c37ef-4dff-4a50-abfc-811db0b19bcb)  
-  
-wpa_supplicant.confに自環境に合わせてssid,passwdを設定し、microSDに追加する。  
+### 3.1 wpa_supplicant.confに自環境に合わせてssid,passwdを設定する。  
   
 ```
 ctrl_interface=/var/run/wpa_supplicant Group=netdev  
@@ -102,7 +79,17 @@ psk="password"
 （参考）パスワードの暗号化
 ```
 　$ wpa_passphrase "SSID" "password"
-```  
+```
+  
+### 3.2 イメージを書き込んだmicroSDを再度PCに接続してください。ドライブ名は環境により異なります。  
+  
+![3-1](https://github.com/user-attachments/assets/4870e36e-de56-42a2-bad3-e62ec20d08cd)  
+   
+エクスプローラで確認すると、bootという領域（fat32フォーマット）が認識されているはずです。  
+  
+![3-2](https://github.com/user-attachments/assets/3c1c37ef-4dff-4a50-abfc-811db0b19bcb)  
+  
+設定したwpa_supplicant.confをmicroSDにD&Dして追加してください。 
 
 ## ４．RaspberryPiにmicroSDをセットし起動する。  
   
@@ -112,7 +99,7 @@ psk="password"
 ＃# ５．rfriedns3にアクセスする。  
   
 Webサーバ（lighttpd）が自動で起動しているので、任意ブラウザでアクセスする。  
-http://rfriends3:8000  
+http://alpv7:8000  
   
 又はPC等を使用してIPアドレスを調べてアクセスする。  
 RaspberrypiはDHCPで動作しています。IPアドレスの確認方法は、下記のようなIP scanner ソフトを使うと便利です。  
@@ -121,9 +108,9 @@ android, iPhoneでは、”Fing(無料版)”というアプリがお勧めで�
 Advanced IP Scanner  
 <http://www.advanced-ip-scanner.com>  
   
-スキャン結果より、RFRIENDS3 のものを探してください。(ラズベリーアイコンが表示されているもの)
+スキャン結果より、alpv7 のものを探してください。(ラズベリーアイコンが表示されているもの)
 ```
-RFRIENDS3 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
+alpv7 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 ```
 こんな感じで見つかると思います。  
   
@@ -132,19 +119,75 @@ RFRIENDS3 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 ## ６．microSDの領域拡張を行う。  
   
 提供イメージは領域が縮小されているため、microSD全体を使用するように領域を拡張する必要があります。  
+注意：この操作をしないと大容量のmicroSDを使用していても8GB弱しか認識されません。  
+    
+sshアクセスします。  
   
-メニューより管理-メンテナンス-ラズパイ専用-領域拡張で、microSDの領域拡張を行います。  
-一旦再起動します。  
-再起動後は領域拡張を行うのでmicroSDのサイズによっては時間がかかります。緑のランプが点滅から点灯になるのを待ってください。  
+### 6.1 cfdiskによるパーティション拡張  
   
-注意：この操作をしないと大容量のmicroSDを使用していても4GB弱しか認識されません。  
-再起動後、領域が拡張されたことを確認してください。
+1) cfdiskの起動
   
+/dev/mmcblk02が約7GBであることを確認  
+  
+```  
+$ df  
+```  
+  
+cfdiskを起動する。
+  
+```  
+$ sudo cfdisk /dev/mmcblk0  
 ```
-$ df -h
+![cf00](https://github.com/user-attachments/assets/9cc29f8d-0e7b-4f71-98d9-b29900d80116)
+
+2) パーティション拡張
+  
+上下カーソルで/dev/mmcblk0p2を選択する。  
+左右カーソルで[Resize]を選択し、リターンを押下する。  
+![cf01](https://github.com/user-attachments/assets/c2ac3b84-8f8e-45c5-bceb-8e8ea122ff6c)  
+  
+
+使用しているmicroSDの最大サイズ（下記は６４GBの例）が表示されるので、そのままリターンを押下する。
+New size:57.6G
+  
+![cf02](https://github.com/user-attachments/assets/9e2a3404-f6d2-4175-966f-dcb529952904)  
+  
+左右カーソルで[Write]を選択し、リターンを押下する。  
+  
+![cf03](https://github.com/user-attachments/assets/94ffad45-b679-46e2-9ab5-d053a7f30039)   
+  
+Are you sure you want to write the partition table to disk ?  
+（パーティションテーブルをディスクに書き込んでもいいですか？）  
+と表示されるので、yes(リターン)を押下する。  
+  
+![cf04](https://github.com/user-attachments/assets/175cd953-b029-465a-a9e8-22dedbc27e29)  
+    
+左右カーソルで[QUit]を選択し、リターンを押下する。  
+  
+![cf05](https://github.com/user-attachments/assets/b99bde9f-e0eb-4db3-bfaf-10619c3b8364)  
+  
+
+### 6.2 resize2fsによるディスクサイズ変更
+```
+$ sudo resize2fs /dev/mmcblk0p2
+```
+実際にディスクサイズが変更されます。
+```
+$ df
+```  
+で確認すると、
+/dev/mmcblk02が約60GBであることを確認（microSDが64GBの場合）
+    
+![cf06](https://github.com/user-attachments/assets/b5588cf0-168a-4318-b41d-66feb976d34c)  
+  
+  
+一旦再起動します。
+```
+$ sudo reboot  
 ```
   
-![5](https://github.com/user-attachments/assets/54b9ce5e-1c96-4b5d-a0b3-3b5812b299ea)  
+
+  
   
 ## ７．rfriends3を最新にする。  
   
