@@ -138,34 +138,35 @@ teratermやrlogin等のSSHクライアントを使ってsshアクセスします
   
 ### 6.1 cfdiskによるパーティション拡張  
   
-1) cfdiskの起動
+1) 現状確認  
   
 /dev/mmcblk02が約7GBであることを確認  
   
 ```  
 $ df  
 ```  
+  ![cf00a](https://github.com/user-attachments/assets/1e544997-0abc-4327-a8c9-30f1032c23e5)
+
+2) パーティション拡張
   
 cfdiskを起動する。
   
 ```  
 $ sudo cfdisk /dev/mmcblk0  
 ```
-![cf00](https://github.com/user-attachments/assets/9cc29f8d-0e7b-4f71-98d9-b29900d80116)
 
-2) パーティション拡張
-  
+
 上下カーソルで/dev/mmcblk0p2を選択する。  
-左右カーソルで[Resize]を選択し、リターンを押下する。  
+左右カーソルで[Resize]を選択し、(リターン)を押下する。  
 ![cf01](https://github.com/user-attachments/assets/c2ac3b84-8f8e-45c5-bceb-8e8ea122ff6c)  
   
 
-使用しているmicroSDの最大サイズ（下記は64GBの例）が表示されるので、そのままリターンを押下する。
-New size:57.6G
+使用しているmicroSDの最大サイズ（下記は64GBの例）が表示されるので、そのまま(リターン)を押下する。  
+New size:57.6G  
   
 ![cf02](https://github.com/user-attachments/assets/9e2a3404-f6d2-4175-966f-dcb529952904)  
   
-左右カーソルで[Write]を選択し、リターンを押下する。  
+左右カーソルで[Write]を選択し、(リターン)を押下する。  
   
 ![cf03](https://github.com/user-attachments/assets/94ffad45-b679-46e2-9ab5-d053a7f30039)   
   
@@ -175,7 +176,7 @@ Are you sure you want to write the partition table to disk ?
   
 ![cf04](https://github.com/user-attachments/assets/175cd953-b029-465a-a9e8-22dedbc27e29)  
     
-左右カーソルで[Quit]を選択し、リターンを押下する。  
+左右カーソルで[Quit]を選択し、(リターン)を押下する。  
   
 ![cf05](https://github.com/user-attachments/assets/b99bde9f-e0eb-4db3-bfaf-10619c3b8364)  
   
@@ -185,13 +186,16 @@ Are you sure you want to write the partition table to disk ?
 $ sudo resize2fs /dev/mmcblk0p2
 ```
 実際にディスクサイズが変更されます。
+![cf06a](https://github.com/user-attachments/assets/62f84705-c469-4389-bfae-07904d24b99d)
+
 ```
 $ df
 ```  
 で確認すると、
 /dev/mmcblk02が約60GBであることを確認（microSDが64GBの場合）
     
-![cf06](https://github.com/user-attachments/assets/b5588cf0-168a-4318-b41d-66feb976d34c)  
+![cf06b](https://github.com/user-attachments/assets/457e5a56-f4bd-4c62-9ab2-8f142e6145c2)
+
   
   
 一旦再起動します。
