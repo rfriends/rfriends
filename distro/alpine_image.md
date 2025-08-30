@@ -4,6 +4,7 @@
 microSDに書いて起動するだけでrfriends3が使用できます。  
   
 初版 2025/08/30
+改版 2025/08/30
   
 ## ０．準備   
 
@@ -54,7 +55,7 @@ LinuxPC環境では標準ツールが使えます。
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約500MB）  
   
-[rpi-rfriends3-alpine.zip](http://rf3.s331.xrea.com/storage/rpi-rfriends3-alpine.zip) （約 530MB）  
+[rpi-rfriends3-alpinev7.zip](http://rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev7.zip) （約 530MB）  
 [wpa_supplicant.conf](http://rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
   
 ## ２．イメージをmicroSDに書く。
