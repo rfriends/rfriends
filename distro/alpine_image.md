@@ -220,7 +220,8 @@ $ sudo reboot
   
 ### 8.2 samba
   
-PCのエクスプローラから、\\alpv7 でアクセス(smb)することにより録音データにアクセスできます。ほかのアプリを使う場合は、anonymousでアクセスしてください。  
+PCのエクスプローラから、\\\\alpv7 でアクセス(smb)することにより録音データにアクセスできます。(\は￥)  
+ほかのアプリを使う場合は、anonymousでアクセスしてください。  
   
 ![6](https://github.com/user-attachments/assets/9e9dab09-d542-484b-a976-16a74d32ea18)  
   
