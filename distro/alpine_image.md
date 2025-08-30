@@ -14,14 +14,16 @@ microSDに書いて起動するだけでrfriends3が使用できます。
 > armhf版はzero専用で、zero2では動作しません。
 > （raspiosは兼用できるのですが、alpineではできません）
   
+https://alpinelinux.org/downloads/   
+  
 1) armhf
-https://alpinelinux.org/downloads/  
-[alpine-rpi-3.22.1-armv6.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/armv7/alpine-rpi-3.22.1-armv6.tar.gz)  
+
+[alpine-rpi-3.22.1-armhf.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/armv7/alpine-rpi-3.22.1-armhf.tar.gz)  
    
 ・Raspberry Pi Zero W  
   
-2) armv7 
-https://alpinelinux.org/downloads/  
+2) armv7
+  
 [alpine-rpi-3.22.1-armv7.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/armv7/alpine-rpi-3.22.1-armv7.tar.gz)  
    
 ・Raspberry Pi 3 Model B  
@@ -64,8 +66,13 @@ LinuxPC環境では標準ツールが使えます。
   
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約500MB）  
-  
+
+armhf
+[rpi-rfriends3-alpinev6.zip](http://rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev6.zip) （約 340MB）  
+または  
+armv7
 [rpi-rfriends3-alpinev7.zip](http://rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev7.zip) （約 530MB）  
+  
 [wpa_supplicant.conf](http://rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
   
 ## ２．イメージをmicroSDに書く。
