@@ -10,7 +10,17 @@ microSDに書いて起動するだけでrfriends3が使用できます。
 
 ### 動作確認機種
   
-Alpine Linuxはarm7用を使用しています。  
+> [!CAUTION]  
+> armhf版はzero専用で、zero2では動作しません。
+> （raspiosは兼用できるのですが、alpineではできません）
+  
+1) armhf
+https://alpinelinux.org/downloads/  
+[alpine-rpi-3.22.1-armv6.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/armv7/alpine-rpi-3.22.1-armv6.tar.gz)  
+   
+・Raspberry Pi Zero W  
+  
+2) armv7 
 https://alpinelinux.org/downloads/  
 [alpine-rpi-3.22.1-armv7.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/armv7/alpine-rpi-3.22.1-armv7.tar.gz)  
    
@@ -109,8 +119,13 @@ wpa_supplicant.confの設定が正しければ、IPアドレスが割り当て�
 ## ５．rfriedns3にアクセスする。  
   
 Webサーバ（lighttpd）が自動で起動しているので、任意ブラウザでアクセスする。  
-http://alpv7:8000  
   
+```  
+http://alpv6:8000  
+または  
+http://alpv7:8000  
+```
+    
 又はPC等を使用してIPアドレスを調べてアクセスする。  
 RaspberrypiはDHCPで動作しています。IPアドレスの確認方法は、下記のようなIP scanner ソフトを使うと便利です。  
 android, iPhoneでは、”Fing(無料版)”というアプリがお勧めです。  
@@ -118,7 +133,7 @@ android, iPhoneでは、”Fing(無料版)”というアプリがお勧めで�
 Advanced IP Scanner  
 <http://www.advanced-ip-scanner.com>  
   
-スキャン結果より、alpv7 のものを探してください。(ラズベリーアイコンが表示されているもの)  
+スキャン結果より、alpv6/alpv7 のものを探してください。(ラズベリーアイコンが表示されているもの)  
 こんな感じで見つかると思います。  
   
 ```
@@ -221,7 +236,7 @@ $ sudo reboot
   
 ### 8.2 samba
   
-PCのエクスプローラから、\\\\alpv7 でアクセス(smb)することにより録音データにアクセスできます。(\は￥)  
+PCのエクスプローラから、\\\\alpv6 または \\\\alpv7 でアクセス(smb)することにより録音データにアクセスできます。(\は￥)  
 ほかのアプリを使う場合は、anonymousでアクセスしてください。  
   
 ![6](https://github.com/user-attachments/assets/9e9dab09-d542-484b-a976-16a74d32ea18)  
