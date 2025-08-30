@@ -70,7 +70,7 @@ Win32DiskImagerを使って、imgファイルをmicroSDに書く。
   
 有線LAN接続の場合、この設定は不要です。  
   
-### 3.1 wpa_supplicant.confに自環境に合わせてssid,passwdを設定する。  
+### 3.1 wpa_supplicant.confに自環境に合わせてssid,passwordを設定する。  
   
 ```
 ctrl_interface=/var/run/wpa_supplicant Group=netdev  
