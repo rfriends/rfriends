@@ -250,7 +250,7 @@ PCのエクスプローラから、\\\\alpv6 または \\\\alpv7 でアクセス
   
 ### 8.3 ftp/sftp  
   
-ftp/sftp でalpv7 にアクセスすることによりRaspberry Piに接続できます。  
+ftp/sftp でalpv6/alpv7 にアクセスすることによりRaspberry Piに接続できます。  
   
 ![7](https://github.com/user-attachments/assets/cd253bca-1f68-4266-aa08-34951fd95620)  
   
