@@ -1,7 +1,7 @@
-## Alpine Linux版rfriends3でラジオ録音（OSイメージ編）
+## Alpine Linux (Raspberry Pi)版rfriends3でラジオ録音
 
 あらかじめAlpine Linuxにrfriends3をインストールし、各種設定を行ったイメージです。  
-microSDに書いて起動するだけでrfriends3が使用できます。  
+microSDに書いてRaspberryPiを起動するだけでrfriends3が使用できます。  
   
 初版 2025/08/30
 改版 2025/08/30
