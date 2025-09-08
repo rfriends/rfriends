@@ -117,7 +117,9 @@ SWAP領域を限界まで使い切っている可能性があります。(コマ
 最後に空行を追加して保存してください。
   
 ### 034 RaspberryPiで聴取（サーバ）を選択しても音が出ないのですが。  
-管理-メンテナンス-ラズパイ専用-audio選択、で出力先を選択してください。
+管理-メンテナンス-ラズパイ専用-audio選択、で出力先を選択してください。  
+  
+![audio](https://github.com/user-attachments/assets/ac7326c2-b76b-46a2-9a8e-fae4238a7970)  
   
 ### 033 Webアクセスすると、access denied!と表示されます。  
 redhat系の場合、SELinuxが有効の場合に発生します。  
