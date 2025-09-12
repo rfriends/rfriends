@@ -8,6 +8,7 @@
   
 -   ALSA設定の追加  
 Linux版で、聴取（サーバ）で音を出す設定を追加しました。
+  
 ![ffplay](https://github.com/user-attachments/assets/34169762-cf07-46d1-8d8b-d7fda9d270fb)  
   
 ### 1.2.6-a16 (2025/09/09)     
