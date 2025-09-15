@@ -22,7 +22,7 @@ rem 開始
 rem
 echo.
 
-set dir4=http://rf3.s331.xrea.com/storage/
+set dir1=http://rf3.s331.xrea.com/storage/
 set dir2=http://rfbuddy.s296.xrea.com/storage/
 set dir3=http://ceres.s501.xrea.com/storage/
 set dir4=http://rfriends.s1009.xrea.com/storage/
@@ -89,4 +89,5 @@ rem -----------------------------------------
 rem 終了
 rem
 pause
+
 
