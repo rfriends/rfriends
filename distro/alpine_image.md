@@ -207,12 +207,11 @@ Are you sure you want to write the partition table to disk ?
 ### 6.2 resize2fsによるディスクサイズ変更
 ```
 $ sudo resize2fs /dev/mmcblk0p2
-```
-実際にディスクサイズが変更されます。
-![cf06a](https://github.com/user-attachments/assets/62f84705-c469-4389-bfae-07904d24b99d)
-
-```
-$ df
+```  
+実際にディスクサイズが変更されます。  
+![cf06a](https://github.com/user-attachments/assets/62f84705-c469-4389-bfae-07904d24b99d)  
+```  
+$ df  
 ```  
 で確認すると、
 /dev/mmcblk02が約60GBであることを確認（microSDが64GBの場合）
