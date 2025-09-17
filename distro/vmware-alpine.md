@@ -5,7 +5,7 @@ Alpine Linux(3.22.1)のStandard版にrfriends3をインストールしたもの�
 非常に軽量なものができました。    
   
 2025/08/18 new  
-2025/08/24 mod  
+2025/09/17 add sound  
   
 
   
@@ -87,6 +87,27 @@ Webブラウザに
 ・操作に関しては、マニュアルを参照してください。  
   
 [rfriends3](https://rfriends.github.io/rfriends/)  
+  
+## ６．その他  
+  
+### 6.1 サウンド  
+  
+通常はホストのサウンドカードから音が出ますが、新たにサウンドデバイスを追加した場合、  
+以下のような出力がされます。（例ではUSB audioを追加しています。）
+```
+$ cat /proc/asound/pcm
+00-00: ES1371/1 : ES1371 DAC2/ADC : playback 1 : captu
+00-01: ES1371/2 : ES1371 DAC1 : playback 1
+01-00: USB Audio : USB Audio : playback 1 : capture 1
+```
+この例ではcardの番号は1ですので、以下を追加してください。  
+```  
+$ vi  ~/.asoundrc  
+defaults.ctl.card 1  
+defaults.pcm.card 1  
+```  
+一旦、ユーザをlogout/loginしてください。  
+rfriendsの聴取（サーバ）の音はCARD 1から出力されるようになります。  
   
 以上  
   
