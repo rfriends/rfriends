@@ -103,10 +103,15 @@ $ cat /proc/asound/pcm
 この例ではcardの番号は1ですので、以下を追加してください。  
 ```  
 $ vi  ~/.asoundrc  
-defaults.ctl.card 1  
-defaults.pcm.card 1  
-```  
-一旦、ユーザをlogout/loginしてください。  
+pcm.!default {  
+type hw  
+card 1  
+}  
+ctl.!default {  
+type hw  
+card 1  
+}   
+```   
 rfriendsの聴取（サーバ）の音はCARD 1から出力されるようになります。  
   
 以上  
