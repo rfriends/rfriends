@@ -14,7 +14,7 @@
 |8|[ApplePodcasts機能の操作方法](https://rfriends.hatenablog.com/entry/2024/06/22/094656)||
 |9|[NHK-R2全録マシンの作り方](https://rfriends.hatenablog.com/entry/2024/04/23/070018)||
 |10|[sambaサーバにユーザ認証を追加](https://rfriends.hatenablog.com/entry/2024/04/20/092828)||
-|11|[Webサーバ(lighttpd)にユーザ認証を追加](rfriends3のApplePodcasts機能の操作方法)||
+|11|[Webサーバ(lighttpd)にユーザ認証を追加](https://rfriends.hatenablog.com/entry/2024/04/19/213953))||
 |12|[rfriendsの録音データをWindowsにBackup](12.md)||
 |13|[CUIでRaspberry PiのmicroSDのクローンを作る](13.md)||
 |14|[raspberrypi版rfriends2->rfriends3への移行手順](14.md)||
