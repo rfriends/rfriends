@@ -7,6 +7,14 @@
 > cuiモードでシステム更新をすると、新しいパラメータが出てきません。  
 >  [9-1-3] パラメータ設定 - チェック　で更新してください。
   
+### 1.2.6b (2025/09/21)     
+  
+-   ((CUI)update時に以下のようなメッセージが出ていたのを修正しました。  
+なお、update 自体は正常に終了しています。  
+  
+'upfl' is not recognized as an internal or external command,  
+operable program or batch file.  
+  
 ### 1.2.6a (2025/09/17)     
   
 -   (CUI)タイムフリー - 録音・聴取の放送済み番組一覧を昇順に  
