@@ -113,7 +113,13 @@ exitでコンテナからホストに戻ってください。
 コンテナ：
 radio@rfriends3:~$ exit  
 ```  
-exitしてもコンテナは動作したままです。
+exitしてもコンテナは動作したままです。   
+念のため、再起動します。  
+   
+```  
+ホスト：  
+$ sudo lxc restart rfriends3
+```  
     
 ## ４．rfriends3の起動
   
