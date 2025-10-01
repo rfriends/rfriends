@@ -4,7 +4,7 @@
 
 |NO|タイトル|備考|
 |---:|---|---|
-|1|[RaspberryPi Zeroをラジオにする](https://rfriends.hatenablog.com/entry/2024/09/04/175016)|スピーカを接続|
+|1|[[新編] RaspberryPi Zeroをラジオにする方法(bluetooth編)  ](01.md)|bluetoothスピーカを接続|
 |2|[RaspberryPiにスピーカを接続](https://rfriends.hatenablog.com/entry/2024/09/04/175016)|Volumio,MoOde|
 |3|[Music Player volumioをインストール](https://rfriends.hatenablog.com/entry/2024/08/24/174527)||
 |4|[Volumio上にrfriendsをインストール](https://rfriends.hatenablog.com/entry/2024/08/25/194850)||
