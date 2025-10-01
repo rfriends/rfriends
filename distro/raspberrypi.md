@@ -2,9 +2,9 @@
 
 RaspiOSのイメージにrfriends3をスクリプトによりインストールします。  
   
-~~これは、メモリが少ない等、主に非力な機種やNO DESKTOP用です。  
+これは、メモリが少ない等、主に非力な機種やNO DESKTOP用です。  
 パワーのある機種は以下で。  
-https://github.com/rfriends/rfriends3_core~~  
+https://github.com/rfriends/rfriends3_core  
   
 2025/10/02 改定  
   
