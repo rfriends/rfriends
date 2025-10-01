@@ -2,9 +2,11 @@
 
 RaspiOSのイメージにrfriends3をスクリプトによりインストールします。  
   
-これは、メモリが少ない等、主に非力な機種やNO DESKTOP用です。  
+~~これは、メモリが少ない等、主に非力な機種やNO DESKTOP用です。  
 パワーのある機種は以下で。  
-https://github.com/rfriends/rfriends3_core  
+https://github.com/rfriends/rfriends3_core~~  
+  
+2025/10/02 改定  
   
 ## 1. 純正のimagerを使用してmicroSDを作成する。     
    <https://www.raspberrypi.com/software/>  
@@ -16,7 +18,8 @@ https://github.com/rfriends/rfriends3_core
 例 : Raspberry PI Zero 2 W
   
 ### 1.2 OS  
-インストールするOSを選択
+インストールするOSを選択する。  
+Bullseyeのほうがメモリ使用量は少ないです。  
   
 Bullseye  
   
@@ -44,21 +47,28 @@ Bookworm
 SSHを有効化する  
   
  
-## 2. microSDをraspberrypiにセットし起動する。   
+## 2. microSDをraspberrypiにセットし起動する。 
+  
    初回起動時は領域拡張を行うのでmicroSDのサイズによっては時間がかかります。    
    緑のランプが点滅から点灯になるのを待ってください。  
+  
 ## 3. sshでraspberrypiにアクセスする。  
+  
    ホスト名 rpi-1、ユーザ名 rpiの場合、  
 ```
    ssh rpi@rpi-1
 ```
    でアクセスできます。  
+  
 ## 4. システムを最新にし、gitアプリをインストールする。  
+  
 ```
    $ sudo apt-get update && sudo apt-get upgrade -y  
    $ sudo apt-get install git -y  
 ```
+  
 ## 5. セットアップシェルを実行する。  
+  
 ```
    $ cd  ~/  
    $ rm -rf rfriends_raspberrypi  
@@ -66,11 +76,20 @@ SSHを有効化する
    $ cd rfriends_raspberrypi  
    $ sh rfriends_raspberrypi.sh  
 ```
+  
 ## 6. raspberrypiを再起動する。  
+  
 ```
    $ sudo reboot  
 ```
+  
 ## 7. Webブラウザを使用してrfriendsにアクセスする。 
+  
 ``` 
    http://xxx.xxx.xxx.xxx:8000
-```
+```  
+  
+  
+  
+以上  
+  
