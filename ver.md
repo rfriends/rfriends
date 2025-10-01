@@ -14,6 +14,9 @@
 ・onair画面（改）  
 ・管理（OS別機能）  
 ・podcast画面（改）
+  
+RaspberryPi Zeroをラジオにする方法(bluetooth編)  
+https://rfriends.github.io/rfriends/tech/01.html  
     　
   
 ### 1.2.6g (2025/09/26)     
