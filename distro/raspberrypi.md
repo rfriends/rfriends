@@ -1,12 +1,8 @@
 ## RaspebrryPi版rfriends3でラジオ録音（スクリプト編）    
 
 RaspiOSのイメージにrfriends3をスクリプトによりインストールします。  
-  
-これは、メモリが少ない等、主に非力な機種やNO DESKTOP用です。  
-パワーのある機種は以下で。  
-https://github.com/rfriends/rfriends3_core  
-  
-2025/10/02 改定  
+    
+2025/10/03 改定  
   
 ## 1. 純正のimagerを使用してmicroSDを作成する。     
    <https://www.raspberrypi.com/software/>  
@@ -19,7 +15,11 @@ https://github.com/rfriends/rfriends3_core
   
 ### 1.2 OS  
 インストールするOSを選択する。  
-Bullseyeのほうがメモリ使用量は少ないです。  
+
+> [!NOTE]
+> ここでは32bit版を選択していますが、64bitが可能な機種は64bitを選択しても構いません。  
+> また、メモリに余裕があれば、desktop版でもOK。  
+> Bullseye lite 32bit がメモリ使用量は一番少ないです。    
   
 Bullseye  
   
@@ -28,6 +28,11 @@ Bullseye
 Bookworm  
   
 ![3](https://github.com/user-attachments/assets/ca768534-6ea7-4dbe-b6d5-573911f705ae)  
+  
+Trixie  
+  
+![clip_3](https://github.com/user-attachments/assets/58299500-a77c-4236-af87-f0fbfddf0a8b)  
+  
   
 ### 1.3 ストレージ  
 セットしているmicroSDを選択  
@@ -54,9 +59,9 @@ SSHを有効化する
   
 ## 3. sshでraspberrypiにアクセスする。  
   
-   ホスト名 rpi-1、ユーザ名 rpiの場合、  
+   ホスト名 rpios、ユーザ名 rpiの場合、  
 ```
-   ssh rpi@rpi-1
+   ssh rpi@rpios
 ```
    でアクセスできます。  
   
@@ -69,12 +74,36 @@ SSHを有効化する
   
 ## 5. セットアップシェルを実行する。  
   
+1)2)3) のいづれかを選択してください。  
+    
+1) raspberry pi カスタマイズ版（不要なデーモンを削除し、メモリ削減）
 ```
    $ cd  ~/  
    $ rm -rf rfriends_raspberrypi  
    $ git clone https://github.com/rfriends/rfriends_raspberrypi.git  
    $ cd rfriends_raspberrypi  
    $ sh rfriends_raspberrypi.sh  
+```
+2) 通常のdebian版(lighttpd) 
+```
+   $ cd  ~/  
+   $ rm -rf rfriends3_core  
+   $ git clone https://github.com/rfriends/rfriends3_core.git  
+   $ cd rfriends3_core  
+   $ sh install_debian.sh  
+```
+3) debian版(apache)
+  
+> [!CAUTION]  
+> trixieの場合は、これを選択   
+> 他では予約関係が動作しません。    
+  
+```
+   $ cd  ~/  
+   $ rm -rf rfriends3_core  
+   $ git clone https://github.com/rfriends/rfriends3_core.git  
+   $ cd rfriends3_core  
+   $ sh install_debian_apache.sh  
 ```
   
 ## 6. raspberrypiを再起動する。  
