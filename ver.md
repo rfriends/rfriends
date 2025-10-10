@@ -7,6 +7,19 @@
 > cuiモードでシステム更新をすると、新しいパラメータが出てきません。  
 >  [9-1-3] パラメータ設定 - チェック　で更新してください。
 　　
+### 1.2.7-a05 (2025/10/10)     
+  
+- 改良項目  
+・PulseAudio対応（改）  
+ 管理 - パラメータにpulseaudio追加  
+　alsaドライバがない場合（例：bluetooth）、pulseaudio=1  
+　ヘッドレスの場合、電源ON時にsshで’pulseaudio --kill’が必要  
+・onair画面（改）   
+　番組選択時に最新に更新するようにした。  
+    
+RaspberryPi Zeroをラジオにする方法(bluetooth編)  
+https://rfriends.github.io/rfriends/tech/01.html  
+  
 ### 1.2.7-a01 (2025/09/30)     
   
 - 改良項目  
@@ -16,8 +29,7 @@
 ・podcast画面（改）
   
 RaspberryPi Zeroをラジオにする方法(bluetooth編)  
-https://rfriends.github.io/rfriends/tech/01.html  
-    　
+https://rfriends.github.io/rfriends/tech/01.html   　
   
 ### 1.2.6g (2025/09/26)     
   
