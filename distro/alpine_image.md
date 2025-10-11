@@ -119,7 +119,35 @@ wpa_supplicant.confの設定が正しければ、IPアドレスが割り当て�
 > 一度起動すると、wpa_supplicant.conf は　/etc/wpa_supplicantディレクトリに移動し、boot領域からは削除されます。
 > 設定を間違った場合などで再設定する場合は、wpa_supplicant.conf を再度、boot領域にコピーしてください。  
   
-## ５．rfriedns3にアクセスする。  
+## ５．microSDの領域拡張を行う。  
+  
+提供イメージは領域が縮小されているため、microSD全体を使用するように領域を拡張する必要があります。  
+  
+> [!CAUTION]  
+> この操作をしないと大容量のmicroSDを使用していても5GB弱しか認識されません。  
+    
+teratermやrlogin等のSSHクライアントを使ってsshアクセスします。 
+次に、expandを実行します。  
+  
+```  
+$ cd ~/setup
+$ sh expand.sh  
+```  
+  
+> [!CAUTION]  
+> もし、以下のようなメッセージが出る場合、
+> ```
+> umount: can't unmount /home/rpi/smbdir: Resource busy
+> ```
+> 一旦システムを再起動して、その後、すぐにexpand.shを再実行してください。  
+　　
+    
+拡張が成功したら、再起動します。
+```
+$ sudo reboot  
+```  
+
+## ６．rfriedns3にアクセスする。  
   
 Webサーバ（lighttpd）が自動で起動しているので、任意ブラウザでアクセスする。  
   
@@ -144,26 +172,7 @@ rfriends3 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 ![rf](https://github.com/user-attachments/assets/13c3595d-c7a9-44ca-8c44-fedf9214b0a5)  
   
   
-## ６．microSDの領域拡張を行う。  
-  
-提供イメージは領域が縮小されているため、microSD全体を使用するように領域を拡張する必要があります。  
-  
-> [!CAUTION]  
-> この操作をしないと大容量のmicroSDを使用していても5GB弱しか認識されません。  
-    
-teratermやrlogin等のSSHクライアントを使ってsshアクセスします。 
-次に、expandを実行します。  
-  
-```  
-$ cd ~/
-$ sh expand.sh  
-```  
-  
-一旦再起動します。
-```
-$ sudo reboot  
-```  
-  
+ 
 ## ７．rfriends3を最新にする。  
   
 ヘルプ - システム更新でfriends3を最新にする。  
