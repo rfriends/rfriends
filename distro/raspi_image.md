@@ -3,6 +3,9 @@
 あらかじめRaspiOSにrfriends3をインストールし、各種設定を行ったイメージです。  
 microSDに書いて起動するだけでrfriends3が使用できます。  
   
+2025/10/13  
+Bookworm版を公開しました。  
+  
 ## ０．準備   
 
 ### 動作確認機種
@@ -58,13 +61,28 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
   
 ## １．rfriends3のシステムイメージをダウンロードする。   
 
-イメージはraspios(Raspios GNU/Linux 11 bullseye lite)上にrfriends3をインストールし各種設定を行ったものです。
+イメージはraspios上にrfriends3をインストールし各種設定を行ったものです。
 
+### 1.1 Raspios GNU/Linux 11 bullseye lite  
+  
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約1.3GB）  
   
-[rfriends3_latest.img.zip](http://rf3.s331.xrea.com/storage/rfriends3_latest.img.zip)    
+[rfriends3_bullseye_latest.img.zip](http://rf3.s331.xrea.com/storage/rfriends3_bullseye_latest.img.zip)    
 [wpa_supplicant.conf](http://rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
+
+ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。  
+[Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)  
+
+イメージはraspios(Raspios GNU/Linux 11 bullseye lite)上にrfriends3をインストールし各種設定を行ったものです。
+  
+### 1.2 Raspios GNU/Linux 12 bookworm lite  
+  
+下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
+「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約1.3GB）  
+  
+[rfriends3_bookworm_latest.img.zip](http://rf3.s331.xrea.com/storage/rfriends3_bookworm_latest.img.zip)    
+[rfriends.txt](http://rf3.s331.xrea.com/storage/rfriends.txt)  
 
 ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。  
 [Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)  
@@ -88,6 +106,8 @@ Win32DiskImagerを使って、imgファイルをmicroSDに書く。
   
 ![3-2](https://github.com/user-attachments/assets/3c1c37ef-4dff-4a50-abfc-811db0b19bcb)  
   
+### 3.1 Raspios GNU/Linux 11 bullseye lite  
+  
 wpa_supplicant.confに自環境に合わせてssid,passwdを設定し、microSDに追加する。  
   
 ```
@@ -102,8 +122,16 @@ psk="password"
 （参考）パスワードの暗号化
 ```
 　$ wpa_passphrase "SSID" "password"
+```
+    
+### 3.2 Raspios GNU/Linux 12 bookworm lite  
+  
+rfriends.txtに自環境に合わせてssid,passwdを設定し、microSDに追加する。  
+  
+```
+'ssid' 'pass' 'JP'
 ```  
-
+  
 ## ４．RaspberryPiにmicroSDをセットし起動する。  
   
 注意：一度起動すると、wpa_supplicant.conf は　/etc/wpa_supplicantディレクトリに移動し、boot領域からは削除されます。  
@@ -121,7 +149,7 @@ android, iPhoneでは、”Fing(無料版)”というアプリがお勧めで�
 Advanced IP Scanner  
 <http://www.advanced-ip-scanner.com>  
   
-スキャン結果より、RFRIENDS3 のものを探してください。(ラズベリーアイコンが表示されているもの)
+スキャン結果より、RFRIENDS3 または　RF3-BOOKWORM のものを探してください。(ラズベリーアイコンが表示されているもの)
 ```
 RFRIENDS3 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 ```
@@ -184,8 +212,8 @@ ftp/sftp で192.168.1.100 にアクセスすることによりRaspberry Piに接
   
 このイメージはmicroSDへのアクセスを極力減らすため、  
   
-・録音はRAMディスク上で行い、番組終了後microSDにコピーしています。  
-・ログ等を極力取らない、あるいはRAMディスク上に取るようにしています。  
+~~・録音はRAMディスク上で行い、番組終了後microSDにコピーしています。~~  
+~~・ログ等を極力取らない、あるいはRAMディスク上に取るようにしています。~~  
   
 それでも、microSDの寿命は突然やって来ます。録音データはこまめにバックアップすることをお勧めします。自動でファイルサーバ等にムーブする処理を追加するといいかもしれません。  
   
