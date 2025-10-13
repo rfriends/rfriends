@@ -74,8 +74,6 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 
 ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。  
 [Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)  
-
-イメージはraspios(Raspios GNU/Linux 11 bullseye lite)上にrfriends3をインストールし各種設定を行ったものです。
   
 ### 1.2 Raspios GNU/Linux 12 bookworm lite  
   
@@ -85,8 +83,8 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 [rfriends3_bookworm_latest.img.zip](http://rf3.s331.xrea.com/storage/rfriends3_bookworm_latest.img.zip)    
 [rfriends.txt](http://rf3.s331.xrea.com/storage/rfriends.txt)  
 
-ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。  
-[Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)  
+~~ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。~~  
+~~[Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)~~  
   
 ## ２．イメージをmicroSDに書く。
   
