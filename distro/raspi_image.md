@@ -3,8 +3,9 @@
 あらかじめRaspiOSにrfriends3をインストールし、各種設定を行ったイメージです。  
 microSDに書いて起動するだけでrfriends3が使用できます。  
   
-2025/10/13  
-Bookworm版を公開しました。  
+> [!NOTE]  
+> 2025/10/13  
+> Bookworm版を公開しました。    
   
 ## ０．準備   
 
@@ -105,6 +106,9 @@ Win32DiskImagerを使って、imgファイルをmicroSDに書く。
 エクスプローラで確認すると、bootという領域（fat32フォーマット）が認識されているはずです。  
   
 ![3-2](https://github.com/user-attachments/assets/3c1c37ef-4dff-4a50-abfc-811db0b19bcb)  
+
+> [!CAUTION]
+> 追加するフォルダがbullseye と bookwormで違うので注意してください。  
   
 ### 3.1 Raspios GNU/Linux 11 bullseye lite  
   
@@ -126,7 +130,7 @@ psk="password"
     
 ### 3.2 Raspios GNU/Linux 12 bookworm lite  
   
-rfriends.txtに自環境に合わせてssid,passwdを設定し、microSDに追加する。  
+rfriends.txtに自環境に合わせてssid,passwdを設定し、microSDの　**firmwareフォルダ**　に追加する。  
   
 ```
 'ssid' 'pass' 'JP'
