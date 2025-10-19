@@ -69,8 +69,8 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約1.3GB）  
   
-[rfriends3_bullseye_latest.img.zip](http://rf3.s331.xrea.com/storage/rfriends3_bullseye_latest.img.zip)    
-[wpa_supplicant.conf](http://rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
+[rfriends3_bullseye_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bullseye_latest.img.zip)    
+[wpa_supplicant.conf](https://ss1.xrea.com/rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
 
 ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。  
 [Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)  
@@ -80,8 +80,8 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約1.3GB）  
   
-[rfriends3_bookworm_latest.img.zip](http://rf3.s331.xrea.com/storage/rfriends3_bookworm_latest.img.zip)    
-[rfriends.txt](http://rf3.s331.xrea.com/storage/rfriends.txt)  
+[rfriends3_bookworm_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bookworm_latest.img.zip)    
+[rfriends.txt](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends.txt)  
 
 ~~ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。~~  
 ~~[Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)~~  
