@@ -24,10 +24,10 @@ Alpine Linux(3.22.1)のStandard版にrfriends3をインストールしたもの�
 ## ２．ダウンロード  
   
 ・今回作成した仮想イメージをダウンロードしてください。    
-  右クリックしてリンク先を保存です。ブロックされた場合は、「保存」を押してください。  
+  右クリックしてリンク先を保存です。~~ブロックされた場合は、「保存」を押してください。~~  
     
   
-[vmware-rfriends3-alpine.zip](http://rf3.s331.xrea.com/storage/vmware-rfriends3-alpine.zip) （約 530MB）  
+[vmware-rfriends3-alpine.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/vmware-rfriends3-alpine.zip) （約 530MB）  
   
 ## ３．解凍  
   
