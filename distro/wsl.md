@@ -21,7 +21,7 @@
 ### 動作確認済ディストリビューション　(2025/05/02現在)
 
 それぞれのrfriendsのインストール方法は以下を参照してください。  
-[Linux/BSD版rfriends3でラジオ録音](https://rfriends.github.io/rfriends/distro/rfriends3_core.html)
+[Linux版rfriends3でラジオ録音](https://rfriends.github.io/rfriends/distro/rfriends3_core.html)
   
 |最終確認|判定|ディストリビューション|sh|備考|   
 |---|:---:|---|---|---|  
