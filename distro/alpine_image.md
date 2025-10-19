@@ -67,7 +67,7 @@ armhf (現在、公開停止中)
 ~~[rpi-rfriends3-alpinev6.zip](http://rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev6.zip)~~ （約 340MB）  
 または  
 armv7
-[rpi-rfriends3-alpinev7.zip](http://rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev7.zip) （約 701MB）  
+[rpi-rfriends3-alpinev7.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev7.zip) （約 701MB）  
   
 [wpa_supplicant.conf](https://ss1.xrea.com/rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
   
