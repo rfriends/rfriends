@@ -59,11 +59,11 @@ wslのインストールはこれで完了です。
 2) インストールスクリプトを以下よりダウンロードしてください。  
 　右クリックして、名前を付けてリンク先を保存（c:\wsl）してください。    
   
-[http://rf3.s331.xrea.com/storage/insalpine.bat](http://rf3.s331.xrea.com/storage/insalpine.bat)    
+[insalpine.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/insalpine.bat)    
   
 ![clip_5](https://github.com/user-attachments/assets/7e697f04-feae-40a0-9368-e07a049a9075)
   
-「安全でないダウンロードがブロックされました」と表示された場合は、「保存」をクリックしてください。  
+~~「安全でないダウンロードがブロックされました」と表示された場合は、「保存」をクリックしてください。~~  
   
 ![clip_1](https://github.com/user-attachments/assets/9aa9e4cb-5a1f-44d7-b6fb-d2c20df8172c)  
   
