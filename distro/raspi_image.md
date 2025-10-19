@@ -67,7 +67,7 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 ### 1.1 Raspios GNU/Linux 11 bullseye lite  
   
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
-「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約1.3GB）  
+~~「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。~~（約1.3GB）  
   
 [rfriends3_bullseye_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bullseye_latest.img.zip)    
 [wpa_supplicant.conf](https://ss1.xrea.com/rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
@@ -78,7 +78,7 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 ### 1.2 Raspios GNU/Linux 12 bookworm lite  
   
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
-「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約1.3GB）  
+~~「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。~~（約1.3GB）  
   
 [rfriends3_bookworm_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bookworm_latest.img.zip)    
 [rfriends.txt](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends.txt)  
