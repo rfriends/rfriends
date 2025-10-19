@@ -12,24 +12,22 @@
   
 ### 1.2.7-b6 (2025/10/19)     
   
+1.2.6k -> 1.2.7-b6      
+   
 - audeeの検索を修正しました。  
 - audeeの検索を番組と、コンテンツに分けました。  
-  
-- NHKらじるらじるのアクセスに時間がかかっていたのを修正しました。
-  
-- PulseAudio対応（改）  
+   
+- PulseAudio対応  
  管理 - パラメータにpulseaudio追加  
 　alsaドライバがない場合（例：bluetooth）、pulseaudio=1  
 　ヘッドレスの場合、電源ON時にsshで’pulseaudio --kill’が必要
 
-- onair画面（改）
+- onair画面  
   番組選択時に最新に更新するようにした。
   
-- 管理（OS別機能）  
-- podcast画面（改）
-  
-RaspberryPi Zeroをラジオにする方法(bluetooth編)  
-https://rfriends.github.io/rfriends/tech/01.html   　
+- 管理（OS別機能）
+   
+- podcast画面  
   
 ### 1.2.6k (2025/10/19)     
   
@@ -41,30 +39,23 @@ https://rfriends.github.io/rfriends/tech/01.html   　
 SSL証明書切れが原因です。  
 2025/02頃対策しましたが、 timefree 聴取は最近追加した機能のため対策が漏れていました。
     
--   NHKらじるの配信アドレスが変更になっています。  
-安全策として、update時に配信アドレスを更新するようにしました。  
-  
--   NHKらじるの配信アドレスが変更になっています。  
-NHKらじるの録音ができなくなっています。  
-至急更新してください。  
-  
+-   NHKらじるの配信アドレスが変更になって、らじるの録音ができなくなっています。  
 自動対応のつもりでしたが、ミスがありました。  
-次回からは自動で対応すると思います。     
+次回からは自動で対応すると思います。   
+安全策として、update時に配信アドレスを更新するようにしました。  
   
 -   ヘッドレスブラウザのチェック方法に誤りがありました。  
 Termux版にはヘッドレスブラウザはないのにあると判断していたのを修正しました。    
   
 -   ((CUI)timefree検索範囲がtimefree30を契約していないのに30日間になっていました。  
-    
 ８日前以前の番組は検索されるが、録音はできない状態でした。  
 検索範囲を7日前に修正しました。  
 GUIは問題ありません。  
   
 -   ((CUI)update時に以下のようなメッセージが出ていたのを修正しました。  
+  'upfl' is not recognized as an internal or external command,  
+operable program or batch file.   
 なお、update 自体は正常に終了しています。  
-  
-'upfl' is not recognized as an internal or external command,  
-operable program or batch file.    
   
 -   (CUI)タイムフリー - 録音・聴取の放送済み番組一覧を昇順に  
 修正によりエラーになっていたのを修正しました。  
