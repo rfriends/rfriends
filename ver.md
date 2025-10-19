@@ -12,29 +12,27 @@
 - audeeの検索を修正しました。  
 - audeeの検索を場組と、コンテンツに分けました。  
   
-### 1.2.7-b4 (2025/10/16)     
-  
 - NHKらじるらじるのアクセスに時間がかかっていたのを修正しました。
   
-### 1.2.7-b1 (2025/10/13)     
-  
-- 改良項目  
-・PulseAudio対応（改）  
+- PulseAudio対応（改）  
  管理 - パラメータにpulseaudio追加  
 　alsaドライバがない場合（例：bluetooth）、pulseaudio=1  
-　ヘッドレスの場合、電源ON時にsshで’pulseaudio --kill’が必要  
-・onair画面（改）   
-　番組選択時に最新に更新するようにした。  
-    
-・管理（OS別機能）  
-・podcast画面（改）
+　ヘッドレスの場合、電源ON時にsshで’pulseaudio --kill’が必要
+
+- onair画面（改）
+  番組選択時に最新に更新するようにした。
+  
+- 管理（OS別機能）  
+- podcast画面（改）
   
 RaspberryPi Zeroをラジオにする方法(bluetooth編)  
 https://rfriends.github.io/rfriends/tech/01.html   　
   
-### 1.2.6g (2025/09/26)     
+### 1.2.6k (2025/10/19)     
   
-1.2.6 -> 1.2.6g    
+1.2.6 -> 1.2.6k    
+  
+- NHKらじるらじるのアクセスに時間がかかっていたのを修正しました。
   
 -   timefree 聴取のOpenSSL error:1416F086  
 SSL証明書切れが原因です。  
