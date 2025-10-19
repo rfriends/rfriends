@@ -65,7 +65,7 @@ wslのインストールはこれで完了です。
   
 ~~「安全でないダウンロードがブロックされました」と表示された場合は、「保存」をクリックしてください。~~  
   
-![clip_1](https://github.com/user-attachments/assets/9aa9e4cb-5a1f-44d7-b6fb-d2c20df8172c)  
+~~![clip_1](https://github.com/user-attachments/assets/9aa9e4cb-5a1f-44d7-b6fb-d2c20df8172c)~~  
   
 ### 3.2 wslイメージのインストール
   
