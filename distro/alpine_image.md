@@ -69,7 +69,7 @@ armhf (現在、公開停止中)
 armv7
 [rpi-rfriends3-alpinev7.zip](http://rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev7.zip) （約 701MB）  
   
-[wpa_supplicant.conf](http://rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
+[wpa_supplicant.conf](https://ss1.xrea.com/rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
   
 ## ２．イメージをmicroSDに書く。
   
