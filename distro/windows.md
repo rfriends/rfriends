@@ -5,6 +5,7 @@
 第8版　2024/12/15　Github  
 第9版　2025/01/26　wmic  
 第10版　2025/01/26　renew  
+第11版　2025/10/20　renew  
   
 ## １．環境  
   
@@ -29,7 +30,7 @@ Windows11 24h2用 wmicのインストール方法について
   
 ### 2.1 ダウンロード  
   
-[rfriends3_windows.bat](https://raw.githubusercontent.com/rfriends/rfriends/main/storage/rfriends3_windows.bat)  
+[rfriends3_windows.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows.bat)  
   
 上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、rfriends3をインストールしたい場所に保存します。  
   
