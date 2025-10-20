@@ -1,29 +1,28 @@
 @echo off
 setlocal enabledelayedexpansion
 rem -----------------------------------------
-rem rfriends3 ç°¡æ˜“ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ãƒ¼
+rem rfriends3 ŠÈˆÕƒCƒ“ƒXƒg[ƒ‰[
 rem
 rem 2023/06/19 by mapi
 rem 2025/09/16 by mapi
-rem 2025/10/20 by mapi
 rem -----------------------------------------
-echo rfriends3ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ãƒ¼ for windows Ver. 1.50
+echo rfriends3ƒCƒ“ƒXƒg[ƒ‰[ for windows Ver. 1.50
 echo.
-echo rfriends3ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—è§£å‡ã—ã¾ã™ã€‚
-echo ã‚¦ã‚§ãƒ–ã‚µãƒ¼ãƒã‚’èµ·å‹•ä¸­ã®å ´åˆã¯ã€å¿…ãšçµ‚äº†ã•ã›ã¦ãã ã•ã„ã€‚
+echo rfriends3‚ğƒ_ƒEƒ“ƒ[ƒh‚µ‰ğ“€‚µ‚Ü‚·B
+echo ƒEƒFƒuƒT[ƒo‚ğ‹N“®’†‚Ìê‡‚ÍA•K‚¸I—¹‚³‚¹‚Ä‚­‚¾‚³‚¢B
 echo.
 
-set /p ans="å‡¦ç†ã‚’é–‹å§‹ã—ã¾ã™ã‹ã€€(y/n) ?"
+set /p ans="ˆ—‚ğŠJn‚µ‚Ü‚·‚©@(y/n) ?"
 if /i "%ans%"=="y" goto ex1
-echo å‡¦ç†ã‚’ä¸­æ­¢ã—ã¾ã™ã€‚
+echo ˆ—‚ğ’†~‚µ‚Ü‚·B
 goto stp
 :ex1
 rem -----------------------------------------
-rem é–‹å§‹
+rem ŠJn
 rem
 echo.
 
-set dir1=https://ss1.xrea.com/rf3.s331.xrea.com/storage/
+dir1=https://ss1.xrea.com/rf3.s331.xrea.com/storage/
 set dir2=http://rfbuddy.s296.xrea.com/storage/
 set dir3=http://ceres.s501.xrea.com/storage/
 set dir4=http://rfriends.s1009.xrea.com/storage/
@@ -32,7 +31,7 @@ set file=rfriends3_latest_full_x64.zip
 
 del %file% /Q > nul 2>&1
 rem -----------------------------------------
-rem ãƒ•ã‚¡ã‚¤ãƒ«ã®å­˜åœ¨ãƒã‚§ãƒƒã‚¯
+rem ƒtƒ@ƒCƒ‹‚Ì‘¶İƒ`ƒFƒbƒN
 rem
 set url=%dir1%%file%
 for /f %%i in ('curl -k -s -I -o nul -w "%%{http_code}" %url%') do set http_code=%%i
@@ -53,12 +52,12 @@ if %http_code% equ 200 goto ok
 echo not exist (%http_code%) %url%
 
 :skp
-echo ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã«å¤±æ•—ã—ã¾ã—ãŸã€‚
+echo ƒtƒ@ƒCƒ‹‚Ìƒ_ƒEƒ“ƒ[ƒh‚É¸”s‚µ‚Ü‚µ‚½B
 goto stp
 
 :ok
 rem -----------------------------------------
-rem ãƒ•ã‚¡ã‚¤ãƒ«ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰
+rem ƒtƒ@ƒCƒ‹ƒ_ƒEƒ“ƒ[ƒh
 rem
 echo exist %url%
 echo.
@@ -68,14 +67,14 @@ echo.
 echo downloaded
 echo.
 rem -----------------------------------------
-rem ãƒ•ã‚¡ã‚¤ãƒ«ã®å±•é–‹
+rem ƒtƒ@ƒCƒ‹‚Ì“WŠJ
 rem
 tar -xf %file%
 echo unzipped
 echo.
 del %file% /Q
 rem -----------------------------------------
-rem rf3serverã®ã‚·ãƒ§ãƒ¼ãƒˆã‚«ãƒƒãƒˆä½œæˆ
+rem rf3server‚ÌƒVƒ‡[ƒgƒJƒbƒgì¬
 rem
 cd rfriends3
 cscript rf3server.vbs
@@ -87,9 +86,8 @@ rem copy /Y rfriends3.url "%USERPROFILE%\DESKTOP\"
 
 :stp
 rem -----------------------------------------
-rem çµ‚äº†
+rem I—¹
 rem
 pause
-
 
 
