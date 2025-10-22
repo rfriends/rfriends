@@ -30,7 +30,8 @@
 |2025/05/02|〇|Ubuntu-20.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-22.04|ubuntu|| 
 |2025/05/02|〇|Ubuntu-24.04|ubuntu|| 
-|2025/05/02|〇|Debian &nbsp;&nbsp;&nbsp;&nbsp;(12)|debian||  
+|~~2025/05/02~~|~~〇~~|~~Debian &nbsp;&nbsp;&nbsp;&nbsp;(12)~~|~~debian~~||  
+|||Debian &nbsp;&nbsp;&nbsp;&nbsp;(13)|debian||  
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|FedoraLinux-42|stream||  
 |2025/05/02|✕|OracleLinux_7_9||yum<br>注１）|  
