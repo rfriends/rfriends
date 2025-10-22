@@ -18,7 +18,7 @@ Linux/BSD版は、ディストリビューションにより以下の４つに�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第28版　2025/08/16  
+第29版　2025/10/23  
   
 ## １．ディストリビューション  
 
@@ -97,9 +97,12 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 
 # zypper install vim
 # zypper install git
+# zypper install system-group-wheel
 
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名 
+# useradd -m -G wheel ユーザ名
+# passwd ユーザ名
+ユーザ登録済の場合は、
+# usermod -G wheel ユーザ名
 
 # visudo
 %wheel ALL=(ALL:ALL) ALL
