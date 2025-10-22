@@ -5,7 +5,7 @@
 ![1](https://github.com/user-attachments/assets/429c1661-fd9c-4a80-87cb-cb3fb07661a4)   
   
 初版：2024/11/15  
-改版：2025/06/10  
+改版：2025/10/23
 
 > [!NOTE]
 > 以下、混乱しがちなので    
@@ -18,7 +18,7 @@
 もし、すでにwsl,linuxのインストールが済んでいる方は、４．のrfriendsのインストールに飛んでください。 
   
 
-### 動作確認済ディストリビューション　(2025/05/02現在)
+### 動作確認済ディストリビューション　(2025/10/23現在)
 
 それぞれのrfriendsのインストール方法は以下を参照してください。  
 [Linux版rfriends3でラジオ録音](https://rfriends.github.io/rfriends/distro/rfriends3_core.html)
@@ -26,7 +26,7 @@
 |最終確認|判定|ディストリビューション|sh|備考|   
 |---|:---:|---|---|---|  
 |2025/05/02|〇|Ubuntu &nbsp;&nbsp;&nbsp;&nbsp;(24.04)|ubuntu||  
-|2025/05/02|〇|Ubuntu-18.04|ubuntu||  
+|~~2025/05/02|〇|Ubuntu-18.04|ubuntu~~||  
 |2025/05/02|〇|Ubuntu-20.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-22.04|ubuntu|| 
 |2025/05/02|〇|Ubuntu-24.04|ubuntu|| 
@@ -34,15 +34,20 @@
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|FedoraLinux-42|stream||  
 |2025/05/02|✕|OracleLinux_7_9||yum<br>注１）|  
-|2025/05/02|〇|OracleLinux_8_7|stream|注１）|  
-|2025/05/02|〇|OracleLinux_9_1|stream|注１）|  
+|~~2025/05/02|〇|OracleLinux_8_7|stream|注１）~~|  
+|||OracleLinux_8_10||  
+|~~2025/05/02|〇|OracleLinux_9_1|stream|注１）~~|  
+|||OracleLinux_9_5|stream||  
 |2025/05/02|〇|AlmaLinux-8|stream||  
 |2025/05/02|〇|AlmaLinux-9|stream||  
+|||AlmaLinux-10|stream||  
 |2025/05/02|〇|AlmaLinux-Kitten-10|stream||  
-|2025/05/03|✕|SUSE-Linux-Enterprise-15-SP5|suse|lighttpd<br>not found|  
+|~~2025/05/03|✕|SUSE-Linux-Enterprise-15-SP5|suse|lighttpd<br>not found~~|  
 |2025/05/03|✕|SUSE-Linux-Enterprise-15-SP6|suse|lighttpd<br>not found|  
+|||SUSE-Linux-Enterprise-15-SP7|suse||  
 |2025/05/02|〇|openSUSE-Tumbleweed|suse||  
 |2025/05/02|〇|openSUSE-Leap-15.6|suse||   
+|||openSUSE-Leap-16.0|suse||  
 |2025/05/02|〇|archlinux|arch||  
 
 注１）以下の操作が必要です。  
