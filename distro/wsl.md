@@ -34,7 +34,7 @@
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|FedoraLinux-42|stream||  
 |2025/05/02|✕|OracleLinux_7_9||yum<br>注１）|  
-|~~2025/05/02~~|~~〇~~|~~OracleLinux_8_7~~|~~stream|~~注１）~~|  
+|~~2025/05/02~~|~~〇~~|~~OracleLinux_8_7~~|~~stream~~|~~注１）~~|  
 |||OracleLinux_8_10||  
 |~~2025/05/02~~|~~〇~~|~~OracleLinux_9_1~~|~~stream~~|~~注１）~~|  
 |||OracleLinux_9_5|stream||  
