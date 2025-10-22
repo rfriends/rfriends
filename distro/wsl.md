@@ -18,8 +18,11 @@
 もし、すでにwsl,linuxのインストールが済んでいる方は、４．のrfriendsのインストールに飛んでください。 
   
 
-### 動作確認済ディストリビューション　(2025/10/23現在)
-
+### 動作確認済ディストリビューション　(2025/10/23現在)  
+  
+ディストリビューションはアクセスしたときにより異なります。  
+取り消し線があるものは提供されなくなったものです。  
+  
 それぞれのrfriendsのインストール方法は以下を参照してください。  
 [Linux版rfriends3でラジオ録音](https://rfriends.github.io/rfriends/distro/rfriends3_core.html)
   
@@ -31,7 +34,7 @@
 |2025/05/02|〇|Ubuntu-22.04|ubuntu|| 
 |2025/05/02|〇|Ubuntu-24.04|ubuntu|| 
 |~~2025/05/02~~|~~〇~~|~~Debian &nbsp;&nbsp;&nbsp;&nbsp;(12)~~|~~debian~~||  
-|||Debian &nbsp;&nbsp;&nbsp;&nbsp;(13)|debian||  
+|2025/10/23|〇|Debian &nbsp;&nbsp;&nbsp;&nbsp;(13.1)|debian|install_debian_apache.sh|  
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|FedoraLinux-42|stream||  
 |2025/05/02|✕|OracleLinux_7_9||yum<br>注１）|  
@@ -144,6 +147,8 @@ PS> wsl -d ubuntu
 
 $ cd         <--- これを忘れないように！
 
+$ sudo apt update
+$ sudo apt upgrade -y
 $ sudo apt install -y git  (gitがすでにインストールされている場合は不要)
 $ rm -rf rfriends3_core
 $ git clone https://github.com/rfriends/rfriends3_core.git  
@@ -159,7 +164,10 @@ ip address is lo UNKNOWN 127.0.0.1/8 eth0 UP 172.19.148.3/20 .
 visit rfriends at http://xxx.xxx.xxx.xxx:8000  
 finished  
 ```
-finishedと表示されてインストールは完了です。表示されたIPアドレスをメモしてください。  
+finishedと表示されてインストールは完了です。  
+いくつかのエラーが表示されますが、インストールの共通化によるものです。  
+  
+表示されたIPアドレスをメモしてください。  
 または、以下のコマンドでも確認できます。 
 ```
 $ hostname -I
