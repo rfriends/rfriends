@@ -26,7 +26,7 @@
 |最終確認|判定|ディストリビューション|sh|備考|   
 |---|:---:|---|---|---|  
 |2025/05/02|〇|Ubuntu &nbsp;&nbsp;&nbsp;&nbsp;(24.04)|ubuntu||  
-|~~2025/05/02|〇|Ubuntu-18.04|ubuntu~~||  
+|~~2025/05/02~~|~~〇~~|~~Ubuntu-18.04~~|~~ubuntu~~||  
 |2025/05/02|〇|Ubuntu-20.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-22.04|ubuntu|| 
 |2025/05/02|〇|Ubuntu-24.04|ubuntu|| 
@@ -34,15 +34,15 @@
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|FedoraLinux-42|stream||  
 |2025/05/02|✕|OracleLinux_7_9||yum<br>注１）|  
-|~~2025/05/02|〇|OracleLinux_8_7|stream|注１）~~|  
+|~~2025/05/02~~|~~〇~~|~~OracleLinux_8_7~~|~~stream|~~注１）~~|  
 |||OracleLinux_8_10||  
-|~~2025/05/02|〇|OracleLinux_9_1|stream|注１）~~|  
+|~~2025/05/02~~|~~〇~~|~~OracleLinux_9_1~~|~~stream~~|~~注１）~~|  
 |||OracleLinux_9_5|stream||  
 |2025/05/02|〇|AlmaLinux-8|stream||  
 |2025/05/02|〇|AlmaLinux-9|stream||  
 |||AlmaLinux-10|stream||  
 |2025/05/02|〇|AlmaLinux-Kitten-10|stream||  
-|~~2025/05/03|✕|SUSE-Linux-Enterprise-15-SP5|suse|lighttpd<br>not found~~|  
+|~~2025/05/03~~|~~✕~~|~~SUSE-Linux-Enterprise-15-SP5~~|~~suse~~|~~lighttpd<br>not found~~|  
 |2025/05/03|✕|SUSE-Linux-Enterprise-15-SP6|suse|lighttpd<br>not found|  
 |||SUSE-Linux-Enterprise-15-SP7|suse||  
 |2025/05/02|〇|openSUSE-Tumbleweed|suse||  
