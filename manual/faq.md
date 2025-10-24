@@ -6,7 +6,7 @@
 「アップデートファイルの内容が正しくありません。」  
 と表示されます。  
   
-Linux系の場合、p7zip-fullをインストールしてください。    
+Linux系の場合、p7zip-fullまたはp7zip-pluginsをインストールしてください。    
 Debianなら  
 ```
 $ sudo apt install p7zip-full   
