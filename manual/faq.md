@@ -11,6 +11,10 @@ Debianなら
 ```
 $ sudo apt install p7zip-full   
 ```
+stream系なら  
+```
+$ sudo dnf p7zip-plugins   
+```  
   
 ### 057 Apple podcastでは、ニッポン放送の分で最新回しか聞けないものがあるのですが。
   
