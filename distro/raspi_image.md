@@ -97,14 +97,9 @@ Win32DiskImagerを使って、imgファイルをmicroSDに書く。
   
 ![3-1](https://github.com/user-attachments/assets/4870e36e-de56-42a2-bad3-e62ec20d08cd)  
    
-エクスプローラで確認すると、bootという領域（fat32フォーマット）が認識されているはずです。  
+エクスプローラで確認すると、/bootまたは/boot/firmwareという領域（fat32フォーマット）が認識されているはずです。  
   
 ![3-2](https://github.com/user-attachments/assets/3c1c37ef-4dff-4a50-abfc-811db0b19bcb)  
-
-> [!CAUTION]
-> 追加するフォルダがbullseye と bookwormで違うので注意してください。  
-  
-### 3.1 Raspios GNU/Linux 11 bullseye lite  
   
 wpa_supplicant.confに自環境に合わせてssid,passwdを設定し、microSDに追加する。  
   
@@ -120,14 +115,6 @@ psk="password"
 （参考）パスワードの暗号化
 ```
 　$ wpa_passphrase "SSID" "password"
-```
-    
-### 3.2 Raspios GNU/Linux 12 bookworm lite  
-  
-rfriends.txtに自環境に合わせてssid,passwdを設定し、microSDの　**firmwareフォルダ**　に追加する。  
-  
-```
-'ssid' 'pass' 'JP'
 ```  
   
 ## ４．RaspberryPiにmicroSDをセットし起動する。  
@@ -137,7 +124,7 @@ rfriends.txtに自環境に合わせてssid,passwdを設定し、microSDの　**
   
 ＃# ５．rfriedns3にアクセスする。  
   
-Webサーバ（lighttpd）が自動で起動しているので、任意ブラウザでアクセスする。  
+Webサーバ（lighttpd/apache）が自動で起動しているので、任意ブラウザでアクセスする。  
 http://rfriends3:8000  
   
 又はPC等を使用してIPアドレスを調べてアクセスする。  
@@ -147,7 +134,7 @@ android, iPhoneでは、”Fing(無料版)”というアプリがお勧めで�
 Advanced IP Scanner  
 <http://www.advanced-ip-scanner.com>  
   
-スキャン結果より、RFRIENDS3 または　RF3-BOOKWORM のものを探してください。(ラズベリーアイコンが表示されているもの)
+スキャン結果より、RFRIENDS3 / RF3-BOOKWORM / RF3-TRIXE のものを探してください。(ラズベリーアイコンが表示されているもの)
 ```
 RFRIENDS3 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 ```
