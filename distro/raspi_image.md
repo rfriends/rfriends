@@ -4,7 +4,8 @@
 microSDに書いて起動するだけでrfriends3が使用できます。  
   
 > [!NOTE]  
-> 2025/10/13  
+> 2025/10/26  
+> Trixie版を公開しました。
 > Bookworm版を公開しました。    
   
 ## ０．準備   
@@ -62,30 +63,25 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
   
 ## １．rfriends3のシステムイメージをダウンロードする。   
 
-イメージはraspios上にrfriends3をインストールし各種設定を行ったものです。
-
-### 1.1 Raspios GNU/Linux 11 bullseye lite  
+### 1.1 Wifi設定ファイル（共通）
   
-下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
-~~「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。~~（約1.3GB）  
-  
-[rfriends3_bullseye_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bullseye_latest.img.zip)    
+下記のリンクを右クリックして「名前をつけてリンク先を保存する」。    
 [wpa_supplicant.conf](https://ss1.xrea.com/rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
-
-ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。  
-[Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)  
   
-### 1.2 Raspios GNU/Linux 12 bookworm lite  
+### 1.2 Raspios GNU/Linux  
   
-下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
-~~「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。~~（約1.3GB）  
+イメージはraspios上にrfriends3をインストールし各種設定を行ったものです。  
+リンクを右クリックして「名前をつけてリンク先を保存する」。    
   
+#### - Raspios GNU/Linux 11 bullseye lite  
+[rfriends3_bullseye_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bullseye_latest.img.zip)    
+  
+#### - Raspios GNU/Linux 12 bookworm lite    
 [rfriends3_bookworm_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bookworm_latest.img.zip)    
-[rfriends.txt](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends.txt)  
-
-~~ブロック等でダウンロードできない方は、以下のGoogleDriveよりダウンロードして下さい。~~  
-~~[Google Drive](https://drive.google.com/drive/folders/1HF2K38ECkErAscLTCQAhgHwTUo2pSjv4)~~  
   
+#### - Raspios GNU/Linux 13 trixie lite    
+[rfriends3_trixie_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_trixie_latest.img.zip)    
+
 ## ２．イメージをmicroSDに書く。
   
 zipファイルを解凍しimgファイルを抽出する。（約8GB）  
