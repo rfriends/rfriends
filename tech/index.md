@@ -22,5 +22,6 @@
 |16|[xserver VPSにrfriends3をインストールする](16.md)||
 |17|[radikoの地域判定について](17.md)|重要|
 |18|[rfriendsのALSA設定](18.md)||
+|19|[RaspberryPi Zeroをラジオにする方法](19.md)|USB-DAC|
 
 
