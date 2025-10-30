@@ -1,6 +1,23 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。   
-    
+  
+### 059 Raspberry PiですがWifiが途切れます。  
+  
+Power Managementがonの場合、offにしてみてください。     
+  
+```
+iwconfig
+  
+wlan0     IEEE 802.11  ESSID:"********"  
+Power Management:on  
+```
+Power Management:onの場合、
+```  
+sudo iwconfig wlan0 power off  
+または  
+sudo iw dev wlan0 set power_save off  
+```
+  
 ### 058 アップデートできません。  
   
 「アップデートファイルの内容が正しくありません。」  
