@@ -6,16 +6,16 @@
 Power Managementがonの場合、offにしてみてください。     
   
 ```
-iwconfig
+$ iwconfig
   
 wlan0     IEEE 802.11  ESSID:"********"  
 Power Management:on  
 ```
 Power Management:onの場合、
 ```  
-sudo iwconfig wlan0 power off  
+$ sudo iwconfig wlan0 power off  
 または  
-sudo iw dev wlan0 set power_save off  
+$ sudo iw dev wlan0 set power_save off  
 ```
   
 ### 058 アップデートできません。  
