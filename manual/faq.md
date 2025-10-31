@@ -1,5 +1,21 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。   
+    
+### 060 Raspberry PiでOS別管理機能でこの機能は使用できませんと表示されます。  
+  
+この機能はraspberry pi (raspios) 専用です。  
+この機能は使用できません。  
+と表示されます。  
+  
+以下を確認してください。  
+```  
+$ cat /proc/device-tree/model  
+Raspberry Pi XXXX .....  
+  
+$ command -v raspi-config  
+/usr/bin/raspi-config  
+```   
+機種がRaspberry Piでraspi-configがあることを条件としています。  
   
 ### 059 Raspberry PiですがWifiが途切れます。  
   
