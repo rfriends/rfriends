@@ -1,5 +1,7 @@
 ## rfriends3のアップデート情報  
   
+![rfriendsupdate](https://github.com/user-attachments/assets/47233834-5352-4b09-9308-f88842119cb5)
+  
 障害報告をお願いします。  
 （使用機種、プレミアム会員種別、バージョン、バグ内容）     
   
