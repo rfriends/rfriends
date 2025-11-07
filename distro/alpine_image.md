@@ -17,18 +17,18 @@ microSDに書いてRaspberryPiを起動するだけでrfriends3が使用でき�
   
 https://alpinelinux.org/downloads/   
   
-1) armhf
+1) armhf (1 / zero)
 
 [alpine-rpi-3.22.2-armhf.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/armv7/alpine-rpi-3.22.2-armhf.tar.gz)  
    
-・Raspberry Pi Zero W  
+・Raspberry Pi Zero W で確認しました。  
   
-2) armv7
+2) armv7 (2 / zero2 / 3) 
   
 [alpine-rpi-3.22.2-armv7.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/armv7/alpine-rpi-3.22.2-armv7.tar.gz)  
    
 ・Raspberry Pi 3 Model B  
-・Raspberry Pi Zero 2 W  
+・Raspberry Pi Zero 2 W  で確認しました。  
   
 ### Raspberry pi 一式  
   
