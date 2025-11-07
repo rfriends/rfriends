@@ -4,15 +4,16 @@
 microSDに書いてRaspberryPiを起動するだけでrfriends3が使用できます。  
   
 初版 2025/08/30  
-改版 2025/10/11
+改版 2025/11/07
   
 ## ０．準備   
 
 ### 動作確認機種
   
 > [!CAUTION]  
-> armhf版はzero専用で、zero2では動作しません。
-> （raspiosは兼用できるのですが、alpineではできません）
+> v6(armhf)版は1/zero専用で、zero2では動作しません。  
+> （raspiosは兼用できるのですが、alpineではできません）  
+> v7(armv7)版はzero2 以上用で、1/zeroでは動作しません。  
   
 https://alpinelinux.org/downloads/   
   
@@ -63,8 +64,8 @@ LinuxPC環境では標準ツールが使えます。
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約500MB）  
 
-armhf (現在、公開停止中)
-~~[rpi-rfriends3-alpinev6.zip](http://rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev6.zip)~~ （約 340MB）  
+armhf
+[rpi-rfriends3-alpinev6.zip](http://rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev6.zip) （約 340MB）  
 または  
 armv7
 [rpi-rfriends3-alpinev7.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev7.zip) （約 701MB）  
