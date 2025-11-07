@@ -65,7 +65,7 @@ LinuxPC環境では標準ツールが使えます。
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約500MB）  
 
 armhf
-[rpi-rfriends3-alpinev6.zip](http://rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev6.zip) （約 340MB）  
+[rpi-rfriends3-alpinev6.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev6.zip) （約 340MB）  
 または  
 armv7
 [rpi-rfriends3-alpinev7.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev7.zip) （約 701MB）  
