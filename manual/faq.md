@@ -1,6 +1,15 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。   
-    
+  
+### 061 聴取（サーバ）で音量調節ができません。  
+pulseaudioモードになっていませんか？
+  
+その場合、
+```  
+$ sudo vi /etc/pulse/client.conf
+autospawn = yes  
+```  
+  
 ### 060 Raspberry PiでOS別管理機能でこの機能は使用できませんと表示されます。  
   
 この機能はraspberry pi (raspios) 専用です。  
