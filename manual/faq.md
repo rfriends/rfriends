@@ -42,7 +42,14 @@ Power Management:onの場合、
 $ sudo iwconfig wlan0 power off  
 または  
 $ sudo iw dev wlan0 set power_save off  
-```
+```  
+  
+あとよくあるのが、WiFiルータのパケット詰まりです。  
+WiFiルータを再起動してみてください。  
+  
+これで途切れるのが解消しても再発するようでしたら、  
+WiFiルータの設定を見直したほうが良いと思います。  
+古い機種の場合、買い替えも検討してください。  
   
 ### 058 アップデートできません。  
   
