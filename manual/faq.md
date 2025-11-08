@@ -4,10 +4,11 @@
 ### 061 聴取（サーバ）で音量調節ができません。  
 pulseaudioモードになっていませんか？
   
-その場合、
+pulseaudioを無効にする  
 ```  
-$ sudo vi /etc/pulse/client.conf
-autospawn = yes  
+$ systemctl --user mask pulseaudio.socket  
+$ systemctl --user mask pulseaudio.service  
+$ reboot  
 ```  
   
 ### 060 Raspberry PiでOS別管理機能でこの機能は使用できませんと表示されます。  
