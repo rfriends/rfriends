@@ -9,7 +9,8 @@
 ![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
   
  * [お知らせ](https://rfriends.github.io/rfriends/info.md)  
- * [rfriendsに関するコメントはこちらに](comment.md)  
+ * [rfriendsに関するコメントはこちらに](comment.md)
+ * [rfriendsを応援してください](donation.md)   
     
 ### １．rfriends3関連のリンク一覧    
  
@@ -22,8 +23,6 @@
 |5|[掲示板](https://ss1.xrea.com/rf3.s331.xrea.com/wforum/wforum.cgi)|質問、要望、感想など。入室パスワードは、"rfriends"|
 |6|[ブログ](https://rfriends.hatenablog.com/)|hatenaブログでは詳細な技術情報|  
 |7|[レスキュー](https://rfriends.github.io/rfriends/manual/rescue.html)|rfriends3システムの起動不可等からの回復|
-
- ・[rfriendsを応援してください](donation.md)  
   
 ### ２．rfriends3のインストール  
   
