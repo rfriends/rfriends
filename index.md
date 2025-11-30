@@ -1,6 +1,7 @@
 ##  ラジオ録音アプリ「rfriends3」へようこそ  
     
-* rfriends3は、ラジコ、らじるらじる、ポッドキャストを録音できます。  
+* rfriends3は、ラジコ、らじるらじる、ポッドキャストを録音できます。
+* [お知らせ](https://rfriends.github.io/rfriends/info.html)　
 * rfriends3は、操作がWEBサーバ（Lighttpd）経由で出来、とても簡単になっています。
 * rfriends3は、PC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)が動作するものであれば、操作する端末はなんでも可能です。
 * rfriends3は、sambaによるファイル共有、従来のsshによるcuiアクセスもできます。
