@@ -8,7 +8,7 @@
      
 ![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
   
- * [お知らせ](https://rfriends.github.io/rfriends/info.md)  
+ * [お知らせ](info.md)  
  * [rfriendsに関するコメントはこちらに](comment.md)
  * [rfriendsを応援してください](donation.md)   
     
