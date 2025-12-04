@@ -13,7 +13,7 @@ cui,gui両モードをサポートしました。
 <img width="600" height="564" alt="ish" src="https://github.com/user-attachments/assets/c09423b4-361a-4497-bc1c-ba4b1fa68b13" />  
   
 初 版　2025/07/18   
-十 版　2025/08/03  
+十一版　2025/12/04
   
 ## １．iSH Shell  
   
@@ -119,7 +119,12 @@ psコマンドを入力してください。
 /usr/sbin/atd
 crond
 cat /dev/location
-```  
+```
+    
+> [!CAUTION]
+> 表示されない場合は、以下を実行してください。   
+> # rc-update add atd  
+> # rc-update add local   
   
 これでインストールは完了です。  
     
