@@ -4,8 +4,8 @@
 microSDに書いて起動するだけでrfriends3が使用できます。  
   
 > [!NOTE]  
-> 2025/10/26  
-> Trixie版を公開しました。
+> 2025/12/04 
+> ~~Trixie版を公開しました。~~
 > Bookworm版を公開しました。    
   
 ## ０．準備   
@@ -73,14 +73,14 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 イメージはraspios上にrfriends3をインストールし各種設定を行ったものです。  
 リンクを右クリックして「名前をつけてリンク先を保存する」。    
   
-#### - Raspios GNU/Linux 11 bullseye lite  
-[rfriends3_bullseye_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bullseye_latest.img.zip)    
+#### - Raspios GNU/Linux 11 bullseye lite (公開停止中)  
+~~[rfriends3_bullseye_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bullseye_latest.img.zip)~~    
   
 #### - Raspios GNU/Linux 12 bookworm lite    
 [rfriends3_bookworm_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bookworm_latest.img.zip)    
   
-#### - Raspios GNU/Linux 13 trixie lite    
-[rfriends3_trixie_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_trixie_latest.img.zip)    
+#### - Raspios GNU/Linux 13 trixie lite (公開停止中)     
+~~[rfriends3_trixie_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_trixie_latest.img.zip)~~    
 
 ## ２．イメージをmicroSDに書く。
   
