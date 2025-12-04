@@ -123,8 +123,8 @@ cat /dev/location
     
 > [!CAUTION]
 > 表示されない場合は、以下を実行してください。   
-> # rc-update add atd  
-> # rc-update add local   
+> rc-update add atd  
+> rc-update add local   
   
 これでインストールは完了です。  
     
