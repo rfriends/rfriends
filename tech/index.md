@@ -1,6 +1,6 @@
 以下はrfriends3をもっとよく使うためのTIPSです。
 
-2025/12/06 更新
+2025/12/07 更新
 
 |NO|タイトル|備考|
 |---:|---|---|
@@ -22,6 +22,6 @@
 |16|[xserver VPSにrfriends3をインストールする](16.md)||
 |17|[radikoの地域判定について](17.md)|重要|
 |18|[rfriendsのALSA設定](18.md)||
-|19|[RaspberryPi Zeroをラジオにする方法](19.md)|USB-DAC|
+|19|[RaspberryPi ~~Zero~~をラジオにする方法](19.md)|USB-DAC|
 
 
