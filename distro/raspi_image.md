@@ -5,9 +5,9 @@ microSDに書いて起動するだけでrfriends3が使用できます。
   
 > [!NOTE]  
 > 2025/12/14  
-> ~~Trixie版を公開しました。~~
-> ~~Bookworm版を公開しました。~~
-> Bullseye版を公開しました。     
+> ~~Trixie版を公開しました。~~  
+> ~~Bookworm版を公開しました。~~  
+> Bullseye版を公開しました。       
   
 ## ０．準備   
 
