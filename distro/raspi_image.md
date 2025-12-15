@@ -74,7 +74,7 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 イメージはraspios上にrfriends3をインストールし各種設定を行ったものです。  
 リンクを右クリックして「名前をつけてリンク先を保存する」。    
   
-#### - Raspios GNU/Linux 11 bullseye lite (公開停止中)  
+#### - Raspios GNU/Linux 11 bullseye lite  
 [rfriends3_bullseye_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bullseye_latest.img.zip)    
   
 #### - Raspios GNU/Linux 12 bookworm lite    
