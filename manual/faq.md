@@ -1,15 +1,15 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。   
   
-### 061 聴取（サーバ）で音量調節ができません。  
-pulseaudioモードになっていませんか？
+### 061 volumio+rfriendsで聴取（サーバ）で音量調節ができません。  
+まず、volumioのwebradio再生で音量調節ができるか確認してください。  
   
-pulseaudioを無効にする  
-```  
-$ systemctl --user mask pulseaudio.socket  
-$ systemctl --user mask pulseaudio.service  
-$ reboot  
-```  
+できない場合、  
+音量オプション - ミキサータイプをソフトウエアに設定してください。    
+その場合、rfriendsは  
+設定 - パラメータ - 編集  
+audio_type 0  
+に設定してください。  
   
 ### 060 Raspberry PiでOS別管理機能でこの機能は使用できませんと表示されます。  
   
