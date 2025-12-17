@@ -18,7 +18,7 @@
    
 - volumioにrfriends3をインストールして使用しているケースで、  
 dacに電子ボリューム機能がない機種(例：FX-audio D302J+ SA9123L)の場合、
-rfriends再生で音が出なくなっていました。
+rfriends再生で音が出なくなっていました。  
 追記）moode playerではうまくいかないようです。  
 
 update後  
