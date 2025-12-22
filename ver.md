@@ -17,8 +17,9 @@
 1．3.1-a01 -> 1.3.1-a02
    
 - trans機能にfolder.jpg作成処理を追加（volumio対策）
-- Windows版でWMIがインストールされていない場合、Get-WmiObject(PowerSHell)を使用
+- Windows版でWMIがインストールされていない場合、Get-WmiObject(PowerSHell)を使用  
 　ただし、遅いため、WMIのインストール推奨
+- Windows版を新規インストールすると、php8.5,ffmpeg8.0.1に
   
 ### 1.3.1-a01 (2025/12/17)         
     
