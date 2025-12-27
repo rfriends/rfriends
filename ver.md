@@ -17,12 +17,7 @@
 1.3.1-a02 -> 1.3.1-a06
    
 - メニュー表示時にエラーメッセージが出るのを修正。
-- trans機能実行時、podcastのfolder.jpg作成のエラー修正。  
-  
-### 1.3.1-a02 (2025/12/22)         
-    
-1.3.1-a01 -> 1.3.1-a02
-   
+- trans機能実行時、podcastのfolder.jpg作成のエラー修正。     
 - trans機能にfolder.jpg作成処理を追加（volumio対策）
 - Windows版でWMIがインストールされていない場合、Get-WmiObject(PowerSHell)を使用  
 　ただし、遅いため、WMIのインストール推奨
