@@ -23,6 +23,6 @@
 |17|[radikoの地域判定について](17.md)|重要|
 |18|[rfriendsのALSA設定](18.md)||
 |19|[RaspberryPi ~~Zero~~をラジオにする方法](19.md)|USB-DAC|
-|18|[radikoの遅延パラメータの調整方法(20.md)||
+|18|[radikoの遅延パラメータの調整方法](20.md)||
 
 
