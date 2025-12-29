@@ -14,19 +14,14 @@
 
 ### 1.3.1-a06 (2025/12/27)         
     
-1.3.1-a02 -> 1.3.1-a06
+1.3.0 -> 1.3.1-a06
    
 - メニュー表示時にエラーメッセージが出るのを修正。
 - trans機能実行時、podcastのfolder.jpg作成のエラー修正。     
 - trans機能にfolder.jpg作成処理を追加（volumio対策）
 - Windows版でWMIがインストールされていない場合、Get-WmiObject(PowerSHell)を使用  
 　ただし、遅いため、WMIのインストール推奨
-- Windows版を新規インストールすると、php8.5,ffmpeg8.0.1に
-  
-### 1.3.1-a01 (2025/12/17)         
-    
-1.3.0 -> 1.3.1-a01
-   
+- Windows版を新規インストールすると、php8.5,ffmpeg8.0.1に   
 - volumioにrfriends3をインストールして使用しているケースで、  
 dacに電子ボリューム機能がない機種(例：FX-audio D302J+ SA9123L)の場合、
 rfriends再生で音が出なくなっていました。  
