@@ -18,8 +18,6 @@
 |10|[ヘルプ](10.md)|システムのアップデート、rfriends3について|  
   
 ・[補足説明](supplement.md)  
-  
-・[FAQ](faq.md)  
-
 
 ![clip_2](https://github.com/user-attachments/assets/6049ea52-25c4-4cee-8a29-515716bc5010)
+
