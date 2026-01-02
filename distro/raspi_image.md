@@ -1,4 +1,4 @@
-## RaspebrryPi版rfriends3でラジオ録音（OSイメージ編）
+## RaspberryPi版rfriends3でラジオ録音（OSイメージ編）
 
 あらかじめRaspiOSにrfriends3をインストールし、各種設定を行ったイメージです。  
 microSDに書いて起動するだけでrfriends3が使用できます。  
