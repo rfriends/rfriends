@@ -18,11 +18,12 @@
 |--:|:--|:------|
 |1|[アップデート情報](https://rfriends.github.io/rfriends/ver.html)|rfriends3のアップデート情報|  
 |2|[マニュアル](https://rfriends.github.io/rfriends/manual/)|rfriends3のマニュアル|  
-|3|[活用事例](https://rfriends.github.io/rfriends/tech/)|rfriends3をもっと便利にする活用事例|  
-|4|[X(twitter）](https://x.com/rfriends2017)|リリース情報、障害情報、TIPSなど|
-|5|[掲示板](https://ss1.xrea.com/rf3.s331.xrea.com/wforum/wforum.cgi)|質問、要望、感想など。入室パスワードは、"rfriends"|
-|6|[ブログ](https://rfriends.hatenablog.com/)|hatenaブログでは詳細な技術情報|  
-|7|[レスキュー](https://rfriends.github.io/rfriends/manual/rescue.html)|rfriends3システムの起動不可等からの回復|
+|3|[FAQ](https://rfriends.github.io/rfriends/manual/faq.html)|rfriends3に関するよくある質問|  
+|4|[活用事例](https://rfriends.github.io/rfriends/tech/)|rfriends3をもっと便利にする活用事例|  
+|5|[X(twitter）](https://x.com/rfriends2017)|リリース情報、障害情報、TIPSなど|
+|6|[掲示板](https://ss1.xrea.com/rf3.s331.xrea.com/wforum/wforum.cgi)|質問、要望、感想など。入室パスワードは、"rfriends"|
+|7|[ブログ](https://rfriends.hatenablog.com/)|hatenaブログでは詳細な技術情報|  
+|8|[レスキュー](https://rfriends.github.io/rfriends/manual/rescue.html)|rfriends3システムの起動不可等からの回復|
   
 ### ２．rfriends3のインストール  
   
