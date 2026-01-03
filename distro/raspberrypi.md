@@ -29,9 +29,9 @@ Bookworm
   
 ![3](https://github.com/user-attachments/assets/ca768534-6ea7-4dbe-b6d5-573911f705ae)  
   
-~~Trixie  ~~
+~~Trixie~~  
   
-~~![clip_3](https://github.com/user-attachments/assets/58299500-a77c-4236-af87-f0fbfddf0a8b)  ~~
+~~![clip_3](https://github.com/user-attachments/assets/58299500-a77c-4236-af87-f0fbfddf0a8b)~~  
   
   
 ### 1.3 ストレージ  
