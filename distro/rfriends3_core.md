@@ -11,8 +11,6 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 ・（３）[Linux版(その他)](rfriends3_core3.md) (Alpine/openSUSE/arch/ios)  
 ・（４）[BSD版](rfriends3_core_bsd.md)  
   
-現在、apache版はうまく動作しません。(2026/01/03)  
-  
 > [!NOTE]  
 > Apache2版を追加しました。(2025/08/15)  
 > lighttpdの代わりにApache2をインストールします。  
