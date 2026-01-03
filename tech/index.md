@@ -24,5 +24,6 @@
 |18|[rfriendsのALSA設定](18.md)||
 |19|[RaspberryPi ~~Zero~~をラジオにする方法](19.md)|USB-DAC|
 |20|[radikoの遅延パラメータの調整方法](20.md)||
+|21|[volumio+rfriends3の連携について ](21.md)||
 
 
