@@ -80,7 +80,7 @@ lighttpd_enable="YES"
 ```  
 ・php,sambaのversion確認
 ```
-$ pkg search PHP | grep Scripting
+$ pkg search PHP
 php84-8.4.5_1                  PHP Scripting Language (8.4.X branch)
 $ pkg search samba
 samba416-4.16.11_6  
