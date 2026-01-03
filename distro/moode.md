@@ -6,7 +6,7 @@
 ![1](https://github.com/user-attachments/assets/1cd6790e-c995-4e30-95cf-2f58c0e8cb26)  
   
 初 版　2024/08/31  
-第6版　2025/01/09  
+第7版　2026/01/03
   
 ## ０．前提  
   
@@ -30,6 +30,8 @@
 ![2](https://github.com/user-attachments/assets/fc4e21a3-3a14-4b27-885b-0484cf9e3b4a)  
   
 以下を入力し、インストールスクリプトをダウンロードし、インストールを行います。各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
+
+1) moode ver.10(debian trixie)の場合  
 ```  
 cd ~/  
 sudo apt install git  
@@ -37,8 +39,18 @@ rm -rf rfriends_moode
 git clone https://github.com/rfriends/rfriends_moode.git  
 cd rfriends_moode  
 sh rfriends_moode.sh  
-```  
+```
   
+2) moode ver.9まで(debian bookworm 以前)の場合  
+```  
+cd ~/  
+sudo apt install git  
+rm -rf rfriends_moode  
+git clone https://github.com/rfriends/rfriends_moode.git  
+cd rfriends_moode  
+sh rfriends_moode_apache2.sh  
+```
+    
 これでインストールは完了です。リターンキーを押すと再起動します。  
   
 ## ２．rfriends3の実行  
