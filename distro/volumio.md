@@ -37,26 +37,21 @@
 $ sudo apt-get update && sudo apt-get upgrade -y  
 ```
   
-その際、以下のようなメッセージが表示されることがあります。  
+その際、古いバージョンでは、apt update時に以下のようなメッセージが出ます。  
   
 ```  
-Certificate verification failed: The certificate is NOT trusted. The certificate chain uses not yet valid certificate.  
-```  
+Err:4 http://raspbian.raspberrypi.org/raspbian buster Release  
+  404  Not Found [IP: 93.93.128.193 80]    
+```   
+これは、debian busterが古すぎるため、updateのレポジトリを削除しているからです。  
+下記に書き換えると、エラーが出なくなります。  
   
-その場合は、時間を置いて再度実行してみてください。  
-  
 ```  
-$ sudo apt-get update && sudo apt-get upgrade -y  
+$ sudo nano /etc/apt/sources.list  
+#deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi  
+deb http://apt2.volumio.org/raspbian/ buster main contrib non-free rpi  
 ```
-    
-それでもダメな場合は、以下を実行してください。  
   
-```  
-$ sudo mv /etc/apt/sources.list.d /etc/apt/sources.list.d.bak  
-$ sudo apt update && sudo apt install -y ca-certificates  
-$ sudo mv /etc/apt/sources.list.d.bak /etc/apt/sources.list.d  
-$ sudo apt-get upgrade -y  
-```  
   
 ## ２．rfriends3のダウンロードとインストール  
   
