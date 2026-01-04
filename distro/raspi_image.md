@@ -80,7 +80,7 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 #### - Raspios GNU/Linux 12 bookworm lite    
 [rfriends3_bookworm_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bookworm_latest.img.zip)    
   
-#### - Raspios GNU/Linux 13 trixie lite (公開停止中)     
+#### - Raspios GNU/Linux 13 trixie lite     
 [rfriends3_trixie_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_trixie_latest.img.zip)    
 
 ## ２．イメージをmicroSDに書く。
