@@ -18,8 +18,7 @@
   
 - radikoの録音時、新streamが配信されていない場合、旧streamに変更。
 - 配信遅れ、マージンの調整範囲を60秒から90秒に変更。
-- メニュー表示時にエラーメッセージが出るのを修正。
-- trans機能実行時、podcastのfolder.jpg作成のエラー修正。     
+- メニュー表示時にエラーメッセージが出るのを修正。   
 - trans機能にfolder.jpg作成処理を追加（volumio対策）
 - Windows版でWMIがインストールされていない場合、Get-WmiObject(PowerSHell)を使用  
 　ただし、遅いため、WMIのインストール推奨
