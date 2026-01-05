@@ -47,7 +47,7 @@ PS> wsl --list --online
 |2025/05/02|〇|AlmaLinux-Kitten-10|stream||   
 |2025/05/03|✕|SUSE-Linux-Enterprise-15-SP6|suse|lighttpd<br>not found|  
 |||SUSE-Linux-Enterprise-15-SP7|suse||  
-|||SUSE-Linux-Enterprise-15-16.0|suse|| 
+|||SUSE-Linux-Enterprise-16.0|suse|| 
 |2025/05/02|〇|openSUSE-Tumbleweed|suse||  
 |2025/05/02|〇|openSUSE-Leap-15.6|suse||   
 |||openSUSE-Leap-16.0|suse||  
