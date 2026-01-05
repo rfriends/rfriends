@@ -18,7 +18,7 @@
 もし、すでにwsl,linuxのインストールが済んでいる方は、４．のrfriendsのインストールに飛んでください。 
   
 
-### 動作確認済ディストリビューション　(2025/10/23現在)  
+### 動作確認済ディストリビューション　(2026/01/05現在)  
   
 ディストリビューションはアクセスしたときにより異なります。  
 ```
@@ -37,6 +37,7 @@ PS> wsl --list --online
 |2025/10/23|〇|Debian &nbsp;&nbsp;&nbsp;&nbsp;(13.1)|debian|install_debian_apache.sh|  
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|FedoraLinux-42|stream||  
+|||FedoraLinux-43|stream|| 
 |2025/05/02|✕|OracleLinux_7_9|stream|yum<br>注１）|   
 |||OracleLinux_8_10|stream||  
 |||OracleLinux_9_5|stream||  
@@ -46,6 +47,7 @@ PS> wsl --list --online
 |2025/05/02|〇|AlmaLinux-Kitten-10|stream||   
 |2025/05/03|✕|SUSE-Linux-Enterprise-15-SP6|suse|lighttpd<br>not found|  
 |||SUSE-Linux-Enterprise-15-SP7|suse||  
+|||SUSE-Linux-Enterprise-15-16.0|suse|| 
 |2025/05/02|〇|openSUSE-Tumbleweed|suse||  
 |2025/05/02|〇|openSUSE-Leap-15.6|suse||   
 |||openSUSE-Leap-16.0|suse||  
