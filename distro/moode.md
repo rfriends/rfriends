@@ -38,7 +38,7 @@ sudo apt install git
 rm -rf rfriends_moode  
 git clone https://github.com/rfriends/rfriends_moode.git  
 cd rfriends_moode  
-sh rfriends_moode.sh  
+sh rfriends_moode_apache2.sh  
 ```
   
 2) moode ver.9まで(debian bookworm 以前)の場合  
@@ -48,7 +48,7 @@ sudo apt install git
 rm -rf rfriends_moode  
 git clone https://github.com/rfriends/rfriends_moode.git  
 cd rfriends_moode  
-sh rfriends_moode_apache2.sh  
+sh rfriends_moode.sh  
 ```
     
 これでインストールは完了です。リターンキーを押すと再起動します。  
