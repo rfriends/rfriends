@@ -21,6 +21,9 @@
 ### 動作確認済ディストリビューション　(2025/10/23現在)  
   
 ディストリビューションはアクセスしたときにより異なります。  
+```
+PS> wsl --list --online
+```  
   
 それぞれのrfriendsのインストール方法は以下を参照してください。  
 [Linux版rfriends3でラジオ録音](https://rfriends.github.io/rfriends/distro/rfriends3_core.html)
