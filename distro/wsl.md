@@ -5,7 +5,7 @@
 ![1](https://github.com/user-attachments/assets/429c1661-fd9c-4a80-87cb-cb3fb07661a4)   
   
 初版：2024/11/15  
-改版：2025/10/23
+改版：2026/01/05
 
 > [!NOTE]
 > 以下、混乱しがちなので    
