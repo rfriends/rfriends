@@ -35,9 +35,7 @@
   例：  
   dir  : /home/rpi/smbdir/usr2/podcast/user/安住紳一郎の日曜天国/  
   file : 20260104_2026-1-4「2026年-日曜天国福袋」.mp3  
-  file size : 190888 KB  
-    
-### 1.3.1 (2026/01/04)         
+  file size : 190888 KB    
     
 1.3.0 -> 1.3.1
   
