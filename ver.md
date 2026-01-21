@@ -36,7 +36,7 @@
     
 1.3.1a -> 1.3.1b
   
-- PHP8.3より、以下のメッセージが出るのに対処しました。
+- PHP8.3より、以下のメッセージが出るのに対処しました。  
   PHP Deprecated:  Increment on non-numeric string is deprecated, use str_increment() instead
    
 ### 1.3.1a (2026/01/04)         
