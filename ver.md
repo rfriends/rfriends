@@ -31,8 +31,14 @@
 もし、結果が違う場合は、ログの下記部分を添付して掲示板に報告してください。  
   
 ![delay](https://github.com/user-attachments/assets/78b5254f-ec13-49f1-9b33-e70e85bbfa33)
-
   
+### 1.3.1b (2026/01/22)         
+    
+1.3.1a -> 1.3.1b
+  
+- PHP8.3より、以下のメッセージが出るのに対処しました。
+  PHP Deprecated:  Increment on non-numeric string is deprecated, use str_increment() instead
+   
 ### 1.3.1a (2026/01/04)         
     
 1.3.1 -> 1.3.1a
