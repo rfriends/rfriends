@@ -17,9 +17,9 @@
 1.3.1b -> 1.3.2-beta8  
   
 - raspberry piのヘッドホン端子に対応しました。  
-　管理OS別管理機能Linuxaudio選択
-　Card:bcm2835
-　Mixer:!plane  
+　管理OS別管理機能Linuxaudio選択  
+　Card:bcm2835  
+　Mixer:!plane    
 - CUIモードで配信遅れのキーワード編集を追加しました。   
 - CUIモードで地域情報更新のバグを修正しました。  
 - 録音ディレクトリを変更すると、録音済みデータの再生ができなくなるのを修正しました。  
