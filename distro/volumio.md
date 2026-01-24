@@ -6,7 +6,7 @@
 ![1](https://github.com/user-attachments/assets/1a4aceb1-b10b-42f4-b427-0ef64d44f702)  
   
 初 版 2024/08/25  
-第7版 2025/01/29  
+第8版 2026/0/25  
   
 ## ０．前提  
   
@@ -66,8 +66,22 @@ $ cd rfriends_volumio
 $ sh rfriends_volumio.sh  
 ```
   
-これでインストールは完了です。  
+次にsambaの設定を変更してください。  
+force user = volumioを追加  
+これをしないとsamba上でファイルの削除ができません。　　
   
+```  
+$ sudo vi /etc/samba/smb.conf  
+[Internal Storage]
+        comment = Volumio-25 Internal Music Folder
+        path = /data/INTERNAL
+        force user = volumio
+        read only = no
+        guest ok = yes
+```
+  
+これでインストールは完了です。  
+  　　
 ## ３．rfriends3の実行  
   
 volumioのWeb画面で  
@@ -108,9 +122,15 @@ rfriendsのメニューで、ラジコ - 番組聴取 - 番組を選択し
 ![6](https://github.com/user-attachments/assets/b674bc07-4f10-418e-bb80-f324f655a3ce)  
   
 ## ５．その他  
-    
-これにより、ラジコやらじるらじる、音楽が良い音で楽しめるようになります。    
-    
-    
+
+radikoと同様にrfriendsでNHKらじるらじるも聞けますが、以下の設定でVolumio単体で聞けるようになります。  
+```  
+$ cd ~
+$ wget http://rfriends.s1009.xrea.com/storage/my-web-radio
+$ sudo cp -p my-web-radio /data/favourites/.
+```
+マイウェブラジオからアクセスしてください。  
+![clip_2](https://github.com/user-attachments/assets/edd83de7-7eb7-4d27-aa72-8c19a8d8fddd)
+     
 以上    
     
