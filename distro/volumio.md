@@ -124,7 +124,7 @@ rfriendsのメニューで、ラジコ - 番組聴取 - 番組を選択し
   
 ## ５．その他  
 
-radikoと同様にrfriendsでNHKらじるらじるも聞けますが、以下の設定でVolumio単体で聞けるようになります。  
+radikoと同様にrfriendsでNHKらじるらじるも聞けますが、以下の設定でVolumio単体でも聞けるようになります。  
 ```  
 $ cd ~
 $ wget http://rfriends.s1009.xrea.com/storage/my-web-radio
