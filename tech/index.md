@@ -7,7 +7,7 @@
 |1|[RaspberryPi Zeroをラジオにする方法](01.md)|bluetoothスピーカ|
 |2|[RaspberryPiにスピーカを接続](https://rfriends.hatenablog.com/entry/2024/09/04/175016)|Volumio,MoOde|
 |3|[Music Player volumioをインストール](https://rfriends.hatenablog.com/entry/2024/08/24/174527)||
-|4|[Volumio上にrfriendsをインストール](https://rfriends.hatenablog.com/entry/2024/08/25/194850)||
+|4|[Volumio上にrfriendsをインストール](https://rfriends.github.io/rfriends/distro/volumio.html)||
 |5|[Music Player MoOdeをインストール](https://rfriends.hatenablog.com/entry/2024/08/31/035134)||
 |6|[MoOde上にrfriendsをインストール](https://rfriends.hatenablog.com/entry/2024/09/01/124701)||
 |7|[rfriends3を使って東京のラジオを聴く・録る](https://rfriends.hatenablog.com/entry/2024/07/25/055507)|夏休み特別企画|
