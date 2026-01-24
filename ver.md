@@ -17,7 +17,7 @@
 1.3.1b -> 1.3.2-beta8  
   
 - raspberry piのヘッドホン端子に対応しました。  
-　管理OS別管理機能Linuxaudio選択  
+　管理 - OS別機能 - Linux - audio選択  
 　Card:bcm2835  
 　Mixer:!plane    
 - CUIモードで配信遅れのキーワード編集を追加しました。   
