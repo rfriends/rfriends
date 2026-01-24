@@ -81,6 +81,7 @@ $ sudo vi /etc/samba/smb.conf
 ```
   
 これでインストールは完了です。  
+念のため、システムを再起動してください。  
   　　
 ## ３．rfriends3の実行  
   
