@@ -53,7 +53,7 @@ F-droid
   
 <https://f-droid.org/ja/packages/com.termux/>  
   
-<https://f-droid.org/repo/com.termux_1022.apk>  
+<https://f-droid.org/repo/com.termux_1002.apk>  
   
 ### 2.2 Termuxのインストール  
   
