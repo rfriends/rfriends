@@ -8,7 +8,7 @@
 > インストール時にセキュリティ関連のアラームが表示されますが、基本は許可で進めてください。気になる方はインストールを中止してください。  
   
 初版：2021/01/19  
-改版：2025/02/03
+改版：2026/01/28
   
 ## １．準備  
   
@@ -53,7 +53,7 @@ F-droid
   
 <https://f-droid.org/ja/packages/com.termux/>  
   
-<https://f-droid.org/repo/com.termux_1020.apk>  
+<https://f-droid.org/repo/com.termux_1022.apk>  
   
 ### 2.2 Termuxのインストール  
   
