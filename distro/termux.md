@@ -8,7 +8,7 @@
 > インストール時にセキュリティ関連のアラームが表示されますが、基本は許可で進めてください。気になる方はインストールを中止してください。  
   
 初版：2021/01/19  
-改版：2026/01/28
+改版：2026/01/30
   
 ## １．準備  
   
@@ -43,7 +43,8 @@ Termuxは、AndroidやChrome OS上でLinux環境を実行できるターミナ�
   
 　以下のリンクよりスマホのダウンロードディレクトリにtermuxをダウンロードしてください。  
   
-2024/06/21のバージョンは0.119.0-beta.1です。  
+2026/01/30のバージョンは0.118.3(1002) です。 
+beta版0.119.0-beta.3(1022)はインストールしないでください。  
   
 Github  
 ~~<https://github.com/termux/termux-app/releases>~~  
@@ -53,7 +54,7 @@ F-droid
   
 <https://f-droid.org/ja/packages/com.termux/>  
   
-<https://f-droid.org/repo/com.termux_1022.apk>  
+<https://f-droid.org/repo/com.termux_1002.apk>  
   
 ### 2.2 Termuxのインストール  
   
