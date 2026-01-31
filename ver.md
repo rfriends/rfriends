@@ -47,23 +47,15 @@
   
 ### 1.3.1b (2026/01/22)         
     
-1.3.1a -> 1.3.1b
+1.3.0 -> 1.3.1b
   
 - PHP8.3より、以下のメッセージが出るのに対処しました。  
-  PHP Deprecated:  Increment on non-numeric string is deprecated, use str_increment() instead
-   
-### 1.3.1a (2026/01/04)         
-    
-1.3.1 -> 1.3.1a
-  
+  PHP Deprecated:  Increment on non-numeric string is deprecated, use str_increment() instead  
 - 長時間のpodcastのダウンロードでtagerrorが発生していました。  
   例：  
   dir  : /home/rpi/smbdir/usr2/podcast/user/安住紳一郎の日曜天国/  
   file : 20260104_2026-1-4「2026年-日曜天国福袋」.mp3  
   file size : 190888 KB    
-    
-1.3.0 -> 1.3.1
-  
 - radikoの録音時、新streamが配信されていない場合、旧streamに変更。
 - 配信遅れ、マージンの調整範囲を60秒から90秒に変更。
 - メニュー表示時にエラーメッセージが出るのを修正。   
