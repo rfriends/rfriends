@@ -65,7 +65,7 @@ Windows11 24h2用 wmicのインストール方法について
   
 　何かのキーを押せば、インストールは完了です。選択した場所にrfriends3ディレクトリが作成されます。  
   
-![6](https://github.com/user-attachments/assets/bb411e02-5b9f-4785-bf71-53411afaf80e)  
+![407470382-bb411e02-5b9f-4785-bf71-53411afaf80e](https://github.com/user-attachments/assets/b5d5b1e9-7bb9-4bfd-a824-b5220685faae)  
   
 　デスクトップにrf3server(WebServer)のショートカットが作成されます。  
   
