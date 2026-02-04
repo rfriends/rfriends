@@ -6,6 +6,7 @@
 第9版　2025/01/26　wmic  
 第10版　2025/01/26　renew  
 第11版　2025/10/20　renew  
+第12版　2026/02/05　dialog  
   
 ## １．環境  
   
@@ -32,7 +33,7 @@ Windows11 24h2用 wmicのインストール方法について
   
 [rfriends3_windows.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows.bat)  
   
-上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、rfriends3をインストールしたい場所に保存します。  
+上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。  
   
 ![1](https://github.com/user-attachments/assets/aa3e7fdb-ff79-42c0-a757-7ccf6350a586)  
   
@@ -51,7 +52,10 @@ Windows11 24h2用 wmicのインストール方法について
   
 ![3](https://github.com/user-attachments/assets/198ba710-8314-451f-b657-3bc08861186e)  
   
-　実行が開始されると、「処理を開始しますか (y/n) ?」と聞かれるので、yを入力してください。  
+  実行が開始されると、インストールフォルダを選択するダイアログが表示されるので、選択してください。  
+![clip_1](https://github.com/user-attachments/assets/ea58e03c-9ef5-4e65-bf31-3d63d0a39be3)  
+   
+　次に、「処理を開始しますか (y/n) ?」と聞かれるので、yを入力してください。  
   
 ![4](https://github.com/user-attachments/assets/59075292-5ec9-422e-981d-bde94f3642d1)  
   
@@ -59,7 +63,8 @@ Windows11 24h2用 wmicのインストール方法について
   
 ![5](https://github.com/user-attachments/assets/6b45dba3-560f-4154-8f7c-1ee8ed62041a)  
   
-　何かのキーを押せば、インストールは完了です。以下のようにc:\Tempにrfriends3ディレクトリが作成されます。windows_install.batは不要ですので、削除してかまいません。  
+　何かのキーを押せば、インストールは完了です。選択した場所にrfriends3ディレクトリが作成されます。  
+ windows_install.batは不要ですので、削除してかまいません。  
   
 ![6](https://github.com/user-attachments/assets/bb411e02-5b9f-4785-bf71-53411afaf80e)  
   
@@ -69,7 +74,7 @@ Windows11 24h2用 wmicのインストール方法について
   
 ## ３．ビルトインウェブサーバの実行  
   
-　rfriends3を実行する前にウェブサーバを実行しておく必要があります。デスクトップのショートカットrf3serverをダブルクリックすると、ビルトインウェブサーバが実行されます。　c:\Temp\rfriends3\rf3server.batでも同様です。  
+　rfriends3を実行する前にウェブサーバを実行しておく必要があります。デスクトップのショートカットrf3serverをダブルクリックすると、ビルトインウェブサーバが実行されます。　rfriends3\rf3server.batでも同様です。  
   
 ![8](https://github.com/user-attachments/assets/b37110ca-41f2-4aef-9a38-06733cddc7da)  
   
