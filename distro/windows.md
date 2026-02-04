@@ -64,7 +64,6 @@ Windows11 24h2用 wmicのインストール方法について
 ![5](https://github.com/user-attachments/assets/6b45dba3-560f-4154-8f7c-1ee8ed62041a)  
   
 　何かのキーを押せば、インストールは完了です。選択した場所にrfriends3ディレクトリが作成されます。  
- windows_install.batは不要ですので、削除してかまいません。  
   
 ![6](https://github.com/user-attachments/assets/bb411e02-5b9f-4785-bf71-53411afaf80e)  
   
