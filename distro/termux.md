@@ -8,7 +8,7 @@
 > インストール時にセキュリティ関連のアラームが表示されますが、基本は許可で進めてください。気になる方はインストールを中止してください。  
   
 初版：2021/01/19  
-改版：2026/01/30
+改版：2026/02/06
   
 ## １．準備  
   
@@ -167,13 +167,13 @@ finished
 $ exit   
 ```  
   
-### 3.4 サービス（atd, crond,sshd,lighttpd）およびwake-lockの有効化  
+### 3.4 サービス（atd, crond,sshd,lighttpd,smbd）およびwake-lockの有効化  
   
 termuxを再起動する。  
   
 ![6a](https://github.com/user-attachments/assets/0e2c31fa-aa4a-46a3-9019-b2a8b464e45f)
   
-svenable.shを実行して、サービス（atd, crond,sshd,lighttpd）およびwake-lockを有効化します。    
+svenable.shを実行して、サービス（atd, crond,sshd,lighttpd,smbd）およびwake-lockを有効化します。    
   
 ```  
 $ sh svenable.sh  
@@ -218,8 +218,77 @@ xxx.xxx.xxx.xxx:8000
 [チュートリアル](https://rfriends.github.io/rfriends/manual/tutorial.html)  
    
 ## ５．その他  
+
+### 5.1 sambaアクセス  
+    
   
-### 5.1 外部PCからのSSHアクセス  
+以下の方法で、rfriends3の録音データにアクセスできます。  
+  
+sambaはポート4455で実行されています。  
+IPアドレスを192.168.1.51として記述しています。  
+  
+#### 1) Linuxの場合  
+  
+アクセサリー - ファイル - 他の場所  
+  
+```  
+smb://192.168.1.51:4455/smbdir/  
+```  
+  
+接続  
+  
+#### 2) Androidの場合  
+  
+他にもあると思いますが、Owlfilesアプリはポートを変更できます。  
+  
+![Screenshot_20260205-182120](https://github.com/user-attachments/assets/07be459c-08ef-4f30-a399-4500a67bbdd4)
+
+  
+右上の雷マーク - 新しい接続 - NAS  
+  
+![Screenshot_20260205-182102](https://github.com/user-attachments/assets/71711692-0fa1-4020-84df-ac23b0b1ff37)
+
+
+  
+保存（フロッピーアイコン）  
+  
+#### 3) Windowsの場合  
+  
+基本ポート445以外は接続できませんが、  
+Windows11 24H2から代替ポートが指定出来るようになりました。  
+  
+コマンドプロンプト（管理者）を起動し、  
+  
+```  
+net use X: \\192.168.1.51/smbdir /TCPPORT:4445  
+```  
+  
+これでドライブXで接続可能です。  
+ただし、当方の環境だと、うまくいったりいかなかったり不安定。  
+ということでお勧めできません。  
+  
+#### 4) sambaディレクトリ  
+  
+sambaディレクトリは以下のファイルのpathを編集することにより変更できます。  
+  
+$ vi $PREFIX/etc/smb.conf  
+  
+```  
+[smbdir]  
+comment = termux share folder for rfriends  
+path = /data/data/com.termux/files/home/storage/downloads/usr2/  
+read only = no  
+browsable = yes  
+guest ok = yes  
+force user = termux  
+```  
+  
+編集後、サービスの再起動を行ってください。  
+  
+$ smbd -D -s $PREFIX/etc/smb.conf  
+  
+  
+### 5.2 外部PCからのSSHアクセス  
   
 外部からSSHアクセスをしない方は以下の操作は不要です。  
   
@@ -241,7 +310,7 @@ teratermやRLoginを使用すると便利です。
   
 PCがLinuxでWARNINGが出て接続できないときはPCのホームディレクトリの.ssh/known_hostsを削除してみてください。  
   
-### 5.2 sftpによるファイル転送  
+### 5.3 sftpによるファイル転送  
   
 　sshによるアクセスができたらPCでsftpによるファイル転送に挑戦してみましょう。  
   
@@ -255,7 +324,7 @@ PCがLinuxでWARNINGが出て接続できないときはPCのホームディレ�
   
 ![16](https://github.com/user-attachments/assets/4a602a09-e98a-4289-942a-21b1c87c93c5)  
   
-### 5.3 録音ディレクトリ（内部、microSD）の設定  
+### 5.4 録音ディレクトリ（内部、microSD）の設定  
   
 　初期はスマホのダウンロードディレクトリに設定されています。通常はそのまま変更する必要はありません。  
   
