@@ -80,7 +80,7 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 |2025/04/28|〇| Devuan (Daedalus)|5|Debian 12|  
 |2026/02/06|〇| Devuan (excalibur)|6.1|Debian 13|  
 |2025/04/28|〇| MX linux|21.3|Debian 11|  
-|2026/02/06|〇| MX linux|25|Debian 13|  
+|2026/02/06|〇| MX linux|25|Debian 13　lighttpd版使用|  
 |2025/04/30|〇| antiX linux|23.2|Debian 12|  
     
   
