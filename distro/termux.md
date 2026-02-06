@@ -276,7 +276,7 @@ Windows11 24H2から代替ポートが指定出来るようになりました。
 PowerShell管理者）を起動し、  
   
 ```  
-New-SmbMapping -LocalPath X: -RemotePath \\192.168.1.51\smbdir -TcpPort 4445 -password ******* -user termux
+PS > New-SmbMapping -LocalPath X: -RemotePath \\192.168.1.51\smbdir -TcpPort 4445 -password ******* -user termux
 
 Status Local Path Remote Path
 ------ ---------- -----------
@@ -292,6 +292,24 @@ PS X:\> dir
 \\192.168.1.51/smbdir  
 ```
 でアクセスできます。  
+  
+ステータスを見るには、    
+```  
+PS > Get-SmbMapping  
+  
+Status Local Path Remote Path  
+------ ---------- -----------  
+OK     X:         \\192.168.1.51\smbdir  
+```  
+また、接続を解除するには、  
+```  
+PS > Remove-SmbMapping -LocalPath X:  
+  
+確認  
+この操作を実行しますか?  
+ターゲット 'Close-Connection' で操作 'X:,\\192.168.1.51\smbdir' を実行しています。  
+[Y] はい(Y)  [A] すべて続行(A)  [N] いいえ(N)  [L] すべて無視(L)  [S] 中断(S)  [?] ヘルプ (既定値は "Y"):  
+```  
   
 #### 4) sambaディレクトリ  
   
