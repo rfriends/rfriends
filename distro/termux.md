@@ -273,7 +273,7 @@ AndSMBも接続できました。
 基本ポート445以外は接続できませんが、  
 Windows11 24H2から代替ポートが指定出来るようになりました。  
   
-PowerShell管理者）を起動し、  
+PowerShell(管理者）を起動し、  
   
 ```  
 PS > New-SmbMapping -LocalPath X: -RemotePath \\192.168.1.51\smbdir -TcpPort 4445 -password ******* -user termux
