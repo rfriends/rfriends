@@ -255,6 +255,7 @@ smb://192.168.1.51:4455/smbdir/
 #### 2) Androidの場合  
   
 他にもあると思いますが、Owlfilesアプリはポートを変更できます。  
+AndSMBも接続できました。  
   
 ![Screenshot_20260205-182120](https://github.com/user-attachments/assets/07be459c-08ef-4f30-a399-4500a67bbdd4)
 
