@@ -284,9 +284,11 @@ OK     X:         \\192.168.1.51\smbdir
 
 PS C:\Users\user> x:
 PS X:\> dir
-```  
+```
   
 これでドライブXで接続可能です。  
+-LocalPath X: は、なくてもかまいません。  
+  
 また、エクスプローラから  
 ```
 \\192.168.1.51/smbdir  
@@ -387,9 +389,17 @@ tmpdir = ""
   
 2) 外部microSDの場合  
   
-~/storage以下にmedia-1というディレクトリが存在しない場合は、termuxがmicroSDを認識していません。termux-setup-storageを再度実行してみてください。  
+~/storage以下にmedia-1というディレクトリが存在しない場合、  
+または、cd ~/storage/media-1 がエラーになる場合は、  
+termuxがmicroSDを認識していません。  
+termux-setup-storageを再度実行してみてください。  
   
 ![17](https://github.com/user-attachments/assets/d96a5d4c-e4c5-4696-82ef-24366bf49457)  
+  
+> [!CAUTION]  
+> termux-setup-storage を実行してもSDCARDを認識しない場合は、  
+> rm -rf ~/storage を実行後、termux-setup-storage を実行してみてください。  
+> SDCARDは初期化されないはずですが、自己責任で。   
   
 ```  
 usrdir = "/data/data/com.termux/files/home/storage/media-1/"  
@@ -409,6 +419,8 @@ usrdir: /storage/1D15-8A5B/Android/media/com.termux/
 /Android/media/com.termux/  
   
 にアクセスすればデータが参照できます。  
+  
+ 
   
 以上  
   
