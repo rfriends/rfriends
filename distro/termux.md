@@ -273,15 +273,25 @@ AndSMBも接続できました。
 基本ポート445以外は接続できませんが、  
 Windows11 24H2から代替ポートが指定出来るようになりました。  
   
-コマンドプロンプト（管理者）を起動し、  
+PowerShell管理者）を起動し、  
   
 ```  
-net use X: \\192.168.1.51/smbdir /TCPPORT:4445  
+New-SmbMapping -LocalPath X: -RemotePath \\192.168.1.51\smbdir -TcpPort 4445 -password ******* -user termux
+
+Status Local Path Remote Path
+------ ---------- -----------
+OK     X:         \\192.168.1.51\smbdir
+
+PS C:\Users\user> x:
+PS X:\> dir
 ```  
   
 これでドライブXで接続可能です。  
-ただし、当方の環境だと、うまくいったりいかなかったり不安定。  
-ということでお勧めできません。  
+また、エクスプローラから  
+```
+\\192.168.1.51/smbdir  
+```
+でアクセスできます。  
   
 #### 4) sambaディレクトリ  
   
