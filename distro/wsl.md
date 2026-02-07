@@ -52,7 +52,7 @@ PS> wsl --list --online
 |2025/05/02|〇|openSUSE-Leap-15.6|suse||   
 |||openSUSE-Leap-16.0|suse||  
 |2025/05/02|〇|archlinux|arch||  
-|2026/02/07|✕|eLxr|debian|at not found|  
+|2026/02/07|✕|eLxr 12.0|debian|at not found|  
 
 ### 提供停止　(2025/10/23現在)  
   
