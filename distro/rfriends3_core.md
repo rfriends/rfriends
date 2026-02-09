@@ -64,7 +64,7 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 |2026/02/09|△| eLxr linux|12.0.0|注１|  
   
 > [!CAUTION]
-> ~~debian13の場合は、install_debian_apache2.sh~~
+> ~~debian13の場合は、install_debian_apache2.sh~~  
 > 注１）eLxrの場合、/etc/apt/source.listに以下を追加  
 > deb https://deb.debian.org/debian trixie contrib main
   
