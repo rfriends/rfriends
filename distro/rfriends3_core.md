@@ -148,9 +148,10 @@ Linux/BSD版は、ディストリビューションにより以下の3つに分�
 sudoがない場合  
 # gpasswd -a ユーザ名 sudo 
 ```
-    
-実行shは、install_debian.sh または、install_debian_apache2.sh です。  
-ただしdebian13は、install_debian_apache2.sh です。
+再起動が必要かもしれません。  
+  
+4) 実行shは、install_debian.sh または、install_debian_apache2.sh です。  
+~~ただしdebian13は、install_debian_apache2.sh です。~~
   
 ## ３．rfriends3のダウンロードとインストール  
   
