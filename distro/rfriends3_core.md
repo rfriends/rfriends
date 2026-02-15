@@ -8,7 +8,7 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
   
 ・（１）[Linux版(Ubuntu/Debian)](rfriends3_core.md) (ubuntu/debian/chrome/android)  
 ・（２）[Linux版(CentOS Stream)](rfriends3_core2.md) (stream/rocky/Alma)  
-・（３）[Linux版(その他)](rfriends3_core3.md) (arch/Manjaro/Cachy/EndeavourOS)  
+・（３）[Linux版(Arch)](rfriends3_core3.md) (arch/Manjaro/Cachy/EndeavourOS)  
 ・（４）[Linux版(その他)](rfriends3_core4.md) (Alpine/openSUSE/ios)  
 ・（５）[BSD版](rfriends3_core_bsd.md)  
   
