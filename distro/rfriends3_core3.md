@@ -12,10 +12,6 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 ・（４）[Linux版(その他)](rfriends3_core4.md) (Alpine/openSUSE/ios)  
 ・（５）[BSD版](rfriends3_core_bsd.md)  
   
-> [!NOTE]  
-> Apache2版については、現在debian/ubuntu版のみですが、  
-> 掲示板、Xで要望がありましたらできるだけ対応します。
-
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
@@ -27,7 +23,8 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 ダウロードサイトは[こちら](download.md)  
   
 > [!CAUTION]
-> 2026/02/15現在、arch系はradiko,raiduの予約録音ができません。  
+> 2026/02/15現在、arch系はradiko,raiduの予約録音ができません。
+> 具体的には、at,cronがうまくいきません。  
 > 他のディストリビューションを選択してください。  
 > なお、原因をご存じの方は教えていただければ幸いです。  
   
