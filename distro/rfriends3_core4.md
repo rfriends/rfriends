@@ -34,10 +34,6 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 |---|:---:|---|---|---|  
 |2025/07/18|〇|Alpine|3.21|install_alpine.sh<br>init(OpenRC)|  
 |2025/08/16|〇|Alpine|3.22|install_alpine.sh<br>init(OpenRC)|  
-|2026/02/15|✕|Arch linux|rolling|install_arch.sh|   
-|2026/02/15|✕|Manjaro linux|rolling|install_arch.sh|   
-|2026/02/11|✕|Cachy linux|rolling|install_arch.sh|   
-|2026/02/11|✕|EndeavourOS|rolling|install_arch.sh|   
 |2025/04/25|〇|openSUSE|15.6|install_suse.sh|  
 
   
@@ -114,28 +110,6 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
   
 実行shは、install_suse.sh です。  
   
-### 2.3 arch linux/manjaro linuxの場合  
-
-```  
-# pacman -Syu
-
-# pacman -S vi
-# pacman -S sudo
-# pacman -S git
-
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名 
-
-# visudo
-%wheel ALL=(ALL:ALL) ALL
-```
-  
-実行shは、arch linuxはinstall_arch_apache2.sh です。  
-実行shは、manjaro linuxはinstall_arch.sh です。  
-    
-・Arch linux ではlighttpdに不具合があり、Apache2を標準としました。  
-　現在、webdavは使用できません。  
-・うまくいかない場合は、install_arch.sh、install_arch_apache2.sh 両方試してみてください。  
   
 ## ３．rfriends3のダウンロードとインストール  
   
