@@ -60,7 +60,7 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 %wheel ALL=(ALL:ALL) ALL
 ```
   
-実行shは、manjaro linuxはinstall_arch.sh です。  
+実行shは、install_arch.sh です。  
   
 ## ３．rfriends3のダウンロードとインストール  
   
@@ -83,7 +83,7 @@ $ cd ~/
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
-$ sh install_XXXXX.sh
+$ sh install_arch.sh
 ```  
   
 これでインストールは完了です。  
