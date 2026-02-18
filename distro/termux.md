@@ -383,7 +383,7 @@ rfriends3の画面で
 1) スマホのダウンロードディレクトリの場合  
   
 ```  
-usrdir=/data/data/com.termux/files/home/storage/downloads/usr/  
+usrdir=/data/data/com.termux/files/home/storage/downloads/usr2/  
 tmpdir = ""  
 ```  
   
