@@ -4,11 +4,13 @@
   
 第4版　2025/01/08 sequoia  
 第5版　2025/09/25 chromium  
+第6版　2026/03/05 brew 
   
 ## １．環境  
   
 　以下のバージョンで確認しました。macOSは新規インストールし、何も手を加えない状態でテストを行っています。  
   
+・macOS tahoe 16.0 (確認済)  
 ・macOS sequoia 15.0 (確認済)  
 ・macOS sonoma 14.0 (確認済)  
 ・macOS Ventura 13.4.1  (確認済)  
