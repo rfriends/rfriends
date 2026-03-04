@@ -10,7 +10,7 @@
   
 　以下のバージョンで確認しました。macOSは新規インストールし、何も手を加えない状態でテストを行っています。  
   
-・macOS tahoe 16.0 (確認済)  
+・macOS tahoe 26.3.1(確認済)  
 ・macOS sequoia 15.0 (確認済)  
 ・macOS sonoma 14.0 (確認済)  
 ・macOS Ventura 13.4.1  (確認済)  
