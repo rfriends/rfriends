@@ -69,7 +69,9 @@ Windows11 24h2用 wmicのインストール方法について
 　処理が開始されると、初めにrfriends3本体のダウンロードが始まり、その後自動的に解凍が行われます。  
   
 ![5](https://github.com/user-attachments/assets/6b45dba3-560f-4154-8f7c-1ee8ed62041a)  
-  
+
+インストールが完了すると、「続行するには何かキーを押してください」と表示されるので、  
+　　  
 　何かのキーを押せば、インストールは完了です。選択した場所にrfriends3ディレクトリが作成されます。  
   
 ![407470382-bb411e02-5b9f-4785-bf71-53411afaf80e](https://github.com/user-attachments/assets/b5d5b1e9-7bb9-4bfd-a824-b5220685faae)  
