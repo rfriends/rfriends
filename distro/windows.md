@@ -106,7 +106,7 @@ Windows11 24h2用 wmicのインストール方法について
   
 XXX.XXX.XXX.XXX:8000　  
   
-と入力するとrfriends3が起動します。以下のような画面が出たら成功です。  
+と入力するとrfriends3が起動します。以下のようなrfriends3のトップ画面が出たら成功です。  
   
 ![9](https://github.com/user-attachments/assets/1e06829e-9329-4d9b-a398-c75f16a4af88)  
   
