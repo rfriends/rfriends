@@ -1,6 +1,17 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。   
   
+### 069 updateでSSL エラーが出ます。   
+      
+rfriends3/script/update  
+をメモ帳などのエディタで開いて  
+  
+先頭の  
+https://ss1.xrea.com/rfriends.s324.xrea.com/  
+を  
+http://rfriends.s324.xrea.com/  
+に変更して保存。   
+   
 ### 068 radikoの地域が居住地と違うんですが。   
       
 このFAQの中に同様の質問があります。「地域」で検索してください。  
