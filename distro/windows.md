@@ -47,7 +47,7 @@ Windows11 24h2用 wmicのインストール方法について
 
   
 　c:\Temp\windows_install.batを実行（ダブルクリック）します。  
-　下記のような画面が出たら、詳細情報をクリックすると、実行ボタンが表示されます。  
+　もし、下記のような画面が出たら、詳細情報をクリックすると、実行ボタンが表示されます。  
   
 ![2](https://github.com/user-attachments/assets/2d78308b-4fd1-4534-8b12-68eeb56a19b9)  
   
