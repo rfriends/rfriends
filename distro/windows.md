@@ -34,7 +34,7 @@ Windows11 24h2用 wmicのインストール方法について
 ・インストーラの実行  
 ・インストール場所の選択    
   
-### 2.1 ダウンロード  
+### 2.1 インストーラのダウンロード  
   
 [rfriends3_windows.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows.bat)  
   
@@ -42,7 +42,7 @@ Windows11 24h2用 wmicのインストール方法について
   
 ![1](https://github.com/user-attachments/assets/aa3e7fdb-ff79-42c0-a757-7ccf6350a586)  
   
-### 2.2 インストールの実行  
+### 2.2 インストーラの実行  
 　ここでは、c:\Temp\にダウンロードしたと仮定します。  
    
 
@@ -52,6 +52,8 @@ Windows11 24h2用 wmicのインストール方法について
  <img width="466" height="344" alt="スクリーンショット 2026-04-11 220517" src="https://github.com/user-attachments/assets/b77a50e2-3b74-48eb-8d1d-585172c7f60f" />    
   
 実行をクリックします。  
+  
+### 2.3 インストール場所の選択  
   
   実行が開始されると、インストールフォルダを選択するダイアログが表示されるので、選択してください。  
   
