@@ -4,10 +4,8 @@
 第7版　2024/12/13　32bit版廃止  
 第8版　2024/12/15　Github  
 第9版　2025/01/26　wmic  
-第10版　2025/01/26　renew  
-第11版　2025/10/20　renew  
-第12版　2026/02/05　dialog  
 第13版　2026/03/13 vcruntime140.dll  
+第14版　2026/04/11 renew  
   
 ## １．環境  
   
@@ -38,24 +36,19 @@ Windows11 24h2用 wmicのインストール方法について
   
 ![1](https://github.com/user-attachments/assets/aa3e7fdb-ff79-42c0-a757-7ccf6350a586)  
   
-> [!WARNING]  
->「安全でないダウンロードがブロックされました」と表示されたら、「保存」をクリックすればダウンロードされます。  
-  
 ### 2.2 インストールの実行  
 　ここでは、c:\Temp\にダウンロードしたと仮定します。  
    
 
   
-　c:\Temp\windows_install.batを実行（ダブルクリック）します。  
-　もし、下記のような画面が出たら、詳細情報をクリックすると、実行ボタンが表示されます。  
-  
-![2](https://github.com/user-attachments/assets/2d78308b-4fd1-4534-8b12-68eeb56a19b9)  
+　c:\Temp\rfriends3_windows.batを実行（ダブルクリック）します。  
+   
+ <img width="466" height="344" alt="スクリーンショット 2026-04-11 220517" src="https://github.com/user-attachments/assets/b77a50e2-3b74-48eb-8d1d-585172c7f60f" />    
   
 実行をクリックします。  
   
-![3](https://github.com/user-attachments/assets/198ba710-8314-451f-b657-3bc08861186e)  
-  
   実行が開始されると、インストールフォルダを選択するダイアログが表示されるので、選択してください。  
+  
 ![clip_1](https://github.com/user-attachments/assets/ea58e03c-9ef5-4e65-bf31-3d63d0a39be3)  
   
 > [!CAUTION]  
@@ -71,18 +64,21 @@ Windows11 24h2用 wmicのインストール方法について
 ![5](https://github.com/user-attachments/assets/6b45dba3-560f-4154-8f7c-1ee8ed62041a)  
 
 インストールが完了すると、「続行するには何かキーを押してください」と表示されるので、  
-　　  
-　何かのキーを押せば、インストールは完了です。選択した場所にrfriends3ディレクトリが作成されます。  
+何かのキーを押せば画面が閉じられ、選択した場所にrfriends3ディレクトリが作成されます。  
   
 ![407470382-bb411e02-5b9f-4785-bf71-53411afaf80e](https://github.com/user-attachments/assets/b5d5b1e9-7bb9-4bfd-a824-b5220685faae)  
   
-　デスクトップにrf3server(WebServer)のショートカットが作成されます。  
+　また、デスクトップにrf3server(WebServer)のショートカットが作成されます。  
   
 ![7](https://github.com/user-attachments/assets/020b2261-abd8-485a-a7f7-b84a245edea1)  
   
+  これで、インストールは完了です。  
+  
 ## ３．ビルトインウェブサーバの実行  
   
-　rfriends3を実行する前にウェブサーバを実行しておく必要があります。デスクトップのショートカットrf3serverをダブルクリックすると、ビルトインウェブサーバが実行されます。　rfriends3\rf3server.batでも同様です。  
+　rfriends3を実行する前にウェブサーバを実行しておく必要があります。  
+ デスクトップのショートカットrf3serverをダブルクリックすると、ビルトインウェブサーバが実行されます。  
+ (rfriends3\rf3server.batでも同様です。)   
   
 ![8](https://github.com/user-attachments/assets/b37110ca-41f2-4aef-9a38-06733cddc7da)  
   
@@ -109,7 +105,8 @@ XXX.XXX.XXX.XXX:8000　
   
 と入力するとrfriends3が起動します。以下のようなrfriends3のトップ画面が出たら成功です。  
   
-![9](https://github.com/user-attachments/assets/1e06829e-9329-4d9b-a398-c75f16a4af88)  
+![clip_2](https://github.com/user-attachments/assets/d782464a-3085-4f7f-9cdb-522235e2b657)
+
   
 ## ５．rfriends3のアンインストール  
   
