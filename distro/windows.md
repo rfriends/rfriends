@@ -28,6 +28,12 @@ Windows11 24h2用 wmicのインストール方法について
   
 ## ２．インストール  
   
+インストールは3ステップで完了です。  
+  
+・インストーラのダウンロード（rfriends3_windows.bat）  
+・インストーラの実行  
+・インストール場所の選択    
+  
 ### 2.1 ダウンロード  
   
 [rfriends3_windows.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows.bat)  
