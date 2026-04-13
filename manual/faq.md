@@ -1,7 +1,7 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。   
   
-### 070 raspberry pi zero でpodcastで9件以上の表示ができません。  
+### 070 raspberry pi zero ではpodcastで9件以上の表示ができません。  
   
 raspberry pi zero はarmhfというCPUを使っており、 
 Chromiumブラウザが必要とするNEON 命令を持っていないためです。  
