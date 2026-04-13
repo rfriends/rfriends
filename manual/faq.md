@@ -1,6 +1,21 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。   
   
+### 070 raspberry pi zero でpodcastで9件以上の表示ができません。  
+  
+raspberry pi zero はarmhfというCPUを使っており、 
+Chromiumブラウザが必要とするNEON 命令を持っていないためです。  
+  
+ターミナルで、以下を実行すると、以下のようなメッセージが出ると思います。  
+  
+```  
+$ chromium --version  
+The hardware on this system lacks support for NEON SIMD extensions.  
+We now require NEON or equivalent architecture extensions on ARM-based  
+machines. See https://lists.debian.org/debian-devel/2023/09/msg00175.html  
+for more information.  
+```  
+  
 ### 069 updateでSSL エラーが出ます。   
       
 rfriends3/script/update  
