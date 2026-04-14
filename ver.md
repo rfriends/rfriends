@@ -10,8 +10,17 @@
 >  [9-1-3] パラメータ設定 - チェック　で更新してください。
   
 > [!NOTE]  
-> rfriends3のバージョンについては、[バージョン表記について](ver_doc.md)を参照ください。  
+> rfriends3のバージョンについては、[バージョン表記について](ver_doc.md)を参照ください。
   
+### 1.4.2-a01 (2026/04/14)  　          
+  
+1.4.1c -> 1.4.2-a01  
+  
+- NHK Podcastに対応。
+- headlessブラウザlightpandaに対応。  
+  インストール方法は以下を参照。  
+  https://rfriends.github.io/rfriends/tech/26.html
+    
 ### 1.4.1c (2026/04/12)  　          
   
 1.4.0g -> 1.4.1c  
