@@ -92,7 +92,7 @@ SSHを有効化する
    $ cd rfriends3_core  
    $ sh install_debian.sh  
 ```
-3) debian版(apache)  
+3) debian版(apache2)  
   
 > [!CAUTION]  
 > trixieの場合は、これを選択   
@@ -103,7 +103,7 @@ SSHを有効化する
    $ rm -rf rfriends3_core  
    $ git clone https://github.com/rfriends/rfriends3_core.git  
    $ cd rfriends3_core  
-   $ sh install_debian_apache.sh  
+   $ sh install_debian_apache2.sh  
 ```
   
 ## 6. raspberrypiを再起動する。  
