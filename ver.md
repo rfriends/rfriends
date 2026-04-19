@@ -12,13 +12,14 @@
 > [!NOTE]  
 > rfriends3のバージョンについては、[バージョン表記について](ver_doc.md)を参照ください。
   
-### 1.4.2-a03 (2026/04/18)  　          
+### 1.4.2-b1 (2026/04/20)  　          
   
-1.4.1c -> 1.4.2-a03  
+1.4.1c -> 1.4.2-b1  
   
+- 微修正。 (b1)  
 - NHK Podcastに対応。 (a03)  
-- JFN Podsに対応。 (a03)  
-- radiko Podcastに対応。 (a03)
+  JFN Podsに対応。   
+  radiko Podcastに対応。 
   
 - 設定にlightpandaのon/offスィッチを追加。(a02)  
   lightpandaをインストールしていてもoffにできます。  
