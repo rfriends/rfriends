@@ -4,10 +4,10 @@
 microSDに書いて起動するだけでrfriends3が使用できます。  
   
 > [!NOTE]  
-> 2026/01/04  
-> Trixie版を公開しました。  
-> Bookworm版を公開しました。  
-> Bullseye版を公開しました。       
+> 2026/04/23  
+> ~~Trixie版を公開しました。~~  
+> Bookworm版(32/64)を公開しました。  
+> ~~Bullseye版を公開しました。~~       
   
 ## ０．準備   
 
@@ -34,14 +34,6 @@ WindowsPCまたはLinuxPCが必要です。Macでも可能だと思います。A
 ・Raspberry Pi 3 Model B または Raspberry Pi Zero W/Zero 2W  
 ・5V/2.5A ACアダプタ （Zeroの場合は2A）  
 注意：低アンペアのアダプタでも動作しますが不安定になる可能性があります。  
-・LANケーブル（有線接続の場合）  
-・microSDカード Class10 UHS-I（8GB以上、できれば32GB,64GB,128GB）  
-・microSDリーダ  
-  
-必要に応じて  
-  
-・Raspberry Pi ケース  
-・ヒートシンク  
   
 ### SDカード用ツール  
   
@@ -57,7 +49,7 @@ SDメモリカードをフォーマットします。
   
 ### ssh,smb,ftpクライアント  
   
-WindowsPC環境では、sshはteraterm、smbはPCのエクスプローラ、ftpはfilezilla がおすすめ。  
+WindowsPC環境では、sshはteraterm/RLogin、smbはPCのエクスプローラ、ftpはfilezilla がおすすめ。  
 LinuxPC環境では標準ツールが使えます。  
 Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネージャ＋(flashlihgt+clock)、ftpはFtpCafe(Droidware UK) がおすすめ。  
 他の環境の方は、ssh,smb,ftpで検索してください。  
@@ -78,7 +70,11 @@ Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネー
 ~~[rfriends3_bullseye_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bullseye_latest.img.zip)~~    
   
 #### - Raspios GNU/Linux 12 bookworm lite    
+  
+32bit版(全モデル)
 [rfriends3_bookworm_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bookworm_latest.img.zip)    
+64bit版(3/4/5/zero2)
+[rfriends3_bookworm_latest_64.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_bookworm_latest_64.img.zip)   
   
 #### - Raspios GNU/Linux 13 trixie lite     
 ~~[rfriends3_trixie_latest.img.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_trixie_latest.img.zip)~~    
