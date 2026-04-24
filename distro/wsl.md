@@ -5,7 +5,7 @@
 ![1](https://github.com/user-attachments/assets/429c1661-fd9c-4a80-87cb-cb3fb07661a4)   
   
 初版：2024/11/15  
-改版：2026/02/07
+改版：2026/04/24
 
 > [!NOTE]
 > 以下、混乱しがちなので    
@@ -34,6 +34,7 @@ PS> wsl --list --online
 |2025/05/02|〇|Ubuntu-20.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-22.04|ubuntu|| 
 |2025/05/02|〇|Ubuntu-24.04|ubuntu|| 
+|2026/04/24|〇|Ubuntu-26.04|ubuntu|| 
 |2025/10/23|〇|Debian &nbsp;&nbsp;&nbsp;&nbsp;(13.1)|debian|install_debian_apache.sh|  
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|FedoraLinux-42|stream||  
