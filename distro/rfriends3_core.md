@@ -118,7 +118,7 @@ Apache2版を追加しました。(2025/08/15)
 # exit
 ``` 
   
-実行shは、install_ubuntu.sh ~~~または、install_ubuntu_apache2.sh~~~ です。  
+実行shは、install_ubuntu.sh ~~または、install_ubuntu_apache2.sh~~ です。  
   
 
 ### 2.2 Debian/Linux開発環境の場合  
