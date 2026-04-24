@@ -151,8 +151,8 @@ sudoがない場合
 ```
 再起動が必要かもしれません。  
   
-4) 実行shは、install_debian.sh ~~~または、install_debian_apache2.sh~~~ です。  
-~~ただしdebian13は、install_debian_apache2.sh です。~~
+4) 実行shは、install_debian.sh または、install_debian_apache2.sh です。  
+ただしinstall_debian.sh をおすすめします。
   
 ## ３．rfriends3のダウンロードとインストール  
   
@@ -180,7 +180,7 @@ $ sh install_XXXXX.sh
   
 これでインストールは完了です。  
   
-> [!CAUTION]  
+> [!IMPORTANT]  
 > ただし、ubuntu 26.04 および  debian13 のlighttp版の場合、以下の操作をしないと録音予約ができません。  
 > $ cd ~/  
 > $ cd rfriends3_core  
