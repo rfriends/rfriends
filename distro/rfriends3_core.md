@@ -54,7 +54,7 @@ Apache2版を追加しました。(2025/08/15)
 |2025/04/27|〇| Debian (Buster)|10||  
 |2025/04/26|◎| Debian (Bullseye)|11||  
 |2025/04/26|◎| Debian (Bookworm)|12||  
-|2026/04/24|〇| Debian (Trixie)|13.4|lighttpd/apache版どちらもOK|  
+|2026/04/24|〇| Debian (Trixie)|13.4||  
 |2025/05/02|〇| Kali linux|-||  
 |2026/02/09|△| eLxr linux|12.0.0|注１|  
   
@@ -118,9 +118,9 @@ Apache2版を追加しました。(2025/08/15)
 # exit
 ``` 
   
-実行shは、install_ubuntu.sh ~~または、install_ubuntu_apache2.sh~~ です。  
+実行shは、install_ubuntu.sh または、install_ubuntu_apache2.sh です。   
+ただしinstall_ubuntu.sh をおすすめします。  
   
-
 ### 2.2 Debian/Linux開発環境の場合  
 
 1) システムを最新にし、アプリを追加する。   
@@ -156,7 +156,9 @@ sudoがない場合
   
 ## ３．rfriends3のダウンロードとインストール  
   
-　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
+### 3.1 ダウンロードとインストール   
+      
+sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
  
 > [!CAUTION]
 > 必ず２で確認したユーザでログインしてください。    
@@ -178,14 +180,30 @@ $ cd rfriends3_core
 $ sh install_XXXXX.sh
 ```  
   
-これでインストールは完了です。  
+これで基本のインストールは完了です。  
+
+### 3.2 ubuntu 26.04 および  debian13 の追加処理  
+
+一部、追加処理が必要です。  
   
-> [!IMPORTANT]  
-> ただし、ubuntu 26.04 および  debian13 のlighttp版の場合、以下の操作をしないと録音予約ができません。  
-> $ cd ~/  
-> $ cd rfriends3_core  
-> $ sh lighttpd_override.sh  
+1) lighttpd版の場合
   
+ubuntu 26.04 および  debian13 の場合、以下の操作をしないと録音予約ができません。  
+```  
+$ cd ~/  
+$ cd rfriends3_core  
+$ sh lighttpd_override.sh
+```
+    
+2) apache2版の場合  
+ubuntu 26.04 の場合、以下の操作をしないと正常に動作しません。    
+```  
+$ cd ~/  
+$ cd rfriends3_core  
+$ sh apache2_override.sh
+```
+### 3.3 再起動
+   
 念のため、再起動してください。  
 ```
 $ sudo reboot
