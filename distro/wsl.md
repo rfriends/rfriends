@@ -35,7 +35,7 @@ PS> wsl --list --online
 |2025/05/02|〇|Ubuntu-22.04|ubuntu|| 
 |2025/05/02|〇|Ubuntu-24.04|ubuntu|| 
 |2026/04/24|〇|Ubuntu-26.04|ubuntu|| 
-|2025/10/23|〇|Debian &nbsp;&nbsp;&nbsp;&nbsp;(13.1)|debian|install_debian_apache.sh|  
+|2025/10/23|〇|Debian &nbsp;&nbsp;&nbsp;&nbsp;(13.1)|debian||  
 |2025/05/02|〇|kali-linux|debian||  
 |2025/05/02|〇|FedoraLinux-42|stream||  
 |||FedoraLinux-43|stream|| 
@@ -168,6 +168,12 @@ $ git clone https://github.com/rfriends/rfriends3_core.git
 $ cd rfriends3_core
 $ sed -i 's/^export optsamba="on"/export optsamba="off"/' install_ubuntu.sh
 $ sh install_ubuntu.sh
+```
+ubuntu 26.04, debian 13の場合、以下が必要です。
+```
+$ cd
+$ cd rfriends3_core
+$ sh lighttpd_override.sh
 ```
   
 ### 4.2 インストール終了    
