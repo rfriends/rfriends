@@ -30,7 +30,9 @@ PS> wsl --list --online
   
 |最終確認|判定|ディストリビューション|sh|備考|   
 |---|:---:|---|---|---|  
+|||Ubuntu-Backup|ubuntu||  
 |2025/05/02|〇|Ubuntu &nbsp;&nbsp;&nbsp;&nbsp;(24.04)|ubuntu||   
+|2025/05/02|〇|Ubuntu-18.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-20.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-22.04|ubuntu|| 
 |2025/05/02|〇|Ubuntu-24.04|ubuntu|| 
@@ -40,20 +42,19 @@ PS> wsl --list --online
 |2025/05/02|〇|FedoraLinux-42|stream||  
 |||FedoraLinux-43|stream|| 
 |2025/05/02|✕|OracleLinux_7_9|stream|yum<br>注１）|   
-|||OracleLinux_8_10|stream||  
-|||OracleLinux_9_5|stream||  
+|||OracleLinux_8_7|stream||  
+|||OracleLinux_9_1|stream||  
 |2025/05/02|〇|AlmaLinux-8|stream||  
-|2025/05/02|〇|AlmaLinux-9|stream||  
 |||AlmaLinux-10|stream||  
 |2025/05/02|〇|AlmaLinux-Kitten-10|stream||   
 |2025/05/03|✕|SUSE-Linux-Enterprise-15-SP6|suse|lighttpd<br>not found|  
-|||SUSE-Linux-Enterprise-15-SP7|suse||  
+|||SUSE-Linux-Enterprise-15-SP5|suse||  
 |||SUSE-Linux-Enterprise-16.0|suse|| 
-|2025/05/02|〇|openSUSE-Tumbleweed|suse||  
-|2025/05/02|〇|openSUSE-Leap-15.6|suse||   
 |||openSUSE-Leap-16.0|suse||  
 |2025/05/02|〇|archlinux|arch||  
 |2026/02/07|✕|eLxr 12.0|debian|at not found|  
+|||Alpine|||  
+|||Alpine2|||  
 
 ### 提供停止　(2025/10/23現在)  
   
@@ -61,11 +62,13 @@ PS> wsl --list --online
   
 |最終確認|判定|ディストリビューション|sh|備考|   
 |---|:---:|---|---|---|  
-|2025/05/02|〇|Ubuntu-18.04|ubuntu||  
+|2025/05/02|〇|AlmaLinux-9|stream||  
 |2025/05/02|〇|Debian &nbsp;&nbsp;&nbsp;&nbsp;(12)|debian||   
 |2025/05/02|〇|OracleLinux_8_7|stream|注１）|  
 |2025/05/02|〇|OracleLinux_9_1|stream|注１）|  
-|2025/05/03|✕|SUSE-Linux-Enterprise-15-SP5|suse|lighttpd<br>not found| 
+|2025/05/03|✕|SUSE-Linux-Enterprise-15-SP5|suse|lighttpd<br>not found|  
+|2025/05/02|〇|openSUSE-Tumbleweed|suse||  
+|2025/05/02|〇|openSUSE-Leap-15.6|suse||   
 
 注１）以下の操作が必要です。  
 ```
