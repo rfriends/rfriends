@@ -12,6 +12,17 @@
 > [!NOTE]  
 > rfriends3のバージョンについては、[バージョン表記について](ver_doc.md)を参照ください。
   
+  ### 1.4.3-a01 (2026/05/01)  　          
+  
+1.4.2c -> 1.4.3-a01  
+  
+- WebRadio追加  
+  ottava  
+  AFN GO  
+  ListenRadio  
+  onsen  
+  ただし、ListenRadio,onsenについては正式版では削除するかもしれません。
+  
 ### 1.4.2c (2026/04/24)  　          
   
 1.4.1c -> 1.4.2c  
