@@ -17,7 +17,7 @@ Apache2版を追加しました。(2025/08/15)
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第33版　2026/04/24 
+第34版　2026/05/02 
   
 ## １．ディストリビューション  
 
@@ -180,24 +180,8 @@ $ sh install_XXXXX.sh
 
 ### 3.2 ubuntu 26.04 および  debian13 の追加処理  
 
-一部、追加処理が必要です。  
+~~一部、追加処理が必要です。~~  
   
-1) lighttpd版の場合
-  
-ubuntu 26.04 および  debian13 の場合、以下の操作をしないと録音予約ができません。  
-```  
-$ cd ~/  
-$ cd rfriends3_core  
-$ sh lighttpd_override.sh
-```
-    
-2) apache2版の場合  
-ubuntu 26.04 の場合、以下の操作をしないと正常に動作しません。    
-```  
-$ cd ~/  
-$ cd rfriends3_core  
-$ sh apache2_override.sh
-```
 ### 3.3 再起動
    
 念のため、再起動してください。  
