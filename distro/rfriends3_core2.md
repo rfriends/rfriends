@@ -97,7 +97,16 @@ $ rm -rf rfriends3_core
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
 $ sh install_stream.sh
-```  
+```
+  
+fedora44の場合、追加処理が必要です。  
+以下の操作をしないと録音予約ができません。  
+  
+```    
+$ cd ~/  
+$ cd rfriends3_core  
+$ sh lighttpd_override.sh
+```
   
 これでインストールは完了です。  
 再起動してください。  
