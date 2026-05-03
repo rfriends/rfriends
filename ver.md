@@ -12,22 +12,17 @@
 > [!NOTE]  
 > rfriends3のバージョンについては、[バージョン表記について](ver_doc.md)を参照ください。
   
-  ### 1.4.3-a04 (2026/05/03)  　          
+  ### 1.4.3 (2026/05/03)  　          
   
-1.4.2c -> 1.4.3-a04  
+1.4.2c -> 1.4.3  
   
-- termux対応(a04)  
-- fedora対応(a03)  
-  
-- 音泉(onsen)の修正(a02)  
-  32bit版で番組一覧がタイムアウトするのを修正  
-      
+- termux対応  
+- fedora対応   
 - WebRadio追加  
   ottava  
   AFN GO  
-  ListenRadio  
-  onsen  
-  ただし、ListenRadio,onsenについては正式版では削除するかもしれません。
+  ~~ListenRadio~~  
+  ~~onsen~~  
   
 ### 1.4.2c (2026/04/24)  　          
   
