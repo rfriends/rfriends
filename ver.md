@@ -17,7 +17,8 @@
 1.4.3 -> 1.4.3a  
   
 - 微修正  
-- home directoryの取得方法を変更  
+- home directoryの取得方法を変更
+- メニュー修正（audee,listenaudio,onsen 削除）
   
 ### 1.4.3 (2026/05/03)  　          
   
