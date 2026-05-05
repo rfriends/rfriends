@@ -49,6 +49,7 @@ WindowsPCまたはLinuxPCが必要です。Macでも可能だと思います。A
   
 イメージはraspios上にrfriends3をインストールし各種設定を行ったものです。  
 リンクを右クリックして「名前をつけてリンク先を保存する」。    
+XXXXX.img.gzファイルが保存されますが、解凍の必要はありません。  
     
 #### - Raspios GNU/Linux 12 bookworm lite    
   
@@ -62,7 +63,7 @@ WindowsPCまたはLinuxPCが必要です。Macでも可能だと思います。A
 
 Raspberry Pi Imagerを使ってイメージをmicroSDに書く。  
   
-Raspberry Pi Imagerの機種、バージョンの違いによりメッセージ等が異なる。  
+Raspberry Pi Imagerの機種、バージョンの違いによりメッセージ等が異なります。  
 処理の流れは以下のとおり。  
   
 ### 1) Device  
