@@ -58,7 +58,7 @@ WindowsPCまたはLinuxPCが必要です。Macでも可能だと思います。A
 64bit版(3/4/5/zero2)  
 [rfriends3_bookworm_64](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.4.3a_raspios_bookworm_64_202605052023.img.gz)   
   
-## ２．イメージをmicroSDに書く。
+## ２．イメージをmicroSDに書く。(Windows,Linux,macOS)
 
 Raspberry Pi Imagerを使ってイメージをmicroSDに書く。  
   
