@@ -142,7 +142,7 @@ psk="password"
 注意：一度起動すると、wpa_supplicant.conf は　/etc/wpa_supplicantディレクトリに移動し、boot領域からは削除されます。  
 設定を間違った場合などで再設定する場合は、wpa_supplicant.conf を再度、boot領域にコピーしてください。  
   
-＃# ５．rfriedns3にアクセスする。  
+## ５．rfriedns3にアクセスする。  
   
 Webサーバ（lighttpd/apache）が自動で起動しているので、任意ブラウザでアクセスする。  
 http://rfriends3:8000  
