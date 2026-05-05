@@ -18,12 +18,12 @@ microSDに書いて起動するだけでrfriends3が使用できます。
   
 ### 必要なもの
     
-１）WAN,LAN環境    
-２）PC  
+#### １）WAN,LAN環境    
+#### ２）PC  
 WindowsPCまたはLinuxPCが必要です。Macでも可能だと思います。Androidでもできないかと試してみましたが、microSDへの書き込みが無理でした。  
 稼働後は大丈夫ですが。以下は主にwindowsPCでの操作を記述しています。      
-３）Raspberry pi 一式    
-４）SDカード用ツール  
+#### ３）Raspberry pi 一式    
+#### ４）SDカード用ツール  
 ・SDメモリーカードフォーマッター  
 　SDメモリカードをフォーマットします。  
 　[sdcard format](https://www.sdcard.org/ja/downloads-2/formatter-2/)    
@@ -32,7 +32,7 @@ WindowsPCまたはLinuxPCが必要です。Macでも可能だと思います。A
 　[Raspberry Pi Imager](https://www.raspberrypi.com/software/) 　
 　<img width="561" height="469" alt="raspi" src="https://github.com/user-attachments/assets/d6fa7696-ccee-4b6c-9df8-2e1bf72da7a5" />
   
-５）ssh,smb,ftpクライアント  
+#### ５）ssh,smb,ftpクライアント  
 　WindowsPC環境では、sshはteraterm/RLogin、smbはPCのエクスプローラ、ftpはfilezillaなど。  
 　LinuxPC環境では標準ツールが使えます。  
 　Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネージャ＋(flashlihgt+clock)、ftpはFtpCafe(Droidware UK)など。  
