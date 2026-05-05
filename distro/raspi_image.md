@@ -65,33 +65,33 @@ Raspberry Pi Imagerを使ってイメージをmicroSDに書く。
 Raspberry Pi Imagerの機種、バージョンの違いによりメッセージ等が異なる。  
 処理の流れは以下のとおり。  
   
-1) Device  
+### 1) Device  
 使用するRaspberryPiの機種  
 <img width="682" height="482" alt="raspi2" src="https://github.com/user-attachments/assets/1dd65eb0-20e8-425a-8752-c5279d7f31d7" />  
   
   
-2) OS  
+### 2) OS  
 カスタムイメージを使う/Use Custom
 <img width="682" height="482" alt="raspi3" src="https://github.com/user-attachments/assets/57c967fa-09b3-40e7-bc1c-55b2495b6f4c" />  
   
   
-3) ストレージ  
+### 3) ストレージ  
 microSDを選択
 <img width="682" height="482" alt="raspi5" src="https://github.com/user-attachments/assets/a585172c-a1cf-484f-a783-205f583abe8a" />  
   
   
-4) Customisation  
+### 4) Customisation  
 バージョンによりスキップされる。  
 選択する場合も、「いいえ」を選択する。
 <img width="550" height="202" alt="raspi55" src="https://github.com/user-attachments/assets/0bf8f97f-f08e-4e4c-ad17-a30d4e03a18f" />  
   
   
-5) Writing  
+### 5) Writing  
 実際にmicroSDに書き込みを行う。
 <img width="682" height="482" alt="raspi6" src="https://github.com/user-attachments/assets/e5415330-be28-4e16-a397-dc8435b0ac6a" />  
   
   
-6) Done  
+### 6) Done  
 終了。
 
   
