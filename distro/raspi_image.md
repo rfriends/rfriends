@@ -153,7 +153,9 @@ RaspberryPiのLEDが点滅し、しばらくすると点灯に変わります。
 ## ５．rfriedns3にアクセスする。  
   
 Webサーバ（lighttpd/apache）が自動で起動しているので、任意ブラウザでアクセスする。  
-http://rfriends3:8000  
+http://rpi-bookworm:8000　(64bit)  
+または
+http://rfriends3:8000 　(32bit) 
   
 又はPC等を使用してIPアドレスを調べてアクセスする。  
 RaspberrypiはDHCPで動作しています。IPアドレスの確認方法は、下記のようなIP scanner ソフトを使うと便利です。  
