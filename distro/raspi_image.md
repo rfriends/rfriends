@@ -95,7 +95,7 @@ microSDを選択
 終了。
 
 > [!NOTE]  
-> rufusでも書き込みは可能。  
+> Windowsはrufusでも書き込み可能。  
 > また、 Linux/macOSでは、以下でも可能。  
 > $BACKUP_NAMEはイメージファイル、rfriends3_XXXXXX.img.gz  
 > $DEVはmicroSDのデバイス、/dev/sdc 等
