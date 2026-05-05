@@ -117,11 +117,11 @@ $ zcat "$BACKUP_NAME" | sudo dd of="$DEV" bs=4M status=progress conv=fsync
   
 ![3-1](https://github.com/user-attachments/assets/4870e36e-de56-42a2-bad3-e62ec20d08cd)  
    
-エクスプローラで確認すると、/bootまたは/boot/firmwareという領域（fat32フォーマット）が認識されているはずです。  
+エクスプローラで確認すると、/bootまたは/boot/firmwareというboot領域（fat32フォーマット）が認識されているはずです。  
   
 ![3-2](https://github.com/user-attachments/assets/3c1c37ef-4dff-4a50-abfc-811db0b19bcb)  
   
-wpa_supplicant.confに自環境に合わせてssid,passwdを設定し、microSDに追加する。  
+1.でダウンロードしていたwpa_supplicant.confに自環境に合わせてssid,passwdを設定し、microSDのboot領域にコピーする。  
   
 ```
 ctrl_interface=/var/run/wpa_supplicant Group=netdev  
