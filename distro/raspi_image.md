@@ -27,6 +27,7 @@ WindowsPCまたはLinuxPCが必要です。Macでも可能だと思います。A
 ・SDメモリーカードフォーマッター  
 　SDメモリカードをフォーマットします。  
 　[sdcard format](https://www.sdcard.org/ja/downloads-2/formatter-2/)    
+   
 ・Raspberry Pi Imager(Windows,Linux,macOS)
 　イメージをSDメモリカードに書き込みます。  
 　[Raspberry Pi Imager](https://www.raspberrypi.com/software/) 　
