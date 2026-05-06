@@ -79,9 +79,9 @@ microSDを選択（間違えないように！）
   
   
 ### 4) Customisation  
-バージョンによりスキップされる。  
-選択する場合も、「いいえ」を選択する。
-<img width="550" height="202" alt="raspi55" src="https://github.com/user-attachments/assets/0bf8f97f-f08e-4e4c-ad17-a30d4e03a18f" />  
+バージョンによりこの項目は表示されずにスキップされる。  
+表示された場合も、「いいえ」を選択する。
+<img width="550" height="202" alt="raspi55" src="https://github.com/user-attachments/assets/51e7e853-c08c-4188-8227-d9d8473c8ef2" />
   
   
 ### 5) Writing  
@@ -136,7 +136,7 @@ psk="password"
 
 <img width="416" height="60" alt="c2" src="https://github.com/user-attachments/assets/eb5f4225-9b71-48b8-ad59-ec613162c256" />
   
-このmicroSDのboot/bootfs領域（この例ではF:）にwpa_supplicant.confをコピーする。  
+このmicroSDのboot/bootfs領域（この例ではF:\）にwpa_supplicant.confをコピーする。  
   
 <img width="1056" height="364" alt="c" src="https://github.com/user-attachments/assets/50ca81b7-c4cc-4968-9b1c-e04a9d5b781a" />
   
@@ -151,13 +151,18 @@ RaspberryPiのLEDが点滅し、しばらくすると点灯に変わります。
   
 ## ５．rfriends3にアクセスする。  
   
-Webサーバ（lighttpd/apache）が自動で起動しているので、任意ブラウザでアクセスする。  
+Webサーバ（lighttpd/apache2）が自動で起動しているので、任意ブラウザでアクセスする。  
 32bit版　http://rpi-bookworm:8000   
 または  
 64bit版　http://rfriends3:8000   
   
-うまくつながらない場合は、３．をやり直してください。  
-
+アクセスに成功すると、ブラウザにこんな感じで表示されると思います。  
+  
+<img width="389" height="394" alt="rf3-3" src="https://github.com/user-attachments/assets/8928226e-996e-412e-ba7a-17b0428bb892" />
+  
+  
+** うまくつながらない場合は、３．をやり直してください。**  
+    
 また、すでにrpiイメージのマシンが稼働している場合は、PC等を使用してIPアドレスを調べてアクセスする必要があります。  
 RaspberrypiはDHCPで動作しています。IPアドレスの確認方法は、下記のようなIP scanner ソフトを使うと便利です。  
 android, iPhoneでは、”Fing(無料版)”というアプリがお勧めです。  
@@ -169,9 +174,8 @@ Advanced IP Scanner
 ```
 RFRIENDS3 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 ```
-こんな感じで見つかると思います。  
-  
-![4](https://github.com/user-attachments/assets/90e1c0db-6204-474d-96b3-e7725e2f400f)  
+
+
   
 ## ６．microSDの領域拡張を行う。  
   
@@ -182,13 +186,11 @@ RFRIENDS3 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 再起動後は領域拡張を行うのでmicroSDのサイズによっては時間がかかります。緑のランプが点滅から点灯になるのを待ってください。  
   
 注意：この操作をしないと大容量のmicroSDを使用していても8GB弱しか認識されません。  
-再起動後、領域が拡張されたことを確認してください。
+再起動後、領域が拡張されたことを確認してください。  
+以下の例は64GBのmicroSDです。  
   
-```
-$ df -h
-```
-  
-![5](https://github.com/user-attachments/assets/54b9ce5e-1c96-4b5d-a0b3-3b5812b299ea)  
+<img width="162" height="88" alt="rf3-2" src="https://github.com/user-attachments/assets/591742d6-921c-4d2b-85d6-d369c0227e30" />
+ 
   
 ## ７．rfriends3を最新にする。  
   
