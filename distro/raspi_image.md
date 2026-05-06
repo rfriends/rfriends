@@ -12,7 +12,7 @@ microSDに書いて起動するだけでrfriends3が使用できます。
 
 ### 動作確認機種
 
-・Raspberry Pi 1/2/3/4
+・Raspberry Pi 1/2/3/4  
 ・Raspberry Pi Zero W/Zero 2W  
   
 当方、Raspberry Pi 5 を所持していないため確認できていません。  
