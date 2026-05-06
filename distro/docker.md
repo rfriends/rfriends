@@ -186,11 +186,10 @@ crontab登録時に復元データを自動で作成します。
   
 ## ５．データ保存・復元  
   
-コンテナを終了させても、ホストのホームディレクトリに録音データ、パラメータ設定が保存されています  
-  
-rfriends_docker    
-share/smbdir/usr2  
-share/rfriends3/config  
+コンテナを終了させても、ホストのrfriends_dockerに録音データ、パラメータ設定が保存されています  
+    
+rfriends_docker/share/smbdir/usr2  
+rfriends_docker/share/rfriends3/config  
   
 ただし、予約データ・定期実行処理設定は消えるので、コンテナの再起動時に自動復元処理を行い、それらを（ほぼ）復元します。
 
