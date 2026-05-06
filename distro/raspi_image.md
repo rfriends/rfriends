@@ -91,18 +91,7 @@ microSDを選択（間違えないように！）
   
   
 ### 6) Done  
-終了。  
-３． に進んでください。  
-  
-> [!NOTE]  
-> Windowsではrufusでも書き込み可能。  
-> Linux/macOSでは、以下でも可能。
-  　
-```  
-$ zcat "$BACKUP_NAME" | sudo dd of="$DEV" bs=4M status=progress conv=fsync
-````
-$BACKUP_NAMEはイメージファイル、rfriends3_XXXXXX.img.gz    
-$DEVはmicroSDのデバイス、/dev/sdc 等 (間違うとそのデバイスに書き込むので要注意)  
+終了。   
   
 ## ３．wifiアクセス情報を追加する。
   
