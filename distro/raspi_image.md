@@ -15,6 +15,8 @@ microSDに書いて起動するだけでrfriends3が使用できます。
 ・Raspberry Pi 1/2/3/4
 ・Raspberry Pi Zero W/Zero 2W  
   
+当方、Raspberry Pi 5 を所持していないため確認できていません。  
+  
 ![1](https://github.com/user-attachments/assets/d30f2827-62d3-4f20-a60e-2bf5e72a6e13)  
   
 ### 必要なもの
