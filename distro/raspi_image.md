@@ -102,7 +102,7 @@ microSDを選択（間違えないように！）
 $ zcat "$BACKUP_NAME" | sudo dd of="$DEV" bs=4M status=progress conv=fsync
 ````
 $BACKUP_NAMEはイメージファイル、rfriends3_XXXXXX.img.gz    
-$DEVはmicroSDのデバイス、/dev/sdc 等  
+$DEVはmicroSDのデバイス、/dev/sdc 等 (間違うとそのデバイスに書き込むので要注意)  
   
 ## ３．wifiアクセス情報を追加する。
   
