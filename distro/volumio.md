@@ -4,6 +4,8 @@
 音楽に加えて、ラジオのライブ放送や録音放送がRaspberryPiで楽しめるようになります。  
 https://volumio.com/  
   
+以前のドキュメントは古くなったので全面的に書き換えました。(2020/05/08)  
+  
 ![1](https://github.com/user-attachments/assets/1a4aceb1-b10b-42f4-b427-0ef64d44f702)  
   
 初 版 2026/05/08  
