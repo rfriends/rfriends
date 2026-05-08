@@ -4,11 +4,6 @@
 音楽に加えて、ラジオのライブ放送や録音放送がRaspberryPiで楽しめるようになります。  
 https://volumio.com/  
   
-以下のサイトは古くなったので書き換えました。  
-  
-旧) ミュージックプレーヤーVolumio版rfriends3でラジオ録音  
-https://rfriends.github.io/rfriends/distro/volumio.html  
-  
 ![1](https://github.com/user-attachments/assets/1a4aceb1-b10b-42f4-b427-0ef64d44f702)  
   
 初 版 2026/05/08  
