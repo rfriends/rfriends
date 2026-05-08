@@ -134,7 +134,7 @@ rfriendsのメニューで、ラジコ - 放送中 - 番組を選択し
 volumioでは埋め込みジャケットに対応していないため、画面が少しさみしくなります。  
 rfriends3では、ファイル転送時に、folder.jpgを作成してjacket表示をさせることができます。  
   
-rfriedns3の「設定 - パラメータ - 編集」  
+rfriedns3の「設定 - パラメータ - 編集」 (760行あたり)  
   
 rftrans_jacket=2  
 に設定すると、番組データ転送時にjacket(folder.jpg)を作成作成します。  
