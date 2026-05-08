@@ -10,7 +10,7 @@ https://volumio.com/
   
   
 初 版 2026/05/08  
-第 版 2026/05/08  
+第2版 2026/05/09  
   
   
 ## ０．前提  
@@ -131,6 +131,8 @@ rfriendsのメニューで、ラジコ - 放送中 - 番組を選択し
   
 ## ５．その他  
   
+### 5.1 NHK らじるらじるを聞く  
+  
 radikoと同様にrfriendsでNHKらじるらじるも聞けますが、  
 以下の設定でVolumio単体でも聞けるようになります。  
 注）2026/03末でR2 は閉局しました。  
@@ -143,6 +145,19 @@ $ sudo cp -p my-web-radio /data/favourites/.
   
 マイウェブラジオからアクセスしてください。  
 ![clip_2](https://github.com/user-attachments/assets/edd83de7-7eb7-4d27-aa72-8c19a8d8fddd)  
+
+### 5.2 sambaアクセスについて  
+
+Windows11 homeユーザでsambaアクセスができない場合、 
+sshでログインし、  
+  
+```
+$ sudo smbpasswd -a volumio
+$ sudo systemctl restart smbd
+```  
+を実行したのち、ブラウザで  
+\\(IPアドレス)  
+を入力してください。  
   
    
 以上  
