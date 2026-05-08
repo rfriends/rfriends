@@ -6,7 +6,8 @@ https://volumio.com/
   
 以前のドキュメントは古くなったので全面的に書き換えました。(2020/05/08)  
   
-![1](https://github.com/user-attachments/assets/1a4aceb1-b10b-42f4-b427-0ef64d44f702)  
+<img width="600" height="300" alt="47233834-5352-4b09-9308-f88842119cb5" src="https://github.com/user-attachments/assets/d62bfc88-a841-4fb4-a8b3-3ebdd3e542f2" />
+  
   
 初 版 2026/05/08  
 第 版 2026/05/08  
@@ -29,7 +30,7 @@ raspberry pi volumio インストール
 ・SSHアクセスができていること。  
   
 当方は以下の環境で確認しました。  
-・Raspberry Pi 3B  
+・Raspberry Pi 3B / zero 2 
 ・volumio Ver. 4.119 2026/03/24  
 ・rfriends3 1.4.3a  
 ・USB-DAC CX31993 384khz HIFI AUDIO  
