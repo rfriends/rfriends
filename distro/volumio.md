@@ -128,10 +128,54 @@ rfriendsのメニューで、ラジコ - 放送中 - 番組を選択し
   
 ![6](https://github.com/user-attachments/assets/b674bc07-4f10-418e-bb80-f324f655a3ce)  
   
+    
+## ５．volumioでjacketを表示する方法
   
-## ５．その他  
+volumioでは埋め込みジャケットに対応していないため、画面が少しさみしくなります。  
+rfriends3では、ファイル転送時に、folder.jpgを作成してjacket表示をさせることができます。  
   
-### 5.1 NHK らじるらじるを聞く  
+rfriedns3の「設定 - パラメータ - 編集」  
+  
+rftrans_jacket=2  
+に設定すると、番組データ転送時にjacket(folder.jpg)を作成作成します。  
+また、cleanjob実行時に不足しているjacket(folder.jpg)を作成します。  
+  
+```
+設定例）
+録音時に、timefree、聞き逃し、podcastデータを/data/INTERNAL/data/に転送し
+jacketを作成する。
+
+;; 0:off,1:iTunes,2:ディレクトリ指定,3:Gdrive 
+rftrans = 2
+;; rftrans＝2 の時、0:局別番組別、1:番組別、2:局別、3:分別無
+rftrans_s = 0
+;; 0:off,1:folder.jpg 転送,2:folder.jpg 転送及び作成
+rftrans_jacket = 2
+;; ディレクトリ
+rftrans_dir = "/data/INTERNAL/data/"
+;; Gdriveのみ
+;; 0:なし、1-14:制限値以上になると古いものから削除
+rftrans_limit = 0
+;; ----------------------------
+;; radiko　 (2:move 1:copy 0:off)
+rftrans_radiko = 0
+;; radiru　 (2:move 1:copy 0:off)
+rftrans_radiru = 0
+;; timefree (2:move 1:copy 0:off)
+rftrans_timefree = 2
+;; radiru_vod (2:move 1:copy 0:off)
+rftrans_radiru_vod = 2
+;; radiru_gogaku (2:move 1:copy 0:off)
+rftrans_radiru_gogaku = 0
+;; podcast (2:move 1:copy 0:off)
+rftrans_podcast = 2
+```
+<img width="601" height="541" alt="clip_11" src="https://github.com/user-attachments/assets/3f3b2648-4fd8-4368-a5a2-6d0ba98c21bd" />
+ 
+
+## ６．その他  
+  
+### 6.1 NHK らじるらじるを聞く  
   
 radikoと同様にrfriendsでNHKらじるらじるも聞けますが、  
 以下の設定でVolumio単体でも聞けるようになります。  
@@ -146,7 +190,7 @@ $ sudo cp -p my-web-radio /data/favourites/.
 マイウェブラジオからアクセスしてください。  
 ![clip_2](https://github.com/user-attachments/assets/edd83de7-7eb7-4d27-aa72-8c19a8d8fddd)  
 
-### 5.2 sambaアクセスについて  
+### 6.2 sambaアクセスについて  
 
 Windows11 homeユーザでsambaアクセスができない場合、 
 sshでログインし、  
