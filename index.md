@@ -23,7 +23,8 @@
 |5|[X(twitter）](https://x.com/rfriends2017)|リリース情報、障害情報、TIPSなど|
 |6|[掲示板](https://ss1.xrea.com/rf3.s331.xrea.com/wforum/wforum.cgi)|質問、要望、感想など。|
 |7|[ブログ](https://rfriends.hatenablog.com/)|hatenaブログでは詳細な技術情報|  
-|8|[レスキュー](https://rfriends.github.io/rfriends/manual/rescue.html)|rfriends3システムの起動不可等からの回復|
+|8|[no+e](https://note.com/rfriends)|no+e はじめました|
+|9|[レスキュー](https://rfriends.github.io/rfriends/manual/rescue.html)|rfriends3システムの起動不可等からの回復|
   
 ### ２．rfriends3のインストール  
   
