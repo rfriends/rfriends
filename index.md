@@ -1,7 +1,5 @@
 <img alt="rfriends3top" src="https://github.com/user-attachments/assets/f0818127-0bac-4205-b3ca-d8a663e16557" />
-
-##  ラジオ録音アプリ「rfriends3」へようこそ  
-    
+  
 * rfriends3は、ラジコ、らじるらじる、ポッドキャストを録音できます。  　
 * rfriends3は、操作がWEBサーバ（Lighttpd）経由で出来、とても簡単になっています。
 * rfriends3は、PC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)が動作するものであれば、操作する端末はなんでも可能です。
