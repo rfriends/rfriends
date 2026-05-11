@@ -1,4 +1,4 @@
-<img width="704" height="384" alt="image_af379fb5" src="https://github.com/user-attachments/assets/adfe4162-9c91-4252-8d28-ef94152089a7" />
+<img width="600" height="327" alt="rfriends3top" src="https://github.com/user-attachments/assets/f0818127-0bac-4205-b3ca-d8a663e16557" />
 
 ##  ラジオ録音アプリ「rfriends3」へようこそ  
     
