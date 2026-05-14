@@ -2,7 +2,7 @@
 
 RaspiOSのイメージにrfriends3をスクリプトによりインストールします。  
     
-2025/10/03 改定  
+2026/05/14 改定  
   
 ## 1. 純正のimagerを使用してmicroSDを作成する。     
    <https://www.raspberrypi.com/software/>  
@@ -90,13 +90,16 @@ SSHを有効化する
    $ rm -rf rfriends3_core  
    $ git clone https://github.com/rfriends/rfriends3_core.git  
    $ cd rfriends3_core  
-   $ sh install_debian.sh  
+   $ sh install_debian.sh
+   $ sudo systemctl stop apache2
+   $ sudo systemctl disable apache2  
 ```
 3) debian版(apache2)  
   
 > [!CAUTION]  
-> trixieの場合は、これを選択   
-> 他では予約関係が動作しません。    
+> ~~trixieの場合は、これを選択~~   
+> ~~他では予約関係が動作しません。~~
+> 動作するようになりました。 
   
 ```
    $ cd  ~/  
