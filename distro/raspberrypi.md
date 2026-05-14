@@ -60,9 +60,9 @@ SSHを有効化する
   
 ## 3. sshでraspberrypiにアクセスする。  
   
-   ホスト名 rpios、ユーザ名 rpiの場合、  
+   ホスト名 rpi-1、ユーザ名 rpiの場合、  
 ```
-   ssh rpi@rpios
+   ssh rpi@rpi-1
 ```
    でアクセスできます。  
   
