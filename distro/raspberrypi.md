@@ -119,8 +119,10 @@ SSHを有効化する
   
 ## 7. Webブラウザを使用してrfriendsにアクセスする。 
   
-``` 
-   http://xxx.xxx.xxx.xxx:8000
+```
+   http://rpi-1:8000  
+   or  
+   http://xxx.xxx.xxx.xxx:8000  
 ```  
   
   
