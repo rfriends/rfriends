@@ -37,7 +37,7 @@ rfriends3はいろいろな機種に対応しています。
 | 2| mac     |・[macOS](distro/macos.md)<br>・[Docker Desktop](distro/docker.md)|
 | 3| Linux/BSD     |・[Ubuntu / Debian / Zorin](distro/rfriends3_core.md)<br>・[Stream / Rocky / Alma](distro/rfriends3_core2.md)<br>・[FreeBSD](distro/rfriends3_core_bsd.md)<br>・[Alpine linux](distro/rfriends3_core4.md)<br>・[openSUSE](distro/rfriends3_core4.md)<br>・[arch linux](distro/rfriends3_core3.md)|
 | 4| コンテナ   |・[Docker](distro/docker.md)<br>・[LXD/LXC](distro/lxd.md)|
-| 5| ラズベリーパイ  |・[RaspberryPi -script-](distro/raspberrypi.md)<br>・[RaspberryPi -image-](distro/raspi_image.md)<br>・[Alpine -image-](distro/alpine_image.md)<br>・[Volumio](distro/volumio.md)<br>・[moode audio](distro/moode.md)| 
+| 5| ラズベリーパイ  |・[RaspberryPi -script-](distro/raspberrypi.md)<br>・[RaspberryPi -image-](distro/raspi_image.md)<br>・[DIetPi](distro/dietpi.md)<br>・[Alpine -image-](distro/alpine_image.md)<br>・[Volumio](distro/volumio.md)<br>・[moode audio](distro/moode.md)| 
 | 6| スマートフォン |・[Termux](distro/termux.md)<br>・[UserLAnd](distro/userland.md)<br>・[android linux terminal](distro/rfriends3_core.md)|
 | 7| Chromebook  |・[Linux開発環境](distro/chromeos.md)| 
 | 8| iPhone / iPad |・[iSH Shell(テスト中)](distro/ios.md)| 
