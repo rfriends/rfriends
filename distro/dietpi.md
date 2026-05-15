@@ -134,18 +134,10 @@ Installが終了すると、DietPi-Surveyの質問がでる。
 # reboot  
 ```  
   
-## 5. システムを最新にし、gitアプリをインストールする  
+## 5. セットアップシェルを実行して、rfriends3をインストールする  
   
-dietpiユーザでsshアクセスする。  
-  
-```  
-$ sudo apt-get update && sudo apt-get upgrade -y  
+```
 $ sudo apt-get install git -y  
-```  
-  
-## 6. セットアップシェルを実行して、rfriends3をインストールする  
-  
-```  
 $ cd ~/  
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
@@ -159,7 +151,7 @@ $ sh install_debian.sh
   
 このメッセージが出たらrfriends3のインストール終了です。  
   
-## 7. サウンド設定    
+## 6. サウンド設定    
   
 RaspberryPiにサウンドカードやUSB-DACを接続して、音を出したい場合は以下の処理を追加してください。    
 ただし、メモリ使用量が増えるので、必要がない場合は追加しないほうがいいと思います。  
@@ -169,7 +161,7 @@ $ sudo apt install alsa-utils
 $ sudo usermod -aG audio dietpi  
 ```  
   
-## 8. 再起動  
+## 7. 再起動  
   
 一旦再起動してください。  
   
@@ -177,7 +169,7 @@ $ sudo usermod -aG audio dietpi
 $ sudo reboot  
 ```  
   
-## 9. Webブラウザを使用してrfriends3にアクセスする。  
+## 8. Webブラウザを使用してrfriends3にアクセスする。  
   
 ```  
 http://dietpi:8000  
