@@ -6,7 +6,7 @@ RaspberryPiにDietPiとrfriends3をインストールする。
 2026/05/15現在のバージョンは以下のとおりです。  
   
 DietPi v10.3.3 / trixie  
-rfroends3 1.4.3b  
+rfriends3 1.4.3b  
     
 2026/05/15 改定  
   
@@ -34,11 +34,9 @@ Other general-purpose OSからDietPiを選択してください。
 ### 1.3 ストレージ  
 セットしているmicroSDを選択  
   
-> [!CAUTION]  
-> これを間違えると、ほかのデバイスにOSを書き込んでしまいます。  
-  
 ### 1.4 microSDにイメージを書き込む  
-  
+  <img width="682" height="482" alt="clip_8" src="https://github.com/user-attachments/assets/9bf458fd-aa9d-48ff-b2ca-76577fbe967d" />
+
   
 ### 1.5 Wifi設定を行う。  
   
@@ -93,23 +91,21 @@ serial/UARTコンソールは現在有効ですが、無効にしますか？
   
 <img width="600" height="372" alt="clip_13" src="https://github.com/user-attachments/assets/2e4e0f69-6c94-4f53-ab9d-619848c8843a" />
   
-4) DI絵tPi-config -> Languageを選択し、地域、タイムゾーン等を設定する  
+4) DietPi-config -> Languageを選択し、地域、タイムゾーン等を設定する  
   
 5:Language/Regional Options  
 Locale : ja,JP-UTF-8  
 Timezone : Asia/Tokyo  
 Keyboard : jp  
   
-5) Search Softwareを選択し、追加ソフトエアを選択する  
-  
-6) Installを選択  
+5) Installを選択  
     
 追加のソフトウェア選択をしていない場合は、以下のメッセージが出る。  
   
 Do you wish to continue with DietPi as a pure minimal image?  
 DietPiを最小限の構成で使い続けますか？  
   
-7) DietPi-Survey
+6) DietPi-Survey
   
 Installが終了すると、diet-Surveyの質問がでる。
   
@@ -163,7 +159,7 @@ $ sudo reboot
 ## 7. Webブラウザを使用してrfriends3にアクセスする。  
   
 ```  
-http://rpi-1:8000  
+http://dietpi:8000  
 or  
 http://xxx.xxx.xxx.xxx:8000  
 ```  
