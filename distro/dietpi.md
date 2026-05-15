@@ -48,8 +48,13 @@ Other general-purpose OSからDietPiを選択してください。
 Windowsの場合はbootドライブを認識していると思います。ここではFドライブ  
 <img width="437" height="69" alt="clip_12" src="https://github.com/user-attachments/assets/11c10a0d-1920-4a8d-b9e2-5aa1381c6683" />
 
-以下の2つのファイルを編集してください。  
 
+  
+<img width="654" height="122" alt="clip_11" src="https://github.com/user-attachments/assets/222cbd36-a1d2-40c9-9740-e009de11b62e" />  
+  
+  
+この2つのファイルを編集してください。  
+  
 1) /boot/firmware/dietpi.txt  
   
 ```  
