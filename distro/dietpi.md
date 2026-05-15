@@ -159,8 +159,7 @@ $ sudo reboot
 ```  
   
 ## 7. Webブラウザを使用してrfriends3にアクセスする。  
-  <img width="1370" height="850" alt="clip_13" src="https://github.com/user-attachments/assets/74a227da-61f7-4b2e-86ef-8f622a2818aa" />
-
+  
 ```  
 http://rpi-1:8000  
 or  
