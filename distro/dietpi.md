@@ -12,8 +12,9 @@ rfroends3 1.4.3b
   
 ## 1. 純正のimagerを使用してmicroSDを作成する。     
    <https://www.raspberrypi.com/software/>  
-  
-![1](https://github.com/user-attachments/assets/de69af3e-f501-40e4-b387-3901962eaaaa)  
+
+<img width="140" height="144" alt="clip_111" src="https://github.com/user-attachments/assets/89fdd0bc-7ad7-4a5d-9517-cecf5837eb74" />
+
   
 ### 1.1 Raspberry Pi デバイス  
 インストールするラズベリーパイの機種を選択  
@@ -43,10 +44,10 @@ Other general-purpose OSからDietPiを選択してください。
   
 有線を使用するばあいは、この項をスキップしてください。  
   
-以下の2つのファイルを編集してください。  
-Windowsの場合はbootfsドライブを認識していると思います。  
+Windowsの場合はbootドライブを認識していると思います。ここではFドライブ  
 <img width="437" height="69" alt="clip_12" src="https://github.com/user-attachments/assets/11c10a0d-1920-4a8d-b9e2-5aa1381c6683" />
 
+以下の2つのファイルを編集してください。  
 
 1) /boot/firmware/dietpi.txt  
   
@@ -92,7 +93,7 @@ serial/UARTコンソールは現在有効ですが、無効にしますか？
   
 <img width="600" height="372" alt="clip_13" src="https://github.com/user-attachments/assets/2e4e0f69-6c94-4f53-ab9d-619848c8843a" />
   
-4) Languageを選択し、地域、タイムゾーン等を設定する  
+4) DI絵tPi-config -> Languageを選択し、地域、タイムゾーン等を設定する  
   
 5:Language/Regional Options  
 Locale : ja,JP-UTF-8  
@@ -145,7 +146,8 @@ $ sh install_debian.sh
 ```  
   
 結構時間がかかります。  
-  
+<img width="600" height="155" alt="clip_5a" src="https://github.com/user-attachments/assets/edd57c62-47f0-48a1-9b45-6de7aa7614f9" />
+
   
 このメッセージが出たらrfriends3のインストール終了です。  
   
@@ -167,6 +169,8 @@ http://xxx.xxx.xxx.xxx:8000
 ```  
   
 以下のような画面が出たら成功です。  
+<img width="389" height="394" alt="rf3-3" src="https://github.com/user-attachments/assets/7bee0e8f-f574-4cfc-906c-19c4e5be2002" />
+
   
 以上  
   
