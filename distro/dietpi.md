@@ -90,9 +90,9 @@ serial/UARTコンソールは現在有効ですが、無効にしますか？
   
 次に、dietpi-softwareが自動起動される。  
   
-4) dietpi-configを選択し、地域、タイムゾーン等を設定する  
-
 <img width="600" height="372" alt="clip_13" src="https://github.com/user-attachments/assets/2e4e0f69-6c94-4f53-ab9d-619848c8843a" />
+  
+4) dietpi-configを選択し、地域、タイムゾーン等を設定する  
   
 5:Language/Regional Options  
 Locale : ja,JP-UTF-8  
