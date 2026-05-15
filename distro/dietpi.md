@@ -70,8 +70,8 @@ aWIFI_KEY[0]='********'
   
 ## 2. microSDをraspberrypiにセットし起動する。  
   
-初回起動時は領域拡張を行うのでmicroSDのサイズによっては時間がかかります。    
-緑のランプが点滅から点灯になるのを待ってください。  
+初回起動時は領域拡張や初回処理を行うのでmicroSDのサイズによっては時間がかかります。    
+また、一度再起動がかかります。  
   
 ## 3. sshでraspberrypiにアクセスする。  
   
@@ -89,7 +89,7 @@ ssh root@dietpi
 1) Please enter a new login password for "root" and "dietpi":  
 root,dietpi用のパスワードを入力する。  
   
-2) Please enter a new default software installation password.  
+2) Please enter a new default software installation password.
 ソフトウエアインストール用のパスワードを入力する。  
   
 3) A serial/UART console is currently enabled, would you like to disable it?   
