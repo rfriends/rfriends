@@ -11,7 +11,7 @@ DietPi v10.3.3 / trixie
 rfriends3 1.4.3b  
 ```
       
-2026/05/15 改定  
+2026/05/16 改定  
   
 ## 1. 純正のimagerを使用してmicroSDを作成する。     
    <https://www.raspberrypi.com/software/>  
@@ -158,14 +158,25 @@ $ sh install_debian.sh
 
   
 このメッセージが出たらrfriends3のインストール終了です。  
-    
-念のため、一旦再起動してください。  
+  
+## 7. サウンド設定    
+  
+RaspberryPiにサウンドカードを接続して、音を出したい場合は以下の処理を追加してください。    
+  
+```  
+$ sudo apt install alsa-utils  
+$ sudo usermod -aG audio dietpi  
+```  
+  
+## 8. 再起動  
+  
+一旦再起動してください。  
   
 ```  
 $ sudo reboot  
 ```  
   
-## 7. Webブラウザを使用してrfriends3にアクセスする。  
+## 9. Webブラウザを使用してrfriends3にアクセスする。  
   
 ```  
 http://dietpi:8000  
