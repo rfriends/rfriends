@@ -19,14 +19,16 @@ rfroends3 1.4.3b
 インストールするラズベリーパイの機種を選択  
 例 : Raspberry PI Zero 2 W  
   
+> [!NOTE]  
+> その際、デバイスを正確に選択してください。  
+> 例えば、zero w用はzero 2wでは動作しません。
+
 ### 1.2 OS  
 インストールするOSを選択する。  
   
 Other general-purpose OSからDietPiを選択してください。  
-  
-> [!NOTE]  
-> その際、デバイスを正確に選択してください。  
-> 例えば、zero w用はzero 2wでは動作しません。   
+<img width="682" height="482" alt="clip_4" src="https://github.com/user-attachments/assets/c5daceb7-8931-4f91-bae1-7aace0c707ad" />
+
   
 ### 1.3 ストレージ  
 セットしているmicroSDを選択  
@@ -43,7 +45,9 @@ Other general-purpose OSからDietPiを選択してください。
   
 以下の2つのファイルを編集してください。  
 Windowsの場合はbootfsドライブを認識していると思います。  
-  
+<img width="437" height="69" alt="clip_12" src="https://github.com/user-attachments/assets/11c10a0d-1920-4a8d-b9e2-5aa1381c6683" />
+
+
 1) /boot/firmware/dietpi.txt  
   
 ```  
@@ -84,31 +88,34 @@ root,dietpi用のパスワードを入力する。
 3) A serial/UART console is currently enabled, would you like to disable it?   
 serial/UARTコンソールは現在有効ですが、無効にしますか？  
   
-4) 地域、タイムゾーン等を設定する  
+次に、dietpi-softwareが自動起動される。  
   
-dietpi-configが自動で実行されます。                                                                                   ││ Both users still have the default password applied, which needs to be changed for security reasons. ││                                                                                                     ││ Please enter a new login password for "root" and "dietpi":                                          ││                                                                                                     ││ NB: The default SSH server Dropbear does not support passwords over 100 bytes. Certain special      ││ characters, and such with accents, take 2 bytes.  
+4) dietpi-configを選択し、地域、タイムゾーン等を設定する  
+
+<img width="600" height="372" alt="clip_13" src="https://github.com/user-attachments/assets/2e4e0f69-6c94-4f53-ab9d-619848c8843a" />
   
 5:Language/Regional Options  
 Locale : ja,JP-UTF-8  
 Timezone : Asia/Tokyo  
 Keyboard : jp  
   
-5) 追加ソフトエアを選択する  
+5) Search Softwareを選択し、追加ソフトエアを選択する  
   
-Search Software  
-  
-6) Install  
-追加のソフトウェア選択をしていない場合は、以下のメッセージが出ます。  
+6) Installを選択  
+    
+追加のソフトウェア選択をしていない場合は、以下のメッセージが出る。  
   
 Do you wish to continue with DietPi as a pure minimal image?  
 DietPiを最小限の構成で使い続けますか？  
   
-7) DietPi-Surveyは匿名での利用統計情報を収集します。  
+7) DietPi-Survey  
+  
+匿名での利用統計情報を収集する。  
   
 1：参加してデータをアップロードする  
 0：参加せず、アップロードされたデータを削除する  
   
-これで、Dietpiのインストールが終了しました。  
+これで、Dietpiのインストールが終了。  
   
 8) 一旦再起動します  
   
@@ -150,7 +157,8 @@ $ sudo reboot
 ```  
   
 ## 7. Webブラウザを使用してrfriends3にアクセスする。  
-  
+  <img width="1370" height="850" alt="clip_13" src="https://github.com/user-attachments/assets/74a227da-61f7-4b2e-86ef-8f622a2818aa" />
+
 ```  
 http://rpi-1:8000  
 or  
@@ -161,17 +169,4 @@ http://xxx.xxx.xxx.xxx:8000
   
 以上  
   
-  
-  
-  
-  
-  
-  
-これはどういう意味ですか？  
-DietPi lighttpd[16702]: mprotect() failed [13] Permission denied  
-  
-$ sudo vi /etc/php/8.4/mods-available/opcache.ini  
-opcache.jit = off  
-opcache.jit_buffer_size = 0  
-  
-  
+
