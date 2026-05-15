@@ -1,13 +1,16 @@
-2026/05/15  
 ## RaspberryPi版rfriends3でラジオ録音（DietPi編）      
   
-RaspberryPiにDietPiとrfriends3をインストールする。  
+RaspberryPiにDietPiとrfriends3をインストールします。  
+DietPiとは、徹底的に軽量化・最適化されたDebianベースのLinuxディストリビューションです。  
+https://dietpi.com/  
   
 2026/05/15現在のバージョンは以下のとおりです。  
   
+```  
 DietPi v10.3.3 / trixie  
 rfriends3 1.4.3b  
-    
+```
+      
 2026/05/15 改定  
   
 ## 1. 純正のimagerを使用してmicroSDを作成する。     
@@ -20,7 +23,7 @@ rfriends3 1.4.3b
 インストールするラズベリーパイの機種を選択  
 例 : Raspberry PI Zero 2 W  
   
-> [!NOTE]  
+> [!caution]  
 > その際、デバイスを正確に選択してください。  
 > 例えば、zero w用はzero 2wでは動作しません。
 
@@ -93,11 +96,13 @@ serial/UARTコンソールは現在有効ですが、無効にしますか？
   
 4) DietPi-config -> Languageを選択し、地域、タイムゾーン等を設定する  
   
+```  
 5:Language/Regional Options  
 Locale : ja,JP-UTF-8  
 Timezone : Asia/Tokyo  
 Keyboard : jp  
-  
+```
+    
 5) Installを選択  
     
 追加のソフトウェア選択をしていない場合は、以下のメッセージが出る。  
@@ -107,16 +112,18 @@ DietPiを最小限の構成で使い続けますか？
   
 6) DietPi-Survey
   
-Installが終了すると、diet-Surveyの質問がでる。
+Installが終了すると、DietPi-Surveyの質問がでる。
   
+```  
 匿名での利用統計情報を収集する。  
   
 1：参加してデータをアップロードする  
 0：参加せず、アップロードされたデータを削除する  
-  
+```
+    
 これで、Dietpiのインストールが終了。  
   
-8) 一旦再起動します  
+7) 一旦再起動します  
   
 ```  
 # reboot  
@@ -146,17 +153,14 @@ $ sh install_debian.sh
 
   
 このメッセージが出たらrfriends3のインストール終了です。  
-  
-  
-## ６．再起動  
-  
+    
 念のため、一旦再起動してください。  
   
 ```  
 $ sudo reboot  
 ```  
   
-## 7. Webブラウザを使用してrfriends3にアクセスする。  
+## 6. Webブラウザを使用してrfriends3にアクセスする。  
   
 ```  
 http://dietpi:8000  
