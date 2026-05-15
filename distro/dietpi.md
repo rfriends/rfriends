@@ -162,6 +162,7 @@ $ sh install_debian.sh
 ## 7. サウンド設定    
   
 RaspberryPiにサウンドカードやUSB-DACを接続して、音を出したい場合は以下の処理を追加してください。    
+ただし、メモリ使用量が増えるので、必要がない場合は追加しないほうがいいと思います。  
   
 ```  
 $ sudo apt install alsa-utils  
