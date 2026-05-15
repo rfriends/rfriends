@@ -160,7 +160,7 @@ $ sh install_debian.sh
 $ sudo reboot  
 ```  
   
-## 6. Webブラウザを使用してrfriends3にアクセスする。  
+## 7. Webブラウザを使用してrfriends3にアクセスする。  
   
 ```  
 http://dietpi:8000  
