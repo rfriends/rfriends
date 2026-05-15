@@ -92,7 +92,7 @@ serial/UARTコンソールは現在有効ですが、無効にしますか？
   
 <img width="600" height="372" alt="clip_13" src="https://github.com/user-attachments/assets/2e4e0f69-6c94-4f53-ab9d-619848c8843a" />
   
-4) dietpi-configを選択し、地域、タイムゾーン等を設定する  
+4) Languageを選択し、地域、タイムゾーン等を設定する  
   
 5:Language/Regional Options  
 Locale : ja,JP-UTF-8  
@@ -108,7 +108,9 @@ Keyboard : jp
 Do you wish to continue with DietPi as a pure minimal image?  
 DietPiを最小限の構成で使い続けますか？  
   
-7) DietPi-Survey  
+7) DietPi-Survey
+  
+Installが終了すると、diet-Surveyの質問がでる。
   
 匿名での利用統計情報を収集する。  
   
