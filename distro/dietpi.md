@@ -75,7 +75,7 @@ aWIFI_KEY[0]='********'
   
 ## 3. sshでraspberrypiにアクセスする。  
   
-ホスト名 dietpi、ユーザ名 rootの場合、ユーザ名@ホスト名  
+ホスト名 dietpi、ユーザ名 root  
   
 ```  
 ssh root@dietpi  
@@ -86,20 +86,20 @@ ssh root@dietpi
   
 以下の質問が実行されます。  
   
-1) Please enter a new login password for "root" and "dietpi":  
+### 1) Please enter a new login password for "root" and "dietpi":  
 root,dietpi用のパスワードを入力する。  
   
-2) Please enter a new default software installation password.
+### 2) Please enter a new default software installation password.
 ソフトウエアインストール用のパスワードを入力する。  
   
-3) A serial/UART console is currently enabled, would you like to disable it?   
+### 3) A serial/UART console is currently enabled, would you like to disable it?   
 serial/UARTコンソールは現在有効ですが、無効にしますか？  
   
 次に、dietpi-softwareが自動起動される。  
   
 <img width="600" height="372" alt="clip_13" src="https://github.com/user-attachments/assets/2e4e0f69-6c94-4f53-ab9d-619848c8843a" />
   
-4) DietPi-config -> Languageを選択し、地域、タイムゾーン等を設定する  
+### 4) DietPi-config -> Languageを選択し、地域、タイムゾーン等を設定する  
   
 ```  
 5:Language/Regional Options  
@@ -108,14 +108,14 @@ Timezone : Asia/Tokyo
 Keyboard : jp  
 ```
     
-5) Installを選択  
+### 5) Installを選択  
     
 追加のソフトウェア選択をしていない場合は、以下のメッセージが出る。  
   
 Do you wish to continue with DietPi as a pure minimal image?  
 DietPiを最小限の構成で使い続けますか？  
   
-6) DietPi-Survey
+### 6) DietPi-Survey
   
 Installが終了すると、DietPi-Surveyの質問がでる。
   
@@ -128,7 +128,7 @@ Installが終了すると、DietPi-Surveyの質問がでる。
     
 これで、Dietpiのインストールが終了。  
   
-7) 一旦再起動します  
+### 7) 一旦再起動します  
   
 ```  
 # reboot  
