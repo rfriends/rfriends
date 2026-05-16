@@ -110,19 +110,22 @@ microSDを選択（間違えないように！）
 保存したwpa_supplicant.confに自環境に合わせてssid,passwdを設定する。  
   
 ```
-ctrl_interface=/var/run/wpa_supplicant Group=netdev  
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev  
 update_config=1  
 country=JP  
 network={  
-ssid="SSID"  
-psk="password"  
+  ssid="SSID"  
+  psk="password"  
 }
 ```
   
 （参考）パスワードの暗号化
 ```
 　$ wpa_passphrase "SSID" "password"
-```
+この時は
+  psk=password
+になります。””はつけない  
+```　　
   
 ### 3.2 Wifi設定ファイルをmicroSDにコピー
   
