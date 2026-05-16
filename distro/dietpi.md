@@ -139,6 +139,8 @@ Installが終了すると、DietPi-Surveyの質問がでる。
   
 ## 5. セットアップシェルを実行して、rfriends3をインストールする  
   
+ユーザdietpiでsshログインする。  
+  
 ```
 $ sudo apt-get install git -y  
 $ cd ~/  
