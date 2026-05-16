@@ -15,7 +15,7 @@ microSDに書いて起動するだけでrfriends3が使用できます。
 ・Raspberry Pi 2 V1.2  
 ・Raspberry Pi 3/4/Zero 2 
   
-1/2 v1.1/5では動作しません。  
+1/2 v1.1/5/Zeroでは動作しません。  
   
 ## １．rfriends3のシステムイメージをダウンロードする。   
     
