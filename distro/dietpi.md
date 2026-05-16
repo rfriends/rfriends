@@ -94,6 +94,7 @@ root,dietpi用のパスワードを入力する。
   
 ### 3) A serial/UART console is currently enabled, would you like to disable it?   
 serial/UARTコンソールは現在有効ですが、無効にしますか？  
+無効にしたい場合は<yes>を選択してください。  
   
 次に、dietpi-softwareが自動起動される。  
   
@@ -114,6 +115,7 @@ Keyboard : jp
   
 Do you wish to continue with DietPi as a pure minimal image?  
 DietPiを最小限の構成で使い続けますか？  
+<yes>を選択してください。  
   
 ### 6) DietPi-Survey
   
@@ -125,6 +127,7 @@ Installが終了すると、DietPi-Surveyの質問がでる。
 1：参加してデータをアップロードする  
 0：参加せず、アップロードされたデータを削除する  
 ```
+1または0を選択してください。  　
     
 これで、Dietpiのインストールが終了。  
   
