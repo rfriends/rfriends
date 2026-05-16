@@ -115,7 +115,7 @@ Keyboard : jp
   
 Do you wish to continue with DietPi as a pure minimal image?  
 DietPiを最小限の構成で使い続けますか？  
-yesを選択してください。  
+OKを選択してください。  
   
 ### 6) DietPi-Survey
   
