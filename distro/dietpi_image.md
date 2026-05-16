@@ -6,14 +6,14 @@ microSDに書いて起動するだけでrfriends3が使用できます。
   
 > [!NOTE]  
 > 2026/05/17  
-> 2/3/4Zero 2版(64)を公開しました。       
+> 2/3/4/Zero 2版(64)を公開しました。       
   
 ## ０．準備   
 
 動作機種は以下のとおり。
 
 ・Raspberry Pi 2 V1.2 
-・Raspberry Pi Zero 2//3/4 
+・Raspberry Pi 3/4/Zero 2 
   
 1/2 v1.1/5では動作しません。  
   
