@@ -155,9 +155,14 @@ dietpi 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 ## ６．microSDの領域拡張を行う。  
   
 提供イメージは領域が縮小されているため、microSD全体を使用するように領域を拡張する必要があります。  
+以下のコマンドを実行してください。  
   
-メニューより管理-メンテナンス-ラズパイ専用-領域拡張で、microSDの領域拡張を行います。  
-一旦再起動します。  
+```
+$ sudo systemctl unmask dietpi-fs_partition_resize.service  
+$ sudo systemctl enable dietpi-fs_partition_resize.service   
+$ sudo reboot  
+```  
+  
 再起動後は領域拡張を行うのでmicroSDのサイズによっては時間がかかります。緑のランプが点滅から点灯になるのを待ってください。  
   
 注意：この操作をしないと大容量のmicroSDを使用していても8GB弱しか認識されません。  
