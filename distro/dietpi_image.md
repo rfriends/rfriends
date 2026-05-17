@@ -101,7 +101,7 @@ network={
 　$ wpa_passphrase "SSID" "password"
 この時は
   psk=password
-になります。””はつけない  
+になります。\”\”はつけない  
 ```  
   
 ### 3.2 Wifi設定ファイルをmicroSDにコピー
