@@ -154,7 +154,8 @@ dietpi 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
   
 ## ６．rfriends3を最新にする。  
   
-メニュー - ヘルプ - システム更新でfriends3を最新にする。 
+メニュー - ヘルプ - システム更新  
+でfriends3を最新にする。 
   
 ## ７．microSDの領域拡張を行う。  
   
