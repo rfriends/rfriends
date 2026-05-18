@@ -5,7 +5,7 @@ microSDに書いて起動するだけでrfriends3が使用できます。
  
   
 > [!NOTE]  
-> 2026/05/17  
+> 改版 2026/05/18   
 > 2/3/4/Zero 2版(64)を公開しました。       
   
 ## ０．準備   
@@ -155,13 +155,8 @@ dietpi 192.168.1.*** Raspberry Pi Foundation B8:27:EB:**:**:**
 ## ６．microSDの領域拡張を行う。  
   
 提供イメージは領域が縮小されているため、microSD全体を使用するように領域を拡張する必要があります。  
-以下のコマンドを実行してください。  
-  
-```
-$ sudo systemctl unmask dietpi-fs_partition_resize.service  
-$ sudo systemctl enable dietpi-fs_partition_resize.service   
-$ sudo reboot  
-```  
+メニュー - 管理 - OS別機能 - Raspberry - 領域拡張  
+を実行してください。  
   
 再起動後は領域拡張を行うのでmicroSDのサイズによっては時間がかかります。緑のランプが点滅から点灯になるのを待ってください。  
   
@@ -170,8 +165,19 @@ $ sudo reboot
 以下の例は64GBのmicroSDです。  
   
 <img width="162" height="88" alt="rf3-2" src="https://github.com/user-attachments/assets/591742d6-921c-4d2b-85d6-d369c0227e30" />
- 
   
+
+  
+> [!NOTE]  
+> うまくいかない場合は、SSHアクセスして
+> 以下のコマンドを実行してください。
+> ```
+> $ sudo systemctl unmask dietpi-fs_partition_resize.service
+> $ sudo systemctl enable dietpi-fs_partition_resize.service
+> $ sudo reboot
+> ```  
+  
+
 ## ７．rfriends3を最新にする。  
   
 ヘルプ - システム更新でfriends3を最新にする。  
