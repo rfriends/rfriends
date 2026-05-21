@@ -1,4 +1,4 @@
-# ios版rfriends3でラジオ録音  
+# ios(ish)版rfriends3でラジオ録音  
     
   
 > [!CAUTION]
@@ -7,13 +7,11 @@
   
 iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作します。　  
 cui,gui両モードをサポートしました。  
-ただし、guiモードは現在不安定です。 
-お試しと考えてください。  
   
 <img width="600" height="564" alt="ish" src="https://github.com/user-attachments/assets/c09423b4-361a-4497-bc1c-ba4b1fa68b13" />  
   
 初 版　2025/07/18   
-十一版　2025/12/04
+12 版　2026/05/21  
   
 ## １．iSH Shell  
   
