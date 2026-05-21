@@ -58,8 +58,9 @@ Fire OS 8 (Android 11)
   
 途中以下のようなメッセージが表示されます。  
   
-・リンクをダウンロードを選択  
-![1a](https://github.com/user-attachments/assets/a01dc09e-189f-4886-9c5b-cbbe2e6c5228)  
+・ダウンロードを続行  
+![1b](https://github.com/user-attachments/assets/2ccce8cf-f0eb-49c2-8fd0-17520d1fdcb3)  
+
   
 ・ダウンロードが完了  
 ![1c](https://github.com/user-attachments/assets/b0b4642a-f4a8-4207-8296-ff0f3469ade9)  
