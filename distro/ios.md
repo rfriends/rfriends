@@ -1,10 +1,5 @@
 # ios(ish)版rfriends3でラジオ録音  
-    
-  
-> [!CAUTION]
-> 現在開発中のため、インストールに関しては人柱状態です。  
-> 正常に動作する保証はありません。  
-  
+      
 iPhone/iPad 用rfriends3はiSH Shellアプリにインストールして動作します。　  
 cui,gui両モードをサポートしました。  
   
