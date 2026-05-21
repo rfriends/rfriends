@@ -40,7 +40,7 @@ rfriends3はいろいろな機種に対応しています。
 | 5| ラズベリーパイ  |・[RaspberryPi -script-](distro/raspberrypi.md)<br>・[RaspberryPi -image-](distro/raspi_image.md)<br>・[DIetPi -script-](distro/dietpi.md)<br>・[DIetPi -image-](distro/dietpi_image.md)<br>・[Alpine -image-](distro/alpine_image.md)<br>・[Volumio](distro/volumio.md)<br>・[moode audio](distro/moode.md)| 
 | 6| スマートフォン |・[Termux](distro/termux.md)<br>・[Termux -image-](distro/termux_image.md)<br>・[UserLAnd](distro/userland.md)<br>・[android linux terminal](distro/rfriends3_core.md)|
 | 7| Chromebook  |・[Linux開発環境](distro/chromeos.md)| 
-| 8| iPhone / iPad |・[iSH Shell(テスト中)](distro/ios.md)| 
+| 8| iPhone / iPad |・[iSH Shell](distro/ios.md)| 
 | 9| 仮想 |・[vmware-alpine](distro/vmware-alpine.md)| 
 
    
