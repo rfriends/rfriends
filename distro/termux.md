@@ -113,7 +113,7 @@ $ cd
 $ cd storage
 $ cd downloads  
 $ ls  
-com.termux_1020.apk termux.sh  
+termux.sh  
 ```
   
 ### 3.3 ツールおよびrfriends3をインストールする  
