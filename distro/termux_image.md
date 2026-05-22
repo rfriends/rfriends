@@ -6,14 +6,14 @@
 　WindowsPCをラジオ録音のために24時間稼働させるのはちょっと大変ですよね。そこで、 余ったandroidスマホ/タブレットでrfriendsを動かしてラジオ録音サーバにしようというものです。もちろん余ってないものでもいいのですが普段使いのものとは分けたほうがいいとおもいます。  
   
 > [!IMPORTANT]
-> このページはimage編です。自分でrfriends3をインストールする場合はscript編をご覧ください。
-> --> [image編](https://github.com/rfriends/rfriends/edit/gh-pages/distro/termux_image.md)  
+> **このページはimage編です。自分でrfriends3をインストールする場合はscript編をご覧ください。**
+> --> [script編](https://github.com/rfriends/rfriends/edit/gh-pages/distro/termux.md)  
 > 
 > インストール時にセキュリティ関連のアラームが表示されますが、基本は許可で進めてください。気になる方はインストールを中止してください。
 > また、ここで使用するバックアップイメージはGithub版です。F-droid版では動作しません。  
   
 初版：2026/05/20  
-改版：2026/05/22
+改版：2026/05/23
   
 ## １．準備  
   
@@ -42,7 +42,7 @@ Fire7(第9世代)
 Fire OSとandroid OSの対応は以下のとおり  
 
 ```    
-Fire OS 5 (Android 5.1)
+Fire OS 5 (Android 5.1) **動作しません**  
 Fire OS 6 (Android 7.1)
 Fire OS 7 (Android 9.0)
 Fire OS 8 (Android 11)
@@ -95,15 +95,6 @@ aarch64
   
 arm  
 [armeabi-v7a](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk)  
-  
-
-
-
-#### 2) v0.119.0-beta.3 (android 5,6)　   
-  
-termux-app_v0.119.0-beta.3+apt-android-5-github-debug_universal.apk  
-termux-app_v0.119.0-beta.3+apt-android-5-github-debug_arm64-v8a.apk  
-termux-app_v0.119.0-beta.3+apt-android-5-github-debug_armeabi-v7a.apk   
      
 ### 3.2 Termuxのインストール  
   
