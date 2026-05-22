@@ -22,7 +22,7 @@ OSのバージョンを確認してください。
 ### 1.1 一般のスマートホン・タブレットの場合 
 
 android OSのバージョン　7以上  
-5,6でも動作する可能性はありますが。当方未確認     
+~~5,6でも動作する可能性はありますが~~ 動作しません     
     
 ### 1.2 Amazon Fireの場合 
   
@@ -98,7 +98,7 @@ arm
 
 
 
-#### 2) v0.119.0-beta.3 (android 5,6)  
+#### 2) v0.119.0-beta.3 (android 5,6)　   
   
 termux-app_v0.119.0-beta.3+apt-android-5-github-debug_universal.apk  
 termux-app_v0.119.0-beta.3+apt-android-5-github-debug_arm64-v8a.apk  
