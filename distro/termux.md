@@ -49,16 +49,16 @@ Termuxは、AndroidやChrome OS上でLinux環境を実行できるターミナ�
 以下のリンクよりスマホのダウンロードディレクトリにtermuxをダウンロードしてください。  
 アーキテクチャが不明の場合はuniversal版を選択してください。  
   
-Github  
-<https://github.com/termux/termux-app/releases>  
-v0.118.3 - 2025-05-22 10:47   
+#### v0.119.0-beta.3 (android 7以上)  
   
-・32bit(arm)  
-<https://github.com/termux/termux-app/releases/download/v0.118.3/termux-app_v0.118.3+github-debug_armeabi-v7a.apk>  
-・64bit(aarch64)  
-<https://github.com/termux/termux-app/releases/download/v0.118.3/termux-app_v0.118.3+github-debug_armeabi-v8a.apk>  
-・32/64bit(アーキテクチュアが不明の場合)  
-<https://github.com/termux/termux-app/releases/download/v0.118.3/termux-app_v0.118.3+github-debug_universal.apk>  
+universal(arm/aarch64)   
+[universal](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_universal.apk)  
+  
+aarch64  
+[arm64-v8a](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_arm64-v8a.apk)  
+  
+arm  
+[armeabi-v7a](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk)  
     
 ### 2.2 Termuxのインストール  
   
