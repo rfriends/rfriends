@@ -6,7 +6,7 @@
   
 > [!IMPORTANT]
 > **このページはscript編です。あらかじめインストールされたrfriends3を復元する場合はimage編をご覧ください。**
-> --> [script編](https://github.com/rfriends/rfriends/edit/gh-pages/distro/termux.md)
+> --> [image編](https://github.com/rfriends/rfriends/edit/gh-pages/distro/termux_image.md)
 >   
 > インストール時にセキュリティ関連のアラームが表示されますが、基本は許可で進めてください。気になる方はインストールを中止してください。  
   
