@@ -333,21 +333,13 @@ $ smbd -D -s $PREFIX/etc/smb.conf
   
 ### 5.2 外部PCからのSSHアクセス  
   
-外部からSSHアクセスをしない方は以下の操作は不要です。  
-  
-SSHアクセスのためのパスワードを設定してください。  
+4.1で取得したIP アドレスを使って、ＰＣ等から  
   
 ```  
-$ passwd  
+ssh -p 8022 termux@XXX.XXX.XXX.XXX  
 ```  
   
-これで、4.1で取得したIP アドレスを使って、ＰＣ等から  
-  
-```  
-ssh -p 8022 hogehoge@XXX.XXX.XXX.XXX  
-```  
-  
-でアクセスできます。hogehogeは任意です。  
+でアクセスできます。  
   
 teratermやRLoginを使用すると便利です。  
   
