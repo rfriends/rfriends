@@ -1,10 +1,13 @@
-## Termux版rfriends3でラジオ録音  
+## Termux版rfriends3でラジオ録音(script編)    
   
 余ったandroidスマホとTermuxでラジオ録音サーバを作ろう  
   
 　WindowsPCをラジオ録音のために24時間稼働させるのはちょっと大変ですよね。そこで、 余ったandroidスマホ/タブレットでrfriendsを動かしてラジオ録音サーバにしようというものです。もちろん余ってないものでもいいのですが普段使いのものとは分けたほうがいいとおもいます。  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
+> > このページはscript編です。あらかじめインストールされたrfriends3を復元する場合はimage編をご覧ください。
+> --> [script編](https://github.com/rfriends/rfriends/edit/gh-pages/distro/termux.md)
+>   
 > インストール時にセキュリティ関連のアラームが表示されますが、基本は許可で進めてください。気になる方はインストールを中止してください。  
   
 初版：2021/01/19  
@@ -20,7 +23,9 @@ androidOS5.0未満では動作しません。
   
 以下の**リンクを長押し**して、インストールスクリプトをスマホのダウンロードディレクトリにダウンロードしてください。  
   
-[termux.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh)    
+Github : [termux.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh)    
+または  
+xrea : [termux.sh](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/termux.sh)   
 
 途中以下のようなメッセージが表示されます。  
   
