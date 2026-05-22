@@ -50,7 +50,7 @@ Fire OS 8 (Android 11)
     
 ## ２．インストールスクリプトのダウンロード  
   
-以下の**リンクを長押し**して、インストールスクリプトをスマホのダウンロードディレクトリにダウンロードしてください。  
+使用するスマホのブラウザでこのページを開き、以下の**リンクを長押し**して、インストールスクリプトをスマホのダウンロードディレクトリにダウンロードしてください。  
   
 Github : [termux-rst.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux-rst.sh)    
 または  
