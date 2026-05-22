@@ -51,9 +51,9 @@ Fire OS 8 (Android 11)
   
 以下の**リンクを長押し**して、インストールスクリプトをスマホのダウンロードディレクトリにダウンロードしてください。  
   
-[termux-rst.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux-rst.sh)    
+Github : [termux-rst.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux-rst.sh)    
 または  
-[termux-rst.sh](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/termux-rst.sh)   
+xrea : [termux-rst.sh](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/termux-rst.sh)   
 
 途中以下のようなメッセージが表示されます。  
   
