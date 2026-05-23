@@ -153,7 +153,7 @@ $ ls
 termux-rst.sh  
 ```
   
-### 4.3 ツールおよびrfriends3をインストールする  
+### 4.3 rfriends3のイメージを復元する  
   
 termux-rst.shを実行する。  
   
