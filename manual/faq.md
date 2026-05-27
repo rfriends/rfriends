@@ -18,7 +18,7 @@ Version 4.23.6-Ubuntu-4.23.6+dfsg-1ubuntu2
 [global] セクションの直下にoplocks = noを挿入。  
   
 ```  
-$ sudo vi /etc.samva/smb.conf  
+$ sudo vi /etc/samba/smb.conf  
 [global]  
 oplocks = no  
 ```  
