@@ -1,6 +1,22 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。   
   
+### 071 debian 13(trixie)上のrfriends3にWindowsからsambaアクセスすると フォルダの更新が遅い、または更新されない。  
+  
+sambaのバージョンが4.22以降の場合に発生します。  
+debian 13(trixie)上で、/etc/samba/smb.confを修正してください。  
+[global] セクションの直下にoplocks = noを挿入。  
+  
+```  
+$ sudo vi /etc.samva/smb.conf  
+[global]  
+oplocks = no  
+```  
+その後  
+```  
+$ sudo systemctl restart smbd  
+```  
+  
 ### 070 raspberry pi zero ではpodcastで9件以上の表示ができません。  
   
 raspberry pi zero はarmhfというCPUを使っており、 
