@@ -4,7 +4,17 @@
 ### 071 debian 13(trixie)上のrfriends3にWindowsからsambaアクセスすると フォルダの更新が遅い、または更新されない。  
   
 sambaのバージョンが4.22以降の場合に発生します。  
-debian 13(trixie)上で、/etc/samba/smb.confを修正してください。  
+```  
+Debian 13(trixie)  
+$ samba -V  
+Version 4.22.8-Debian-4.22.8+dfsg-0+deb13u1  
+  
+Ubuntu 26.04  
+$ smbd -V  
+Version 4.23.6-Ubuntu-4.23.6+dfsg-1ubuntu2   
+```  
+  
+サーバー上で、/etc/samba/smb.confを修正してください。  
 [global] セクションの直下にoplocks = noを挿入。  
   
 ```  
