@@ -12,11 +12,11 @@
   
 1.4.4 -> 1.4.4d  
   
-- AFN GO 修正(Music削除)。(4d)  
 - Listen Radio 復活。(4d)  
 - update site check 改良。(4d)  
 - 番組表出力改良。(4d)  
   
+- AFN GO 修正(Music削除)。(4c)  
 - AFN GO 修正。(4b,4c)  
   Musicが聴けません。（AFN のサイトからもなくなっています。
 - ポッドキャスト表示、微修正。(4a)  
