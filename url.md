@@ -2,7 +2,7 @@
   
 | **分類** | **サイト** | **url** |
 | :--- | :--- | :--- |
-| 放送 | radiko | https://radiko.jp/ |
+| 放送 | radiko | [https://radiko.jp/](https://radiko.jp/) |
 | | NHK　らじるらじる | https://www.nhk.or.jp/radio/ |
 | | NHK ゴガク | https://www.nhk.jp/g/gogaku/ |
 | ポッドキャスト | Apple Podcasts | https://podcasts.apple.com/jp/new |
