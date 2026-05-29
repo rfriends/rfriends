@@ -25,7 +25,7 @@
 |7|[ブログ](https://rfriends.hatenablog.com/)|hatenaブログでは詳細な技術情報|  
 |8|[no+e](https://note.com/rfriends)|no+eではrfriends3関連の紹介記事|
 |9|[レスキュー](https://rfriends.github.io/rfriends/manual/rescue.html)|rfriends3システムの起動不可等からの回復|
-|10|[リンク](url.md)|関連WebSite 一覧|
+|10|[リンク](https://rfriends.github.io/rfriends/url.html)|関連WebSite 一覧|
   
 ### ２．rfriends3のインストール  
   
