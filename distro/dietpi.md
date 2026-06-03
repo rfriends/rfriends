@@ -8,7 +8,7 @@ https://dietpi.com/
   
 ```  
 DietPi v10.4.2 / trixie  
-rfriends3 1.4.3b -> 1.4.5 
+rfriends3 1.4.5 
 ```
       
 2026/06/04 改定  
