@@ -4,14 +4,14 @@ RaspberryPiにDietPiとrfriends3をインストールします。
 DietPiとは、徹底的に軽量化・最適化されたDebianベースのLinuxディストリビューションです。  
 https://dietpi.com/  
   
-2026/05/15現在のバージョンは以下のとおりです。  
+2026/06/04現在のバージョンは以下のとおりです。  
   
 ```  
-DietPi v10.3.3 / trixie  
-rfriends3 1.4.3b  
+DietPi v10.4.2 / trixie  
+rfriends3 1.4.3b -> 1.4.5 
 ```
       
-2026/05/16 改定  
+2026/06/04 改定  
   
 ## 1. 純正のimagerを使用してmicroSDを作成する。     
    <https://www.raspberrypi.com/software/>  
