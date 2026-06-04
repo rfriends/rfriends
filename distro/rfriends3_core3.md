@@ -33,11 +33,14 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 |---|:---:|---|---|---|  
 |2026/05/02|〇|Arch linux|rolling||   
 |2026/05/02|〇|Manjaro linux|rolling|26.0.4|   
-|2026/02/15|ー|Cachy linux|rolling||   
+|2026/06/05|〇|Cachy linux|rolling||   
 |2026/02/15|ー|EndeavourOS|rolling||   
-|2026/06/05|△|OmegaLinux|rolling|Englishでinstall|   
+|2026/06/05|△|OmegaLinux|rolling|install時に文字化けするので△|   
   
 ## ２．インストール準備  
+  
+### 2.1 確認  
+  
 以下のことを確認してください。 
 ほとんどのディストロでインストール時に設定可能です。  
  
@@ -58,10 +61,14 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 # visudo
 %wheel ALL=(ALL:ALL) ALL
 ```
-Omega Linux以外は、３．に進んでください。  
-実行shは、install_arch.sh です。 
 
-Omega Linuxの場合は、Englishでインストールして日本語化しないと文字化けします。  
+### 2.2 Omega Linux  
+  
+Omega Linux以外は、2.3に進んでください。  
+Omega Linuxの場合は、Englishでインストールして日本語化しないと文字化けします。
+
+1) EnglishでOSをインストールします。
+2) 日本語に変更します。
 ```　
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji ttf-vlgothic　
 　
@@ -82,7 +89,28 @@ DefaultIMModule=fcitx　
 sudo reboot  
 ```  
   
-実行shは、install_arch.sh です。  
+### 2.3 その他　
+　
+#### 1) 実行shをbashに変更したい場合は、　
+```
+chsh -s /bin/bash
+```
+　
+#### 2) 日本語入力をしたい場合は、　
+```  
+sudo pacman -S fcitx5-im fcitx5-mozc　
+sudo nano /etc/environment
+以下の4行を追加
+GTK_IM_MODULE=fcitx　
+QT_IM_MODULE=fcitx　
+XMODIFIERS=@im=fcitx　
+DefaultIMModule=fcitx　
+  
+sudo reboot  
+```  
+  
+#### 3) 実行shは、install_arch.sh です。  
+  
   
 ## ３．rfriends3のダウンロードとインストール  
   
