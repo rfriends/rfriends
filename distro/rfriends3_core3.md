@@ -15,17 +15,18 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第34版　2026/05/02 
+第34版　2026/06/05
   
 ## １．ディストリビューション  
 
 下記のディストリビューションで動作確認しています。  
 ダウロードサイトは[こちら](download.md)  
   
-> [!CAUTION]
-> ~~2026/02/15現在、arch系はradiko,raiduの予約録音ができません。~~  
+> [!CAUTION]  
+> ~~2026/02/15現在、arch系はradiko,raiduの予約録音ができません。~~    
 > ~~2026/02/16、仮対応しました。~~  
-> 2026/05/02 対応完了。    
+> インストールスクリプトに不具合あり。  
+> 2026/06/05 対応完了。  
 > 不具合等あれば、掲示板のほうにお願いします。  
   
 |最終確認|判定|ディストロ|Ver.|備考|   
@@ -34,6 +35,7 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 |2026/05/02|〇|Manjaro linux|rolling|26.0.4|   
 |2026/02/15|ー|Cachy linux|rolling||   
 |2026/02/15|ー|EndeavourOS|rolling||   
+|2026/06/05|△|OmegaLinux|rolling|Englishでinstall|   
   
 ## ２．インストール準備  
 以下のことを確認してください。 
@@ -56,10 +58,28 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 # visudo
 %wheel ALL=(ALL:ALL) ALL
 ```
+Omega Linux以外は、３．に進んでください。  
+実行shは、install_arch.sh です。 
 
-もし、日本語が文字化けしている場合は、  
-```
-# pacman -S noto-fonts-cjk
+Omega Linuxの場合は、Englishでインストールして日本語化しないと文字化けします。  
+```　
+sudo pacman -S noto-fonts-cjk noto-fonts-emoji ttf-vlgothic　
+　
+sudo nano /etc/locale.gen　
+ja_JP.UTF-8 UTF-8　
+　
+sudo locale-gen　
+sudo localectl set-locale LANG=ja_JP.UTF-8　
+localectl status　
+　
+sudo pacman -S fcitx5-im fcitx5-mozc　
+sudo nano /etc/environment　
+GTK_IM_MODULE=fcitx　
+QT_IM_MODULE=fcitx　
+XMODIFIERS=@im=fcitx　
+DefaultIMModule=fcitx　
+  
+sudo reboot  
 ```  
   
 実行shは、install_arch.sh です。  
