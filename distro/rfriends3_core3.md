@@ -56,6 +56,11 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 # visudo
 %wheel ALL=(ALL:ALL) ALL
 ```
+
+もし、日本語が文字化けしている場合は、  
+```
+# pacman -S noto-fonts-cjk
+```  
   
 実行shは、install_arch.sh です。  
   
