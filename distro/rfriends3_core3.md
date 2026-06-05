@@ -62,9 +62,8 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 %wheel ALL=(ALL:ALL) ALL
 ```
 
-### 2.2 Omega Linux  
+### 2.2 Omega Linux　（または、英語版でインストールした場合）　  
   
-Omega Linux以外は、2.3に進んでください。  
 Omega Linuxの場合は、Englishでインストールして日本語化しないと文字化けします。
 
 1) EnglishでOSをインストールします。
@@ -78,15 +77,6 @@ ja_JP.UTF-8 UTF-8　
 sudo locale-gen　
 sudo localectl set-locale LANG=ja_JP.UTF-8　
 localectl status　
-　
-sudo pacman -S fcitx5-im fcitx5-mozc　
-sudo nano /etc/environment　
-GTK_IM_MODULE=fcitx　
-QT_IM_MODULE=fcitx　
-XMODIFIERS=@im=fcitx　
-DefaultIMModule=fcitx　
-  
-sudo reboot  
 ```  
   
 ### 2.3 実行shは、install_arch.sh です。  
