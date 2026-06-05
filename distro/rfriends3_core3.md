@@ -34,7 +34,7 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 |2026/05/02|〇|Arch linux|rolling||   
 |2026/05/02|〇|Manjaro linux|rolling|26.0.4|   
 |2026/06/05|〇|Cachy linux|rolling||   
-|2026/02/15|ー|EndeavourOS|rolling||   
+|2026/06/05|〇|EndeavourOS|rolling||   
 |2026/06/05|△|OmegaLinux|rolling|install時に文字化けするので△|   
   
 ## ２．インストール準備  
@@ -89,29 +89,9 @@ DefaultIMModule=fcitx　
 sudo reboot  
 ```  
   
-### 2.3 その他　
-　
-#### 1) 実行shをbashに変更したい場合は、　
-```
-chsh -s /bin/bash
-```
-　
-#### 2) 日本語入力をしたい場合は、　
-```  
-sudo pacman -S fcitx5-im fcitx5-mozc　
-sudo nano /etc/environment
-以下の4行を追加
-GTK_IM_MODULE=fcitx　
-QT_IM_MODULE=fcitx　
-XMODIFIERS=@im=fcitx　
-DefaultIMModule=fcitx　
-  
-sudo reboot  
-```  
-  
-#### 3) 実行shは、install_arch.sh です。  
-  
-  
+### 2.3 実行shは、install_arch.sh です。  
+
+      
 ## ３．rfriends3のダウンロードとインストール  
   
 　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
@@ -134,9 +114,10 @@ $ git clone https://github.com/rfriends/rfriends3_core.git
 $ cd rfriends3_core  
 $ sh install_arch.sh
 ```  
-  
+    
 これでインストールは完了です。  
-再起動してください。  
+  
+システムを再起動してください。  
 ```
 $ sudo reboot
 ```  
@@ -187,7 +168,49 @@ androidの場合も各種ファイルマネージャで可能です。（ファ�
   
 ![3](https://github.com/user-attachments/assets/d504cf68-0a3a-4701-92e5-199300647398)  
   
-## ６．rfriends3のアンインストール  
+## ６．カスタマイズ  
+  
+### 6.1 実行shをbashに変更したい場合　
+```
+chsh -s /bin/bash
+```
+　
+### 6.2 日本語入力をしたい場合は　
+```  
+sudo pacman -S fcitx5-im fcitx5-mozc　
+sudo nano /etc/environment
+以下の4行を追加
+GTK_IM_MODULE=fcitx　
+QT_IM_MODULE=fcitx　
+XMODIFIERS=@im=fcitx　
+DefaultIMModule=fcitx　
+  
+sudo reboot  
+```
+  
+### 6.3 firewallを有効化したい場合    
+  
+このスクリプトでは、firewallを無効化しています。  
+有効化したい場合は、　
+```　
+#firewalldの場合  
+sudo systemctl start firewalld  
+sudo systemctl enable firewalld  
+sudo firewall-cmd --add-service=ssh --permanent  
+sudo firewall-cmd --add-service=samba --permanent   
+sudo firewall-cmd --add-port=8000/tcp --permanent  
+sudo firewall-cmd --reload
+```  
+  
+#ufwの場合  
+```  
+sudo ufw allow ssh  
+sudo ufw allow samba  
+sudo ufw allow 8000/tcp  
+sudo ufw enable   
+```  
+  
+## ７．rfriends3のアンインストール  
   
 ・デイリー処理のために「設定」->「定期実行」->「登録」をしている場合は、必ず、「設定」->「定期実行」->「取消」をしてください。  
 ・次にrfriends3フォルダを削除してください。  
