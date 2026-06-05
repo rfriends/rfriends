@@ -31,11 +31,11 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
-|2026/05/02|〇|Arch linux|rolling||   
+|2026/06/05|〇|Arch linux|rolling|26.06.01|   
 |2026/05/02|〇|Manjaro linux|rolling|26.0.4|   
-|2026/06/05|〇|Cachy linux|rolling||   
-|2026/06/05|〇|EndeavourOS|rolling||   
-|2026/06/05|△|OmegaLinux|rolling|install時に文字化けするので△|   
+|2026/06/05|〇|Cachy linux|rolling|26.04.26|   
+|2026/06/05|〇|EndeavourOS|rolling|26.04.27|   
+|2026/06/05|△|OmegaLinux|rolling|26.02.27 install時に文字化けするので△|   
   
 ## ２．インストール準備  
   
