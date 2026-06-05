@@ -19,7 +19,7 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第31版　2026/05/30  
+第32版　2026/06/06  
   
 ## １．ディストリビューション  
 
@@ -35,10 +35,13 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
 |2025/04/27|〇|FreeBSD|13.5|samba419を選択|  
-|2025/04/21|◎|FreeBSD|14.2|samba419を選択|  
-|2025/08/16|◎|FreeBSD|14.3|samba419を選択|  
-|2026/01/04|〇|FreeBSD|15.0|samba419を選択|  
-|2026/05/30|〇|GhostBSD|26.1|freeBSD15.0,samba419を選択|  
+|2025/04/21|〇|FreeBSD|14.2|samba419を選択|  
+|2025/08/16|〇|FreeBSD|14.3|samba419を選択|  
+|2026/06/06|◎|FreeBSD|15.0|samba422を選択|  
+|2026/05/30|〇|GhostBSD|26.1(15)|samba419を選択|  
+
+2026/06/06 samba422でｆれえBSD をインストールしましたが問題なく動作しています。  
+他もsamba422で問題ないと思います。  
   
   
 ## ２．インストール準備  
@@ -79,23 +82,30 @@ cron_enable="YES"
 samba_server_enable="YES"
 lighttpd_enable="YES"
 ```  
-・php,sambaのversion確認
-```
-$ pkg search PHP
-php84-8.4.5_1                  PHP Scripting Language (8.4.X branch)
-$ pkg search samba
-samba416-4.16.11_6  
-samba419-4.19.9_8  
-samba420-4.20.7_4   
+・php,sambaのversion確認  
+```  
+$ pkg search php | grep Scripting  
+php82-8.2.30                   PHP Scripting Language (8.2.X branch)  
+php83-8.3.30                   PHP Scripting Language (8.3.X branch)  
+php84-8.4.19                   PHP Scripting Language (8.4.X branch)  
+php85-8.5.4                    PHP Scripting Language (8.5.X branch)  
+  
+$ pkg search samba  
+samba416-4.16.11_10            Free SMB/CIFS and AD/DC server and client for Unix  
+samba419-4.19.9_12             Free SMB/CIFS and AD/DC server and client for Unix  
+samba420-4.20.8_1              Free SMB/CIFS and AD/DC server and client for Unix  
+samba422-4.22.7_1              Free SMB/CIFS and AD/DC server and client for Unix  
+samba423-4.23.6_1              Free SMB/CIFS and AD/DC server and client for Unix  
 ```
 ・git clone 後、インストール実行前にinstall_freebsd.shの該当箇所を変更してください。  
-> [!CAUTION]
-> 2025/04/19現在、samba420は書き込みエラーが出ます。
-> samba419 を選択してください。  
+> [!CAUTION]  
+> 2025/04/19現在、samba420は書き込みエラーが出ます。  
+> samba420 以外を選択してください。  
+> 2026/06/06現在、samba422 がお勧め。  
 
 ```
 export php="php84"
-export samba="samba419"
+export samba="samba422"
 ```  
   
 ## ３．rfriends3のダウンロードとインストール  
