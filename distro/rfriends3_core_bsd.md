@@ -19,7 +19,7 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第32版　2026/06/06  
+第33版　2026/06/08  
   
 ## １．ディストリビューション  
 
@@ -39,6 +39,7 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 |2025/08/16|〇|FreeBSD|14.3|samba419を選択|  
 |2026/06/06|◎|FreeBSD|15.0|samba422を選択|  
 |2026/05/30|〇|GhostBSD|26.1(15)|samba419を選択|  
+|2026|-|NetBSD|10.0|近日公開予定|  
 
 2026/06/06 samba422でfreeBSD をインストールしましたが問題なく動作しています。  
 他もsamba422で問題ないと思います。  
@@ -106,8 +107,24 @@ samba423-4.23.6_1              Free SMB/CIFS and AD/DC server and client for Uni
 ```
 export php="php84"
 export samba="samba422"
-```  
+```  　
+  　
+### 2.2 NetBSDの場合  
   
+1) システムを最新にし、アプリを追加する。    
+```  
+# pkgin update 
+
+# pkgin -y install sudo 
+# pkgin -y install git   
+```
+2) NetBSDインストール時に、実行するユーザを追加し、管理者権限を付加する。  
+```  
+%wheelのコメント(#)を外す
+# visudo
+%wheel ALL=(ALL:ALL) ALL
+```  
+　
 ## ３．rfriends3のダウンロードとインストール  
   
 　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
@@ -128,7 +145,7 @@ $ cd ~/
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
-$ sh install_freebsd.sh
+$ sh install_freebsd.sh (or install_netbsd.sh)
 ```  
   
 これでインストールは完了です。  
