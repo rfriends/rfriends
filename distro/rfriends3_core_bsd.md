@@ -104,28 +104,51 @@ samba423-4.23.6_1              Free SMB/CIFS and AD/DC server and client for Uni
 > 2025/04/19現在、samba420は書き込みエラーが出ます。  
 > samba420 以外を選択してください。  
 > 2026/06/06現在、samba422 がお勧め。  
-
-```
-export php="php84"
-export samba="samba422"
-```  　
-  　
+  
+```  
+export php="php84"  
+export samba="samba422"  
+```  
+   　
 ### 2.2 NetBSDの場合  
   
 1) システムを最新にし、アプリを追加する。    
 ```  
-# pkgin update 
+pkgin update 
 
-# pkgin -y install sudo 
-# pkgin -y install git   
+pkgin -y install sudo 
+pkgin -y install git   
 ```
 2) NetBSDインストール時に、実行するユーザを追加し、管理者権限を付加する。  
 ```  
 %wheelのコメント(#)を外す
-# visudo
+visudo
 %wheel ALL=(ALL:ALL) ALL
 ```  
-　
+  　
+### 2.3 OpenBSDの場合  
+  
+1) システムを最新にし、アプリを追加する。    
+```  
+pkg_add -u
+
+pkg_add sudo 
+pkg_add git   
+```
+2) OpennBSDインストール時に、実行するユーザを追加し、管理者権限を付加する。  
+  
+doas
+```
+echo "permit persist :wheel" > /etc/doas.conf  
+```
+
+sudo
+```    
+%wheelのコメント(#)を外す
+visudo
+%wheel ALL=(ALL:ALL) ALL
+```  
+  
 ## ３．rfriends3のダウンロードとインストール  
   
 　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
@@ -145,8 +168,13 @@ export samba="samba422"
 $ cd ~/
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
-$ cd rfriends3_core  
-$ sh install_freebsd.sh (or install_netbsd.sh)
+$ cd rfriends3_core
+freeBSD  
+$ sh install_freebsd.sh
+NetBSD  
+$ sh install_netbsd.sh
+OpenBSD
+$ sh install_openbsd.sh  
 ```  
   
 これでインストールは完了です。  
