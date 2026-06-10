@@ -1,5 +1,13 @@
 ### ディストリビューションダウンロードサイト  
-2025/04/17
+
+#### 追加 (2026/06/10)  
+
+以下のサイトから主なLinuxディストリビューションはダウンロードできます。　
+
+24 Popular Linux Distributions  
+https://www.linux.org/pages/download/  
+
+#### ダウンロード (2025/04/17)
 
 ubuntu  
 https://jp.ubuntu.com/download
