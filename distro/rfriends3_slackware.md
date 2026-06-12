@@ -32,36 +32,41 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
   
 ## ２．rfriends3のインストール準備    
   
+以降の説明では、ユーザ名を仮に、swuserとします。  
+  
 ### 2.1 ＯＳのインストール　  
    
 slackwareのインストールについては、情報が大変少ないので、Google AIに質問するのが一番です。    
-
-以降の説明で、ユーザ名を仮に、swuserとします。
-作成したユーザ(swuser)のグループを  
-wheel audio video cdrom plugdev power
-としてください。　
+　
+1) SELECT fullでインストールする。　
+2) ユーザのグループをwheel audio video cdrom plugdev powerとする。　
 　
 ### 2.2 初期設定  
-
-rootでログインし、ユーザ(swuser)をsudoユーザにしてください。  
   
-```
-# visudo
-"%wheel ALL=(ALL) SETENV: ALL
-のコメント(#)をはずす。
-```
-  
-以下を実行してください。  
+ 1）rootでログインし、ユーザ(swuser)をsudoユーザにする。  
   
 ```  
-sbopkg -r  
-slackpkg update  
-slackpkg install-new  
-slackpkg upgrade-all  
+# visudo  
+"%wheel ALL=(ALL) SETENV: ALL  
+のコメント(#)をはずす。  
 ```  
-
-" | sudo tee /etc/sudoers.d/wheel > /dev/null
-sudo chmod 0440 /etc/sudoers.d/wheel
+  
+2) ミラーサイトを追加する。  
+  
+```  
+# vim /etc/slackpkg/mirrors  
+最終行に以下を追加。  
+https://ftp.osuosl.org/pub/slackware/slackware64-15.0/  
+```  
+  
+3) 各種アップデートを行う。  
+  
+```  
+# sbopkg -r    
+# slackpkg update    
+# slackpkg install-new    
+# slackpkg upgrade-all  
+```  
   
 ### 2.3 確認  
   
