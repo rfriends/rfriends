@@ -43,7 +43,7 @@ slackwareのインストールについては、情報が大変少ないので�
 　
 ### 2.2 初期設定  
   
- 1）rootでログインし、ユーザ(swuser)をsudoユーザにする。  
+1) rootでログインし、ユーザ(swuser)をsudoユーザにする。  
   
 ```  
 # visudo  
@@ -61,6 +61,11 @@ https://ftp.osuosl.org/pub/slackware/slackware64-15.0/
   
 3) 各種アップデートを行う。  
   
+実行中、
+Y/N を聞かれたら Y  
+K/O/R/P を聞かれたら K(eep)
+を入力してください。  
+  
 ```  
 # sbopkg -r    
 # slackpkg update    
@@ -68,36 +73,7 @@ https://ftp.osuosl.org/pub/slackware/slackware64-15.0/
 # slackpkg upgrade-all  
 ```  
   
-### 2.3 確認  
-  
-以下のことを確認してください。 
- 
-1) SELECT fullでインストールしていること。
-2) 動作確認中はfirewall(iptables)をstopしてください。
-3) sudo ユーザが存在。
-4) slackpkg,sbopkgが導入済。  
-5) 基本的な動作は確認済であること。   
-  
-```  
-$ sudo sbopkg -r  
-$ sudo slackpkg update  
-$ sudo slackpkg update gpg  
-$ sudo slackpkg upgrade-all
-sudo PAGER=cat sbopkg -r
-echo " 'q' リターンキーを押してください。"
-
-OUTPUT=$(sudo slackpkg update 2>&1)
-if echo "$OUTPUT" | grep -iq "GPG signature.*failed"; then
-    echo " GPGエラーを検出しました。鍵の更新が必要です。"
-    echo " sudo slackpkg update gpg を実行してください。"
-    exit 1
-fi
-sudo slackpkg install-new
-sudo slackpkg upgrade-all
-```
-  
-  
-### 2.4 実行shは、install_slackware.sh です。  
+### 2.3 実行shは、install_slackware.sh です。  
 
       
 ## ３．rfriends3のダウンロードとインストール  
