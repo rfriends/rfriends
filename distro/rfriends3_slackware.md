@@ -35,8 +35,35 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 ### 2.1 ＯＳのインストール　  
    
 slackwareのインストールについては、情報が大変少ないので、Google AIに質問するのが一番です。    
+
+以降の説明で、ユーザ名を仮に、swuserとします。
+作成したユーザ(swuser)のグループを  
+wheel audio video cdrom plugdev power
+としてください。　
+　
+### 2.2 初期設定  
+
+rootでログインし、ユーザ(swuser)をsudoユーザにしてください。  
   
-### 2.2 確認  
+```
+# visudo
+"%wheel ALL=(ALL) SETENV: ALL
+のコメント(#)をはずす。
+```
+  
+以下を実行してください。  
+  
+```  
+sbopkg -r  
+slackpkg update  
+slackpkg install-new  
+slackpkg upgrade-all  
+```  
+
+" | sudo tee /etc/sudoers.d/wheel > /dev/null
+sudo chmod 0440 /etc/sudoers.d/wheel
+  
+### 2.3 確認  
   
 以下のことを確認してください。 
  
@@ -47,11 +74,25 @@ slackwareのインストールについては、情報が大変少ないので�
 5) 基本的な動作は確認済であること。   
   
 ```  
-# 
+$ sudo sbopkg -r  
+$ sudo slackpkg update  
+$ sudo slackpkg update gpg  
+$ sudo slackpkg upgrade-all
+sudo PAGER=cat sbopkg -r
+echo " 'q' リターンキーを押してください。"
+
+OUTPUT=$(sudo slackpkg update 2>&1)
+if echo "$OUTPUT" | grep -iq "GPG signature.*failed"; then
+    echo " GPGエラーを検出しました。鍵の更新が必要です。"
+    echo " sudo slackpkg update gpg を実行してください。"
+    exit 1
+fi
+sudo slackpkg install-new
+sudo slackpkg upgrade-all
 ```
   
   
-### 2.3 実行shは、install_slackware.sh です。  
+### 2.4 実行shは、install_slackware.sh です。  
 
       
 ## ３．rfriends3のダウンロードとインストール  
