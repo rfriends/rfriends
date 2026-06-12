@@ -35,12 +35,18 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 ### 2.1 ＯＳのインストール　  
    
 slackwareのインストールについては、情報が大変少ないので、Google AIに質問するのが一番です。  
+
+1) SELECT fullを選択。
+3) 動作確認中はfirewall(iptables)をstopしてください。
+4) sudo ユーザが存在。
+5) slackpkg,sbopkgが導入済。  
+6) 基本的な動作は確認済であること。  
   
 ### 2.2 確認  
   
 以下のことを確認してください。 
  
-1) fullでインストールしていること。
+1) SELECT fullでインストールしていること。
 2) 動作確認中はfirewall(iptables)をstopしてください。
 3) sudo ユーザが存在。
 4) slackpkg,sbopkgが導入済。  
@@ -81,6 +87,20 @@ $ sudo /sbin/reboot
 ```  
   
 ## ４．rfriends3の実行  
+
+### 4.1 状態確認  
+
+以下を確認してください。  
+1040 atd のような表示が出なかったら、動作していません。  
+  
+```
+$ pgrep -l atd
+$ pgrep -l crond
+$ pgrep -l smbd
+$ pgrep -l lighttpd  
+```  
+  
+### 4.2 実行  
   
 以下を入力します。
 ```  
@@ -101,7 +121,7 @@ http://192.168.1.103:8000
 　
 詳細な使用方法は、  
 https://rfriends.github.io/rfriends/manual/  
-を参照してください。    
+を参照してください。   
   
 ## ５．samba  
   
