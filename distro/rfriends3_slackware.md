@@ -78,10 +78,10 @@ K/O/R/P を聞かれたら K(eep)
       
 ## ３．rfriends3のダウンロードとインストール  
   
-　sshまたはTerminalを開き、sudoが可能なユーザでログインします。  
+　sshまたはTerminalを開き、sudoが可能なユーザ(swuser)でログインします。  
  
 > [!CAUTION]
-> 必ず２で確認したユーザでログインしてください。    
+> 必ず２で確認したユーザ(swuser)でログインしてください。    
   
 　rfriends3インストールスクリプト（install_slackware.sh）を実行します。  
  各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
