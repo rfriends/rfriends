@@ -1,4 +1,4 @@
-## Linux版rfriends3でラジオ録音（その他）  
+## slackware版rfriends3でラジオ録音  
   
 rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux版です。  
@@ -14,8 +14,8 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
   
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
-初 版　2024/02/23  
-第34版　2026/06/05
+初 版　2026/06/13 
+第版　2026/06/13
   
 ## １．ディストリビューション  
 
@@ -23,63 +23,33 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 ダウロードサイトは[こちら](download.md)  
   
 > [!CAUTION]  
-> ~~2026/02/15現在、arch系はradiko,raiduの予約録音ができません。~~    
-> ~~2026/02/16、仮対応しました。~~  
-> インストールスクリプトに不具合あり。  
-> 2026/06/05 対応完了。  
+> 現在開発中につき、動作不良あり。    
 > 不具合等あれば、掲示板のほうにお願いします。  
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
-|2026/06/05|〇|Arch linux|rolling|26.06.01|   
-|2026/05/02|〇|Manjaro linux|rolling|26.0.4|   
-|2026/06/05|〇|Cachy linux|rolling|26.04.26|   
-|2026/06/05|〇|EndeavourOS|rolling|26.04.27|   
-|2026/06/05|△|OmegaLinux|rolling|26.02.27 install時に文字化けするので△|   
+|2026/06/13|-|slackware|15.0|開発中|   
   
-## ２．インストール準備  
+## ２．rfriends3のインストール準備    
   
-### 2.1 確認  
+### 2.1 ＯＳのインストール　  
+   
+slackwareのインストールについては、情報が大変少ないので、Google AIに質問するのが一番です。  
+  
+### 2.2 確認  
   
 以下のことを確認してください。 
-ほとんどのディストロでインストール時に設定可能です。  
  
-1) システムを最新にし、アプリを追加する。  
-2) 実行するユーザを追加し、管理者権限を付加する。  
-3) その他   
+1) sudo ユーザが存在。  
+2) slackpkg,sbopkgが導入済。  
+3) 基本的な動作は確認済であること。   
   
 ```  
-# pacman -Syu
-
-# pacman -S vi
-# pacman -S sudo
-# pacman -S git
-
-# useradd -m -G wheel ユーザ名 
-# passwd ユーザ名 
-
-# visudo
-%wheel ALL=(ALL:ALL) ALL
+# 
 ```
-
-### 2.2 Omega Linux　（または、英語版でインストールした場合）　  
   
-Omega Linuxの場合は、Englishでインストールして日本語化しないと文字化けします。
-
-1) EnglishでOSをインストールします。
-2) 日本語に変更します。
-```　
-sudo pacman -S noto-fonts-cjk noto-fonts-emoji ttf-vlgothic　
-　
-sudo nano /etc/locale.gen　
-ja_JP.UTF-8 UTF-8　
-　
-sudo locale-gen　
-sudo localectl set-locale LANG=ja_JP.UTF-8　
-localectl status　
-```  
   
-### 2.3 実行shは、install_arch.sh です。  
+### 2.3 実行shは、install_slackware.sh です。  
 
       
 ## ３．rfriends3のダウンロードとインストール  
@@ -89,34 +59,30 @@ localectl status　
 > [!CAUTION]
 > 必ず２で確認したユーザでログインしてください。    
   
-　ディストリビューション別のrfriends3インストールスクリプト（install_arch.sh）を実行します。  
+　rfriends3インストールスクリプト（install_slackware.sh）を実行します。  
  各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
-> [!CAUTION]
-> インストールするシステムにすでにSAMBAサーバがインストールされている場合は、  
-> それを停止させるか、rfriendsよりSambaをインストールしないでください。  
-> export optsamba="off"  
      
 ```  
 $ cd ~/
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
-$ sh install_arch.sh
+$ sh install_slackware.sh
 ```  
     
 これでインストールは完了です。  
   
 システムを再起動してください。  
 ```
-$ sudo reboot
+$ sudo /sbin/reboot
 ```  
   
 ## ４．rfriends3の実行  
   
 以下を入力します。ipコマンドがない場合は、ifconfigを使用してください。  
 ```  
-$ ip -4 -br a | grep -v "127.0.0.1"  
+$ sudo /sbin/ifconfig | grep inet | grep -v inet6 | grep -v "127.0.0.1"  
 　eth0 UNKNOWN XXX.XXX.XXX.XXX/24  
 ```  
 または  
