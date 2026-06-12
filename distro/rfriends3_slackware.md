@@ -40,9 +40,11 @@ slackwareのインストールについては、情報が大変少ないので�
   
 以下のことを確認してください。 
  
-1) sudo ユーザが存在。  
-2) slackpkg,sbopkgが導入済。  
-3) 基本的な動作は確認済であること。   
+1) fullでインストールしていること。
+2) 動作確認中はfirewall(iptables)をstopしてください。
+3) sudo ユーザが存在。
+4) slackpkg,sbopkgが導入済。  
+5) 基本的な動作は確認済であること。   
   
 ```  
 # 
@@ -80,93 +82,45 @@ $ sudo /sbin/reboot
   
 ## ４．rfriends3の実行  
   
-以下を入力します。ipコマンドがない場合は、ifconfigを使用してください。  
+以下を入力します。
 ```  
 $ sudo /sbin/ifconfig | grep inet | grep -v inet6 | grep -v "127.0.0.1"  
-　eth0 UNKNOWN XXX.XXX.XXX.XXX/24  
+inet 192.168.1.103  netmask 255.255.255.0  broadcast 192.168.1.255  
 ```  
-または  
-```  
-$ hostname -I  
-```  
-このIPアドレス（XXX.XXX.XXX.XXX）がwebサーバアドレスです。  
+このIPアドレス（この例では、192.168.1.103）がwebサーバアドレスです。  
   
 ウェブブラウザ（edge,chrome,firefox,...）を起動し、上記で表示されたアドレスにアクセスする。  
   
-http://XXX.XXX.XXX.XXX:8000  
+http://192.168.1.103:8000  
   
 以下のような画面が出たら成功です。ブラウザはローカル(現在実行中のPC)でもリモート（同一ネットワーク上のPC,MAC,スマホ等）でもOKです。  
   
 ![2](https://github.com/user-attachments/assets/c4cc72cc-659c-4c29-bbfe-3f4951b9556c)
   
-「ヘルプ」「システム更新」でシステムを最新にしてください。   　
+「ヘルプ」「システム更新」でシステムを最新にしてください。  
+　
 詳細な使用方法は、  
 https://rfriends.github.io/rfriends/manual/  
 を参照してください。    
   
-> [!CAUTION]
-> 日本語が文字化けする場合は、フォントをインストールしてください。  
-> sudo pacman -S noto-fonts-cjk  
-  
 ## ５．samba  
   
-　windowsの場合、エクスプローラに先ほどのIPアドレス(xxx.xxx.xxx.xxx)を入力すれば、録音ディレクトリにアクセスできます。smbdirというディレクトリが見えると思います。  
+　windowsの場合、エクスプローラに先ほどのIPアドレス(192.168.1.103)を入力すれば、録音ディレクトリにアクセスできます。smbdirというディレクトリが見えると思います。  
   
-\\XXX.XXX.XXX.XXX  
+\\192.168.1.103
   
 \\は￥￥です。  
   
 スマホからでもファイルマネージャでアクセスできます。  
   
-iPhoneの場合、ファイル - 3点リーダー - サーバー接続smb://xxx.xxx.xxx.xxx、ゲストで接続できます。  
+iPhoneの場合、ファイル - 3点リーダー - サーバー接続　smb://192.168.1.103　ゲストで接続できます。  
   
 androidの場合も各種ファイルマネージャで可能です。（ファイルマネージャ＋推奨）  
   
 ![3](https://github.com/user-attachments/assets/d504cf68-0a3a-4701-92e5-199300647398)  
   
-## ６．カスタマイズ  
   
-### 6.1 実行shをbashに変更したい場合　
-```
-chsh -s /bin/bash
-```
-　
-### 6.2 日本語入力をしたい場合は　
-```  
-sudo pacman -S fcitx5-im fcitx5-mozc　
-sudo nano /etc/environment
-以下の4行を追加
-GTK_IM_MODULE=fcitx　
-QT_IM_MODULE=fcitx　
-XMODIFIERS=@im=fcitx　
-DefaultIMModule=fcitx　
-  
-sudo reboot  
-```
-  
-### 6.3 firewallを有効化したい場合    
-  
-このスクリプトでは、firewallを無効化しています。  
-有効化したい場合は、　
-```　
-#firewalldの場合  
-sudo systemctl start firewalld  
-sudo systemctl enable firewalld  
-sudo firewall-cmd --add-service=ssh --permanent  
-sudo firewall-cmd --add-service=samba --permanent   
-sudo firewall-cmd --add-port=8000/tcp --permanent  
-sudo firewall-cmd --reload
-```  
-  
-#ufwの場合  
-```  
-sudo ufw allow ssh  
-sudo ufw allow samba  
-sudo ufw allow 8000/tcp  
-sudo ufw enable   
-```  
-  
-## ７．rfriends3のアンインストール  
+## ６．rfriends3のアンインストール  
   
 ・デイリー処理のために「設定」->「定期実行」->「登録」をしている場合は、必ず、「設定」->「定期実行」->「取消」をしてください。  
 ・次にrfriends3フォルダを削除してください。  
