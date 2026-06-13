@@ -42,10 +42,10 @@ XXXXX.img.gzファイルが保存されますが、解凍の必要はありま�
 #### - Raspios GNU/Linux 12 bookworm lite    
   
 32bit版(全モデル)  
-[rfriends3_1.4.3a_raspios_bookworm_202605052124.img.gz](https//ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.4.3a_raspios_bookworm_202605052124.img.gz)    
+https//ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.4.3a_raspios_bookworm_202605052124.img.gz     
   
 64bit版(3/4/zero2)  
-[rfriends3_1.4.3a_raspios_bookworm_64_202605052023.img.gz](https//ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.4.3a_raspios_bookworm_64_202605052023.img.gz)   
+https//ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.4.3a_raspios_bookworm_64_202605052023.img.gz   
   
 ## ２．イメージをmicroSDに書く。(Windows,Linux,macOS)
   
