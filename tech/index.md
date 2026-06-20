@@ -30,5 +30,6 @@
 |24|[録音ファイルをsambaサーバに自動でコピーする](24.md)||
 |25|[rfriends3のdelivery機能にssh copyを追加する](25.md)||
 |26|[headlessブラウザlightpandaをインストールする](26.md)||
+|27|[webradioを録音する。](27.md)||
 
 
