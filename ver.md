@@ -18,7 +18,7 @@
 の予約録音機能を追加  
   
 使用方法は以下を参照のこと。  
-https://rfriends.github.io/rfriends/tech/27.html
+(https://rfriends.github.io/rfriends/tech/27.html)[https://rfriends.github.io/rfriends/tech/27.html]
     
 ### 1.4.7 (2026/06/22)  
     
