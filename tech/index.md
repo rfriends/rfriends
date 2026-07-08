@@ -31,6 +31,6 @@
 |25|[rfriends3のdelivery機能にssh copyを追加する](25.md)||
 |26|[headlessブラウザlightpandaをインストールする](26.md)||
 |27|[webradioを録音する。](27.md)||
-|28|[JCBAの音を出す方法(lighttpd)](28.md)||
+|28|[聴取でJCBAの音を出す方法(lighttpd)](28.md)||
 
 
