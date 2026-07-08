@@ -5,7 +5,7 @@ microSDに書いて起動するだけでrfriends3が使用できます。
  
   
 > [!NOTE]  
-> 改版 2026/06/04   
+> 改版 2026/07/09   
 > 2/3/4/Zero 2版(64)を公開しました。       
   
 ## ０．準備   
@@ -26,7 +26,7 @@ XXXXX.img.gzファイルが保存されますが、解凍の必要はありま�
 #### DietPi v10.4.2 (trixie)    
   
 64bit版(Raspberry Pi 2/3/4/Zero 2　BCM2710/2711 | 4 Cores | ARMv8)  
-[dietpi_v8_202606040151.img.gz](https://ss1.xrea.com/rf3.s331.xrea.com/storage/dietpi_v8_202606040151.img.gz)     
+[dietpi_v8_202607090351.img.gz](https://ss1.xrea.com/rf3.s331.xrea.com/storage/dietpi_v8_202607090351.img.gz)     
   
 
   
