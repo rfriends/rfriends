@@ -1,10 +1,10 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。    
 　　
-### 074 linux版でjcbaの聴取ができない    
+### 074 JCBAの聴取（サーバ）はできるけれど、聴取ができない。    
   
-WEB サーバーがlighttpd の場合、  
-/etc/lighttpd/lighttpd.confの末尾に以下を付け加え再起動してください。
+WEB サーバーがlighttpd の場合、lighttpd.confの末尾に以下を付け加え再起動してください。  
+Linux : /etc/lighttpd/lighttpd.conf
 ```  
 server.stream-response-body = 1  
 ```
