@@ -5,7 +5,7 @@ microSDに書いて起動するだけでrfriends3が使用できます。
  
   
 > [!NOTE]  
-> 2026/05/05  
+> 2026/07/09    
 > ドキュメントを大幅書き換え。  
 > Bookworm版(32/64)を公開しました。       
   
@@ -45,7 +45,7 @@ XXXXX.img.gzファイルが保存されますが、解凍の必要はありま�
 [1.4.3a](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.4.3a_raspios_bookworm_202605052124.img.gz)     
   
 64bit版(3/4/zero2)  
-[1.4.3a](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.4.3a_raspios_bookworm_64_202605052023.img.gz)   
+[1.5.0d](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.5.0d_raspios_bookworm_64_202607090451.img.gz)   
   
 ## ２．イメージをmicroSDに書く。(Windows,Linux,macOS)
   
