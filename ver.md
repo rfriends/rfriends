@@ -19,13 +19,12 @@ https://rfriends.github.io/rfriends/tech/28.html
   
 ・リスラジジャケット追加  (c)   
      
-・めざましラジオ機能を追加 （テスト機能）(c)        
+・めざましラジオ機能を追加        
 　radiko,radiru,webradioのtimerecの最後に,playを追加するだけ。  
 　LFR,THU,00:05,00:10,radiko-t,radiko-t,play  
 　時間が来たらサーバ側からラジオが再生されます。  
-　テスト報告があれば、機能修正、追加対応します。なければ削除。  
    
-・Upd. \[ 正式版, 開発版, $.$.$ ]  (c)   
+・Upd. \[ 正式版, 開発版, $.$.$ ]     
    $.$.$ 未満のバージョンではアラームが出るようになります。（予定）  
    
 ・webradio 初期ディレクトリ作成忘れ  
