@@ -71,7 +71,7 @@ network={
 この時は
   psk=password
 になります。””はつけない  
-```　　
+```  
   
 ### 3.2 Wifi設定ファイルをmicroSDにコピー
   
@@ -193,5 +193,6 @@ CPU温度 : 48.7’C
   
 CPU温度は以下のコマンドで取得できます。  
 $ vcgencmd measure_temp temp=48.7’C
-
+  
+以上    
   
