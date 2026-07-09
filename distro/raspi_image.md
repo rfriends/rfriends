@@ -1,36 +1,25 @@
-RaspberryPi版rfriends3でラジオ録音（OSイメージ編）
+# RaspberryPi版rfriends3でラジオ録音（OSイメージ編）
 あらかじめRaspiOSにrfriends3をインストールし、各種設定を行ったイメージです。
 microSDに書いて起動するだけでrfriends3が使用できます。
 
-Note
+> [!NOTE]
+> 2026/05/05
+> ドキュメントを大幅書き換え。
+> Bookworm版(32/64)を公開しました。
 
-2026/05/05
-ドキュメントを大幅書き換え。
-Bookworm版(32/64)を公開しました。
-
-０．準備
-動作確認機種
-・Raspberry Pi 1/2/3/4
-・Raspberry Pi Zero W/Zero 2W
-
-当方、Raspberry Pi 5 を所持していないため確認できていません。
-
-1
-
-必要なもの
-１）Raspberry pi 一式
-２）microSDカードライタ
-３）WAN,LAN環境
-４）PC
-WindowsPC/LinuxPC/Macを用意してください。
-以下は主にWindowsPCでの操作を記述しています。
-
-５）ssh,smb,ftpクライアント
-　WindowsPC環境では、sshはteraterm/RLogin、smbはPCのエクスプローラ、ftpはfilezillaなど。
-　LinuxPC/mac環境では標準ツールが使えます。
-　Android環境では、sshはConnectBot(Kenny Root)、smbはファイルマネージャ＋(flashlihgt+clock)、ftpはFtpCafe(Droidware UK)など。
-
-１．rfriends3のシステムイメージをダウンロードする。
+## ０．準備  
+  
+動作確認機種  
+・Raspberry Pi 1/2/3/4  
+・Raspberry Pi Zero W/Zero 2W  
+  
+当方、Raspberry Pi 5 を所持していないため確認できていません。  
+  
+WindowsPC/LinuxPC/Macを用意してください。  
+以下は主にWindowsPCでの操作を記述しています。  
+  
+## １．rfriends3のシステムイメージをダウンロードする。  
+  
 イメージはraspios上にrfriends3をインストールし各種設定を行ったものです。
 リンクを右クリックして「名前をつけてリンク先を保存する」。
 XXXXX.img.gzファイルが保存されますが、解凍の必要はありません。
@@ -45,27 +34,28 @@ XXXXX.img.gzファイルが保存されますが、解凍の必要はありま�
 1.5.0d  
 [rfriends3_1.5.0d_raspios_bookworm_64_202607090451.img.gz](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.5.0d_raspios_bookworm_64_202607090451.img.gz)  
   
-２．イメージをmicroSDに書く。(Windows,Linux,macOS)
-
+## ２．イメージをmicroSDに書く。(Windows,Linux,macOS)  
+  
 以下のページを参考にして、imgファイルをmicroSDに書く。  
   
 [Raspberry Pi Imagerを使用してカスタムイメージをmicroSDに書く](https://github.com/rfriends/rfriends/blob/gh-pages/distro/raspi_image.html)
+  
 
-
-３．wifiアクセス情報を追加する。
-有線LAN接続の場合、この設定は不要です。
-
-Note
-
-bookwormからwifi設定の方法が変更になっていますが
-従来の方法でできるよう変更しています。
-
-3.1 Wifi設定ファイル作成
+## ３．wifiアクセス情報を追加する。  
+  
+有線LAN接続の場合、この設定は不要です。  
+  
+> [!NOTE]  
+> bookwormからwifi設定の方法が変更になっていますが  
+> 従来の方法でできるよう変更しています。  
+  
+### 3.1 Wifi設定ファイル作成  
+  
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。
-wpa_supplicant.conf
-
-保存したwpa_supplicant.confに自環境に合わせてssid,passwdを設定する。
-
+[wpa_supplicant.conf](https://ss1.xrea.com/rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
+  
+保存したwpa_supplicant.confに自環境に合わせてssid,passwdを設定する。  
+```    
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev  
 update_config=1  
 country=JP  
@@ -73,8 +63,10 @@ network={
   ssid="SSID"  
   psk="password"  
 }
+```
+  
 （参考）パスワードの暗号化
-
+```  
 　$ wpa_passphrase "SSID" "password"
 この時は
   psk=password
@@ -83,9 +75,10 @@ network={
   
 ### 3.2 Wifi設定ファイルをmicroSDにコピー
   
-2.で作成したmicroSDをPCに接続してください。     
+2.で作成したmicroSDをPCに接続してください。  
+  
 エクスプローラで確認すると、boot/bootfs領域（この例ではF:、環境によりドライブ名は異なる）が認識されているはずです。  
-
+  
 <img width="416" height="60" alt="c2" src="https://github.com/user-attachments/assets/eb5f4225-9b71-48b8-ad59-ec613162c256" />
   
 このmicroSDのboot/bootfs領域（この例ではF:\）にwpa_supplicant.confをコピーする。  
@@ -97,7 +90,7 @@ network={
 RaspberryPiにmicroSDをセットし電源をONにします。  
 RaspberryPiのLEDが点滅し、しばらくすると点灯に変わります。 
 この時点でOSは起動し、rfriends3は実行されています。  
-
+  
 注意：一度起動すると、wpa_supplicant.conf は　/etc/wpa_supplicantディレクトリに移動し、boot/bootfs領域からは削除されます。  
 設定を間違った場合などで再設定する場合は、wpa_supplicant.conf を修正後、再度、boot/bootfs領域にコピーしてください。  
   
