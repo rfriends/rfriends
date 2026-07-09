@@ -4,7 +4,7 @@
 microSDに書いてRaspberryPiを起動するだけでrfriends3が使用できます。  
   
 初版 2025/08/30  
-改版 2025/11/07
+改版 2026/07/09
   
 ## ０．準備   
 
@@ -50,7 +50,7 @@ LinuxPC環境では標準ツールが使えます。
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約500MB）  
 
 armhf  
-[rpi-rfriends3-alpinev6_202607091037.img.gz](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev6_202607091037.img.gz) （約 450MB）  
+[rpi-rfriends3-alpinev6_202607091400.img.gz](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev6_202607091400.img.gz) （約 450MB）  
 または  
 armv7  
 [rpi-rfriends3-alpinev7_202607091147.img.gz](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev7_202607091147.img.gz) （約 800MB）  
