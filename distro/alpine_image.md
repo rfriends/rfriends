@@ -17,15 +17,11 @@ microSDに書いてRaspberryPiを起動するだけでrfriends3が使用でき�
   
 https://alpinelinux.org/downloads/   
   
-1) armhf (1 / zero)
-
-[alpine-rpi-3.22.2-armhf.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/armv7/alpine-rpi-3.22.2-armhf.tar.gz)  
+1) armhf (1 / zero)  　
    
 ・Raspberry Pi Zero W で確認しました。  
   
-2) armv7 (2 / zero2 / 3) 
-  
-[alpine-rpi-3.22.2-armv7.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/armv7/alpine-rpi-3.22.2-armv7.tar.gz)  
+2) armv7 (2 / zero2 / 3)   
    
 ・Raspberry Pi 3 Model B  
 ・Raspberry Pi Zero 2 W  で確認しました。  
@@ -38,17 +34,6 @@ https://alpinelinux.org/downloads/
 ・microSDカード Class10 UHS-I（8GB以上、できれば32GB,64GB,128GB）  
 ・microSDリーダ  
   
-  
-### SDカード用ツール  
-  
-１）SDメモリーカードフォーマッター  
-    
-[SD Card FOrmatter](https://www.sdcard.org/ja/downloads-2/formatter-2/)  
-  
-２）Win32DiskImager  
-  
-イメージをSDメモリカードに書き込みます。  
-[win32diskimager](https://sourceforge.net/projects/win32diskimager/)    
   
 ### sshクライアント  
   
@@ -64,22 +49,21 @@ LinuxPC環境では標準ツールが使えます。
 下記のリンクを右クリックして「名前をつけてリンク先を保存する」。   
 「安全でないダウンロードがブロックされました」と表示されたら「保存」をクリックする。（約500MB）  
 
-armhf
-[rpi-rfriends3-alpinev6.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev6.zip) （約 340MB）  
+armhf  
+[rpi-rfriends3-alpinev6_202607091037.img.gz](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev6_202607091037.img.gz) （約 450MB）  
 または  
-armv7
-[rpi-rfriends3-alpinev7.zip](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev7.zip) （約 701MB）  
+armv7  
+[rpi-rfriends3-alpinev7_202607091147.img.gz](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rpi-rfriends3-alpinev7_202607091147.img.gz) （約 800MB）  
   
 [wpa_supplicant.conf](https://ss1.xrea.com/rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
   
 ## ２．イメージをmicroSDに書く。
   
-zipファイルを解凍しimgファイルを抽出する。（約6GB）  
-rpi-rfriends3-alpine.img (ファイル名はバージョンにより異なります)  
    
-Win32DiskImagerを使って、imgファイルをmicroSDに書く。  
+以下のページを参考にして、imgファイルをmicroSDに書く。  
   
-![2](https://github.com/user-attachments/assets/c1d4954e-90d6-432a-9d1c-2a8299f77691)  
+[Raspberry Pi Imagerを使用してカスタムイメージをmicroSDに書く](https://github.com/rfriends/rfriends/blob/gh-pages/distro/raspi_image.html)
+
   
 ## ３．wifiアクセス情報を追加する。
   
