@@ -51,7 +51,7 @@ XXXXX.img.gzファイルが保存されますが、解凍の必要はありま�
   
 ### 3.1 Wifi設定ファイル作成  
   
-下記のリンクを右クリックして「名前をつけてリンク先を保存する」。
+下記のリンクを右クリックして「名前をつけてリンク先を保存する」。  
 [wpa_supplicant.conf](https://ss1.xrea.com/rf3.s331.xrea.com/storage/wpa_supplicant.conf)  
   
 保存したwpa_supplicant.confに自環境に合わせてssid,passwdを設定する。  
