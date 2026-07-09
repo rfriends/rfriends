@@ -37,45 +37,18 @@ XXXXX.img.gzファイルが保存されますが、解凍の必要はありま�
 
 - Raspios GNU/Linux 12 bookworm lite
 32bit版(全モデル)
-1.4.3a
+[rfriends3_1.4.3a_raspios_bookworm_202605052124.img.gz](rfriends3_1.4.3a_raspios_bookworm_202605052124.img.gz)  
 
 64bit版(3/4/zero2)
 1.4.3a
+[rfriends3_1.5.0d_raspios_bookworm_64_202607090451.img.gz](rfriends3_1.5.0d_raspios_bookworm_64_202607090451.img.gz)  
 
 ２．イメージをmicroSDに書く。(Windows,Linux,macOS)
-１）microSDカード用ツールのインストール
-システムイメージをmicroSDカードに書き込むツール（Raspberry Pi Imager）をインストールします。
-以下のリンク先よりRaspberry Pi Imager(Windows,Linux,macOS)をダウンロード、インストールてください。
 
-　Raspberry Pi Imager　
+以下のページを参考にして、imgファイルをmicroSDに書く。  
+  
+[Raspberry Pi Imagerを使用してカスタムイメージをmicroSDに書く](https://github.com/rfriends/rfriends/blob/gh-pages/distro/raspi_image.html)
 
-raspi
-２） Raspberry Pi Imagerを使ってイメージをmicroSDに書く。
-Raspberry Pi Imagerを実行してください。
-イメージをmicroSDに書く処理の流れは以下のとおり。
-Raspberry Pi Imagerの機種、バージョンの違いによりメッセージ等が異なります。
-
-1) Device
-使用するRaspberryPiの機種
-raspi2
-
-2) OS
-カスタムイメージを使う/Use Custom
-先ほどダウンロードしたxxxxx.img.gzを指定してしてください。
-raspi3
-
-3) ストレージ
-microSDを選択（間違えないように！） raspi5
-
-4) Customisation
-バージョンによりこの項目は表示されずにスキップされる。
-表示された場合も、「いいえ」を選択する。 raspi55
-
-5) Writing
-実際にmicroSDに書き込みを行う。 raspi6
-
-6) Done
-終了。
 
 ３．wifiアクセス情報を追加する。
 有線LAN接続の場合、この設定は不要です。
