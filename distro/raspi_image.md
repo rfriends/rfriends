@@ -35,14 +35,16 @@ WindowsPC/LinuxPC/Macを用意してください。
 リンクを右クリックして「名前をつけてリンク先を保存する」。
 XXXXX.img.gzファイルが保存されますが、解凍の必要はありません。
 
-- Raspios GNU/Linux 12 bookworm lite
-32bit版(全モデル)
-[rfriends3_1.4.3a_raspios_bookworm_202605052124.img.gz](rfriends3_1.4.3a_raspios_bookworm_202605052124.img.gz)  
-
-64bit版(3/4/zero2)
-1.4.3a
-[rfriends3_1.5.0d_raspios_bookworm_64_202607090451.img.gz](rfriends3_1.5.0d_raspios_bookworm_64_202607090451.img.gz)  
-
+- Raspios GNU/Linux 12 bookworm lite  
+  
+32bit版(全モデル)  
+1.4.3a  
+[rfriends3_1.4.3a_raspios_bookworm_202605052124.img.gz](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.4.3a_raspios_bookworm_202605052124.img.gz)  
+  
+64bit版(3/4/zero2)  
+1.5.0d  
+[rfriends3_1.5.0d_raspios_bookworm_64_202607090451.img.gz](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_1.5.0d_raspios_bookworm_64_202607090451.img.gz)  
+  
 ２．イメージをmicroSDに書く。(Windows,Linux,macOS)
 
 以下のページを参考にして、imgファイルをmicroSDに書く。  
