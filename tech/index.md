@@ -32,5 +32,6 @@
 |26|[headlessブラウザlightpandaをインストールする](26.md)||
 |27|[webradioを録音する。](27.md)||
 |28|[聴取でJCBAの音を出す方法(lighttpd)](28.md)||
+|29|[Raspberry Pi Imagerを使用してカスタムイメージをmicroSDに書く](29.md)||
 
 
