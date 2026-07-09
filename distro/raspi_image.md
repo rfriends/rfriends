@@ -1,7 +1,7 @@
 # Raspberry Pi Imagerを使用してカスタムイメージをmicroSDに書く  
   
 rfriends3では各種イメージをという形式で提供しています。  
-そのイメージをmicroSDに書く方法について説明します。  
+そのイメージをmicroSDに書く方法について説明します。    
   
 ## １．rfriends3のシステムイメージをダウンロードする。   
     
