@@ -32,10 +32,10 @@ Apache2版を追加しました。(2025/08/15)
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
-|2025/05/03|△| Ubuntu (D10)|18|/etc/apt/sources.list<br>を変更|  
-|2025/04/27|△| Ubuntu (D10)|19|/etc/apt/sources.list<br>を変更|  
-|2025/04/26|〇| Ubuntu (D11)|20||  
-|2025/04/26|◎| Ubuntu (D12)|22||  
+|2025/05/03|✕| Ubuntu (D10)|18|/etc/apt/sources.list<br>を変更|  
+|2025/04/27|✕| Ubuntu (D10)|19|/etc/apt/sources.list<br>を変更|  
+|2025/04/26|△| Ubuntu (D11)|20||  
+|2025/04/26|〇| Ubuntu (D12)|22||  
 |2025/04/26|◎| Ubuntu (D13)|24||  
 |2025/04/26|〇| Ubuntu (D13)|25||  
 |2026/04/24|〇| Ubuntu (D13)|26|new!|  
