@@ -30,7 +30,7 @@
 |24|[録音ファイルをsambaサーバに自動でコピーする](24.md)||
 |25|[rfriends3のdelivery機能にssh copyを追加する](25.md)||
 |26|[headlessブラウザlightpandaをインストールする](26.md)||
-|27|[webradioを録音する。](27.md)||
+|27|[配信データ(radiko,radiru,webradio)を時間を指定して、録音する。 ](27.md)||
 |28|[聴取でJCBAの音を出す方法(lighttpd)](28.md)||
 |29|[Raspberry Pi Imagerを使用してカスタムイメージをmicroSDに書く](29.md)||
 
