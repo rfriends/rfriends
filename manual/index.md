@@ -1,5 +1,10 @@
 ## rfriends3のマニュアル  
   
+> [!NOTE]
+> 現在、マニュアルが最新機能に追いついていません、
+> 以下を補足で参考にしてください。    
+> https://rfriends.github.io/rfriends/tech/  
+   
 ・[rfriends3の操作方法](00.md)  
   
 ・[チュートリアル](tutorial.md)  
