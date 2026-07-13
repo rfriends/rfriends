@@ -15,7 +15,7 @@
 ・radiko,radiru,webradioの目覚まし機能にファイル再生追加  
 　radiko,radiru,webradioのtimerecの最後に,fileを追加するだけ。  
    
-　r3,MON,16:50,3,基礎英語-レベル2*,english,file 
+　r3,MON,16:50,3,基礎英語-レベル2*,english,file  
 　時間が来たらサーバ側から指定したファイルが再生されます。  
    
 ・JCBAの目覚まし機能追加  
