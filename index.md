@@ -1,4 +1,4 @@
-<img alt="rfriends3top" src="https://github.com/user-attachments/assets/f0818127-0bac-4205-b3ca-d8a663e16557"　height=600 />
+<img alt="rfriends3top" width="800" height="600" src="https://github.com/user-attachments/assets/f0818127-0bac-4205-b3ca-d8a663e16557"　 />
   
 * rfriends3は、ラジコ、らじるらじる、ポッドキャストを録音できます。  　
 * rfriends3は、操作がWEBサーバ（Lighttpd）経由で出来、とても簡単になっています。
