@@ -1,4 +1,5 @@
 <img width="600" height="327" alt="f0818127-0bac-4205-b3ca-d8a663e16557" src="https://github.com/user-attachments/assets/db0cbaa7-f9df-40ee-9125-cc54103e57f9" />
+<img width="600" height="327" alt="f0818127-0bac-4205-b3ca-d8a663e16557" src="https://github.com/user-attachments/assets/27aac3e0-6f46-40ba-ad74-df0e04b8f815" />
 
   
 * rfriends3は、ラジコ、らじるらじる、ポッドキャストを録音できます。  　
