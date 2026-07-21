@@ -83,7 +83,25 @@ rfriends3:latest
 rfriendsが使用できます。  
 ```
   
-と表示されたら成功です。 
+と表示されたら成功です。 2.4に進んでください。
+  
+  
+もし、container runで以下のようなエラーが出たときは、ポート8000がすでに使用中です。
+```
+Error: failed to bootstrap container (cause: "internalError: "failed to bootstrap container rf3-container (cause: "unknown: "bind(descriptor:ptr:bytes:): Address already in use) (errno: 48)"")"")
+```
+以下のように、ポート8000を使っているPIDを終了させるか、ポートを変更してください。
+```
+% lsof -i :8000
+COMMAND   PID        USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+httpd   29193        user    4u  IPv6 0x9ea4c31e6c02d505      0t0  TCP *:irdmi (LISTEN)
+...（以下略）
+
+% kill -9 29193
+
+% lsof -i :8000
+何も出力されなければOK
+```   
   
 > [!NOTE]  
 > コンテナ名やイメージ名を変更したい場合は、.envを編集してください。  
