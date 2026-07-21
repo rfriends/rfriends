@@ -79,8 +79,7 @@ ENV gid=20
 ...
 rfriends3:latest
 % sh run_apple_container.sh
-  
-rfriendsが使用できます。  
+rf3-container 
 ```
   
 と表示されたら成功です。 2.4に進んでください。
