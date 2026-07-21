@@ -12,7 +12,7 @@
   
 ## １． WSL Containers環境構築
   
-WSL Containersは現在、ore-releaseです。  
+WSL Containersは現在、pre-releaseです。  
 バグがあってもやってみたい方用です。   
   
 ```
