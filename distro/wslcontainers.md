@@ -4,6 +4,7 @@
  
   
 初版 2026/07/21
+二版 2026/07/22
    
 > [!NOTE]  
 >   現在、書きかけです。 
@@ -35,7 +36,6 @@ cd temp   <-- 環境に応じて変更してください。
 curl -L -o repo.zip https://github.com/rfriends/rfriends_docker/archive/refs/heads/main.zip
 tar.exe -xf repo.zip
 cd rfriends_docker
-wslc build -t rfriends3 . 
 run_wsl_containers.bat 
   
 rfriendsが使用できます。  
