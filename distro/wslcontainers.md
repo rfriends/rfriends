@@ -60,12 +60,18 @@ http://192.168.1.142:8000
 > [!TIP]   
 > 同一LAN内の他のPCからもアクセスできます。  
     
-## ３．その他  
+## ３．データ  
   
 コンテナを終了させても、ホストのrfriends_dockerに録音データ、パラメータ設定が保存されています。  
   
 rfriends_docker/share/smbdir/usr2  
 rfriends_docker/share/rfriends3/config  
+  
+## ４．その他  
+  
+なお、コンテナ版では、聴取は可能ですが、聴取（サーバ）は使用できません。  
+どうしても使用したい方は、pulseaudioでのホスト連携処理を自己責任で追加してください。  
+かなり面倒です。  
   
 以上  
   
