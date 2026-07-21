@@ -41,6 +41,10 @@
 ### 2.2 uid,gidの変更をおこなう。  
 
 1） uid,gid  
+  
+```
+% id  
+```
 
 macの場合、uid=501(user) gid=20(staff)
   
