@@ -58,7 +58,7 @@ This message shows that your installation appears to be working correctly.
 57eb87f46705   rf3-container   rfriends3   2 minutes ago   running 2 minutes ago   127.0.0.1:8000->8000/tcp
 ```
   
-と表示されたら成功です。  
+と表示されたら成功です。(画像と表示されるところはプレビューらしいですね)  
 
   
 ### 2.4 rfriends3にアクセスする  
