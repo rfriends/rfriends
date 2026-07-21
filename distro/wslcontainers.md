@@ -3,7 +3,7 @@
 　ラジオ録音アプリrfriends3を WSL Containers環境で実行する方法について記述しています。  
  
   
-初版 2026/07/21
+初版 2026/07/21  
 二版 2026/07/22
    
 > [!NOTE]  
@@ -16,50 +16,60 @@ WSL Containersは現在、ore-releaseです。
 バグがあってもやってみたい方用です。   
   
 ```
-wsl --install
-wsl --update --pre-release
-wsl --shutdown  
+> wsl --install
+> wsl --update --pre-release
+> wsl --shutdown  
 ```  
 ・確認  
 ```  
-wslc.exe --version
+> wsl --version
+WSL バージョン: 2.9.3.0
+
+> wslc.exe --version
 wslc 2.9.3.0
+
+> wslc run --rm hello-world
+イメージ 'hello-world' が見つかりません。プルしています
+latest: Pulling from library/hello-world
+4f55086f7dd0: Pull complete
+Digest: sha256:c3cbe1cc1aa588a64951ac6286e0df7b27fe2e6324b1001c619bb358770c0178
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
 ```
    
 ## ２．実行  
   
 イメージの作成から実行まではコマンドプロンプト上で以下の操作を行ってください。   
-  
+> [!IMPORTANT]  
+> コンテナ名、イメージ名、ポートを変更する場合は、.envファイルを編集してから実行してください。  
+> 特に、既にport8000で別のrfriendsを実行している場合は、ポート変更が必須です。
+
 ```
-c:
-cd temp   <-- 環境に応じて変更してください。
-curl -L -o repo.zip https://github.com/rfriends/rfriends_docker/archive/refs/heads/main.zip
-tar.exe -xf repo.zip
-cd rfriends_docker
-run_wsl_containers.bat 
-  
-rfriendsが使用できます。  
+> c:
+> cd \temp   <-- 環境に応じて変更してください。
+> curl -L -o repo.zip https://github.com/rfriends/rfriends_docker/archive/refs/heads/main.zip
+> tar.exe -xf repo.zip
+> cd rfriends_docker-main
+> run_wsl_containers.bat 
+コンテナー ID       名前              画像          作成済み            状態                      ポート
+57eb87f46705   rf3-container   rfriends3   2 minutes ago   running 2 minutes ago   127.0.0.1:8000->8000/tcp
 ```
   
 と表示されたら成功です。  
+
   
 ### 2.4 rfriends3にアクセスする  
   
 ホスト側で以下を実行してください。  
-```  
-> IPCONFIG  
-192.168.1.142 ..........  
+
 ```
-  
-ホストののIPアドレスが192.168.1.142の場合、ブラウザに
-```
-http://192.168.1.142:8000
+http://localhost:8000
 ```
 と入力するとrfriends3が表示されます。
- 
-> [!TIP]   
-> 同一LAN内の他のPCからもアクセスできます。  
-    
+
 ## ３．データ  
   
 コンテナを終了させても、ホストのrfriends_dockerに録音データ、パラメータ設定が保存されています。  
