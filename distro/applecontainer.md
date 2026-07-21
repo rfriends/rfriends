@@ -60,7 +60,7 @@ uid=501(user) gid=20(staff) groups=20(staff)
 2）Dockerファイルを修正する。  
   
 ```
-cd ~/rfriends_docker  
+cd rfriends_docker  
 vi Dockerfile  
 ```
    
@@ -73,7 +73,7 @@ ENV gid=20
 ### 2.3 イメージの作成および実行を行う。  
   
 ```
-% cd ~/rfriends_docker
+% cd rfriends_docker
 % container build --platform linux/arm64 -t rfriends3 .
 % sh run_apple_container.sh
   
