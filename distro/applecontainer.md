@@ -40,6 +40,7 @@ This message shows that your installation appears to be working correctly.
  
 ### 2.1 スクリプトのダウンロード  
   
+ここではホームディレクトリにしていますが、ダウンロードは任意の場所で可能です。  　　
 ```
 % cd ~/  
 % brew install git  
