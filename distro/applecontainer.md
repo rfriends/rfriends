@@ -89,7 +89,9 @@ rf3-container
 ```
 Error: failed to bootstrap container (cause: "internalError: "failed to bootstrap container rf3-container (cause: "unknown: "bind(descriptor:ptr:bytes:): Address already in use) (errno: 48)"")"")
 ```
-以下のように、ポート8000を使っているPIDを終了させるか、ポートを変更してください。
+.envを編集して、ポートを変更してください。（推奨）
+  
+または、以下のように、ポート8000を使っているPIDを終了させてください。
 ```
 % lsof -i :8000
 COMMAND   PID        USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
