@@ -75,10 +75,9 @@ ENV gid=20
 ```
 % cd rfriends_docker
 % container system start  <-- system start 済の場合は不要
-% container build --platform linux/arm64 -t rfriends3 .
-...
-rfriends3:latest
 % sh run_apple_container.sh
+
+rfriends3:latest
 rf3-container 
 ```
   
