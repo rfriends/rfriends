@@ -175,6 +175,11 @@ rfriends3    latest  7969fdf6758b
 % container image rm rfriends3
 rfriends3:latest
 ```
+
+なお、コンテナ版では、聴取は可能ですが、聴取（サーバ）は使用できません。  
+どうしても使用したい方は、pulseaudioでのホスト連携処理を自己責任で追加してください。  
+かなり面倒です。  
+
   
 以上  
   
