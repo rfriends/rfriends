@@ -20,9 +20,17 @@
 % echo "[build]\nrosetta = false" >> ~/.config/container/config.toml
 ```  
 ### 1.2 確認  
-```  
+```
+% container --version
+container CLI version 1.1.0 (build: release, commit: unspeci)
+
 % container system start
 % container run --rm hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+...（以下略）
 ```
    
 ## ２．実行  
@@ -43,10 +51,9 @@
 1） uid,gid  
   
 ```
-% id  
+% id
+uid=501(user) gid=20(staff) groups=20(staff)
 ```
-
-macの場合、uid=501(user) gid=20(staff)
   
 2）Dockerファイルを修正する。  
   
@@ -56,7 +63,7 @@ vi Dockerfile
 ```
    
 Dockerfileのuid,gidを設定してください。  
-uid,gidは1）で表示されたものを指定してください。  
+uid,gidは 1）で表示されたものを指定してください。  
   
 ENV uid=501  
 ENV gid=20    
@@ -90,13 +97,57 @@ http://192.168.1.142:8000
 > [!TIP]   
 > 同一LAN内の他のPCからもアクセスできます。  
     
-## ３．その他  
+## ３．データ  
   
 コンテナを終了させても、ホストのrfriends_dockerに録音データ、パラメータ設定が保存されています。  
   
 rfriends_docker/share/smbdir/usr2  
 rfriends_docker/share/rfriends3/config  
 
+## ４．その他  
+  
+conatainer コマンド  
+ほぼ、Docker toコマンドは同じですが、なぜか、ps が ls
+```
+
+% container system status
+apiserver is not running and not registered with launchd
+
+% container system start 
+Launching container-apiserver...
+Testing access to container-apiserver...
+Verifying machine API server is running...
+
+% container system stop 
+2026-07-22T02:40:41+0900 info com.apple.container.cli: [ContainerCommands] checking if APIServer is alive
+2026-07-22T02:40:41+0900 info com.apple.container.cli: stopTimeoutSeconds=5 [ContainerCommands] stopping containers
+...(以下略)
+
+Mac起動時に自動で常時起動させる
+% brew services start container
+
+% container ls
+rf3-container   rfriends3:latest                                     linux  arm64  running  192.168.64.5/24  4     1024 MB  2026-07-20T15:03:28Z
+buildkit        ghcr.io/apple/container-builder-shim/builder:0.12.0  linux  arm64  running  192.168.64.2/24  2     2048 MB  2026-07-20T14:52:00Z
+
+% container stop rf3-container
+rf3-container
+
+% container start rf3-container
+rf3-container
+
+% container rm rf3-container
+rf3-container
+
+% container image ls
+NAME         TAG     DIGEST
+hello-world  latest  c3cbe1cc1aa5
+ubuntu       24.04   4fbb8e6a8395
+rfriends3    latest  7969fdf6758b
+
+% container image rm rfriends3
+rfriends3:latest
+```
   
 以上  
   
