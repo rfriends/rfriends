@@ -50,27 +50,7 @@ This message shows that your installation appears to be working correctly.
  
 ### 2.2 uid,gidの変更をおこなう。  
   
-Apple containerでは変更しないでください。  
-
-~~1） uid,gid~~  
-  
-~~```~~
-~~% id~~
-~~uid=501(user) gid=20(staff) groups=20(staff)~~
-~~```~~
-  
-~~2）Dockerファイルを修正する。~~  
-  
-~~```~~
-~~cd rfriends_docker~~  
-~~vi Dockerfile~~  
-~~```~~
-   
-~~Dockerfileのuid,gidを設定してください。~~  
-~~uid,gidは 1）で表示されたものを指定してください。~~  
-  
-~~ENV uid=501~~  
-~~ENV gid=20~~    
+Apple containerでは変更しないでください。    
   
 ### 2.3 イメージの作成および実行を行う。  
   
