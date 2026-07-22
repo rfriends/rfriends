@@ -74,6 +74,9 @@ Apple containerでは変更しないでください。
   
 ### 2.3 イメージの作成および実行を行う。  
   
+> [!NOTE]  
+> コンテナ名やイメージ名を変更したい場合は、事前に.envファイルを編集してください。  
+  
 ```
 % cd rfriends_docker
 % container system start  <-- system start 済の場合は不要
@@ -90,9 +93,22 @@ rf3-container
 ```
 Error: failed to bootstrap container (cause: "internalError: "failed to bootstrap container rf3-container (cause: "unknown: "bind(descriptor:ptr:bytes:): Address already in use) (errno: 48)"")"")
 ```
-.envを編集して、ポートを変更してください。（推奨）
-  
-または、以下のように、ポート8000を使っているPIDを終了させてください。
+1) .envファイルを編集して、ポートを変更してください。（推奨）
+```
+例）
+http_port=8001  
+```  
+2) 現在のコンテナを停止
+```
+該当ポートを使用しているコンテナを見つける
+% container ls
+見つけたコンテナを停止
+% container stop コンテナ
+見つけたコンテナを削除
+% container rm コンテナ
+```
+      
+3) 以下のように、ポート8000を使っているPIDを終了させてください。
 ```
 % lsof -i :8000
 COMMAND   PID        USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
@@ -104,9 +120,6 @@ httpd   29193        user    4u  IPv6 0x9ea4c31e6c02d505      0t0  TCP *:irdmi (
 % lsof -i :8000
 何も出力されなければOK
 ```   
-  
-> [!NOTE]  
-> コンテナ名やイメージ名を変更したい場合は、.envを編集してください。  
   
 ### 2.4 rfriends3にアクセスする  
   
@@ -137,15 +150,17 @@ rfriends_docker/share/rfriends3/config
 conatainer コマンド  
 ほぼ、Docker toコマンドは同じですが、なぜか、ps が ls
 ```
-
+システムステータス
 % container system status
 apiserver is not running and not registered with launchd
 
+システム開始
 % container system start 
 Launching container-apiserver...
 Testing access to container-apiserver...
 Verifying machine API server is running...
 
+システム停止
 % container system stop 
 2026-07-22T02:40:41+0900 info com.apple.container.cli: [ContainerCommands] checking if APIServer is alive
 2026-07-22T02:40:41+0900 info com.apple.container.cli: stopTimeoutSeconds=5 [ContainerCommands] stopping containers
@@ -154,25 +169,34 @@ Verifying machine API server is running...
 Mac起動時に自動で常時起動させる
 % brew services start container
 
+コンテナリスト
 % container ls
 rf3-container   rfriends3:latest                                     linux  arm64  running  192.168.64.5/24  4     1024 MB  2026-07-20T15:03:28Z
 buildkit        ghcr.io/apple/container-builder-shim/builder:0.12.0  linux  arm64  running  192.168.64.2/24  2     2048 MB  2026-07-20T14:52:00Z
 
+コンテナ停止
 % container stop rf3-container
 rf3-container
 
+コンテナ開始
 % container start rf3-container
 rf3-container
 
+コンテナ削除
 % container rm rf3-container
 rf3-container
 
+実行中のコンテナにログイン
+% container exec -it rf3-container /bin/bash
+
+イメージリスト
 % container image ls
 NAME         TAG     DIGEST
 hello-world  latest  c3cbe1cc1aa5
 ubuntu       24.04   4fbb8e6a8395
 rfriends3    latest  7969fdf6758b
 
+イメージ削除
 % container image rm rfriends3
 rfriends3:latest
 ```
