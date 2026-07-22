@@ -74,7 +74,7 @@ rf3-container
 Error: failed to bootstrap container (cause: "internalError: "failed to bootstrap container rf3-container (cause: "unknown: "bind(descriptor:ptr:bytes:): Address already in use) (errno: 48)"")"")
 ```
   
-以下のいずれかで対処してください。  
+以下のいずれかで対処し、再度 sh run_apple_container.sh を実行してください。  
   
 1) .envファイルを編集して、コンテナ名、ポートを変更してください。（推奨）
 ```
