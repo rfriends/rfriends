@@ -182,7 +182,12 @@ rfriends3:latest
 なお、コンテナ版では、聴取は可能ですが、聴取（サーバ）は使用できません。  
 どうしても使用したい方は、pulseaudioでのホスト連携処理を自己責任で追加してください。  
 かなり面倒です。  
+  
+追加処理のヒント  
 ~~~
+追加インストール
+% brew install pulseaudio
+  
 pulse audio設定
 % vi ~/.config/pulse/default.pa
 load-module module-coreaudio-detect
