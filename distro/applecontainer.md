@@ -139,7 +139,8 @@ http://192.168.1.142:8000　または　http://localhost:8000
 と入力するとrfriends3が表示されます。
  
 > [!TIP]   
-> 同一LAN内の他のPCからもアクセスできます。  
+> 同一LAN内の他のPCからもアクセスできます。
+  
     
 ## ３．データ  
   
@@ -148,8 +149,33 @@ http://192.168.1.142:8000　または　http://localhost:8000
 rfriends_docker/share/smbdir/usr2  
 rfriends_docker/share/rfriends3/config  
 
-## ４．その他  
+## ４．初期化  
   
+もし、apple containerを　初期状態にしたいばあは以下の処理を行ってください。  
+  
+```
+・コンテナの停止・削除
+% container ls
+表示されたコンテナを順次、停止・削除
+buildkitはシステムで使用するコンテナ（削除しないほうがいい）
+% container stop コンテナ
+% container rm コンテナ
+コンテナがないことを確認
+% container ls
+
+・イメージの削除
+% container image ls
+表示されたイメージを順次、削除
+% container rm イメージ
+イメージがないことを確認
+% container ls
+
+システムの停止
+% container system stop
+```
+  
+## ５．その他  
+    
 conatainer コマンド  
 ほぼ、Docker toコマンドは同じですが、なぜか、ps が ls
 ```
