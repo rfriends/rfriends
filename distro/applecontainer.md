@@ -76,9 +76,10 @@ Error: failed to bootstrap container (cause: "internalError: "failed to bootstra
   
 以下のいずれかで対処してください。  
   
-1) .envファイルを編集して、ポートを変更してください。（推奨）
+1) .envファイルを編集して、コンテナ名、ポートを変更してください。（推奨）
 ```
 例）
+container_name=rf3-container2
 http_port=8001  
 ```  
 2) 現在のコンテナを停止
@@ -117,6 +118,7 @@ httpd   29193        user    4u  IPv6 0x9ea4c31e6c02d505      0t0  TCP *:irdmi (
 http://192.168.1.142:8000　または　http://localhost:8000
 ```
 と入力するとrfriends3が表示されます。
+ポート番号を変更している場合はその番号に。  
  
 > [!TIP]   
 > 同一LAN内の他のPCからもアクセスできます。
