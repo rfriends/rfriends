@@ -3,7 +3,7 @@
 　ラジオ録音アプリrfriends3をApple Container環境で実行する方法について記述しています。  
   
 初版 2026/07/21  
-二版 2026/07/22  
+三版 2026/07/23  
   
 > [!NOTE]  
 > 現在、書きかけです。
@@ -49,26 +49,28 @@ This message shows that your installation appears to be working correctly.
 ```
  
 ### 2.2 uid,gidの変更をおこなう。  
+  
+Apple containerでは変更しないでください。  
 
-1） uid,gid  
+~~1） uid,gid~~  
   
-```
-% id
-uid=501(user) gid=20(staff) groups=20(staff)
-```
+~~```~~
+~~% id~~
+~~uid=501(user) gid=20(staff) groups=20(staff)~~
+~~```~~
   
-2）Dockerファイルを修正する。  
+~~2）Dockerファイルを修正する。~~  
   
-```
-cd rfriends_docker  
-vi Dockerfile  
-```
+~~```~~
+~~cd rfriends_docker~~  
+~~vi Dockerfile~~  
+~~```~~
    
-Dockerfileのuid,gidを設定してください。  
-uid,gidは 1）で表示されたものを指定してください。  
+~~Dockerfileのuid,gidを設定してください。~~  
+~~uid,gidは 1）で表示されたものを指定してください。~~  
   
-ENV uid=501  
-ENV gid=20    
+~~ENV uid=501~~  
+~~ENV gid=20~~    
   
 ### 2.3 イメージの作成および実行を行う。  
   
@@ -174,11 +176,26 @@ rfriends3    latest  7969fdf6758b
 % container image rm rfriends3
 rfriends3:latest
 ```
-
+  
+## ５．おまけ  
+  
 なお、コンテナ版では、聴取は可能ですが、聴取（サーバ）は使用できません。  
 どうしても使用したい方は、pulseaudioでのホスト連携処理を自己責任で追加してください。  
 かなり面倒です。  
+~~~
+pulse audio設定
+% vi ~/.config/pulse/default.pa
+load-module module-coreaudio-detect
+load-module module-native-protocol-tcp auth-anonymous=1 port=4713
 
+起動処理
+% killall pulseaudio 2>/dev/null
+% pulseaudio --load=module-coreaudio-detect --load=module-native-protocol-tcp="auth-anonymous=1 port=${pulse_port}" --exit-idle-time=-1 --daemon
+% container run -e PULSE_SERVER=tcp:${host_ip_address}:${pulse_port} -e PULSE_SINK=${pulse_sink} ${image}
+
+コンテナ内でのテスト
+$ cat /dev/urandom | pacat --playback --server=tcp:192.168.1.18:4713 --device=1
+~~~
   
 以上  
   
