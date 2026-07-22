@@ -88,11 +88,14 @@ rf3-container
   
 と表示されたら成功です。 2.4に進んでください。
   
-  
+---  
 もし、sh run_apple_container.shで以下のようなエラーが出たときは、ポート8000がすでに使用中です。
 ```
 Error: failed to bootstrap container (cause: "internalError: "failed to bootstrap container rf3-container (cause: "unknown: "bind(descriptor:ptr:bytes:): Address already in use) (errno: 48)"")"")
 ```
+  
+以下のいずれかで対処してください。  
+  
 1) .envファイルを編集して、ポートを変更してください。（推奨）
 ```
 例）
