@@ -16,7 +16,7 @@
 ```
 % brew install container
 
-ロゼッタを使用しない設定をついかしてください。
+ロゼッタを使用しない設定を追加してください。
 % mkdir -p ~/.config/container
 % vi ~/.config/container/config.toml
 [build]
