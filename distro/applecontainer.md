@@ -3,7 +3,7 @@
 　ラジオ録音アプリrfriends3をApple Container環境で実行する方法について記述しています。  
   
 初版 2026/07/21  
-三版 2026/07/23  
+四版 2026/07/24  
   
 > [!NOTE]  
 > 現在、書きかけです。
@@ -18,7 +18,9 @@
 
 ロゼッタを使用しない設定
 % mkdir -p ~/.config/container
-% echo "[build]\nrosetta = false" >> ~/.config/container/config.toml
+% vi ~/.config/container/config.toml
+[build]
+rosetta = false
 ```  
 ### 1.2 確認  
 ```
