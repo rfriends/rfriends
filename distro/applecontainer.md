@@ -11,7 +11,7 @@
   
 ## １．Apple Container環境構築   
   
-### 1.1 インストール   
+### 1.1 Apple Containerのインストール   
   
 ```
 % brew install container
