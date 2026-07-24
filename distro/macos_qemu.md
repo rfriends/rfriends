@@ -1,6 +1,7 @@
 ## macOS(qemu)版rfriends3でラジオ録音   
   
-　qemu版rfriends3は、仮想環境で、イメージをダウンロードして実行するだけで、rfriends3が立ち上がります。   
+qemu版rfriends3は、仮想環境で、イメージをダウンロードして実行するだけで、rfriends3が立ち上がります。  
+ 現在、書きかけです。  
   
 第1版　2026/07/25 new 
   
