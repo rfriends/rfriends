@@ -1,25 +1,18 @@
-## macOS版rfriends3でラジオ録音   
+## macOS(qemu)版rfriends3でラジオ録音   
   
-　rfriends3はWEBベースで操作が簡単になっています。  
+　qemu版rfriends3は、仮想環境で、イメージをダウンロードして実行するだけで、rfriends3が立ち上がります。   
   
-第4版　2025/01/08 sequoia  
-第5版　2025/09/25 chromium  
-第6版　2026/03/05 brew 
-第7版　2026/07/25 記述修正 
+第1版　2026/07/25 new 
   
 ## １．環境  
   
-　以下のバージョンで確認しました。macOSは新規インストールし、何も手を加えない状態でテストを行っています。  
-  
-・macOS tahoe 26.3.1(確認済)  
-・macOS sequoia 15.0 (確認済)  
-・macOS sonoma 14.0 (確認済)  
-・macOS Ventura 13.4.1  (確認済)  
-・Monterey ,Big Sur ,Catalina(未確認)  
-  
-## ２．Homebrew,Chromium のインストール  
 
-### 2.1 Homebrew のインストール  
+以下のバージョンで確認しました。macOSは新規インストールし、何も手を加えない状態でテストを行っています。  
+  
+・silicon macOS tahoe 26.3.1(確認済)  
+
+  
+## ２．Homebrew のインストール  
   
 Homebrew がインストール済の方は、この項を飛ばしてください。  
   
@@ -27,75 +20,27 @@ Homebrew がインストール済の方は、この項を飛ばしてくださ�
 
 [Homebrewのインストール](homebrew.md)  
 
+  
+## ３．qemu版rfriends3イメージのダウンロード  
+  
+以下をクリックして、任意の場所に保存してください。（約1.2GB）  
+  
+[rfriends3_qemu.zip]()
+    
+## ４．rfriends3の実行  
+  
+ターミナルを開き、rfriends3_qemu.zipがある場所に移動します。  
+ここでは、ホームディレクトリと仮定しています。  
+ 
+```  
+% cd ~/
+% unzip rfriends3_qemu.zip
+% cd rfriends3_qemu
+% ./run_rfriends3.sh  
+```  
+  
+ブラウザで、http://localhosts:8000 にアクセスして、以下のような画面が出たら成功です。    
 
-### 2.2 Chromium のインストール   
-
-chromiumについて以下を確認してください。  
-  
-```
-% chromium --verison
-```
-Chromium 142.0.7435.0   
-と表示されたら、次にすすんでください。(バージョンは異なります)  
-
-もし、  
-「壊れているため開けません。 ゴミ箱に入れる必要があります。」  
-と表示された場合、以下を実行してください。  
-  
-```  
-% brew uninstall chromium
-% brew install chromium 
-% xattr -rc /Applications/Chromium.app
-% chromium --version                 
-Chromium 142.0.7435.0 
-```   
-  
-## ３．rfriends_macos.gitのダウンロード  
-  
-Terminalを開き、以下を入力します。  
-```  
-% cd ~/  
-% brew install git  
-% rm -rf rfriends_macos  
-% git clone https://github.com/rfriends/rfriends_macos.git  
-```  
-## ４．rfriends3のインストール  
-  
-以下を入力し、インストールを行う。各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成される。  
-```  
-% cd ~/rfriends_macos  
-% sh rfriends_macos.sh  
-```  
-  
-これでインストールは完了です。  
-  
-追記）  
-```  
-% chromium --version  
-```  
-でchromiumが見つからない場合はインストールしてください。  
-```  
-% brew install chromium  
-```  
-  
-## ５．lighttpdウェブサーバのインストール  
-  
-以下を入力し、lighttpdをインストールする。  
-```  
-% cd ~/rfriends_macos  
-% sh lighttpd_install.sh  
-```  
-## ６．rfriends3の実行  
-```  
-% ip a | grep "inet " | grep -v "127.0.0.1"  
-```  
-を入力してIPアドレスを知る。  
-  
-ウェブブラウザ（Safari,chrome,firefox,...）を起動し、アドレスに  
-  
-IPアドレス:8000  
-  
-と入力。以下のような画面が出たら成功です。  
   
 ![1](https://github.com/user-attachments/assets/a4ff3cfb-98b5-48e5-97d2-4d3525e6b4e9)  
    
@@ -105,7 +50,7 @@ IPアドレス:8000
   
  デイリー処理設定をしている場合は、必ず、「設定」->「デイリー処理」->「取消」をしてください。  
  録音データは必要であれば別のところに保存してください。  
- rfriends3フォルダを削除してください。  
+ rfriends3_qemuフォルダを削除してください。  
  アンインストールは終了です。  
   
 以上  
