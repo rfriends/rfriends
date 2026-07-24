@@ -5,6 +5,7 @@
 第4版　2025/01/08 sequoia  
 第5版　2025/09/25 chromium  
 第6版　2026/03/05 brew 
+第7版　2026/07/25 記述修正 
   
 ## １．環境  
   
@@ -16,36 +17,20 @@
 ・macOS Ventura 13.4.1  (確認済)  
 ・Monterey ,Big Sur ,Catalina(未確認)  
   
-## ２．Homebrewのインストール  
+## ２．Homebrew,Chromium のインストール  
+
+### 2.1 Homebrew のインストール  
   
 Homebrew がインストール済の方は、この項を飛ばしてください。  
   
-１）HomebrewのWebサイト（https://brew.sh/）を開き、インストールに表示されているコマンドをターミナルにCOPY&PASTEして実行する。  
-  
-2025/01/08 時点では以下のコマンドになっています。  
-```  
-% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"  
-```   
-２）Homebrewのインストールが終了したら、念のためbrewを確認してください。  
-```  
-% brew doctor  
-```  
-Your system is ready to brew.  
-  
-と表示されたらインストールは成功です。  
-  
-３）もし、zsh: command not found: brew と表示されたら以下を実行してください。  
-  
-```  
-% echo >> /Users/ユーザ名/.zprofile  
-% echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ユーザ名/.zprofile  
-% eval "$(/opt/homebrew/bin/brew shellenv)"  
-% brew doctor  
-Your system is ready to brew.  
-```  
-と表示されたらインストールは成功です。  
-  
-４）chromiumについて以下を確認してください。  
+以下を参考にHomebrewをインストールしてください。  
+
+[Homebrewのインストール](homebrew.md)  
+
+
+### 2.2 Chromium のインストール   
+
+chromiumについて以下を確認してください。  
   
 ```
 % chromium --verison
