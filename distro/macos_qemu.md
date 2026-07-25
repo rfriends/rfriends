@@ -42,13 +42,13 @@ qemu 11.0.2
 以下をクリックして、任意の場所に保存してください。（約1.2GB）  
 xxxxxxxx はリリース日付  
   
-[rfriends3_qemu_xxxxxxxx.zip]()
+[rfriends3_qemu_20260725.zip](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/rfriends3_qemu_20260725.zip)
     
 ## ４．rfriends3の実行  
   　　
 ## 4.1 実行  
   
-ターミナルを開き、rfriends3_qemu.zipがある場所に移動します。  
+ターミナルを開き、rfriends3_qemu_xxxxxxxx.zipがある場所に移動します。  
 ここでは、ホームディレクトリと仮定しています。  
 xxxxxxxx はリリース日付  
  
