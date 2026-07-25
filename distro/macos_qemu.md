@@ -88,9 +88,9 @@ env.txtxは実行環境設定です。
 # 2026/07/24
 #
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE}")" && pwd)"  <-- env.txtがある場所
-ARCH=$(uname -m)  <-- intelor silicon
+ARCH=$(uname -m)  <-- intel or silicon
 
-IMG_FILE="${BASE_DIR}/rfriends3_${ARCH}.qcow2"  <-- env.txtがある場所
+IMG_FILE="${BASE_DIR}/rfriends3_${ARCH}.qcow2"  <-- ゲスト本体
 ISO_FILE="${BASE_DIR}/debian-13.6.0-${ARCH}-netinst.iso"
 
 SHARE_DIR="${BASE_DIR}/share"  <-- 録音データ
