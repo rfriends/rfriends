@@ -70,7 +70,8 @@ rfriends3-qemu login:
 他を終了させるか、env.txtのポート設定を変更して、再度実行してください。   
 unzip後のrfriends3_qemu.zipは不要です。削除してもかまいません。  
   
-![1](https://github.com/user-attachments/assets/a4ff3cfb-98b5-48e5-97d2-4d3525e6b4e9)  
+<img width="415" height="399" alt="clip_1" src="https://github.com/user-attachments/assets/04b24640-485e-404c-9bf5-7014d16bd8aa" />
+
    
 「ヘルプ」「システム更新」でシステムを最新にしてください。  
   
