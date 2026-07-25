@@ -84,8 +84,8 @@ env.txtxは実行環境設定です。
 内容は大体わかると思いますが、変更に失敗したときのためにバックアップをとってから行ってください。  
  
 ```
-# .env
-# 2026/07/24
+# env.txt
+# 2026/07/25
 #
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE}")" && pwd)"  <-- env.txtがある場所
 ARCH=$(uname -m)  <-- intel or silicon
