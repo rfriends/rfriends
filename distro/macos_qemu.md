@@ -53,10 +53,15 @@ xxxxxxxx はリリース日付
 xxxxxxxx はリリース日付  
  
 ```  
-% cd ~/
-% unzip rfriends3_qemu_xxxxxxxx.zip
-% cd rfriends3_qemu
+% cd ~/  
+% unzip rfriends3_qemu_xxxxxxxx.zip  
+% cd rfriends3_qemu  
 % ./run_rfriends3.sh  
+  
+以下のようなログイン画面になります。  
+  
+Debian GNU/Linux 13 rfriends3-qemu ttyAMA0  
+rfriends3-qemu login:   
 ```  
     
 ブラウザで、http://localhosts:8000 にアクセスして、以下のような画面が出たら成功です。    
