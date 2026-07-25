@@ -33,13 +33,16 @@ Homebrew がインストール済の方は、この項を飛ばしてくださ�
  
 ```  
 % brew install qemu
+% brew list --versions qemu
+qemu 11.0.2
 ```  
   
 ## ３．qemu版rfriends3イメージのダウンロード  
   
 以下をクリックして、任意の場所に保存してください。（約1.2GB）  
+xxxxxxxx はリリース日付  
   
-[rfriends3_qemu.zip]()
+[rfriends3_qemu_xxxxxxxx.zip]()
     
 ## ４．rfriends3の実行  
   　　
@@ -50,7 +53,7 @@ Homebrew がインストール済の方は、この項を飛ばしてくださ�
  
 ```  
 % cd ~/
-% unzip rfriends3_qemu.zip
+% unzip rfriends3_qemu_xxxxxxxx.zip
 % cd rfriends3_qemu
 % ./run_rfriends3.sh  
 ```  
