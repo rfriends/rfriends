@@ -42,6 +42,8 @@ Homebrew がインストール済の方は、この項を飛ばしてくださ�
 [rfriends3_qemu.zip]()
     
 ## ４．rfriends3の実行  
+  　　
+## 4.1 実行  
   
 ターミナルを開き、rfriends3_qemu.zipがある場所に移動します。  
 ここでは、ホームディレクトリと仮定しています。  
@@ -62,15 +64,47 @@ unzip後のrfriends3_qemu.zipは不要です。削除してもかまいません
    
 「ヘルプ」「システム更新」でシステムを最新にしてください。  
   
+## 4.2 終了    
   
-なお、初期状態のログイン可能ユーザのパスワードは以下のとおり  
+・rfriends3の終了方法は2つあります。    
+- user でログインし、sudo poweroff (安全)
+- ctrl+a x  
+   　　
+## 4.3 ログインユーザ  
+  
+初期状態のログイン可能ユーザのパスワードは以下のとおり  
 安全のため、変更してください。 
   
-- user / user
+- user / user  
 - root / rfriends  
-
   
-## ５．注意点  
+## 4.4 env.txt  
+  
+env.txtxは実行環境設定です。  
+内容は大体わかると思いますが、変更に失敗したときのためにバックアップをとってから行ってください。  
+ 
+```
+# .env
+# 2026/07/24
+#
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE}")" && pwd)"  <-- env.txtがある場所
+ARCH=$(uname -m)  <-- intelor silicon
+
+IMG_FILE="${BASE_DIR}/rfriends3_${ARCH}.qcow2"  <-- env.txtがある場所
+ISO_FILE="${BASE_DIR}/debian-13.6.0-${ARCH}-netinst.iso"
+
+SHARE_DIR="${BASE_DIR}/share"  <-- 録音データ
+
+MEM_SIZE="2G" <-- メモリサイズ
+CPU_CORES="2" <-- cpuコアの数
+FREE_PAGE_REPORTING="off"
+
+HOST_WEB_PORT="8000" <-- webのポート
+HOST_SSH_PORT="2222" <-- sshのポート
+HOST_SMB_PORT="4445" <-- sambaのポート
+```
+    
+## 4.5 録音データ  
   
 ・録音データは、インストールしたrfriends3_qemuのshareフォルダ下にあります。  
 ```
@@ -81,16 +115,12 @@ rfriends3_arm64.qcow2
 run_rfriends3.sh
 share　<-- これ
 ```
+## 4.6 その他  
   
 ・インストール時は聴取（サーバ）では音がミュートになっています。  
  音量調整すれば、音が出るようになります。 
-
-・rfriends3の終了方法は2つあります。    
-- user でログインし、sudo poweroff (安全)
-- ctrl+a x  
-  
    
-## ６．rfriends3のアンインストール  
+## ５．rfriends3のアンインストール  
   
 rfriends3を終了し、rfriends3_qemuフォルダを削除してください。  
 アンインストールは終了です。  
