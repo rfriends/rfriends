@@ -105,7 +105,9 @@ FREE_PAGE_REPORTING="off"
 
 HOST_WEB_PORT="8000" <-- webのポート
 HOST_SSH_PORT="2222" <-- sshのポート
-HOST_SMB_PORT="4445" <-- sambaのポート
+
+# 現在、sambaは停止
+#HOST_SMB_PORT="4445"
 ```
     
 ## 4.5 録音データ  
