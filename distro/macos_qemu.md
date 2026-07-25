@@ -97,7 +97,7 @@ unzip後のrfriends3_qemu.zipは不要です。削除してもかまいません
 ・rfriends3の終了方法は2つあります。    
 - user でログインし、sudo poweroff (安全)
 - ctrl+a x  
-   　　
+  
 ## 4.3 ログインユーザ  
   
 初期状態のログイン可能ユーザのパスワードは以下のとおり  
