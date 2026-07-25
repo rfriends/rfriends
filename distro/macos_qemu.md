@@ -67,7 +67,7 @@ Debian GNU/Linux 13 rfriends3-qemu ttyAMA0
 rfriends3-qemu login:   
 ```  
     
-ブラウザで、http://localhosts:8000 にアクセスして、以下のような画面が出たら成功です。    
+ブラウザで、http://localhost:8000 にアクセスして、以下のような画面が出たら成功です。    
   
 他でポート8000で実行しているものがあると、失敗します。  
 他を終了させるか、env.txtのポート設定を変更して、再度実行してください。   
