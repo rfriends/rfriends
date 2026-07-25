@@ -55,7 +55,10 @@ xxxxxxxx はリリース日付
 ```  
 % cd ~/  
 % unzip rfriends3_qemu_xxxxxxxx.zip  
-% cd rfriends3_qemu  
+% cd rfriends3_qemu
+% ls
+env.txt                 rfriends3_arm64.qcow2   run_rfriends3.sh
+
 % ./run_rfriends3.sh  
   
 以下のようなログイン画面になります。  
@@ -91,8 +94,9 @@ unzip後のrfriends3_qemu.zipは不要です。削除してもかまいません
   
 ## 4.4 env.txt  
   
-env.txtxは実行環境設定です。  
-内容は大体わかると思いますが、変更に失敗したときのためにバックアップをとってから行ってください。  
+env.txtは実行環境設定です。  
+ほとんど変更の必要はありません。  
+変更する場合は、変更に失敗したときのためにバックアップをとってから行ってください。（自己責任）  
  
 ```
 # env.txt
@@ -123,15 +127,23 @@ HOST_SSH_PORT="2222" <-- sshのポート
 ```
 rfriends3_qemu
 
+% ls
 env.txt
 rfriends3_arm64.qcow2
 run_rfriends3.sh
 share　<-- これ
+
+% ls share/usr2
+kw              log             radiko          radiru_gogaku   timefree
+kwbackup        podcast         radiru          radiru_vod      webradio
 ```
 ## 4.6 その他  
   
 ・インストール時は聴取（サーバ）では音がミュートになっています。  
  音量調整すれば、音が出るようになります。 
+  
+<img width="524" height="548" alt="clip_2" src="https://github.com/user-attachments/assets/d8e707d5-925c-4ba8-932c-0ffc80582b0a" />
+
    
 ## ５．rfriends3のアンインストール  
   
