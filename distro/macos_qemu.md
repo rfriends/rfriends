@@ -56,6 +56,7 @@ Homebrew がインストール済の方は、この項を飛ばしてくださ�
 ブラウザで、http://localhosts:8000 にアクセスして、以下のような画面が出たら成功です。    
 他でポート8000で実行しているものがあると、失敗します。  
 他を終了させるか、env.txtのポート設定を変更して、再度実行してください。 
+unzip後のrfriends3_qemu.zipはふようです。削除してもかまいません。
   
 ![1](https://github.com/user-attachments/assets/a4ff3cfb-98b5-48e5-97d2-4d3525e6b4e9)  
    
