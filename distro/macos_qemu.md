@@ -46,13 +46,21 @@ Homebrew がインストール済の方は、この項を飛ばしてくださ�
 % cd rfriends3_qemu
 % ./run_rfriends3.sh  
 ```  
-  
+    
 ブラウザで、http://localhosts:8000 にアクセスして、以下のような画面が出たら成功です。    
-
+  
   
 ![1](https://github.com/user-attachments/assets/a4ff3cfb-98b5-48e5-97d2-4d3525e6b4e9)  
    
 「ヘルプ」「システム更新」でシステムを最新にしてください。  
+  
+  
+なお、初期状態のログイン可能ユーザのパスワードは以下のとおり  
+安全のため、変更してください。 
+  
+- user / user
+- root / rfriends  
+
   
 ## ５．注意点  
   
@@ -68,6 +76,11 @@ share　<-- これ
   
 ・インストール時は聴取（サーバ）では音がミュートになっています。  
  音量調整すれば、音が出るようになります。 
+
+・rfriends3の終了方法は2つあります。    
+- user でログインし、sudo poweroff (安全)
+- ctrl+a x  
+  
    
 ## ６．rfriends3のアンインストール  
   
