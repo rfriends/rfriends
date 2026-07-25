@@ -6,6 +6,7 @@ qemu版rfriends3は、仮想環境で、イメージをダウンロードして�
  現在、書きかけです。  
   
 第1版　2026/07/25 new  
+第2版　2026/07/26 加筆  
   
 [!IMPORTANT]
 > なお、現在は、テスト中なので、  使用結果を掲示板等で報告ができる方のみ使用してください。  
@@ -14,11 +15,9 @@ qemu版rfriends3は、仮想環境で、イメージをダウンロードして�
   
 ## １．環境  
   
-
 以下のバージョンで確認しました。  
   
 ・silicon macOS tahoe 26.3.1(確認済)  
-
   
 ## ２．インストール  
   
@@ -37,36 +36,46 @@ Homebrew がインストール済の方は、この項を飛ばしてくださ�
 qemu 11.0.2
 ```  
   
-## ３．qemu版rfriends3イメージのダウンロード  
+## ３．qemu版rfriends3イメージのダウンロード（約1.2GB）    
   
-以下をクリックして、任意の場所に保存してください。（約1.2GB）  
-xxxxxxxx はリリース日付  
+ターミナルを開き、任意の場所に移動し実行してください。  
+ここではホームディレクトリとしています。  
   
-[rfriends3_qemu_20260725.zip](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/rfriends3_qemu_20260725.zip)
+```  
+% cd ~/
+% wget http://rfbuddy.s296.xrea.com/storage/rfriends3_inst.sh
+% sh rfriends3_qemu_inst.sh
+
+Saving to: ‘rfriends3_qemu.zip’
+rfriends3_qemu.zip 100%[==============================>]   1.13G  9.98MB/s    in 2m 1s
+```  
+  
+ダウンロードが完了すると、自動的に解凍され、rfriends3_qemu ディレクトリができます。  
+ディレクトリの中身は以下のとおり。  
+```  
+env.txt                 rfriends3_arm64.qcow2   run_rfriends3.sh
+```
     
 ## ４．rfriends3の実行  
   　　
 ## 4.1 実行  
   
-ターミナルを開き、rfriends3_qemu_xxxxxxxx.zipがある場所に移動します。  
-ここでは、ホームディレクトリと仮定しています。  
-xxxxxxxx はリリース日付  
+ターミナルを開き、rfriends3_qemu ディレクトリに移動し、 
+rfriends3を実行します。  
  
 ```  
-% cd ~/  
-% unzip rfriends3_qemu_xxxxxxxx.zip  
+% cd ~/
 % cd rfriends3_qemu
-% ls
-env.txt                 rfriends3_arm64.qcow2   run_rfriends3.sh
-
 % ./run_rfriends3.sh  
-  
+```
+    
 以下のようなログイン画面になります。  
-  
+```    
 Debian GNU/Linux 13 rfriends3-qemu ttyAMA0  
 rfriends3-qemu login:   
 ```  
-    
+この時点ですでにrfriends3は起動しています。      
+  
 ブラウザで、http://localhost:8000 にアクセスして、以下のような画面が出たら成功です。    
   
 他でポート8000で実行しているものがあると、失敗します。  
