@@ -19,23 +19,55 @@ qemu版rfriends3は、仮想環境で、イメージをダウンロードして�
   
 ・Windows11 26H1(確認済)  
   
-## ２．インストール  
-  
-### 2.1 Homebrew のインストール    
-Homebrew がインストール済の方は、この項を飛ばしてください。  
-  
-以下を参考にHomebrewをインストールしてください。  
+## ２．確認と設定  
 
-[Homebrewのインストール](homebrew.md)  
+qemuを実行にするには、以下の３つ機能が有効である必要があります。  
+設定に不安がある方は、中止してください。  
+  
+### 2.1 BIOS/UEFIの仮想化機能  
+  
+PowerShellを管理者として実行し、
+```
+PS> (Get-WMIObject Win32_Processor).VirtualizationFirmwareEnabled
+```  
+True  
+と表示されれば有効になっているので、次に進んでください。  
+False   
+と表示された場合は、PCを一度完全にシャットダウンし、  
+起動時にF2やDeleteキーを連打してBIOS（UEFI）画面を開き、  
+以下の項目を「Enabled」に変更する必要があります。  
+  
+Intel製CPUの場合: Intel Virtualization Technology や VT-x  
+AMD製CPUの場合: SVM Mode や Secure Virtual Machine  
+  
+### 2.2 Windows ハイパーバイザー プラットフォーム     
+  
+PowerShellを管理者として実行し、
+```
+PS> Get-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform
+```  
+State : Enabled
+と表示されれば有効になっているので、次に進んでください。  
+State : Disabled  
+と表示された場合は、以下を実行してください。  
+```
+PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All
+```
 
-### 2.2 qemu のインストール    
+### 2.3 仮想マシン プラットフォーム  
+  
+PowerShellを管理者として実行し、
+```
+PS> Get-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+```  
+State : Enabled
+と表示されれば有効になっているので、次に進んでください。  
+State : Disabled  
+と表示された場合は、以下を実行してください。  
+```
+PS> (Get-WMIObject Win32_Processor).VirtualizationFirmwareEnabled -All  
+```
  
-```  
-% brew install qemu
-% brew list --versions qemu
-qemu 11.0.2
-```  
-  
 ## ３．qemu版rfriends3イメージのダウンロード（約1.2GB）    
   
 ターミナルを開き、任意の場所に移動し実行してください。  
