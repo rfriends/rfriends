@@ -80,22 +80,27 @@ PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -A
   
 ## ３．qemu版rfriends3イメージのダウンロード（約1.2GB）    
   
-ターミナルを開き、任意の場所に移動し実行してください。  
+コマンドプロンプトを開き、任意の場所に移動し実行してください。  
 ここではc:\tempとしています。  
   
-```  
-PS> cd c:\temp
-PS> wget http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat
-PS> rfriends3_qemu_instwin.bat
+```
+c:  
+cd c:\temp
+c:\Temp> curl http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat -o rfriends3_qemu_instwin.bat
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100    315 100    315   0      0   3222      0                              0
 
-Saving to: ‘rfriends3_qemu.zip’
-rfriends3_qemu.zip 100%[==============================>]   1.13G  9.98MB/s    in 2m 1s
+c:\Temp> rfriends3_qemu_instwin.bat
+
+Saving to: ‘rfriends3_qemu_win.zip’
+rfriends3_qemu_win.zip 100%[==============================>]   1.13G  9.98MB/s    in 2m 1s
 ```  
   
-ダウンロードが完了すると、自動的に解凍され、rfriends3_qemu ディレクトリができます。  
+ダウンロードが完了すると、自動的に解凍され、rfriends3_qemu_win ディレクトリができます。  
 ディレクトリの中身は以下のとおり。  
 ```  
-env.txt                 rfriends3_arm64.qcow2   run_rfriends3.bat
+env.bat                 rfriends3_arm64.qcow2   run_rfriends3.bat
 ```
     
 ## ４．rfriends3の実行  
