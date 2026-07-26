@@ -9,7 +9,7 @@ qemu版rfriends3は、仮想環境で、イメージをダウンロードして�
  現在、書きかけです。  
   
 第1版　2026/07/25 new  
-第2版　2026/07/26 加筆  
+第3版　2026/07/27 加筆  
   
 [!IMPORTANT]
 > なお、現在は、テスト中なので、  使用結果を掲示板等で報告ができる方のみ使用してください。  
@@ -46,7 +46,7 @@ qemu 11.0.2
   
 ```  
 % cd ~/
-% wget http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_inst.sh
+% curl http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_inst.sh -o rfriends3_qemu_inst.sh
 % sh rfriends3_qemu_inst.sh
 
 Saving to: ‘rfriends3_qemu.zip’
