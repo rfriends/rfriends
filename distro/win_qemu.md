@@ -53,7 +53,12 @@ State : Disabled
 ```
 PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All
 ```
-
+この操作を完了するために、今すぐコンピューターを再起動しますか?  
+[Y] Yes  [N] No  [?] ヘルプ (既定値は "Y"):   
+リターンキーを押して再起動してください。  
+  
+次の2.3の設定も行う場合は、ここでは再起動しなくてもかまいません。  
+  
 ### 2.3 仮想マシン プラットフォーム  
   
 PowerShellを管理者として実行し、
@@ -65,18 +70,21 @@ State : Enabled
 State : Disabled  
 と表示された場合は、以下を実行してください。  
 ```
-PS> (Get-WMIObject Win32_Processor).VirtualizationFirmwareEnabled -All  
+PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All  
 ```
- 
+この操作を完了するために、今すぐコンピューターを再起動しますか?  
+[Y] Yes  [N] No  [?] ヘルプ (既定値は "Y"):  
+リターンキーを押して再起動してください。  
+  
 ## ３．qemu版rfriends3イメージのダウンロード（約1.2GB）    
   
 ターミナルを開き、任意の場所に移動し実行してください。  
-ここではホームディレクトリとしています。  
+ここではc:\tempとしています。  
   
 ```  
-% cd ~/
-% wget http://rfbuddy.s296.xrea.com/storage/rfriends3_inst.sh
-% sh rfriends3_qemu_inst.sh
+PS> cd c:\temp
+PS> wget http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat
+PS> rfriends3_qemu_instwin.bat
 
 Saving to: ‘rfriends3_qemu.zip’
 rfriends3_qemu.zip 100%[==============================>]   1.13G  9.98MB/s    in 2m 1s
@@ -85,7 +93,7 @@ rfriends3_qemu.zip 100%[==============================>]   1.13G  9.98MB/s    in
 ダウンロードが完了すると、自動的に解凍され、rfriends3_qemu ディレクトリができます。  
 ディレクトリの中身は以下のとおり。  
 ```  
-env.txt                 rfriends3_arm64.qcow2   run_rfriends3.sh
+env.txt                 rfriends3_arm64.qcow2   run_rfriends3.bat
 ```
     
 ## ４．rfriends3の実行  
@@ -96,9 +104,9 @@ env.txt                 rfriends3_arm64.qcow2   run_rfriends3.sh
 rfriends3を実行します。  
  
 ```  
-% cd ~/
-% cd rfriends3_qemu
-% ./run_rfriends3.sh  
+PS> cd c:\temp
+PS> cd rfriends3_qemu
+PS> run_rfriends3.bat  
 ```
     
 以下のようなログイン画面になります。  
