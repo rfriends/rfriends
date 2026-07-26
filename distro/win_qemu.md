@@ -86,7 +86,7 @@ PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -A
 ```
 c:  
 cd c:\temp
-c:\Temp> curl http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat -o rfriends3_qemu_instwin.bat
+c:\Temp> curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat  
   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
                                  Dload  Upload  Total   Spent   Left   Speed
 100    315 100    315   0      0   3222      0                              0
