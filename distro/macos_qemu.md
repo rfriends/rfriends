@@ -46,7 +46,7 @@ qemu 11.0.2
   
 ```  
 % cd ~/
-% wget http://rfbuddy.s296.xrea.com/storage/rfriends3_inst.sh
+% wget http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_inst.sh
 % sh rfriends3_qemu_inst.sh
 
 Saving to: ‘rfriends3_qemu.zip’
