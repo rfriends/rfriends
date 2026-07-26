@@ -97,7 +97,7 @@ Saving to: ‘rfriends3_qemu_win.zip’
 rfriends3_qemu_win.zip 100%[==============================>]   1.13G  9.98MB/s    in 2m 1s
 ```  
   
-ダウンロードが完了すると、自動的に解凍され、rfriends3_qemu_win ディレクトリができます。  
+ダウンロードが完了すると、自動的に解凍され、rfriends3_qemu ディレクトリができます。  
 ディレクトリの中身は以下のとおり。  
 ```  
 env.bat                 rfriends3_arm64.qcow2   run_rfriends3.bat
@@ -107,13 +107,14 @@ env.bat                 rfriends3_arm64.qcow2   run_rfriends3.bat
   　　
 ## 4.1 実行  
   
-ターミナルを開き、rfriends3_qemu ディレクトリに移動し、 
+コマンドプロンプトを開き、rfriends3_qemu ディレクトリに移動し、 
 rfriends3を実行します。  
  
-```  
-PS> cd c:\temp
-PS> cd rfriends3_qemu
-PS> run_rfriends3.bat  
+```
+c:
+c:\Temp> cd c:\temp
+c:\Temp> cd rfriends3_qemu
+c:\Temp> run_rfriends3.bat  
 ```
     
 以下のようなログイン画面になります。  
@@ -126,8 +127,8 @@ rfriends3-qemu login:
 ブラウザで、http://localhost:8000 にアクセスして、以下のような画面が出たら成功です。    
   
 他でポート8000で実行しているものがあると、失敗します。  
-他を終了させるか、env.txtのポート設定を変更して、再度実行してください。   
-unzip後のrfriends3_qemu.zipは不要です。削除してもかまいません。  
+他を終了させるか、env.batのポート設定を変更して(例えば、8001)、再度実行してください。   
+unzip後のrfriends3_qemu_win.zipは不要です。削除してもかまいません。  
   
 <img width="415" height="399" alt="clip_1" src="https://github.com/user-attachments/assets/04b24640-485e-404c-9bf5-7014d16bd8aa" />
 
@@ -135,7 +136,7 @@ unzip後のrfriends3_qemu.zipは不要です。削除してもかまいません
 「ヘルプ」「システム更新」でシステムを最新にしてください。  
 
 [!CAUTION]
-> 実行したターミナルを終了してしまうと、rfriends3も終了します。  
+> qemu画面を終了してしまうと、rfriends3も終了します。  
 > ご注意ください。
  
   
