@@ -123,7 +123,12 @@ rfriends3-qemu login:
 ブラウザで、http://localhost:8000 にアクセスして、以下のような画面が出たら成功です。    
   
 他でポート8000で実行しているものがあると、失敗します。  
-他を終了させるか、env.batのポート設定を変更して(例えば、8001)、再度実行してください。   
+他を終了させるか、env.batのポート設定を変更して、再度実行してください。   
+例）　8000 -> 8001
+
+env.bat
+set "HOST_WEB_PORT=8000" 
+
 unzip後のrfriends3_qemu_win.zipは不要です。削除してもかまいません。  
   
 <img width="415" height="399" alt="clip_1" src="https://github.com/user-attachments/assets/04b24640-485e-404c-9bf5-7014d16bd8aa" />
@@ -150,33 +155,28 @@ unzip後のrfriends3_qemu_win.zipは不要です。削除してもかまいま�
 - user / user  
 - root / rfriends  
   
-## 4.4 env.txt  
+## 4.4 env.bat  
   
-env.txtは実行環境設定です。  
+env.batは実行環境設定です。  
 ほとんど変更の必要はありません。  
 変更する場合は、変更に失敗したときのためにバックアップをとってから行ってください。（自己責任）  
  
 ```
-# env.txt
-# 2026/07/25
-#
-BASE_DIR="$(cd "$(dirname "${BASH_SOURCE}")" && pwd)"  <-- env.txtがある場所
-ARCH=$(uname -m)  <-- intel or silicon
+:: env.bat
+:: 2026/07/27
 
-IMG_FILE="${BASE_DIR}/rfriends3_${ARCH}.qcow2"  <-- ゲスト本体
-ISO_FILE="${BASE_DIR}/debian-13.6.0-${ARCH}-netinst.iso"
+set "BASE_DIR=%~dp0"  <-- env.txtがある場所
+set "QEMU_DIR=%BASE_DIR%qemu"  <-- qemu
+set "IMG_FILE=%BASE_DIR%rfriends3.qcow2"  <-- ゲスト本体
 
-SHARE_DIR="${BASE_DIR}/share"  <-- 録音データ
-
-MEM_SIZE="2G" <-- メモリサイズ
+:: マシンスペック
+MEM_SIZE="1G" <-- メモリサイズ
 CPU_CORES="2" <-- cpuコアの数
-FREE_PAGE_REPORTING="off"
 
-HOST_WEB_PORT="8000" <-- webのポート
-HOST_SSH_PORT="2222" <-- sshのポート
-
-# 現在、sambaは停止
-#HOST_SMB_PORT="4445"
+:: ポートフォワーディング
+set "HOST_WEB_PORT=8000" <-- webのポート
+set "HOST_SSH_PORT=2222" <-- sshのポート
+set "HOST_SMB_PORT=4445" <-- smbのポート
 ```
     
 ## 4.5 録音データ  
