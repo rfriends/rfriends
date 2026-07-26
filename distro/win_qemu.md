@@ -140,7 +140,7 @@ unzip後のrfriends3_qemu_win.zipは不要です。削除してもかまいま�
   
 ・rfriends3の終了方法は2つあります。    
 - user でログインし、sudo poweroff (安全)
-- ctrl+a x  
+- qemu画面を閉じる   
   
 ## 4.3 ログインユーザ  
   
