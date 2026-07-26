@@ -86,16 +86,12 @@ PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -A
 ```
 c:  
 cd c:\temp
-c:\Temp> curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat  
-  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
-                                 Dload  Upload  Total   Spent   Left   Speed
-100    315 100    315   0      0   3222      0                              0
+curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat
+rfriends3_qemu_instwin.bat
+```
 
-c:\Temp> rfriends3_qemu_instwin.bat
-
-Saving to: ‘rfriends3_qemu_win.zip’
-rfriends3_qemu_win.zip 100%[==============================>]   1.13G  9.98MB/s    in 2m 1s
-```  
+Saving to: ‘rfriends3_qemu_win.zip’  
+rfriends3_qemu_win.zip 100%[==============================>]   1.13G  9.98MB/s    in 2m 1s   
   
 ダウンロードが完了すると、自動的に解凍され、rfriends3_qemu ディレクトリができます。  
 ディレクトリの中身は以下のとおり。  
@@ -112,9 +108,9 @@ rfriends3を実行します。
  
 ```
 c:
-c:\Temp> cd c:\temp
-c:\Temp> cd rfriends3_qemu
-c:\Temp> run_rfriends3.bat  
+cd c:\temp
+cd rfriends3_qemu
+run_rfriends3.bat  
 ```
     
 以下のようなログイン画面になります。  
