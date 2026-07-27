@@ -46,8 +46,8 @@ qemu 11.0.2
   
 ```  
 % cd ~/
-% curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_inst.sh  
-% sh rfriends3_qemu_inst.sh
+% curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instmac.sh  
+% sh rfriends3_qemu_instmac.sh
 
 Saving to: ‘rfriends3_qemu.zip’
 rfriends3_qemu.zip 100%[==============================>]   1.13G  9.98MB/s    in 2m 1s
