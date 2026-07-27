@@ -182,23 +182,25 @@ set "HOST_SMB_PORT=4445" <-- smbのポート
 ```
     
 ## 4.5 録音データ  
+
+### 4.5.1 sftp
   
 録音データへのアクセス方法はいろいろありますが、ここではwinscpのsftpアクセスを紹介します。  
   
-### 1) winscpのインストール  
+#### 1) winscpのインストール  
 
 以下より、アプリをダウンロードし、インストールしてください。  
   
 [winscp](https://winscp.net/eng/download.php)
   
-### 2) winscpの実行  
+#### 2) winscpの実行  
   
 winscpを実行すると、サイトの登録画面になります。  
 以下のように入力して保存してください。  
 
 <img width="646" height="423" alt="clip_7" src="https://github.com/user-attachments/assets/51a18d54-90aa-4cb7-962f-7d6b366e0d8d" />
   
-### 3) ログイン  
+#### 3) ログイン  
   
 ログインを実行すると、rfriends3の録音データディレクトリが表示されます。  
 あとは必要なデータをコピーするだけです。  
@@ -206,6 +208,32 @@ winscpを実行すると、サイトの登録画面になります。
  <img width="779" height="502" alt="clip_6" src="https://github.com/user-attachments/assets/8d70fc06-a90e-48e3-8206-7087a56966f6" />
   
 また、sshクライアントにrloginを使っている方は、標準でsftp機能が使えます。  
+
+### 4.5.2 samba
+  
+録音データへのsambaアクセスは、Windows の場合、ちょっと面倒なので、他PC(Linux)からのアクセス方法を紹介します。  
+  
+#### 1) ファイルアプリを起動し、ネットワークメニューを選択します。 
+
+接続窓に、 rfriends3を実行しているWindowsのアドレスを入力し、接続します。  
+ここでは、192.168.1.137と仮定し、以下のように入力しています。
+```
+smb://192.168.1.37:4445
+```
+<img width="748" height="430" alt="1" src="https://github.com/user-attachments/assets/9c063e2c-2184-4ccf-a049-4eb549dea7f8" />
+
+  
+#### 2) ログイン
+
+ログイン情報を入力し、接続します。  
+  
+<img width="534" height="465" alt="2" src="https://github.com/user-attachments/assets/409923b0-e5f2-4f35-9c6c-e0eb7e14813f" />
+
+#### 3) smbdir一覧
+
+録音データディレクトリ(smbdir)が表示されるので、後は自由にデータにアクセスしてください。 
+<img width="748" height="503" alt="3" src="https://github.com/user-attachments/assets/9428c105-ea58-4987-82c1-bd989e479f1c" />
+ 
 
 
 ## 4.6 その他  
