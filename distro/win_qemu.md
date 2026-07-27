@@ -183,20 +183,31 @@ set "HOST_SMB_PORT=4445" <-- smbのポート
     
 ## 4.5 録音データ  
   
-・録音データは、インストールしたrfriends3_qemuのshareフォルダ下にあります。  
-```
-rfriends3_qemu
+・録音データへのアクセス方法はいろいろありますが、ここではwinscpのsftpアクセスを紹介します。  
+  
+### 1) winscpのインストール  
 
-% ls
-env.txt
-rfriends3_arm64.qcow2
-run_rfriends3.sh
-share　<-- これ
+以下より、アプリをダウンロードし、インストールしてください。  
+  
+[winscp](https://winscp.net/eng/download.php)
+  
+### 2) winscpの実行  
+  
+winscpを実行すると、サイトの登録画面になります。  
+以下のように入力して保存してください。  
 
-% ls share/usr2
-kw              log             radiko          radiru_gogaku   timefree
-kwbackup        podcast         radiru          radiru_vod      webradio
-```
+<img width="646" height="423" alt="clip_7" src="https://github.com/user-attachments/assets/51a18d54-90aa-4cb7-962f-7d6b366e0d8d" />
+  
+### 3) ログイン  
+  
+ログインを実行すると、rfriends3の録音データディレクトリが表示されます。  
+あとは必要なデータをコピーするだけです。  
+  
+ <img width="779" height="502" alt="clip_6" src="https://github.com/user-attachments/assets/8d70fc06-a90e-48e3-8206-7087a56966f6" />
+  
+また、sshクライアントにrloginを使っている方は、標準でsftp機能が使えます。  
+
+
 ## 4.6 その他  
   
 ・インストール時は聴取（サーバ）では音がミュートになっています。  
