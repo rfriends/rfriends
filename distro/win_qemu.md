@@ -78,25 +78,48 @@ PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -A
 [Y] Yes  [N] No  [?] ヘルプ (既定値は "Y"):  
 リターンキーを押して再起動してください。  
   
-## ３．qemu版rfriends3イメージのダウンロード（約1.2GB）    
+## ３．qemu版rfriends3イメージのダウンロード（約1.4GB）    
   
 コマンドプロンプトを開き、任意の場所に移動し実行してください。  
 ここではc:\tempとしています。  
-  
+
+- rfriends3_qemu_instwin.bat をダウンロードします。    
 ```
 c:  
 cd c:\temp
-curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat
-rfriends3_qemu_instwin.bat
-```
+C:\temp>curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat
 
-Saving to: ‘rfriends3_qemu_win.zip’  
-rfriends3_qemu_win.zip 100%[==============================>]   1.13G  9.98MB/s    in 2m 1s   
-  
-ダウンロードが完了すると、自動的に解凍され、rfriends3_qemu ディレクトリができます。  
-ディレクトリの中身は以下のとおり。  
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100    418 100    418   0      0   3799      0                              0
+```
+- rfriends3_qemu_instwin.bat を実行します。  
 ```  
-env.bat                 rfriends3_arm64.qcow2   run_rfriends3.bat
+C:\temp>rfriends3_qemu_instwin.bat
+
+rfriends3_qemu_win_20260727.zip をダウンロードします。
+
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100  1.34G 100  1.34G   0      0 10.97M      0   02:05   02:05         11.11M
+
+rfriends3_qemu.zip を解凍します。
+
+ ドライブ F のボリューム ラベルは qemu です
+ ボリューム シリアル番号は 7A5F-3F00 です
+
+ C:\temp\rfriends3_qemu のディレクトリ
+
+2026/07/27  12:48    <DIR>          .
+2026/07/27  14:39    <DIR>          ..
+2026/07/27  09:42               515 env.bat
+2026/07/27  12:48    <DIR>          qemu
+2026/07/27  12:40     1,394,016,256 rfriends3.qcow2
+2026/07/27  09:23             1,153 run_rfriends3.bat
+               3 個のファイル       1,394,017,924 バイト
+               3 個のディレクトリ  51,374,968,832 バイトの空き領域
+
+run_rfriends3.batでrfriends3を実行できます。
 ```
     
 ## ４．rfriends3の実行  
@@ -114,10 +137,8 @@ run_rfriends3.bat
 ```
     
 以下のようなログイン画面になります。  
-```    
-Debian GNU/Linux 13 rfriends3-qemu ttyAMA0  
-rfriends3-qemu login:   
-```  
+<img width="642" height="202" alt="clip_3" src="https://github.com/user-attachments/assets/5a60bb2d-4917-4b80-be02-c701193f439e" />
+  
 この時点ですでにrfriends3は起動しています。      
   
 ブラウザで、http://localhost:8000 にアクセスして、以下のような画面が出たら成功です。    
