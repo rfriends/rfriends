@@ -48,14 +48,14 @@ macの種類により、どちらかを実行してください。
 1) silicon mac の場合  
 ```  
 % cd ~/
-% curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instmac.sh  
-% sh rfriends3_qemu_instmac.sh
+% curl -O http://rfbuddy.s296.xrea.com/storage/qemu_instmac.sh  
+% sh qemu_instmac.sh
 ```
 2) intel mac の場合  
 ```  
 % cd ~/
-% curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instmac_intel.sh  
-% sh rfriends3_qemu_instmac_intel.sh
+% curl -O http://rfbuddy.s296.xrea.com/storage/qemu_instmac_intel.sh  
+% sh qemu_instmac_intel.sh
 ```
 ### 3.2 実行結果  
   
