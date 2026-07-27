@@ -218,7 +218,7 @@ winscpを実行すると、サイトの登録画面になります。
 接続窓に、 rfriends3を実行しているWindowsのアドレスを入力し、接続します。  
 ここでは、192.168.1.137と仮定し、以下のように入力しています。
 ```
-smb://192.168.1.37:4445
+smb://192.168.1.137:4445
 ```
 <img width="748" height="430" alt="1" src="https://github.com/user-attachments/assets/9c063e2c-2184-4ccf-a049-4eb549dea7f8" />
 
