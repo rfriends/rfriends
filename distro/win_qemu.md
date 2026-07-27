@@ -1,7 +1,6 @@
-## Windows向けのqemu版rfriends3でラジオ録音   
+## Windows向けrfriends3のqemu版でラジオ録音      
   
-qemu版rfriends3は、仮想環境で、イメージをダウンロードして実行するだけで、rfriends3が立ち上がります。  
-より良い音を目指して、音のチューニングもしています。  
+rfriends3のqemu版は、仮想環境で、イメージをダウンロードして実行するだけで、rfriends3が立ち上がります。    
     
   
  現在、書きかけです。  
@@ -17,7 +16,7 @@ qemu版rfriends3は、仮想環境で、イメージをダウンロードして�
   
 以下のバージョンで確認しました。  
   
-・Windows11 26H1(確認済)  
+・Windows11 26H1  
   
 ## ２．確認と設定  
 
