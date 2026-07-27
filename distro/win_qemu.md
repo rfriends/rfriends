@@ -37,7 +37,7 @@ qemuを実行にするには、以下の３つ機能が有効である必要が�
 Intel製CPUの場合: Intel Virtualization Technology や VT-x  
 AMD製CPUの場合: SVM Mode や Secure Virtual Machine  
   
-### 2.2 Windows ハイパーバイザー プラットフォームと仮想マシン プラットフォーム     
+### 2.2 Windows の機能      
   
 スタートボタンの横にある検索バーに「Windows の機能」と入力します。  
 [Windows の機能の有効化または無効化] を開きます。  
