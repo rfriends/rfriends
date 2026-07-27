@@ -56,7 +56,7 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
 コマンドプロンプトを開き、任意の場所に移動し実行してください。  
 ここではc:\tempとしています。  
 
-- rfriends3_qemu_instwin.bat をダウンロードします。    
+### 1) rfriends3_qemu_instwin.bat をダウンロードします。    
 ```
 c:  
 cd c:\temp
@@ -69,7 +69,7 @@ C:\temp>curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat
 100    418 100    418   0      0   3799      0                              0  
 ```
   
-- rfriends3_qemu_instwin.bat を実行します。
+### 2) rfriends3_qemu_instwin.bat を実行します。
   
 ```  
 C:\temp>rfriends3_qemu_instwin.bat
