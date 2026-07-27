@@ -1,15 +1,13 @@
-## macOS向けrfriends3のqemu版でラジオ録音   
+## rfriends3の macOS qemu版でラジオ録音   
   
 rfriends3のqemu版は、仮想環境で、イメージをダウンロードして実行するだけで、rfriends3が立ち上がります。  
 より良い音を目指して、音のチューニングもしています。  
   
-現在は、シリコンマック用です。  
-要望があれば、インテル版も開発します。（たぶん）  
   
  現在、書きかけです。  
   
 第1版　2026/07/25 new  
-第3版　2026/07/27 加筆  
+第4版　2026/07/28 intel版追加（ただし、テスト未実施）  
   
 [!IMPORTANT]
 > なお、現在は、テスト中なので、  使用結果を掲示板等で報告ができる方のみ使用してください。  
@@ -44,11 +42,25 @@ qemu 11.0.2
 ターミナルを開き、任意の場所に移動し実行してください。  
 ここではホームディレクトリとしています。  
   
+### 3.1 スクリプトのダウンロードと実行
+macの種類により、どちらかを実行してください。  
+  
+1) silicon mac の場合  
 ```  
 % cd ~/
 % curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instmac.sh  
 % sh rfriends3_qemu_instmac.sh
-
+```
+2) intel mac の場合  
+```  
+% cd ~/
+% curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instmac_intel.sh  
+% sh rfriends3_qemu_instmac_intel.sh
+```
+### 3.2 実行結果  
+  
+以下のように、実行結果が表示されます。
+```
 Saving to: ‘rfriends3_qemu.zip’
 rfriends3_qemu.zip 100%[==============================>]   1.13G  9.98MB/s    in 2m 1s
 ```  
