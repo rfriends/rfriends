@@ -27,55 +27,29 @@ qemuを実行にするには、以下の３つ機能が有効である必要が�
   
 ### 2.1 BIOS/UEFIの仮想化機能  
   
-PowerShellを管理者として実行し、
-```
-PS> (Get-WMIObject Win32_Processor).VirtualizationFirmwareEnabled
-```  
-True  
-と表示されれば有効になっているので、次に進んでください。  
-False   
-と表示された場合は、PCを一度完全にシャットダウンし、  
+タスクマネージャのCPUの項目を開き、仮想化が有効になっていたら、次に進んでください。
+<img width="634" height="349" alt="clip_4" src="https://github.com/user-attachments/assets/5c17817f-91f5-4ef5-8b3e-241473021d41" />
+
+無効の場合は、PCを一度完全にシャットダウンし、  
 起動時にF2やDeleteキーを連打してBIOS（UEFI）画面を開き、  
 以下の項目を「Enabled」に変更する必要があります。  
   
 Intel製CPUの場合: Intel Virtualization Technology や VT-x  
 AMD製CPUの場合: SVM Mode や Secure Virtual Machine  
   
-### 2.2 Windows ハイパーバイザー プラットフォーム     
+### 2.2 Windows ハイパーバイザー プラットフォームと仮想マシン プラットフォーム     
   
-PowerShellを管理者として実行し、
-```
-PS> Get-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform
-```  
-State : Enabled
-と表示されれば有効になっているので、次に進んでください。  
-State : Disabled  
-と表示された場合は、以下を実行してください。  
-```
-PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All
-```
-この操作を完了するために、今すぐコンピューターを再起動しますか?  
-[Y] Yes  [N] No  [?] ヘルプ (既定値は "Y"):   
-リターンキーを押して再起動してください。  
+スタートボタンの横にある検索バーに「Windows の機能」と入力します。  
+[Windows の機能の有効化または無効化] を開きます。  
   
-次の2.3の設定も行う場合は、ここでは再起動しなくてもかまいません。  
+「Windows ハイパーバイザー プラットフォーム」    
+「仮想マシン プラットフォーム」    
+をチェックし、有効にします。  
   
-### 2.3 仮想マシン プラットフォーム  
+<img width="415" height="467" alt="clip_5" src="https://github.com/user-attachments/assets/94c01820-3925-4fd1-9441-3a54ac751e96" />
+
+[OK] を押したあと、PCを再起動してください。  
   
-PowerShellを管理者として実行し、
-```
-PS> Get-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
-```  
-State : Enabled
-と表示されれば有効になっているので、次に進んでください。  
-State : Disabled  
-と表示された場合は、以下を実行してください。  
-```
-PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All  
-```
-この操作を完了するために、今すぐコンピューターを再起動しますか?  
-[Y] Yes  [N] No  [?] ヘルプ (既定値は "Y"):  
-リターンキーを押して再起動してください。  
   
 ## ３．qemu版rfriends3イメージのダウンロード（約1.4GB）    
   
