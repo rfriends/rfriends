@@ -6,6 +6,7 @@ rfriends3のqemu版は、仮想環境で、イメージをダウンロードし�
  現在、書きかけです。  
   
 第1版　2026/07/27 new  
+第2版　2026/07/28 加筆    
   
 [!IMPORTANT]
 > なお、現在は、テスト中なので、  使用結果を掲示板等で報告ができる方のみ使用してください。  
@@ -60,7 +61,7 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
 ```
 c:  
 cd c:\temp
-C:\temp>curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat
+C:\temp> curl -O http://rfbuddy.s296.xrea.com/storage/qemu_instwin.bat
 ```
 以下のように表示されます。　　  
 ```  
@@ -72,11 +73,11 @@ C:\temp>curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat
 ### 2) rfriends3_qemu_instwin.bat を実行します。
   
 ```  
-C:\temp>rfriends3_qemu_instwin.bat
+C:\temp> qemu_instwin.bat
 ```
 以下のように表示されます。　　
 ```    
-rfriends3_qemu_win_20260727.zip をダウンロードします。  
+rfriends3_qemu.zip をダウンロードします。  
   
   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current  
                                  Dload  Upload  Total   Spent   Left   Speed  
