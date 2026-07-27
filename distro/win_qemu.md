@@ -92,7 +92,8 @@ C:\temp>curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat
                                  Dload  Upload  Total   Spent   Left   Speed
 100    418 100    418   0      0   3799      0                              0
 ```
-- rfriends3_qemu_instwin.bat を実行します。  
+- rfriends3_qemu_instwin.bat を実行します。
+  
 ```  
 C:\temp>rfriends3_qemu_instwin.bat
 
