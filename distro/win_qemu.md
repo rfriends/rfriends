@@ -51,7 +51,7 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
 [OK] を押したあと、PCを再起動してください。  
   
   
-## ３．qemu版rfriends3イメージのダウンロード（約1.4GB）    
+## ３．qemu版rfriends3イメージのダウンロードとインストール（約1.4GB）    
   
 コマンドプロンプトを開き、任意の場所に移動し実行してください。  
 ここではc:\tempとしています。  
@@ -61,41 +61,48 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
 c:  
 cd c:\temp
 C:\temp>curl -O http://rfbuddy.s296.xrea.com/storage/rfriends3_qemu_instwin.bat
-
-  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
-                                 Dload  Upload  Total   Spent   Left   Speed
-100    418 100    418   0      0   3799      0                              0
 ```
+以下のように表示されます。　　  
+```  
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current  
+                                 Dload  Upload  Total   Spent   Left   Speed  
+100    418 100    418   0      0   3799      0                              0  
+```
+  
 - rfriends3_qemu_instwin.bat を実行します。
   
 ```  
 C:\temp>rfriends3_qemu_instwin.bat
-
-rfriends3_qemu_win_20260727.zip をダウンロードします。
-
-  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
-                                 Dload  Upload  Total   Spent   Left   Speed
-100  1.34G 100  1.34G   0      0 10.97M      0   02:05   02:05         11.11M
-
-rfriends3_qemu.zip を解凍します。
-
- ドライブ F のボリューム ラベルは qemu です
- ボリューム シリアル番号は 7A5F-3F00 です
-
- C:\temp\rfriends3_qemu のディレクトリ
-
-2026/07/27  12:48    <DIR>          .
-2026/07/27  14:39    <DIR>          ..
-2026/07/27  09:42               515 env.bat
-2026/07/27  12:48    <DIR>          qemu
-2026/07/27  12:40     1,394,016,256 rfriends3.qcow2
-2026/07/27  09:23             1,153 run_rfriends3.bat
-               3 個のファイル       1,394,017,924 バイト
-               3 個のディレクトリ  51,374,968,832 バイトの空き領域
-
+```
+以下のように表示されます。　　
+```    
+rfriends3_qemu_win_20260727.zip をダウンロードします。  
+  
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current  
+                                 Dload  Upload  Total   Spent   Left   Speed  
+100  1.34G 100  1.34G   0      0 10.97M      0   02:05   02:05         11.11M  
+  
+rfriends3_qemu.zip を解凍します。  
+  
+ ドライブ F のボリューム ラベルは qemu です  
+ ボリューム シリアル番号は 7A5F-3F00 です  
+  
+ C:\temp\rfriends3_qemu のディレクトリ  
+  
+2026/07/27  12:48    <DIR>          .  
+2026/07/27  14:39    <DIR>          ..  
+2026/07/27  09:42               515 env.bat  
+2026/07/27  12:48    <DIR>          qemu  
+2026/07/27  12:40     1,394,016,256 rfriends3.qcow2  
+2026/07/27  09:23             1,153 run_rfriends3.bat  
+               3 個のファイル       1,394,017,924 バイト  
+               3 個のディレクトリ  51,374,968,832 バイトの空き領域  
+  
 run_rfriends3.batでrfriends3を実行できます。
 ```
-    
+  
+以上でインストールは完了です。  
+  
 ## ４．rfriends3の実行  
   　　
 ## 4.1 実行  
