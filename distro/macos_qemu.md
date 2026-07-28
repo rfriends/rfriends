@@ -51,7 +51,8 @@ macの種類により、どちらかを実行してください。
 % curl -O http://rfbuddy.s296.xrea.com/storage/qemu_instmac.sh  
 % sh qemu_instmac.sh
 ```
-2) intel mac の場合  
+2) intel mac の場合
+2026/07/28現在、動作しません  
 ```  
 % cd ~/
 % curl -O http://rfbuddy.s296.xrea.com/storage/qemu_instmac_intel.sh  
