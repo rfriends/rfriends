@@ -53,13 +53,6 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
   
   
 ## ３．qemu版rfriends3イメージのダウンロードとインストール（約1.4GB）   
-
-### 3,1 イメージのダウンロード
-  
-方法が２つあります。  
-好きなやり方で。  
-
-#### 3.1.1 ブラウザで行う方法
   
 ブラウザで、以下のリンクを右クリックし、任意の場所に保存してください。  
 ここではc:\tempとしています。  
@@ -67,32 +60,8 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
 [qemu_instwin.bat](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/qemu_instwin.bat)
 
 次にダウンロードした、qemu_instwin.bat をダブルクリックします。    
-    
-#### 3.1.2 コマンドプロンプトで行う方法
-  
-コマンドプロンプトを開き、任意の場所に移動し実行してください。  
-ここではc:\tempとしています。  
+<img width="696" height="305" alt="clip_8" src="https://github.com/user-attachments/assets/6b5253f6-8742-4375-a30d-74eb717873e8" />
 
-1) rfriends3_qemu_instwin.bat をダウンロードします。    
-```
-c:  
-cd c:\temp
-C:\temp> curl -O http://rfbuddy.s296.xrea.com/storage/qemu_instwin.bat
-```
-以下のように表示されます。　　  
-```  
-  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current  
-                                 Dload  Upload  Total   Spent   Left   Speed  
-100    418 100    418   0      0   3799      0                              0  
-```
-  
-2) rfriends3_qemu_instwin.bat を実行します。
-  
-```  
-C:\temp> qemu_instwin.bat
-```
-  
-### 3.2 インストール
   
 qemu_instwin.bat を実行すると、以下のように表示されます。　
   
@@ -128,18 +97,14 @@ run_rfriends3.batでrfriends3を実行できます。
   　　
 ## 4.1 実行  
   
-コマンドプロンプトを開き、rfriends3_qemu ディレクトリに移動し、 
-rfriends3を実行します。  
+エクスプローラを開き、rfriends3_qemu ディレクトリに移動し、 
+run_rfriends3.bat をダブルクリックして実行します。  
  
-```
-c:
-cd c:\temp
-cd rfriends3_qemu
-run_rfriends3.bat  
-```
+<img width="704" height="332" alt="clip_9" src="https://github.com/user-attachments/assets/c1deb92a-96a7-4b41-a90f-e2c6ebb53357" />
     
 以下のようなログイン画面になります。  
-<img width="642" height="202" alt="clip_3" src="https://github.com/user-attachments/assets/5a60bb2d-4917-4b80-be02-c701193f439e" />
+<img width="642" height="537" alt="clip_10" src="https://github.com/user-attachments/assets/01e59d27-a14a-452b-8c71-129834134452" />
+
   
 この時点ですでにrfriends3は起動しています。      
   
