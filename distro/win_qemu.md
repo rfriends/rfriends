@@ -52,12 +52,28 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
 [OK] を押したあと、PCを再起動してください。  
   
   
-## ３．qemu版rfriends3イメージのダウンロードとインストール（約1.4GB）    
+## ３．qemu版rfriends3イメージのダウンロードとインストール（約1.4GB）   
+
+### 3,1 イメージのダウンロード
+  
+方法が２つあります。  
+好きなやり方で。  
+
+#### 3.1.1 ブラウザで行う方法
+  
+ブラウザで、以下のリンクを右クリックし、任意の場所に保存してください。  
+ここではc:\tempとしています。  
+
+[qemu_instwin.bat](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/qemu_instwin.bat)
+
+次にダウンロードした、qemu_instwin.bat をダブルクリックします。    
+    
+#### 3.1.2 コマンドプロンプトで行う方法
   
 コマンドプロンプトを開き、任意の場所に移動し実行してください。  
 ここではc:\tempとしています。  
 
-### 1) rfriends3_qemu_instwin.bat をダウンロードします。    
+1) rfriends3_qemu_instwin.bat をダウンロードします。    
 ```
 c:  
 cd c:\temp
@@ -70,12 +86,16 @@ C:\temp> curl -O http://rfbuddy.s296.xrea.com/storage/qemu_instwin.bat
 100    418 100    418   0      0   3799      0                              0  
 ```
   
-### 2) rfriends3_qemu_instwin.bat を実行します。
+2) rfriends3_qemu_instwin.bat を実行します。
   
 ```  
 C:\temp> qemu_instwin.bat
 ```
-以下のように表示されます。　　
+  
+### 3.2 インストール
+  
+qemu_instwin.bat を実行すると、以下のように表示されます。　
+  
 ```    
 rfriends3_qemu.zip をダウンロードします。  
   
