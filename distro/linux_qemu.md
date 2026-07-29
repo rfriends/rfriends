@@ -83,16 +83,21 @@ rfriends3-qemu login:
 この時点ですでにrfriends3は起動しています。      
   
 ブラウザで、http://localhost:8000 にアクセスして、以下のような画面が出たら成功です。    
-  
-他でポート8000で実行しているものがあると、失敗します。  
-他を終了させるか、env.txtのポート設定を変更して、再度実行してください。   
-unzip後のrfriends3_qemu.zipは不要です。削除してもかまいません。  
-  
-<img width="415" height="399" alt="clip_1" src="https://github.com/user-attachments/assets/04b24640-485e-404c-9bf5-7014d16bd8aa" />
-
-   
 「ヘルプ」「システム更新」でシステムを最新にしてください。  
+unzip後のrfriends3_qemu.zipは不要です。削除してもかまいません。  
+<img width="415" height="399" alt="clip_1" src="https://github.com/user-attachments/assets/04b24640-485e-404c-9bf5-7014d16bd8aa" />
+  
+エラーが出た場合
 
+- CPUの仮想化支援機能（Intel VT-x または AMD-V）が有効になっていない場合
+  
+Could not access KVM kernel module: No such file or directory  
+qemu-system-x86_64: -accel kvm: failed to initialize kvm: No such file or directory  
+上記のようなエラーが出ます。有効にしてください。  
+
+- 他でポート8000で実行しているものがあると、失敗します。  
+他を終了させるか、env.txtのポート設定を変更して、再度実行してください。  
+  
 [!CAUTION]
 > 実行したターミナルを終了してしまうと、rfriends3も終了します。  
 > ご注意ください。
