@@ -130,6 +130,13 @@ env.txtは実行環境設定です。
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE}")" && pwd)"  <-- env.txtがある場所
 ARCH=$(uname -m)  <-- intel or silicon
 
+if [ "$ARCH" = "arm64" ]; then
+    ARCH2="arm64"
+else
+    ARCH2="amd64"
+fi
+
+IMG_SIZE="20G" <-- インストール時に決まっているので変更しても変わりません。
 IMG_FILE="${BASE_DIR}/rfriends3_${ARCH}.qcow2"  <-- ゲスト本体
 ISO_FILE="${BASE_DIR}/debian-13.6.0-${ARCH}-netinst.iso"
 
@@ -141,9 +148,7 @@ FREE_PAGE_REPORTING="off"
 
 HOST_WEB_PORT="8000" <-- webのポート
 HOST_SSH_PORT="2222" <-- sshのポート
-
-# 現在、sambaは停止
-#HOST_SMB_PORT="4445"
+HOST_SMB_PORT="4445" <-- smbのポート
 ```
     
 ## 4.5 録音データ  
