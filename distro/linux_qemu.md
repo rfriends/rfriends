@@ -19,7 +19,7 @@ rfriends3のqemu版は、仮想環境で、イメージをダウンロードし�
   
 - Debian / Ubuntu 系
 ```
-sudo apt update && apt install qemu-system-x86 qemu-utils
+sudo apt update && sudo apt install qemu-system-x86 qemu-utils
 ```
 - RHEL / Fedora / AlmaLinux 系
 ```
@@ -30,7 +30,7 @@ sudo dnf install qemu-kvm qemu-img
 sudo pacman -S qemu-base
 ``` 
   
-## ３．qemu版rfriends3イメージのダウンロード（約1.2GB）    
+## ３．qemu版rfriends3イメージのダウンロード（約1.3GB）    
   
 ターミナルを開き、任意の場所に移動し実行してください。  
 ここではホームディレクトリとしています。  
