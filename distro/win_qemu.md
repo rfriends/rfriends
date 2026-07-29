@@ -41,7 +41,7 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
 [Windows の機能の有効化または無効化] を開きます。  
   
 「Windows ハイパーバイザー プラットフォーム」    
-「仮想マシン プラットフォーム」    
+「仮想マシン プラットフォーム（Virtual Machine Platform）」    
 をチェックし、有効にします。  
   
 <img width="415" height="467" alt="clip_5" src="https://github.com/user-attachments/assets/94c01820-3925-4fd1-9441-3a54ac751e96" />
