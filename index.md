@@ -34,8 +34,8 @@ rfriends3はいろいろな機種に対応しています。
 
 |#  |機種        |OS|
 |:--:|:------  | :-------------------------------------- |
-| 1| Windows   |・[Windows](distro/windows.md)<br>・[WSL](distro/wsl.md)<br>・[WSL-Alpine](distro/wsl-alpine.md)<br>・[qemu](distro/win_qemu.md)<br>・[Docker Desktop](distro/docker.md)| 
-| 2| mac     |・[macOS](distro/macos.md)<br>・[qemu](distro/macos_qemu.md)<br>・[Docker Desktop](distro/docker.md)|
+| 1| Windows   |・[Windows](distro/windows.md)<br>・[WSL](distro/wsl.md)<br>・[WSL-Alpine](distro/wsl-alpine.md)<br>・[Docker Desktop](distro/docker.md)| 
+| 2| mac     |・[macOS](distro/macos.md)<br>・[Docker Desktop](distro/docker.md)|
 | 3| Linux     |・[Ubuntu / Debian / Zorin](distro/rfriends3_core.md)<br>・[Stream / Rocky / Alma](distro/rfriends3_core2.md)<br>・[Alpine linux](distro/rfriends3_core4.md)<br>・[openSUSE](distro/rfriends3_core4.md)<br>・[arch linux](distro/rfriends3_core3.md)<br>・[slackware](distro/rfriends3_slackware.md)|
 | 4| BSD     |・[FreeBSD](distro/rfriends3_core_bsd.md)<br>・[OpenBSD](distro/rfriends3_core_bsd.md)<br>・[NetBSD](distro/rfriends3_core_bsd.md)<br>|
 | 5| コンテナ   |・[Docker](distro/docker.md)<br>・[WSL Containers](distro/wslcontainers.md)<br>・[Apple Container](distro/applecontainer.md)<br>・[LXD/LXC](distro/lxd.md)|
@@ -43,7 +43,8 @@ rfriends3はいろいろな機種に対応しています。
 | 7| スマートフォン |・[Termux -script-](distro/termux.md)<br>・[Termux -image-](distro/termux_image.md)<br>・[UserLAnd](distro/userland.md)<br>・[android linux terminal](distro/rfriends3_core.md)|
 | 8| Chromebook  |・[Linux開発環境](distro/chromeos.md)| 
 | 9| iPhone / iPad |・[iSH Shell](distro/ios.md)| 
-| 10| 仮想 |・[vmware-alpine](distro/vmware-alpine.md)| 
+| 10| 仮想（qemu）   |・[Windows](distro/win_qemu.md)<br>・[Linux](distro/linux_qemu.md)<br>・[macOS](distro/macos_qemu.md)|
+| 11| 仮想 |・[vmware-alpine](distro/vmware-alpine.md)| 
 
    
 > [!NOTE]
