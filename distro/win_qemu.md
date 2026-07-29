@@ -1,6 +1,7 @@
 ## Windows向けrfriends3のqemu版でラジオ録音      
   
-rfriends3のqemu版は、仮想環境で、イメージをダウンロードして実行するだけで、rfriends3が立ち上がります。     
+rfriends3のqemu版は、仮想環境で、イメージをダウンロードして実行するだけで、rfriends3が立ち上がります。   
+**ディレクトリごとUSBメモリに入れれば、ポータブルラジオ録音・再生環境となります。**   
   
 第1版　2026/07/27 new  
 第4版　2026/07/29 加筆    
@@ -60,7 +61,7 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
 <img width="696" height="305" alt="clip_8a" src="https://github.com/user-attachments/assets/cfd9acd6-2ac1-4576-a31a-3a5c17be55ba" />
 
 [!CAUTION]
-> スマートセキュリティコントロールにより実行できない場合、  
+> スマートアプリコントロールにより実行できない場合、  
 > 保存したディレクトリでコマンドプロンプトを開き、  
 > qemu_instwin.bat  
 > と入力してください。  
