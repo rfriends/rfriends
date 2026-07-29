@@ -183,6 +183,11 @@ net use Y: \\localhost\smbdir /TCPPORT:4445
 エクスプローラを開くと、Yドライブがあると思います。  
 <img width="611" height="333" alt="clip_14" src="https://github.com/user-attachments/assets/1889bb5f-be7c-44a4-8987-529c560de0ed" />
   
+もし、Yドライブを削除したい場合は、  
+```
+net use Y: /delete
+```
+  
 ### 4.5.2 samba(Linux)
   
 録音データへの他PC(Linux)からのアクセス方法を紹介します。  
