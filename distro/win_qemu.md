@@ -59,8 +59,11 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
 次にダウンロードした、qemu_instwin.bat をダブルクリックします。    
 <img width="696" height="305" alt="clip_8a" src="https://github.com/user-attachments/assets/cfd9acd6-2ac1-4576-a31a-3a5c17be55ba" />
 
-
-
+[!CAUTION]
+> スマートセキュリティコントロールにより、実行できない場合、
+> 保存したディレクトリで、コマンドプロンプトを開き、
+> qemu_instwin.bat
+> と入力してください。
   
 qemu_instwin.bat を実行すると、以下のように表示されます。　
   
