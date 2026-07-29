@@ -168,7 +168,35 @@ set "HOST_SMB_PORT=4445" <-- smbのポート
     
 ## 4.5 録音データ  
 
-### 4.5.1 sftp
+
+
+### 4.5.1 samba(Windows)
+  
+Windows11 24H2 以降の場合になります。  
+  
+コマンドプロンプトを開き、以下を入力します。  
+Y:は空いているドライブ名、localhostはIPアドレスでもいいです。
+```  
+net use Y: \\localhost\smbdir /TCPPORT:4445
+コマンドは正常に終了しました。
+```
+エクスプローラを開くと、Yドライブがあると思います。  
+<img width="611" height="333" alt="clip_14" src="https://github.com/user-attachments/assets/1889bb5f-be7c-44a4-8987-529c560de0ed" />
+  
+### 4.5.2 samba(Linux)
+  
+録音データへの他PC(Linux)からのアクセス方法を紹介します。  
+  
+#### 1) ファイルアプリを起動し、ネットワークメニューを選択します。 
+
+接続窓に、 rfriends3を実行しているWindowsのアドレスを入力し、接続します。  
+ここでは、192.168.1.137と仮定し、以下のように入力しています。
+```
+smb://192.168.1.137:4445
+```
+<img width="748" height="430" alt="1" src="https://github.com/user-attachments/assets/9c063e2c-2184-4ccf-a049-4eb549dea7f8" />
+  
+### 4.5.3 sftp
   
 録音データへのアクセス方法はいろいろありますが、ここではwinscpのsftpアクセスを紹介します。  
   
@@ -193,20 +221,6 @@ winscpを実行すると、サイトの登録画面になります。
  <img width="779" height="502" alt="clip_6" src="https://github.com/user-attachments/assets/8d70fc06-a90e-48e3-8206-7087a56966f6" />
   
 また、sshクライアントにrloginを使っている方は、標準でsftp機能が使えます。  
-
-### 4.5.2 samba
-  
-録音データへのsambaアクセスは、Windows の場合、ちょっと面倒なので、他PC(Linux)からのアクセス方法を紹介します。  
-  
-#### 1) ファイルアプリを起動し、ネットワークメニューを選択します。 
-
-接続窓に、 rfriends3を実行しているWindowsのアドレスを入力し、接続します。  
-ここでは、192.168.1.137と仮定し、以下のように入力しています。
-```
-smb://192.168.1.137:4445
-```
-<img width="748" height="430" alt="1" src="https://github.com/user-attachments/assets/9c063e2c-2184-4ccf-a049-4eb549dea7f8" />
-
   
 #### 2) ログイン
 
