@@ -57,6 +57,8 @@ AMD製CPUの場合: SVM Mode や Secure Virtual Machine
 
 [qemu_instwin.bat](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/qemu_instwin.bat)
 
+[qemu_instwin.bat](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/rfriends3_qemu_win_20260730.zip)
+
 次にダウンロードした、qemu_instwin.bat をダブルクリックします。    
 <img width="696" height="305" alt="clip_8a" src="https://github.com/user-attachments/assets/cfd9acd6-2ac1-4576-a31a-3a5c17be55ba" />
 
