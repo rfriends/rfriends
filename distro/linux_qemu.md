@@ -18,7 +18,7 @@ rfriends3のqemu版は、仮想環境で、イメージをダウンロードし�
   
 ## ２．ハードウェア仮想化（KVM）の有効を確認  
   
-1) CPUの仮想化フラグ確認  
+### 2.1 CPUの仮想化フラグ確認  
   
 ```
 $ egrep -c '(vmx|svm)' /proc/cpuinfo
@@ -27,7 +27,7 @@ $ egrep -c '(vmx|svm)' /proc/cpuinfo
   
 値が 0 より大きければCPU機能は対応しています。  
   
-2) KVMモジュールのロード確認  
+### 2,2 KVMモジュールのロード確認  
   
 ```
 $ lsmod | grep kvm
