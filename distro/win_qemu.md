@@ -104,6 +104,13 @@ run_rfriends3.batでrfriends3を実行できます。
 run_rfriends3.bat をダブルクリックして実行します。  
  
 <img width="704" height="332" alt="clip_9" src="https://github.com/user-attachments/assets/c1deb92a-96a7-4b41-a90f-e2c6ebb53357" />
+  
+[!CAUTION]
+> スマートアプリコントロールにより実行できない場合、  
+> rfriends3_qemu ディレクトリでコマンドプロンプトを開き、  
+> run_rfriends3.bat 
+> と入力してください。  
+  
     
 以下のようなログイン画面になります。  
 <img width="642" height="537" alt="clip_10" src="https://github.com/user-attachments/assets/01e59d27-a14a-452b-8c71-129834134452" />
