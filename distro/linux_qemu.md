@@ -97,7 +97,7 @@ env.txt                 rfriends3_amd64.qcow2   run_rfriends3.sh
 ## 5.1 実行  
   
 ターミナルを開き、rfriends3_qemu ディレクトリに移動し、 
-rfriends3を実行します。  
+run_rfriends3.sh を実行します。  
  
 ```  
 % cd ~/
@@ -123,7 +123,7 @@ unzip後のrfriends3_qemu.zipは不要です。削除してもかまいません
   
 Could not access KVM kernel module: No such file or directory  
 qemu-system-x86_64: -accel kvm: failed to initialize kvm: No such file or directory  
-上記のようなエラーが出ます。有効にしてください。  
+上記のようなエラーが出ます。２．を参考に、有効にしてください。  
 
 - 他でポート8000で実行しているものがあると、失敗します。  
 他を終了させるか、env.txtのポート設定を変更して、再度実行してください。  
