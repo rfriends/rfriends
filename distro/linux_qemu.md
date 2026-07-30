@@ -89,7 +89,9 @@ rfriends3_qemu.zip 100%[==============================>]   1.13G  9.98MB/s    in
 ダウンロードが完了すると、自動的に解凍され、rfriends3_qemu ディレクトリができます。  
 ディレクトリの中身は以下のとおり。  
 ```  
-env.txt                 rfriends3_amd64.qcow2   run_rfriends3.sh
+env.txt
+rfriends3_amd64.qcow2
+run_rfriends3.sh
 ```
     
 ## ５．rfriends3の実行  
