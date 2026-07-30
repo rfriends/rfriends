@@ -36,6 +36,7 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 |2026/06/05|〇|Cachy linux|rolling|26.04.26|   
 |2026/06/05|〇|EndeavourOS|rolling|26.04.27|   
 |2026/06/05|△|OmegaLinux|rolling|26.02.27 install時に文字化けするので△|   
+||-|Garuda Linux|rolling||   
   
 ## ２．インストール準備  
   
