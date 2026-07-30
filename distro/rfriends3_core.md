@@ -55,6 +55,7 @@ Apache2版を追加しました。(2025/08/15)
 |2026/04/24|〇| Debian (Trixie)|13.4||  
 |2025/05/02|〇| Kali linux|-||  
 |2026/02/09|△| eLxr linux|12.0.0|注１|  
+||-| Sparky linux|||  
   
 > [!CAUTION]
 > 注１）eLxrの場合、/etc/apt/source.listに以下を追加  
