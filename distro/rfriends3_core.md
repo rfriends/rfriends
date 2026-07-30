@@ -56,6 +56,7 @@ Apache2版を追加しました。(2025/08/15)
 |2025/05/02|〇| Kali linux|-||  
 |2026/02/09|△| eLxr linux|12.0.0|注１|  
 ||-| Sparky linux|||  
+||-| LMDE(Linux Mint Debian Edition)|||  
   
 > [!CAUTION]
 > 注１）eLxrの場合、/etc/apt/source.listに以下を追加  
