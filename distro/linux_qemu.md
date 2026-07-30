@@ -16,7 +16,37 @@ rfriends3のqemu版は、仮想環境で、イメージをダウンロードし�
 ・Ubuntu 26.04   
 ・Zorin 18  
   
-## ２．qemuのインストール  
+## ２．ハードウェア仮想化（KVM）の有効を確認  
+  
+1) CPUの仮想化フラグ確認  
+  
+```
+$ egrep -c '(vmx|svm)' /proc/cpuinfo
+2
+```
+  
+値が 0 より大きければCPU機能は対応しています。  
+  
+2) KVMモジュールのロード確認  
+  
+```
+$ lsmod | grep kvm
+kvm_amd               262144  4
+ccp                   192512  1 kvm_amd
+kvm                  1527808  3 kvm_amd
+irqbypass              16384  1 kvm
+```
+  
+動いていない場合は  
+  
+PCを一度完全にシャットダウンし、  
+起動時にF2やDeleteキーを連打してBIOS（UEFI）画面を開き、  
+以下の項目を「Enabled」に変更する必要があります。  
+  
+Intel製CPUの場合: Intel Virtualization Technology や VT-x  
+AMD製CPUの場合: SVM Mode や Secure Virtual Machine  
+  
+## ３．qemuのインストール  
   
 - Debian / Ubuntu 系
 ```
@@ -35,12 +65,12 @@ sudo pacman -S qemu-base
 sudo pacman -S unzip
 ``` 
   
-## ３．qemu版rfriends3イメージのダウンロード（約1.3GB）    
+## ４．qemu版rfriends3イメージのダウンロード（約1.3GB）    
   
 ターミナルを開き、任意の場所に移動し実行してください。  
 ここではホームディレクトリとしています。  
   
-### 3.1 スクリプトのダウンロードと実行
+### 4.1 スクリプトのダウンロードと実行
   
 ```  
 % cd ~/
@@ -48,7 +78,7 @@ sudo pacman -S unzip
 % sh qemu_instlinux.sh
 ```
   
-### 3.2 実行結果  
+### 4.2 実行結果  
   
 以下のように、実行結果が表示されます。
 ```
@@ -62,9 +92,9 @@ rfriends3_qemu.zip 100%[==============================>]   1.13G  9.98MB/s    in
 env.txt                 rfriends3_amd64.qcow2   run_rfriends3.sh
 ```
     
-## ４．rfriends3の実行  
+## ５．rfriends3の実行  
   　　
-## 4.1 実行  
+## 5.1 実行  
   
 ターミナルを開き、rfriends3_qemu ディレクトリに移動し、 
 rfriends3を実行します。  
@@ -103,13 +133,13 @@ qemu-system-x86_64: -accel kvm: failed to initialize kvm: No such file or direct
 > ご注意ください。
  
   
-## 4.2 終了    
+## 5.2 終了    
   
 ・rfriends3の終了方法は2つあります。    
 - user でログインし、sudo poweroff (安全)
 - ctrl+a x  
   
-## 4.3 ログインユーザ  
+## 5.3 ログインユーザ  
   
 初期状態のログイン可能ユーザのパスワードは以下のとおり  
 安全のため、パスワードは変更してください。 
@@ -117,7 +147,7 @@ qemu-system-x86_64: -accel kvm: failed to initialize kvm: No such file or direct
 - user / user  
 - root / rfriends  
   
-## 4.4 env.txt  
+## 5.4 env.txt  
   
 env.txtは実行環境設定です。  
 ほとんど変更の必要はありません。  
@@ -151,7 +181,7 @@ HOST_SSH_PORT="2222" <-- sshのポート
 HOST_SMB_PORT="4445" <-- smbのポート
 ```
     
-## 4.5 録音データ  
+## 5.5 録音データ  
   
 ・録音データは、インストールしたrfriends3_qemuのshareフォルダ下にあります。  
 ```
@@ -167,7 +197,7 @@ share　<-- これ
 kw              log             radiko          radiru_gogaku   timefree
 kwbackup        podcast         radiru          radiru_vod      webradio
 ```
-## 4.6 その他  
+## 5.6 その他  
   
 ・インストール時は聴取（サーバ）では音がミュートになっています。  
  音量調整すれば、音が出るようになります。 
@@ -175,7 +205,7 @@ kwbackup        podcast         radiru          radiru_vod      webradio
 <img width="524" height="548" alt="clip_2" src="https://github.com/user-attachments/assets/d8e707d5-925c-4ba8-932c-0ffc80582b0a" />
 
    
-## ５．rfriends3のアンインストール  
+## ６．rfriends3のアンインストール  
   
 rfriends3を終了し、rfriends3_qemuフォルダを削除してください。  
 アンインストールは終了です。  
