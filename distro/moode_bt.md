@@ -75,20 +75,26 @@ SCAN結果が表示されるまではほかの操作をしないでください�
   
 <img width="1001" height="617" alt="12" src="https://github.com/user-attachments/assets/6ba43919-4457-447a-814d-3f0e0f38fb4d" />
 
-## 14. 
+## 14. このような状態になったと思います。
   
 <img width="1001" height="610" alt="13" src="https://github.com/user-attachments/assets/ab51c29b-8cb7-4e76-9577-80746b5240c3" />
   
-## 15. Bluetoothを選択
+## 15. Bluetooth speaker を選択
   
 <img width="1001" height="610" alt="14" src="https://github.com/user-attachments/assets/e09797a9-c6e5-46b7-809b-ab2bf1b62573" />
   
-## 16.
+## 16. このような状態になったと思います。  
+  
+左上のホームボタン（家のマーク）をクリックしてください。  
+   
   
 <img width="1001" height="612" alt="15" src="https://github.com/user-attachments/assets/920c57a1-acbb-42cd-a5ea-7adeee493144" />
   
-## 17. 
+## 17. 一番上の stereo test を選択しプレイしてください。
   
-左上のホームボタン（家のマーク）
 <img width="1001" height="859" alt="clip_84a" src="https://github.com/user-attachments/assets/59bc7403-60a6-4d82-be5e-15836086e037" />
-
+  
+音が出れば、成功です。  
+出ない場合は、ボリュームを少し上げてみてください。  
+  
+以上
