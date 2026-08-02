@@ -4,7 +4,7 @@
 * rfriends3は、ポッドキャスト（apple.lfr,nhk,jfn,radiko）を録音・再生できます。
 * rfriends3は、OTTAVA、AFNGO、リスラジ、JCBAを録音・再生できます。
 * rfriends3は、ラズパイ,Windows,Linux,BSD,macOS,ChromeOS,docker,Termux,Volumio,MoodeAudio等に対応。
----
+  
 
   
 * rfriends3は、操作がWEBサーバ（Lighttpd）経由で出来、とても簡単になっています。
