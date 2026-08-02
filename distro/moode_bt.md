@@ -18,7 +18,7 @@
 
 ブラウザでmoOde Audioにアクセスしてください。  
   
-<img width="1001" height="730" alt="clip_19a" src="https://github.com/user-attachments/assets/abd50aca-4f8b-4ce5-8086-8832d48c88d4" />
+<img width="600" alt="clip_19a" src="https://github.com/user-attachments/assets/abd50aca-4f8b-4ce5-8086-8832d48c88d4" />
   
 右上に、「ｍ」という文字があると思います。(以降、メニューと呼びます)  
   
@@ -28,18 +28,18 @@
 
 ### 1.3 以下のような画面になるので、Rederers をクリックします。  
   
-<img width="1001" height="730" alt="02" src="https://github.com/user-attachments/assets/88e125cb-7822-4399-9f77-7b90d165858e" />
+<img width="600" alt="02" src="https://github.com/user-attachments/assets/88e125cb-7822-4399-9f77-7b90d165858e" />
   
 
 ### 1.4 Renderers - Bluetoothの設定画面になるので、Controller をONにします。
   
 その後、[OPEN] Bluetooth Controller をクリックします。   
   
-<img width="1001" height="909" alt="03" src="https://github.com/user-attachments/assets/5f8b356a-3436-4b38-8d6a-63bb05c8e844" />
+<img width="600" alt="03" src="https://github.com/user-attachments/assets/5f8b356a-3436-4b38-8d6a-63bb05c8e844" />
   
 ### 1.5 Bluetooth Controlの画面になります。      
   
-<img width="1001" height="552" alt="04" src="https://github.com/user-attachments/assets/5f13c457-a715-428c-96f2-669560e713c7" />
+<img width="600" alt="04" src="https://github.com/user-attachments/assets/5f13c457-a715-428c-96f2-669560e713c7" />
   
 上記のような状態の場合は、３．Bluetooth機器に接続 に進んでください。   
 
@@ -47,15 +47,15 @@
   
 ### 2.1 接続を設定を初期化。(DISCONNECT ALL) 
   
-<img width="1001" height="615" alt="06" src="https://github.com/user-attachments/assets/256b7451-fa2b-468a-b34b-60639a845583" />
+<img width="600" alt="06" src="https://github.com/user-attachments/assets/256b7451-fa2b-468a-b34b-60639a845583" />
 
 ### 2.2 接続を設定を初期化。(REMOVE ALL) 
   
-<img width="1001" height="552" alt="07" src="https://github.com/user-attachments/assets/da977025-b133-41d5-a883-161919612b26" />
+<img width="600" alt="07" src="https://github.com/user-attachments/assets/da977025-b133-41d5-a883-161919612b26" />
   
 ### 2.3 ローカルオーディオに設定。(LOCAL AUDIO)  
   
-<img width="1001" height="540" alt="08" src="https://github.com/user-attachments/assets/84b57c92-2919-40bf-ab64-6bfe4e396771" />
+<img width="600" alt="08" src="https://github.com/user-attachments/assets/84b57c92-2919-40bf-ab64-6bfe4e396771" />
   
 これで初期化は完了です。   
    
@@ -69,24 +69,24 @@ Bluetoothスピーカをペアリングモードにする方法は、それぞ�
 DevicesからSCAN(20 seconds)を選択してください。 
 SCAN結果が表示されるまではほかの操作をしないでください。
 
-<img width="1001" height="554" alt="10" src="https://github.com/user-attachments/assets/64db8ea9-63a4-4471-9bd6-f4b10e643d94" />
+<img width="600" alt="10" src="https://github.com/user-attachments/assets/64db8ea9-63a4-4471-9bd6-f4b10e643d94" />
 
 ### 3.2 SCAN結果から、SR1323 を選択します。 
 
-<img width="1001" height="859" alt="11" src="https://github.com/user-attachments/assets/8d033389-3d90-4049-8de0-f4cd73cf2949" />
+<img width="600" alt="11" src="https://github.com/user-attachments/assets/8d033389-3d90-4049-8de0-f4cd73cf2949" />
 
 ### 3.3 「PAIR」をクリックしてください。
   
-<img width="1001" height="858" alt="11a" src="https://github.com/user-attachments/assets/b66879c5-663d-407b-a09c-2b1d6a582873" />
+<img width="600" alt="11a" src="https://github.com/user-attachments/assets/b66879c5-663d-407b-a09c-2b1d6a582873" />
 
     
 ### 3.4 「CONNECT」をクリックしてください。
   
-<img width="1001" height="617" alt="12" src="https://github.com/user-attachments/assets/6ba43919-4457-447a-814d-3f0e0f38fb4d" />
+<img width="600" alt="12" src="https://github.com/user-attachments/assets/6ba43919-4457-447a-814d-3f0e0f38fb4d" />
     
 ### 3.5 Bluetooth speaker を選択
   
-<img width="1001" height="610" alt="14" src="https://github.com/user-attachments/assets/e09797a9-c6e5-46b7-809b-ab2bf1b62573" />
+<img width="600" alt="14" src="https://github.com/user-attachments/assets/e09797a9-c6e5-46b7-809b-ab2bf1b62573" />
   
 これで接続は完了です。  
   
@@ -95,11 +95,11 @@ SCAN結果が表示されるまではほかの操作をしないでください�
 ### 4.1 左上のホームボタン（家のマーク）をクリックしてください。  
    
   
-<img width="1001" height="612" alt="15" src="https://github.com/user-attachments/assets/920c57a1-acbb-42cd-a5ea-7adeee493144" />
+<img width="600" alt="15" src="https://github.com/user-attachments/assets/920c57a1-acbb-42cd-a5ea-7adeee493144" />
   
 ### 4.2 一番上の Stereo Test を選択しプレイしてください。
   
-<img width="1001" height="859" alt="clip_84a" src="https://github.com/user-attachments/assets/59bc7403-60a6-4d82-be5e-15836086e037" />
+<img width="600" alt="clip_84a" src="https://github.com/user-attachments/assets/59bc7403-60a6-4d82-be5e-15836086e037" />
   
 音が出れば、成功です。  
 出ない場合は、ボリュームを少し上げてみてください。  
