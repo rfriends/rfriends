@@ -1,11 +1,16 @@
 <img width="600" height="327" alt="f0818127-0bac-4205-b3ca-d8a663e16557" src="https://github.com/user-attachments/assets/db0cbaa7-f9df-40ee-9125-cc54103e57f9" />
   
-* rfriends3は、ラジコ、らじるらじる、ポッドキャストを録音できます。  　
+* rfriends3は、ラジコ、NHKらじるらじる、タイムフリー30、エリアフリー、聞き逃し、ゴガクを録音・再生できます。
+* rfriends3は、ポッドキャスト（apple.lfr,nhk,jfn,radiko）を録音・再生できます。
+* rfriends3は、OTTAVA、AFNGO、リスラジ、JCBAを録音・再生できます。
+* rfriends3は、ラズパイ,Windows,Linux,BSD,macOS,ChromeOS,docker,Termux,Volumio,MoodeAudio等に対応。
+---
+
+  
 * rfriends3は、操作がWEBサーバ（Lighttpd）経由で出来、とても簡単になっています。
 * rfriends3は、PC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)が動作するものであれば、操作する端末はなんでも可能です。
 * rfriends3は、sambaによるファイル共有、従来のsshによるcuiアクセスもできます。
-* rfriends3は、radiko ラジコ タイムフリー エリアフリー らじるらじる 聞き逃し ゴガク  ポッドキャスト Windows Linux macOS RaspberrypiOS ChromeOS Termux Volumio MoodeAudio に対応しています。  
-     
+       
 ![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
   
  * [お知らせ](info.md)  
