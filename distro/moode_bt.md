@@ -62,10 +62,11 @@
   
 ## ３．Bluetooth機器に接続 
   
-### 3.1 Bluetooth機器を探します。（SCAN）
-
-Bluetoothスピーカ、ここではSR1323をペアリングモードにします。 
+Bluetoothスピーカ、ここではSR1323をペアリングモードにします。  
 Bluetoothスピーカをペアリングモードにする方法は、それぞれのマニュアルを参照してください。  
+  
+### 3.1 Bluetooth機器を探します。（SCAN）
+  
 DevicesからSCAN(20 seconds)を選択してください。 
 SCAN結果が表示されるまではほかの操作をしないでください。
 
