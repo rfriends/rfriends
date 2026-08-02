@@ -2,6 +2,9 @@
 
 ちょっとこつがいるので、詳細を書きます。  
 ここでは例として、100均のもの（SR1323）を取り上げています。  
+  
+<img width="600" height="479" alt="PXL_20260802_081235442 PORTRAIT~2" src="https://github.com/user-attachments/assets/a3242dfd-1d8b-40f8-b2da-09a36f762987" />
+  
 
 > [!CAUTION]  
 > 右上のリングが回っているときはほかの操作をしないでください。  
