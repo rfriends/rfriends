@@ -6,22 +6,39 @@
 ![1](https://github.com/user-attachments/assets/1cd6790e-c995-4e30-95cf-2f58c0e8cb26)  
   
 初 版　2024/08/31  
-第7版　2026/01/03
+第8版　2026/08/06
   
 ## ０．前提  
   
-・[ミュージック・プレーヤーMoOdeのインストール手順](https://rfriends.hatenablog.com/entry/2024/08/31/035134)    
+以下のことを前提条件とします。  
   
-に従ってRaspberryPiにMoOdeをインストールし正常に動作していること。  
-またSSHアクセスができていること。  
-  
-・RaspberryPiにスピーカ等を接続して音が出る環境ができていること。  
+- RaspberryPiにMoOde Audioをインストールし正常に動作していること。  
+- SSHアクセスができていること。  
+- RaspberryPiにスピーカ等を接続して音が出る環境ができていること。  
   
 下記を参考にしてください。  
   
-[RaspberryPiにスピーカを接続する（Volumio,MoOde編）](https://rfriends.hatenablog.com/entry/2024/09/04/175016)    
-または  
-[RaspberryPi Zeroをラジオにする](https://rfriends.hatenablog.com/entry/2022/05/01/154913)    
+1) MoOde Audio を Raspberry Pi Imager を使って microSD に書く  
+https://rfriends.github.io/rfriends/distro/moode_sd.html  
+  
+2) moOde Audio に Bluetoothスピーカを接続する。  
+https://rfriends.github.io/rfriends/distro/moode_bt.html  
+  
+3) moOde Audio で USB-DAC 経由でスピーカを接続する。  
+https://rfriends.github.io/rfriends/distro/moode_dac.html  
+  
+4) moOde Audio でヘッドホンジャックにスピーカを接続する。  
+https://rfriends.github.io/rfriends/distro/moode_jack.html  
+  
+(古い情報)  
+  
+・[ミュージック・プレーヤーMoOdeのインストール手順](https://rfriends.hatenablog.com/entry/2024/08/31/035134)    
+    
+・[RaspberryPiにスピーカを接続する（Volumio,MoOde編）](https://rfriends.hatenablog.com/entry/2024/09/04/175016)    
+   
+・[RaspberryPi Zeroをラジオにする](https://rfriends.hatenablog.com/entry/2022/05/01/154913)    
+  
+
   
 ## １．rfriends3のダウンロードとインストール  
   
