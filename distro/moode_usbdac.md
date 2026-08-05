@@ -1,15 +1,12 @@
-# moOde Audio でヘッドホンジャックにスピーカを接続する。
+# moOde Audio で USB-DAC 経由でスピーカを接続する。
   
-RaspberryPi 2,3にはヘッドホンジャックがありますが、それにアンプ内蔵スピーカを接続して使用します。  
+RaspberryPiにUSB-DACを接続し、スピーカより音を出します。  
   
-<img width="600" height="474" alt="1" src="https://github.com/user-attachments/assets/4de1e51b-bfd0-4f5f-9f1a-afc1366d0980" />  
+<img width="600" height="401" alt="PXL_20260805_185159293~2" src="https://github.com/user-attachments/assets/09eec619-13ff-4780-8a72-d92f27e051bf" />
   
-ここではスピーカの例として、Z50というものを使用しました。3.5mmジャックがついているものなら大丈夫だと思います。  
+USB-DAC は高級なものはいくらでもありますが、とりあえずは100均のもので充分です。  
   
-<img width="600" height="639" alt="PXL_20260804_005224127~2" src="https://github.com/user-attachments/assets/226d0370-2936-49b7-b449-29d421090fe2" />  
-    
-  
-## １．設定を 3.5mmジャックに変更する。
+## １．設定を USB-DAC に変更する。
   
 ### 1.1 moOde Audio にブラウザでアクセス。  
 
@@ -31,15 +28,18 @@ RaspberryPi 2,3にはヘッドホンジャックがありますが、それに�
   
 <img width="600" alt="clip_1" src="https://github.com/user-attachments/assets/fea91f21-a06b-4d23-ab0a-d33d1d3cf523" />  
   
-### 1.5 Integreted audio を Firmware mode (Legacy) に切り替えます。   
+### 1.5 Output device を USB-DAC に切り替えます。   
   
-<img width="600" alt="clip_2" src="https://github.com/user-attachments/assets/fa816d70-8012-4d34-9f65-1aa27da21bc0" />  
+<img width="600" alt="clip_9" src="https://github.com/user-attachments/assets/4fc0e12a-d042-4430-801f-37aeed79803e" />
+
+### 1.6 Volume type を Hardware に切り替えます。   
+  
+<img width="600" alt="clip_10" src="https://github.com/user-attachments/assets/5401f9a1-037a-4c36-84d3-085034f35030" />
   
 ## ２． システムを再起動します。  
   
 <img width="600" alt="clip_3" src="https://github.com/user-attachments/assets/fef8cc8f-72d4-45f0-8f07-3848cd593427" />  
     
-  
 ## ３．音の再生テスト 
   
 ### 3.1 左上のホームボタン（家のマーク）をクリックしてください。  
