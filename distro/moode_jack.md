@@ -9,7 +9,7 @@ RaspberryPi 2,3にはヘッドホンジャックがありますが、それに�
 <img width="600" height="639" alt="PXL_20260804_005224127~2" src="https://github.com/user-attachments/assets/226d0370-2936-49b7-b449-29d421090fe2" />  
     
   
-## １．設定を 3.5mmジャックに変更する。
+## １．設定を USB-DAC に変更する。
   
 ### 1.1 moOde Audio にブラウザでアクセス。  
 
