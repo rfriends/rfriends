@@ -20,13 +20,13 @@
   
 1) [MoOde Audio を Raspberry Pi Imager を使って microSD に書く](https://rfriends.github.io/rfriends/distro/moode_sd.html)  
   
-2) [moOde Audio に Bluetoothスピーカを接続する]  
+2) [moOde Audio に Bluetoothスピーカを接続する]
 (https://rfriends.github.io/rfriends/distro/moode_bt.html)  
   
 3) moOde Audio で USB-DAC 経由でスピーカを接続する。  
 ~~https://rfriends.github.io/rfriends/distro/moode_dac.html~~  
   
-4) [moOde Audio でヘッドホンジャックにスピーカを接続する]  
+4) [moOde Audio でヘッドホンジャックにスピーカを接続する]
 (https://rfriends.github.io/rfriends/distro/moode_jack.html)  
   
 (その他の情報)  
