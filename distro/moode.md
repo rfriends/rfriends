@@ -30,7 +30,7 @@ https://rfriends.github.io/rfriends/distro/moode_bt.html
 4) moOde Audio でヘッドホンジャックにスピーカを接続する。  
 https://rfriends.github.io/rfriends/distro/moode_jack.html  
   
-(古い情報)  
+(その他の情報)  
   
 ・[ミュージック・プレーヤーMoOdeのインストール手順](https://rfriends.hatenablog.com/entry/2024/08/31/035134)    
     
