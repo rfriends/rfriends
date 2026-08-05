@@ -2,7 +2,7 @@
   
 * rfriends3は、ラジコ、NHKらじるらじる、タイムフリー30、エリアフリー、聞き逃し、ゴガクを録音・再生できます。
 * rfriends3は、ポッドキャスト（apple, lfr, nhk, jfn, radiko）を録音・再生できます。
-* rfriends3は、OTTAVA、AFN GO、リスラジ(ListenRadio)、JCBA を録音・再生できます。
+* rfriends3は、OTTAVA、AFN GO、コミュニティFM（リスラジ[ListenRadio]、JCBA）を録音・再生できます。
 * rfriends3は、Raspios, Windows, Linux, BSD, macOS, ChromeOS, docker, Termux, Volumio, MoodeAudio 等に対応。
   
 * rfriends3は、操作がWEBサーバ（Lighttpd）経由で出来、とても簡単になっています。
