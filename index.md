@@ -57,7 +57,8 @@ rfriends3はいろいろな機種に対応しています。
   
 ### ３．rfriends3スクリーンショット  
   
-![top](https://github.com/user-attachments/assets/5d621f57-425f-4fcd-9448-a816ededd8dc)
+<img width="738" height="662" alt="clip_5" src="https://github.com/user-attachments/assets/7e479ad1-8511-4b9d-a9ac-0ef8934cfd12" />
+
   
 ![play](https://github.com/user-attachments/assets/8bf5cdd9-9702-412b-8165-8cbab928941a)
   
