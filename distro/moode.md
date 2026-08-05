@@ -25,7 +25,7 @@ https://rfriends.github.io/rfriends/distro/moode_sd.html
 https://rfriends.github.io/rfriends/distro/moode_bt.html  
   
 3) moOde Audio で USB-DAC 経由でスピーカを接続する。  
-https://rfriends.github.io/rfriends/distro/moode_dac.html  
+~~https://rfriends.github.io/rfriends/distro/moode_dac.html~~  
   
 4) moOde Audio でヘッドホンジャックにスピーカを接続する。  
 https://rfriends.github.io/rfriends/distro/moode_jack.html  
