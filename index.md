@@ -5,13 +5,12 @@
 * rfriends3は、OTTAVA、AFN GO、リスラジ(ListenRadio)、JCBA を録音・再生できます。
 * rfriends3は、Raspios, Windows, Linux, BSD, macOS, ChromeOS, docker, Termux, Volumio, MoodeAudio 等に対応。
   
-
-  
 * rfriends3は、操作がWEBサーバ（Lighttpd）経由で出来、とても簡単になっています。
 * rfriends3は、PC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)が動作するものであれば、操作する端末はなんでも可能です。
 * rfriends3は、sambaによるファイル共有、従来のsshによるcuiアクセスもできます。
        
-![20240806170114](https://github.com/user-attachments/assets/2c40c57d-7ae4-4eee-811e-cb6c28f112f0)   
+<img width="400" height="273" alt="new_1" src="https://github.com/user-attachments/assets/3162bac3-88c5-46dc-a7ef-55b286f964bc" />
+
   
  * [お知らせ](info.md)  
  * [rfriendsに関するコメントはこちらに](comment.md)
