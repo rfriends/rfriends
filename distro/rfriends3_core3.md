@@ -80,8 +80,10 @@ sudo localectl set-locale LANG=ja_JP.UTF-8　
 localectl status　
 ```  
   
-### 2.3 実行shは、install_arch.sh です。  
-
+### 2.3 インストール
+  
+実行shは、install_arch.sh です。  
+  
       
 ## ３．rfriends3のダウンロードとインストール  
   
