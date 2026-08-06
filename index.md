@@ -9,7 +9,7 @@
 * rfriends3は、PC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)が動作するものであれば、操作する端末はなんでも可能です。
 * rfriends3は、sambaによるファイル共有、従来のsshによるcuiアクセスもできます。
        
-<img width="400" height="273" alt="new_1" src="https://github.com/user-attachments/assets/3162bac3-88c5-46dc-a7ef-55b286f964bc" />
+<img width="400" alt="new_1" src="https://github.com/user-attachments/assets/3162bac3-88c5-46dc-a7ef-55b286f964bc" />
 
   
  * [お知らせ](info.md)  
@@ -57,7 +57,7 @@ rfriends3はいろいろな機種に対応しています。
   
 ### ３．rfriends3スクリーンショット  
   
-<img width="738" height="662" alt="clip_5" src="https://github.com/user-attachments/assets/7e479ad1-8511-4b9d-a9ac-0ef8934cfd12" />
+<img width="600"  alt="clip_5" src="https://github.com/user-attachments/assets/7e479ad1-8511-4b9d-a9ac-0ef8934cfd12" />
 
   
 ![play](https://github.com/user-attachments/assets/8bf5cdd9-9702-412b-8165-8cbab928941a)
