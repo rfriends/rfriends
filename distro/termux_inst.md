@@ -71,7 +71,7 @@ arm
   
 ## ３．Termuxのセットアップ   
   
-セットアップで必ず実行することは2つあります。  
+セットアップで必ず実行することは3つあります。  
   
 #### 3.1 termuxのミラーサイトを変更する。   
   
@@ -98,8 +98,24 @@ $ termux-change-repo
 > しばらく時間を置いて再度termux-change-repoを実行してく
 ださい。  
 >   
-
-#### 3.1 termuxのstorageをセットアップする。   
+#### 3.2 termuxのパッケージの更新   
+  
+以下を入力してください。  
+  
+```  
+$ pkg update  
+  
+Checking availability of current mirror:
+[*] https://mirror.albony.in/termux/termux-main: ok
+Hit:1 https://mirror.albony.in/termux/termux-main stable InRelease
+Hit:2 https://mirror.albony.in/termux/termux-x11 x11 InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+```
+  
+#### 3.3 termuxのstorageをセットアップする。   
   
 以下を入力してください。  
   
@@ -120,6 +136,15 @@ $ cd storage　　
 audiobooks  dcim  documents  downloads  external-0  media-0  movies  music  pictures  podcasts  shared　　
 ```  
   
+#### 3.4 exit   
+  
+以下を入力してください。  
+  
+```  
+$ exit  
+```  
+　　
+これでTermuxのインストールは完了です。  
   
 以上  
   
