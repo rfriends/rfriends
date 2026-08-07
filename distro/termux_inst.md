@@ -23,7 +23,7 @@ androidOS7未満では動作しません。
   
 現在、Termuxの入手方法は３つあります。  
 
-1) Github
+1) [Github](https://github.com/termux/termux-app/releases)
 2) f-droid
 3) googleplay
 
