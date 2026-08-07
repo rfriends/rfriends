@@ -13,12 +13,20 @@
 初版：2021/01/19  
 改版：2026/05/23  
   
-## １．準備  
+## １．Termuxのインストール   
   
 以下のものが必要になります。  
   
 androidスマートホンまたはタブレット(OS7以上)  
 androidOS7未満では動作しません。  
+  
+Termuxのインストール方法については、以下のリンクを参照してください。  
+  
+[Termuxのインストール方法](termux_inst.md)  
+  
+## ２．インストールスクリプトのダウンロード  
+  
+インストールスクリプトをDownloadディレクトリにのダウンロードします。   
   
 使用するスマホのブラウザでこのページを開き、以下の**リンクを長押し**して、インストールスクリプトをスマホのダウンロードディレクトリにダウンロードしてください。  
   
@@ -36,11 +44,6 @@ xrea : [termux.sh](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/termux.sh)
 
 ・ダウンロードが完了  
 ![1c](https://github.com/user-attachments/assets/b0b4642a-f4a8-4207-8296-ff0f3469ade9)  
-  
-## ２．Termuxのインストール   
-  
-Termuxのインストール方法については、以下のリンクを参照してください。  
-[Termuxのインストール方法](termux_inst.md)  
   
 ## ３．rfriends3のインストール  
   
