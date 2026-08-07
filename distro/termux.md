@@ -83,8 +83,8 @@ termux.shの実行途中で、ミラーをグループにするかシングル�
   
 ![6](https://github.com/user-attachments/assets/5b1d1d3b-7d0b-40d1-afcf-30b2df66c927)  
   
-ミラーグループの選択画面が出ますが、そのままOKを選択してください。   
-訂正）Mirrors in Asia All in Asia (excl. Chinese) の方がはやくていいいかもしれません。  
+ミラーグループの選択画面が出ますが、~~そのままOKを選択してください。~~   
+訂正）Mirrors in Asia All in Asia (excl. Chinese) の方を選択してください。(このほうが速い)
   
 ![7](https://github.com/user-attachments/assets/ff6f0023-6942-4283-bb4e-6c1db1354fbb)  
   
