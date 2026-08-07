@@ -70,7 +70,7 @@ $ termux-setup-storage
   
 ![5](https://github.com/user-attachments/assets/e9232282-ed0f-43af-8bc8-4ae552fc3c9f)  
     
-2) androidのダウンロードディレクトリにアクセスし、termux.shがあることを確認します。  
+2) androidのダウンロードディレクトリにアクセスし、先ほど２．でダウン―ロードした termux.sh があることを確認します。  
     
 ```
 $ cd
