@@ -36,50 +36,11 @@ xrea : [termux.sh](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/termux.sh)
 
 ・ダウンロードが完了  
 ![1c](https://github.com/user-attachments/assets/b0b4642a-f4a8-4207-8296-ff0f3469ade9)  
-
-
   
 ## ２．Termuxのインストール   
   
-Termuxは、AndroidやChrome OS上でLinux環境を実行できるターミナルエミュレータアプリです。  
-    
-### 2.1 Termuxのダウンロード  
-  
-以下のリンクよりスマホのダウンロードディレクトリにtermuxをダウンロードしてください。  
-アーキテクチャが不明の場合はuniversal版を選択してください。  
-  
-#### v0.119.0-beta.3 (android 7以上)  
-  
-universal(arm/aarch64)   
-[universal](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_universal.apk)  
-  
-aarch64  
-[arm64-v8a](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_arm64-v8a.apk)  
-  
-arm  
-[armeabi-v7a](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk)  
-    
-### 2.2 Termuxのインストール  
-  
-1) ファイルマネージャを起動し、ダウンロードディレクトリにあるcom.termux_1020.apkをタップしてtermuxをインストールしてください。  
-   
-![1](https://github.com/user-attachments/assets/cde2403e-6c3a-49dc-9ea8-b38e3ab05249)  
-
-2) "詳細"を押して下さい。（androidのバージョンにより画面は異なります）  
-  
-![2](https://github.com/user-attachments/assets/6581f35d-fb4f-4098-9481-81aff365e414)  
-  
-3) "インストールする"を押してください。 
-  
-![3](https://github.com/user-attachments/assets/f3087eb2-28e4-45c2-8ab1-754dab5fd244)  
-  
-4) このような画面が出たら、**必ず** "許可"を押してください。
-  
-![4](https://github.com/user-attachments/assets/348b495f-60ba-43b9-b79c-9d3b7f8a3dfe)  
-  
-5) これでtermuxのインストールは完了です。
-  
-![4a](https://github.com/user-attachments/assets/0166b778-e8af-4e36-908c-874d42435f0d)  
+Termuxのインストール方法については、以下のリンクを参照してください。  
+[Termuxのインストール方法](termux_inst.md)  
   
 ## ３．rfriends3のインストール  
   
