@@ -47,19 +47,9 @@ Termuxを起動してください。
   
 ![4b](https://github.com/user-attachments/assets/399dbc52-b091-4683-b1a0-ce0a47a7ad0f)  
     
-### 3.2 termux-setup-storageの実行  
+### 3.2 インストールスクリプトの確認  
   
-1) これにより、termuxからandroid側のファイルにアクセスできるようになります。  
-  
-```
-$ termux-setup-storage
-```
-  
-全てのファイルの管理権を付与する。  
-  
-![5](https://github.com/user-attachments/assets/e9232282-ed0f-43af-8bc8-4ae552fc3c9f)  
-    
-2) androidのダウンロードディレクトリにアクセスし、先ほど２．でダウン―ロードした termux.sh があることを確認します。  
+androidのダウンロードディレクトリにアクセスし、先ほど２．でダウン―ロードした termux.sh があることを確認します。  
     
 ```
 $ cd
@@ -71,37 +61,19 @@ termux.sh
   
 ### 3.3 ツールおよびrfriends3をインストールする  
   
-#### 3.3.1 termux.shを実行する。  
+インストールスクリプト(termux.sh)を実行する。  
   
 ```    
 $ sh termux.sh  
 ```  
     
-#### 3.3.2 termuxのミラーサイトを変更する。   
-  
-termux.shの実行途中で、ミラーをグループにするかシングルにするかの選択画面が出ますが、そのままOKを選択してください。  
-  
-![6](https://github.com/user-attachments/assets/5b1d1d3b-7d0b-40d1-afcf-30b2df66c927)  
-  
-ミラーグループの選択画面が出ますが、~~そのままOKを選択してください。~~   
-訂正）Mirrors in Asia All in Asia (excl. Chinese) の方を選択してください。(このほうが速い)
-  
-![7](https://github.com/user-attachments/assets/ff6f0023-6942-4283-bb4e-6c1db1354fbb)  
-  
-> [!CAUTION]  
-> その後、ミラーサイトのチェックが行われますが  
-> Error: None of mirrors are accessable  
-> のようなメッセージが出た場合はミラーサイトがすべてダウンしているので、  
-> しばらく時間を置いて再度termux-change-repoを実行してください。  
->   
-  
-#### 3.3.3 また、以下のメッセージが出たら、リターンキーを押してください。  
+・途中、以下のメッセージが出たら、リターンキーを押してください。  
 
-環境により異なりますが、3度くらい表示されます。  
+環境により異なりますが、3から4度くらい表示されます。  
   
 ![8](https://github.com/user-attachments/assets/d33da4b0-ad4c-4ba9-969e-fae1c69983e3)  
   
-#### 3.3.4 インストールスクリプトの最後にsambaのパスワード入力を求められます。    
+・インストールスクリプトの最後にsambaのパスワード入力を求められます。    
 
 userはtermuxです。
 
@@ -114,42 +86,15 @@ Added user termux.
 ```  
   
   
-#### 3.3.5 インストールスクリプトが完了したら、  
-
-```  
-1. exit で termux を終了    
-2. 再度 termux を起動  
-3. sh svenable.sh を実行  
-  
-finished    
-```  
-
-が表示されます。  
-  　
-> [!CAUTION]  
-> もし、表示されない場合は、正常に終了していません。  
-> termuxのミラーサイトがダウンしている場合に発生します。  
-> 時間を置いて、3.2の最初からやり直してください。  
-
-#### 3.3.6 次にexitを入力して、termuxを一旦終了してください。  
-  
-終了しないとサービスの有効化で失敗します。  
-  
-```  
-$ exit   
-```  
-  
 ### 3.4 サービス（atd, crond,sshd,lighttpd,smbd）およびwake-lockの有効化  
   
-termuxを再起動する。  
-  
-![6a](https://github.com/user-attachments/assets/0e2c31fa-aa4a-46a3-9019-b2a8b464e45f)
-  
-svenable.shを実行して、サービス（atd, crond,sshd,lighttpd,smbd）およびwake-lockを有効化します。    
+インストールスクリプトが完了したら、以下を入力して、サービスを有効化してください。  
   
 ```  
-$ sh svenable.sh  
-```  
+1. exit で termux を終了 (終了しないとサービスの有効化で失敗します。)    
+2. 再度 termux を起動  
+3. sh svenable.sh を実行  
+```    
   
 次のような画面が出たら、"許可"を押してください。これにより予約録音ができるようになります。  
 
