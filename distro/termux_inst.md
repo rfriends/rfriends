@@ -22,11 +22,11 @@ androidOS7未満では動作しません。
 ## ２．Termuxのインストール   
   
 現在、Termuxの入手方法は３つあります。  
-
-1) [Github](https://github.com/termux/termux-app/releases)
-2) f-droid
-3) googleplay
-
+  
+1) [Github](https://github.com/termux/termux-app/releases)  
+2) f-droid  
+3) googleplay  
+  
 ただし、googlePlayから入手したTermuxでは、rfriends3は正常に動作しません。 
 Githubからの入手を強くお勧めします。  
 以下ではGithubからのインストール方法について記述しています。    
