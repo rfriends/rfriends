@@ -143,7 +143,7 @@ audiobooks  dcim  documents  downloads  external-0  media-0  movies  music  pict
 ```  
 $ exit  
 ```  
-　　
+  
 これでTermuxのインストールは完了です。  
   
 以上  
