@@ -1,4 +1,4 @@
-## Linux版rfriends3でラジオ録音（Ubuntu/Debian）    
+## Debian版rfriends3でラジオ録音    
   
 rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux版です。  
@@ -17,7 +17,7 @@ Apache2版を追加しました。(2025/08/15)
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第34版　2026/05/02 
+第35版　2026/08/08 
   
 ## １．ディストリビューション  
 
@@ -27,24 +27,6 @@ Apache2版を追加しました。(2025/08/15)
 > [!NOTE]
 > ここでは、systemd以外のものをすべてinitと記述しています。 (pgrep -o systemd)  
 > 突っ込みどころ満載ですが、お許しください。  
-
-### 1.1 Ubuntu系  (install_ubuntu.sh)
-  
-|最終確認|判定|ディストロ|Ver.|備考|   
-|---|:---:|---|---|---|  
-|2025/05/03|✕| Ubuntu (D10)|18|/etc/apt/sources.list<br>を変更<br>動作するがサポート切れ|  
-|2025/04/27|✕| Ubuntu (D10)|19|/etc/apt/sources.list<br>を変更<br>動作するがサポート切れ|  
-|2025/04/26|△| Ubuntu (D11)|20||  
-|2025/04/26|〇| Ubuntu (D12)|22||  
-|2025/04/26|◎| Ubuntu (D13)|24||  
-|2025/04/26|〇| Ubuntu (D13)|25||  
-|2026/04/24|〇| Ubuntu (D13)|26|new!|  
-|2026/05/25|〇| Linux Mint|22.3|ubuntu24.04|  
-|2025/04/26|〇| ZORIN OS|17.3|ubuntu22.04|  
-|2025/12/11|〇| ZORIN OS|18|ubuntu24.04|  
-|2026/02/17|△| Pop!_OS|24|ubuntu24.04|  
-  
-### 1.2 Debian系  (install_debian.sh)
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
@@ -96,32 +78,6 @@ Apache2版を追加しました。(2025/08/15)
 > \# gpasswd -a ユーザ名 sudo  
 > その後必ず再起動してください。
   
-### 2.1 Ubuntu/ZORINの場合  
-  
-1) システムを最新にし、アプリを追加する。   
-```  
-# apt-get update  
-# apt-get upgrade -y
-
-# apt-get install sudo vim -y
-# apt-get install git -y  
-```
-2) 実行するユーザを追加し、管理者権限を付加する。  
-```
-# useradd -m -G sudo ユーザ名
-# passwd ユーザ名
-# chsh -s /bin/bash ユーザ名  
-```
-3) ログアウトする。
-```
-# exit
-``` 
-  
-実行shは、install_ubuntu.sh または、install_ubuntu_apache2.sh です。   
-ただしinstall_ubuntu.sh をおすすめします。  
-  
-### 2.2 Debian/Linux開発環境の場合  
-
 1) システムを最新にし、アプリを追加する。   
 ```  
 # apt-get update  
@@ -181,7 +137,7 @@ $ sh install_XXXXX.sh
   
 これで基本のインストールは完了です。  
 
-### 3.2 ubuntu 26.04 および  debian13 の追加処理  
+### 3.2 debian13 の追加処理  
 
 ~~一部、追加処理が必要です。~~  
   
