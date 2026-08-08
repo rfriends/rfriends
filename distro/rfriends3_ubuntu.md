@@ -1,4 +1,4 @@
-## Linux版rfriends3でラジオ録音（Ubuntu/Debian）    
+## Ubuntu版rfriends3でラジオ録音    
   
 rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux版です。  
@@ -17,7 +17,7 @@ Apache2版を追加しました。(2025/08/15)
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第34版　2026/05/02 
+第35版　2026/08/08 
   
 ## １．ディストリビューション  
 
@@ -27,8 +27,6 @@ Apache2版を追加しました。(2025/08/15)
 > [!NOTE]
 > ここでは、systemd以外のものをすべてinitと記述しています。 (pgrep -o systemd)  
 > 突っ込みどころ満載ですが、お許しください。  
-
-### 1.1 Ubuntu系  (install_ubuntu.sh)
   
 |最終確認|判定|ディストロ|Ver.|備考|   
 |---|:---:|---|---|---|  
@@ -44,44 +42,6 @@ Apache2版を追加しました。(2025/08/15)
 |2025/12/11|〇| ZORIN OS|18|ubuntu24.04|  
 |2026/02/17|△| Pop!_OS|24|ubuntu24.04|  
   
-### 1.2 Debian系  (install_debian.sh)
-  
-|最終確認|判定|ディストロ|Ver.|備考|   
-|---|:---:|---|---|---|  
-|2025/05/03|✕| Debian (Stretch)|9|動作するがサポート切れ|  
-|2025/04/27|✕| Debian (Buster)|10|動作するがサポート切れ|  
-|2025/04/26|△| Debian (Bullseye)|11||  
-|2025/04/26|◎| Debian (Bookworm)|12||  
-|2026/04/24|〇| Debian (Trixie)|13.4||  
-|2025/05/02|〇| Kali linux|-||  
-|2026/02/09|△| eLxr linux|12.0.0|注１|  
-||-| Sparky linux 8.1|13||  
-||-| LMDE7(Linux Mint Debian Edition)|13||  
-  
-> [!CAUTION]
-> 注１）eLxrの場合、/etc/apt/source.listに以下を追加  
-> deb https://deb.debian.org/debian trixie contrib main
-  
- ・linux開発環境  
-   
-|最終確認|判定|ディストロ|Ver.|備考|   
-|---|:---:|---|---|---|  
-|2025/01/24|〇| Chromeos|134|Debian 12|   
-|2025/04/25|〇| Chromeos flex|135|Debian 12|   
-|2025/02/26|〇| Android(pixel)|15, 16|Debian 12|  
-  
- ・init  
-   
-|最終確認|判定|ディストロ|Ver.|備考|   
-|---|:---:|---|---|---|  
-|2025/04/28|〇| Devuan (Daedalus)|5|Debian 12|  
-|2026/02/06|〇| Devuan (excalibur)|6.1|Debian 13|  
-|2025/04/28|〇| MX linux|21.3|Debian 11|  
-|2026/02/06|〇| MX linux|25|Debian 13　lighttpd版使用|  
-|2025/04/30|〇| antiX linux|23.2|Debian 12|  
-    
-  
-  
 ## ２．インストール準備  
   
 以下のことを確認してください。 
@@ -96,32 +56,6 @@ Apache2版を追加しました。(2025/08/15)
 > \# gpasswd -a ユーザ名 sudo  
 > その後必ず再起動してください。
   
-### 2.1 Ubuntu/ZORINの場合  
-  
-1) システムを最新にし、アプリを追加する。   
-```  
-# apt-get update  
-# apt-get upgrade -y
-
-# apt-get install sudo vim -y
-# apt-get install git -y  
-```
-2) 実行するユーザを追加し、管理者権限を付加する。  
-```
-# useradd -m -G sudo ユーザ名
-# passwd ユーザ名
-# chsh -s /bin/bash ユーザ名  
-```
-3) ログアウトする。
-```
-# exit
-``` 
-  
-実行shは、install_ubuntu.sh または、install_ubuntu_apache2.sh です。   
-ただしinstall_ubuntu.sh をおすすめします。  
-  
-### 2.2 Debian/Linux開発環境の場合  
-
 1) システムを最新にし、アプリを追加する。   
 ```  
 # apt-get update  
@@ -162,7 +96,7 @@ sshまたはTerminalを開き、sudoが可能なユーザでログインしま�
 > [!CAUTION]
 > 必ず２で確認したユーザでログインしてください。    
   
-　ディストリビューション別のrfriends3インストールスクリプト（install_XXXXX.sh）を実行します。  
+　ディストリビューション別のrfriends3インストールスクリプト（install_ubuntu.sh）を実行します。  
 「１．ディストリビューション」で実行シェルを確認してください。  
  各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
@@ -176,12 +110,12 @@ $ cd ~/
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
-$ sh install_XXXXX.sh
+$ sh install_ubuntu.sh
 ```  
   
 これで基本のインストールは完了です。  
 
-### 3.2 ubuntu 26.04 および  debian13 の追加処理  
+### 3.2 ubuntu 26.04 の追加処理  
 
 ~~一部、追加処理が必要です。~~  
   
