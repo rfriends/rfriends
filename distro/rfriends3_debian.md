@@ -118,7 +118,7 @@ sshまたはTerminalを開き、sudoが可能なユーザでログインしま�
 > [!CAUTION]
 > 必ず２で確認したユーザでログインしてください。    
   
-　ディストリビューション別のrfriends3インストールスクリプト（install_XXXXX.sh）を実行します。  
+　ディストリビューション別のrfriends3インストールスクリプト（install_debian.sh）を実行します。  
 「１．ディストリビューション」で実行シェルを確認してください。  
  各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
@@ -132,7 +132,7 @@ $ cd ~/
 $ rm -rf rfriends3_core   
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core  
-$ sh install_XXXXX.sh
+$ sh install_debian.sh
 ```  
   
 これで基本のインストールは完了です。  
