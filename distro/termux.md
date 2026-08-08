@@ -80,8 +80,8 @@ userはtermuxです。
 ```  
 termuxのためのパスワードを設定してください
   
-New password: 
-Retype new password: 
+New password: ******* 
+Retype new password: ******* 
 New password was successfully set.
 ```
   
