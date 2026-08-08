@@ -84,8 +84,8 @@ sudoがない場合
 ```
 再起動が必要かもしれません。  
   
-4) 実行shは、install_debian.sh または、install_debian_apache2.sh です。  
-ただしinstall_debian.sh をおすすめします。
+4) 実行shは、install_ubuntu.sh または、install_ubuntu_apache2.sh です。  
+ただしinstall_ubuntu.sh をおすすめします。
   
 ## ３．rfriends3のダウンロードとインストール  
   
