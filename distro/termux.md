@@ -73,10 +73,18 @@ $ sh termux.sh
   
 ![8](https://github.com/user-attachments/assets/d33da4b0-ad4c-4ba9-969e-fae1c69983e3)  
   
-・インストールスクリプトの最後にsambaのパスワード入力を求められます。    
+・インストールスクリプトの最後にtermux, sambaのパスワード入力を求められます。    
 
 userはtermuxです。
 
+```  
+termuxのためのパスワードを設定してください
+  
+New password: 
+Retype new password: 
+New password was successfully set.
+```
+  
 ```  
 sambaのためのパスワードを設定してください
   
@@ -84,7 +92,6 @@ New SMB password: *******
 Retype new SMB password: ********
 Added user termux.  
 ```  
-  
   
 ### 3.4 サービス（atd, crond,sshd,lighttpd,smbd）およびwake-lockの有効化  
   
