@@ -1,6 +1,10 @@
 ## macOS版rfriends3でラジオ録音   
   
-　rfriends3はWEBベースで操作が簡単になっています。  
+　rfriends3はWEBベースで操作が簡単になっています。 
+  
+> [!CAUTION]  
+> 現在、マック版では、jcba,fm++で音切れが発生します。    
+> qemu版をご使用ください。 
   
 第4版　2025/01/08 sequoia  
 第5版　2025/09/25 chromium  
