@@ -13,7 +13,7 @@
 > また、ここで使用するバックアップイメージはGithub版です。F-droid版では動作しません。  
   
 初版：2026/05/20  
-改版：2026/05/23
+改版：2026/08/12
   
 ## １．準備  
   
@@ -24,6 +24,9 @@ OSのバージョンを確認してください。
 
 android OSのバージョン　7以上  
 ~~5,6でも動作する可能性はありますが~~ 動作しません     
+
+アーキテクチュアはaarch64のみ。  
+arm版のサポートは終了しました。script編を参考にインストールしてください。  
     
 ### 1.2 Amazon Fireの場合 
   
@@ -94,7 +97,7 @@ aarch64
 [arm64-v8a](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_arm64-v8a.apk)  
   
 arm  
-[armeabi-v7a](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk)  
+~~[armeabi-v7a](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk)~~  
      
 ### 3.2 Termuxのインストール  
   
