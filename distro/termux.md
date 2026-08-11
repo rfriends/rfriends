@@ -295,53 +295,10 @@ tmpdir = ""
   
 ### 5.5 録音ディレクトリの設定（microSD）  
   
-#### 1) microSDのディレクトリの確認
-microSDが存在する場合、~/storage以下にmedia-1,external-1といったディレクトリがあると思います。  
-機種や、termuxのバージョンにより異なる（？)ようです。  
-両方存在する場合は、両方試してみてください。  
-![17](https://github.com/user-attachments/assets/d96a5d4c-e4c5-4696-82ef-24366bf49457)    
+microSDを録音ディレクトリに設定する方法は、以下を参照してください。  
   
-> [!CAUTION]  
-> どちらも存在しない場合や、エラーになる場合は、  
-> termuxがmicroSDを認識していません。  
-> termux-setup-storage を実行してみてください。  
-> SDCARDは初期化されないはずですが、自己責任で。 
+[録音ディレクトリをmicroSDに設定](termux_microsd.md)
   
-#### 2) usr3ディレクトリの作成
-external-1の場合、external-1以下にusr3ディレクトリを作成します。    
-```  
-$ cd
-$ cd storage
-$ cd external-1
-$ mkdir usr3
-```
-ファイルマネージャで、Android/data/com.termux/files/usr3 にアクセス出来たら成功です。  
-<img width="600" height="210" alt="Screenshot_20260328-214313" src="https://github.com/user-attachments/assets/96155c1d-4ad4-42cd-ab89-102cab6af626" />
-  
-#### 3) 録音データの格納場所の設定
-rfriends3の画面で  
-  
-設定 - 録音フォルダ  
-  
-を選択し、録音データの格納場所を指定します。  
-```  
-usrdir = "/data/data/com.termux/files/home/storage/external-1/usr3/"  
-tmpdir = ""  
-```  
-  
-実際のディレクトリは以下になります。  
-<img width="600" height="214" alt="clip_1" src="https://github.com/user-attachments/assets/79f352a3-1b50-493d-a6b2-9b5ff5870803" />
-
-usrdir: /storage/8CD8-1F72/Android/data/com.termux/files/usr3/  
-  
-8CD8-1F72部分はそれぞれの環境で異なります。  
-  
-#### 4) ファイルマネージャで格納場所の再確認
-ファイルマネージャで  
-  
-/Android/data/com.termux/files/  
-  
-にアクセスすればデータが参照できます。  
   
   
    
