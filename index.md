@@ -44,7 +44,7 @@ rfriends3はいろいろな機種に対応しています。
 | 4| BSD     |・[FreeBSD](distro/rfriends3_core_bsd.md)<br>・[OpenBSD](distro/rfriends3_core_bsd.md)<br>・[NetBSD](distro/rfriends3_core_bsd.md)<br>|
 | 5| コンテナ   |・[Docker(Linux,Windows,macOS)](distro/docker.md)<br>・[WSL Containers](distro/wslcontainers.md)<br>・[Apple Container](distro/applecontainer.md)<br>・[LXD/LXC](distro/lxd.md)|
 | 6| ラズベリーパイ  |・[RaspberryPi -script-](distro/raspberrypi.md)<br>・[RaspberryPi -image-](distro/raspi_image.md)<br>・[DIetPi -script-](distro/dietpi.md)<br>・[DIetPi -image-](distro/dietpi_image.md)<br>・[Alpine -image-](distro/alpine_image.md)<br>・[Volumio](distro/volumio.md)<br>・[moode audio](distro/moode.md)| 
-| 7| スマートフォン |・[Termux -script-](distro/termux.md)<br>・[UserLAnd](distro/userland.md)<br>・[android linux terminal](distro/rfriends3_core.md)|
+| 7| スマートフォン |・[Termux](distro/termux.md)<br>・[UserLAnd](distro/userland.md)<br>・[android linux terminal](distro/rfriends3_core.md)|
 | 8| Chromebook  |・[Linux開発環境](distro/chromeos.md)| 
 | 9| iPhone / iPad |・[iSH Shell](distro/ios.md)| 
 | 10| 仮想（qemu）   |・[Windows](distro/win_qemu.md)<br>・[Linux](distro/linux_qemu.md)<br>・[macOS](distro/macos_qemu.md)|
