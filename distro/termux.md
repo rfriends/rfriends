@@ -307,7 +307,7 @@ microSDが存在する場合、~/storage以下にmedia-1,external-1といった�
 > [!CAUTION]  
 > どちらも存在しない場合や、エラーになる場合は、  
 > termuxがmicroSDを認識していません。  
-> rm -rf ~/storage を実行後、termux-setup-storage を実行してみてください。  
+> termux-setup-storage を実行してみてください。  
 > SDCARDは初期化されないはずですが、自己責任で。 
   
 #### 2) usr3ディレクトリの作成
