@@ -1,4 +1,4 @@
-## Termux版rfriends3でラジオ録音(script編)    
+## Termux版rfriends3でラジオ録音    
   
 余ったandroidスマホとTermuxでラジオ録音サーバを作ろう  
   
