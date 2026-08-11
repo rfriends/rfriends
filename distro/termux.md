@@ -297,7 +297,7 @@ tmpdir = ""
   
 microSDを録音ディレクトリに設定する方法は、以下を参照してください。  
   
-[録音ディレクトリをmicroSDに設定](termux_microsd.md)
+[Termux版rfriends3でmicroSDを使う](termux_microsd.md)
   
   
   
