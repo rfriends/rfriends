@@ -30,14 +30,12 @@ PS> wsl --list --online
   
 |最終確認|判定|ディストリビューション|sh|備考|   
 |---|:---:|---|---|---|  
-
 |2025/05/02|〇|Ubuntu &nbsp;&nbsp;&nbsp;&nbsp;(24.04)|ubuntu||   
 |2026/04/24|〇|Ubuntu-26.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-24.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-22.04|ubuntu||  
 |||openSUSE-Leap-16.0|suse||   
 |2025/05/02|〇|openSUSE-Tumbleweed|suse||  
-|||openSUSE-Tumbleweed|suse||  
 |||openSUSE-Leap-16.0|suse||  
 |||SUSE-Linux-Enterprise-15-SP7|suse||  
 |||SUSE-Linux-Enterprise-16.0|suse||  
