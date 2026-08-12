@@ -50,12 +50,6 @@ export optsamba="off"
 
 $ sh install_ubuntu.sh
 ```
-ubuntu 26.04, debian 13の場合、以下が必要です。
-```
-$ cd
-$ cd rfriends3_core
-$ sh lighttpd_override.sh
-```
   
 ### 2.2 インストール終了    
   
