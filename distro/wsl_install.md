@@ -105,20 +105,24 @@ Ctrl + Alt + Del キーを同時に押してタスクマネージャーを起動
   
 ## ３．wslとLinuxのインストール  
   
-### 3.1 wslのインストール  
+### 3.1 wslのアップデート    
+  
+PowerShell(管理者)を起動し、以下のコマンドを実行します。( - は2個)  
+
+```  
+PS> wsl --update 
+```  
+一旦、Windowsを再起動してください。  
+  
+### 3.2 wslのインストール  
   
 PowerShell(管理者)を起動し、以下のコマンドを実行します。( - は2個)  
 ```  
-PS> wsl --update
 PS> wsl --install  
 ```
   
 ![2](https://github.com/user-attachments/assets/0252b8a4-5579-4e74-9499-12ea1c9c37e3)  
   
-一旦、Windowsを再起動してください。  
-  
-### 3.2 Linuxのインストール  
-
 すでに、Ubuntu（2026/08/12 現在 Ubuntu 26.04）がインストールされています。  
   
 ```
@@ -129,17 +133,36 @@ Provisioning the new WSL instance Ubuntu
 This might take a while...
 ```
      
-新規の場合は、ユーザの作成とパスワードを要求されます。  
-既存ユーザの場合は、新規にubuntu等をインストールするか、インストール済のディストリを起動してください。  
+ユーザの作成とパスワードを要求されます。  
   
 ```
 Create a default Unix user account: ユーザ名
 New password: パスワード
 Retype new password: パスワード
 passwd: password updated successfully
+
+$ exit
+```
+  
+### 3.3 確認  
+  
+うまくインストールされたか確認します。  
+  
+```
+PS> wsl --list
+Linux 用 Windows サブシステム ディストリビューション:
+Ubuntu (既定値)
 ```
   
 WSLとUbuntuのインストールはこれで完了です。  
+  
+## ４．他のディストリビューションのインストール  
+  
+他のディストリビューションをインストールするには、以下のコマンドを入力します。  
+  
+```  
+PS> wsl --install -d Debian
+```  
   
 以上  
   
