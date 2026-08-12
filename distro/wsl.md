@@ -35,8 +35,12 @@ PS> wsl --list --online
 |2026/04/24|〇|Ubuntu-26.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-24.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-22.04|ubuntu||  
+|||openSUSE-Leap-16.0|suse||   
 |2025/05/02|〇|openSUSE-Tumbleweed|suse||  
+|||openSUSE-Tumbleweed|suse||  
 |||openSUSE-Leap-16.0|suse||  
+|||SUSE-Linux-Enterprise-15-SP7|suse||  
+|||SUSE-Linux-Enterprise-16.0|suse||  
 |2025/05/02|〇|kali-linux|debian||  
 |2025/10/23|〇|Debian &nbsp;&nbsp;&nbsp;&nbsp;(13.1)|debian||  
 |2025/05/02|〇|AlmaLinux-8|stream||  
@@ -61,7 +65,6 @@ PS> wsl --list --online
 |2025/05/02|〇|Ubuntu-18.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-20.04|ubuntu||  
 |2025/05/02|〇|Debian &nbsp;&nbsp;&nbsp;&nbsp;(12)|debian||   
-|2025/05/03|✕|SUSE-Linux-Enterprise-15-SP5|suse|lighttpd<br>not found|  
 |2025/05/02|〇|openSUSE-Leap-15.6|suse||   
 |2025/05/02|〇|FedoraLinux-42|stream||  
 
