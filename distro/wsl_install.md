@@ -46,7 +46,7 @@ PS> wsl --list --online
 |2025/05/02|〇|archlinux|arch||  
 |||FedoraLinux-44|stream||  
 |||FedoraLinux-43|stream|| 
-|2026/02/07|✕|eLxr 12.0|debian|at not found|  
+|2026/08/12|〇|eLxr 12.0|debian|注２）|  
 |2025/05/02|✕|OracleLinux_7_9|stream|yum<br>注１）|   
 |2025/05/02|〇|OracleLinux_8_10|stream|8_7 注１）|  
 |2025/05/02|〇|OracleLinux_9_5|stream|9_1 注１）|  
@@ -74,6 +74,17 @@ $ exit
 PS> wsl --shutdown
 PS> wsl -d ディストリビューション
 ```
+  
+注２）sources.listの変更の必要あり  
+```
+/etc/apt/sources.list
+deb https://mirror.elxr.dev/elxr aria main
+deb https://deb.debian.org/debian bookworm main
+deb https://deb.debian.org/debian bookworm-updates main
+deb https://security.debian.org/debian-security bookworm-security main
+
+```
+  
   
 ## １．システム要件  
 ```  
