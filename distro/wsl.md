@@ -30,7 +30,7 @@ PS> wsl --list --online
   
 |最終確認|判定|ディストリビューション|sh|備考|   
 |---|:---:|---|---|---|  
-|2025/05/02|〇|Ubuntu &nbsp;&nbsp;&nbsp;&nbsp;(24.04)|ubuntu||   
+|2025/05/02|〇|Ubuntu &nbsp;&nbsp;&nbsp;&nbsp;(26.04)|ubuntu||   
 |2026/04/24|〇|Ubuntu-26.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-24.04|ubuntu||  
 |2025/05/02|〇|Ubuntu-22.04|ubuntu||  
@@ -121,26 +121,20 @@ PS> wsl --install
   
 ### 3.2 Linuxのインストール  
 
+すでに、Ubuntu（2026/08/12 現在 Ubuntu 26.04）がインストールされています。  
+  
 ```
-PS> wsl --list --online
-インストールできる有効なディストリビューションの一覧を次に示します。
-'wsl.exe --install <Distro>' を使用してインストールします。
-```
-ここではubuntuをインストールします。  
-debianでもほぼ同じやり方でインストールできます。  
-PowerShellを起動し、以下のコマンドを実行します。  
-```
-PS> wsl --install ubuntu
-ダウンロード中: Ubuntu
-インストール中: Ubuntu
+wsl: ネスト化された仮想化はこのマシンではサポートされていません。
 ディストリビューションが正常にインストールされました。'wsl.exe -d Ubuntu' を使用して起動できます
-```
-ubuntuを起動します。  
-ユーザの作成とパスワードを要求されます。  
-```
-PS> wsl -d ubuntu
+Ubuntu を起動しています...
 Provisioning the new WSL instance Ubuntu
 This might take a while...
+```
+     
+新規の場合は、ユーザの作成とパスワードを要求されます。  
+既存ユーザの場合は、新規にubuntu等をインストールするか、インストール済のディストリを起動してください。  
+  
+```
 Create a default Unix user account: ユーザ名
 New password: パスワード
 Retype new password: パスワード
@@ -155,17 +149,25 @@ WSLとUbuntuのインストールはこれで完了です。
   
 PowerShellを起動し、以下のコマンドを実行します。   
 ```
-PS> wsl -d ubuntu  
+PS> wsl -d Ubuntu  
 
 $ cd         <--- これを忘れないように！
 
-$ sudo apt update
-$ sudo apt upgrade -y
+$ sudo apt update && sudo apt upgrade -y  
+[sudo: authenticate] Password: パスワード
+  
 $ sudo apt install -y git  (gitがすでにインストールされている場合は不要)
 $ rm -rf rfriends3_core
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core
+  
+samba をOFFにする。
+  
 $ sed -i 's/^export optsamba="on"/export optsamba="off"/' install_ubuntu.sh
+または
+$ nano install_ubuntu.sh
+export optsamba="off"
+
 $ sh install_ubuntu.sh
 ```
 ubuntu 26.04, debian 13の場合、以下が必要です。
@@ -205,7 +207,7 @@ PS> wsl --shutdown
   
 PowerShellを起動し、以下のコマンドを実行します。   
 ```
-PS> wsl -d ubuntu  
+PS> wsl -d Ubuntu  
 ```  
   
 ### 5.2 rfriends3のWebサーバへのアクセス  
