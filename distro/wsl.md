@@ -21,7 +21,7 @@
   
 wslのインストール方法については、  
   
-[WSlのインストール](wsl_install.md)  
+[wslのインストール](wsl_install.md)  
   
 ## ２．rfriends3のインストール  
   
