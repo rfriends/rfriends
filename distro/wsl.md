@@ -233,7 +233,7 @@ xxx.xxx.xxx.xxx:8000
 それをクリックすると、右にUbuntuというフォルダが表示されます。  
 ![linux](https://github.com/user-attachments/assets/c81abeb4-b497-4d27-8cb7-3ca60b33e9fa)
 
-以下、Ubuntu¥home¥ユーザ名¥smbdir¥usr2 を辿っていけばrfriendsのデータにアクセスできます。   
+以下、Ubuntu¥home¥ユーザ名¥rfriends3¥usr を辿っていけばrfriendsのデータにアクセスできます。   
 ![usr2](https://github.com/user-attachments/assets/8ad233a2-4ae7-438f-a558-477958e12b5a)
 
 
