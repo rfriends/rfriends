@@ -45,11 +45,10 @@ Volumioにsshアクセスします。
 <img width="600" height="372" alt="clip_4" src="https://github.com/user-attachments/assets/42b2c137-b959-4627-80c5-e20e324c2ddd" />  
   
     
-以下を入力しシステムを最新にし、gitをインストールします。  
+以下を入力しシステムを最新にします。  
   
 ```  
 $ sudo apt-get update 
-$ sudo apt-get install git  
 ```
     
 > [!CAUTION]  
