@@ -40,7 +40,7 @@ raspberry pi volumio インストール
 ## １．Volumioにsshアクセスする。  
   
 Volumioにsshアクセスします。  
-もし、つながらない場合は、ブラウザで、　http://IPアドレス/devにアクセスし、sshをenableにしてください。  
+もし、つながらない場合は、ブラウザで、　IPアドレス/devにアクセスし、sshをenableにしてください。  
   
 <img width="600" height="372" alt="clip_4" src="https://github.com/user-attachments/assets/42b2c137-b959-4627-80c5-e20e324c2ddd" />  
   
