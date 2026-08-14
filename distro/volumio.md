@@ -44,7 +44,7 @@ Volumioにsshアクセスします。
   
 <img width="600" height="372" alt="clip_4" src="https://github.com/user-attachments/assets/42b2c137-b959-4627-80c5-e20e324c2ddd" />  
   
-```
+
     
 > [!CAUTION]  
 > volumio4では、apt-get upgrade は行わないこと。  
