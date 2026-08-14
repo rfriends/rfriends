@@ -53,7 +53,7 @@ $ sudo apt-get install git
 ```
     
 > [!CAUTION]  
-> volumio4では、apt upgrade は行わないこと。  
+> volumio4では、apt-get upgrade は行わないこと。  
   
   
 ## ２．rfriends3のダウンロードとインストール  
