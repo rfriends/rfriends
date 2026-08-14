@@ -23,7 +23,7 @@ volumio のインストールに関しては、
 raspberry pi volumio インストール  
 ```  
   
-> [!TIP]
+> [!TIP]  
 > [有線LANがないRaspberryPi zero2WでVolumio4をセットアップする方法](https://rfriends.github.io/rfriends/tech/30.html)
     
 ここでは、以下のことを前提にしています。  
