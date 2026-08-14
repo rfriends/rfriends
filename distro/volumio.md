@@ -50,7 +50,10 @@ Volumioにsshアクセスします。
 ```  
 $ sudo apt-get update 
 $ sudo apt-get install git  
-```  
+```
+    
+> [!CAUTION]  
+> volumio4では、apt upgrade は行わないこと。  
   
   
 ## ２．rfriends3のダウンロードとインストール  
