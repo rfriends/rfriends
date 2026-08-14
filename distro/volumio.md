@@ -30,7 +30,7 @@ raspberry pi volumio インストール
 当方は以下の環境で確認しました。  
 ・Raspberry Pi 3B / zero 2  
 ・volumio Ver. 4.119 2026/03/24  
-・rfriends3 1.4.3a  
+・rfriends3 1.4.3a / 1.6.1g   
 ・USB-DAC CX31993 384khz HIFI AUDIO  
   
 > [!TIP]  
