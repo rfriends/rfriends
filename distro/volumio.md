@@ -10,22 +10,17 @@ https://volumio.com/
   
   
 初 版 2026/05/08  
-第2版 2026/05/09  
-  
-  
-## ０．前提  
-  
-volumio のインストールに関しては、  
-以下で検索すれば、詳しいサイトが見つかるので  
-そこを参考にインストールしてください。  
+第3版 2026/08/15  
+   
+volumio のインストールに関しては、以下で検索すれば、詳しいサイトが見つかるので、そこを参考にインストールしてください。  
   
 ```  
 raspberry pi volumio インストール  
 ```  
   
-> [!TIP]  
-> [有線LANがないRaspberryPi zero2WでVolumio4をセットアップする方法](https://rfriends.github.io/rfriends/tech/30.html)
-    
+
+## ０．前提  
+  
 ここでは、以下のことを前提にしています。  
   
 ・Volumioが正常に動作し、Webアクセス出来ていること。  
@@ -38,9 +33,9 @@ raspberry pi volumio インストール
 ・rfriends3 1.4.3a  
 ・USB-DAC CX31993 384khz HIFI AUDIO  
   
-volumioは現状32bit版なので、RaspberryPiはたぶんどの機種でも大丈夫だと思います。  
-ただし、メモリ512KBではちょっと苦しいかもしれません。  
-  
+> [!TIP]  
+> [有線LANがないRaspberryPi zero2WでVolumio4をセットアップする方法](https://rfriends.github.io/rfriends/tech/30.html)
+    
   
 ## １．システムを最新にする。  
   
