@@ -23,6 +23,9 @@ volumio のインストールに関しては、
 raspberry pi volumio インストール  
 ```  
   
+> [!TIP]
+> [有線LANがないRaspberryPi zero2WでVolumio4をセットアップする方法](https://rfriends.github.io/rfriends/tech/30.html)
+    
 ここでは、以下のことを前提にしています。  
   
 ・Volumioが正常に動作し、Webアクセス出来ていること。  
