@@ -39,7 +39,8 @@ raspberry pi volumio インストール
   
 ## １．システムを最新にする。  
   
-　Volumioにsshアクセスします。  
+Volumioにsshアクセスします。  
+もし、つながらない場合は、ブラウザで、　http://IPアドレス/devにアクセスし、sshをenableにしてください。  
   
 <img width="600" height="372" alt="clip_4" src="https://github.com/user-attachments/assets/42b2c137-b959-4627-80c5-e20e324c2ddd" />  
   
@@ -47,7 +48,7 @@ raspberry pi volumio インストール
 以下を入力しシステムを最新にし、gitをインストールします。  
   
 ```  
-$ sudo apt-get update && sudo apt-get upgrade -y  
+$ sudo apt-get update 
 $ sudo apt-get install git  
 ```  
   
