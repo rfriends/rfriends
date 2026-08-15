@@ -5,8 +5,7 @@
 https://volumio.com/  
   
 以前のドキュメントは古くなったので全面的に書き換えました。(2020/05/08)  
-この記事は、Volumio　４　についてのものです。  
-  
+　　  
 <img width="600" height="300" alt="47233834-5352-4b09-9308-f88842119cb5" src="https://github.com/user-attachments/assets/d62bfc88-a841-4fb4-a8b3-3ebdd3e542f2" />
   
   
@@ -25,7 +24,7 @@ raspberry pi volumio インストール
   
 ここでは、以下のことを前提にしています。  
   
-・Volumio4 が正常に動作し、Webアクセス出来ていること。  
+・Volumio が正常に動作し、Webアクセス出来ていること。  
 ・スピーカ等を接続して音が出る環境ができていること。  
 ・SSHアクセスができていること。  
   
