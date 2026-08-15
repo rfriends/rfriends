@@ -77,13 +77,13 @@ volumioが1台の時は、volumio.localで基本的には困りませんが、�
 　　
 <img width="832" height="580" alt="clip_19" src="https://github.com/user-attachments/assets/71e208e5-5776-440b-921b-6d1210a22f94" />
 
-USB_DACを選択し、保存する。  
+USB Audioを選択し、保存する。  
 
 トップ画面より、ウェブラジオを選択し、適当な局を再生する。  
    
 <img width="832" height="580" alt="clip_25" src="https://github.com/user-attachments/assets/1bb2b9c6-a6bd-4d90-9189-d93657ec94b1" />
 
-スピーカより音が出ればOK。  
+スピーカより音が出れば成功です。  
   
 ### ５．SSH接続のテスト  
 
