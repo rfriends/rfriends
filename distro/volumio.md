@@ -58,7 +58,8 @@ Volumioにsshアクセスします。
   
 ```  
 $ cd ~/  
-$ rm -rf rfriends_volumio  
+$ rm -rf rfriends_volumio
+$sudo apt-get install git  
 $ git clone https://github.com/rfriends/rfriends_volumio.git  
 $ cd rfriends_volumio  
 $ sh rfriends_volumio.sh  
