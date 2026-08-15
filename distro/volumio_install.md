@@ -73,17 +73,22 @@ volumioが1台の時は、volumio.localで基本的には困りませんが、�
 ### ４．音のテスト  
   
 接続した、USB-DAC経由で音が出るかを確認する。  
-トップ画面より、再生設定を選択する。 
-　　
+トップ画面より、再生設定を選択する。  
+  
+<img width="832" height="580" alt="clip_28" src="https://github.com/user-attachments/assets/b69b865b-3583-4a9b-8914-8c78180522ee" />
+  
+出力デバイスで、USB Audioを選択し、保存する。  
+  
 <img width="832" height="580" alt="clip_19" src="https://github.com/user-attachments/assets/71e208e5-5776-440b-921b-6d1210a22f94" />
+    
 
-USB Audioを選択し、保存する。  
-
-トップ画面より、ウェブラジオを選択し、適当な局を再生する。  
+トップ画面より、ミュージック - ウェブラジオを選択し、適当な局を再生する。  
+  
+<img width="832" height="580" alt="clip_29" src="https://github.com/user-attachments/assets/5cd06567-4550-4522-ad83-3c6a4188b728" />  
+  
+スピーカより音が出れば成功です。  
    
 <img width="832" height="580" alt="clip_25" src="https://github.com/user-attachments/assets/1bb2b9c6-a6bd-4d90-9189-d93657ec94b1" />
-
-スピーカより音が出れば成功です。  
   
 ### ５．SSH接続のテスト  
 
