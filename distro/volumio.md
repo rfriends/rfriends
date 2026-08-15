@@ -15,8 +15,8 @@ https://volumio.com/
 volumio のインストールに関しては、Raspberry Pi Imagerを使う方法ではなく、公式からダウンロードしてインストールする方法をお勧めします。  
 以下を参考にインストールしてください。  
     
-[volumioのインストール方法](volumio_install.md)  
-[有線LANがないRaspberryPi zero2WでVolumio4をセットアップする方法](https://rfriends.github.io/rfriends/tech/30.html)
+[volumio4のインストール方法](volumio_install.md)  
+[有線LANがないRaspberryPi zero2WでVolumio4をセットアップする方法](volumio_wifi.md)
   
 
 ## ０．前提  
