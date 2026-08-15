@@ -56,8 +56,7 @@ androidのダウンロードディレクトリにアクセスし、先ほど２�
     
 ```
 $ cd
-$ cd storage
-$ cd downloads  
+$ cd storage/downloads  
 $ ls  
 termux.sh  
 ```
