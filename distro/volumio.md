@@ -12,12 +12,11 @@ https://volumio.com/
 初 版 2026/05/08  
 第3版 2026/08/15  
    
-volumio のインストールに関しては、以下で検索すれば、詳しいサイトが見つかるので、そこを参考にインストールしてください。  
-ただし、Raspberry Pi Imagerを使う方法ではなく、公式からダウンロードしてインストールする方法をお勧めします。  
-  
-```  
-raspberry pi volumio インストール  
-```  
+volumio のインストールに関しては、Raspberry Pi Imagerを使う方法ではなく、公式からダウンロードしてインストールする方法をお勧めします。  
+以下を参考にインストールしてください。  
+    
+[volumioのインストール方法](volumio_install.md)  
+[有線LANがないRaspberryPi zero2WでVolumio4をセットアップする方法](https://rfriends.github.io/rfriends/tech/30.html)
   
 
 ## ０．前提  
@@ -30,14 +29,11 @@ raspberry pi volumio インストール
   
 当方は以下の環境で確認しました。  
   
-・Raspberry Pi 3B / zero 2  
+・Raspberry Pi 2 / 3B / zero 2  
 ・volumio Ver. 4.119 2026/03/24  
 ・rfriends3 1.4.3a / 1.6.1g   
 ・USB-DAC CX31993 384khz HIFI AUDIO  
   
-> [!TIP]  
-> [有線LANがないRaspberryPi zero2WでVolumio4をセットアップする方法](https://rfriends.github.io/rfriends/tech/30.html)
-    
   
 ## １．Volumioにsshアクセスする。  
   
