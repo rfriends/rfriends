@@ -8,7 +8,7 @@
 * rfriends3は、操作がWEBサーバ（Lighttpd）経由で出来、とても簡単になっています。
 * rfriends3は、PC,MAC,スマホ等WEBブラウザ(chrome,edge,firefox,safari等)が動作するものであれば、操作する端末はなんでも可能です。
 * rfriends3は、sambaによるファイル共有、従来のsshによるcuiアクセスもできます。
-* ### クリック ->「[余ったスマホでラジオ録音](distro/termux.md)」     
+* #### クリック ->「[余ったスマホでラジオ録音](distro/termux.md)」     
 　　
   
 rfriends3の操作イメージ         
