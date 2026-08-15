@@ -140,10 +140,35 @@ xxx.xxx.xxx.xxx:8000
 まずは、チュートリアルでrfriends3の操作に慣れてください。  
   
 [チュートリアル](https://rfriends.github.io/rfriends/manual/tutorial.html)  
-   
-## ５．その他  
 
-### 5.1 sambaアクセス  
+### ５．録音ディレクトリ    
+  
+### 5.1 録音ディレクトリの設定（内部）  
+  
+　初期はスマホのダウンロードディレクトリに設定されています。通常はそのまま変更する必要はありません。  
+  
+rfriends3の画面で  
+  
+設定 - 録音フォルダ  
+  
+を選択し、録音データの格納場所を指定します。  
+  
+・スマホのダウンロードディレクトリの場合  
+  
+```  
+usrdir=/data/data/com.termux/files/home/storage/downloads/usr2/  
+tmpdir = ""  
+```  
+  
+### 5.2 録音ディレクトリの設定（microSD）  
+  
+microSDを録音ディレクトリに設定する方法は、以下を参照してください。  
+  
+[Termux版rfriends3でmicroSDを使う](termux_microsd.md)
+   
+## ６．その他  
+
+### 6.1 sambaアクセス  
     
   
 以下の方法で、rfriends3の録音データにアクセスできます。  
@@ -243,7 +268,7 @@ force user = termux
 $ smbd -D -s $PREFIX/etc/smb.conf  
   
   
-### 5.2 外部PCからのSSHアクセス  
+### 6.2 外部PCからのSSHアクセス  
   
 外部からSSHアクセスをしない方は以下の操作は不要です。  
   
@@ -265,7 +290,7 @@ teratermやRLoginを使用すると便利です。
   
 PCがLinuxでWARNINGが出て接続できないときはPCのホームディレクトリの.ssh/known_hostsを削除してみてください。  
   
-### 5.3 sftpによるファイル転送  
+### 6.3 sftpによるファイル転送  
   
 　sshによるアクセスができたらPCでsftpによるファイル転送に挑戦してみましょう。  
   
@@ -278,30 +303,9 @@ PCがLinuxでWARNINGが出て接続できないときはPCのホームディレ�
 成功すると以下のような画面になります。  
   
 ![16](https://github.com/user-attachments/assets/4a602a09-e98a-4289-942a-21b1c87c93c5)  
+    
   
-### 5.4 録音ディレクトリの設定（内部）  
-  
-　初期はスマホのダウンロードディレクトリに設定されています。通常はそのまま変更する必要はありません。  
-  
-rfriends3の画面で  
-  
-設定 - 録音フォルダ  
-  
-を選択し、録音データの格納場所を指定します。  
-  
-・スマホのダウンロードディレクトリの場合  
-  
-```  
-usrdir=/data/data/com.termux/files/home/storage/downloads/usr2/  
-tmpdir = ""  
-```  
-  
-### 5.5 録音ディレクトリの設定（microSD）  
-  
-microSDを録音ディレクトリに設定する方法は、以下を参照してください。  
-  
-[Termux版rfriends3でmicroSDを使う](termux_microsd.md)
-  
+以上    
   
   
    
