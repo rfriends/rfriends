@@ -33,6 +33,7 @@
 |27|[配信データ(radiko,radiru,webradio)を時間を指定して、録音する。 ](27.md)||
 |28|[聴取でJCBAの音を出す方法(lighttpd)](28.md)||
 |29|[Raspberry Pi Imagerを使用してカスタムイメージをmicroSDに書く](29.md)||
+|30|[LinuxでNAS(samba/cifs)をマウントし、rfriends3の録音ディレクトリに設定する。](30.md)||
 
 
 
