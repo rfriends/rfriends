@@ -13,6 +13,7 @@
 初版：2021/01/19  
 改版：2026/08/15  
   
+  
 ## １．Termuxのインストール   
   
 以下のものが必要になります。  
@@ -23,6 +24,7 @@ androidOS7未満では動作しません。
 Termuxのインストール方法については、以下のリンクを参照してください。  
   
 [Termuxのインストール方法](termux_inst.md)  
+  
   
 ## ２．インストールスクリプトのダウンロード  
   
@@ -36,6 +38,7 @@ Termuxのインストール方法については、以下のリンクを参照�
 Github : [termux.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh)    
 または  
 xrea : [termux.sh](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/termux.sh)   
+  
   
 ## ３．rfriends3のインストール  
   
@@ -125,6 +128,7 @@ wake-lockの有効化を行わないと、スマホがスリープしたとき�
   
 以上でrfriends3のインストールは完了です。Webサーバ（lighttpd）はすでに起動しています。  
   
+  
 ## ４．rfriends3にアクセス  
   
 ### 4.1 rfriends3のWebサーバへのアクセス  
@@ -142,8 +146,9 @@ xxx.xxx.xxx.xxx:8000
 まずは、チュートリアルでrfriends3の操作に慣れてください。  
   
 [チュートリアル](https://rfriends.github.io/rfriends/manual/tutorial.html)  
-
-### ５．録音ディレクトリ    
+  
+  
+## ５．録音ディレクトリ    
   
 ### 5.1 録音ディレクトリの設定（内部）  
   
@@ -167,8 +172,9 @@ tmpdir = ""
 microSDを録音ディレクトリに設定する方法は、以下を参照してください。  
   
 [Termux版rfriends3でmicroSDを使う](termux_microsd.md)
+  
    
-## ６．その他  
+## ６．録音データ 
 
 ### 6.1 sambaアクセス  
     
@@ -269,8 +275,24 @@ force user = termux
   
 $ smbd -D -s $PREFIX/etc/smb.conf  
   
+### 6.2 sftpによるファイル転送  
   
-### 6.2 外部PCからのSSHアクセス  
+　sshによるアクセスができたらPCでsftpによるファイル転送に挑戦してみましょう。  
+  
+ファイル転送ソフトでsftpに対応しているソフトをインストールしてください。ここでは、FileZillaを使用します。  
+  
+以下のように設定してください。IP アドレスは4.1で取得したもの、ユーザ名は任意です。  
+  
+![15](https://github.com/user-attachments/assets/3dd487fb-fccc-46bf-a21d-214d7e1e3148)  
+  
+成功すると以下のような画面になります。  
+  
+![16](https://github.com/user-attachments/assets/4a602a09-e98a-4289-942a-21b1c87c93c5)  
+  
+  
+## ７．その他
+  
+### 7.1 外部PCからのSSHアクセス  
   
 外部からSSHアクセスをしない方は以下の操作は不要です。  
   
@@ -292,21 +314,13 @@ teratermやRLoginを使用すると便利です。
   
 PCがLinuxでWARNINGが出て接続できないときはPCのホームディレクトリの.ssh/known_hostsを削除してみてください。  
   
-### 6.3 sftpによるファイル転送  
+### 7.2 Bluetooth スピーカ  
   
-　sshによるアクセスができたらPCでsftpによるファイル転送に挑戦してみましょう。  
+インストール直後は、スマホのスピーカから音が出ていると思います。  
+これに、スマホの標準機能で、Bluetooth スピーカを接続すれば、rfriends3からの音もBluetooth スピーカから出ます。  
+当然ですが、念のため。  
   
-ファイル転送ソフトでsftpに対応しているソフトをインストールしてください。ここでは、FileZillaを使用します。  
-  
-以下のように設定してください。IP アドレスは4.1で取得したもの、ユーザ名は任意です。  
-  
-![15](https://github.com/user-attachments/assets/3dd487fb-fccc-46bf-a21d-214d7e1e3148)  
-  
-成功すると以下のような画面になります。  
-  
-![16](https://github.com/user-attachments/assets/4a602a09-e98a-4289-942a-21b1c87c93c5)  
     
-  
 以上    
   
   
