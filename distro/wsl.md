@@ -29,33 +29,33 @@ wslのインストール方法については、
   
 PowerShellを起動し、以下のコマンドを実行します。   
 ```
-PS> wsl -d Ubuntu  
+PS> wsl -d Ubuntu
 
 $ cd         <--- これを忘れないように！
 
 $ sudo apt update && sudo apt upgrade -y  
-[sudo: authenticate] Password: パスワード
+[sudo: authenticate] Password: パスワード (install時に設定したもの)  
   
 $ sudo apt install -y git  (gitがすでにインストールされている場合は不要)
 $ rm -rf rfriends3_core
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core
   
-samba をOFFにする。
-  
-$ sed -i 's/^export optsamba="on"/export optsamba="off"/' install_ubuntu.sh
-または
-$ nano install_ubuntu.sh
-export optsamba="off"
-
 $ sh install_ubuntu.sh
 ```
+
+> [!NOTE]
+> もし、バージョンを指定したい場合は、  
+> wsl -d Ubuntu-26.04  
   
 ### 2.2 インストール終了    
   
 ```
-ip address is lo UNKNOWN 127.0.0.1/8 eth0 UP 172.19.148.3/20 .  
-visit rfriends at http://xxx.xxx.xxx.xxx:8000  
+IP address : 10.255.255.254/32 172.31.205.45/20
+
+Mon Aug 17 19:11:55 JST 2026
+end install common
+...
 finished  
 ```
 finishedと表示されてインストールは完了です。  
@@ -65,6 +65,7 @@ finishedと表示されてインストールは完了です。
 または、以下のコマンドでも確認できます。 
 ```
 $ hostname -I
+172.31.205.45
 ```
   
 次に、ubuntuを終了し、shutdownします。  
@@ -88,11 +89,13 @@ PS> wsl -d Ubuntu
   
 　4.2でメモをしたIPアドレスを使ってrfriends3にアクセスします。  
   
-ホストＰＣからWEBブラウザ（chrome,edge,firefox等）で上記で表示された  
+ホストＰＣからWEBブラウザ（chrome,edge,firefox等）に   
   
-xxx.xxx.xxx.xxx:8000  
+172.31.205.45:8000  
+（このアドレスは、環境により異なります。）    
   
 と入力し、以下のような画面が出たら成功です。ブックマークすると便利です。  
+
 ![rfriends](https://github.com/user-attachments/assets/319f6021-6808-4b52-9660-7832d0980459)
   
 ### 3.3 チュートリアル
