@@ -76,16 +76,14 @@ $ sudo apt update && sudo apt upgrade -y
 [sudo: authenticate] Password: パスワード (install時に設定したもの)  
   
 $ sudo apt install -y git  (gitがすでにインストールされている場合は不要)
-$ rm -rf rfriends3_core
+$ rm -rf rfriends3_core 　 (初めての場合は不要)
+
 $ git clone https://github.com/rfriends/rfriends3_core.git  
 $ cd rfriends3_core
   
 $ sh install_ubuntu.sh
 ```
-
-> [!NOTE]
-> もし、バージョンを指定したい場合は、  
-> wsl -d Ubuntu-26.04  
+インストール完了までしばらくお待ちください。
   
 ### 2.2 インストール終了    
   
