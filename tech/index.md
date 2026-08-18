@@ -35,7 +35,7 @@
 |29|[Raspberry Pi Imagerを使用してカスタムイメージをmicroSDに書く](29.md)||
 |30|[LinuxでNAS(samba/cifs)をマウントし、rfriends3の録音ディレクトリに設定する。](30.md)||
 |31|[Windowsの仮想化を有効にする。](31.md)||
-|32|[WSLのインストール]](32.md)||
+|32|[WSLのインストール](32.md)||
 
 
 
