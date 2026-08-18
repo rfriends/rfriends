@@ -66,10 +66,13 @@ Would you like to opt-in to platform metrics collection (Y/n)? To see an example
   
 ### 2.1 インストール  
   
-PowerShellを起動し、以下のコマンドを実行します。   
+PowerShellを起動し、以下のコマンドを実行しUbuntuを実行します。   
 ```
 PS> wsl -d Ubuntu
-
+```
+Ubuntu上で以下を入力してください。  
+  
+```
 $ cd         <--- これを忘れないように！
 
 $ sudo apt update && sudo apt upgrade -y  
