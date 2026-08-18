@@ -19,7 +19,7 @@ rfriends3のqemu版は、仮想環境で、イメージをダウンロードし�
 qemuを実行にするには、仮想化が有効である必要があります。  
 以下を参考に設定してください。
 
-[Windowsの仮想化を有効にする](win_virturl.md)
+[Windowsの仮想化を有効にする](win_virtual.md)
     
 ## ３．qemu版rfriends3イメージのダウンロードとインストール（約1.4GB）   
   
