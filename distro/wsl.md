@@ -73,18 +73,9 @@ PS> wsl -d Ubuntu
 Ubuntu上で以下を入力してください。  
   
 ```
-$ cd         <--- これを忘れないように！
-
-$ sudo apt update && sudo apt upgrade -y  
-[sudo: authenticate] Password: パスワード (install時に設定したもの)  
-  
-$ sudo apt install -y git  (gitがすでにインストールされている場合は不要)
-$ rm -rf rfriends3_core 　 (初めての場合は不要)
-
-$ git clone https://github.com/rfriends/rfriends3_core.git  
-$ cd rfriends3_core
-  
-$ sh install_ubuntu.sh
+$ cd    
+$ wget rf3.s331.xrea.com/wsl.sh  
+# sh wsk.ah  
 ```
 インストール完了までしばらくお待ちください。
   
