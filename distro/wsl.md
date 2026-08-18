@@ -75,7 +75,7 @@ Ubuntu上で以下を入力してください。
 ```
 $ cd    
 $ wget rf3.s331.xrea.com/wsl.sh  
-# sh wsk.ah  
+# sh wsl.sh  
 ```
 インストール完了までしばらくお待ちください。
   
