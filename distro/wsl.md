@@ -43,6 +43,23 @@ PCを再起動すればインストールは完了です。
 Ubuntuのインストールは、ターミナルを開き、以下を入力してください。
 ```  
 PS> wsl --install  -d Ubuntu
+
+ダウンロードしています: Ubuntu
+インストールしています: Ubuntu
+ディストリビューションが正常にインストールされました。'wsl.exe -d Ubuntu' を使用して起動できます
+Ubuntu を起動しています...
+
+ユーザ名、パスワードを入力してください。
+
+Create a default Unix user account: user 
+New password:
+Retype new password:
+passwd: password updated successfully
+
+Canonicalによる匿名のデータ取集を許可する場合はy、拒否する場合はnを入力して下さい。
+
+Would you like to opt-in to platform metrics collection (Y/n)? To see an example of the data collected, enter 'e'.
+[Y/n/e]: n
 ```
   
 ## ２．rfriends3のインストール  
