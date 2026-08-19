@@ -36,8 +36,8 @@
 |30|[LinuxでNAS(samba/cifs)をマウントし、rfriends3の録音ディレクトリに設定する。](30.md)||
 |31|[Windowsの仮想化を有効にする。](31.md)||
 |32|[WSLのインストール](32.md)||
-|33|[easy インストール :　Ubuntu 版rfriends3でラジオ録音(33.md)||
-|34|[\(easy インストール\) Debian 版rfriends3でラジオ録音(34.md)||
+|33|[easy インストール :　Ubuntu 版rfriends3でラジオ録音](33.md)||
+|34|[(easy インストール) Debian 版rfriends3でラジオ録音](34.md)||
 
 
 
