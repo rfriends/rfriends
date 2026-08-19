@@ -4,13 +4,16 @@ RaspiOSのイメージにrfriends3をスクリプトによりインストール�
     
 2026/05/14 改定  
   
+<img width="600" height="450" alt="PXL_20260819_170401448 PORTRAIT~2" src="https://github.com/user-attachments/assets/70682c46-174e-4620-aa6c-63ea824c3ba2" />
+
+
+    
 ## 1. RaspberryPi Imagerを使用してmicroSDを作成する。     
 
 以下を参考にして、作成してください。  
   
 [RaspberryPi Imagerを使用してmicroSDを作成する。](raspberrypi_sd.md)
-  
-![1](https://github.com/user-attachments/assets/de69af3e-f501-40e4-b387-3901962eaaaa)     
+     
   
 ## 2. microSDをraspberrypiにセットし起動する。 
   
@@ -25,6 +28,7 @@ RaspiOSのイメージにrfriends3をスクリプトによりインストール�
 ```
    でアクセスできます。  
   
+
 ## 4. システムを最新にし、gitアプリをインストールする。  
   
 ```
@@ -57,11 +61,6 @@ RaspiOSのイメージにrfriends3をスクリプトによりインストール�
 ```
 3) debian版(apache2)  
   
-> [!CAUTION]  
-> ~~trixieの場合は、これを選択~~   
-> ~~他では予約関係が動作しません。~~
-> 動作するようになりました。 
-  
 ```
    $ cd  ~/  
    $ rm -rf rfriends3_core  
@@ -83,6 +82,7 @@ RaspiOSのイメージにrfriends3をスクリプトによりインストール�
    or  
    http://xxx.xxx.xxx.xxx:8000  
 ```  
+<img width="687" height="621" alt="clip_2" src="https://github.com/user-attachments/assets/c8224f6a-c312-42f0-89b3-1ae11b407b5e" />
   
   
   
