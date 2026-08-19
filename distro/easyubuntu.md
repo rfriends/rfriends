@@ -19,7 +19,7 @@ ubuntu系LinuxがインストールされたPCを対象としています。
   
 以下のリンクを右クリックし、ホームディレクトリに保存してください。  
   
-[rf3ubuntu.sh]()  
+[rf3ubuntu.sh](http://rf3.s331.xrea.com/rf3ubunut.sh)  
     
 ## ３．rf3ubuntu.shの確認  
   
@@ -41,7 +41,7 @@ rf3ubuntu.sh
 インストール完了まで、しばらくお待ちください。    
   
     
-## ４．rfriends3の実行    
+## ５．rfriends3の実行    
     
 ウェブブラウザ（edge,chrome,firefox,...）を起動し、以下を入力します。  
   
