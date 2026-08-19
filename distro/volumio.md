@@ -53,7 +53,7 @@ Volumioにsshアクセスします。
 > volumio4では、apt-get upgrade は行わないこと。  
   
   
-## ２．rfriends3のダウンロードとインストール  
+## ３．rfriends3のダウンロードとインストール  
   
 各種ツールをインストールし、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
@@ -68,7 +68,7 @@ $ sh rf3volumio.sh
 念のため、システムを再起動してください。  
   
   
-## ３．rfriends3の実行  
+## ４．rfriends3の実行  
   
 volumioにWebアクセス出来ているはずなので  
     
@@ -96,9 +96,9 @@ http://(IPアドレス):8000
 
   
   
-## ４．動作確認 (ラジコを聴く)  
+## ５．動作確認 (ラジコを聴く)  
   
-### 4.1 まずrfriends3のalsa設定を行ってください。  
+### 5.1 まずrfriends3のalsa設定を行ってください。  
   
 管理 - OS別機能 - Linux - audio選択(ALSA)  
 <img width="290" height="179" alt="clip_7" src="https://github.com/user-attachments/assets/4a1a758d-83bf-4b50-b656-89901ecdb1af" />
@@ -107,7 +107,7 @@ Card.Mixerを選択してください。
 <img width="259" height="284" alt="clip_8" src="https://github.com/user-attachments/assets/e457bbc4-e446-480f-bef6-863082196acd" />
   
   
-### 4.2 次に、rfriends3でradikoを聞いてみます。  
+### 5.2 次に、rfriends3でradikoを聞いてみます。  
   
 Volumio側で音量を絞ってください。  
 トップ画面の右下のスピーカーアイコンをタップするとボリューム調整画面が表示されます。  
@@ -125,7 +125,7 @@ rfriendsのメニューで、ラジコ - 放送中 - 番組を選択し
 ![6](https://github.com/user-attachments/assets/b674bc07-4f10-418e-bb80-f324f655a3ce)  
   
     
-## ５．volumioでjacketを表示する方法
+## ６．volumioでjacketを表示する方法
   
 volumioでは埋め込みジャケットに対応していないため、画面が少しさみしくなります。  
 rfriends3では、ファイル転送時に、folder.jpgを作成してjacket表示をさせることができます。  
@@ -169,9 +169,9 @@ rftrans_podcast = 2
 <img width="601" height="541" alt="clip_11" src="https://github.com/user-attachments/assets/3f3b2648-4fd8-4368-a5a2-6d0ba98c21bd" />
  
 
-## ６．その他  
+## ７．その他  
   
-### 6.1 NHK らじるらじるを聞く  
+### 7.1 NHK らじるらじるを聞く  
   
 radikoと同様にrfriendsでNHKらじるらじるも聞けますが、  
 以下の設定でVolumio単体でも聞けるようになります。  
@@ -186,7 +186,7 @@ $ sudo cp -p my-web-radio /data/favourites/.
 マイウェブラジオからアクセスしてください。  
 ![clip_2](https://github.com/user-attachments/assets/edd83de7-7eb7-4d27-aa72-8c19a8d8fddd)  
 
-### 6.2 sambaアクセスについて  
+### 7.2 sambaアクセスについて  
 
 Windows11 homeユーザでsambaアクセスができない場合、 
 sshでログインし、  
