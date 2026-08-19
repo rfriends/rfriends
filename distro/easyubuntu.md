@@ -21,27 +21,19 @@ ubuntu系LinuxがインストールされたPCを対象としています。
   
 [rf3ubuntu.sh](http://rf3.s331.xrea.com/rf3ubunut.sh)  
     
-## ３．rf3ubuntu.shの確認  
+## ３．rfriends3のインストール  
   
-Terminalを開き、以下を入力し、rf3ubuntu.shを確認する。    
+Terminalを開き、以下を入力し、rf3ubuntu.shを実行する。    
     
 ```  
-$ cd  
-$ ls  
-rf3ubuntu.sh  
-```  
-## ４．rfriends3のインストール    
-  
-以下を実行する。   
-    
-```  
+$ cd    
 $ sh rf3ubuntu.sh    
 ```     
   
 インストール完了まで、しばらくお待ちください。    
   
     
-## ５．rfriends3の実行    
+## ４．rfriends3の実行    
     
 ウェブブラウザ（edge,chrome,firefox,...）を起動し、以下を入力します。  
   
