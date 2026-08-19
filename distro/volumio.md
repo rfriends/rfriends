@@ -53,7 +53,7 @@ Volumioにsshアクセスします。
 > volumio4では、apt-get upgrade は行わないこと。  
   
   
-## ３．rfriends3のダウンロードとインストール  
+## ３．rfriends3のインストール  
   
 各種ツールをインストールし、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
