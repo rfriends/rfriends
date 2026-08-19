@@ -1,0 +1,111 @@
+## LiveUSB版rfriends3でラジオ録音    
+  
+rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
+webサーバにlighttpd、ファイル共有にsambaを採用したLinux版です。  
+インストールは全自動で行います。  
+
+ただし、お試し用のため、再起動すると、rfriends3、データはすべて消えますのでご注意ください。  
+  
+
+
+  
+初 版　2026/08/19   
+  
+## １．ディストリビューション  
+
+LiveUSB版は、現在、ubuntu系に対応しています。  
+確認済は以下のとおり。
+  
+・lubuntu
+・antix
+  
+  
+## ２．LiveUSB作成および起動  
+  
+・希望するディストリビューションのISOイメージをダウンロードする。  　　
+・Rufus,Ventoy等を使用してISOイメージをUSBメモリに追加する。  
+・USBメモリをPCにセットし、起動する。
+  
+## ３．rfriends3のインストール  
+
+・LiveUSBが起動したPCでブラウザを実行する。  
+・ブラウザに、’rfriends3’と入力し、rfriends3のサイトを開く。
+・LiveUSBというところをクリックする。  
+  このページが開く。
+  
+### 3.1 インストールSHのダウンロードとインストール   
+
+以下のリンクを右クリックし、ホームディレクトリに保存する。
+  
+[rf3ubuntu.sh]()
+
+Terminalを開き、以下を入力し、rf3ubuntu.shを確認する。  
+  
+```
+$ cd
+$ ls
+rf3ubuntu.sh
+```
+### 3.2 インストール   
+
+以下を実行する。 
+  
+```
+# sh rf3ubuntu.sh  
+```   
+
+インストール完了まで、しばらくお待ちください。  
+  
+決して、再起動しないでください。  
+  
+## ４．rfriends3の実行  
+  
+以下を入力します。ipコマンドがない場合は、ifconfigを使用してください。  
+```  
+$ ip -4 -br a | grep -v "127.0.0.1"  
+　eth0 UNKNOWN XXX.XXX.XXX.XXX/24  
+```  
+または  
+```  
+$ hostname -I  
+```  
+このIPアドレス（XXX.XXX.XXX.XXX）がwebサーバアドレスです。  
+  
+ウェブブラウザ（edge,chrome,firefox,...）を起動し、上記で表示されたアドレスにアクセスする。  
+  
+http://XXX.XXX.XXX.XXX:8000  
+  
+以下のような画面が出たら成功です。ブラウザはローカル(現在実行中のPC)でもリモート（同一ネットワーク上のPC,MAC,スマホ等）でもOKです。  
+  
+![2](https://github.com/user-attachments/assets/c4cc72cc-659c-4c29-bbfe-3f4951b9556c)
+  
+「ヘルプ」「システム更新」でシステムを最新にしてください。   　
+詳細な使用方法は、  
+https://rfriends.github.io/rfriends/manual/  
+を参照してください。    
+  
+## ５．samba  
+  
+　windowsの場合、エクスプローラに先ほどのIPアドレス(xxx.xxx.xxx.xxx)を入力すれば、録音ディレクトリにアクセスできます。smbdirというディレクトリが見えると思います。  
+  
+\\XXX.XXX.XXX.XXX  
+  
+\\は￥￥です。  
+  
+スマホからでもファイルマネージャでアクセスできます。  
+  
+iPhoneの場合、ファイル - 3点リーダー - サーバー接続smb://xxx.xxx.xxx.xxx、ゲストで接続できます。  
+  
+androidの場合も各種ファイルマネージャで可能です。（ファイルマネージャ＋推奨）  
+  
+![3](https://github.com/user-attachments/assets/d504cf68-0a3a-4701-92e5-199300647398)  
+  
+## ６．rfriends3のアンインストール  
+  
+・デイリー処理のために「設定」->「定期実行」->「登録」をしている場合は、必ず、「設定」->「定期実行」->「取消」をしてください。  
+・次にrfriends3フォルダを削除してください。  
+・これでアンインストールは終了です。  
+  
+  
+
+以上  
