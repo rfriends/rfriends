@@ -34,39 +34,28 @@
    
 ・[RaspberryPi Zeroをラジオにする](https://rfriends.hatenablog.com/entry/2022/05/01/154913)    
   
-
+## １．実行SHのダウンロード  
   
-## １．rfriends3のダウンロードとインストール  
+以下のリンクを右クリックし、ホームディレクトリに保存してください。  
+  
+[rf3moode.sh](https://ss1.xrea.com/rf3.s331.xrea.com/rf3moode.sh)  
+  
+## ２．rfriends3のダウンロードとインストール  
   
 　MoOdeにsshアクセスします。  
   
 ![2](https://github.com/user-attachments/assets/fc4e21a3-3a14-4b27-885b-0484cf9e3b4a)  
   
 以下を入力し、インストールスクリプトをダウンロードし、インストールを行います。各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
-
-1) moode ver.10(debian trixie)の場合  
-```  
-cd ~/  
-sudo apt install git  
-rm -rf rfriends_moode  
-git clone https://github.com/rfriends/rfriends_moode.git  
-cd rfriends_moode  
-sh rfriends_moode_apache2.sh  
-```
   
-2) moode ver.9まで(debian bookworm 以前)の場合  
 ```  
-cd ~/  
-sudo apt install git  
-rm -rf rfriends_moode  
-git clone https://github.com/rfriends/rfriends_moode.git  
-cd rfriends_moode  
-sh rfriends_moode.sh  
+$ cd
+$ sh rf3moode.sh  
 ```
     
 これでインストールは完了です。リターンキーを押すと再起動します。  
   
-## ２．rfriends3の実行  
+## ３．rfriends3の実行  
   
 microSD作成時に設定したホスト名（ここではmoode）により、  
   
@@ -83,7 +72,7 @@ http://moode.local
   
 ![3](https://github.com/user-attachments/assets/f2b0756d-0ae5-4ad0-b1d1-b781bb6ce700)  
   
-## ３．動作確認 (ラジコを聴く)  
+## ４．動作確認 (ラジコを聴く)  
   
 まず、MoOde側で音量を絞ってください。トップ画面の右下のスピーカーアイコンをタップするとボリューム調整画面が表示されます。  
   
@@ -101,7 +90,7 @@ rfriendsのメニューで、ラジコ - 番組聴取 - 番組を選択し
   
 ![6](https://github.com/user-attachments/assets/bf56b214-1e6c-4b4d-886d-10f4f2e829fc)  
   
-## ４．ライブラリの更新  
+## ５．ライブラリの更新  
 ラジコやらじるらじるの番組を録音しても、そのままではライブラリに登録されません。  
   
 m - Configure - Library - HomeIcon を選択します。  
@@ -118,7 +107,7 @@ Library - Album を選択すると一覧が表示されます。
   
 ![9](https://github.com/user-attachments/assets/4ae0689a-678e-4496-b8cb-48440d607457)  
   
-## ５．その他  
+## ６．その他  
   
 1) samba  
 m - Configure - System - File sharing  
@@ -134,8 +123,8 @@ Web SSH ON
 その下の「OPEN」をクリックすると、ブラウザ上でSSHができます。  
   
 若干の制限あり。  
-  
-   
+    
+以上  
   
   
 以上  
