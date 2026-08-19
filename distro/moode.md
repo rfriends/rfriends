@@ -40,7 +40,7 @@
   
 [rf3moode.sh](https://ss1.xrea.com/rf3.s331.xrea.com/rf3moode.sh)  
   
-## ２．rfriends3のダウンロードとインストール  
+## ２．rfriends3のインストール  
   
 　MoOdeにsshアクセスします。  
   
