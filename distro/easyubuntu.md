@@ -35,7 +35,7 @@ rf3ubuntu.sh
 以下を実行する。   
     
 ```  
-# sh rf3ubuntu.sh    
+$ sh rf3ubuntu.sh    
 ```     
   
 インストール完了まで、しばらくお待ちください。    
