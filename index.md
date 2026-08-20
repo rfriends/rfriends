@@ -15,7 +15,7 @@ rfriends3の特徴
 
 おすすめ
   
-* ####「[余ったスマホでラジオ録音](distro/termux.md)」     
+* **[余ったスマホでラジオ録音](distro/termux.md)**     
 　　
   
 rfriends3の操作イメージ         
