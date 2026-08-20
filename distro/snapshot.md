@@ -4,7 +4,18 @@ USB メモリにISOファイルを書くだけで、使用中のPCでrfriendsが
   
 初版 2026/08/21  
   
-### １．使用法  
+### １．Live USB について  
+  
+このLive USBは、以下のMX Linux にrfriends3をインストールしISOイメージに再構成したものです。  
+これを選択した理由は、なるべくISOイメージを小さくしたかったからです。  
+  
+https://sourceforge.net/projects/mx-linux/files/Old/  
+MX-21.3_fluxbox_x64.iso	2023-01-13	1.6 GB  
+  
+このLive USBは、rfriends3のほぼすべての機能を試すことができますが、  
+PCを再起動すると、録音したデータ等は消えてしまいます。  
+  
+### ２．使用法  
   
 1) Google Drive より、ISOイメージをダウンロードして下さい。(約2GB)  
 [rfriends3-MX-21.3_fluxbox_x64-20260820_1423.iso](https://drive.google.com/file/d/1_J1WRH3AWyNQRTyiKsJG9OzNVjFWyePH/view?usp=drive_link)  
@@ -19,16 +30,7 @@ USB メモリにISOファイルを書くだけで、使用中のPCでrfriendsが
   
 6) 入力欄に、localhost:8000 と入力すれば、rfriends3のトップ画面が表示されます。  
   
-### ２．Live USB について  
-  
-このLive USBは、以下のMX Linux にrfriends3をインストールしISOイメージに再構成したものです。  
-これを選択した理由は、なるべくISOイメージを小さくしたかったからです。  
-  
-https://sourceforge.net/projects/mx-linux/files/Old/  
-MX-21.3_fluxbox_x64.iso	2023-01-13	1.6 GB  
-  
-このLive USBは、rfriends3のほぼすべての機能を試すことができますが、  
-PCを再起動すると、録音したデータ等は消えてしまいます。  
+
   
 ### ３．その他  
   
