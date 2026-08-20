@@ -10,7 +10,7 @@ https://volumio.com/
   
   
 初 版 2026/05/08  
-第3版 2026/08/19  
+第4版 2026/08/21  
    
 volumio のインストールに関しては、Raspberry Pi Imagerを使う方法ではなく、公式からダウンロードしてインストールする方法をお勧めします。  
 以下を参考にインストールしてください。  
@@ -19,7 +19,7 @@ volumio のインストールに関しては、Raspberry Pi Imagerを使う方�
 [有線LANがないRaspberryPi zero2WでVolumio4をセットアップする方法](volumio_wifi.md)
   
 
-## ０．前提  
+## １．前提  
   
 ここでは、以下のことを前提にしています。  
   
@@ -33,12 +33,6 @@ volumio のインストールに関しては、Raspberry Pi Imagerを使う方�
 ・volumio Ver. 4.119 2026/03/24  
 ・rfriends3 1.4.3a / 1.6.1g   
 ・USB-DAC CX31993 384khz HIFI AUDIO  
-  
-## １．実行SHのダウンロード  
-  
-以下のリンクを右クリックし、ホームディレクトリに保存してください。  
-  
-[rf3volumio.sh](https://ss1.xrea.com/rf3.s331.xrea.com/rf3volumio.sh)  
   
 ## ２．Volumioにsshアクセスする。  
   
@@ -57,8 +51,10 @@ Volumioにsshアクセスします。
   
 各種ツールをインストールし、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
-```
+```  
 $ cd
+$ rm rf3volumio.sh
+$ wget http://rf3.s331.xrea.com/rf3volumio.sh
 $ sh rf3volumio.sh
 ```  
 <img width="600" height="155" alt="clip_5" src="https://github.com/user-attachments/assets/f80b12eb-bc39-459d-9234-145d601ff581" />
