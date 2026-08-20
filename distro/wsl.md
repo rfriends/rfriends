@@ -62,6 +62,12 @@ Would you like to opt-in to platform metrics collection (Y/n)? To see an example
 [Y/n/e]: n
 ```
   
+Ubuntuをいったん終了します。
+  
+```  
+$ exit  
+```
+    
 ## ２．rfriends3のインストール  
   
 ### 2.1 インストール  
