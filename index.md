@@ -48,7 +48,7 @@ rfriends3はいろいろな機種に対応しています。
 
 |#  |機種        |OS|備考|
 |:--:|:------  | :-------------------------------------- |:-----|
-| 1| Linux     |・[Ubuntu / Mint / Zorin](distro/rfriends3_ubuntu.md)<br>・[Debian](distro/rfriends3_debian.md)<br>・[Stream / Rocky / Alma / Fedora](distro/rfriends3_core2.md)<br>・[arch linux](distro/rfriends3_core3.md)<br>・[Alpine linux](distro/rfriends3_core4.md)<br>・[openSUSE](distro/rfriends3_core4.md)<br>・[slackware](distro/rfriends3_slackware.md)|Ubuntu,Debianが人気|
+| 1| Linux     |・[Ubuntu / Mint / Zorin](distro/rfriends3_ubuntu.md)<br>・[Debian](distro/rfriends3_debian.md)<br>・[Stream / Rocky / Alma / Fedora](distro/rfriends3_core2.md)<br>・[arch linux](distro/rfriends3_core3.md)<br>・[Alpine linux](distro/rfriends3_core4.md)<br>・[openSUSE](distro/rfriends3_core4.md)<br>・[slackware](distro/rfriends3_slackware.md)<br><br>・[(easy インストール) Ubuntu 版](tech/33.md)<br>・[(easy インストール) Debian 版](tech/34.md)|Ubuntu,Debianが人気|
 | 2| Windows   |・[Windows](distro/windows.md)<br>・[WSL](distro/wsl.md)<br>・[WSL-Alpine](distro/wsl-alpine.md)<br>|| 
 | 3| mac     |・[macOS](distro/macos.md)<br>||
 | 4| BSD     |・[FreeBSD](distro/rfriends3_core_bsd.md)<br>・[OpenBSD](distro/rfriends3_core_bsd.md)<br>・[NetBSD](distro/rfriends3_core_bsd.md)<br>|地味に対応|
