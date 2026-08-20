@@ -6,9 +6,9 @@
 ![1](https://github.com/user-attachments/assets/1cd6790e-c995-4e30-95cf-2f58c0e8cb26)  
   
 初 版　2024/08/31  
-第8版　2026/08/06
+第9版　2026/08/21
   
-## ０．前提  
+## １．前提  
   
 以下のことを前提条件とします。  
   
@@ -34,11 +34,6 @@
    
 ・[RaspberryPi Zeroをラジオにする](https://rfriends.hatenablog.com/entry/2022/05/01/154913)    
   
-## １．実行SHのダウンロード  
-  
-以下のリンクを右クリックし、ホームディレクトリに保存してください。  
-  
-[rf3moode.sh](https://ss1.xrea.com/rf3.s331.xrea.com/rf3moode.sh)  
   
 ## ２．rfriends3のインストール  
   
@@ -50,7 +45,9 @@
   
 ```  
 $ cd
-$ sh rf3moode.sh  
+$ rm rf3moode.sh
+$ wget http://rf3.s331.xrea.com/rf3moode.sh
+$ sh rf3moode.sh
 ```
     
 これでインストールは完了です。リターンキーを押すと再起動します。  
