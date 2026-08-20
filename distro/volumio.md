@@ -52,10 +52,13 @@ Volumioにsshアクセスします。
 各種ツールをインストールし、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
 ```  
-$ cd
-$ rm rf3volumio.sh
-$ wget http://rf3.s331.xrea.com/rf3volumio.sh
-$ sh rf3volumio.sh
+cd ~/
+sudo apt-get install git
+
+rm -rf rfriends_volumio
+git clone https://github.com/rfriends/rfriends_volumio.git  
+cd rfriends_volumio  
+sh rfriends_volumio.sh 
 ```  
 <img width="600" height="155" alt="clip_5" src="https://github.com/user-attachments/assets/f80b12eb-bc39-459d-9234-145d601ff581" />
 
