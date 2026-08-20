@@ -57,7 +57,8 @@ rfriends3はいろいろな機種に対応しています。
 | 7| スマートフォン |・[Termux](distro/termux.md)<br>・[android linux terminal](distro/rfriends3_core.md)<br>・[UserLAnd](distro/userland.md)|Termux は特にお勧め|
 | 8| Chromebook  |・[Linux開発環境](distro/chromeos.md)|| 
 | 9| iPhone / iPad |・[iSH Shell](distro/ios.md)|| 
-| 10| 仮想（qemu）   |・[Windows](distro/win_qemu.md)<br>・[Linux](distro/linux_qemu.md)<br>・[macOS](distro/macos_qemu.md)|お試しに最適|
+| 10| 仮想（qemu）   |・[Windows](distro/win_qemu.md)<br>・[Linux](distro/linux_qemu.md)<br>・[macOS](distro/macos_qemu.md)||
+| 11| Live USB   |・[MX Linux](distro/liveusb.md)|お試しに最適|
 
 
    
