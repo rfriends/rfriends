@@ -44,10 +44,13 @@
 以下を入力し、インストールスクリプトをダウンロードし、インストールを行います。各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
   
 ```  
-$ cd
-$ rm rf3moode.sh
-$ wget http://rf3.s331.xrea.com/rf3moode.sh
-$ sh rf3moode.sh
+cd ~/  
+sudo apt install git
+
+rm -rf rfriends_moode  
+git clone https://github.com/rfriends/rfriends_moode.git  
+cd rfriends_moode  
+sh rfriends_moode.sh 
 ```
     
 これでインストールは完了です。リターンキーを押すと再起動します。  
