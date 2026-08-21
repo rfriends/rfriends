@@ -146,13 +146,13 @@ microSDを録音ディレクトリに設定する方法は、以下を参照し�
     
 sambaでのアクセス方法は以下を参照してください。  
 
-[sambaアクセス](termx_smb.md)
+[sambaアクセス](termux_smb.md)
   
 ### 6.2 sftpアクセス  
     
 sftpでのアクセス方法は以下を参照してください。  
 
-[sftpアクセス](termx_sftp.md)  
+[sftpアクセス](termux_sftp.md)  
     
 ## ７．その他
   
