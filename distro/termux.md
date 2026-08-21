@@ -96,17 +96,25 @@ wake-lockの有効化を行わないと、スマホがスリープしたとき�
   
 ## ４．rfriends3にアクセス  
   
-### 4.1 rfriends3のWebサーバへのアクセス  
+### 4.1 termuxをインストールしたスマホからrfriends3のWebサーバへのアクセス  
   
-　androidスマホ自身または同一LAN に接続されたPC等からWEBブラウザ（chrome,edge,firefox等）で上記でメモした  
+ブラウザに    
   
-xxx.xxx.xxx.xxx:8000  
+localhost:8000  
   
 と入力し、以下のような画面が出たら成功です。ブックマークすると便利です。  
   
 ![9](https://github.com/user-attachments/assets/4db21ecd-f876-4fac-8a65-19d1f28fe9d5)
-
-### 4.2 チュートリアル  
+  
+### 4.2 PC等からrfriends3のWebサーバへのアクセス  
+    
+同一LAN に接続されたPC等からWEBブラウザ（chrome,edge,firefox等）で上記でメモした   
+  
+xxx.xxx.xxx.xxx:8000  
+  
+と入力し、先ほどと同じrfriends3の画面が出たら成功です。ブックマークすると便利です。  
+  
+### 4.3 チュートリアル  
 
 まずは、チュートリアルでrfriends3の操作に慣れてください。  
   
