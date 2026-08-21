@@ -142,13 +142,19 @@ microSDを録音ディレクトリに設定する方法は、以下を参照し�
    
 ## ６．録音データ 
 
-### 6.1 sambaアクセス  
+### 6.1 ファイラー  
+    
+スマホに標準で入っているファイラー(files等)でダウンロードディレクトリを開けば録音データにアクセスできます。  
+
+<img width="600" height="764" alt="Screenshot_20260821-175210" src="https://github.com/user-attachments/assets/7bdc64d3-3816-44af-80dd-b948c145d82c" />  
+  
+### 6.2 sambaアクセス  
     
 sambaでのアクセス方法は以下を参照してください。  
 
 [sambaアクセス](termux_smb.md)
   
-### 6.2 sftpアクセス  
+### 6.3 sftpアクセス  
     
 sftpでのアクセス方法は以下を参照してください。  
 
