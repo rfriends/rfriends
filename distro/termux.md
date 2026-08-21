@@ -36,7 +36,7 @@ Termuxのインストール方法については、以下のリンクを参照�
   
 Github : [termux.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh)    
   
-<a href=https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh download>termux.sh</a>  
+<a href="https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh" download>termux.sh</a>  
    
   
   
