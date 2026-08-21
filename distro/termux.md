@@ -144,118 +144,16 @@ microSDを録音ディレクトリに設定する方法は、以下を参照し�
 
 ### 6.1 sambaアクセス  
     
-  
-以下の方法で、rfriends3の録音データにアクセスできます。  
-  
-sambaはポート4445で実行されています。  
-IPアドレスを192.168.1.51として記述しています。  
-  
-#### 1) Linuxの場合  
-  
-アクセサリー - ファイル - 他の場所  
-  
-```  
-smb://192.168.1.51:4445/smbdir/  
-```  
-  
-接続  
-  
-#### 2) Androidの場合  
-  
-Owlfilesアプリはポートを変更できます。  
-他にもファイルマネージャ＋、AndSMBで接続できました。  
-  
-![Screenshot_20260205-182120](https://github.com/user-attachments/assets/07be459c-08ef-4f30-a399-4500a67bbdd4)
+sambaでのアクセス方法は以下を参照してください。  
 
+[sambaアクセス](termx_smb.md)
   
-右上の雷マーク - 新しい接続 - NAS  
-  
-![Screenshot_20260205-182102](https://github.com/user-attachments/assets/71711692-0fa1-4020-84df-ac23b0b1ff37)
+### 6.2 sftpアクセス  
+    
+sftpでのアクセス方法は以下を参照してください。  
 
-
-  
-保存（フロッピーアイコン）  
-  
-#### 3) Windowsの場合  
-  
-基本ポート445以外は接続できませんが、  
-Windows11 24H2から代替ポートが指定出来るようになりました。  
-  
-PowerShell(管理者）を起動し、  
-  
-```  
-PS > New-SmbMapping -LocalPath X: -RemotePath \\192.168.1.51\smbdir -TcpPort 4445 -password ******* -user termux
-
-Status Local Path Remote Path
------- ---------- -----------
-OK     X:         \\192.168.1.51\smbdir
-
-PS C:\Users\user> x:
-PS X:\> dir
-```
-  
-これでドライブXで接続可能です。  
--LocalPath X: は、なくてもかまいません。  
-  
-また、エクスプローラから  
-```
-\\192.168.1.51/smbdir  
-```
-でアクセスできます。  
-  
-ステータスを見るには、    
-```  
-PS > Get-SmbMapping  
-  
-Status Local Path Remote Path  
------- ---------- -----------  
-OK     X:         \\192.168.1.51\smbdir  
-```  
-また、接続を解除するには、  
-```  
-PS > Remove-SmbMapping -LocalPath X:  
-  
-確認  
-この操作を実行しますか?  
-ターゲット 'Close-Connection' で操作 'X:,\\192.168.1.51\smbdir' を実行しています。  
-[Y] はい(Y)  [A] すべて続行(A)  [N] いいえ(N)  [L] すべて無視(L)  [S] 中断(S)  [?] ヘルプ (既定値は "Y"):  
-```  
-  
-#### 4) sambaディレクトリ  
-  
-sambaディレクトリは以下のファイルのpathを編集することにより変更できます。  
-  
-$ vi $PREFIX/etc/smb.conf  
-  
-```  
-[smbdir]  
-comment = termux share folder for rfriends  
-path = /data/data/com.termux/files/home/storage/downloads/usr2/  
-read only = no  
-browsable = yes  
-guest ok = yes  
-force user = termux  
-```  
-  
-編集後、サービスの再起動を行ってください。  
-  
-$ smbd -D -s $PREFIX/etc/smb.conf  
-  
-### 6.2 sftpによるファイル転送  
-  
-　sshによるアクセスができたらPCでsftpによるファイル転送に挑戦してみましょう。  
-  
-ファイル転送ソフトでsftpに対応しているソフトをインストールしてください。ここでは、FileZillaを使用します。  
-  
-以下のように設定してください。IP アドレスは4.1で取得したもの、ユーザ名は任意です。  
-  
-![15](https://github.com/user-attachments/assets/3dd487fb-fccc-46bf-a21d-214d7e1e3148)  
-  
-成功すると以下のような画面になります。  
-  
-![16](https://github.com/user-attachments/assets/4a602a09-e98a-4289-942a-21b1c87c93c5)  
-  
-  
+[sftpアクセス](termx_sftp.md)  
+    
 ## ７．その他
   
 ### 7.1 外部PCからのSSHアクセス  
