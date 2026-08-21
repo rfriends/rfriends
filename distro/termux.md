@@ -32,9 +32,8 @@ Termuxのインストール方法については、以下のリンクを参照�
 ・使用するスマホのブラウザでこのページを開く。  
 　ブラウザに、'rfriends3 termux'と入力して検索すると簡単です。  
 
-・以下の**リンクを長押し**して、インストールスクリプトをスマホのダウンロードディレクトリにダウンロードする。  
-  
-Github : [termux.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh)    
+・以下より、インストールスクリプトをスマホのダウンロードディレクトリにダウンロードする。  
+
   
 <a href="https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh" download>termux.sh</a>  
    
