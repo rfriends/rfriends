@@ -8,6 +8,7 @@
  おすすめは、Amazon Fire Tablet + Bluetooth スピーカです。  
    
 <img width="600" height="400" alt="1778346585-qLbpuRWdBDcTlaZm25Y0KnMo" src="https://github.com/user-attachments/assets/64ec7db3-57a6-430b-932b-447d4316a443" />
+注）　時計表示ソフトを入れると、表向きは置時計、裏でrfriendsが走るというシステムができます。  
   
 > [!IMPORTANT]
 > インストール時にセキュリティ関連のアラームが表示されますが、基本は許可で進めてください。気になる方はインストールを中止してください。  
