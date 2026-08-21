@@ -34,13 +34,8 @@ Termuxのインストール方法については、以下のリンクを参照�
 
 ・以下より、インストールスクリプトをスマホのダウンロードディレクトリにダウンロードする。  
 
-  
-[termux.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh)  
-  
-
->[!NORE]  
->どうしてもダウンロードできない場合は、以下の temux.zipをダウンロードして、インストr-る時にunzipしてください。  
->[termux.zip](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.zip)  
+   
+[termux.zip](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.zip)  
    
   
   
@@ -63,7 +58,8 @@ Termuxを起動してください。
   
 ```
 $ cd
-$ cd storage/downloads   
+$ cd storage/downloads
+$ unzip termux.zip
 $ sh termux.sh  
 ```  
     
