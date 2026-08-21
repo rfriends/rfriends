@@ -63,7 +63,7 @@ $ cd storage/downloads
 $ sh termux.sh  
 ```  
     
-### 3.4 サービス（atd, crond,sshd,lighttpd,smbd）およびwake-lockの有効化  
+### 3.3 サービス（atd, crond,sshd,lighttpd,smbd）およびwake-lockの有効化  
   
 インストールスクリプトが完了したら、以下を入力して、サービスを有効化してください。  
   
