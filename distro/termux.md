@@ -38,8 +38,6 @@ Termuxのインストール方法については、以下のリンクを参照�
 ・以下の**リンクを長押し**して、インストールスクリプトをスマホのダウンロードディレクトリにダウンロードする。  
   
 Github : [termux.sh](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.sh)    
-または  
-xrea : [termux.sh](https://ss1.xrea.com/rfbuddy.s296.xrea.com/storage/termux.sh)   
   
   
 ## ３．rfriends3のインストール  
@@ -55,51 +53,16 @@ Termuxを起動してください。
   
 ![4b](https://github.com/user-attachments/assets/399dbc52-b091-4683-b1a0-ce0a47a7ad0f)  
     
-### 3.2 インストールスクリプトの確認  
+### 3.2 ツールおよびrfriends3をインストールする  
   
-androidのダウンロードディレクトリにアクセスし、先ほど２．でダウン―ロードした termux.sh があることを確認します。  
-    
+先ほどダウンロードしたインストールスクリプト(termux.sh)を実行する。  
+  
 ```
 $ cd
-$ cd storage/downloads  
-$ ls  
-termux.sh  
-```
-  
-### 3.3 ツールおよびrfriends3をインストールする  
-  
-インストールスクリプト(termux.sh)を実行する。  
-  
-```    
+$ cd storage/downloads   
 $ sh termux.sh  
 ```  
     
-・途中、以下のメッセージが出たら、リターンキーを押してください。  
-
-環境により異なりますが、3から4度くらい表示されます。  
-  
-![8](https://github.com/user-attachments/assets/d33da4b0-ad4c-4ba9-969e-fae1c69983e3)  
-  
-・インストールスクリプトの最後にtermux, sambaのパスワード入力を求められます。    
-
-userはtermuxです。
-
-```  
-termuxのためのパスワードを設定してください
-  
-New password: ******* 
-Retype new password: ******* 
-New password was successfully set.
-```
-  
-```  
-sambaのためのパスワードを設定してください
-  
-New SMB password: *******
-Retype new SMB password: ********
-Added user termux.  
-```  
-  
 ### 3.4 サービス（atd, crond,sshd,lighttpd,smbd）およびwake-lockの有効化  
   
 インストールスクリプトが完了したら、以下を入力して、サービスを有効化してください。  
@@ -299,6 +262,7 @@ $ smbd -D -s $PREFIX/etc/smb.conf
 外部からSSHアクセスをしない方は以下の操作は不要です。  
   
 SSHアクセスのためのパスワードを設定してください。  
+初期値は、termux です。
   
 ```  
 $ passwd  
