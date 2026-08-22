@@ -19,7 +19,7 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 ![1](https://github.com/user-attachments/assets/38b186a6-e203-43b2-a2d9-27e2d07aae42)
   
 初 版　2024/02/23  
-第33版　2026/06/09  
+第34版　2026/08/23  
   
 ## １．ディストリビューション  
 
@@ -39,8 +39,9 @@ Linux/BSD版は、ディストリビューションにより以下の5つに分�
 |2025/08/16|〇|FreeBSD|14.3|samba419を選択|  
 |2026/06/06|◎|FreeBSD|15.0|samba422を選択|  
 |2026/05/30|〇|GhostBSD|26.1(15)|samba419を選択|  
-|2026/06/08|-|NetBSD|10.0|公開（仮）|  
-|2026/06/09|-|OpenBSD|7.8|開発中|  
+|2026/06/08|〇|NetBSD|10.0||  
+|2026/08/23|〇|NetBSD|11.0|New!|  
+|2026/06/09|〇|OpenBSD|7.8||  
 
 2026/06/06 samba422でfreeBSD をインストールしましたが問題なく動作しています。  
 他もsamba422で問題ないと思います。  
@@ -123,8 +124,13 @@ pkgin -y install git
 ```  
 %wheelのコメント(#)を外す
 visudo
-%wheel ALL=(ALL:ALL) ALL
-```  
+%wheel ALL=(ALL:ALL) ALL  
+```
+3) 音量調節
+Linuxのalsamixer 相当
+```
+sudo pkgin install aiomixer
+```
   　
 ### 2.3 OpenBSDの場合  
   
