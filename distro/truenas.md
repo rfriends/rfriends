@@ -63,6 +63,12 @@ rfpool以下にrfdatasetとして作成する。
 <img width="733" height="584" alt="clip_22" src="https://github.com/user-attachments/assets/3a55a88e-4566-4d76-a967-6914389ef6a4" />  
   
 FTP , SMB , SSH  を有効にする。  
+
+#### 2.7 アプリの設定  
+  
+アプリ - 構成 - プールを選択  
+rfpool  を選択  
+  
   
 ### ３．TrueNASにSSHアクセス  
   
