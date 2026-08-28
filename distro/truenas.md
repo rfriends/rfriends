@@ -134,6 +134,13 @@ $ rm aaa
 Docker版rfriends3のインストールはこちら  
   
 [docker版rfriends3でラジオ録音](docker.md)  
+
+> [!CAUTION]
+> 上記手順で一部変更があります。  
+> sudo docker compose up
+> とsudoをつけて実行してください。  
+> sudo なしにする方法もありますが、ここでは省略します。
+  
   
 ### ５．おわりに  
   
