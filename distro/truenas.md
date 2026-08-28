@@ -138,8 +138,7 @@ Docker版rfriends3のインストールはこちら
 
 > [!CAUTION]
 > 上記手順で一部変更があります。  
-> sudo docker compose up
-> とsudoをつけて実行してください。  
+> dockerコマンドは、sudo をつけて実行してください。  
 > sudo なしにする方法もありますが、ここでは省略します。
   
   
