@@ -1,6 +1,6 @@
 ## TrueNASのインストール方法  
   
-  
+<img width="600" alt="clip_4" src="https://github.com/user-attachments/assets/47ffea38-893f-441c-87a3-1e70f339a245" />  
   
 初版 2026/08/28  
   
@@ -59,7 +59,7 @@ http://192.168.1.19
 他PCのブラウザに、先ほどのアドレスを入力してください。  
 ログイン画面が表示されます。  
   
-  
+<img width="600" alt="clip_3" src="https://github.com/user-attachments/assets/f31b8c71-1a12-4b2a-a920-72f9f187e5a3" />  
   
 １．(5)で入力した情報でログインしてください。  
 truenas_admin / truenas  
