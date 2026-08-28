@@ -31,7 +31,7 @@ truenas_adminのパスワードを設定する。
   
 余談ですが、こういう時、アクセスランプがあるUSBメモリのほうが安心ですね。  
   
-The TrueNAS installation on sdx succeeded!  
+**The TrueNAS installation on sdx succeeded!**  
 と表示されたらインストール成功です。  
   
 #### 6) PCをシャットダウンする。  
