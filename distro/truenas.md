@@ -52,16 +52,17 @@ rfpool以下にrfdatasetとして作成する。
   
 共有 - Windows(SMB)共有 - 追加  
   
-rfdataset  
-rfuser  
+<img width="481" height="681" alt="clip_21" src="https://github.com/user-attachments/assets/822dcdbf-809f-4d8b-aa12-bcdc03283fbf" />  
+  
+この手順で、rfdataset と rfuser　を追加する。　　
   
 #### 2.6 サービスの設定  
   
 システム - サービス  
   
-FTP  
-SMB  
-SSH  
+<img width="733" height="584" alt="clip_22" src="https://github.com/user-attachments/assets/3a55a88e-4566-4d76-a967-6914389ef6a4" />  
+  
+FTP , SMB , SSH  を有効にする。  
   
 ### ３．TrueNASにSSHアクセス  
   
@@ -90,6 +91,18 @@ RESULT IN SYSTEM FAILURE.
 Welcome to TrueNAS  
 rfuser@truenas:~$   
 ```  
+  
+Windowsの場合はターミナルを開き、  
+```  
+> ssh rfuser@192.168.1.19  
+The authenticity of host '192.168.1.19 (192.168.1.19)' can't be established.
+ED25519 key fingerprint is SHA256:o9p3G1W938bZ4xUTCQdC8/bYPETtVeXfolHZrQCc5kI.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.1.19' (ED25519) to the list of known hosts.
+(rfuser@192.168.1.19) Password:
+```  
+  
   
 ここまでくれば、ゴールはもうすぐ  
   
