@@ -44,9 +44,10 @@ rfpool以下にrfdatasetとして作成する。
   
 認証情報 - ユーザ - 追加 - 保存  
 <img width="960" height="649" alt="connect_1" src="https://github.com/user-attachments/assets/f54ccc2e-697b-44d5-baf7-f77d8986d9f9" />
-
   
-ここでは、ユーザ、パスワードを　rfuser / rfuser　としている。  
+SSH, その他の詳細（ホームディレクトリ等）の設定をよく見てください。  
+設定漏れがあるとうまくいきません。  
+なおここでは、ユーザ、パスワードを　rfuser / rfuser　としています。  
   
 #### 2.5 共有の設定  
   
