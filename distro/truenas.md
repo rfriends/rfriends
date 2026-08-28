@@ -119,7 +119,7 @@ Warning: Permanently added '192.168.1.19' (ED25519) to the list of known hosts.
   
 ```  
 $ touch aaa  
-$ ls -al aaa  
+$ ls -al  
 total 15  
 drwx------ 2 rfuser rfuser    6 Aug 28 10:47 .  
 drwxr-xr-x 4 root   root      4 Aug 28 10:29 ..  
