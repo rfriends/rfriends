@@ -18,20 +18,35 @@ WebブラウザでTrueNASにログインし以下の設定を行います。
 #### 2.1 Localization  
   
 言語、キーボード、タイムゾーンを設定してください。  
-  
-#### 2.2 認証情報の設定  
-  
-認証情報 - ユーザ - 追加 - 保存  
-  
-rfuser / rfuser  
-  
-#### 2.3 ストレージの設定  
+<img width="481" height="665" alt="clip_5" src="https://github.com/user-attachments/assets/e72f4d34-1026-4224-88e4-45c8da155d03" />
+　　
+#### 2.2 ストレージの設定  
   
 ストレージ - プールの作成  
   
-#### 2.4 データセットの設定  
+レイアウトをストライプにし、SSD(HDD)をrfpoolとして、割り当てる。   
+  
+<img width="704" height="702" alt="clip_11" src="https://github.com/user-attachments/assets/d56d4870-61f7-47f8-b9be-42f665da5341" />  
+  
+>[!CAUSION]  
+>この指定はデータが失われるという警告が出ていますが、NASとしては好ましくないのは確かです。  
+>ここでは、NASを構築して、Dockerを動作させるのが目的なので、本格的なNASの構築は別途行ってください。  
+
+#### 2.3 データセットの設定  
   
 データセット - データセットの作成  
+  
+rfpool以下にrfdatasetとして作成する。  
+  
+<img width="439" height="500" alt="clip_15" src="https://github.com/user-attachments/assets/e7a061d1-0b1d-4749-bf35-608779550b7a" />  
+  
+#### 2.4 認証情報の設定   
+  
+認証情報 - ユーザ - 追加 - 保存  
+<img width="960" height="649" alt="connect_1" src="https://github.com/user-attachments/assets/f54ccc2e-697b-44d5-baf7-f77d8986d9f9" />
+
+  
+ここでは、ユーザ、パスワードを　rfuser / rfuser　としている。  
   
 #### 2.5 共有の設定  
   
