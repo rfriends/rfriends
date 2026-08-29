@@ -28,7 +28,7 @@
 |22|[2025年ラジコで聴かれた在京・在阪・中部エリア,ラジオ番組TOP10](22.md)||
 |23|[2026年度ラジオ語学番組表](23.md)||
 |24|[録音ファイルをsambaサーバに自動でコピーする](24.md)||
-|25|[rfriends3のdelivery機能にssh copyを追加する](25.md)||
+|25|[rfriends3のdelivery機能にssh copyを追加する](25.md)|ftp は 35 を参照|
 |26|[headlessブラウザlightpandaをインストールする](26.md)||
 |27|[配信データ(radiko,radiru,webradio)を時間を指定して、録音する。 ](27.md)||
 |28|[聴取でJCBAの音を出す方法(lighttpd)](28.md)||
@@ -38,6 +38,7 @@
 |32|[WSLのインストール](32.md)||
 |33|[(easy インストール) Ubuntu 版rfriends3でラジオ録音](33.md)||
 |34|[(easy インストール) Debian 版rfriends3でラジオ録音](34.md)||
+|35|[rfriends3のdelivery機能にftp copyを追加する](35.md)|ssh は 25 を参照|
 
 
 
