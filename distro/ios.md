@@ -234,7 +234,10 @@ http://IPアドレス:8000
   
 ![IMG_0960](https://github.com/user-attachments/assets/0febf5f3-b44f-4273-b81c-f595ac113a35)
 
-  
+> [!NOTE]
+> ない場合、右上の3点リーダ（...）- 編集
+> iSH という項目をONにする
+   
 2) 録音フォルダ  
 辿って、~~/root/rfriends3/usr/~~ /root/usr2/を開くと、以下のようなフォルダが出てくると思います。  
   
