@@ -208,6 +208,8 @@ iSHでは認識できません。
 ```  
 # cd
 # sh gui IPアドレス:8000
+または、インストール時期が古い場合
+# sh rfriends3/rfriends3_server.sh IPアドレス:8000
 ```
 
 3) Webブラウザの実行
