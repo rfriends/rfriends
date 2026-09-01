@@ -6,12 +6,15 @@ cui,gui両モードをサポートしました。
 <img width="600" height="564" alt="ish" src="https://github.com/user-attachments/assets/c09423b4-361a-4497-bc1c-ba4b1fa68b13" />  
   
 初 版　2025/07/18   
-12 版　2026/05/21  
+13 版　2026/09/01  
   
 ## １．iSH Shell  
   
 使用しているソフトウエアはiSH Shellで、ios上のlinux-like shell(alpine linux)です。  
 ios 11 以上が必要です。MacOSでも動作するとの報告がありますが、M1以上のプロセッサが必要です。  
+
+現在、聴取（サーバ）では音はでません。  
+また、JCBA,FM++の聴取でも音は出ません。  
   
 ### 1) App StoreからiSHを入手し、インストールしてください。  
 
