@@ -39,6 +39,7 @@
 |33|[(easy インストール) Ubuntu 版rfriends3でラジオ録音](33.md)|ubuntu|
 |34|[(easy インストール) Debian 版rfriends3でラジオ録音](34.md)|debian|
 |35|[rfriends3のdelivery機能にftp copyを追加する](35.md)|ssh は 25 を参照|
+|36|[Genymobile scrcpyでtermuxを簡単インストール](36.md)||
 
 
 
