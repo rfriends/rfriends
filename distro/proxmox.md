@@ -17,16 +17,16 @@ Proxmox VEユーザで、コンテナの作成経験のある方を対象とし�
   
 ## ２．実行ユーザを追加する。  
   
-### 1) コンテナを起動し、rootでログインする。  
+#### 1 ) コンテナを起動し、rootでログインする。  
   
-### 2) システムを最新にし、アプリを追加する。  
+#### 2 ) システムを最新にし、アプリを追加する。  
   
 ```  
 # apt-get update    
 # apt-get install sudo vim git -y  
 ```  
   
-### 3) 実行するユーザを追加し、管理者権限を付加する。  
+#### 3 ) 実行するユーザを追加し、管理者権限を付加する。  
   
 ここでは、ユーザ名を仮に、rf3userとしています。  
   
@@ -38,9 +38,9 @@ Proxmox VEユーザで、コンテナの作成経験のある方を対象とし�
   
 ## ３．rfriends3のダウンロードとインストールを行う。  
   
-### 1) 一旦ログアウトし、rf3userでログインする。  
+#### 1 ) 一旦ログアウトし、rf3userでログインする。  
   
-### 2) rfriends3のインストールを行う。  
+#### 2 ) rfriends3のインストールを行う。  
   
 ```  
 $ cd ~/  
@@ -50,7 +50,7 @@ $ cd rfriends3_core
 $ sh install_ubuntu.sh  
 ```  
   
-### 3) 再起動する。  
+#### 3 ) 再起動する。  
   
 ```  
 $ sudo reboot  
@@ -58,15 +58,15 @@ $ sudo reboot
   
 ## ４．rfriends3の実行  
   
-### 1) NetworkメニューでIPアドレスを確認する。  
+#### 1 ) NetworkメニューでIPアドレスを確認する。  
   
-### 2) ウェブブラウザ（edge,chrome,firefox,…）を起動し、確認したアドレスにアクセスする。  
+#### 2 ) ウェブブラウザ（edge,chrome,firefox,…）を起動し、確認したアドレスにアクセスする。  
   
 http://XXX.XXX.XXX.XXX:8000  
 または  
 http://hostname:8000  
   
-### 3) 以下のような画面が出たら成功です。  
+#### 3 ) 以下のような画面が出たら成功です。  
   
 <img width="502" height="622" alt="clip_10" src="https://github.com/user-attachments/assets/5c37a5eb-a97d-4fd7-a39e-b64b3ec0f40d" />  
 
