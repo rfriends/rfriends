@@ -81,10 +81,8 @@ Apache2版を追加しました。(2025/08/15)
 1) システムを最新にし、アプリを追加する。   
 ```  
 # apt-get update  
-# apt-get upgrade -y
-
-# apt-get install sudo vim -y
-# apt-get install git -y
+  
+# apt-get install sudo vim git -y  
 ```
 2) 実行するユーザを追加し、管理者権限を付加する。  
 ```
