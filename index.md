@@ -24,7 +24,10 @@ rfriends3の操作イメージ
   
  * [お知らせ](info.md)  
  * [rfriendsに関するコメントはこちらに](comment.md)
- * [rfriendsを応援してください](donation.md)   
+ * [rfriendsを応援してください](donation.md)
+  
+初版：2023/07/12  
+改版：2026/09/07  
     
 ### １．rfriends3関連のリンク一覧    
  
@@ -52,7 +55,7 @@ rfriends3はいろいろな機種に対応しています。
 | 2| Windows   |・[Windows](distro/windows.md)<br>・[WSL](distro/wsl.md)<br>・[WSL-Alpine](distro/wsl-alpine.md)<br>|| 
 | 3| mac     |・[macOS](distro/macos.md)<br>||
 | 4| BSD     |・[FreeBSD](distro/rfriends3_core_bsd.md)<br>・[OpenBSD](distro/rfriends3_core_bsd.md)<br>・[NetBSD](distro/rfriends3_core_bsd.md)<br>|地味に対応|
-| 5| コンテナ   |・[Docker(Linux,Windows,macOS)](distro/docker.md)<br>・[WSL Containers](distro/wslcontainers.md)<br>・[Apple Container](distro/applecontainer.md)<br>・[LXD/LXC](distro/lxd.md)<br>・[TrueNAS](distro/truenas.md)||
+| 5| コンテナ   |・[Docker(Linux,Windows,macOS)](distro/docker.md)<br>・[WSL Containers](distro/wslcontainers.md)<br>・[Apple Container](distro/applecontainer.md)<br>・[LXD/LXC](distro/lxd.md)<br>・[TrueNAS](distro/truenas.md)<br>・[Proxmox](distro/proxmox.md)||
 | 6| ラズベリーパイ  |・[RaspberryPi -script-](distro/raspberrypi.md)<br>・[RaspberryPi -image-](distro/raspi_image.md)<br>・[DIetPi -script-](distro/dietpi.md)<br>・[DIetPi -image-](distro/dietpi_image.md)<br>・[Alpine -image-](distro/alpine_image.md)<br><br>・[Volumio](distro/volumio.md)<br>・[moode audio](distro/moode.md)|Raspberry Pi -image-  が簡単<br><br><br><br><br><br>Volumio,MoOdeはおすすめ| 
 | 7| スマートフォン |・[Termux](distro/termux.md)<br>・[android linux terminal](distro/rfriends3_core.md)<br>・[UserLAnd](distro/userland.md)|Termux は特にお勧め|
 | 8| Chromebook  |・[Linux開発環境](distro/chromeos.md)|| 
@@ -77,8 +80,8 @@ rfriends3はいろいろな機種に対応しています。
   
 ![gallery](https://github.com/user-attachments/assets/fed28352-0636-472e-9015-51abea05e17a)  
   
-初版：2023/07/12  
-改版：2026/08/28  
+
+
   
 
     
