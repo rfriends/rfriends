@@ -2,7 +2,7 @@
   
 Proxmox VEユーザで、コンテナの作成経験のある方を対象としています。  
   
-<img width="884" height="765" alt="clip_13" src="https://github.com/user-attachments/assets/aeeb7d91-42e1-4272-b4a0-6f46ae0218c6" />  
+<img width="400"  alt="clip_13" src="https://github.com/user-attachments/assets/aeeb7d91-42e1-4272-b4a0-6f46ae0218c6" />  
   
 初版 2026/09/07  
 改版 2026/09/07  
