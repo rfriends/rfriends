@@ -41,14 +41,7 @@ Termuxのインストール方法については、以下のリンクを参照�
 
    
 [termux.zip](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.zip)  
-   
-または、  
-```
-$ cd
-$ cd storage/downloads
-$ wget https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.zip  
-```
-  
+    
   
 ## ３．rfriends3のインストール  
   
