@@ -79,10 +79,8 @@ PS> wsl -d Ubuntu
 Ubuntu上で以下を入力してください。  
   
 ```
-$ cd
-$ rm wsl.sh
-$ wget rf3.s331.xrea.com/wsl.sh
-# sh wsl.sh  
+curl -LO rfriends.github.io/wsl.sh
+sh wsl.sh  
 ```
 インストール完了までしばらくお待ちください。
   
