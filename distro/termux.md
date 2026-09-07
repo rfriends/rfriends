@@ -34,18 +34,10 @@ Termuxのインストール方法については、以下のリンクを参照�
 
 上級者向け  
 [Termuxのインストール方法（ssh版）](termux_inst_ssh.md)  
-  
-## ２．インストールスクリプトのダウンロード  
-  
-以下より、インストールスクリプト(termux.zip)をスマホのダウンロードディレクトリにダウンロードする。  
-
    
-[termux.zip](https://raw.githubusercontent.com/rfriends/rfriends_termux/main/termux.zip)  
-    
+## ２．rfriends3のインストール  
   
-## ３．rfriends3のインストール  
-  
-### 3.1 Termuxの起動  
+### 2.1 Termuxの起動  
   
 Termuxを起動してください。  
   
@@ -56,14 +48,12 @@ Termuxを起動してください。
   
 ![4b](https://github.com/user-attachments/assets/399dbc52-b091-4683-b1a0-ce0a47a7ad0f)  
     
-### 3.2 ツールおよびrfriends3をインストールする  
+### 2.2 ツールおよびrfriends3をインストールする  
   
-先ほどダウンロードしたインストールスクリプト(termux.zip)をunzipして実行する。  
+インストールスクリプト(termux.zip)をダウンロードして実行する。  
   
 ```
-$ cd
-$ cd storage/downloads
-$ unzip termux.zip
+$ wget -N rfriends.github.io/termux.sh
 $ sh termux.sh  
 ```  
     
@@ -91,9 +81,9 @@ wake-lockの有効化を行わないと、スマホがスリープしたとき�
 Webサーバ（lighttpd）はすでに起動しています。  
   
   
-## ４．rfriends3にアクセス  
+## ３．rfriends3にアクセス  
   
-### 4.1 rfriends3のWebサーバへのアクセス  
+### 3.1 rfriends3のWebサーバへのアクセス  
   
 termuxをインストールしたスマホまたは同一LAN に接続されたPC等から、WEBブラウザ（chrome,edge,firefox等）で上記でメモした   
   
@@ -104,16 +94,16 @@ xxx.xxx.xxx.xxx:8000
 ![9](https://github.com/user-attachments/assets/4db21ecd-f876-4fac-8a65-19d1f28fe9d5)
   
   
-### 4.2 チュートリアル  
+### 3.2 チュートリアル  
 
 まずは、チュートリアルでrfriends3の操作に慣れてください。  
   
 [チュートリアル](https://rfriends.github.io/rfriends/manual/tutorial.html)  
   
   
-## ５．録音ディレクトリ    
+## ４．録音ディレクトリ    
   
-### 5.1 録音ディレクトリの設定（内部）  
+### 4.1 録音ディレクトリの設定（内部）  
   
 　初期はスマホのダウンロードディレクトリに設定されています。通常はそのまま変更する必要はありません。  
   
@@ -130,36 +120,36 @@ usrdir=/data/data/com.termux/files/home/storage/downloads/usr2/
 tmpdir = ""  
 ```  
   
-### 5.2 録音ディレクトリの設定（microSD）  
+### 4.2 録音ディレクトリの設定（microSD）  
   
 microSDを録音ディレクトリに設定する方法は、以下を参照してください。  
   
 [Termux版rfriends3でmicroSDを使う](termux_microsd.md)
   
    
-## ６．録音データ 
+## ５．録音データ 
 
-### 6.1 ファイラー  
+### 5.1 ファイラー  
     
 スマホに標準で入っているファイラー(files等)でダウンロードディレクトリを開けば録音データにアクセスできます。  
 
 <img width="600" height="764" alt="Screenshot_20260821-175210" src="https://github.com/user-attachments/assets/7bdc64d3-3816-44af-80dd-b948c145d82c" />  
   
-### 6.2 sambaアクセス  
+### 5.2 sambaアクセス  
     
 sambaでのアクセス方法は以下を参照してください。  
 
 [sambaアクセス](termux_smb.md)
   
-### 6.3 sftpアクセス  
+### 5.3 sftpアクセス  
     
 sftpでのアクセス方法は以下を参照してください。  
 
 [sftpアクセス](termux_sftp.md)  
     
-## ７．その他
+## ６．その他
   
-### 7.1 外部PCからのSSHアクセス  
+### 6.1 外部PCからのSSHアクセス  
   
 外部からSSHアクセスをしない方は以下の操作は不要です。  
   
@@ -182,7 +172,7 @@ teratermやRLoginを使用すると便利です。
   
 PCがLinuxでWARNINGが出て接続できないときはPCのホームディレクトリの.ssh/known_hostsを削除してみてください。  
   
-### 7.2 Bluetooth スピーカ  
+### 6.2 Bluetooth スピーカ  
   
 インストール直後は、スマホのスピーカから音が出ていると思います。  
 これに、スマホの標準機能で、Bluetooth スピーカを接続すれば、rfriends3からの音もBluetooth スピーカから出ます。  
