@@ -64,10 +64,8 @@ bluetoothのキーボードを接続するとより快適になります。
 以下を入力します。  
   
 ```
-# cd  
-# rm ish  
-# wget rf3.s331.xrea.com/ish  
-# sh ish  
+curl -LO rfriends.github.io/ish
+sh ish  
 ```
 各種ツールがインストールされ、ホームディレクトリにrfriends3ディレクトリが作成されます。  
 また、cui,guiというshが作成されます。   
