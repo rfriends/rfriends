@@ -48,10 +48,10 @@ Termuxを起動してください。
 ### 2.2 ツールおよびrfriends3をインストールする  
   
 インストールスクリプト(termux.sh)をダウンロードして実行する。  
+-LO (LO は大文字)  
   
 ```
-$ pkg install wget -y
-$ wget rfriends.github.io/termux.sh
+$ curl -LO rfriends.github.io/termux.sh
 $ sh termux.sh  
 ```  
     
