@@ -43,8 +43,8 @@ apt install curl git -y
 #### 2 ) rfriends3のインストールを行う。  
   
 ```  
-curl -LO rfriends.github.io/proxmox.sh
-sh proxmox.sh
+curl -LO rfriends.github.io/ubuntu.sh
+sh ubuntu.sh
 ```  
   
 #### 3 ) 再起動する。  
