@@ -50,7 +50,8 @@ Termuxを起動してください。
 インストールスクリプト(termux.sh)をダウンロードして実行する。  
   
 ```
-$ wget -N rfriends.github.io/termux.sh
+$ rm termux.sh  <-- 初めての場合は不要
+$ wget rfriends.github.io/termux.sh
 $ sh termux.sh  
 ```  
     
