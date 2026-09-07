@@ -29,7 +29,6 @@ Termuxのインストール方法については、以下のリンクを参照�
   
 または
   
-上級者向け  
 [Termuxのインストール方法（ssh版）](termux_inst_ssh.md)  
    
 ## ２．rfriends3のインストール  
