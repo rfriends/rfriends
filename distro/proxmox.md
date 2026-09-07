@@ -17,16 +17,9 @@ Proxmox VEユーザで、コンテナの作成経験のある方を対象とし�
   
 ## ２．実行ユーザを追加する。  
   
-#### 1 ) コンテナを起動し、rootでログインする。  
+#### 1 ) コンテナを起動し、rootでログインする。    
   
-#### 2 ) システムを最新にし、アプリを追加する。  
-  
-```  
-# apt-get update    
-# apt-get install sudo vim git -y  
-```  
-  
-#### 3 ) 実行するユーザを追加し、管理者権限を付加する。  
+#### 2 ) 実行するユーザを追加し、管理者権限を付加する。  
   
 ここでは、ユーザ名を仮に、rf3userとしています。  
   
@@ -43,11 +36,8 @@ Proxmox VEユーザで、コンテナの作成経験のある方を対象とし�
 #### 2 ) rfriends3のインストールを行う。  
   
 ```  
-$ cd ~/  
-$ rm -rf rfriends3_core     
-$ git clone https://github.com/rfriends/rfriends3_core.git    
-$ cd rfriends3_core    
-$ sh install_ubuntu.sh  
+curl -LO rfriends.github.io/proxmox.sh
+sh proxmox.sh
 ```  
   
 #### 3 ) 再起動する。  
