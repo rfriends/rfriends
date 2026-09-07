@@ -47,7 +47,7 @@ Termuxを起動してください。
     
 ### 2.2 ツールおよびrfriends3をインストールする  
   
-インストールスクリプト(termux.zip)をダウンロードして実行する。  
+インストールスクリプト(termux.sh)をダウンロードして実行する。  
   
 ```
 $ wget -N rfriends.github.io/termux.sh
