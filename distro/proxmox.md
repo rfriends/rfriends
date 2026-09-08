@@ -31,9 +31,9 @@ apt install curl git -y
 ここでは、ユーザ名を仮に、rf3userとしています。  
   
 ```  
-# useradd -m -G sudo rf3user  
-# passwd rf3user  
-# chsh -s /bin/bash rf3user   
+useradd -m -G sudo rf3user  
+passwd rf3user  
+chsh -s /bin/bash rf3user   
 ```  
   
 ## ３．rfriends3のダウンロードとインストールを行う。  
@@ -50,7 +50,7 @@ sh ubuntu.sh
 #### 3 ) 再起動する。  
   
 ```  
-$ sudo reboot  
+sudo reboot  
 ```  
   
 ## ４．rfriends3の実行  
