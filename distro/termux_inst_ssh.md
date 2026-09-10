@@ -8,7 +8,7 @@ Termuxは、AndroidやChrome OS上でLinux環境を実行できるターミナ�
 > [ Termuxのインストール方法](termux_inst.md)  
    
 初版：2026/09/06  
-改版：2026/09/06
+改版：2026/09/11
   
 ## １．準備  
   
@@ -24,21 +24,30 @@ androidOS7未満では動作しない。
 v0.119.0-beta.3 - 2025-05-22 10:48  
 [termux](https://github.com/termux/termux-app/releases)     
   
-### ３．opensshのインストール  
+### ３．termuxのstorageをセットアップする。  　
+ ```  
+termux-setup-storage     
+````
   
-termuxを起動し、opensshをインストールする。  
+（android端末側で）全てのファイルの管理権を付与する。  
+これにより、termuxからandroid側のファイルにアクセスできるようになる。  
+  
+  
+### ４．opensshのインストール  
+  
+termuxを起動し、termux-auth,opensshをインストールする。  
   
 ```  
-pkg install openssh -y  
+pkg install termux-auth openssh -y  
 sshd  
-```
+```  
   
-
-
 パスワードを設定する。　　
  ```  
 passwd   
-````  
+````
+  
+
 
 IPアドレスを確認する。  　　
  ```  
@@ -47,7 +56,7 @@ ifconfig
 
 以上で、sshアクセスの準備完了。  
   
-### 4．sshアクセス  
+### ５．sshアクセス  
   
 sshクライアントでtermuxにログインする。  
 IPアドレスはifconfigで表示されたものを使用する。  
@@ -57,11 +66,11 @@ IPアドレスはifconfigで表示されたものを使用する。
 ssh termux@ipアドレス -p 8022  
 ```  
     
-## ５．Termuxのセットアップ   
+## ６．Termuxのセットアップ   
   
-セットアップで必ず実行することは3つ。  
+セットアップで必ず実行することは2つ。  
   
-#### 5.1 termuxのミラーサイトを変更する。    
+#### 6.1 termuxのミラーサイトを変更する。    
   
 ```  
 termux-change-repo
@@ -71,22 +80,13 @@ termux-change-repo
 ミラーグループの選択画面が出るが、   
 Mirrors in Asia All in Asia (excl. Chinese) を選択。  
   
-#### 5.2 termuxのパッケージの更新   
+#### 6.2 termuxのパッケージの更新   
   
 ```  
 pkg update  
-```
-  
-#### 3.3 termuxのstorageをセットアップする。   
-   
-```  
-termux-setup-storage  
 ```  
   
-（android端末側で）全てのファイルの管理権を付与する。  
-これにより、termuxからandroid側のファイルにアクセスできるようになる。    
-  
-#### 3.4 exit   
+#### 6.3 exit   
   
 ```  
 exit  
