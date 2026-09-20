@@ -8,9 +8,9 @@
 > cuiモードでシステム更新をすると、新しいパラメータが出てきません。  
 >  [9-1-3] パラメータ設定 - チェック　で更新してください。  
 
-## 1.6.3 (2026/09/18) 正式版  
+## 1.6.3a (2026/09/20) 正式版  
   
-1.6.2d -> 1.6.3     
+1.6.2d -> 1.6.3a     
   
 ・radiko timefreeのチャプター機能に対応  
 
@@ -19,6 +19,8 @@
 ;; timefree_chapter       0:なし,1:あり,2:あり(time付)  
 ;; timefree_chapter_ai    0:なし,1:あり  
 ;; timefree_chapter_music 0:なし,1:あり   
+
+[radikoタイムフリーのAIチャプター対応について](https://rfriends.github.io/rfriends/tech/37.html)
   
 ## 1.6.2d (2026/08/28) 正式版  
   
