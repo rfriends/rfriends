@@ -29,8 +29,8 @@
 設定 - パラメータ - 編集　535行あたりで変更できます。  
 ;; チャプター  
 ;; timefree_chapter       0:なし,1:あり,2:あり(time付)  
-;; timefree_chapter_ai    0:なし,1:あり  
-;; timefree_chapter_music 0:なし,1:あり   
+~~;; timefree_chapter_ai    0:なし,1:あり~~  
+~~;; timefree_chapter_music 0:なし,1:あり~~   
 
 [radikoタイムフリーのAIチャプター対応について](https://rfriends.github.io/rfriends/tech/37.html)
   
