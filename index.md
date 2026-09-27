@@ -53,8 +53,8 @@ rfriends3はいろいろな機種に対応しています。
 |#  |機種        |OS|備考|
 |:--:|:------  | :-------------------------------------- |:-----|
 | 1| **Linux**     |・[Ubuntu / Mint / Zorin](distro/rfriends3_ubuntu.md)<br>・[Debian](distro/rfriends3_debian.md)<br>・[Stream / Rocky / Alma / Fedora](distro/rfriends3_core2.md)<br>・[arch linux](distro/rfriends3_core3.md)<br>・[Alpine linux](distro/rfriends3_core4.md)<br>・[openSUSE](distro/rfriends3_core4.md)<br>・[slackware](distro/rfriends3_slackware.md)<br><br>・[(easy インストール) Ubuntu 版](tech/33.md)<br>・[(easy インストール) Debian 版](tech/34.md)|Ubuntu,Debianが人気|
-| 2| Windows   |・[Windows](distro/windows.md)<br>・[WSL](distro/wsl.md)<br>・[WSL-Alpine](distro/wsl-alpine.md)<br>|Windowsユーザはこれ| 
-| 3| mac     |・[macOS](distro/macos.md)<br>|インテル/シリコン|
+| 2| **Windows**   |・[Windows](distro/windows.md)<br>・[WSL](distro/wsl.md)<br>・[WSL-Alpine](distro/wsl-alpine.md)<br>|Windowsユーザはこれ| 
+| 3| **mac**     |・[macOS](distro/macos.md)<br>|インテル/シリコン|
 | 4| BSD     |・[FreeBSD](distro/rfriends3_core_bsd.md)<br>・[OpenBSD](distro/rfriends3_core_bsd.md)<br>・[NetBSD](distro/rfriends3_core_bsd.md)<br>|地味に対応|
 | 5| コンテナ   |・[Docker(Linux,Windows,macOS)](distro/docker.md)<br>・[WSL Containers](distro/wslcontainers.md)<br>・[Apple Container](distro/applecontainer.md)<br>・[LXD/LXC](distro/lxd.md)<br>・[TrueNAS](distro/truenas.md)<br>・[Proxmox](distro/proxmox.md)||
 | 6| ラズベリーパイ  |・[RaspberryPi -script-](distro/raspberrypi.md)<br>・[RaspberryPi -image-](distro/raspi_image.md)<br>・[DIetPi -script-](distro/dietpi.md)<br>・[DIetPi -image-](distro/dietpi_image.md)<br>・[Alpine -image-](distro/alpine_image.md)<br><br>・[Volumio](distro/volumio.md)<br>・[moode audio](distro/moode.md)|Raspberry Pi -image-  が簡単<br><br><br><br><br><br>Volumio,MoOdeはおすすめ| 
