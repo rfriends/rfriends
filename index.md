@@ -12,6 +12,7 @@ rfriends3の特徴
 * ラジコ、NHKらじるらじる、タイムフリー30、エリアフリー、聞き逃し、ゴガク
 * ポッドキャスト（apple, lfr, nhk, jfn, radiko）
 * OTTAVA、AFN GO、コミュニティFM (リスラジ -ListenRadio-、JCBA, FM++)
+* radiko タイムフリーのaiチャプターに対応。  
 
 おすすめ
   
