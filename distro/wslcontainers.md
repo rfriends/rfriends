@@ -4,38 +4,32 @@
  
   
 初版 2026/07/21  
-二版 2026/07/22
-   
-> [!NOTE]  
->   現在、書きかけです。 
-   
+三版 2026/09/30
+     
   
 ## １． WSL Containers環境構築
   
-WSL Containersは現在、pre-releaseです。  
-バグがあってもやってみたい方用です。   
-実際かなり不安定です。うまくいかない場合はPCを再起動するとうまくいくことがあります。  
+~~WSL Containersは現在、pre-releaseです。~~  
+2026/09/30 正式リリースされました。   
+9/30 正式版にて動作を確認しました。 
+  
+正式版は、wsl 3.0.1.0 に含まれているため、wsl --update が必要です。  
   
 ```
-> wsl --install
-> wsl --update --pre-release
+> wsl --install  <-- インストール済の場合は不要です。  
+> wsl --update  
 > wsl --shutdown  
 ```  
 ・確認  
 ```  
 > wsl --version
-WSL バージョン: 2.9.3.0
+WSL バージョン: 2.9.3.0.1.0
 
 > wslc.exe --version
-wslc 2.9.3.0
+wslc 3.0.1.0
 
 > wslc run --rm hello-world
-イメージ 'hello-world' が見つかりません。プルしています
-latest: Pulling from library/hello-world
-4f55086f7dd0: Pull complete
-Digest: sha256:c3cbe1cc1aa588a64951ac6286e0df7b27fe2e6324b1001c619bb358770c0178
-Status: Downloaded newer image for hello-world:latest
-
+  
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
@@ -54,12 +48,15 @@ This message shows that your installation appears to be working correctly.
 > curl -L -o repo.zip https://github.com/rfriends/rfriends_docker/archive/refs/heads/main.zip
 > tar.exe -xf repo.zip
 > cd rfriends_docker-main
+> wslc container rm rf3-container
 > run_wsl_containers.bat 
-コンテナー ID       名前              画像          作成済み            状態                      ポート
-57eb87f46705   rf3-container   rfriends3   2 minutes ago   running 2 minutes ago   127.0.0.1:8000->8000/tcp
+
+コンテナー ID       画像          コマンド           作成済み   状態             ポート            名前
+e304de7ab59c   rfriends3   "sh ./docke…   1 秒前   Up Less tha…   127.0.0.1:8…   rf3-contain…
+
 ```
   
-と表示されたら成功です。(画像と表示されるところはプレビューらしいですね)  
+と表示されたら成功です。  
 
   
 ### 2.4 rfriends3にアクセスする  
@@ -69,7 +66,10 @@ This message shows that your installation appears to be working correctly.
 ```
 http://localhost:8000
 ```
-と入力するとrfriends3が表示されます。
+と入力するとrfriends3が表示されます。  
+  
+<img width="444" height="371" alt="clip_1" src="https://github.com/user-attachments/assets/30ffd670-66af-4d62-88ca-26a872028b83" />
+  
 
 ## ３．データ  
   
