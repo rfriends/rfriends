@@ -23,7 +23,7 @@
 ・確認  
 ```  
 > wsl --version
-WSL バージョン: 2.9.3.0.1.0
+WSL バージョン: 3.0.1.0
 
 > wslc.exe --version
 wslc 3.0.1.0
