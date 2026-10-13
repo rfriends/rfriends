@@ -20,8 +20,8 @@ rfriends3の特徴
 　　
   
 rfriends3の操作イメージ         
-<img width="400" alt="new_1" src="https://github.com/user-attachments/assets/3162bac3-88c5-46dc-a7ef-55b286f964bc" />
 
+<img width="400" alt="rfriends3配信アーキテクチャ図" src="https://github.com/user-attachments/assets/4b0deb97-5aeb-4d9b-aeeb-717e7c77714a" />
   
  * [お知らせ](info.md)  
  * [rfriendsに関するコメントはこちらに](comment.md)
