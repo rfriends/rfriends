@@ -14,7 +14,11 @@
 1.6.2d -> 1.6.3f     
   
 ・録音データ再生にソート機能追加 (f)  
+<img width="210" height="198" alt="clip_9a" src="https://github.com/user-attachments/assets/233b1c2f-dd5f-475f-baf3-11906f947f49" />  
+  
 ・録音データ再生に10s(-5s)スキップ追加 (f)  
+<img width="421" height="151" alt="HUUC3GvaQAAZFdo" src="https://github.com/user-attachments/assets/f80376a4-1817-41d1-8ffb-23c2bf460b77" />  
+  
 ・その他微修正 (f)  
    
 ・録音データ再生にチャプタースキップ追加 (e)   
