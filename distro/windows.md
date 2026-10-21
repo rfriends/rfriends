@@ -1,6 +1,12 @@
 ## Windows版rfriends3でラジオ録音  
   
-
+> [!IMPORTANT]  
+> PHP2shellに対応しました。
+> 現在、人柱版で、使用レポートをしてくださる方を募集しています。
+>   
+> なお、この脆弱性は、通常の家庭内で使用する分には、それほど危険ではないと個人的には思います。  
+> 家庭内でも危険になるのは、ウイルスに感染したPC等が持ち込まれた場合です。  
+   
   
 ## １．環境  
   
@@ -20,10 +26,16 @@ Windows10 (x64) home/pro 1809以降
 ・インストール場所の選択    
   
 ### 2.1 インストーラのダウンロード  
-  
+
+#### 1) 通常版  
 [rfriends3_windows.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows.bat)  
   
 上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。  
+  
+#### 2) 人柱版（php2shell対応）  
+[rfriends3_windows_php84.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows_php84.bat)  
+  
+上記のリンクよりrfriends3_windows_php84.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。  
   
 ![1](https://github.com/user-attachments/assets/aa3e7fdb-ff79-42c0-a757-7ccf6350a586)  
   
@@ -149,7 +161,7 @@ Windowsファイヤオールの設定でポート8000の受信を許可にする
   
 初 版　2023/06/13  
 第7版　2024/12/13　32bit版廃止  
-第8版　2024/12/15　Github  
+第10版　2026/10/22　php2shell対応  
 第9版　2025/01/26　wmic  
 第13版　2026/03/13 vcruntime140.dll  
 第15版　2026/09/28 一部書き換え  
