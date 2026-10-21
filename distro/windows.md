@@ -33,7 +33,7 @@ Windows10 (x64) home/pro 1809以降
 上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。  
   
 #### 2) 人柱版（php2shell対応）  
-~~[rfriends3_windows_php84.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows_php84.bat)~~  
+[rfriends3_windows_php84.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows_php84.bat)  
   
 上記のリンクよりrfriends3_windows_php84.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。  
   
