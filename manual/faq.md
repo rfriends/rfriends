@@ -1,5 +1,18 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。    
+
+### 081 PHP2shellが問題になっていますが、大丈夫でしょうか？    
+  
+１．Linux系  
+https://ubuntu.com/blog/php2shell-vulnerability-fixes-available?utm_source=chatgpt.com  
+1) cui  
+sudo apt update && sudo apt upgrade -y  
+  
+2) gui  
+「ソフトウエアアップデータ」を実行  
+  
+２．Windows  
+rfriends3_windows_php84.batを使用してインストール   
   
 ### 080 ウェブラジオの予約録音ができなくなった。  
   
