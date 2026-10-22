@@ -1,11 +1,9 @@
 ## Windows版rfriends3でラジオ録音  
   
 > [!IMPORTANT]  
-> PHP2shellに対応しました。
-> 現在、人柱版で、使用レポートをしてくださる方を募集しています。
->   
-> なお、この脆弱性は、通常の家庭内で使用する分には、それほど危険ではないと個人的には思います。  
-> 家庭内でも危険になるのは、ウイルスに感染したPC等が持ち込まれた場合です。  
+> PHP2shell脆弱性に対応しました。(2026/10/22)  
+> 新規ユーザは、対策済みのものがインストールされます。  
+> 既存ユーザは、2.2 バイナリアップデートを実行してください。   
    
   
 ## １．環境  
@@ -26,20 +24,25 @@ Windows10 (x64) home/pro 1809以降
 ・インストール場所の選択    
   
 ### 2.1 インストーラのダウンロード  
-
-#### 1) 通常版  
+  
 [rfriends3_windows.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows.bat)  
   
-上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。  
-  
-#### 2) 人柱版（php2shell対応）  
-[rfriends3_windows_php84.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows_php84.bat)  
-  
-上記のリンクよりrfriends3_windows_php84.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。  
+上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。   
   
 ![1](https://github.com/user-attachments/assets/aa3e7fdb-ff79-42c0-a757-7ccf6350a586)  
   
-### 2.2 インストーラの実行  
+### 2.2 バイナリアップデートインストーラのダウンロード  
+  
+既存ユーザで、バイナリを更新したい場合に実行してください。  
+  
+[rfriends3_windows_update_bin.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows_update_bin.bat)
+  
+上記のリンクよりrfriends3_windows_update_bin.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。 
+  
+あとは通常のインストールと同じです。php等のバイナリのみ更新されます。  
+C:¥XXXにrfriendsをインストールしている場合は、同じディレクトリを指定してください。  
+  
+### 2.3 インストーラの実行  
 　ここでは、c:\Temp\にダウンロードしたと仮定します。  
    
 
@@ -50,7 +53,7 @@ Windows10 (x64) home/pro 1809以降
   
 実行をクリックします。  
   
-### 2.3 インストール場所の選択  
+### 2.4 インストール場所の選択  
   
   実行が開始されると、インストールフォルダを選択するダイアログが表示されるので、選択してください。  
   
