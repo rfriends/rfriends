@@ -1,4 +1,12 @@
 <img width="400" alt="f0818127-0bac-4205-b3ca-d8a663e16557" src="https://github.com/user-attachments/assets/db0cbaa7-f9df-40ee-9125-cc54103e57f9" />
+
+  
+> [!IMPORTANT]  
+> PHP2shell脆弱性の対応状況(2026/10/22)  
+> Windows新規ユーザは、対策済みのものがインストールされます。  
+> Windows既存ユーザは、バイナリアップデートを実行してください。   
+> LinuxユーザはFAQ参照のこと。  
+> https://rfriends.github.io/rfriends/manual/faq.html  
   
 rfriends3の特徴  
 
