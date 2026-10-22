@@ -12,7 +12,7 @@ sudo apt update && sudo apt upgrade -y
 「ソフトウエアアップデータ」を実行  
   
 ２．Windows  
-rfriends3_windows_php84.batを使用してインストール   
+新規、対策済 
   
 ### 080 ウェブラジオの予約録音ができなくなった。  
   
