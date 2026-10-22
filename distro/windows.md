@@ -34,8 +34,9 @@ Windows10 (x64) home/pro 1809以降
 ### 2.2 バイナリアップデートインストーラのダウンロード  
   
 既存ユーザで、バイナリを更新したい場合に実行してください。  
+実行前に録音データのバックアップをお勧めします。  
   
-~~[rfriends3_windows_update_bin.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows_update_bin.bat)~~
+[rfriends3_windows_update_bin.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows_update_bin.bat)
   
 上記のリンクよりrfriends3_windows_update_bin.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。 
   
