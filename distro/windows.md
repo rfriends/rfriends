@@ -27,9 +27,11 @@ Windows10 (x64) home/pro 1809以降
   
 [rfriends3_windows.bat](https://ss1.xrea.com/rf3.s331.xrea.com/storage/rfriends3_windows.bat)  
   
-上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。   
+新規の場合、上記のリンクよりrfriends3_windows.batを右クリックし、「名前を付けてリンク先を保存」を選択し、保存します。   
   
 ![1](https://github.com/user-attachments/assets/aa3e7fdb-ff79-42c0-a757-7ccf6350a586)  
+  
+2.3 インストーラの実行  の実行に進んでください。  
   
 ### 2.2 バイナリアップデートインストーラのダウンロード  
   
@@ -42,6 +44,9 @@ Windows10 (x64) home/pro 1809以降
   
 あとは通常のインストールと同じです。php等のバイナリのみ更新されます。  
 例えば、C:¥XXXにrfriends3をインストールしている場合は、同じディレクトリ（C:¥XXX）を指定してください。  
+  
+2.3 インストーラの実行  の実行に進んでください。  
+  
   
 ### 2.3 インストーラの実行  
 　ここでは、c:\Temp\にダウンロードしたと仮定します。  
