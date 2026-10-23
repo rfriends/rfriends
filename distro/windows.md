@@ -11,9 +11,12 @@
 以下のバージョンで実行可能です。  
 拡張子を表示する設定にしておいてください。    
   
-Windows11  home/pro  
-Windows10 (x64) home/pro 1809以降  
+**Windows11  home/pro  25H2, 26H2**  
   
+以下のバージョンでも動作しますが、マイクロソフトのサポートが切れているため、非推奨とします。  
+Windows11  home/pro  22H2, 23H2, 24H2  
+Windows10 (x64) home/pro 1809以降    
+   
   
 ## ２．インストール  
   
