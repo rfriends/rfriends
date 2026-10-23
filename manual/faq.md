@@ -1,10 +1,14 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。    
 
-### 081 PHP2shellが問題になっていますが、大丈夫でしょうか？    
+### 081 PHP2shellが問題になっていますが、大丈夫でしょうか？  
+  
+rfriends3は家庭内で使用することが前提のため、あまり心配する必要はありません。  
+具体的なPHP2shell対策は、それぞれのシステムでソフトウエアを最新に更新、再起動することです。  
   
 １．Linux系  
-https://ubuntu.com/blog/php2shell-vulnerability-fixes-available?utm_source=chatgpt.com  
+[ubuntu](https://ubuntu.com/blog/php2shell-vulnerability-fixes-available?utm_source=chatgpt.com)  
+  
 1) cui  
 sudo apt update && sudo apt upgrade -y  
   
@@ -12,7 +16,13 @@ sudo apt update && sudo apt upgrade -y
 「ソフトウエアアップデータ」を実行  
   
 ２．Windows  
-新規、対策済 
+新規、対策済  
+既存、バイナリアップデート  
+[windows](https://rfriends.github.io/rfriends/distro/windows.html)  
+  
+３．macOS  
+brew update  
+brew upgrade  
   
 ### 080 ウェブラジオの予約録音ができなくなった。  
   
