@@ -5,8 +5,8 @@
 > PHP2shell脆弱性の対応状況(2026/10/22)  
 > Windows新規ユーザは、対策済みのものがインストールされます。  
 > Windows既存ユーザは、バイナリアップデートを実行してください。   
-> LinuxユーザはFAQ参照のこと。  
-> https://rfriends.github.io/rfriends/manual/faq.html  
+> Linux,macユーザはFAQ参照のこと。  
+> [faq](https://rfriends.github.io/rfriends/manual/faq.html)  
   
 rfriends3の特徴  
 
