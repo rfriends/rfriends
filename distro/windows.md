@@ -142,7 +142,12 @@ XXX.XXX.XXX.XXX:8000　
 例えば、C:¥XXXにrfriends3をインストールしている場合は、同じディレクトリ（C:¥XXX）を指定してください。  
 実行前に、ビルトインウェブサーバを停止してください。  
   
-<img width="889" height="628" alt="clip_1" src="https://github.com/user-attachments/assets/0ab81ed6-545d-427c-8d6a-356c54e18c22" />
+<img width="889" height="628" alt="clip_1" src="https://github.com/user-attachments/assets/0ab81ed6-545d-427c-8d6a-356c54e18c22" />  
+  
+> [!NOTE]  
+> うまくいかない場合は、上記のようなスクリーンショットを添付して、掲示板で質問してください。  
+> Windows のバージョンもお忘れなく。（例： Windows11 26H2）  
+  
 
 ### 6.3 wmicのインストール  
       
