@@ -2,7 +2,14 @@
 
 RaspiOSのイメージにrfriends3をスクリプトによりインストールします。  
     
-2026/05/14 改定  
+2026/10/24 改定  
+  
+> [!IMPORTANT]  
+> PHP2shell脆弱性の対応状況(2026/10/24)  
+>  
+> sudo apt update  
+> sudo apt upgrade -y  
+> sudo reboot
   
 <img width="600" height="450" alt="PXL_20260819_170401448 PORTRAIT~2" src="https://github.com/user-attachments/assets/70682c46-174e-4620-aa6c-63ea824c3ba2" />
 
