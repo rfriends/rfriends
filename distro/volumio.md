@@ -10,7 +10,16 @@ https://volumio.com/
   
   
 初 版 2026/05/08  
-第4版 2026/08/21  
+第5版 2026/10/24    
+  
+> [!IMPORTANT]  
+> PHP2shell脆弱性の対応状況(2026/10/24)  
+>  
+> sudo apt update  
+> sudo apt install --only-upgrade "php*"  
+>   
+> 注）volumioの場合、sudo apt upgrade は避けたほうがいいと思います。  
+  
    
 volumio のインストールに関しては、Raspberry Pi Imagerを使う方法ではなく、公式からダウンロードしてインストールする方法をお勧めします。  
 以下を参考にインストールしてください。  
