@@ -14,8 +14,12 @@ https://volumio.com/
   
 > [!IMPORTANT]  
 > PHP2shell脆弱性の対応状況(2026/10/24)  
->  
-> 注）volumioの場合、安易なupgradeはやめたほうがよさそうです。
+>   
+> sudo apt update  
+> sudo apt upgrade -y  
+> sudo reboot  
+>   
+> 注）ただし、volumioの場合、安易なupgradeはやめたほうがよさそうです。
  
 
 
