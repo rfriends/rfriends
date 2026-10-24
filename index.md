@@ -6,7 +6,9 @@
 >
 > FAQ参照のこと。  
 > 081 PHP2shell脆弱性が問題になっていますが、大丈夫でしょうか？  
-> [https://rfriends.github.io/rfriends/manual/faq.html](https://rfriends.github.io/rfriends/manual/faq.html)  
+> [https://rfriends.github.io/rfriends/manual/faq.html](https://rfriends.github.io/rfriends/manual/faq.html)
+>
+> また、それぞれのインストールページに確認次第、具体的な方法を記述しています。  
   
 rfriends3の特徴  
 
