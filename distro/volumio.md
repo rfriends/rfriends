@@ -17,6 +17,7 @@ https://volumio.com/
 >  
 > sudo apt update  
 > sudo apt install --only-upgrade "php*"  
+> sudo reboot  
 >   
 > 注）volumioの場合、sudo apt upgrade は避けたほうがいいと思います。  
   
