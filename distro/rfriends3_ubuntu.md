@@ -1,5 +1,12 @@
 ## Ubuntu版rfriends3でラジオ録音    
   
+> [!IMPORTANT]  
+> PHP2shell脆弱性の対応状況(2026/10/24)  
+>  
+> sudo apt update  
+> sudo apt upgrade -y  
+> sudo reboot
+    
 rfriends2はCLIベースでしたが、rfriends3はCLIに加えてWEBベースで操作が簡単になっています。  
 webサーバにlighttpd、ファイル共有にsambaを採用したLinux版です。  
 インストールは全自動で行います。  
