@@ -15,13 +15,9 @@ https://volumio.com/
 > [!IMPORTANT]  
 > PHP2shell脆弱性の対応状況(2026/10/24)  
 >  
-> sudo apt update  
-> sudo apt install --only-upgrade "php*"  
-> sudo reboot  
->   
-> 注）volumioの場合、sudo apt upgrade は避けたほうがいいと思います。  
-> また、x64(PC)版の場合は、/etc/apt/sources.list に以下を追加する必要あり。(volumio4の場合)  
-> deb http://security.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware  
+> 注）volumioの場合、安易なupgradeはやめたほうがよさそうです。
+ 
+
 
   
    
