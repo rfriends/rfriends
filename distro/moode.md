@@ -6,7 +6,14 @@
 ![1](https://github.com/user-attachments/assets/1cd6790e-c995-4e30-95cf-2f58c0e8cb26)  
   
 初 版　2024/08/31  
-第9版　2026/08/21
+第10版　2026/10/24  
+  
+> [!IMPORTANT]  
+> PHP2shell脆弱性の対応状況(2026/10/24)  
+>  
+> sudo apt update  
+> sudo apt upgrade -y  
+  
   
 ## １．前提  
   
