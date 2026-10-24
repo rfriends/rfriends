@@ -12,7 +12,8 @@
 > PHP2shell脆弱性の対応状況(2026/10/24)  
 >  
 > sudo apt update  
-> sudo apt upgrade -y  
+> sudo apt upgrade -y
+> sudo reboot  
   
   
 ## １．前提  
