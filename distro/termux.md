@@ -1,4 +1,14 @@
 ## Termux版rfriends3でラジオ録音    
+
+  
+> [!IMPORTANT]  
+> PHP2shell脆弱性の対応状況(2026/10/24)  
+>  
+> pkg update  
+> pkg upgrade -y
+>   
+> 3.3 Termuxの再起動方法を参考に、再起動してください。  
+  
   
 余ったandroidスマホとTermuxでラジオ録音サーバを作ろう  
   
@@ -11,7 +21,7 @@
 注）　時計表示ソフトを入れると、表向きは置時計、裏でrfriendsが走るというシステムができます。  
   
 初版：2021/01/19  
-改版：2026/09/08   
+改版：2026/10/24  
    
 ## １．Termuxのインストール   
   
@@ -97,7 +107,27 @@ xxx.xxx.xxx.xxx:8000
   
 [チュートリアル](https://rfriends.github.io/rfriends/manual/tutorial.html)  
   
+### 3.3 Termuxの再起動方法
   
+スマホを再起動したい場合のtermuxの終了と起動方法は以下のとおり。  
+   
+#### 3.3.1 終了  
+  
+1) 画面を上からスワイプして通知パネルを開く。  
+2) Termuxの通知にある 「Exit」 ボタンをタップする。
+  
+<img width="558" height="477" alt="Screenshot_20261024-141001" src="https://github.com/user-attachments/assets/47fc8dba-053a-484c-a7ff-15d1164b15ef" />
+
+  
+#### 3.3.2 起動  
+  
+1) Termux アイコンをタップする。
+  
+<img width="150" height="150" alt="407636054-5b603b6c-b936-4f29-9ee4-c2445ece319a" src="https://github.com/user-attachments/assets/3516a671-f35b-4000-9eb0-502b6ff340fa" />
+
+  
+2) sh svenable.sh を実行する。
+    
 ## ４．録音ディレクトリ    
   
 ### 4.1 録音ディレクトリの設定（内部）  
@@ -174,7 +204,7 @@ PCがLinuxでWARNINGが出て接続できないときはPCのホームディレ�
 インストール直後は、スマホのスピーカから音が出ていると思います。  
 これに、スマホの標準機能で、Bluetooth スピーカを接続すれば、rfriends3からの音もBluetooth スピーカから出ます。  
 当然ですが、念のため。  
-  
+
     
 以上    
   
