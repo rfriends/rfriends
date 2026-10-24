@@ -2,10 +2,14 @@
 あらかじめRaspiOSにrfriends3をインストールし、各種設定を行ったイメージです。
 microSDに書いて起動するだけでrfriends3が使用できます。
 
-> [!NOTE]
-> 2026/05/05
-> ドキュメントを大幅書き換え。
-> Bookworm版(32/64)を公開しました。
+  
+> [!IMPORTANT]  
+> PHP2shell脆弱性の対応状況(2026/10/24)  
+>  
+> sudo apt update  
+> sudo apt upgrade -y  
+> sudo reboot
+  
 
 ## ０．準備  
   
