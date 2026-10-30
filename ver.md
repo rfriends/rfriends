@@ -14,12 +14,24 @@
 1.6.4a -> 1.6.5     
   
 ・トップ画面にコミュニティFM追加  
+<img width="164" height="48" alt="top" src="https://github.com/user-attachments/assets/c5622aec-3062-4876-a198-7de9990f429f" />  
+  
 ・録音データ再生に検索追加  
+<img width="468" height="148" alt="clip_2" src="https://github.com/user-attachments/assets/6e13815f-af16-4dc4-a027-49313e5ec23e" />  
+  
 ・NHKポッドキャストのイメージ表示追加  
+<img width="236" height="272" alt="clip_3" src="https://github.com/user-attachments/assets/abec4f5c-67df-4575-ab69-5bed1920cf6e" />  
+  
 ・JFN PODSに全番組一覧追加  
-・radikoポッドキャストフォーマット変更対応  
+<img width="120" height="109" alt="clip_5" src="https://github.com/user-attachments/assets/0e8e745a-a668-4246-b33e-1a0fc1c38c29" />  
+  
 ・チャプター設定変更  
 　time付廃止、time付を指定してもなしになります。  
+ <img width="545" height="136" alt="clip_4" src="https://github.com/user-attachments/assets/7191de93-bec7-475c-afb6-544115892c9d" />  
+  
+・radikoポッドキャストフォーマット変更対応  
+
+   
 ・コミュニティFMリンク異常修正   
   
 ## 1.6.4a (2026/10/26) 正式版  
