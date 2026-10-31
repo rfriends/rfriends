@@ -1,21 +1,8 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。    
   
-### 083 録音済み再生のボタンの意味は？  
-  
-<img width="421" height="151" alt="HUUC3GvaQAAZFdo" src="https://github.com/user-attachments/assets/79781a40-f1f3-4486-b10f-fb501751b5d1" />  
-  
-各秒数は、設定 - パラメータで変更可能です。  
-  
-### 082 コミュニティFMを再生しても音が出ません。  
-  
-可能性としては、休止中、閉局、が考えられます。   
-また、放送時間が22時までというところも結構あります。  
-ホームページを確認してみてください。  
-  
-<img width="413" height="259" alt="HVQfyzrbkAAvkG-" src="https://github.com/user-attachments/assets/c10893fa-0a8b-494f-b4c9-10f14f2e4134" />  
-    
-### 081 PHP2shell脆弱性が問題になっていますが、大丈夫でしょうか？(2026/10/22)  
+
+### 083 PHP2shell脆弱性が問題になっていますが、大丈夫でしょうか？(2026/10/22)  
   
 rfriends3は家庭内で使用することが前提のため、あまり心配する必要はありません。  
 具体的なPHP2shell対策は、それぞれのシステムでソフトウエアを最新に更新、再起動することです。  
@@ -39,6 +26,23 @@ sudo apt update && sudo apt upgrade -y
 brew update  
 brew upgrade  
   
+### 082 録音済み再生のボタンの意味は？  
+  
+<img width="421" height="151" alt="HUUC3GvaQAAZFdo" src="https://github.com/user-attachments/assets/79781a40-f1f3-4486-b10f-fb501751b5d1" />  
+  
+各秒数は、設定 - パラメータ(345行あたり)で変更可能です。  
+audio_chapter_sec = 300  
+audio_skip_back_sec = 5  
+audio_skip_fwd_sec = 10  
+  
+### 081 コミュニティFMを再生しても音が出ません。  
+  
+可能性としては、休止中、閉局、が考えられます。   
+また、放送時間が22時までというところも結構あります。  
+ホームページを確認してみてください。  
+  
+<img width="413" height="259" alt="HVQfyzrbkAAvkG-" src="https://github.com/user-attachments/assets/c10893fa-0a8b-494f-b4c9-10f14f2e4134" />  
+      
 ### 080 ウェブラジオの予約録音ができなくなった。  
   
 プラットフォーム（リスラジ、JCBA、FM++）が変更された可能性があります。  
