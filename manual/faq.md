@@ -2,7 +2,7 @@
 以下に掲示板等での質問を元にFAQを追加していきます。    
   
 
-### 083 PHP2shell脆弱性が問題になっていますが、大丈夫でしょうか？(2026/10/22)  
+### 084 PHP2shell脆弱性が問題になっていますが、大丈夫でしょうか？(2026/10/22)  
   
 rfriends3は家庭内で使用することが前提のため、あまり心配する必要はありません。  
 具体的なPHP2shell対策は、それぞれのシステムでソフトウエアを最新に更新、再起動することです。  
@@ -25,6 +25,14 @@ sudo apt update && sudo apt upgrade -y
 ３．macOS  
 brew update  
 brew upgrade  
+  
+### 083 最近rfriendsからのメールが来なくなりました。  
+  
+いつの間にか、メールを許可しないに変更されているようです。  
+yahooメールの右上の歯車をクリックして、POP,SMTP両方を利用するにして保存。  
+これで、またメールが来るようになります。  
+  
+<img width="680" height="589" alt="HRZQUd7bkAAMWgT" src="https://github.com/user-attachments/assets/c9333ae6-7e49-4c82-9a95-5c1feb153ecc" />  
   
 ### 082 録音済み再生のボタンの意味は？  
   
