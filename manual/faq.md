@@ -1,6 +1,12 @@
 ## FAQ一覧    
 以下に掲示板等での質問を元にFAQを追加していきます。    
   
+### 083 録音済み再生のボタンの意味は？  
+  
+<img width="421" height="151" alt="HUUC3GvaQAAZFdo" src="https://github.com/user-attachments/assets/79781a40-f1f3-4486-b10f-fb501751b5d1" />  
+  
+各秒数は、設定 - パラメータで変更可能です。  
+  
 ### 082 コミュニティFMを再生しても音が出ません。  
   
 可能性としては、休止中、閉局、が考えられます。   
