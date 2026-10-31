@@ -9,14 +9,14 @@
 > また、iSHでは、guiモードでも出てこないようです。    
 >  [9-1-3] パラメータ設定 - チェック　で更新してください。  
   
-## 1.6.5 (2026/??/??) 正式版  
+## 1.6.5 (2026/11/01) 正式版  
   
 1.6.4a -> 1.6.5     
   
 #### 1) トップ画面にコミュニティFM追加  
 <img width="164" height="48" alt="top" src="https://github.com/user-attachments/assets/c5622aec-3062-4876-a198-7de9990f429f" />  
   
-#### 2) 録音データ再生に検索追加  
+#### 2) 各種一覧に検索追加  
 <img width="468" height="148" alt="clip_2" src="https://github.com/user-attachments/assets/6e13815f-af16-4dc4-a027-49313e5ec23e" />  
   
 #### 3) NHKポッドキャストのイメージ表示追加  
