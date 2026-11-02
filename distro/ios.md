@@ -6,7 +6,7 @@ cui,gui両モードをサポートしました。
 <img width="600" height="564" alt="ish" src="https://github.com/user-attachments/assets/c09423b4-361a-4497-bc1c-ba4b1fa68b13" />  
   
 初 版　2025/07/18   
-13 版　2026/09/01  
+14 版　2026/11/03  
   
 ## １．iSH Shell  
   
@@ -64,6 +64,7 @@ bluetoothのキーボードを接続するとより快適になります。
 以下を入力します。  
   
 ```
+apk add curl
 curl -LO rfriends.github.io/ish
 sh ish  
 ```
