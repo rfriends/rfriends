@@ -11,14 +11,14 @@ cui,gui両モードをサポートしました。
 ## １．iSH Shell  
   
 使用しているソフトウエアはiSH Shellで、ios上のlinux-like shell(alpine linux)です。  
-ios 11 以上が必要です。MacOSでも動作するとの報告がありますが、M1以上のプロセッサが必要です。  
-
-現在、聴取（サーバ）では音はでません。  
-
-> [!NOTE]
-> また、通常ではJCBA,FM++の聴取でも音は出ません。  
-> 3.3 guiモード (他PCから)
-> を実行すれば、音が出ます。
+ios 11 以上が必要です。  
+~~MacOSでも動作するとの報告がありますが、M1以上のプロセッサが必要です。~~  
+  
+> [!NOTE]  
+> 現在、聴取（サーバ）では音はでません。  
+> また、通常ではJCBA,FM++の聴取でも音は出ません。    
+> 3.3 guiモード (他PCから)  
+> を実行すれば、音が出ます。  
   
 ### 1) App StoreからiSHを入手し、インストールしてください。  
 
@@ -132,34 +132,14 @@ cat /dev/location
 以下の３つの起動方法より選択してください。  
   
 ```  
-3.1 cuiモード  
-3.2 guiモード   
-3.3 guiモード (他PCから)    
+3.1 guiモード  
+3.2 guiモード (他PCから)  
+3.3 cuiモード  
 ```  
     
 起動後はrfriends3を最新にupdate してください。 
   
-### 3.1 cuiモード  
-  
-1) rfriends3をcuiモードで起動します。  
-  
-```  
-# cd  
-# sh cui  
-```  
-  
-2) 以下のような画面が表示されれば成功です。  
-  
-![IMG_0949](https://github.com/user-attachments/assets/528dc96e-6bcd-4d08-ab05-7f4779e928a1)  
-   
-少々古いですが、CUIモードのマニュアルとしては、こちらのほうが参考になります。  
-[rfriends2操作マニュアル](http://ceres.s501.xrea.com/wp_rfriends/index.php/manual/)   
-  
-> [!CAUTION]  
-> エディタとして、viを使用すると日本語が化けます。  
-> 回避策として、vimまたはnanoを使用してください。
-  
-### 3.2 guiモード    
+### 3.1 guiモード    
   
 1) rfriends3をguiモードで起動します。  
   
@@ -188,12 +168,12 @@ localhost:8000
 を参照してください。    
   
 > [!CAUTION]  
-> 現在、guiモードは不安定のため、Development Server がしばしばダウンします。  
-> その際はiPhone/iPadで、ctrl-cで終了させ、再び  
+> Development Server がダウンした場合は  
+> iPhone/iPadで、ctrl-cで終了させ、再び  
 > sh gui  
 > を実行してください。
   
-## 3.3 guiモード (他PCから)  
+## 3.2 guiモード (他PCから)  
   
 1) iSHを実行しているiPhone/iPadのIPアドレスを確認します。  
   
@@ -219,6 +199,27 @@ http://IPアドレス:8000
 でアクセス。  
 以下のような画面が出れば成功です。  
 <img width="600" height="476" alt="ish21" src="https://github.com/user-attachments/assets/539e3a02-911e-4c9d-93a7-9f70f61cd0e9" />
+  
+### 3.3 cuiモード  
+  
+1) rfriends3をcuiモードで起動します。  
+guiモードがうまくいかないとき、実行してください。  
+  
+```  
+# cd  
+# sh cui  
+```  
+  
+2) 以下のような画面が表示されれば成功です。  
+  
+![IMG_0949](https://github.com/user-attachments/assets/528dc96e-6bcd-4d08-ab05-7f4779e928a1)  
+   
+少々古いですが、CUIモードのマニュアルとしては、こちらのほうが参考になります。  
+[rfriends2操作マニュアル](http://ceres.s501.xrea.com/wp_rfriends/index.php/manual/)   
+  
+> [!CAUTION]  
+> エディタとして、viを使用すると日本語が化けます。  
+> 回避策として、vimまたはnanoを使用してください。  
   
 ## ４．録音データへのアクセス  
   
