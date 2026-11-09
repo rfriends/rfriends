@@ -26,5 +26,6 @@
 ・[補足説明](supplement.md)    
 ・[rfriends2の跡](https://ceres.s501.xrea.com/wp_rfriends/)   
   
-![clip_2](https://github.com/user-attachments/assets/6049ea52-25c4-4cee-8a29-515716bc5010)
+<img width="502" height="557" alt="clip_10" src="https://github.com/user-attachments/assets/73a2465c-63e5-4bde-a8ce-291db0908fcb" />
+
 
