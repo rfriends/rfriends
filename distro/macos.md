@@ -52,7 +52,20 @@ Chromium 142.0.7435.0
 % xattr -rc /Applications/Chromium.app
 % chromium --version                 
 Chromium 142.0.7435.0 
-```   
+```
+  
+追記）  
+  
+もし以下のメッセージが出た場合は、  
+  
+```  
+Error: chromium: Cask 'chromium' has been disabled because it does not pass the macOS Gatekeeper check! It was disabled on 2026-09-01.  
+```
+  
+これは、Homebrew が Chromium の Cask を 2026年9月1日付で無効化したために発生しているエラーです。  
+Homebrew公式の修正を待ってみてください。  
+  
+なお、Chromiumがインストールされていなくても、一部の機能が使えないだけで、rfriends3は実行可能です。  
   
 ## ３．rfriends_macos.gitのダウンロード  
   
@@ -72,15 +85,6 @@ Terminalを開き、以下を入力します。
 ```  
   
 これでインストールは完了です。  
-  
-追記）  
-```  
-% chromium --version  
-```  
-でchromiumが見つからない場合はインストールしてください。  
-```  
-% brew install chromium  
-```  
   
 ## ５．lighttpdウェブサーバのインストール  
   
