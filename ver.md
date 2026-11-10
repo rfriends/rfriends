@@ -9,6 +9,13 @@
 > また、iSHでは、guiモードでも出てこないようです。    
 >  [9-1-3] パラメータ設定 - チェック　で更新してください。  
   
+## 1.6.6a (2026/11/11) 正式版  
+  
+1.6.6 -> 1.6.6a  
+  
+・一部環境(Termux or PHP8.5)で以下のメッセージが出る件に対処  
+Deprecated: The predefined locally scoped $http_response_header variable is deprecated, call http_get_last_response_headers() instead  
+  
 ## 1.6.6 (2026/11/10) 正式版  
   
 1.6.5b -> 1.6.6     
