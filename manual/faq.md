@@ -26,7 +26,7 @@ sudo apt update && sudo apt upgrade -y
 brew update  
 brew upgrade  
 
-### 083 Ubuntu26.04でOSのソフトウエア更新をおこなったら、以下のようなエラーが出始めた。  
+### 083 Ubuntu26.04でOSのソフトウエア更新をおこなったら、以下のようなエラーが出た。  
   
 ```  
 update.go:193: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/local/share/doc /usr/local/share/doc none bind,ro 0 0):  
@@ -34,7 +34,9 @@ cannot write to "/var/lib/snapd/hostfs/usr/local/share/doc"
 because it would affect the host in "/var/lib/snapd"  
 ```  
 これはsnapが更新されたためで、snapの仕様が原因です。  
-以下のディレクトリを作成してください。  
+同じ処理を2度行ったらエラーは消えるはずです。  
+  
+どうしても消えない場合は、以下のディレクトリを作成してください。  
   
 ```  
 $ sudo mkdir -p /usr/local/share/doc  
