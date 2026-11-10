@@ -25,8 +25,22 @@ sudo apt update && sudo apt upgrade -y
 ３．macOS  
 brew update  
 brew upgrade  
-  
 
+### 083 Ubuntu26.04でOSのソフトウエア更新をおこなったら、以下のようなエラーが出始めた。  
+  
+```  
+update.go:193: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/local/share/doc /usr/local/share/doc none bind,ro 0 0):  
+cannot write to "/var/lib/snapd/hostfs/usr/local/share/doc"   
+because it would affect the host in "/var/lib/snapd"  
+```  
+これはsnapが更新されたためで、snapの仕様が原因です。  
+以下のディレクトリを作成してください。  
+  
+```  
+$ sudo mkdir -p /usr/local/share/doc  
+$ sudo chmod 755 /usr/local/share/doc  
+```  
+  
 ### 082 録音済み再生のボタンの意味は？  
   
 <img width="421" height="151" alt="HUUC3GvaQAAZFdo" src="https://github.com/user-attachments/assets/79781a40-f1f3-4486-b10f-fb501751b5d1" />  
