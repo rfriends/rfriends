@@ -26,7 +26,7 @@ sudo apt update && sudo apt upgrade -y
 brew update  
 brew upgrade  
   
-<hr style="border: none; border-top: 5px solid #333;">
+<hr>
 
   
 ### 084 Windows で「組織のセキュリティポリシーによって非認証のゲスト アクセスがブロックされている」と表示され共有フォルダにアクセスできない。  
