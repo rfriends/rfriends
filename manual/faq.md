@@ -25,7 +25,21 @@ sudo apt update && sudo apt upgrade -y
 ３．macOS  
 brew update  
 brew upgrade  
-
+  
+<hr>
+  
+### 084 「組織のセキュリティポリシーによって非認証のゲスト アクセスがブロックされている」と表示され共有フォルダにアクセスできない。  
+  
+「065 sambaにアクセスできない。」 で既出ですので、参照してください。  
+  
+なお、homeエディションではgpeditが使えないので、  
+「管理者として実行」したコマンドプロンプト、またはWindowsターミナルで以下を実行してください。  
+  
+```  
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v AllowInsecureGuestAuth /t REG_DWORD /d 1 /f  
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v RequireSecuritySignature /t REG_DWORD /d 0 /f  
+```  
+  
 ### 083 Ubuntu26.04でOSのソフトウエア更新をおこなったら、以下のようなエラーが出た。  
   
 ```  
