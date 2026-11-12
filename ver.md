@@ -18,7 +18,7 @@
 ・timefree(録音・聴取)関連の処理見直し(b)    
 未配信データをはじくようにしました。  
   
-・cui機能のデータ再生処理を復活。(b)    
+・cui機能の聴取機能を復活。(b)    
   
 ・一部環境(Termux or PHP8.5)で以下のメッセージが出る件に対処(a)  
 Deprecated: The predefined locally scoped $http_response_header variable is deprecated, call http_get_last_response_headers() instead  
