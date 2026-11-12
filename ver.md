@@ -9,11 +9,18 @@
 > また、iSHでは、guiモードでも出てこないようです。    
 >  [9-1-3] パラメータ設定 - チェック　で更新してください。  
   
-## 1.6.6a (2026/11/11) 正式版  
+## 1.6.6b (2026/11/??) 正式版  
   
-1.6.6 -> 1.6.6a  
+1.6.6 -> 1.6.6b  
   
-・一部環境(Termux or PHP8.5)で以下のメッセージが出る件に対処  
+・検索で、データ選択をせずにリターンキーを押すとエラーになっていたのを修正(b)    
+  
+・timefree(録音・聴取)関連の処理見直し(b)    
+未配信データをはじくようにしました。  
+  
+・cui機能のデータ再生処理を復活。(b)    
+  
+・一部環境(Termux or PHP8.5)で以下のメッセージが出る件に対処(a)  
 Deprecated: The predefined locally scoped $http_response_header variable is deprecated, call http_get_last_response_headers() instead  
   
 ## 1.6.6 (2026/11/10) 正式版  
