@@ -14,8 +14,14 @@
 1.6.6 -> 1.6.6c  
   
 ・一覧、検索等の処理・表示を変更(c)  
-・キーワードタイプを追加(c)  
 ・radiko podcastを検索のみに(c)  
+  
+・キーワードタイプを追加(c)  
+235行あたり  
+radiko_keyword_type = 0  
+timefree_keyword_type = 0  
+radiru_keyword_type = 0  
+radiru_vod_keyword_type = 0  
   
 ・JCBA,FM++で休止中の局の再生処理を修正(c)  
 JCBA,FM++で休止中の局を再生したことがあるかたは、不要なプロセスが残っている可能性があるので、  
