@@ -42,7 +42,7 @@ XXXXX.img.gzファイルが保存されますが、解凍の必要はありま�
   
 以下のページを参考にして、imgファイルをmicroSDに書く。  
   
-[Raspberry Pi Imagerを使用してカスタムイメージをmicroSDに書く](raspberrypi_sd.md)
+[Raspberry Pi Imagerを使用してカスタムイメージをmicroSDに書く](https://rfriends.github.io/rfriends/tech/29.html)  
   
 
 ## ３．wifiアクセス情報を追加する。  
