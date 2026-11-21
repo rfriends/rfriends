@@ -38,6 +38,9 @@ JCBA,FM++を聴取したい場合は、Apple Containerを試してみてくだ�
 Apple Containerのほうが簡単ですが、通常のDockerでもかまいません。    
 [Docker](https://rfriends.github.io/rfriends/distro/docker.html)  
   
+rfriends3の macOS qemu版でラジオ録音 もおすすめ  
+[qemu](https://rfriends.github.io/rfriends/distro/macos_qemu.html)  
+    
 ### 085 radiko podcastで検索を実行すると、関係ない番組が表示される。  
 
 想像ですが、タイトル以外に、エピソード等で番組が選択されているようです。  
