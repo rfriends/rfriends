@@ -34,6 +34,9 @@ brew upgrade
 JCBA,FM++を聴取したい場合は、Apple Containerを試してみてください。  
 [Apple Container](https://rfriends.github.io/rfriends/distro/applecontainer.html)  
   
+Apple Containerのほうが簡単ですが、通常のDockerでもかまいません。    
+[Docker](https://rfriends.github.io/rfriends/distro/docker.html)  
+  
 ### 085 radiko podcastで検索を実行すると、関係ない番組が表示される。  
 
 想像ですが、タイトル以外に、エピソード等で番組が選択されているようです。  
