@@ -3,12 +3,8 @@
 　ラジオ録音アプリrfriends3をApple Container環境で実行する方法について記述しています。  
   
 初版 2026/07/21  
-四版 2026/07/24  
-  
-> [!NOTE]  
-> 現在、書きかけです。
-  
-  
+五版 2026/11/21  
+    
 ## １．Apple Container環境構築   
   
 ### 1.1 Apple Containerのインストール   
@@ -58,6 +54,7 @@ Apple containerでは変更しないでください。
   
 > [!NOTE]  
 > コンテナ名やイメージ名を変更したい場合は、事前に.envファイルを編集してください。  
+> すでに、通常のrfriends3をインストールしている場合は、.envファイルの編集は必須です。  
   
 ```
 % cd rfriends_docker
@@ -135,7 +132,7 @@ rfriends_docker/share/rfriends3/config
 
 ## ４．初期化  
   
-もし、apple containerを　初期状態にしたいばあは以下の処理を行ってください。  
+もし、apple containerを　初期状態にしたい場合は以下の処理を行ってください。  
   
 ```
 ・コンテナの停止・削除
