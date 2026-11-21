@@ -55,6 +55,9 @@ Apple containerでは変更しないでください。
 > [!NOTE]  
 > コンテナ名やイメージ名を変更したい場合は、事前に.envファイルを編集してください。  
 > すでに、通常のrfriends3をインストールしている場合は、.envファイルの編集は必須です。  
+> % .env  
+> container_name=rf3-container2  
+> http_port=8001  
   
 ```
 % cd rfriends_docker
@@ -65,7 +68,9 @@ rfriends3:latest
 rf3-container 
 ```
   
-と表示されたら成功です。 2.4に進んでください。
+と表示されたら成功です。 2.5に進んでください。  
+  
+### 2.4 エラーの場合、環境の編集を行う。  
   
 ---  
 もし、sh run_apple_container.shで以下のようなエラーが出たときは、ポート8000がすでに使用中です。
@@ -73,7 +78,7 @@ rf3-container
 Error: failed to bootstrap container (cause: "internalError: "failed to bootstrap container rf3-container (cause: "unknown: "bind(descriptor:ptr:bytes:): Address already in use) (errno: 48)"")"")
 ```
   
-以下のいずれかで対処し、再度 sh run_apple_container.sh を実行してください。  
+以下のいずれか（１，２，３）で対処し、再度 sh run_apple_container.sh を実行してください。  
   
 1) .envファイルを編集して、コンテナ名、ポートを変更してください。（推奨）
 ```
@@ -104,7 +109,7 @@ httpd   29193        user    4u  IPv6 0x9ea4c31e6c02d505      0t0  TCP *:irdmi (
 何も出力されなければOK
 ```   
   
-### 2.4 rfriends3にアクセスする  
+### 2.5 rfriends3にアクセスする  
   
 ホスト側で以下を実行してください。  
 ```   
@@ -117,7 +122,7 @@ httpd   29193        user    4u  IPv6 0x9ea4c31e6c02d505      0t0  TCP *:irdmi (
 http://192.168.1.142:8000　または　http://localhost:8000
 ```
 と入力するとrfriends3が表示されます。
-ポート番号を変更している場合はその番号に。  
+ポート番号(8000)を変更している場合はその番号に。  
  
 > [!TIP]   
 > 同一LAN内の他のPCからもアクセスできます。
@@ -158,7 +163,7 @@ buildkitはシステムで使用するコンテナ（削除しないほうがい
 ## ５．その他  
     
 conatainer コマンド  
-ほぼ、Docker toコマンドは同じですが、なぜか、ps が ls
+ほぼ、Docker とコマンドは同じですが、なぜか、ps が ls
 ```
 システムステータス
 % container system status
