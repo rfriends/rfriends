@@ -28,6 +28,12 @@ brew upgrade
   
 <hr>  
   
+### 086 macOSでJCBA,FM++を聴取すると、30秒くらいで音が途切れます。聴取（サーバ）は問題ありません。    
+  
+これは、MACの問題です。  
+JCBA,FM++を聴取したい場合は、Apple Containerを試してみてください。  
+[Apple Container](https://rfriends.github.io/rfriends/distro/applecontainer.html)  
+  
 ### 085 radiko podcastで検索を実行すると、関係ない番組が表示される。  
 
 想像ですが、タイトル以外に、エピソード等で番組が選択されているようです。  
