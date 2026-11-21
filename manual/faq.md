@@ -32,6 +32,7 @@ brew upgrade
   
 これは、MACの問題です。  
 JCBA,FM++を聴取したい場合は、Apple Containerを試してみてください。  
+ただし、聴取はできますが、聴取（サーバ）は不可になります。  
 [Apple Container](https://rfriends.github.io/rfriends/distro/applecontainer.html)  
   
 Apple Containerのほうが簡単ですが、通常のDockerでもかまいません。    
