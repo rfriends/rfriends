@@ -111,7 +111,7 @@ httpd   29193        user    4u  IPv6 0x9ea4c31e6c02d505      0t0  TCP *:irdmi (
   
 ホスト側で以下を実行してください。  
 ```   
-% hostname -I  
+% ifconfig | grep "inet "
 192.168.1.142 ..........  
 ```
   
